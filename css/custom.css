@@ -19,7 +19,12 @@
   color: #fff;
   text-decoration: none;
 }
-
+.text-pink {
+  color: #d82e8a !important;
+}
+.active {
+  color: #d82e8a !important;
+}
 /*
  * Extra utilities
  */
