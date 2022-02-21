@@ -35,6 +35,12 @@ html {
 .flex-equal > * {
   flex: 1;
 }
+/* .banner-cqs {
+  background: url(../images/scc/banner-scc.png);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 80%;
+} */
 @media (min-width: 768px) {
   .flex-md-equal > * {
     flex: 1;
