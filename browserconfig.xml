@@ -3,11 +3,11 @@
 <browserconfig>
   <msapplication>
     <tile>
-    <square16x16logo src="./images/favicon-16x16.png"/>
-    <square32x32logo src="./images/favicon-32x32.png"/>
-      <square180x180logo src="./images/apple-touch-icon.png"/>
-      <square192x192logo src="./images/android-chrome-192x192.png"/>
-      <square512x512logo src="./images/android-chrome-512x512.png"/>
+    <square16x16logo src="./img/favicon-16x16.png"/>
+    <square32x32logo src="./img/favicon-32x32.png"/>
+      <square180x180logo src="./img/apple-touch-icon.png"/>
+      <square192x192logo src="./img/android-chrome-192x192.png"/>
+      <square512x512logo src="./img/android-chrome-512x512.png"/>
     </tile>
   </msapplication>
 </browserconfig>

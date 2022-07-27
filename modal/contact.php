@@ -1,7 +1,7 @@
 <?php
 
 // Put contacting email here
-$php_main_email = "sardine.calms.07@icloud.com";
+$php_main_email = "info@felixrivas.io";
 
 //Fetching Values from URL
 $php_name = $_POST['ajax_name'];
@@ -45,7 +45,7 @@ if (filter_var($php_email, FILTER_VALIDATE_EMAIL)) {
 	
 	
 } else {
-	echo "<span class='contact_error'>* Invalid email *</span>";
+	echo "<span class='contact_error'>* Introdusca un correo valido *</span>";
 }
 
 ?>
