@@ -118,28 +118,19 @@ WE MAY RELEASE FUTURE UPDATES SO IT WILL OVERWRITE THIS FILE. IT'S BETTER AND SA
     if ($contactForm.length) {
       $contactForm.validate({
         rules: {
-          contactName: 'required',
-          contactEmail: {
+          name: 'required',
+          email: {
             required: true,
             email: true,
           },
-          contactSubject: 'required',
-          contactMessage: 'required',
+          subject: 'required',
+          message: 'required',
         },
         messages: {
-          contactName: 'Please enter your firstname',
-          contactEmail: 'Please enter a valid email address',
-          contactSubject: 'Please enter your phone number',
-          contactMessage: 'Plase type your message',
-        },
-        submitHandler: function () {
-          var $curForm = $(this.currentForm);
-
-          $curForm.ajaxSubmit({
-            success: function (res) {
-              $contactFormStatus.show().html(res).delay(3000).fadeOut('slow');
-            },
-          });
+          name: 'Please enter your firstname',
+          email: 'Please enter a valid email address',
+          subject: 'Please enter your phone number',
+          message: 'Plase type your message',
         },
       });
     }
