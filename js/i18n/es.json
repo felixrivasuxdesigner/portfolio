@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "portfolio": "Portafolio",
+    "contact": "Contacto"
+  },
+  "banner": {
+    "title": "Construyamos <span class=\"thick\">Algo</span> <span class=\"thick\">Grande</span> Juntos",
+    "description": "Soy <strong>Diseñador Gráfico</strong> de profesión y Diseñador UX/UI por vocación, ubicado en <strong>Santiago de Chile, LATAM</strong>.",
+    "button": "Conversemos"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "who_am_i": "Quien <strong>soy yo</strong>?",
+    "experience_in": "Con experiencia <strong>en</strong>",
+    "download_cv": "Descarga Mi CV",
+    "technologies": "Algunas de las Tecnologías en las que tengo experiencia"
+  },
+  "cv_sections": {
+    "education": "<strong>Edu</strong>cación",
+    "experience": "<strong>Ex</strong>periencia"
+  },
+  "services": {
+    "title": "Lo que hago",
+    "web_design": {
+      "title": "Diseño <strong>Web</strong>",
+      "description": "Me enfoco en la creación de interfaces de usuario atractivas y accesibles para sitios web y aplicaciones web."
+    },
+    "flow": {
+      "title": "Flujo de <strong>Usuarios</strong> &amp; <strong>Wireframe</strong>",
+      "description": "El servicio busca crear una estructura lógica y eficiente para el usuario, y mejorar la interacción del usuario con el producto digital. El objetivo final es ofrecer una experiencia de usuario intuitiva y satisfactoria."
+    },
+    "visual": {
+      "title": "Diseño <strong>Visual</strong>",
+      "description": "A través del uso de colores, tipografía, imágenes y otros elementos visuales, se busca crear una estética atractiva y coherente para el producto digital."
+    },
+    "mobile": {
+      "title": "Diseño de <strong>APP</strong> Moviles",
+      "description": "A través del uso de diseños intuitivos, funcionalidades efectivas y un diseño visual atractivo, se busca crear una experiencia de usuario que genere un impacto positivo y memorable en el usuario."
+    },
+    "ux_ui": {
+      "title": "Diseño <strong>UX</strong> &amp; UI",
+      "description": "A través del uso de técnicas de investigación de usuario, wireframing, prototipado y pruebas de usabilidad, se busca crear una experiencia de usuario coherente y significativa que genere un impacto positivo en la percepción del usuario sobre el producto digital."
+    }
+  },
+  "portfolio": {
+    "title": "Portafolio",
+    "all": "Todos",
+    "view_project": "Ver Proyecto",
+    "case_study": "Caso de Estudio",
+    "web_design": "Diseño Web"
+  },
+  "feedback": {
+    "title": "Recomendaciones",
+    "why_me": "Porque yo?"
+  },
+  "contact": {
+    "title": "Contacto",
+    "name": "Nombre",
+    "email": "Email",
+    "subject": "Asunto",
+    "message": "Mensaje",
+    "send": "Enviar"
+  },
+  "hire_me": {
+    "title": "¿TIENES UN PROYECTO?",
+    "subtitle": "Estoy listo para ayudarte. Simplemente escriba los detalles a continuación.",
+    "name": "Tu Nombre...",
+    "email": "Tu Email...",
+    "project_title": "Título del Proyecto...",
+    "category": "-Seleccionar categoría de caso-",
+    "budget": "-Presupuesto-",
+    "estimate_date": "-Fecha estimada-",
+    "message": "Tu mensaje...",
+    "estimate_question": "¿Se requiere un presupuesto?",
+    "no_estimate": "No se requiere estimación",
+    "yes_estimate": "Sí, necesito un costo estimado de los servicios. Entiendo que necesito entre 2 y 4 días hábiles para recibir el presupuesto.",
+    "send_button": "ENVIAR SOLICITUD"
+  },
+  "footer": {
+    "copyright": "Copyright &copy; 2023 <a href=\"/\">Félix Rivas</a>. All Rights Reserved."
+  },
+  "thankyou": {
+    "title": "¡Gracias por contactarme!",
+    "message": "Tu mensaje ha sido enviado correctamente. Te responderé lo antes posible.",
+    "back_home": "Volver al inicio"
+  }
+}

@@ -832,7 +832,7 @@
                         colaboración con otros miembros del equipo, incluyendo
                         diseñadores UX y desarrolladores, para asegurar que el
                         diseño se ajuste a los objetivos del negocio y las
-                        necesidades de los usuarios. También me encargé de
+                        necesidades de los usuarios. También me encargué de
                         crear y mantener la documentación de diseño y realizar
                         pruebas de usabilidad para garantizar una experiencia
                         de usuario óptima.
@@ -1606,29 +1606,40 @@
             <div class="contact--form">
               <div class="contact-form-status"></div>
 
-              <form action="contact.php" method="post">
+              <form action="https://formsubmit.co/rivafelix@gmail.com" method="POST">
+                <!-- Redirects to a custom "Gracias" page -->
+                <input type="hidden" name="_next" value="https://felixrivas.github.io/thankyou.html">
+                <!-- Evitar captcha -->
+                <input type="hidden" name="_captcha" value="false">
+                <!-- Asunto del correo -->
+                <input type="hidden" name="_subject" value="Nuevo contacto desde tu portafolio">
+                <!-- Honeypot spam prevention -->
+                <input type="hidden" name="_honey" style="display:none">
+                <!-- Campo oculto para evitar bots -->
+                <input type="text" name="_honey" style="display:none">
+                
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
-                      <input type="text" name="contactName" class="form-control" placeholder="Nombre" />
+                      <input type="text" name="name" class="form-control" placeholder="Nombre" required />
                     </div>
                   </div>
-
+        
                   <div class="col-md-6">
                     <div class="form-group">
-                      <input type="email" name="contactEmail" class="form-control" placeholder="Email" />
+                      <input type="email" name="email" class="form-control" placeholder="Email" required />
                     </div>
                   </div>
                 </div>
-
+        
                 <div class="form-group">
-                  <input type="text" name="contactSubject" class="form-control" placeholder="Asunto" />
+                  <input type="text" name="subject" class="form-control" placeholder="Asunto" />
                 </div>
-
+        
                 <div class="form-group">
-                  <textarea name="contactMessage" class="form-control" rows="9" placeholder="Mensaje"></textarea>
+                  <textarea name="message" class="form-control" rows="9" placeholder="Mensaje" required></textarea>
                 </div>
-
+        
                 <input type="submit" value="Enviar" class="submit-btn btn--primary" />
               </form>
             </div>
@@ -1731,20 +1742,31 @@
 
           <!-- Modal Body Start-->
           <div class="modal-body">
-            <form action="hire-me.php" method="post" id="popupContactForm">
+            <form action="https://formsubmit.co/rivafelix@gmail.com" method="POST">
+              <!-- Redirects to a custom "Gracias" page -->
+              <input type="hidden" name="_next" value="https://felixrivas.github.io/thankyou.html">
+              <!-- Evitar captcha -->
+              <input type="hidden" name="_captcha" value="false">
+              <!-- Asunto del correo -->
+              <input type="hidden" name="_subject" value="Solicitud de proyecto desde tu portafolio">
+              <!-- Honeypot spam prevention -->
+              <input type="hidden" name="_honey" style="display:none">
+              <!-- Campo oculto para evitar bots -->
+              <input type="text" name="_honey" style="display:none">
+
               <div class="row">
                 <div class="col-md-8 form-controls">
                   <div class="row">
-                    <div class="col-md-6 name">
-                      <input type="text" name="name" placeholder="Your Name..." />
+                    <div class="col-md-6 name"></div>
+                      <input type="text" name="name" placeholder="Tu Nombre..." required />
                     </div>
 
                     <div class="col-md-6 email">
-                      <input type="email" name="email" placeholder="Please Enter Your Email..." />
+                      <input type="email" name="email" placeholder="Tu Email..." required />
                     </div>
 
                     <div class="col-md-6 project-title">
-                      <input type="text" name="project_title" placeholder="Your Project Title..." />
+                      <input type="text" name="project_title" placeholder="Título del Proyecto..." />
                     </div>
 
                     <div class="col-md-6 case-category">
@@ -1761,23 +1783,12 @@
                       </select>
                     </div>
                     <div class="col-md-6 date">
-                      <input type="text" name="date" class="DatePicker bg-fa-calender" placeholder="-Estimate Date-" />
+                      <input type="text" name="date" class="DatePicker bg-fa-calender" placeholder="-Fecha estimada-" />
                     </div>
                     <div class="col-md-12 message">
-                      <textarea name="message" rows="9">Tu mensaje...</textarea>
+                      <textarea name="message" rows="9" placeholder="Tu mensaje..." required></textarea>
                     </div>
-                    <div class="col-md-4 text-center attachment reset-padding">
-                      <label for="fileUpload">
-                        <i class="glyphicon glyphicon-paperclip"></i>
-                        Adjuntar archivo
-                      </label>
-
-                      <input type="file" name="attachment" id="fileUpload" />
-                    </div>
-
-                    <div class="col-md-8 attachment-status">
-                      <span>Ningún archivo elegido</span>
-                    </div>
+                    <!-- Nota: Eliminamos la función de cargar archivos ya que FormSubmit gratuito no la soporta -->
                   </div>
                 </div>
                 <div class="col-md-4 estimate-container">
@@ -1794,10 +1805,9 @@
                     <div class="radio">
                       <input type="radio" name="estimate" value="yes" id="estimateONE" /><label for="estimateONE">Sí,
                         necesito un costo estimado de los servicios. Entiendo que necesito entre 2 y 4 días hábiles para
-                        recibir el
-                        presupuesto.</label>
+                        recibir el presupuesto.</label>
                     </div>
-                    <input type="submit" value="SEND OFFER" class="submit-btn btn--primary btn-block" />
+                    <input type="submit" value="ENVIAR SOLICITUD" class="submit-btn btn--primary btn-block" />
                   </div>
                 </div>
               </div>
@@ -1859,6 +1869,9 @@
 
   <!-- ==== Main Script ==== -->
   <script src="js/main.js"></script>
+  
+  <!-- ==== Language Support ==== -->
+  <script src="js/i18n/language.js"></script>
 </body>
 
 </html>

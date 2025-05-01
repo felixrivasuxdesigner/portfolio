@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Me",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "banner": {
+    "title": "Let's Build <span class=\"thick\">Something</span> <span class=\"thick\">Great</span> Together",
+    "description": "I'm a <strong>Graphic Designer</strong> by profession and UX/UI Designer by vocation, located in <strong>Santiago de Chile, LATAM</strong>.",
+    "button": "Let's Talk"
+  },
+  "about": {
+    "title": "About Me",
+    "who_am_i": "Who <strong>am I</strong>?",
+    "experience_in": "Experience <strong>in</strong>",
+    "download_cv": "Download My CV",
+    "technologies": "Some of the technologies I have experience with"
+  },
+  "cv_sections": {
+    "education": "<strong>Edu</strong>cation",
+    "experience": "<strong>Ex</strong>perience"
+  },
+  "services": {
+    "title": "What I Do",
+    "web_design": {
+      "title": "<strong>Web</strong> Design",
+      "description": "I focus on creating attractive and accessible user interfaces for websites and web applications."
+    },
+    "flow": {
+      "title": "User <strong>Flow</strong> &amp; <strong>Wireframing</strong>",
+      "description": "The service seeks to create a logical and efficient structure for the user, and improve the user's interaction with the digital product. The ultimate goal is to provide an intuitive and satisfying user experience."
+    },
+    "visual": {
+      "title": "<strong>Visual</strong> Design",
+      "description": "Through the use of colors, typography, images and other visual elements, I aim to create an attractive and coherent aesthetic for the digital product."
+    },
+    "mobile": {
+      "title": "<strong>Mobile</strong> App Design",
+      "description": "Through the use of intuitive designs, effective functionalities and an attractive visual design, I create a user experience that generates a positive and memorable impact on the user."
+    },
+    "ux_ui": {
+      "title": "<strong>UX</strong> &amp; UI Design",
+      "description": "Through the use of user research techniques, wireframing, prototyping, and usability testing, I aim to create a coherent and meaningful user experience that generates a positive impact on the user's perception of the digital product."
+    }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "all": "All",
+    "view_project": "View Project",
+    "case_study": "Case Study",
+    "web_design": "Web Design"
+  },
+  "feedback": {
+    "title": "Recommendations",
+    "why_me": "Why me?"
+  },
+  "contact": {
+    "title": "Contact",
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send"
+  },
+  "hire_me": {
+    "title": "DO YOU HAVE A PROJECT?",
+    "subtitle": "I'm ready to help you. Just write the details below.",
+    "name": "Your Name...",
+    "email": "Your Email...",
+    "project_title": "Your Project Title...",
+    "category": "-Select case category-",
+    "budget": "-Budget-",
+    "estimate_date": "-Estimate Date-",
+    "message": "Your message...",
+    "estimate_question": "Do you require a budget?",
+    "no_estimate": "No estimate required",
+    "yes_estimate": "Yes, I need a cost estimate for services. I understand it takes 2-4 business days to receive the quote.",
+    "send_button": "SEND REQUEST"
+  },
+  "footer": {
+    "copyright": "Copyright &copy; 2023 <a href=\"/\">Félix Rivas</a>. All Rights Reserved."
+  },
+  "thankyou": {
+    "title": "Thank you for contacting me!",
+    "message": "Your message has been sent successfully. I will respond as soon as possible.",
+    "back_home": "Back to home"
+  }
+}
