@@ -70,11 +70,20 @@ function applyTranslations() {
   // Translate section titles
   const sectionTitles = document.querySelectorAll('.section--title h2');
   sectionTitles.forEach((title) => {
-    if (title.textContent.includes('Sobre mi')) {
+    if (
+      title.textContent.includes('Sobre mi') ||
+      title.textContent.includes('About Me')
+    ) {
       title.innerHTML = `<strong>${translations.about.title}</strong>`;
-    } else if (title.textContent.includes('Lo que hago')) {
+    } else if (
+      title.textContent.includes('Lo que hago') ||
+      title.textContent.includes('What I Do')
+    ) {
       title.innerHTML = `<strong>${translations.services.title}</strong>`;
-    } else if (title.textContent.includes('Portafolio')) {
+    } else if (
+      title.textContent.includes('Portafolio') ||
+      title.textContent.includes('Portfolio')
+    ) {
       title.innerHTML = `<strong>${translations.portfolio.title}</strong>`;
     }
   });
@@ -93,18 +102,121 @@ function applyTranslations() {
     if (experienceIn) experienceIn.innerHTML = translations.about.experience_in;
     if (technologies)
       technologies.textContent = translations.about.technologies;
-    if (downloadCV) downloadCV.textContent = translations.about.download_cv;
+    if (downloadCV) {
+      downloadCV.textContent = translations.about.download_cv;
+      // Actualizar la URL del CV según el idioma
+      if (translations.about.cv_url) {
+        downloadCV.href = translations.about.cv_url;
+      }
+    }
+
+    // Traducir párrafos
+    const paragraphs = aboutSection.querySelectorAll('.col-md-6:first-child p');
+    if (paragraphs.length >= 3) {
+      paragraphs[0].textContent = translations.about.paragraphs.first;
+      paragraphs[1].textContent = translations.about.paragraphs.second;
+      paragraphs[2].textContent = translations.about.paragraphs.third;
+    }
   }
 
-  // Education and Experience section titles - FIXED
+  // Education and Experience section titles
   const infoWrappers = document.querySelectorAll('.about--info-wrapper h3');
   infoWrappers.forEach((title) => {
-    if (title.textContent.includes('Edu')) {
+    if (
+      title.textContent.includes('Edu') ||
+      title.textContent.includes('Education')
+    ) {
       title.innerHTML = translations.cv_sections.education;
-    } else if (title.textContent.includes('Ex')) {
+    } else if (
+      title.textContent.includes('Ex') ||
+      title.textContent.includes('Experience')
+    ) {
       title.innerHTML = translations.cv_sections.experience;
     }
   });
+
+  // Translate Education section items
+  if (translations.education && Array.isArray(translations.education)) {
+    const educationWrapper = document.querySelector(
+      '.about--info-wrapper:first-of-type'
+    );
+    if (educationWrapper) {
+      const educationItems =
+        educationWrapper.querySelectorAll('.about--info-item');
+
+      // Only translate if we have the same number of items as in the translation file
+      if (educationItems.length === translations.education.length) {
+        educationItems.forEach((item, index) => {
+          const educationData = translations.education[index];
+          const dateElement = item.querySelector('.col-xs-4 p');
+          const institutionElement = item.querySelector('.col-xs-4 h5');
+          const titleElement = item.querySelector('.col-xs-8 h4');
+          const descriptionElement = item.querySelector('.col-xs-8 p');
+
+          if (dateElement) dateElement.textContent = educationData.date;
+          if (institutionElement)
+            institutionElement.innerHTML = `<strong>${educationData.institution}</strong>`;
+          if (titleElement) titleElement.innerHTML = educationData.title;
+          if (descriptionElement)
+            descriptionElement.textContent = educationData.description;
+        });
+      }
+    }
+  }
+
+  // Translate Experience section items
+  if (translations.experience && Array.isArray(translations.experience)) {
+    // Buscar el wrapper de experiencia buscando el contenedor que tiene el texto "Experiencia" en su título
+    const experienceWrappers = document.querySelectorAll(
+      '.about--info-wrapper'
+    );
+    let experienceWrapper = null;
+
+    // Recorrer todos los wrappers para encontrar el que tiene el título de experiencia
+    experienceWrappers.forEach((wrapper) => {
+      const title = wrapper.querySelector('h3');
+      if (
+        title &&
+        (title.textContent.includes('Ex') ||
+          title.textContent.includes('Experience'))
+      ) {
+        experienceWrapper = wrapper;
+      }
+    });
+
+    if (experienceWrapper) {
+      const experienceItems =
+        experienceWrapper.querySelectorAll('.about--info-item');
+
+      // Solo traducir si tenemos el mismo número de elementos que en el archivo de traducción
+      if (experienceItems.length === translations.experience.length) {
+        experienceItems.forEach((item, index) => {
+          const experienceData = translations.experience[index];
+          const dateElement = item.querySelector('.col-xs-4 p');
+          const companyElement = item.querySelector('.col-xs-4 h5');
+          const titleElement = item.querySelector('.col-xs-8 h4');
+          const descriptionElement = item.querySelector('.col-xs-8 p');
+
+          if (dateElement) dateElement.textContent = experienceData.date;
+          if (companyElement)
+            companyElement.innerHTML = `<strong>${experienceData.company}</strong>`;
+          if (titleElement) titleElement.innerHTML = experienceData.title;
+          if (descriptionElement)
+            descriptionElement.textContent = experienceData.description;
+        });
+      } else {
+        console.log(
+          'Mismatch between experience items in HTML and translation file:',
+          experienceItems.length,
+          'items in HTML,',
+          translations.experience.length,
+          'items in translation'
+        );
+      }
+    } else {
+      console.log('Experience wrapper not found');
+    }
+  }
 
   // Services section
   const serviceItems = document.querySelectorAll('.service--item');
@@ -152,9 +264,15 @@ function applyTranslations() {
 
   // Translate gallery items case study/web design labels
   document.querySelectorAll('.gallery--case-study').forEach((item) => {
-    if (item.textContent.includes('Caso de Estudio')) {
+    if (
+      item.textContent.includes('Caso de Estudio') ||
+      item.textContent.includes('Case Study')
+    ) {
       item.textContent = translations.portfolio.case_study;
-    } else if (item.textContent.includes('Diseño Web')) {
+    } else if (
+      item.textContent.includes('Diseño Web') ||
+      item.textContent.includes('Web Design')
+    ) {
       item.textContent = translations.portfolio.web_design;
     }
   });
@@ -162,6 +280,33 @@ function applyTranslations() {
   // Translate "View Project" buttons
   document.querySelectorAll('.gallery-overlay .btn').forEach((btn) => {
     btn.textContent = translations.portfolio.view_project;
+  });
+
+  // Translate project details in modals
+  const galleryModals = document.querySelectorAll('.gallery--details');
+  galleryModals.forEach((modal) => {
+    const modalId = modal.id;
+    let projectKey = '';
+
+    // Determine which project this modal is for
+    if (modalId.includes('Wallet')) {
+      projectKey = 'wallet';
+    } else if (modalId.includes('Factoring')) {
+      projectKey = 'factoring';
+    } else if (modalId.includes('Nomadix')) {
+      projectKey = 'nomadix';
+    }
+
+    if (projectKey && translations.portfolio.projects[projectKey]) {
+      const project = translations.portfolio.projects[projectKey];
+      const title = modal.querySelector('.modal-title');
+      const categories = modal.querySelector('.modal-header p');
+      const description = modal.querySelector('.gallery--description p');
+
+      if (title) title.textContent = project.title;
+      if (categories) categories.textContent = project.categories;
+      if (description) description.textContent = project.description;
+    }
   });
 
   // Feedback section
@@ -172,6 +317,111 @@ function applyTranslations() {
 
   if (feedbackTitle) feedbackTitle.textContent = translations.feedback.title;
   if (whyMeTitle) whyMeTitle.textContent = translations.feedback.why_me;
+
+  // Feedback accordion items
+  const accordionItems = document.querySelectorAll('#feedbackA .panel-title');
+  if (accordionItems.length >= 3) {
+    // Specialization
+    const specializationTitle = accordionItems[0];
+    if (specializationTitle) {
+      specializationTitle.innerHTML =
+        translations.feedback.specializations.title +
+        '<i class="fa fa-minus"></i>';
+    }
+
+    const specializationBody = document.querySelector(
+      '#feedbackA01 .panel-body'
+    );
+    if (specializationBody) {
+      specializationBody.textContent =
+        translations.feedback.specializations.description;
+    }
+
+    // Leadership
+    const leadershipTitle = accordionItems[1];
+    if (leadershipTitle) {
+      leadershipTitle.innerHTML =
+        translations.feedback.leadership.title + '<i class="fa fa-minus"></i>';
+    }
+
+    const leadershipBody = document.querySelector('#feedbackA02 .panel-body');
+    if (leadershipBody) {
+      leadershipBody.textContent = translations.feedback.leadership.description;
+    }
+
+    // Innovation
+    const innovationTitle = accordionItems[2];
+    if (innovationTitle) {
+      innovationTitle.innerHTML =
+        translations.feedback.innovation.title + '<i class="fa fa-minus"></i>';
+    }
+
+    const innovationBody = document.querySelector('#feedbackA03 .panel-body');
+    if (innovationBody) {
+      innovationBody.textContent = translations.feedback.innovation.description;
+    }
+  }
+
+  // Testimonials
+  const testimonialItems = document.querySelectorAll('.feedback--item');
+  if (testimonialItems.length >= 4) {
+    const testimonials = translations.feedback.testimonials;
+
+    // First testimonial
+    const testimonial1 = testimonialItems[0];
+    const testimonialText1 = testimonial1.querySelector('p');
+    const testimonialName1 = testimonial1.querySelector('.cite');
+
+    if (testimonialText1)
+      testimonialText1.textContent = testimonials.person1.text;
+    if (testimonialName1)
+      testimonialName1.textContent = testimonials.person1.name;
+
+    // Second testimonial
+    const testimonial2 = testimonialItems[1];
+    const testimonialText2 = testimonial2.querySelector('p');
+    const testimonialName2 = testimonial2.querySelector('.cite');
+
+    if (testimonialText2)
+      testimonialText2.textContent = testimonials.person2.text;
+    if (testimonialName2)
+      testimonialName2.textContent = testimonials.person2.name;
+
+    // Third testimonial
+    const testimonial3 = testimonialItems[2];
+    const testimonialText3 = testimonial3.querySelector('p');
+    const testimonialName3 = testimonial3.querySelector('.cite');
+
+    if (testimonialText3)
+      testimonialText3.textContent = testimonials.person3.text;
+    if (testimonialName3)
+      testimonialName3.textContent = testimonials.person3.name;
+
+    // Fourth testimonial
+    const testimonial4 = testimonialItems[3];
+    const testimonialText4 = testimonial4.querySelector('p');
+    const testimonialName4 = testimonial4.querySelector('.cite');
+
+    if (testimonialText4)
+      testimonialText4.textContent = testimonials.person4.text;
+    if (testimonialName4)
+      testimonialName4.textContent = testimonials.person4.name;
+  }
+
+  // Counter section
+  const counterItems = document.querySelectorAll('.counter--item');
+  if (counterItems.length >= 4) {
+    const projectsCounter = counterItems[0].querySelector('.counter--text');
+    const clientsCounter = counterItems[1].querySelector('.counter--text');
+    const linesCounter = counterItems[2].querySelector('.counter--text');
+    const cupsCounter = counterItems[3].querySelector('.counter--text');
+
+    if (projectsCounter)
+      projectsCounter.innerHTML = translations.counter.projects;
+    if (clientsCounter) clientsCounter.innerHTML = translations.counter.clients;
+    if (linesCounter) linesCounter.innerHTML = translations.counter.lines;
+    if (cupsCounter) cupsCounter.innerHTML = translations.counter.cups;
+  }
 
   // Contact section
   const contactTitle = document.querySelector('.contact--address h2');
@@ -184,13 +434,13 @@ function applyTranslations() {
     const emailField = contactForm.querySelector('input[name="email"]');
     const subjectField = contactForm.querySelector('input[name="subject"]');
     const messageField = contactForm.querySelector('textarea[name="message"]');
-    const submitBtn = contactForm.querySelector('input[type="submit"]');
+    const submitBtn = contactForm.querySelector('button[type="submit"]');
 
     if (nameField) nameField.placeholder = translations.contact.name;
     if (emailField) emailField.placeholder = translations.contact.email;
     if (subjectField) subjectField.placeholder = translations.contact.subject;
     if (messageField) messageField.placeholder = translations.contact.message;
-    if (submitBtn) submitBtn.value = translations.contact.send;
+    if (submitBtn) submitBtn.textContent = translations.contact.send;
   }
 
   // Hire Me Modal
@@ -210,14 +460,14 @@ function applyTranslations() {
       'input[name="project_title"]'
     );
     const messageField = hireModal.querySelector('textarea[name="message"]');
-    const submitBtn = hireModal.querySelector('input[type="submit"]');
+    const submitBtn = hireModal.querySelector('button[type="submit"]');
 
     if (nameField) nameField.placeholder = translations.hire_me.name;
     if (emailField) emailField.placeholder = translations.hire_me.email;
     if (projectTitleField)
       projectTitleField.placeholder = translations.hire_me.project_title;
     if (messageField) messageField.placeholder = translations.hire_me.message;
-    if (submitBtn) submitBtn.value = translations.hire_me.send_button;
+    if (submitBtn) submitBtn.textContent = translations.hire_me.send_button;
 
     // Category select
     const categorySelect = hireModal.querySelector('select[name="category"]');
@@ -250,6 +500,18 @@ function applyTranslations() {
   // Footer copyright
   const copyright = document.querySelector('.footer--copyright p');
   if (copyright) copyright.innerHTML = translations.footer.copyright;
+
+  // Thank you page (if we're on it)
+  if (window.location.href.includes('thankyou.html')) {
+    const thankYouTitle = document.querySelector('h1');
+    const thankYouMessage = document.querySelector('.thank-you-message');
+    const backButton = document.querySelector('.back-home');
+
+    if (thankYouTitle) thankYouTitle.textContent = translations.thankyou.title;
+    if (thankYouMessage)
+      thankYouMessage.textContent = translations.thankyou.message;
+    if (backButton) backButton.textContent = translations.thankyou.back_home;
+  }
 }
 
 // Add language selector to the navigation
@@ -257,31 +519,31 @@ function addLanguageSelector() {
   // Create the language switcher HTML
   const languageSwitcher = document.createElement('div');
   languageSwitcher.className = 'language-switcher';
-  
+
   // Estilos para el contenedor
   languageSwitcher.style.display = 'inline-block';
   languageSwitcher.style.float = 'right';
   languageSwitcher.style.margin = '15px 10px 0 0';
   languageSwitcher.style.zIndex = '1000';
-  
+
   // Define flags and language labels
   const languages = {
-    'es': {
+    es: {
       flag: '🇪🇸',
-      label: 'ES'
+      label: 'ES',
     },
-    'en': {
+    en: {
       flag: '🇺🇸',
-      label: 'EN'
-    }
+      label: 'EN',
+    },
   };
-  
+
   // Create buttons for each language
-  Object.keys(languages).forEach(lang => {
+  Object.keys(languages).forEach((lang) => {
     const button = document.createElement('button');
     button.className = 'lang-btn';
     button.setAttribute('data-lang', lang);
-    
+
     // Estilos para los botones
     button.style.background = 'none';
     button.style.border = '1px solid #ddd';
@@ -292,18 +554,19 @@ function addLanguageSelector() {
     button.style.fontWeight = lang === currentLanguage ? 'bold' : 'normal';
     button.style.marginLeft = '5px';
     button.style.borderRadius = '3px';
-    button.style.backgroundColor = lang === currentLanguage ? '#2c3e50' : 'rgba(0,0,0,0.5)';
-    
+    button.style.backgroundColor =
+      lang === currentLanguage ? '#2c3e50' : 'rgba(0,0,0,0.5)';
+
     button.innerHTML = `${languages[lang].flag} ${languages[lang].label}`;
-    
+
     // Add click event to switch language
-    button.addEventListener('click', function() {
+    button.addEventListener('click', function () {
       changeLanguage(lang);
     });
-    
+
     languageSwitcher.appendChild(button);
   });
-  
+
   // Insert the language switcher into the page
   // Cambiamos la estrategia de inserción para usar un mejor lugar en el DOM
   const headerNav = document.querySelector('#headerNav');
@@ -313,7 +576,9 @@ function addLanguageSelector() {
     console.log('Language switcher added before headerNav');
   } else {
     // Alternativa: intentamos ponerlo en el área de custom button
-    const customBtn = document.querySelector('.header--custom-btn.hidden-sm.hidden-xs');
+    const customBtn = document.querySelector(
+      '.header--custom-btn.hidden-sm.hidden-xs'
+    );
     if (customBtn) {
       customBtn.parentNode.insertBefore(languageSwitcher, customBtn);
       console.log('Language switcher added near custom button');
@@ -324,7 +589,9 @@ function addLanguageSelector() {
         navbar.appendChild(languageSwitcher);
         console.log('Language switcher added to navbar container');
       } else {
-        console.error('Could not find appropriate place to add language switcher');
+        console.error(
+          'Could not find appropriate place to add language switcher'
+        );
       }
     }
   }
