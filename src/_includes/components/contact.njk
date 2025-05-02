@@ -1,0 +1,68 @@
+<!-- Contact Area Start -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <!-- Contact Address Start -->
+        <div class="contact--address">
+          <h2>{{ translations[locale].contact.title }}</h2>
+
+          <address>
+            <p>
+              <i class="fa fa-map-marker"></i>
+              Santiago, Chile
+            </p>
+
+            <p>
+              <i class="fa fa-envelope-o"></i>
+              <a href="mailto:hello@felixrivas.uxui">hello@felixrivas.uxui</a>
+            </p>
+
+            <p>
+              <i class="fa fa-phone"></i>
+              <a href="tel:+123123456789">+12 (3) 123 456 789</a>
+            </p>
+          </address>
+
+          <!-- Contact Social Start -->
+          <div class="contact--social">
+            <ul>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="#"><i class="fa fa-behance"></i></a></li>
+              <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+          </div>
+          <!-- Contact Social End -->
+        </div>
+        <!-- Contact Address End -->
+      </div>
+
+      <div class="col-md-8">
+        <!-- Contact Form Start -->
+        <div class="contact--form">
+          <form action="/thankyou/" method="get" data-form="validate">
+            <div class="row">
+              <div class="col-md-6">
+                <input type="text" name="name" placeholder="{{ translations[locale].contact.name }}" required>
+              </div>
+
+              <div class="col-md-6">
+                <input type="email" name="email" placeholder="{{ translations[locale].contact.email }}" required>
+              </div>
+            </div>
+
+            <input type="text" name="subject" placeholder="{{ translations[locale].contact.subject }}" required>
+
+            <textarea name="message" rows="6" placeholder="{{ translations[locale].contact.message }}" required></textarea>
+
+            <button type="submit" class="btn btn--primary">{{ translations[locale].contact.send }}</button>
+          </form>
+        </div>
+        <!-- Contact Form End -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Contact Area End -->

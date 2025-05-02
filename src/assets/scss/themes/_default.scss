@@ -1,0 +1,181 @@
+/* 
+ * Tema por defecto para el portfolio
+ */
+
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+@use '../abstracts/functions' as f;
+
+// Estilos generales del tema
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: v.$text-color;
+  background-color: v.$white;
+  overflow-x: hidden;
+}
+
+// Reinicio de estilos para botones
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+// Estilos de enlaces globales
+a {
+  color: v.$accent-color;
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+  &:hover,
+  &:focus {
+    color: f.shade(v.$accent-color, 15%);
+    text-decoration: none;
+  }
+}
+
+// Estilos de contenedores
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: 576px) {
+    max-width: 540px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+
+  @media (min-width: 992px) {
+    max-width: 960px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+  }
+}
+
+// Estilos para secciones
+.section--title {
+  margin-bottom: 60px;
+  text-align: center;
+
+  h2 {
+    color: v.$primary-color;
+    font-size: 36px;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -10px;
+      width: 50px;
+      height: 3px;
+      background-color: v.$accent-color;
+      transform: translateX(-50%);
+    }
+
+    strong {
+      font-weight: v.$heading-font-weight;
+    }
+  }
+}
+
+// Estilos para encabezados
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: v.$heading-font-weight;
+  line-height: 1.2;
+  color: v.$primary-color;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.75rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.25rem;
+}
+h6 {
+  font-size: 1rem;
+}
+
+// Estilo para overlay de fondo
+.bg--overlay {
+  position: relative;
+  z-index: 1;
+}
+
+// Utilidades para centrado vertical
+.vc--parent {
+  display: flex;
+  align-items: center;
+
+  .vc--child {
+    width: 100%;
+  }
+}
+
+// Estilo para botón de volver arriba
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+  transform: scale(0);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+
+  &.show {
+    transform: scale(1);
+    visibility: visible;
+    opacity: 1;
+  }
+
+  a {
+    display: block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    background-color: v.$accent-color;
+    color: v.$white;
+    font-size: 20px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: f.shade(v.$accent-color, 15%);
+      transform: translateY(-3px);
+    }
+  }
+}

@@ -1,0 +1,332 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/functions' as f;
+@use '../abstracts/mixins' as m;
+
+/* 
+ * Estilos para el header
+ */
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: v.$z-index-header;
+  background-color: transparent;
+  padding: f.rem(20px, v.$base-font-size) 0;
+  @include m.transition;
+
+  &.fixed {
+    background-color: v.$white;
+    box-shadow: 0 1px 5px rgba(v.$black, 0.1);
+
+    .logo--img img {
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    .logo--content {
+      h1 {
+        color: v.$primary-color;
+      }
+
+      p {
+        color: v.$secondary-color;
+      }
+    }
+
+    .navbar-nav > li > a {
+      color: v.$primary-color;
+
+      &:hover,
+      &:focus {
+        color: v.$accent-color;
+      }
+    }
+
+    .navbar-toggle .icon-bar {
+      background-color: v.$primary-color;
+    }
+
+    .header--custom-btn {
+      .btn--default {
+        background-color: v.$accent-color;
+        color: v.$white;
+
+        &:hover {
+          background-color: transparent;
+          color: v.$accent-color;
+          border-color: v.$accent-color;
+        }
+      }
+    }
+  }
+
+  .container {
+    @include m.flex-between;
+  }
+
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-header {
+    display: flex;
+    align-items: center;
+  }
+
+  .header--nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  height: auto;
+  text-decoration: none;
+
+  &--img {
+    margin-right: 15px;
+
+    img {
+      height: 50px;
+      width: auto;
+      border-radius: 50%;
+      @include m.transition;
+    }
+  }
+
+  &--content {
+    h1 {
+      margin: 0;
+      font-size: f.rem(24px, v.$base-font-size);
+      font-weight: v.$light-font-weight;
+      color: v.$white;
+      line-height: 1.2;
+
+      strong {
+        font-weight: v.$heading-font-weight;
+      }
+    }
+
+    p {
+      margin: 0;
+      font-size: f.rem(14px, v.$base-font-size);
+      color: v.$white;
+      @include m.transition;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+.navbar-nav {
+  @include m.flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  > li {
+    margin-left: f.rem(30px, v.$base-font-size);
+
+    > a {
+      color: v.$white;
+      font-size: f.rem(15px, v.$base-font-size);
+      font-weight: v.$heading-font-weight;
+      padding: f.rem(10px, v.$base-font-size) 0;
+      position: relative;
+      display: block;
+      text-transform: uppercase;
+      @include m.transition;
+
+      &:hover,
+      &:focus {
+        color: v.$accent-color;
+        text-decoration: none;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: v.$accent-color;
+        @include m.transition;
+      }
+
+      &:hover::after,
+      &:focus::after {
+        width: 100%;
+      }
+    }
+
+    &.active > a {
+      color: v.$accent-color;
+
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: #{v.$breakpoint-medium - 1px}) {
+    display: none;
+
+    &.in {
+      @include m.flex-column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: v.$white;
+      box-shadow: 0 5px 10px rgba(v.$black, 0.1);
+      padding: f.rem(10px, v.$base-font-size) 0;
+
+      > li {
+        margin-left: 0;
+
+        > a {
+          color: v.$primary-color;
+          padding: f.rem(12px, v.$base-font-size) f.rem(20px, v.$base-font-size);
+
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Botón de menú móvil
+.navbar-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: f.rem(10px, v.$base-font-size);
+
+  .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: v.$white;
+    @include m.transition;
+
+    + .icon-bar {
+      margin-top: 4px;
+    }
+  }
+
+  &[aria-expanded='true'] {
+    .icon-bar:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .icon-bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    .icon-bar:nth-child(3) {
+      transform: rotate(-45deg) translate(4px, -4px);
+    }
+  }
+
+  @media (max-width: #{v.$breakpoint-medium - 1px}) {
+    display: block;
+  }
+}
+
+.header--custom-btn {
+  .btn--default {
+    display: inline-block;
+    background-color: transparent;
+    color: v.$white;
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-weight: v.$heading-font-weight;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid v.$white;
+
+    i {
+      margin-right: 8px;
+    }
+
+    &:hover {
+      background-color: v.$white;
+      color: v.$accent-color;
+    }
+  }
+
+  &.hidden-sm,
+  &.hidden-xs {
+    @media (max-width: #{v.$breakpoint-small - 1px}) {
+      display: none;
+    }
+  }
+
+  &.hidden-md,
+  &.hidden-lg {
+    @media (min-width: #{v.$breakpoint-medium}) {
+      display: none;
+    }
+  }
+}
+
+// Media queries para dispositivos móviles
+@media (max-width: #{v.$breakpoint-medium - 1px}) {
+  #header {
+    .navbar {
+      flex-wrap: wrap;
+    }
+
+    .navbar-header {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    .header--nav {
+      width: 100%;
+      flex-basis: 100%;
+
+      &.collapse {
+        display: none;
+
+        &.in {
+          display: block;
+        }
+      }
+
+      .navbar-nav {
+        margin: 0;
+        padding: 10px 0;
+        flex-direction: column;
+
+        > li {
+          margin-left: 0;
+          width: 100%;
+
+          > a {
+            padding: 10px 15px;
+            display: block;
+            border-bottom: 1px solid rgba(v.$white, 0.1);
+          }
+        }
+      }
+    }
+  }
+}

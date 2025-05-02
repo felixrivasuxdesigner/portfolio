@@ -1,0 +1,172 @@
+{
+  "header": {
+    "role": "Diseñador UX/UI",
+    "home": "Inicio",
+    "about": "Sobre Mí",
+    "services": "Servicios",
+    "portfolio": "Portafolio",
+    "feedback": "Testimonios",
+    "contact": "Contacto",
+    "hire_me": "Contrátame"
+  },
+  "banner": {
+    "title": "Creemos <span class=\"thick\">Experiencias</span> <span class=\"thick\">Excepcionales</span> Juntos",
+    "description": "Soy <strong>Líder en Diseño UX/UI</strong> con raíces en diseño gráfico, transformando espacios digitales desde <strong>Santiago de Chile, LATAM</strong>.",
+    "button": "Conectemos"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "who_am_i": "¿Quién <strong>soy</strong>?",
+    "experience_in": "Con experiencia <strong>en</strong>",
+    "download_cv": "Descarga Mi CV",
+    "cv_url": "/assets/resumen/Felix-Rivas-UXUI-Designer-ES.pdf",
+    "technologies": "Tecnologías con las que Trabajo",
+    "paragraphs": {
+      "first": "Con más de 12 años de trayectoria en medios, banca, seguros y retail, me he especializado en crear interfaces intuitivas y experiencias significativas para aplicaciones móviles y web. Mi experiencia abarca tecnologías front-end (HTML, CSS, Sass, JavaScript, React) y herramientas de diseño (Sketch, Photoshop, After Effects, InDesign, Final Cut Pro). Actualmente, exploro cómo la IA está transformando las prácticas de diseño y creando nuevas posibilidades para experiencias centradas en el usuario.",
+      "second": "A lo largo de mi carrera, he participado y liderado equipos multidisciplinarios de diseño y desarrollo. En el ámbito del Diseño de Productos, he realizado investigaciones exhaustivas con usuarios para construir marcos de datos que iluminen sus verdaderas necesidades y deseos. Este enfoque basado en evidencia me permite crear experiencias atractivas que mejoran significativamente cómo las personas interactúan con los productos digitales, impulsando tanto la satisfacción del usuario como los resultados comerciales.",
+      "third": "Mi visión profesional va más allá de los proyectos inmediatos—estoy comprometido con el avance de mi carrera a través de soluciones innovadoras que mejoren tangiblemente la vida de las personas mediante un diseño accesible y reflexivo. Cada interacción digital presenta una oportunidad para crear una experiencia más intuitiva y satisfactoria."
+    }
+  },
+  "cv_sections": {
+    "education": "<strong>Edu</strong>cación",
+    "experience": "<strong>Ex</strong>periencia"
+  },
+  "education": [
+    {
+      "date": "Ene 2024",
+      "institution": "IMF Smart Education",
+      "title": "<strong>Master en Gestión </strong>de Proyectos",
+      "description": "En un entorno cada vez más incierto y dinámico, dominar un único marco de gestión de proyectos resulta insuficiente. La excelencia en liderazgo de proyectos requiere conocimiento interdisciplinario, dominio de múltiples estándares y la capacidad de discernir la metodología apropiada para cada contexto único de proyecto."
+    },
+    {
+      "date": "Ene 2023",
+      "institution": "Udemy",
+      "title": "<strong>Inteligencia Artificial </strong>para Negocios",
+      "description": "Desarrollé habilidades prácticas para implementar soluciones de IA que abordan desafíos empresariales reales en diversas industrias y áreas funcionales."
+    }
+  ],
+  "experience": [
+    {
+      "date": "Jul 2023 - Ene 2024",
+      "company": "Emergya",
+      "title": "<strong>Diseñador </strong>UX/UI",
+      "description": "Lideré el diseño de interfaces intuitivas, accesibles y visualmente atractivas que equilibran objetivos de negocio con necesidades de usuarios. Realicé investigación estratégica de mercado y análisis de datos de usuarios para informar decisiones de diseño mientras colaboraba con equipos multidisciplinarios para garantizar una implementación fluida."
+    },
+    {
+      "date": "Ago 2022 - Jun 2023",
+      "company": "Shape Creative Studio",
+      "title": "<strong>Diseñador </strong>UX/UI",
+      "description": "Encabecé la creación de interfaces centradas en el usuario que armonizan atractivo estético con elegancia funcional. Aproveché investigación integral de mercado e insights de usuarios para crear experiencias que simultáneamente cumplen requisitos comerciales y abordan necesidades fundamentales de usuarios en diversas plataformas digitales."
+    }
+  ],
+  "services": {
+    "title": "Lo que Hago",
+    "web_design": {
+      "title": "Diseño <strong>Web</strong>",
+      "description": "Creo interfaces atractivas y accesibles para sitios y aplicaciones web que equilibran atractivo visual con funcionalidad intuitiva. Cada diseño prioriza las necesidades del usuario mientras apoya objetivos comerciales clave mediante arquitectura de información reflexiva y layouts responsivos."
+    },
+    "flow": {
+      "title": "Flujo de <strong>Usuario</strong> y <strong>Wireframing</strong>",
+      "description": "Construyo estructuras lógicas y eficientes que guían naturalmente a los usuarios a través de productos digitales. Mediante el mapeo de recorridos completos y wireframing de puntos clave, desarrollo marcos que ofrecen experiencias intuitivas y satisfactorias que reducen la carga cognitiva y aumentan el engagement."
+    },
+    "visual": {
+      "title": "Diseño <strong>Visual</strong>",
+      "description": "Aprovecho el poder del color, tipografía, imágenes y jerarquía visual para crear experiencias digitales cohesivas y emocionalmente resonantes. Mi enfoque de diseño visual equilibra atractivo estético con claridad funcional para reforzar la identidad de marca mientras mejora la usabilidad en todos los puntos de contacto."
+    },
+    "mobile": {
+      "title": "Diseño de <strong>APP</strong> Móviles",
+      "description": "Diseño experiencias móviles que combinan patrones de interacción intuitivos con tratamientos visuales convincentes para crear aplicaciones memorables y efectivas. Mi enfoque considera las limitaciones y oportunidades específicas de cada dispositivo para ofrecer experiencias que se sienten naturales, receptivas y deleitables en pantallas más pequeñas."
+    },
+    "ux_ui": {
+      "title": "Diseño <strong>UX</strong> y UI",
+      "description": "Mediante investigación con usuarios, wireframing, prototipado y pruebas estratégicas, creo experiencias digitales coherentes que conectan con los usuarios tanto a nivel práctico como emocional. Mi enfoque equilibra objetivos comerciales con necesidades del usuario para ofrecer soluciones que resulten intuitivas, significativas y agradables de usar."
+    }
+  },
+  "portfolio": {
+    "title": "Portafolio",
+    "all": "Todos",
+    "view_project": "Ver Proyecto",
+    "case_study": "Caso de Estudio",
+    "web_design": "Diseño Web",
+    "projects": {
+      "wallet": {
+        "title": "Billetera Móvil",
+        "categories": "#Diseño UX #Diseño UI #Prototipo #Diseño",
+        "description": "Esta solución de billetera móvil transformó la gestión financiera para las representantes de ventas de Belcorp, impulsando mejoras significativas en la eficiencia y rentabilidad de la empresa. El proyecto demuestra cómo el diseño UX estratégico puede abordar desafíos empresariales complejos mientras mejora la calidad de vida del usuario final mediante experiencias digitales reflexivas."
+      },
+      "factoring": {
+        "title": "Módulo Factoring",
+        "categories": "#Diseño UX #Diseño UI #Prototipo #Diseño",
+        "description": "Esta modernización integral del módulo de factoring no solo mejoró la eficiencia operativa sino que aumentó significativamente la satisfacción de los usuarios y su experiencia laboral. El proyecto sirve como referente para futuras iniciativas, destacando la importancia crítica de la investigación y diseño centrados en el usuario para desarrollar soluciones tecnológicas efectivas con impacto empresarial medible."
+      },
+      "nomadix": {
+        "title": "Nomadix Adventure",
+        "categories": "#Diseño Web #Diseño #Wireframe",
+        "description": "Este proyecto ejemplifica mi compromiso con la excelencia en diseño, integrando perfectamente creatividad con funcionalidad para ofrecer experiencias digitales convincentes. La plataforma Nomadix Adventure equilibra atractivo visual con navegación intuitiva para crear una solución centrada en el usuario que supera las expectativas."
+      }
+    }
+  },
+  "feedback": {
+    "title": "Recomendaciones",
+    "why_me": "¿Por qué yo?",
+    "specializations": {
+      "title": "Me especializo en diseño UX/UI centrado en las personas",
+      "description": "Con más de 12 años de experiencia en diversas industrias, he desarrollado expertise en la creación de interfaces intuitivas y experiencias significativas tanto para móvil como para web. Mi competencia técnica abarca tecnologías front-end (HTML, CSS, JavaScript, React) y herramientas de diseño (Sketch, Photoshop, After Effects), permitiéndome crear experiencias convincentes que mejoran el engagement del usuario mientras impulsan resultados comerciales."
+    },
+    "leadership": {
+      "title": "He liderado equipos<br/>multidisciplinarios",
+      "description": "Mi experiencia dirigiendo equipos de diseño y desarrollo ha perfeccionado mi capacidad para alinear diversas perspectivas hacia objetivos comunes. Al integrar la investigación de usuarios en nuestro proceso, ayudo a los equipos a crear productos que no solo cumplen requisitos técnicos, sino que mejoran genuinamente cómo las personas interactúan con la tecnología. Este enfoque colaborativo resulta en flujos de trabajo más eficientes y experiencias digitales más impactantes."
+    },
+    "innovation": {
+      "title": "Me apasiona la innovación y el crecimiento continuo",
+      "description": "Mi exploración continua de la inteligencia artificial y su influencia en el diseño refleja mi compromiso de mantenerme a la vanguardia de nuestro campo en rápida evolución. Me impulsa el objetivo de desarrollar soluciones innovadoras que mejoren significativamente la vida de las personas a través del diseño reflexivo. Esta pasión por crear impacto positivo mediante mi trabajo alimenta mi desarrollo profesional continuo y mi enfoque de resolución creativa de problemas."
+    },
+    "testimonials": {
+      "person1": {
+        "text": "Félix demuestra cualidades profesionales ideales con su notable talento y entusiasmo genuino por su oficio. Su iniciativa e ingenio para superar desafíos lo convierten en un miembro de equipo y colaborador invaluable.",
+        "name": "Omar Florez, Especialista QA/QC"
+      },
+      "person2": {
+        "text": "Félix combina excepcional organización con iniciativa, creatividad e innovación. Su compromiso con dominar herramientas de diseño de vanguardia se iguala con su talento para optimizar la capa de presentación de aplicaciones web para máximo impacto y usabilidad.",
+        "name": "Amigley Bastardo, Gerente de Aplicaciones y Sistemas"
+      }
+    }
+  },
+  "counter": {
+    "projects": "<strong>Proyectos</strong> Entregados",
+    "clients": "<strong>Clientes</strong> Satisfechos",
+    "lines": "<strong>Líneas</strong> de <strong>Código</strong>",
+    "cups": "Tazas de <strong>Café</strong>"
+  },
+  "contact": {
+    "title": "Contacto",
+    "name": "Nombre",
+    "email": "Email",
+    "subject": "Asunto",
+    "message": "Mensaje",
+    "send": "Enviar"
+  },
+  "hire_me": {
+    "title": "¿TIENES UN PROYECTO EN MENTE?",
+    "subtitle": "Estoy listo para dar vida a tu visión. Comparte los detalles a continuación para comenzar.",
+    "name": "Tu Nombre...",
+    "email": "Tu Email...",
+    "project_title": "Título del Proyecto...",
+    "category": "-Selecciona categoría del proyecto-",
+    "budget": "-Rango de presupuesto-",
+    "estimate_date": "-Cronograma objetivo-",
+    "message": "Cuéntame sobre tu proyecto...",
+    "estimate_question": "¿Necesitas un presupuesto detallado?",
+    "no_estimate": "No necesito presupuesto por ahora",
+    "yes_estimate": "Sí, me gustaría un estimado de costos. Entiendo que tomará 2-4 días hábiles recibir un presupuesto completo.",
+    "send_button": "ENVIAR SOLICITUD"
+  },
+  "footer": {
+    "copyright": "Copyright &copy; 2025 <a href=\"/\">Félix Rivas</a>. Todos los Derechos Reservados."
+  },
+  "thankyou": {
+    "title": "¡Gracias por contactarme!",
+    "message": "Tu mensaje ha sido enviado con éxito. Me pondré en contacto contigo lo antes posible para conversar sobre cómo podemos trabajar juntos.",
+    "back_home": "Volver al inicio"
+  }
+}

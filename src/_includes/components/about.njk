@@ -1,0 +1,118 @@
+<!-- About Area Start -->
+<div id="about">
+  <div class="container">
+    <!-- Section Title Start -->
+    <div class="section--title">
+      <h2>{{ translations[locale].about.title }}</h2>
+    </div>
+    <!-- Section Title End -->
+
+    <div class="row">
+      <div class="col-md-6">
+        <!-- About Content Start -->
+        <div class="about--content">
+          <h3>{{ translations[locale].about.who_am_i | safe }}</h3>
+          
+          <p>{{ translations[locale].about.paragraphs.first }}</p>
+          <p>{{ translations[locale].about.paragraphs.second }}</p>
+          <p>{{ translations[locale].about.paragraphs.third }}</p>
+
+          <a href="{{ translations[locale].about.cv_url }}" target="_blank" class="btn btn--default">
+            <i class="fa fa-download"></i>{{ translations[locale].about.download_cv }}
+          </a>
+        </div>
+        <!-- About Content End -->
+      </div>
+
+      <div class="col-md-6">
+        <!-- About Progress Items Start -->
+        <div class="about--progress-items">
+          <h3>{{ translations[locale].about.technologies }}</h3>
+
+          <!-- About Progrees Bar Start -->
+          <h4>HTML5 &amp; CSS3</h4>
+          <div class="progress">
+            <div class="progress-bar" data-progress="95">
+              <span>95%</span>
+            </div>
+          </div>
+          <!-- About Progrees Bar End -->
+
+          <!-- About Progrees Bar Start -->
+          <h4>JavaScript</h4>
+          <div class="progress">
+            <div class="progress-bar" data-progress="85">
+              <span>85%</span>
+            </div>
+          </div>
+          <!-- About Progrees Bar End -->
+
+          <!-- About Progrees Bar Start -->
+          <h4>ReactJS</h4>
+          <div class="progress">
+            <div class="progress-bar" data-progress="50">
+              <span>50%</span>
+            </div>
+          </div>
+          <!-- About Progrees Bar End -->
+        </div>
+        <!-- About Progrees Items End -->
+      </div>
+    </div>
+
+    <!-- About Info Start -->
+    <div class="about--info">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="about--info-wrapper">
+            <h3>{{ translations[locale].cv_sections.education | safe }}</h3>
+
+            {% for education in translations[locale].education %}
+            <!-- About Info Item Start -->
+            <div class="about--info-item">
+              <div class="row reset-gutter">
+                <div class="col-xs-4">
+                  <p>{{ education.date }}</p>
+                  <h5><strong>{{ education.institution }}</strong></h5>
+                </div>
+
+                <div class="col-xs-8 about--info-border">
+                  <h4>{{ education.title | safe }}</h4>
+                  <p>{{ education.description }}</p>
+                </div>
+              </div>
+            </div>
+            <!-- About Info Item End -->
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="about--info-wrapper">
+            <h3>{{ translations[locale].cv_sections.experience | safe }}</h3>
+
+            {% for experience in translations[locale].experience %}
+            <!-- About Info Item Start -->
+            <div class="about--info-item">
+              <div class="row reset-gutter">
+                <div class="col-xs-4">
+                  <p>{{ experience.date }}</p>
+                  <h5><strong>{{ experience.company }}</strong></h5>
+                </div>
+
+                <div class="col-xs-8 about--info-border">
+                  <h4>{{ experience.title | safe }}</h4>
+                  <p>{{ experience.description }}</p>
+                </div>
+              </div>
+            </div>
+            <!-- About Info Item End -->
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About Info End -->
+  </div>
+</div>
+<!-- About Area End -->

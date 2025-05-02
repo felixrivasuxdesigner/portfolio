@@ -1,0 +1,186 @@
+/* 
+ * Estilos para la sección de contacto
+ */
+
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+@use '../abstracts/functions' as f;
+
+#contact {
+  padding: 80px 0;
+  
+  h2 {
+    color: v.$primary-color;
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: v.$heading-font-weight;
+    position: relative;
+    padding-bottom: 15px;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 40px;
+      height: 3px;
+      background-color: v.$accent-color;
+    }
+  }
+  
+  // Estilos para la dirección de contacto
+  .contact--address {
+    margin-bottom: 40px;
+    
+    address {
+      margin-bottom: 0;
+      
+      p {
+        margin-bottom: 15px;
+        color: v.$text-color;
+        display: flex;
+        align-items: flex-start;
+        
+        i {
+          color: v.$accent-color;
+          width: 20px;
+          margin-right: 15px;
+          font-size: 18px;
+          position: relative;
+          top: 2px;
+        }
+        
+        a {
+          color: v.$text-color;
+          text-decoration: none;
+          transition: color 0.3s ease;
+          
+          &:hover {
+            color: v.$accent-color;
+          }
+          
+          svg {
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+  
+  // Estilos para las redes sociales
+  .contact--social {
+    margin-bottom: 40px;
+    
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      
+      li {
+        margin-right: 10px;
+        
+        a {
+          display: block;
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+          text-align: center;
+          border-radius: 50%;
+          background-color: v.$primary-color;
+          color: v.$white;
+          font-size: 18px;
+          transition: all 0.3s ease;
+          
+          &:hover {
+            background-color: v.$accent-color;
+            transform: translateY(-3px);
+          }
+        }
+      }
+    }
+  }
+  
+  // Estilos para el formulario de contacto
+  .contact--form {
+    background-color: v.$white;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(v.$black, 0.05);
+    
+    .form-group {
+      margin-bottom: 20px;
+      
+      .form-control {
+        height: auto;
+        padding: 12px 15px;
+        font-size: 14px;
+        border: 1px solid v.$border-color;
+        border-radius: 4px;
+        box-shadow: none;
+        transition: all 0.3s ease;
+        
+        &:focus {
+          border-color: v.$accent-color;
+          box-shadow: 0 0 0 3px rgba(v.$accent-color, 0.1);
+        }
+        
+        &::placeholder {
+          color: v.$secondary-color;
+        }
+      }
+      
+      textarea.form-control {
+        resize: vertical;
+        min-height: 150px;
+      }
+    }
+    
+    .submit-btn {
+      display: inline-block;
+      background-color: v.$accent-color;
+      color: v.$white;
+      padding: 12px 30px;
+      border-radius: 4px;
+      font-weight: v.$heading-font-weight;
+      text-decoration: none;
+      border: none;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      
+      &:hover {
+        background-color: f.shade(v.$accent-color, 15%);
+      }
+    }
+  }
+  
+  // Mensajes de validación del formulario
+  .contact-form-status {
+    margin-bottom: 20px;
+    
+    .alert {
+      padding: 15px;
+      border-radius: 4px;
+      margin-bottom: 0;
+      font-size: 14px;
+      
+      &-success {
+        background-color: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+      }
+      
+      &-danger {
+        background-color: #f8d7da;
+        color: #721c24;
+        border: 1px solid #f5c6cb;
+      }
+    }
+  }
+  
+  @include m.media-breakpoint-down(small) {
+    .contact--address, .contact--social, .contact--form {
+      margin-bottom: 30px;
+    }
+  }
+}

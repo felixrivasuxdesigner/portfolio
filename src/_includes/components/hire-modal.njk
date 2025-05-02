@@ -1,0 +1,87 @@
+<!-- Hire Me Contact Modal Start -->
+<div id="hireMeModal" class="hire-me--modal modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+        <div class="modal-title">
+          <h2>{{ translations[locale].hire_me.title }}</h2>
+          <p>{{ translations[locale].hire_me.subtitle }}</p>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <form action="/thankyou/" method="get" data-form="validate">
+          <div class="form-controls">
+            <div class="row">
+              <div class="col-sm-6">
+                <input type="text" name="name" placeholder="{{ translations[locale].hire_me.name }}" required>
+              </div>
+
+              <div class="col-sm-6">
+                <input type="email" name="email" placeholder="{{ translations[locale].hire_me.email }}" required>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6">
+                <input type="text" name="project_title" placeholder="{{ translations[locale].hire_me.project_title }}" required>
+              </div>
+
+              <div class="col-sm-6 case-category">
+                <select name="category" class="bg-fa-caret-down white">
+                  <option>{{ translations[locale].hire_me.category }}</option>
+                  <option>UX/UI Design</option>
+                  <option>Web Design</option>
+                  <option>Mobile App Design</option>
+                  <option>UX Research</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6 budget">
+                <select name="budget" class="bg-fa-caret-down white">
+                  <option>{{ translations[locale].hire_me.budget }}</option>
+                  <option>$1,000 - $3,000</option>
+                  <option>$3,000 - $6,000</option>
+                  <option>$6,000 - $10,000</option>
+                  <option>$10,000+</option>
+                </select>
+              </div>
+
+              <div class="col-sm-6">
+                <input type="text" name="date" class="DatePicker bg-fa-calender" placeholder="{{ translations[locale].hire_me.estimate_date }}">
+              </div>
+            </div>
+
+            <textarea name="message" rows="5" placeholder="{{ translations[locale].hire_me.message }}" required></textarea>
+
+            <div class="estimate-container">
+              <div class="estimate-text">
+                <h4>{{ translations[locale].hire_me.estimate_question }}</h4>
+              </div>
+
+              <div class="radio-text">
+                <div class="radio">
+                  <input type="radio" name="estimate" id="estimateZERO" value="0" checked>
+                  <label for="estimateZERO">{{ translations[locale].hire_me.no_estimate }}</label>
+                </div>
+
+                <div class="radio">
+                  <input type="radio" name="estimate" id="estimateONE" value="1">
+                  <label for="estimateONE">{{ translations[locale].hire_me.yes_estimate }}</label>
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn--primary">{{ translations[locale].hire_me.send_button }}</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Hire Me Contact Modal End -->

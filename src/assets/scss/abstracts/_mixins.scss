@@ -1,0 +1,97 @@
+@use 'variables' as v;
+
+// Mixins para media queries responsivas
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == small {
+    @media (min-width: v.$breakpoint-small) {
+      @content;
+    }
+  } @else if $breakpoint == medium {
+    @media (min-width: v.$breakpoint-medium) {
+      @content;
+    }
+  } @else if $breakpoint == large {
+    @media (min-width: v.$breakpoint-large) {
+      @content;
+    }
+  } @else if $breakpoint == xlarge {
+    @media (min-width: v.$breakpoint-xlarge) {
+      @content;
+    }
+  }
+}
+
+// Media query para breakpoints hacia abajo (max-width)
+@mixin media-breakpoint-down($breakpoint) {
+  @if $breakpoint == small {
+    @media (max-width: #{v.$breakpoint-small - 1}) {
+      @content;
+    }
+  } @else if $breakpoint == medium {
+    @media (max-width: #{v.$breakpoint-medium - 1}) {
+      @content;
+    }
+  } @else if $breakpoint == large {
+    @media (max-width: #{v.$breakpoint-large - 1}) {
+      @content;
+    }
+  } @else if $breakpoint == xlarge {
+    @media (max-width: #{v.$breakpoint-xlarge - 1}) {
+      @content;
+    }
+  }
+}
+
+// Flexbox mixins
+@mixin flex {
+  display: flex;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// Transiciones
+@mixin transition($property: all, $duration: 0.3s, $timing: ease) {
+  transition: $property $duration $timing;
+}
+
+// Box shadow
+@mixin box-shadow($shadow...) {
+  box-shadow: $shadow;
+}
+
+// Texto truncado con ellipsis
+@mixin text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// Centrar absolutamente
+@mixin center-absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// Pseudo elements
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+  content: $content;
+  display: $display;
+  position: $pos;
+}

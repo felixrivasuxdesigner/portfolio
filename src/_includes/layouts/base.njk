@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="{{ locale | default('es') }}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  
+  <title>{{ title | default('Félix Rivas UX/UI Designer') }}</title>
+  
+  <meta name="description" content="{{ description | default('') }}">
+  <meta name="author" content="Félix Rivas">
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
+  <link rel="icon" href="/assets/img/favicon.png" type="image/x-icon">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,500,700,800" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- CSS -->
+  <link href="/assets/css/main.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="100" class="{{ bodyClass | default('') }}">
+  <!-- Wrapper Start -->
+  <div class="wrapper">
+    <!-- Preloader Start -->
+    <div id="preloader">
+      <div class="preloader--bounce">
+        <div class="preloader-bouncer--1"></div>
+        <div class="preloader-bouncer--2"></div>
+      </div>
+    </div>
+    <!-- Preloader End -->
+
+    {% include "components/language-selector.njk" %}
+    
+    {% include "components/header.njk" %}
+    
+    {{ content | safe }}
+
+    {% include "components/footer.njk" %}
+
+    <!-- Back To Top Area Start -->
+    <div id="backToTop">
+      <a href="#header" class="btn--default"><i class="fa fa-angle-up"></i></a>
+    </div>
+    <!-- Back To Top Area End -->
+  </div>
+  <!-- Wrapper End -->
+
+  <!-- Modern JavaScript -->
+  <script src="/assets/js/main.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+{
+  "header": {
+    "role": "UX/UI Designer",
+    "home": "Home",
+    "about": "About Me",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "feedback": "Testimonials",
+    "contact": "Contact",
+    "hire_me": "Hire Me"
+  },
+  "banner": {
+    "title": "Let's Create <span class=\"thick\">Exceptional</span> <span class=\"thick\">Experiences</span> Together",
+    "description": "I'm a <strong>UX/UI Design Leader</strong> with roots in graphic design, transforming digital spaces from <strong>Santiago de Chile, LATAM</strong>.",
+    "button": "Let's Connect"
+  },
+  "about": {
+    "title": "About me",
+    "who_am_i": "Who <strong>am I</strong>?",
+    "experience_in": "Experience <strong>in</strong>",
+    "download_cv": "Download My CV",
+    "cv_url": "/assets/resumen/Felix-Rivas-UXUI-Designer-EN.pdf",
+    "technologies": "Technologies I Work With",
+    "paragraphs": {
+      "first": "With over 12 years of experience across media, banking, insurance, and retail, I've evolved into a specialist in crafting intuitive interfaces and meaningful user experiences for both mobile and web applications. My expertise spans front-end technologies (HTML, CSS, Sass, JavaScript, React) and design tools (Sketch, Photoshop, After Effects, InDesign, Final Cut Pro). Currently, I'm exploring how AI is reshaping design practices and creating new possibilities for user-centered experiences.",
+      "second": "Throughout my career, I've both participated in and led multidisciplinary design and development teams. Within Product Design, I've conducted extensive user research to build comprehensive data frameworks that illuminate genuine user needs and desires. This evidence-based approach enables me to craft engaging user experiences that significantly enhance how people interact with digital products, driving both user satisfaction and business outcomes.",
+      "third": "My professional vision extends beyond immediate projects—I'm committed to advancing my career through innovative solutions that tangibly improve people's lives through thoughtful, accessible design. Every digital interaction presents an opportunity to create a more intuitive, delightful experience."
+    }
+  },
+  "cv_sections": {
+    "education": "<strong>Edu</strong>cation",
+    "experience": "<strong>Ex</strong>perience"
+  },
+  "education": [
+    {
+      "date": "Jan 2024",
+      "institution": "IMF Smart Education",
+      "title": "<strong>Master in Project </strong>Management",
+      "description": "In today's increasingly uncertain and dynamic world, mastering a single project management framework is insufficient. Excellence in project leadership requires cross-disciplinary knowledge, proficiency across multiple standards, and the discernment to identify the appropriate methodology for each unique project context."
+    },
+    {
+      "date": "Jan 2023",
+      "institution": "Udemy",
+      "title": "<strong>Artificial Intelligence </strong>for Business",
+      "description": "Developed practical skills for implementing AI solutions to address real-world business challenges across various industries and functional areas."
+    }
+  ],
+  "experience": [
+    {
+      "date": "Jul 2023 - Jan 2024",
+      "company": "Emergya",
+      "title": "<strong>UX/UI</strong> Designer",
+      "description": "Led the design of intuitive, accessible, and visually engaging interfaces that balance business goals with user needs. Conducted strategic market research and user data analysis to inform design decisions while collaborating with cross-functional teams to ensure smooth implementation."
+    },
+    {
+      "date": "Aug 2022 - Jun 2023",
+      "company": "Shape Creative Studio",
+      "title": "<strong>UX/UI</strong> Designer",
+      "description": "Spearheaded the creation of user-centered interfaces that harmonize aesthetic appeal with functional elegance. Leveraged comprehensive market research and user insights to create experiences that simultaneously fulfill business requirements and address core user needs across various digital platforms."
+    }
+  ],
+  "services": {
+    "title": "What I Do",
+    "web_design": {
+      "title": "<strong>Web</strong> Design",
+      "description": "I create attractive, accessible interfaces for websites and web applications that balance visual appeal with intuitive functionality. Each design prioritizes user needs while supporting key business objectives through thoughtful information architecture and responsive layouts."
+    },
+    "flow": {
+      "title": "<strong>User Flow</strong> & <strong>Wireframing</strong>",
+      "description": "I build logical, efficient structures that naturally guide users through digital products. By mapping complete journeys and wireframing key touchpoints, I develop frameworks that deliver intuitive, satisfying experiences that reduce cognitive load and increase engagement."
+    },
+    "visual": {
+      "title": "<strong>Visual</strong> Design",
+      "description": "I leverage the power of color, typography, imagery, and visual hierarchy to create cohesive, emotionally resonant digital experiences. My visual design approach balances aesthetic appeal with functional clarity to reinforce brand identity while enhancing usability across all touchpoints."
+    },
+    "mobile": {
+      "title": "<strong>Mobile App</strong> Design",
+      "description": "I design mobile experiences that combine intuitive interaction patterns with compelling visual treatments to create memorable, effective applications. My approach considers the specific constraints and opportunities of each device to deliver experiences that feel natural, responsive, and delightful on smaller screens."
+    },
+    "ux_ui": {
+      "title": "<strong>UX</strong> & UI Design",
+      "description": "Through user research, wireframing, prototyping, and strategic testing, I create coherent digital experiences that resonate with users on both practical and emotional levels. My approach balances business objectives with user needs to deliver solutions that feel intuitive, meaningful, and delightful to use."
+    }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "all": "All",
+    "view_project": "View Project",
+    "case_study": "Case Study",
+    "web_design": "Web Design",
+    "projects": {
+      "wallet": {
+        "title": "Mobile Wallet",
+        "categories": "#UX Design #UI Design #Prototype #Design",
+        "description": "This mobile wallet solution transformed financial management for Belcorp's sales representatives while driving significant improvements in company efficiency and profitability. The project demonstrates how strategic UX design can address complex business challenges while enhancing end-user quality of life through thoughtful digital experiences."
+      },
+      "factoring": {
+        "title": "Factoring Module",
+        "categories": "#UX Design #UI Design #Prototype #Design",
+        "description": "This comprehensive factoring module modernization not only enhanced operational efficiency but significantly improved user satisfaction and workplace experience. The project serves as a benchmark for future initiatives, highlighting the critical importance of user-centered research and design in developing effective technological solutions with measurable business impact."
+      },
+      "nomadix": {
+        "title": "Nomadix Adventure",
+        "categories": "#Web Design #Design #Wireframe",
+        "description": "This project exemplifies my commitment to design excellence, seamlessly integrating creativity with functionality to deliver compelling digital experiences. The Nomadix Adventure platform balances visual appeal with intuitive navigation to create an engaging, user-focused solution that exceeds expectations."
+      }
+    }
+  },
+  "feedback": {
+    "title": "Recommendations",
+    "why_me": "Why me?",
+    "specializations": {
+      "title": "I specialize in human-centered UX/UI design",
+      "description": "With over 12 years of experience across diverse industries, I've developed expertise in creating intuitive interfaces and meaningful experiences for both mobile and web. My technical proficiency spans front-end technologies (HTML, CSS, JavaScript, React) and design tools (Sketch, Photoshop, After Effects), enabling me to craft compelling experiences that enhance user engagement while driving business results."
+    },
+    "leadership": {
+      "title": "I've led cross-functional<br/>design teams",
+      "description": "My experience leading design and development teams has sharpened my ability to align diverse perspectives toward common goals. By integrating user research into our process, I help teams create products that not only meet technical requirements but genuinely enhance how people interact with technology. This collaborative approach results in more efficient workflows and ultimately delivers more impactful digital experiences."
+    },
+    "innovation": {
+      "title": "I'm passionate about innovation and continuous growth",
+      "description": "My ongoing exploration of artificial intelligence and its influence on design reflects my commitment to staying at the forefront of our rapidly evolving field. I'm driven by the goal of developing innovative solutions that significantly improve people's lives through thoughtful design. This passion for creating positive impact through my work fuels my continuous professional development and creative problem-solving approach."
+    },
+    "testimonials": {
+      "person1": {
+        "text": "Félix demonstrates ideal professional qualities with his remarkable talent and genuine enthusiasm for his craft. His initiative and ingenuity in overcoming challenges make him an invaluable team member and collaborator.",
+        "name": "Omar Florez, QA/QC Specialist"
+      },
+      "person2": {
+        "text": "Félix combines exceptional organization with initiative, creativity, and innovation. His commitment to mastering cutting-edge design tools is matched by his talent for optimizing the presentation layer of web applications for maximum impact and usability.",
+        "name": "Amigley Bastardo, Applications and Systems Manager"
+      }
+    }
+  },
+  "counter": {
+    "projects": "<strong>Projects</strong> Delivered",
+    "clients": "Satisfied <strong>Clients</strong>",
+    "lines": "<strong>Lines</strong> of <strong>Code</strong>",
+    "cups": "Cups of <strong>Coffee</strong>"
+  },
+  "contact": {
+    "title": "Contact",
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send"
+  },
+  "hire_me": {
+    "title": "HAVE A PROJECT IN MIND?",
+    "subtitle": "I'm ready to bring your vision to life. Share the details below to get started.",
+    "name": "Your Name...",
+    "email": "Your Email...",
+    "project_title": "Project Title...",
+    "category": "-Select project category-",
+    "budget": "-Budget range-",
+    "estimate_date": "-Target timeline-",
+    "message": "Tell me about your project...",
+    "estimate_question": "Do you need a detailed quote?",
+    "no_estimate": "No quote needed at this time",
+    "yes_estimate": "Yes, I'd like a cost estimate. I understand it takes 2-4 business days to receive a comprehensive quote.",
+    "send_button": "SUBMIT REQUEST"
+  },
+  "footer": {
+    "copyright": "Copyright &copy; 2025 <a href=\"/\">Félix Rivas</a>. All Rights Reserved."
+  },
+  "thankyou": {
+    "title": "Thank you for reaching out!",
+    "message": "Your message has been sent successfully. I'll get back to you as soon as possible to discuss how we can work together.",
+    "back_home": "Return to home"
+  }
+}

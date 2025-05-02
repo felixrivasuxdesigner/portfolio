@@ -1,0 +1,97 @@
+@use 'sass:math';
+@use '../abstracts/variables' as v;
+@use '../abstracts/functions' as f;
+@use '../abstracts/mixins' as m;
+
+// Sistema de grilla con flexbox
+.container {
+  width: 100%;
+  max-width: v.$container-width;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: v.$gutter;
+  padding-left: v.$gutter;
+}
+
+.row {
+  @include m.flex;
+  flex-wrap: wrap;
+  margin-right: -(math.div(v.$gutter, 2));
+  margin-left: -(math.div(v.$gutter, 2));
+}
+
+// Generador de columnas flexbox
+@for $i from 1 through v.$columns {
+  .col-#{$i} {
+    flex: 0 0 f.column-width($i);
+    max-width: f.column-width($i);
+    padding-right: math.div(v.$gutter, 2);
+    padding-left: math.div(v.$gutter, 2);
+  }
+}
+
+// Columnas responsivas para diferentes breakpoints
+@include m.respond-to(small) {
+  @for $i from 1 through v.$columns {
+    .col-sm-#{$i} {
+      flex: 0 0 f.column-width($i);
+      max-width: f.column-width($i);
+    }
+  }
+}
+
+@include m.respond-to(medium) {
+  @for $i from 1 through v.$columns {
+    .col-md-#{$i} {
+      flex: 0 0 f.column-width($i);
+      max-width: f.column-width($i);
+    }
+  }
+}
+
+@include m.respond-to(large) {
+  @for $i from 1 through v.$columns {
+    .col-lg-#{$i} {
+      flex: 0 0 f.column-width($i);
+      max-width: f.column-width($i);
+    }
+  }
+}
+
+@include m.respond-to(xlarge) {
+  @for $i from 1 through v.$columns {
+    .col-xl-#{$i} {
+      flex: 0 0 f.column-width($i);
+      max-width: f.column-width($i);
+    }
+  }
+}
+
+// Utilidades para las columnas
+.col-offset-0 {
+  margin-left: 0;
+}
+
+@for $i from 1 through v.$columns - 1 {
+  .col-offset-#{$i} {
+    margin-left: f.column-width($i);
+  }
+}
+
+// Helpers
+.row-eq-height {
+  @include m.flex;
+  flex-wrap: wrap;
+}
+
+.flex-center {
+  @include m.flex-center;
+}
+
+.flex-between {
+  @include m.flex-between;
+}
+
+.flex-column {
+  @include m.flex-column;
+}

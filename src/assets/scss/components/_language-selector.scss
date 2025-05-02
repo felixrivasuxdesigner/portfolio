@@ -1,0 +1,110 @@
+/* 
+ * Estilos para el selector de idioma
+ */
+
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.language-selector {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: v.$z-index-header + 1;
+  @include m.transition;
+
+  // Estado cuando el header tiene fondo blanco (scroll)
+  &.fixed {
+    .language-selector__toggle {
+      background-color: v.$accent-color;
+      color: v.$white;
+      border-color: v.$accent-color;
+      
+      &:hover {
+        background-color: darken(v.$accent-color, 10%);
+      }
+    }
+  }
+
+  &__toggle {
+    @include m.flex-center;
+    background-color: rgba(v.$white, 0.2);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(v.$white, 0.3);
+    cursor: pointer;
+    @include m.transition;
+    box-shadow: 0 2px 5px rgba(v.$black, 0.1);
+    color: v.$white;
+
+    &:hover {
+      background-color: v.$accent-color;
+      color: v.$white;
+      border-color: v.$accent-color;
+    }
+
+    i {
+      font-size: 18px;
+    }
+  }
+
+  &__dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 10px;
+    background-color: v.$white;
+    border-radius: 4px;
+    padding: 5px 0;
+    min-width: 120px;
+    box-shadow: 0 2px 10px rgba(v.$black, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    @include m.transition;
+
+    &.active {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    a {
+      display: block;
+      padding: 8px 15px;
+      color: v.$text-color;
+      text-decoration: none;
+      font-size: 14px;
+      @include m.transition;
+
+      &:hover {
+        background-color: v.$light-gray;
+      }
+
+      &.active {
+        font-weight: v.$heading-font-weight;
+        color: v.$accent-color;
+      }
+
+      // Iconos de bandera usando los SVG existentes
+      .flag {
+        display: inline-block;
+        width: 20px;
+        height: 15px;
+        margin-right: 8px;
+        vertical-align: middle;
+        border-radius: 2px;
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0 1px 2px rgba(v.$black, 0.2);
+
+        &--es {
+          background-image: url('/assets/img/flags/es.svg');
+        }
+        &--en {
+          background-image: url('/assets/img/flags/en.svg');
+        }
+      }
+    }
+  }
+}

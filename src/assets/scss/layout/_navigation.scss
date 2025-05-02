@@ -1,0 +1,90 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/functions' as f;
+@use '../abstracts/mixins' as m;
+
+/* 
+ * Estilos de navegación
+ * Complementa los estilos del header para la navegación móvil y desktop
+ */
+
+// Los estilos principales de navegación ya están incluidos en _header.scss
+// Este archivo es para estilos de navegación adicionales o específicos que no pertenecen al header
+
+// Estilos para el menú móvil expandido
+.mobile-menu-open {
+  overflow: hidden;
+
+  .overlay {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+// Overlay para el menú móvil
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(v.$black, 0.5);
+  z-index: v.$z-index-header - 1;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+// Ajustes para el menú dropdown en móvil
+@media (max-width: #{v.$breakpoint-medium - 1px}) {
+  .dropdown-menu {
+    position: static;
+    float: none;
+    width: 100%;
+    margin-top: 0;
+    background-color: rgba(v.$white, 0.05);
+    border: none;
+    box-shadow: none;
+    padding-left: 1.5rem;
+  }
+}
+
+// Navegación de página
+.page-nav {
+  margin: 2rem 0;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin: 0 0.5rem;
+
+      a {
+        display: block;
+        padding: 0.5rem 1rem;
+        border: 1px solid v.$border-color;
+        border-radius: 4px;
+        color: v.$text-color;
+        transition: all 0.3s ease;
+
+        &:hover,
+        &:focus {
+          background-color: v.$primary-color;
+          color: v.$white;
+          border-color: v.$primary-color;
+          text-decoration: none;
+        }
+
+        &.active {
+          background-color: v.$accent-color;
+          color: v.$white;
+          border-color: v.$accent-color;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+/* 
+ * Estilos para el botón "Back to Top"
+ */
+
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+@use '../abstracts/functions' as f;
+
+#backToTop {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: v.$z-index-dropdown;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  @include m.transition;
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  a {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    @include m.flex-center;
+    background-color: v.$accent-color;
+    color: v.$white;
+    font-size: 18px;
+
+    &:hover,
+    &:focus {
+      background-color: f.shade(v.$accent-color, 10%);
+      transform: translateY(-3px);
+    }
+  }
+}

@@ -1,0 +1,115 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/functions' as f;
+@use '../abstracts/mixins' as m;
+
+/* 
+ * Estilos para el footer
+ */
+
+footer {
+  background-color: v.$primary-color;
+  color: v.$white;
+  padding: f.rem(50px, v.$base-font-size) 0 f.rem(20px, v.$base-font-size);
+
+  p {
+    margin-bottom: f.rem(10px, v.$base-font-size);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .footer-logo {
+    display: block;
+    margin-bottom: f.rem(20px, v.$base-font-size);
+
+    img {
+      height: 50px;
+    }
+  }
+
+  .socials {
+    @include m.flex;
+    padding: 0;
+    margin: f.rem(20px, v.$base-font-size) 0;
+    list-style: none;
+
+    li {
+      margin-right: f.rem(15px, v.$base-font-size);
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        @include m.flex-center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgba(v.$white, 0.1);
+        color: v.$white;
+        @include m.transition;
+
+        &:hover,
+        &:focus {
+          background-color: v.$accent-color;
+          transform: translateY(-3px);
+        }
+
+        i {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .footer-menu {
+    list-style: none;
+    padding: 0;
+    margin: f.rem(20px, v.$base-font-size) 0;
+
+    li {
+      margin-bottom: f.rem(10px, v.$base-font-size);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      a {
+        color: v.$light-text-color;
+        @include m.transition;
+
+        &:hover,
+        &:focus {
+          color: v.$accent-color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .footer-title {
+    font-size: f.rem(18px, v.$base-font-size);
+    font-weight: v.$heading-font-weight;
+    margin-bottom: f.rem(20px, v.$base-font-size);
+    color: v.$white;
+  }
+
+  .copyright {
+    margin-top: f.rem(40px, v.$base-font-size);
+    padding-top: f.rem(20px, v.$base-font-size);
+    border-top: 1px solid rgba(v.$white, 0.1);
+    text-align: center;
+    font-size: f.rem(14px, v.$base-font-size);
+    color: v.$light-text-color;
+
+    a {
+      color: v.$accent-color;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+}

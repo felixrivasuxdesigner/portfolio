@@ -1,0 +1,27 @@
+@use 'sass:math';
+@use 'sass:color';
+
+// Variables para usar con las funciones
+$base-font-size: 16px !default;
+$columns: 12 !default;
+$black: #000 !default;
+$white: #fff !default;
+
+// Función para convertir px a rem
+@function rem($pixels, $context: $base-font-size) {
+  @return #{math.div($pixels, $context)}rem;
+}
+
+// Función para calcular el ancho de columnas para el grid
+@function column-width($number-of-columns) {
+  @return math.percentage(math.div($number-of-columns, $columns));
+}
+
+// Función para aclarar/oscurecer colores de manera más predecible
+@function shade($color, $percentage) {
+  @return color.mix($black, $color, $percentage);
+}
+
+@function tint($color, $percentage) {
+  @return color.mix($white, $color, $percentage);
+}

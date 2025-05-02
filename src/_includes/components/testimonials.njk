@@ -1,0 +1,96 @@
+<!-- Feedback Area Start -->
+<div id="feedback" class="bg--overlay" data-parallax-bg-img="/assets/img/feedback-img/bg.webp">
+  <div class="container">
+    <!-- Section Title Start -->
+    <div class="section--title">
+      <h2><strong>{{ translations[locale].feedback.title }}</strong></h2>
+    </div>
+    <!-- Section Title End -->
+
+    <div class="row">
+      <div class="col-md-4">
+        <!-- Feedback FAQ Start -->
+        <div class="feedback--faq panel-group" id="feedbackFAQ" role="tablist">
+          <h3 class="faq--title">{{ translations[locale].feedback.why_me }}</h3>
+
+          <!-- FAQ Panel Start -->
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="feedbackFAQHeading01">
+              <a role="button" data-toggle="collapse" href="#feedbackA01" aria-expanded="true" aria-controls="feedbackA01">
+                {{ translations[locale].feedback.specializations.title | safe }}
+                <i class="fa fa-minus"></i>
+              </a>
+            </div>
+
+            <div id="feedbackA01" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="feedbackFAQHeading01">
+              <div class="panel-body">
+                {{ translations[locale].feedback.specializations.description }}
+              </div>
+            </div>
+          </div>
+          <!-- FAQ Panel End -->
+
+          <!-- FAQ Panel Start -->
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="feedbackFAQHeading02">
+              <a class="collapsed" role="button" data-toggle="collapse" href="#feedbackA02" aria-expanded="false" aria-controls="feedbackA02">
+                {{ translations[locale].feedback.leadership.title | safe }}
+                <i class="fa fa-plus"></i>
+              </a>
+            </div>
+
+            <div id="feedbackA02" class="panel-collapse collapse" role="tabpanel" aria-labelledby="feedbackFAQHeading02">
+              <div class="panel-body">
+                {{ translations[locale].feedback.leadership.description }}
+              </div>
+            </div>
+          </div>
+          <!-- FAQ Panel End -->
+
+          <!-- FAQ Panel Start -->
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="feedbackFAQHeading03">
+              <a class="collapsed" role="button" data-toggle="collapse" href="#feedbackA03" aria-expanded="false" aria-controls="feedbackA03">
+                {{ translations[locale].feedback.innovation.title | safe }}
+                <i class="fa fa-plus"></i>
+              </a>
+            </div>
+
+            <div id="feedbackA03" class="panel-collapse collapse" role="tabpanel" aria-labelledby="feedbackFAQHeading03">
+              <div class="panel-body">
+                {{ translations[locale].feedback.innovation.description }}
+              </div>
+            </div>
+          </div>
+          <!-- FAQ Panel End -->
+        </div>
+        <!-- Feedback FAQ End -->
+      </div>
+
+      <div class="col-md-8">
+        <!-- Feedback Slider Start -->
+        <div class="feedback--slider owl-carousel" data-owl-items="1" data-owl-margin="30" data-owl-autoplay="true">
+          <!-- Feedback Item Start -->
+          <div class="feedback--item">
+            <div class="feedback--content">
+              <p>{{ translations[locale].feedback.testimonials.person1.text }}</p>
+              <cite>{{ translations[locale].feedback.testimonials.person1.name }}</cite>
+            </div>
+          </div>
+          <!-- Feedback Item End -->
+
+          <!-- Feedback Item Start -->
+          <div class="feedback--item">
+            <div class="feedback--content">
+              <p>{{ translations[locale].feedback.testimonials.person2.text }}</p>
+              <cite>{{ translations[locale].feedback.testimonials.person2.name }}</cite>
+            </div>
+          </div>
+          <!-- Feedback Item End -->
+        </div>
+        <!-- Feedback Slider End -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Feedback Area End -->

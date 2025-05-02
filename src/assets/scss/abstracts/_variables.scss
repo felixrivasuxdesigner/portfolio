@@ -1,0 +1,40 @@
+// Colors
+$primary-color: #303030 !default;
+$secondary-color: #999 !default;
+$accent-color: #FC6736 !default;
+$text-color: #303030 !default;
+$light-text-color: #999 !default;
+$white: #fff !default;
+$black: #000 !default;
+$light-gray: #f8f8f8 !default;
+$border-color: #e9e9e9 !default;
+
+// Typography
+$base-font-family: 'Raleway', sans-serif !default;
+$base-font-size: 16px !default;
+$heading-font-weight: 700 !default;
+$regular-font-weight: 400 !default;
+$light-font-weight: 300 !default;
+
+// Layout
+$container-width: 1170px !default;
+$gutter: 30px !default;
+
+// Grid
+$columns: 12 !default;
+
+// Breakpoints
+$breakpoint-small: 576px !default;
+$breakpoint-medium: 768px !default;
+$breakpoint-large: 992px !default;
+$breakpoint-xlarge: 1200px !default;
+
+// Z-indexes
+$z-index-modal: 1050 !default;
+$z-index-dropdown: 1000 !default;
+$z-index-header: 900 !default;
+$z-index-below: -1 !default;
+
+// Transitions
+$base-transition: all 0.3s ease !default;
+$hover-transition: all 0.25s ease-in-out !default;

@@ -1,0 +1,372 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/functions' as f;
+@use '../abstracts/mixins' as m;
+
+/* 
+ * Utilidades generales para el sitio
+ */
+
+// Espaciado
+.mt-0 {
+  margin-top: 0 !important;
+}
+.mt-1 {
+  margin-top: f.rem(8px, v.$base-font-size) !important;
+}
+.mt-2 {
+  margin-top: f.rem(16px, v.$base-font-size) !important;
+}
+.mt-3 {
+  margin-top: f.rem(24px, v.$base-font-size) !important;
+}
+.mt-4 {
+  margin-top: f.rem(32px, v.$base-font-size) !important;
+}
+.mt-5 {
+  margin-top: f.rem(48px, v.$base-font-size) !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+.mb-1 {
+  margin-bottom: f.rem(8px, v.$base-font-size) !important;
+}
+.mb-2 {
+  margin-bottom: f.rem(16px, v.$base-font-size) !important;
+}
+.mb-3 {
+  margin-bottom: f.rem(24px, v.$base-font-size) !important;
+}
+.mb-4 {
+  margin-bottom: f.rem(32px, v.$base-font-size) !important;
+}
+.mb-5 {
+  margin-bottom: f.rem(48px, v.$base-font-size) !important;
+}
+
+.ml-0 {
+  margin-left: 0 !important;
+}
+.ml-1 {
+  margin-left: f.rem(8px, v.$base-font-size) !important;
+}
+.ml-2 {
+  margin-left: f.rem(16px, v.$base-font-size) !important;
+}
+.ml-3 {
+  margin-left: f.rem(24px, v.$base-font-size) !important;
+}
+.ml-4 {
+  margin-left: f.rem(32px, v.$base-font-size) !important;
+}
+.ml-5 {
+  margin-left: f.rem(48px, v.$base-font-size) !important;
+}
+
+.mr-0 {
+  margin-right: 0 !important;
+}
+.mr-1 {
+  margin-right: f.rem(8px, v.$base-font-size) !important;
+}
+.mr-2 {
+  margin-right: f.rem(16px, v.$base-font-size) !important;
+}
+.mr-3 {
+  margin-right: f.rem(24px, v.$base-font-size) !important;
+}
+.mr-4 {
+  margin-right: f.rem(32px, v.$base-font-size) !important;
+}
+.mr-5 {
+  margin-right: f.rem(48px, v.$base-font-size) !important;
+}
+
+.pt-0 {
+  padding-top: 0 !important;
+}
+.pt-1 {
+  padding-top: f.rem(8px, v.$base-font-size) !important;
+}
+.pt-2 {
+  padding-top: f.rem(16px, v.$base-font-size) !important;
+}
+.pt-3 {
+  padding-top: f.rem(24px, v.$base-font-size) !important;
+}
+.pt-4 {
+  padding-top: f.rem(32px, v.$base-font-size) !important;
+}
+.pt-5 {
+  padding-top: f.rem(48px, v.$base-font-size) !important;
+}
+
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+.pb-1 {
+  padding-bottom: f.rem(8px, v.$base-font-size) !important;
+}
+.pb-2 {
+  padding-bottom: f.rem(16px, v.$base-font-size) !important;
+}
+.pb-3 {
+  padding-bottom: f.rem(24px, v.$base-font-size) !important;
+}
+.pb-4 {
+  padding-bottom: f.rem(32px, v.$base-font-size) !important;
+}
+.pb-5 {
+  padding-bottom: f.rem(48px, v.$base-font-size) !important;
+}
+
+.pl-0 {
+  padding-left: 0 !important;
+}
+.pl-1 {
+  padding-left: f.rem(8px, v.$base-font-size) !important;
+}
+.pl-2 {
+  padding-left: f.rem(16px, v.$base-font-size) !important;
+}
+.pl-3 {
+  padding-left: f.rem(24px, v.$base-font-size) !important;
+}
+.pl-4 {
+  padding-left: f.rem(32px, v.$base-font-size) !important;
+}
+.pl-5 {
+  padding-left: f.rem(48px, v.$base-font-size) !important;
+}
+
+.pr-0 {
+  padding-right: 0 !important;
+}
+.pr-1 {
+  padding-right: f.rem(8px, v.$base-font-size) !important;
+}
+.pr-2 {
+  padding-right: f.rem(16px, v.$base-font-size) !important;
+}
+.pr-3 {
+  padding-right: f.rem(24px, v.$base-font-size) !important;
+}
+.pr-4 {
+  padding-right: f.rem(32px, v.$base-font-size) !important;
+}
+.pr-5 {
+  padding-right: f.rem(48px, v.$base-font-size) !important;
+}
+
+// Visualización
+.d-none {
+  display: none !important;
+}
+.d-block {
+  display: block !important;
+}
+.d-inline {
+  display: inline !important;
+}
+.d-inline-block {
+  display: inline-block !important;
+}
+.d-flex {
+  display: flex !important;
+}
+
+// Flex utilidades
+.flex-row {
+  flex-direction: row !important;
+}
+.flex-column {
+  flex-direction: column !important;
+}
+.justify-content-start {
+  justify-content: flex-start !important;
+}
+.justify-content-end {
+  justify-content: flex-end !important;
+}
+.justify-content-center {
+  justify-content: center !important;
+}
+.justify-content-between {
+  justify-content: space-between !important;
+}
+.justify-content-around {
+  justify-content: space-around !important;
+}
+.align-items-start {
+  align-items: flex-start !important;
+}
+.align-items-end {
+  align-items: flex-end !important;
+}
+.align-items-center {
+  align-items: center !important;
+}
+.align-items-baseline {
+  align-items: baseline !important;
+}
+.align-items-stretch {
+  align-items: stretch !important;
+}
+
+// Posicionamiento
+.position-relative {
+  position: relative !important;
+}
+.position-absolute {
+  position: absolute !important;
+}
+.position-fixed {
+  position: fixed !important;
+}
+
+// Visibilidad
+.visible {
+  visibility: visible !important;
+}
+.invisible {
+  visibility: hidden !important;
+}
+
+// Background
+.bg-primary {
+  background-color: v.$primary-color !important;
+}
+.bg-secondary {
+  background-color: v.$secondary-color !important;
+}
+.bg-light {
+  background-color: v.$light-gray !important;
+}
+.bg-white {
+  background-color: v.$white !important;
+}
+.bg-transparent {
+  background-color: transparent !important;
+}
+
+// Bordes
+.border {
+  border: 1px solid v.$border-color !important;
+}
+.border-top {
+  border-top: 1px solid v.$border-color !important;
+}
+.border-right {
+  border-right: 1px solid v.$border-color !important;
+}
+.border-bottom {
+  border-bottom: 1px solid v.$border-color !important;
+}
+.border-left {
+  border-left: 1px solid v.$border-color !important;
+}
+.border-0 {
+  border: 0 !important;
+}
+
+// Redondeado
+.rounded {
+  border-radius: 4px !important;
+}
+.rounded-circle {
+  border-radius: 50% !important;
+}
+.rounded-0 {
+  border-radius: 0 !important;
+}
+
+// Sombras
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(v.$black, 0.075) !important;
+}
+.shadow {
+  box-shadow: 0 0.5rem 1rem rgba(v.$black, 0.15) !important;
+}
+.shadow-lg {
+  box-shadow: 0 1rem 3rem rgba(v.$black, 0.175) !important;
+}
+.shadow-none {
+  box-shadow: none !important;
+}
+
+// Tamaños
+.w-25 {
+  width: 25% !important;
+}
+.w-50 {
+  width: 50% !important;
+}
+.w-75 {
+  width: 75% !important;
+}
+.w-100 {
+  width: 100% !important;
+}
+.w-auto {
+  width: auto !important;
+}
+
+.h-25 {
+  height: 25% !important;
+}
+.h-50 {
+  height: 50% !important;
+}
+.h-75 {
+  height: 75% !important;
+}
+.h-100 {
+  height: 100% !important;
+}
+.h-auto {
+  height: auto !important;
+}
+
+// Utilidades específicas para el sitio
+.bg--overlay {
+  position: relative;
+  z-index: 0;
+
+  &::before {
+    @include m.pseudo;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(v.$black, 0.5);
+    z-index: -1;
+  }
+}
+
+// Centrado vertical (reemplaza el pattern .vc--parent, .vc--child)
+.vertical-center {
+  @include m.flex;
+  min-height: 100%;
+  align-items: center;
+}
+
+// Reset para grillas
+.reset-gutter {
+  margin-left: 0;
+  margin-right: 0;
+
+  > [class*='col-'] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+// Clearfix
+.clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}

@@ -1,0 +1,105 @@
+/* 
+ * Estilos para el banner principal
+ */
+
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+@use '../abstracts/functions' as f;
+
+#banner {
+  position: relative;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  z-index: 1; // Aseguramos que el banner tenga un z-index positivo
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(v.$black, 0.2);
+    z-index: -1; // Esto pondrá el overlay detrás del contenido pero encima del fondo
+  }
+
+  .container {
+    position: relative;
+    z-index: 2; // Aseguramos que el contenido esté por encima del overlay
+  }
+
+  .vc--parent {
+    display: flex;
+    align-items: center;
+    min-height: calc(100vh - 80px);
+  }
+
+  .vc--child {
+    width: 100%;
+  }
+
+  .banner--content {
+    max-width: 800px;
+    text-align: left;
+
+    h1,
+    h2 {
+      font-size: 48px;
+      color: v.$white;
+      margin-bottom: 25px;
+      font-weight: v.$light-font-weight;
+      line-height: 1.2;
+
+      @include m.media-breakpoint-down(medium) {
+        font-size: 36px;
+      }
+
+      @include m.media-breakpoint-down(small) {
+        font-size: 28px;
+      }
+
+      .thick {
+        font-weight: v.$heading-font-weight;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      color: v.$white;
+      margin-bottom: 40px;
+
+      @include m.media-breakpoint-down(small) {
+        font-size: 16px;
+      }
+
+      strong {
+        font-weight: v.$heading-font-weight;
+      }
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      border-radius: 4px;
+      font-weight: v.$heading-font-weight;
+      text-decoration: none;
+      transition: all 0.3s ease;
+
+      &--primary,
+      &--default {
+        background-color: v.$accent-color;
+        color: v.$white;
+        border: 2px solid v.$accent-color;
+
+        &:hover {
+          background-color: transparent;
+          color: v.$white;
+        }
+      }
+    }
+  }
+}

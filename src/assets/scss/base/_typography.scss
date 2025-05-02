@@ -1,0 +1,145 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/functions' as f;
+@use '../abstracts/mixins' as m;
+
+/* 
+ * Tipografía base
+ */
+
+// Estilos para encabezados
+h1,
+.h1 {
+  font-size: f.rem(36px, v.$base-font-size);
+  margin-bottom: f.rem(20px, v.$base-font-size);
+
+  @include m.respond-to(medium) {
+    font-size: f.rem(42px, v.$base-font-size);
+  }
+
+  @include m.respond-to(large) {
+    font-size: f.rem(48px, v.$base-font-size);
+  }
+}
+
+h2,
+.h2 {
+  font-size: f.rem(30px, v.$base-font-size);
+  margin-bottom: f.rem(16px, v.$base-font-size);
+
+  @include m.respond-to(medium) {
+    font-size: f.rem(36px, v.$base-font-size);
+  }
+}
+
+h3,
+.h3 {
+  font-size: f.rem(24px, v.$base-font-size);
+  margin-bottom: f.rem(14px, v.$base-font-size);
+
+  @include m.respond-to(medium) {
+    font-size: f.rem(28px, v.$base-font-size);
+  }
+}
+
+h4,
+.h4 {
+  font-size: f.rem(20px, v.$base-font-size);
+  margin-bottom: f.rem(12px, v.$base-font-size);
+}
+
+h5,
+.h5 {
+  font-size: f.rem(18px, v.$base-font-size);
+  margin-bottom: f.rem(10px, v.$base-font-size);
+}
+
+h6,
+.h6 {
+  font-size: f.rem(16px, v.$base-font-size);
+  margin-bottom: f.rem(8px, v.$base-font-size);
+}
+
+// Estilos para texto
+p {
+  margin-bottom: f.rem(16px, v.$base-font-size);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.lead {
+  font-size: f.rem(18px, v.$base-font-size);
+  font-weight: v.$light-font-weight;
+  line-height: 1.6;
+
+  @include m.respond-to(medium) {
+    font-size: f.rem(20px, v.$base-font-size);
+  }
+}
+
+// Énfasis y utilidades de texto
+.text-light {
+  font-weight: v.$light-font-weight;
+}
+
+.text-regular {
+  font-weight: v.$regular-font-weight;
+}
+
+.text-bold,
+strong,
+b {
+  font-weight: v.$heading-font-weight;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-primary {
+  color: v.$primary-color;
+}
+
+.text-secondary {
+  color: v.$secondary-color;
+}
+
+.text-accent {
+  color: v.$accent-color;
+}
+
+// Listas
+ul,
+ol {
+  margin-bottom: f.rem(16px, v.$base-font-size);
+}
+
+// Enlaces
+a {
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+// Utilidades de espaciado para texto
+.thick {
+  font-weight: v.$heading-font-weight;
+}

@@ -1,0 +1,44 @@
+/* 
+ * Main Stylesheet
+ * Félix Rivas Portfolio - Modern Version with Eleventy
+ */
+
+// Configuración y utilidades
+@use 'sass:math';
+@use 'sass:color';
+
+// Abstracts (variables, funciones, mixins)
+@use 'abstracts/variables' as v;
+@use 'abstracts/functions' as f;
+@use 'abstracts/mixins' as m;
+
+// Base
+@use 'base/reset';
+@use 'base/typography';
+@use 'base/utilities';
+
+// Layout
+@use 'layout/grid';
+@use 'layout/header';
+@use 'layout/navigation';
+@use 'layout/footer';
+
+// Components
+@use 'components/buttons';
+@use 'components/banner';
+@use 'components/services';
+@use 'components/portfolio';
+@use 'components/testimonials';
+@use 'components/counter';
+@use 'components/contact';
+@use 'components/modals';
+@use 'components/language-selector';
+@use 'components/preloader';
+@use 'components/back-to-top';
+
+// Pages
+@use 'pages/home';
+@use 'pages/thankyou';
+
+// Themes
+@use 'themes/default';
