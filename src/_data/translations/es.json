@@ -282,6 +282,14 @@
       "person2": {
         "text": "Félix combina excepcional organización con iniciativa, creatividad e innovación. Su compromiso con dominar herramientas de diseño de vanguardia se iguala con su talento para optimizar la capa de presentación de aplicaciones web para máximo impacto y usabilidad.",
         "name": "Amigley Bastardo, Gerente de Aplicaciones y Sistemas"
+      },
+      "person3": {
+        "text": "Félix se mantiene a la vanguardia de tecnologías y tendencias en diseño web, aportando constantemente ideas estratégicas que abordan necesidades del cliente de manera eficiente y efectiva. Su capacidad para prosperar en entornos de equipo de alta exigencia lo convierte en un colaborador profesional excepcional.",
+        "name": "Daniel Ortiz, Gerente de Proyecto"
+      },
+      "person4": {
+        "text": "Un destacado Diseñador UX/UI con amplia experiencia en diseño. Trabajar con Félix produjo resultados excepcionales en el desarrollo de prototipos que proporcionaron una base sólida para el desarrollo posterior. Su habilidad técnica y enfoque colaborativo elevan cualquier proyecto.",
+        "name": "Angel Marcano, Desarrollador .NET"
       }
     }
   },

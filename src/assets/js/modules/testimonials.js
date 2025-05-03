@@ -81,12 +81,64 @@ function initTestimonialsCarousel() {
 // Manejar el acordeón de preguntas frecuentes
 function initFaqAccordion() {
   const accordionItems = document.querySelectorAll('.accordion-item');
+  const accordionContainer = document.querySelector('.feedback--faq');
   
-  if (!accordionItems.length) return;
+  if (!accordionItems.length || !accordionContainer) return;
   
   // Ocultar todos los paneles excepto el primero
   let activePanel = null;
   let activeButton = null;
+  
+  // Calcular la altura máxima del contenedor para evitar saltos
+  // basada en el panel con el mayor contenido
+  function calculateMaxHeight() {
+    let maxPanelHeight = 0;
+    let accordionHeightWithoutPanels = 0;
+    const tempDiv = document.createElement('div');
+    tempDiv.style.position = 'absolute';
+    tempDiv.style.visibility = 'hidden';
+    tempDiv.style.display = 'block';
+    document.body.appendChild(tempDiv);
+    
+    // Primero calculamos la altura del acordeón sin contenido de paneles
+    // Guardamos el panel activo actual
+    const currentActivePanel = activePanel;
+    if (currentActivePanel) {
+      currentActivePanel.classList.remove('show');
+    }
+    
+    accordionHeightWithoutPanels = accordionContainer.offsetHeight;
+    
+    // Restauramos el panel activo
+    if (currentActivePanel) {
+      currentActivePanel.classList.add('show');
+    }
+    
+    // Ahora medimos cada panel individualmente
+    accordionItems.forEach(item => {
+      const panel = item.querySelector('.accordion-collapse');
+      const content = panel ? panel.querySelector('.accordion-body') : null;
+      
+      if (content) {
+        // Clonamos el contenido en nuestro div temporal para medir su altura real
+        tempDiv.innerHTML = '';
+        tempDiv.appendChild(content.cloneNode(true));
+        const panelHeight = tempDiv.offsetHeight;
+        
+        // Actualizamos la altura máxima si este panel es más alto
+        if (panelHeight > maxPanelHeight) {
+          maxPanelHeight = panelHeight;
+        }
+      }
+    });
+    
+    // Eliminamos el div temporal
+    document.body.removeChild(tempDiv);
+    
+    // La altura total será la altura base del acordeón + la altura del panel más grande
+    // Añadimos un pequeño margen para asegurar que no haya saltos
+    return accordionHeightWithoutPanels + maxPanelHeight + 20; // 20px de margen extra
+  }
   
   // Configurar el estado inicial: abrir solo el primer panel
   if (accordionItems.length > 0) {
@@ -111,6 +163,13 @@ function initFaqAccordion() {
         button.classList.add('collapsed');
       }
     }
+    
+    // Necesitamos un pequeño retraso para asegurar que los estilos estén aplicados
+    setTimeout(() => {
+      // Calcular y establecer la altura máxima en el contenedor
+      const maxHeight = calculateMaxHeight();
+      accordionContainer.style.minHeight = `${maxHeight}px`;
+    }, 50);
   }
   
   // Agregar listeners a los botones
@@ -151,5 +210,11 @@ function initFaqAccordion() {
         activeButton = button;
       }
     });
+  });
+  
+  // Recalcular la altura en caso de cambio de tamaño de ventana
+  window.addEventListener('resize', () => {
+    const maxHeight = calculateMaxHeight();
+    accordionContainer.style.minHeight = `${maxHeight}px`;
   });
 }

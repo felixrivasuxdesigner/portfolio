@@ -282,6 +282,14 @@
       "person2": {
         "text": "Félix combines exceptional organization with initiative, creativity, and innovation. His commitment to mastering cutting-edge design tools is matched by his talent for optimizing the presentation layer of web applications for maximum impact and usability.",
         "name": "Amigley Bastardo, Applications and Systems Manager"
+      },
+      "person3": {
+        "text": "Félix stays at the forefront of web design technologies and trends, consistently contributing strategic ideas that address client needs efficiently and effectively. His ability to thrive in high-demand team environments makes him an exceptional professional collaborator.",
+        "name": "Daniel Ortiz, Project Manager"
+      },
+      "person4": {
+        "text": "An outstanding UX/UI Designer with comprehensive design expertise. Working with Félix yielded exceptional results in developing prototypes that provided a solid foundation for subsequent development. His technical skill and collaborative approach elevate any project.",
+        "name": "Angel Marcano, .NET Developer"
       }
     }
   },
