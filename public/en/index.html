@@ -827,47 +827,41 @@
     <!-- Gallery Filter Menu End -->
 
     <!-- Gallery Items Start -->
-    <div class="row gallery-items">
+    <div class="portfolio-grid">
       <!-- Gallery Item Start - Wallet -->
-      <div class="col-xs-12 col-sm-4 col-md-3 thumbnail gallery-item" data-cat="website-item">
+      <div class="gallery-item" data-cat="website-item">
         <img src="/assets/img/gallery-img/belcorp/cover-belcorp.webp" alt="Mobile Wallet" />
         <span class="gallery--case-study">Case Study</span>
         <div class="gallery-overlay">
-          <div class="vc--parent">
-            <div class="vc--child">
-              <h2>Mobile Wallet</h2>
-              <a href="#galleryDetailsWallet" class="btn gallery--window" data-toggle="modal">View Project</a>
-            </div>
+          <div class="overlay-content">
+            <h2>Mobile Wallet</h2>
+            <a href="#" class="btn gallery--window" data-project="wallet">View Project</a>
           </div>
         </div>
       </div>
       <!-- Gallery Item End -->
 
       <!-- Gallery Item Start - Factoring -->
-      <div class="col-xs-12 col-sm-4 col-md-3 thumbnail gallery-item" data-cat="website-item">
+      <div class="gallery-item" data-cat="website-item">
         <img src="/assets/img/gallery-img/security/cover-factoring.webp" alt="Factoring Module" />
         <span class="gallery--case-study">Case Study</span>
         <div class="gallery-overlay">
-          <div class="vc--parent">
-            <div class="vc--child">
-              <h2>Factoring Module</h2>
-              <a href="#galleryDetailsFactoring" class="btn gallery--window" data-toggle="modal">View Project</a>
-            </div>
+          <div class="overlay-content">
+            <h2>Factoring Module</h2>
+            <a href="#" class="btn gallery--window" data-project="factoring">View Project</a>
           </div>
         </div>
       </div>
       <!-- Gallery Item End -->
 
       <!-- Gallery Item Start - Nomadix -->
-      <div class="col-xs-12 col-sm-4 col-md-3 thumbnail gallery-item" data-cat="website-item">
+      <div class="gallery-item" data-cat="website-item">
         <img src="/assets/img/gallery-img/nomadix/cover-nomadix.webp" alt="Nomadix Adventure" />
         <span class="gallery--case-study">Web Design</span>
         <div class="gallery-overlay">
-          <div class="vc--parent">
-            <div class="vc--child">
-              <h2>Nomadix Adventure</h2>
-              <a href="#galleryDetailsNomadix" class="btn gallery--window" data-toggle="modal">View Project</a>
-            </div>
+          <div class="overlay-content">
+            <h2>Nomadix Adventure</h2>
+            <a href="#" class="btn gallery--window" data-project="nomadix">View Project</a>
           </div>
         </div>
       </div>
@@ -878,95 +872,24 @@
 </div>
 <!-- Gallery Area End -->
 
-<!-- Gallery Details Modal Start - Wallet -->
-<div id="galleryDetailsWallet" class="gallery--details modal fade" role="dialog">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Mobile Wallet</h4>
-        <p>#UX Design #UI Design #Prototype #Design</p>
+<!-- Project Modal Template -->
+<div id="projectModal" class="modal project-modal">
+  <div class="modal-container">
+    <div class="modal-header">
+      <h2 class="modal-title"></h2>
+      <p class="modal-categories"></p>
+      <button class="modal-close">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-image">
+        <img src="" alt="" class="project-image">
       </div>
-      <div class="modal-body">
-        <img src="/assets/img/gallery-img/belcorp/belcorp.webp" alt="Mobile Wallet" class="img-responsive">
+      <div class="modal-description">
+        <p class="project-description"></p>
       </div>
     </div>
   </div>
 </div>
-<!-- Gallery Details Modal End -->
-
-<!-- Gallery Description Modal Start - Wallet -->
-<div id="galleryDescriptionWallet" class="gallery--description modal fade" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-body">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <p>This mobile wallet solution transformed financial management for Belcorp&#39;s sales representatives while driving significant improvements in company efficiency and profitability. The project demonstrates how strategic UX design can address complex business challenges while enhancing end-user quality of life through thoughtful digital experiences.</p>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Gallery Description Modal End -->
-
-<!-- Gallery Details Modal Start - Factoring -->
-<div id="galleryDetailsFactoring" class="gallery--details modal fade" role="dialog">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Factoring Module</h4>
-        <p>#UX Design #UI Design #Prototype #Design</p>
-      </div>
-      <div class="modal-body">
-        <img src="/assets/img/gallery-img/security/factoring.webp" alt="Factoring Module" class="img-responsive">
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Gallery Details Modal End -->
-
-<!-- Gallery Description Modal Start - Factoring -->
-<div id="galleryDescriptionFactoring" class="gallery--description modal fade" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-body">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <p>This comprehensive factoring module modernization not only enhanced operational efficiency but significantly improved user satisfaction and workplace experience. The project serves as a benchmark for future initiatives, highlighting the critical importance of user-centered research and design in developing effective technological solutions with measurable business impact.</p>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Gallery Description Modal End -->
-
-<!-- Gallery Details Modal Start - Nomadix -->
-<div id="galleryDetailsNomadix" class="gallery--details modal fade" role="dialog">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Nomadix Adventure</h4>
-        <p>#Web Design #Design #Wireframe</p>
-      </div>
-      <div class="modal-body">
-        <img src="/assets/img/gallery-img/nomadix/nomadix.webp" alt="Nomadix Adventure" class="img-responsive">
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Gallery Details Modal End -->
-
-<!-- Gallery Description Modal Start - Nomadix -->
-<div id="galleryDescriptionNomadix" class="gallery--description modal fade" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-body">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <p>This project exemplifies my commitment to design excellence, seamlessly integrating creativity with functionality to deliver compelling digital experiences. The Nomadix Adventure platform balances visual appeal with intuitive navigation to create an engaging, user-focused solution that exceeds expectations.</p>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Gallery Description Modal End -->
 <!-- Feedback Area Start -->
 <div id="feedback" class="bg--overlay" data-parallax-bg-img="/assets/img/feedback-img/bg.webp">
   <div class="container">

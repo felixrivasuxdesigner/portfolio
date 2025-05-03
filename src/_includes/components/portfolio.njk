@@ -19,47 +19,41 @@
     <!-- Gallery Filter Menu End -->
 
     <!-- Gallery Items Start -->
-    <div class="row gallery-items">
+    <div class="portfolio-grid">
       <!-- Gallery Item Start - Wallet -->
-      <div class="col-xs-12 col-sm-4 col-md-3 thumbnail gallery-item" data-cat="website-item">
+      <div class="gallery-item" data-cat="website-item">
         <img src="/assets/img/gallery-img/belcorp/cover-belcorp.webp" alt="{{ translations[locale].portfolio.projects.wallet.title }}" />
         <span class="gallery--case-study">{{ translations[locale].portfolio.case_study }}</span>
         <div class="gallery-overlay">
-          <div class="vc--parent">
-            <div class="vc--child">
-              <h2>{{ translations[locale].portfolio.projects.wallet.title }}</h2>
-              <a href="#galleryDetailsWallet" class="btn gallery--window" data-toggle="modal">{{ translations[locale].portfolio.view_project }}</a>
-            </div>
+          <div class="overlay-content">
+            <h2>{{ translations[locale].portfolio.projects.wallet.title }}</h2>
+            <a href="#" class="btn gallery--window" data-project="wallet">{{ translations[locale].portfolio.view_project }}</a>
           </div>
         </div>
       </div>
       <!-- Gallery Item End -->
 
       <!-- Gallery Item Start - Factoring -->
-      <div class="col-xs-12 col-sm-4 col-md-3 thumbnail gallery-item" data-cat="website-item">
+      <div class="gallery-item" data-cat="website-item">
         <img src="/assets/img/gallery-img/security/cover-factoring.webp" alt="{{ translations[locale].portfolio.projects.factoring.title }}" />
         <span class="gallery--case-study">{{ translations[locale].portfolio.case_study }}</span>
         <div class="gallery-overlay">
-          <div class="vc--parent">
-            <div class="vc--child">
-              <h2>{{ translations[locale].portfolio.projects.factoring.title }}</h2>
-              <a href="#galleryDetailsFactoring" class="btn gallery--window" data-toggle="modal">{{ translations[locale].portfolio.view_project }}</a>
-            </div>
+          <div class="overlay-content">
+            <h2>{{ translations[locale].portfolio.projects.factoring.title }}</h2>
+            <a href="#" class="btn gallery--window" data-project="factoring">{{ translations[locale].portfolio.view_project }}</a>
           </div>
         </div>
       </div>
       <!-- Gallery Item End -->
 
       <!-- Gallery Item Start - Nomadix -->
-      <div class="col-xs-12 col-sm-4 col-md-3 thumbnail gallery-item" data-cat="website-item">
+      <div class="gallery-item" data-cat="website-item">
         <img src="/assets/img/gallery-img/nomadix/cover-nomadix.webp" alt="{{ translations[locale].portfolio.projects.nomadix.title }}" />
         <span class="gallery--case-study">{{ translations[locale].portfolio.web_design }}</span>
         <div class="gallery-overlay">
-          <div class="vc--parent">
-            <div class="vc--child">
-              <h2>{{ translations[locale].portfolio.projects.nomadix.title }}</h2>
-              <a href="#galleryDetailsNomadix" class="btn gallery--window" data-toggle="modal">{{ translations[locale].portfolio.view_project }}</a>
-            </div>
+          <div class="overlay-content">
+            <h2>{{ translations[locale].portfolio.projects.nomadix.title }}</h2>
+            <a href="#" class="btn gallery--window" data-project="nomadix">{{ translations[locale].portfolio.view_project }}</a>
           </div>
         </div>
       </div>
@@ -70,92 +64,21 @@
 </div>
 <!-- Gallery Area End -->
 
-<!-- Gallery Details Modal Start - Wallet -->
-<div id="galleryDetailsWallet" class="gallery--details modal fade" role="dialog">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">{{ translations[locale].portfolio.projects.wallet.title }}</h4>
-        <p>{{ translations[locale].portfolio.projects.wallet.categories }}</p>
+<!-- Project Modal Template -->
+<div id="projectModal" class="modal project-modal">
+  <div class="modal-container">
+    <div class="modal-header">
+      <h2 class="modal-title"></h2>
+      <p class="modal-categories"></p>
+      <button class="modal-close">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-image">
+        <img src="" alt="" class="project-image">
       </div>
-      <div class="modal-body">
-        <img src="/assets/img/gallery-img/belcorp/belcorp.webp" alt="{{ translations[locale].portfolio.projects.wallet.title }}" class="img-responsive">
+      <div class="modal-description">
+        <p class="project-description"></p>
       </div>
     </div>
   </div>
 </div>
-<!-- Gallery Details Modal End -->
-
-<!-- Gallery Description Modal Start - Wallet -->
-<div id="galleryDescriptionWallet" class="gallery--description modal fade" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-body">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <p>{{ translations[locale].portfolio.projects.wallet.description }}</p>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Gallery Description Modal End -->
-
-<!-- Gallery Details Modal Start - Factoring -->
-<div id="galleryDetailsFactoring" class="gallery--details modal fade" role="dialog">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">{{ translations[locale].portfolio.projects.factoring.title }}</h4>
-        <p>{{ translations[locale].portfolio.projects.factoring.categories }}</p>
-      </div>
-      <div class="modal-body">
-        <img src="/assets/img/gallery-img/security/factoring.webp" alt="{{ translations[locale].portfolio.projects.factoring.title }}" class="img-responsive">
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Gallery Details Modal End -->
-
-<!-- Gallery Description Modal Start - Factoring -->
-<div id="galleryDescriptionFactoring" class="gallery--description modal fade" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-body">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <p>{{ translations[locale].portfolio.projects.factoring.description }}</p>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Gallery Description Modal End -->
-
-<!-- Gallery Details Modal Start - Nomadix -->
-<div id="galleryDetailsNomadix" class="gallery--details modal fade" role="dialog">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">{{ translations[locale].portfolio.projects.nomadix.title }}</h4>
-        <p>{{ translations[locale].portfolio.projects.nomadix.categories }}</p>
-      </div>
-      <div class="modal-body">
-        <img src="/assets/img/gallery-img/nomadix/nomadix.webp" alt="{{ translations[locale].portfolio.projects.nomadix.title }}" class="img-responsive">
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Gallery Details Modal End -->
-
-<!-- Gallery Description Modal Start - Nomadix -->
-<div id="galleryDescriptionNomadix" class="gallery--description modal fade" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-body">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <p>{{ translations[locale].portfolio.projects.nomadix.description }}</p>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Gallery Description Modal End -->

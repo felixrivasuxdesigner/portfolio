@@ -63,59 +63,158 @@ function initFilterGallery() {
 
 // Inicializar modales de proyectos
 function initProjectModals() {
+  const modal = document.getElementById('projectModal');
   const modalButtons = document.querySelectorAll('.gallery--window');
+  const galleryItems = document.querySelectorAll('.gallery-item');
+  const closeButton = modal?.querySelector('.modal-close');
 
-  if (modalButtons.length === 0) return;
+  // Datos de proyectos
+  const projectsData = {
+    wallet: {
+      title:
+        document
+          .querySelector('[data-project="wallet"]')
+          ?.closest('.gallery-item')
+          .querySelector('h2').textContent || '',
+      categories: getTranslation('portfolio.projects.wallet.categories'),
+      imageSrc: '/assets/img/gallery-img/belcorp/belcorp.webp',
+      description: getTranslation('portfolio.projects.wallet.description'),
+    },
+    factoring: {
+      title:
+        document
+          .querySelector('[data-project="factoring"]')
+          ?.closest('.gallery-item')
+          .querySelector('h2').textContent || '',
+      categories: getTranslation('portfolio.projects.factoring.categories'),
+      imageSrc: '/assets/img/gallery-img/security/factoring.webp',
+      description: getTranslation('portfolio.projects.factoring.description'),
+    },
+    nomadix: {
+      title:
+        document
+          .querySelector('[data-project="nomadix"]')
+          ?.closest('.gallery-item')
+          .querySelector('h2').textContent || '',
+      categories: getTranslation('portfolio.projects.nomadix.categories'),
+      imageSrc: '/assets/img/gallery-img/nomadix/nomadix.webp',
+      description: getTranslation('portfolio.projects.nomadix.description'),
+    },
+  };
 
+  if (!modal || modalButtons.length === 0) return;
+
+  // Hacer que toda la tarjeta sea clickeable
+  galleryItems.forEach((item) => {
+    item.addEventListener('click', (event) => {
+      // Evitar que se active si se hizo clic específicamente en el botón
+      // (para evitar disparar dos veces el evento)
+      if (event.target.closest('.gallery--window')) {
+        return;
+      }
+
+      const projectButton = item.querySelector('.gallery--window');
+      if (projectButton) {
+        const projectKey = projectButton.getAttribute('data-project');
+        openProjectModal(projectKey);
+      }
+    });
+  });
+
+  // Abrir modal al hacer clic en los botones
   modalButtons.forEach((button) => {
     button.addEventListener('click', (event) => {
-      const targetModal = button.getAttribute('href');
-      const modalElement = document.querySelector(targetModal);
+      event.preventDefault();
 
-      if (modalElement) {
-        // Abrir modal
-        modalElement.style.display = 'block';
-        setTimeout(() => {
-          modalElement.classList.add('show');
-        }, 50);
-
-        // Prevenir scroll del body
-        document.body.style.overflow = 'hidden';
-      }
+      const projectKey = button.getAttribute('data-project');
+      openProjectModal(projectKey);
     });
   });
 
-  // Cerrar modales con el botón de cerrar
-  const closeButtons = document.querySelectorAll('.modal .close');
-  closeButtons.forEach((closeBtn) => {
-    closeBtn.addEventListener('click', () => {
-      const modal = closeBtn.closest('.modal');
+  // Función para abrir el modal con datos del proyecto
+  function openProjectModal(projectKey) {
+    const projectData = projectsData[projectKey];
 
-      if (modal) {
-        modal.classList.remove('show');
+    if (projectData) {
+      // Actualizar contenido del modal
+      modal.querySelector('.modal-title').textContent = projectData.title;
+      modal.querySelector('.modal-categories').textContent =
+        projectData.categories;
 
-        // Ocultar después de la animación
-        setTimeout(() => {
-          modal.style.display = 'none';
-          document.body.style.overflow = 'auto';
-        }, 300);
-      }
+      const projectImage = modal.querySelector('.project-image');
+      projectImage.src = projectData.imageSrc;
+      projectImage.alt = projectData.title;
+
+      modal.querySelector('.project-description').textContent =
+        projectData.description;
+
+      // Mostrar modal
+      document.body.style.overflow = 'hidden';
+      modal.style.display = 'flex';
+
+      setTimeout(() => {
+        modal.classList.add('show');
+      }, 10);
+    }
+  }
+
+  // Cerrar modal
+  if (closeButton) {
+    closeButton.addEventListener('click', () => {
+      closeModal();
     });
+  }
+
+  // Cerrar modal al hacer clic fuera del contenido
+  modal.addEventListener('click', (event) => {
+    if (event.target === modal) {
+      closeModal();
+    }
   });
 
-  // Cerrar modales al hacer clic fuera del contenido
-  const modals = document.querySelectorAll('.modal');
-  modals.forEach((modal) => {
-    modal.addEventListener('click', (event) => {
-      if (event.target === modal) {
-        modal.classList.remove('show');
-
-        // Ocultar después de la animación
-        setTimeout(() => {
-          modal.style.display = 'none';
-          document.body.style.overflow = 'auto';
-        }, 300);
-      }
-    });
+  // Tecla Escape para cerrar modal
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && modal.classList.contains('show')) {
+      closeModal();
+    }
   });
+
+  function closeModal() {
+    modal.classList.remove('show');
+
+    setTimeout(() => {
+      modal.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }, 300);
+  }
+}
+
+// Función auxiliar para obtener traducciones
+function getTranslation(key) {
+  // Obtener el idioma actual
+  const locale = document.documentElement.lang || 'es';
+
+  // Intentar encontrar el elemento por su ID, que podría contener la traducción
+  const dataElement = document.getElementById(
+    `data-${key.replace(/\./g, '-')}`
+  );
+  if (dataElement) {
+    return dataElement.textContent;
+  }
+
+  // Fallback para algunas traducciones comunes
+  const fallbackTranslations = {
+    es: {
+      'portfolio.projects.wallet.categories': 'UX/UI, Diseño Web',
+      'portfolio.projects.factoring.categories': 'UX/UI, Diseño Web',
+      'portfolio.projects.nomadix.categories': 'Diseño Web',
+    },
+    en: {
+      'portfolio.projects.wallet.categories': 'UX/UI, Web Design',
+      'portfolio.projects.factoring.categories': 'UX/UI, Web Design',
+      'portfolio.projects.nomadix.categories': 'Web Design',
+    },
+  };
+
+  return fallbackTranslations[locale]?.[key] || '';
 }

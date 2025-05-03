@@ -171,6 +171,122 @@
     }
   }
 
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+
+    @include m.media-breakpoint-down(medium) {
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+
+    @include m.media-breakpoint-down(small) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 0;
+    padding-bottom: 75%; // Aspect ratio 4:3
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+      img {
+        transform: scale(1.1);
+      }
+
+      .gallery-overlay {
+        opacity: 1;
+
+        h2,
+        .btn {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .gallery--case-study {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background-color: v.$accent-color;
+      color: v.$white;
+      padding: 5px 10px;
+      font-size: 12px;
+      border-radius: 3px;
+      z-index: 3;
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(v.$primary-color, 0.85);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: 2;
+
+      .overlay-content {
+        text-align: center;
+        width: 100%;
+        padding: 20px;
+
+        h2 {
+          color: v.$white;
+          font-size: 20px;
+          margin-bottom: 20px;
+          transform: translateY(-20px);
+          opacity: 0;
+          transition: all 0.4s ease 0.1s;
+        }
+
+        .btn {
+          display: inline-block;
+          background-color: v.$accent-color;
+          color: v.$white;
+          padding: 8px 20px;
+          border-radius: 4px;
+          font-weight: v.$regular-font-weight;
+          text-decoration: none;
+          transition: all 0.3s ease;
+          font-size: 14px;
+          border: none;
+          transform: translateY(20px);
+          opacity: 0;
+          transition: all 0.4s ease 0.2s;
+
+          &:hover {
+            background-color: f.shade(v.$accent-color, 15%);
+          }
+        }
+      }
+    }
+  }
+
   // Estilos para modal de detalles
   .gallery--details {
     .modal-header {
@@ -222,6 +338,118 @@
           line-height: 1.6;
           margin: 0;
         }
+      }
+    }
+  }
+}
+
+// Modal de proyecto
+.project-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(v.$primary-color, 0.9);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  overflow-y: auto;
+  padding: 30px 0;
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .modal-container {
+    background-color: v.$white;
+    width: 90%;
+    max-width: 1000px;
+    max-height: none; // Eliminamos la restricción de altura máxima
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+    margin: auto; // Centrar verticalmente cuando el contenido es más corto que la ventana
+
+    .show & {
+      transform: scale(1);
+    }
+
+    @include m.media-breakpoint-down(small) {
+      width: 95%;
+    }
+  }
+
+  .modal-header {
+    padding: 20px 30px;
+    border-bottom: 1px solid v.$border-color;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .modal-title {
+      font-size: 24px;
+      font-weight: v.$heading-font-weight;
+      margin: 0;
+      color: v.$primary-color;
+      flex: 1;
+    }
+
+    .modal-categories {
+      color: v.$secondary-color;
+      margin: 5px 30px 0 0;
+      font-size: 14px;
+    }
+
+    .modal-close {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 30px;
+      line-height: 1;
+      padding: 0;
+      color: v.$secondary-color;
+      opacity: 0.6;
+      transition: opacity 0.3s ease;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    max-height: calc(100vh - 200px); // Altura máxima para el cuerpo del modal
+    overflow-y: auto; // Permitir scroll cuando el contenido excede la altura
+
+    .modal-image {
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+
+    .modal-description {
+      padding: 30px;
+      background-color: f.tint(v.$light-gray, 50%);
+
+      p {
+        margin: 0;
+        line-height: 1.6;
+        color: v.$text-color;
       }
     }
   }
