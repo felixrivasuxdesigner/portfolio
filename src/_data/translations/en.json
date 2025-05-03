@@ -314,8 +314,26 @@
     "email": "Your Email...",
     "project_title": "Project Title...",
     "category": "-Select project category-",
+    "project_categories": {
+      "ux_ui": "UX/UI Design",
+      "web": "Web Design",
+      "mobile": "Mobile App Design",
+      "research": "UX Research",
+      "other": "Other"
+    },
     "budget": "-Budget range-",
     "estimate_date": "-Target timeline-",
+    "referral_source": "How did you find me?",
+    "referral_options": {
+      "select": "-Select an option-",
+      "search": "Google or other search engine",
+      "social": "Social media",
+      "linkedin": "LinkedIn",
+      "colleague": "Colleague recommendation",
+      "client": "Client recommendation",
+      "event": "Professional event",
+      "other": "Other"
+    },
     "message": "Tell me about your project...",
     "estimate_question": "Do you need a detailed quote?",
     "no_estimate": "No quote needed at this time",

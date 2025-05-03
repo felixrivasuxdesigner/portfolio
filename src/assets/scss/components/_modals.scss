@@ -15,35 +15,13 @@
   left: 0;
   z-index: v.$z-index-modal;
   display: none;
-  overflow: hidden;
+  overflow: auto;
   outline: 0;
+  background-color: rgba(v.$black, 0.5); // Fondo oscuro integrado
 
-  // Modal centrado verticalmente
-  &.show,
-  &.in {
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-// Modal backdrop (fondo oscuro)
-.modal-backdrop {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: v.$z-index-modal - 10;
-  background-color: v.$black;
-
-  &.fade {
-    opacity: 0;
-  }
-
-  &.show,
-  &.in {
-    opacity: 0.5;
+  // Cuando el modal está activo
+  &.show {
+    opacity: 1;
   }
 }
 
@@ -51,8 +29,15 @@
 .modal-dialog {
   position: relative;
   width: auto;
-  margin: 10px;
-  pointer-events: none;
+  margin: 30px auto; // Centrado por defecto
+  max-width: 600px;
+  pointer-events: auto;
+  transform: translate(0, -25px);
+  transition: transform 0.3s ease;
+
+  .modal.show & {
+    transform: translate(0, 0);
+  }
 }
 
 // Contenido del modal
@@ -144,7 +129,7 @@
 
           select.form-control {
             appearance: none;
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23333' d='M8 10L4 6h8z'/%3E%3C/svg%3E");
             background-repeat: no-repeat;
             background-position: right 15px center;
             background-size: 8px 10px;
@@ -256,21 +241,6 @@
 
     &:hover {
       background-color: f.shade(v.$accent-color, 15%);
-    }
-  }
-}
-
-// Animación para modales
-.modal {
-  &.fade {
-    .modal-dialog {
-      transform: translate(0, -25%);
-      transition: transform 0.3s ease-out;
-    }
-
-    &.in .modal-dialog,
-    &.show .modal-dialog {
-      transform: translate(0, 0);
     }
   }
 }

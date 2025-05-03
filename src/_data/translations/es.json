@@ -314,8 +314,26 @@
     "email": "Tu Email...",
     "project_title": "Título del Proyecto...",
     "category": "-Selecciona categoría del proyecto-",
+    "project_categories": {
+      "ux_ui": "Diseño UX/UI",
+      "web": "Diseño Web",
+      "mobile": "Diseño de App Móvil",
+      "research": "Investigación UX",
+      "other": "Otro"
+    },
     "budget": "-Rango de presupuesto-",
     "estimate_date": "-Cronograma objetivo-",
+    "referral_source": "¿Cómo me encontraste?",
+    "referral_options": {
+      "select": "-Selecciona una opción-",
+      "search": "Google u otro buscador",
+      "social": "Redes sociales",
+      "linkedin": "LinkedIn",
+      "colleague": "Recomendación de un colega",
+      "client": "Recomendación de un cliente",
+      "event": "Evento profesional",
+      "other": "Otro"
+    },
     "message": "Cuéntame sobre tu proyecto...",
     "estimate_question": "¿Necesitas un presupuesto detallado?",
     "no_estimate": "No necesito presupuesto por ahora",
