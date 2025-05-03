@@ -3,50 +3,100 @@
   <div class="container">
     <!-- Section Title Start -->
     <div class="section--title">
-      <h2>{{ translations[locale].about.title }}</h2>
+      <h2><strong>{{ translations[locale].about.title }}</strong></h2>
     </div>
     <!-- Section Title End -->
 
     <div class="row">
       <div class="col-md-6">
-        <!-- About Content Start -->
-        <div class="about--content">
-          <h3>{{ translations[locale].about.who_am_i | safe }}</h3>
-          
-          <p>{{ translations[locale].about.paragraphs.first }}</p>
-          <p>{{ translations[locale].about.paragraphs.second }}</p>
-          <p>{{ translations[locale].about.paragraphs.third }}</p>
+        <h3>{{ translations[locale].about.who_am_i | safe }}</h3>
+        
+        <p>{{ translations[locale].about.paragraphs.first }}</p>
+        <p>{{ translations[locale].about.paragraphs.second }}</p>
+        <p>{{ translations[locale].about.paragraphs.third }}</p>
 
-          <a href="{{ translations[locale].about.cv_url }}" target="_blank" class="btn btn--default">
-            <i class="fa fa-download"></i>{{ translations[locale].about.download_cv }}
-          </a>
-        </div>
-        <!-- About Content End -->
+        <a href="{{ translations[locale].about.cv_url }}" class="btn btn--primary" download>{{ translations[locale].about.download_cv }}</a>
       </div>
 
       <div class="col-md-6">
-        <!-- About Progress Items Start -->
-        <div class="about--progress-items">
-          <h3>{{ translations[locale].about.technologies }}</h3>
+        <h3>{{ translations[locale].about.technologies }}</h3>
+        
+        <p>{{ translations[locale].about.technologies_desc }}</p>
 
+        <!-- About Progrees Items Start -->
+        <div class="about--progress-items">
           <!-- About Progrees Bar Start -->
-          <h4>HTML5 &amp; CSS3</h4>
+          <h4>Sketch</h4>
           <div class="progress">
-            <div class="progress-bar" data-progress="95">
-              <span>95%</span>
+            <div class="progress-bar" data-progress="90">
+              <span>90%</span>
             </div>
           </div>
           <!-- About Progrees Bar End -->
 
+          <!-- About Progrees Bar Start -->
+          <h4>Figma</h4>
+          <div class="progress">
+            <div class="progress-bar" data-progress="90">
+              <span>90%</span>
+            </div>
+          </div>
+          <!-- About Progrees Bar End -->
+
+          <!-- About Progrees Bar Start -->
+          <h4>ProtoPie</h4>
+          <div class="progress">
+            <div class="progress-bar" data-progress="70">
+              <span>70%</span>
+            </div>
+          </div>
+          <!-- About Progrees Bar End -->
+
+          <!-- About Progrees Bar Start -->
+          <h4>After Effect</h4>
+          <div class="progress">
+            <div class="progress-bar" data-progress="70">
+              <span>70%</span>
+            </div>
+          </div>
+          <!-- About Progrees Bar End -->
+          
+          <!-- About Progrees Bar Start -->
+          <h4>Final Cut Pro</h4>
+          <div class="progress">
+            <div class="progress-bar" data-progress="70">
+              <span>70%</span>
+            </div>
+          </div>
+          <!-- About Progrees Bar End -->
+          
+          <!-- About Progrees Bar Start -->
+          <h4>HTML</h4>
+          <div class="progress">
+            <div class="progress-bar" data-progress="80">
+              <span>80%</span>
+            </div>
+          </div>
+          <!-- About Progrees Bar End -->
+          
+          <!-- About Progrees Bar Start -->
+          <h4>CSS(SASS)</h4>
+          <div class="progress">
+            <div class="progress-bar" data-progress="70">
+              <span>70%</span>
+            </div>
+          </div>
+          <!-- About Progrees Bar End -->
+          
           <!-- About Progrees Bar Start -->
           <h4>JavaScript</h4>
           <div class="progress">
-            <div class="progress-bar" data-progress="85">
-              <span>85%</span>
+            <div class="progress-bar" data-progress="60">
+              <span>60%</span>
             </div>
           </div>
           <!-- About Progrees Bar End -->
-
+          
           <!-- About Progrees Bar Start -->
           <h4>ReactJS</h4>
           <div class="progress">
@@ -65,7 +115,7 @@
       <div class="row">
         <div class="col-md-6">
           <div class="about--info-wrapper">
-            <h3>{{ translations[locale].cv_sections.education | safe }}</h3>
+            <h3><strong>{{ translations[locale].cv_sections.education_first }}</strong>{{ translations[locale].cv_sections.education_second }}</h3>
 
             {% for education in translations[locale].education %}
             <!-- About Info Item Start -->
@@ -89,7 +139,7 @@
 
         <div class="col-md-6">
           <div class="about--info-wrapper">
-            <h3>{{ translations[locale].cv_sections.experience | safe }}</h3>
+            <h3><strong>{{ translations[locale].cv_sections.experience_first }}</strong>{{ translations[locale].cv_sections.experience_second }}</h3>
 
             {% for experience in translations[locale].experience %}
             <!-- About Info Item Start -->

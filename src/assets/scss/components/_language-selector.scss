@@ -2,6 +2,7 @@
  * Estilos para el selector de idioma
  */
 
+@use 'sass:color';
 @use '../abstracts/variables' as v;
 @use '../abstracts/mixins' as m;
 
@@ -20,7 +21,7 @@
       border-color: v.$accent-color;
       
       &:hover {
-        background-color: darken(v.$accent-color, 10%);
+        background-color: color.adjust(v.$accent-color, $lightness: -10%);
       }
     }
   }

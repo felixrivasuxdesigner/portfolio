@@ -56,6 +56,37 @@ body {
   #about {
     padding: 80px 0;
 
+    // Aumentar separación entre columnas
+    .row {
+      [class*="col-"] {
+        padding-left: 20px;
+        padding-right: 20px;
+        
+        @media (min-width: #{v.$breakpoint-medium}) {
+          // Añadir más separación en dispositivos medianos y grandes
+          &:first-child {
+            padding-right: 30px;
+          }
+          
+          &:last-child {
+            padding-left: 30px;
+            position: relative;
+            
+            // Línea vertical separadora
+            &::before {
+              content: '';
+              position: absolute;
+              left: 0;
+              top: 0;
+              height: 100%;
+              width: 1px;
+              background-color: v.$border-color;
+            }
+          }
+        }
+      }
+    }
+
     h3 {
       color: v.$primary-color;
       font-size: 24px;
@@ -81,10 +112,11 @@ body {
       text-decoration: none;
       font-weight: v.$heading-font-weight;
       transition: all 0.3s ease;
-      border: none;
+      border: 2px solid v.$accent-color;
 
       &:hover {
-        background-color: f.shade(v.$accent-color, 15%);
+        background-color: transparent;
+        color: v.$accent-color;
       }
     }
 
@@ -109,9 +141,12 @@ body {
 
         .progress-bar {
           position: relative;
-          background-color: v.$accent-color;
+          background-color: #FFE4C9; // Nuevo color complementario más suave
           border-radius: 4px;
-          transition: width 1.5s ease;
+          width: 0; // Iniciar en 0 para la animación
+          transition: width 1.5s cubic-bezier(0.1, 0.45, 0.15, 1); // Mejora en la transición
+          height: 100%; // Asegura que ocupe toda la altura
+          min-width: 0; // Permite iniciar desde 0
 
           span {
             position: absolute;
@@ -135,6 +170,9 @@ body {
           margin-bottom: 30px;
           padding-bottom: 15px;
           position: relative;
+          color: v.$primary-color;
+          font-size: 24px;
+          font-weight: v.$regular-font-weight;
 
           &::after {
             content: '';
@@ -193,6 +231,17 @@ body {
             background-color: v.$border-color;
           }
         }
+      }
+    }
+
+    // Estilos adicionales para asemejarse a la versión original
+    .row.reset-gutter {
+      margin-left: 0;
+      margin-right: 0;
+
+      > div {
+        padding-left: 0;
+        padding-right: 0;
       }
     }
   }

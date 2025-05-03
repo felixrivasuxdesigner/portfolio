@@ -7,6 +7,7 @@ export function initScrollEffects() {
   const header = document.getElementById('header');
   const languageSelector = document.querySelector('.language-selector');
   const parallaxElements = document.querySelectorAll('[data-parallax-bg-img]');
+  const progressBars = document.querySelectorAll('.progress-bar');
 
   // Manejar cambio de estilo del header durante scroll
   if (header) {
@@ -23,6 +24,40 @@ export function initScrollEffects() {
         }
       }
     });
+  }
+
+  // Animar barras de progreso cuando son visibles
+  if (progressBars.length > 0) {
+    // Restablecer todas las barras a ancho 0 inicialmente
+    progressBars.forEach(bar => {
+      bar.style.width = '0%';
+    });
+    
+    // Función para verificar si un elemento es visible
+    const isElementInViewport = (el) => {
+      const rect = el.getBoundingClientRect();
+      return (
+        rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 0.8 &&
+        rect.bottom >= 0
+      );
+    };
+
+    // Función para animar las barras de progreso
+    const animateProgressBars = () => {
+      progressBars.forEach((bar) => {
+        if (isElementInViewport(bar) && !bar.classList.contains('animated')) {
+          const progressValue = bar.getAttribute('data-progress');
+          setTimeout(() => {
+            bar.style.width = `${progressValue}%`;
+          }, 100); // Pequeño retraso para asegurar que la transición funcione
+          bar.classList.add('animated');
+        }
+      });
+    };
+
+    // Ejecutar al cargar y durante el scroll
+    window.addEventListener('load', animateProgressBars);
+    window.addEventListener('scroll', animateProgressBars);
   }
 
   // Efecto parallax simple para fondos
