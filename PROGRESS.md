@@ -49,23 +49,23 @@
 - ✅ Uniformización de estilos y espaciado entre ambos formularios de contacto (general y modal "Contrátame")
 - ✅ Verificación de que ambos formularios utilicen FormSubmit correctamente con redirección a página de agradecimiento propia
 
-## Próximos Pasos
-
 ### Fase 5: Optimización y Refinamiento
 
-- ⬜ Implementar lazy loading para imágenes
-- ⬜ Añadir soporte para imágenes modernas (WebP, AVIF)
-- ⬜ Optimizar las fuentes web (subsetting, preloading)
-- ⬜ Mejorar la accesibilidad (ARIA, contraste, navegación por teclado)
+- ✅ Implementar lazy loading para imágenes
+- ✅ Añadir soporte para imágenes modernas (WebP, AVIF)
+- ✅ Optimizar las fuentes web (subsetting, preloading)
+- ✅ Mejorar la accesibilidad (ARIA, contraste, navegación por teclado)
 - ⬜ Implementar Dark Mode/Light Mode con variables CSS
 
 ### Fase 6: Performance y SEO
 
-- ⬜ Implementar análisis de Lighthouse y corregir problemas
-- ⬜ Optimizar Core Web Vitals (LCP, FID, CLS)
-- ⬜ Implementar Schema.org para mejor SEO
-- ⬜ Añadir metadatos para redes sociales (Open Graph, Twitter Cards)
+- ✅ Implementar análisis de Lighthouse y corregir problemas
+- ✅ Optimizar Core Web Vitals (LCP, FID, CLS)
+- ✅ Implementar Schema.org para mejor SEO
+- ✅ Añadir metadatos para redes sociales (Open Graph, Twitter Cards)
 - ⬜ Configurar service worker para funcionamiento offline básico
+
+## Próximos Pasos
 
 ### Fase 7: Integración de Características Adicionales
 
@@ -110,3 +110,4 @@
 - Animaciones más suaves y naturales
 - Interfaces más intuitivas y consistentes
 - Interacciones mejoradas para componentes como acordeones y modales
+- Optimización SEO y compartibilidad en redes sociales

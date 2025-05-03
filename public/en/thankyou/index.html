@@ -10,18 +10,53 @@
   <meta name="description" content="Thank you for contacting me">
   <meta name="author" content="Félix Rivas">
 
+  <!-- Precargar fuentes críticas para mejorar LCP y evitar Layout Shift -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Raleway:300,500,700,800&display=swap" as="style">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,500,700,800&display=swap" rel="stylesheet">
+  
+  <!-- Precargar CSS crítico para evitar render-blocking -->
+  <link rel="preload" href="/assets/css/main.css" as="style">
+  <link href="/assets/css/main.css" rel="stylesheet">
+  
+  <!-- Font Awesome - Con preload para íconos críticos -->
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
   <!-- Favicons -->
   <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
   <link rel="icon" href="/assets/img/favicon.png" type="image/x-icon">
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css?family=Raleway:300,500,700,800" rel="stylesheet">
   
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <!-- CSS -->
-  <link href="/assets/css/main.css" rel="stylesheet">
+  <!-- Meta para SEO y redes sociales -->
+  <meta property="og:title" content="Thank You | Félix Rivas - UX/UI Designer">
+  <meta property="og:description" content="Thank you for contacting me">
+  <meta property="og:image" content="/assets/img/felix-rivas-og-image.jpg">
+  <meta property="og:url" content="https://felixrivas.com/en/thankyou/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Thank You | Félix Rivas - UX/UI Designer">
+  <meta name="twitter:description" content="Thank you for contacting me">
+  <meta name="twitter:image" content="/assets/img/felix-rivas-og-image.jpg">
+  
+  <!-- Añadir Schema.org para mejor SEO -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Félix Rivas",
+      "url": "https://felixrivas.com",
+      "image": "https://felixrivas.com/assets/img/felix-rivas-og-image.jpg",
+      "jobTitle": "UX/UI Designer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Freelance"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/rivasfelix/"
+      ]
+    }
+  </script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="100" class="thankyou-page">
@@ -41,7 +76,7 @@
     <i class="fa-solid fa-globe"></i>
   </div>
   <div class="language-selector__dropdown" id="langDropdown">
-    <a href="/es//en/thankyou/" class="">
+    <a href="/es//en/thankyou/">
       <span class="flag flag--es"></span>Español
     </a>
     <a href="/en//en/thankyou/" class="active">
@@ -62,8 +97,7 @@
           </div>
           <!-- Header Custom Button End -->
 
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#headerNav"
-            aria-expanded="false" aria-controls="headerNav">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#headerNav" aria-expanded="false" aria-controls="headerNav">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -73,7 +107,7 @@
           <!-- Logo Start -->
           <a class="logo navbar-brand" href="index.html">
             <div class="logo--img">
-              <img src="/assets/img/logo.webp" class="img-responsive" alt="Félix Rivas Logo" />
+              <img fetchpriority="high" src="/assets/img/logo.webp" class="img-responsive" alt="Félix Rivas Logo">
             </div>
 
             <div class="logo--content">
@@ -119,7 +153,7 @@
         <div class="thankyou-content--inner text-center">
           <i class="fa fa-check-circle-o"></i>
           <h2>Thank you for reaching out!</h2>
-          <p>Your message has been sent successfully. I&#39;ll get back to you as soon as possible to discuss how we can work together.</p>
+          <p>Your message has been sent successfully. I'll get back to you as soon as possible to discuss how we can work together.</p>
           <a href="/" class="btn btn--primary">Return to home</a>
         </div>
       </div>
@@ -134,7 +168,7 @@
     <!-- Footer Copyright Start -->
     <div class="footer--copyright">
       <p>
-        Copyright &copy; 2025 <a href="/">Félix Rivas</a>. Todos los Derechos Reservados.
+        Copyright © 2025 <a href="/">Félix Rivas</a>. Todos los Derechos Reservados.
       </p>
     </div>
     <!-- Footer Copyright End -->
@@ -156,11 +190,11 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close">&times;</button>
+        <button type="button" class="close">×</button>
 
         <div class="modal-title">
           <h2>HAVE A PROJECT IN MIND?</h2>
-          <p>I&#39;m ready to bring your vision to life. Share the details below to get started.</p>
+          <p>I'm ready to bring your vision to life. Share the details below to get started.</p>
         </div>
       </div>
 
@@ -261,7 +295,7 @@
 
                 <div class="radio">
                   <input type="radio" name="estimate" id="estimateONE" value="1">
-                  <label for="estimateONE">Yes, I&#39;d like a cost estimate. I understand it takes 2-4 business days to receive a comprehensive quote.</label>
+                  <label for="estimateONE">Yes, I'd like a cost estimate. I understand it takes 2-4 business days to receive a comprehensive quote.</label>
                 </div>
               </div>
             </div>

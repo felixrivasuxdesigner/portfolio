@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Página principal en español (idioma por defecto) -->
+  <url>
+    <loc>https://felixrivas.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://felixrivas.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://felixrivas.com/en/" />
+  </url>
+  
+  <!-- Página principal en inglés -->
+  <url>
+    <loc>https://felixrivas.com/en/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://felixrivas.com/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://felixrivas.com/" />
+  </url>
+  
+  <!-- Página de agradecimiento en español -->
+  <url>
+    <loc>https://felixrivas.com/thankyou/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://felixrivas.com/thankyou/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://felixrivas.com/en/thankyou/" />
+  </url>
+  
+  <!-- Página de agradecimiento en inglés -->
+  <url>
+    <loc>https://felixrivas.com/en/thankyou/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://felixrivas.com/en/thankyou/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://felixrivas.com/thankyou/" />
+  </url>
+</urlset>

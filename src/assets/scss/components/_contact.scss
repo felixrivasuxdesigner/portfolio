@@ -71,6 +71,13 @@
   .contact--social {
     margin-bottom: 40px;
     
+    h4 {
+      font-size: 18px;
+      color: v.$primary-color;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+    
     ul {
       list-style: none;
       padding: 0;
@@ -78,23 +85,54 @@
       display: flex;
       
       li {
-        margin-right: 10px;
+        margin-right: 15px;
         
         a {
-          display: block;
-          width: 40px;
-          height: 40px;
-          line-height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 44px;
+          height: 44px;
+          line-height: 44px;
           text-align: center;
           border-radius: 50%;
           background-color: v.$primary-color;
           color: v.$white;
-          font-size: 18px;
+          font-size: 20px;
           transition: all 0.3s ease;
+          box-shadow: 0 4px 6px rgba(v.$black, 0.1);
+          position: relative;
           
           &:hover {
             background-color: v.$accent-color;
             transform: translateY(-3px);
+            box-shadow: 0 6px 10px rgba(v.$black, 0.15);
+          }
+          
+          // Tooltip personalizado
+          &::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(v.$text-color, 0.9);
+            color: v.$white;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            pointer-events: none;
+            z-index: 100;
+          }
+          
+          &:hover::after {
+            opacity: 1;
+            visibility: visible;
+            bottom: -35px;
           }
         }
       }

@@ -7,21 +7,56 @@
   
   <title>{{ title | default('Félix Rivas UX/UI Designer') }}</title>
   
-  <meta name="description" content="{{ description | default('') }}">
+  <meta name="description" content="{{ description | default('Diseñador UX/UI con más de 12 años de experiencia en interfaces digitales y experiencia de usuario para aplicaciones móviles y web') }}">
   <meta name="author" content="Félix Rivas">
+
+  <!-- Precargar fuentes críticas para mejorar LCP y evitar Layout Shift -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Raleway:300,500,700,800&display=swap" as="style">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,500,700,800&display=swap" rel="stylesheet">
+  
+  <!-- Precargar CSS crítico para evitar render-blocking -->
+  <link rel="preload" href="/assets/css/main.css" as="style">
+  <link href="/assets/css/main.css" rel="stylesheet">
+  
+  <!-- Font Awesome - Con preload para íconos críticos -->
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Favicons -->
   <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
   <link rel="icon" href="/assets/img/favicon.png" type="image/x-icon">
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css?family=Raleway:300,500,700,800" rel="stylesheet">
   
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <!-- CSS -->
-  <link href="/assets/css/main.css" rel="stylesheet">
+  <!-- Meta para SEO y redes sociales -->
+  <meta property="og:title" content="{{ title | default('Félix Rivas UX/UI Designer') }}">
+  <meta property="og:description" content="{{ description | default('Diseñador UX/UI con más de 12 años de experiencia en interfaces digitales y experiencia de usuario para aplicaciones móviles y web') }}">
+  <meta property="og:image" content="{{ ogImage | default('/assets/img/felix-rivas-og-image.jpg') }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ title | default('Félix Rivas UX/UI Designer') }}">
+  <meta name="twitter:description" content="{{ description | default('Diseñador UX/UI con más de 12 años de experiencia en interfaces digitales y experiencia de usuario para aplicaciones móviles y web') }}">
+  <meta name="twitter:image" content="{{ ogImage | default('/assets/img/felix-rivas-og-image.jpg') }}">
+  
+  <!-- Añadir Schema.org para mejor SEO -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Félix Rivas",
+      "url": "{{ site.url }}",
+      "image": "{{ site.url }}/assets/img/felix-rivas-og-image.jpg",
+      "jobTitle": "UX/UI Designer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Freelance"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/rivasfelix/"
+      ]
+    }
+  </script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="100" class="{{ bodyClass | default('') }}">
