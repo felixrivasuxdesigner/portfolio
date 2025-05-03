@@ -150,6 +150,122 @@
   </div>
   <!-- Wrapper End -->
 
+  <!-- Hire Me Modal -->
+  <!-- Hire Me Contact Modal Start -->
+<div id="hireMeModal" class="hire-me--modal modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+        <div class="modal-title">
+          <h2>HAVE A PROJECT IN MIND?</h2>
+          <p>I&#39;m ready to bring your vision to life. Share the details below to get started.</p>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <form action="https://formsubmit.co/rivafelix@gmail.com" method="POST" data-form="validate">
+          <!-- Redirects to a custom "Gracias" page -->
+          <input type="hidden" name="_next" value="/thankyou/">
+          <!-- Avoid captcha -->
+          <input type="hidden" name="_captcha" value="false">
+          <!-- Email subject -->
+          <input type="hidden" name="_subject" value="New project request from portfolio">
+          <!-- Spam prevention -->
+          <input type="text" name="_honey" style="display:none">
+          
+          <div class="form-controls">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group name">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name..." required>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group email">
+                  <input type="email" name="email" class="form-control" placeholder="Your Email..." required>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group project-title">
+                  <input type="text" name="project_title" class="form-control" placeholder="Project Title..." required>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group case-category">
+                  <select name="category" class="form-control bg-fa-caret-down white">
+                    <option>-Select project category-</option>
+                    <option>UX/UI Design</option>
+                    <option>Web Design</option>
+                    <option>Mobile App Design</option>
+                    <option>UX Research</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group budget">
+                  <select name="budget" class="form-control bg-fa-caret-down white">
+                    <option>-Budget range-</option>
+                    <option>$1,000 - $3,000</option>
+                    <option>$3,000 - $6,000</option>
+                    <option>$6,000 - $10,000</option>
+                    <option>$10,000+</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group date">
+                  <input type="text" name="date" class="form-control DatePicker bg-fa-calender" placeholder="-Target timeline-">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group message">
+              <textarea name="message" class="form-control" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </div>
+
+            <div class="estimate-container">
+              <div class="estimate-text">
+                <h4>Do you need a detailed quote?</h4>
+              </div>
+
+              <div class="radio-text">
+                <div class="radio">
+                  <input type="radio" name="estimate" id="estimateZERO" value="0" checked>
+                  <label for="estimateZERO">No quote needed at this time</label>
+                </div>
+
+                <div class="radio">
+                  <input type="radio" name="estimate" id="estimateONE" value="1">
+                  <label for="estimateONE">Yes, I&#39;d like a cost estimate. I understand it takes 2-4 business days to receive a comprehensive quote.</label>
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="submit-btn btn--primary">SUBMIT REQUEST</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Hire Me Contact Modal End -->
+
+  <!-- jQuery first, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  
   <!-- Modern JavaScript -->
   <script src="/assets/js/main.js" type="module"></script>
 </body>

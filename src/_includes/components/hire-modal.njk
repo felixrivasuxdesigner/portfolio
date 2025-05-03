@@ -12,52 +12,75 @@
       </div>
 
       <div class="modal-body">
-        <form action="/thankyou/" method="get" data-form="validate">
+        <form action="https://formsubmit.co/rivafelix@gmail.com" method="POST" data-form="validate">
+          <!-- Redirects to a custom "Gracias" page -->
+          <input type="hidden" name="_next" value="/thankyou/">
+          <!-- Avoid captcha -->
+          <input type="hidden" name="_captcha" value="false">
+          <!-- Email subject -->
+          <input type="hidden" name="_subject" value="New project request from portfolio">
+          <!-- Spam prevention -->
+          <input type="text" name="_honey" style="display:none">
+          
           <div class="form-controls">
             <div class="row">
-              <div class="col-sm-6">
-                <input type="text" name="name" placeholder="{{ translations[locale].hire_me.name }}" required>
+              <div class="col-md-6">
+                <div class="form-group name">
+                  <input type="text" name="name" class="form-control" placeholder="{{ translations[locale].hire_me.name }}" required>
+                </div>
               </div>
 
-              <div class="col-sm-6">
-                <input type="email" name="email" placeholder="{{ translations[locale].hire_me.email }}" required>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-sm-6">
-                <input type="text" name="project_title" placeholder="{{ translations[locale].hire_me.project_title }}" required>
-              </div>
-
-              <div class="col-sm-6 case-category">
-                <select name="category" class="bg-fa-caret-down white">
-                  <option>{{ translations[locale].hire_me.category }}</option>
-                  <option>UX/UI Design</option>
-                  <option>Web Design</option>
-                  <option>Mobile App Design</option>
-                  <option>UX Research</option>
-                  <option>Other</option>
-                </select>
+              <div class="col-md-6">
+                <div class="form-group email">
+                  <input type="email" name="email" class="form-control" placeholder="{{ translations[locale].hire_me.email }}" required>
+                </div>
               </div>
             </div>
 
             <div class="row">
-              <div class="col-sm-6 budget">
-                <select name="budget" class="bg-fa-caret-down white">
-                  <option>{{ translations[locale].hire_me.budget }}</option>
-                  <option>$1,000 - $3,000</option>
-                  <option>$3,000 - $6,000</option>
-                  <option>$6,000 - $10,000</option>
-                  <option>$10,000+</option>
-                </select>
+              <div class="col-md-6">
+                <div class="form-group project-title">
+                  <input type="text" name="project_title" class="form-control" placeholder="{{ translations[locale].hire_me.project_title }}" required>
+                </div>
               </div>
 
-              <div class="col-sm-6">
-                <input type="text" name="date" class="DatePicker bg-fa-calender" placeholder="{{ translations[locale].hire_me.estimate_date }}">
+              <div class="col-md-6">
+                <div class="form-group case-category">
+                  <select name="category" class="form-control bg-fa-caret-down white">
+                    <option>{{ translations[locale].hire_me.category }}</option>
+                    <option>UX/UI Design</option>
+                    <option>Web Design</option>
+                    <option>Mobile App Design</option>
+                    <option>UX Research</option>
+                    <option>Other</option>
+                  </select>
+                </div>
               </div>
             </div>
 
-            <textarea name="message" rows="5" placeholder="{{ translations[locale].hire_me.message }}" required></textarea>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group budget">
+                  <select name="budget" class="form-control bg-fa-caret-down white">
+                    <option>{{ translations[locale].hire_me.budget }}</option>
+                    <option>$1,000 - $3,000</option>
+                    <option>$3,000 - $6,000</option>
+                    <option>$6,000 - $10,000</option>
+                    <option>$10,000+</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group date">
+                  <input type="text" name="date" class="form-control DatePicker bg-fa-calender" placeholder="{{ translations[locale].hire_me.estimate_date }}">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group message">
+              <textarea name="message" class="form-control" rows="5" placeholder="{{ translations[locale].hire_me.message }}" required></textarea>
+            </div>
 
             <div class="estimate-container">
               <div class="estimate-text">
@@ -77,7 +100,7 @@
               </div>
             </div>
 
-            <button type="submit" class="btn btn--primary">{{ translations[locale].hire_me.send_button }}</button>
+            <button type="submit" class="submit-btn btn--primary">{{ translations[locale].hire_me.send_button }}</button>
           </div>
         </form>
       </div>
