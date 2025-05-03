@@ -15,6 +15,7 @@ import { initForms } from './modules/forms.js';
 import { initTestimonials } from './modules/testimonials.js';
 import { initModals } from './modules/modals.js';
 import { initAccessibility } from './modules/accessibility.js';
+import { initBrandsCarousel } from './modules/brandsCarousel.js';
 
 // Ejecutar cuando el DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', () => {
@@ -30,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initTestimonials();
   initModals(); // Inicializar modales
   initAccessibility(); // Inicializar mejoras de accesibilidad
-
+  initBrandsCarousel(); // Inicializar el carrusel de marcas moderno
+  
   console.log('Portfolio initialized successfully');
 });
