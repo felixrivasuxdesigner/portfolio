@@ -20,29 +20,128 @@
     "experience_in": "Experience <strong>in</strong>",
     "download_cv": "Download My CV",
     "cv_url": "/assets/resumen/Felix-Rivas-UXUI-Designer-EN.pdf",
-    "technologies": "Technologies I Work With",
+    "technologies": "Experience <strong>in</strong>",
+    "technologies_desc": "Some of the Technologies I have experience with",
     "paragraphs": {
-      "first": "With over 12 years of experience across media, banking, insurance, and retail, I've evolved into a specialist in crafting intuitive interfaces and meaningful user experiences for both mobile and web applications. My expertise spans front-end technologies (HTML, CSS, Sass, JavaScript, React) and design tools (Sketch, Photoshop, After Effects, InDesign, Final Cut Pro). Currently, I'm exploring how AI is reshaping design practices and creating new possibilities for user-centered experiences.",
-      "second": "Throughout my career, I've both participated in and led multidisciplinary design and development teams. Within Product Design, I've conducted extensive user research to build comprehensive data frameworks that illuminate genuine user needs and desires. This evidence-based approach enables me to craft engaging user experiences that significantly enhance how people interact with digital products, driving both user satisfaction and business outcomes.",
-      "third": "My professional vision extends beyond immediate projects—I'm committed to advancing my career through innovative solutions that tangibly improve people's lives through thoughtful, accessible design. Every digital interaction presents an opportunity to create a more intuitive, delightful experience."
+      "first": "With over 12 years of experience in design, I've worked across diverse fields including media, banking and finance, insurance, and retail. I specialize in user interface and user experience design for mobile and web applications, with expertise in front-end technologies like HTML, CSS, Sass, JavaScript, React, and design tools including Sketch, Photoshop, After Effects, InDesign, and Final Cut Pro. Currently, I'm exploring AI and its influence on design practices.",
+      "second": "I've both participated in and led design and development teams. Within Product Design, I've conducted extensive user research to build comprehensive frameworks that illuminate genuine user needs and desires. This approach enables me to craft engaging user experiences that significantly enhance how people interact with designed products.",
+      "third": "My long-term professional goals include continuing to grow in my career and developing innovative projects that contribute to improving people's lives through thoughtful design."
     }
   },
   "cv_sections": {
-    "education": "<strong>Edu</strong>cation",
-    "experience": "<strong>Ex</strong>perience"
+    "education_first": "Edu",
+    "education_second": "cation",
+    "experience_first": "Ex",
+    "experience_second": "perience"
   },
   "education": [
     {
       "date": "Jan 2024",
       "institution": "IMF Smart Education",
       "title": "<strong>Master in Project </strong>Management",
-      "description": "In today's increasingly uncertain and dynamic world, mastering a single project management framework is insufficient. Excellence in project leadership requires cross-disciplinary knowledge, proficiency across multiple standards, and the discernment to identify the appropriate methodology for each unique project context."
+      "description": "In an increasingly uncertain and changing world, knowledge of a single project management standard is not enough. A person who tries to excel in project management needs cross-disciplinary knowledge, mastery of different standards, and the ability to identify what type of project they are dealing with."
     },
     {
       "date": "Jan 2023",
       "institution": "Udemy",
       "title": "<strong>Artificial Intelligence </strong>for Business",
-      "description": "Developed practical skills for implementing AI solutions to address real-world business challenges across various industries and functional areas."
+      "description": "Solve Real World Business Problems with AI Solutions"
+    },
+    {
+      "date": "Dec 2022",
+      "institution": "Crehana",
+      "title": "<strong>UX Strategy</strong> in Organizations",
+      "description": "Product and service strategies must integrate much more than user experience design in their work approach."
+    },
+    {
+      "date": "Nov 2022",
+      "institution": "Crehana",
+      "title": "<strong>Agile Interaction Design</strong> for Products",
+      "description": "This online product design course provides interaction design tools, agile methodology values, and usability principles so you can create digital products and services designed around user needs that are scalable over time."
+    },
+    {
+      "date": "Oct 2022",
+      "institution": "Crehana",
+      "title": "<strong>Storytelling:</strong> The Art of Telling Stories",
+      "description": "You don't need any tricks to convince or attract your audience; you just need the most fundamental human skill: storytelling."
+    },
+    {
+      "date": "Sep 2022",
+      "institution": "Crehana",
+      "title": "<strong>Business Design </strong>for UX",
+      "description": "Learn online Business Design UX tools to design solutions to people's problems that you can capitalize on in your business."
+    },
+    {
+      "date": "Dec 2021",
+      "institution": "Udemy",
+      "title": "<strong>NFT Fundamentals </strong>(Buy, Create and Sell NFTs)",
+      "description": "Learn the key elements of Non-Fungible Tokens including how to buy, \"mint\" and sell NFTs for business, fun and profit!"
+    },
+    {
+      "date": "Aug 2021",
+      "institution": "Crehana",
+      "title": "<strong>Information Architecture:</strong> From Value Proposition to UX",
+      "description": "Learn different ways to approach an information architecture exercise and its corresponding navigation model."
+    },
+    {
+      "date": "Jun 2020",
+      "institution": "Crehana",
+      "title": "<strong>Prototyping from Scratch</strong> with Figma",
+      "description": "In this online course, you'll learn to use Figma from scratch and improve user experience design."
+    },
+    {
+      "date": "May 2020",
+      "institution": "Crehana",
+      "title": "<strong>Project Management</strong> and Tasks",
+      "description": "In this course you will learn to plan projects efficiently considering time management and daily task planning."
+    },
+    {
+      "date": "Apr 2020",
+      "institution": "Udemy",
+      "title": "<strong>Total ProtoPie</strong> Learn advanced prototyping without code",
+      "description": "Learn all of ProtoPie's tools and techniques to create amazing prototypes that look and work like the real thing."
+    },
+    {
+      "date": "Feb 2019",
+      "institution": "Udemy",
+      "title": "<strong>React - The Complete Guide:</strong> Hooks Context Redux MERN +15 Apps",
+      "description": "Learn React: Hooks, State, MERN, Next.js, Remix Run, Redux, Tailwind CSS, Prisma and much more - CREATING +15 REAL APPS"
+    },
+    {
+      "date": "Oct 2015",
+      "institution": "Udemy",
+      "title": "<strong>UX & Web Design Master Course:</strong> Strategy, Design, Development",
+      "description": "Learn how to apply User Experience (UX) principles to your website designs, code a variety of sites, and increase sales!"
+    },
+    {
+      "date": "Mar 2013",
+      "institution": "Udemy",
+      "title": "<strong>Sketch from A to Z </strong>Become an app designer",
+      "description": "Finally a comprehensive guide to using Sketch for designing mobile applications. Learn to design an app from A to Z."
+    },
+    {
+      "date": "Jan 2012",
+      "institution": "Lynda.com",
+      "title": "<strong>Agile Project</strong> Management",
+      "description": "Agile Project Management is a course designed to provide a comprehensive understanding of agile methods for project management. During the course, you'll learn techniques to maximize efficiency in team work, project planning, and delivery."
+    },
+    {
+      "date": "Jan 2008",
+      "institution": "Lynda.com",
+      "title": "<strong>Foundations </strong>of UX",
+      "description": "Foundations of UX is a comprehensive course that covers the fundamental principles and practices of User Experience (UX) design. The course explores key topics such as accessibility, content strategy, information architecture, multidevice design, prototyping, and usability testing."
+    },
+    {
+      "date": "Feb 2008",
+      "institution": "Pluralsight",
+      "title": "<strong>Usability Testing </strong>Approaches",
+      "description": "If you want to get into your users' heads and learn directly from the source as to how to improve your products, then this course is for you! You don't need to be a designer or a developer--usability is important for everyone."
+    },
+    {
+      "date": "2000-2004",
+      "institution": "IUTIRLA",
+      "title": "<strong>Graphic</strong> Designer",
+      "description": "During my studies in graphic design, I learned to use tools and techniques to create effective and attractive visual communications. Graphic design programs include courses in traditional graphic design, color theory, typography, illustration, photography, web design, and mobile application design."
     }
   ],
   "experience": [
@@ -50,13 +149,67 @@
       "date": "Jul 2023 - Jan 2024",
       "company": "Emergya",
       "title": "<strong>UX/UI</strong> Designer",
-      "description": "Led the design of intuitive, accessible, and visually engaging interfaces that balance business goals with user needs. Conducted strategic market research and user data analysis to inform design decisions while collaborating with cross-functional teams to ensure smooth implementation."
+      "description": "In my role as a UX/UI designer, my main responsibility is to design and develop user interfaces that are intuitive, accessible, and visually appealing. I ensure that the user interface design meets business objectives and user needs through market research and user data collection."
     },
     {
       "date": "Aug 2022 - Jun 2023",
       "company": "Shape Creative Studio",
       "title": "<strong>UX/UI</strong> Designer",
-      "description": "Spearheaded the creation of user-centered interfaces that harmonize aesthetic appeal with functional elegance. Leveraged comprehensive market research and user insights to create experiences that simultaneously fulfill business requirements and address core user needs across various digital platforms."
+      "description": "In my role as a UX/UI designer, my main responsibility is to design and develop user interfaces that are intuitive, accessible, and visually appealing. I ensure that the user interface design meets business objectives and user needs through market research and user data collection."
+    },
+    {
+      "date": "Jun - Jul 2022",
+      "company": "The Bridge Social",
+      "title": "<strong>UX</strong> Designer",
+      "description": "Create prototypes at different fidelity levels according to product needs for user testing. Conducted user research to understand motivators and barriers. Analyze information to obtain findings, insights, and relevant conclusions for the project, which help to provide or generate hypotheses for improvements to implement. Generate flows and use cases on possible system scenarios, which allows detecting possible errors or gaps."
+    },
+    {
+      "date": "Feb 2022",
+      "company": "Nectia",
+      "title": "<strong>UX/UI</strong> Designer",
+      "description": "My main responsibility was to design and build reusable modular components that could be used in multiple applications. I worked closely with the product manager to understand user needs and design solutions that meet those needs. Created wireframes, prototypes, mockups, and visual designs for web applications."
+    },
+    {
+      "date": "Mar 2021 - Jan 2022",
+      "company": "Mits",
+      "title": "<strong>UX/UI</strong> Designer",
+      "description": "Create prototypes at different fidelity levels according to product needs for user testing. Conducted user research to understand motivators and barriers. Analyze information to obtain findings, insights, and relevant conclusions for the project, which help to provide or generate hypotheses for improvements to implement. Generate flows and use cases on possible system scenarios, which allows detecting possible errors or gaps."
+    },
+    {
+      "date": "Oct - Dec 2022",
+      "company": "Multiplica",
+      "title": "<strong>UI</strong> Designer",
+      "description": "Creation of visually appealing and effective user interfaces. I worked closely with other team members, including UX designers and developers, to ensure that the design meets business objectives and user needs. I was also responsible for creating and maintaining design documentation and conducting usability testing to ensure an optimal user experience."
+    },
+    {
+      "date": "Sep 2019 - Jun 2020",
+      "company": "Andain",
+      "title": "<strong>Web</strong> Designer",
+      "description": "Oversee each new development to maintain the graphic line of the system, develop new functionalities and designs based on user needs."
+    },
+    {
+      "date": "Nov - Dec 2018",
+      "company": "Genesy",
+      "title": "<strong>UX</strong> Designer",
+      "description": "Develop new features and designs based on user needs. Additionally, I worked closely with other team members, including developers, project managers, and other designers, to ensure that all aspects of the project are coordinated and integrated into a coherent and effective solution."
+    },
+    {
+      "date": "Feb - Aug 2018",
+      "company": "Cosis International",
+      "title": "<strong>UX/UI</strong> Designer",
+      "description": "Develop new functionalities and designs for the security module of a web application that manages insurance companies based on user needs. Other responsibilities I perform include creating and maintaining design documentation, such as style guides and design specifications, and conducting usability testing to identify and resolve design issues."
+    },
+    {
+      "date": "Mar 2017 - Jan 2018",
+      "company": "Banesco Banco Universal",
+      "title": "<strong>Web</strong> Designer (UX/UI)",
+      "description": "Design Leader, Guarantor of brand standards on all web and mobile platforms, both nationally and internationally (Panama, Miami, and the Dominican Republic), Improve the user experience of users on all platforms."
+    },
+    {
+      "date": "Aug 2012 - Mar 2017",
+      "company": "Diario El Universal",
+      "title": "<strong>UX/UI</strong> Developer",
+      "description": "Responsible for user experience design, wireframes, and HTML mockups in Angular. Implementation of new technologies and modern work methodologies."
     }
   ],
   "services": {
