@@ -12,6 +12,7 @@ import { initPortfolio } from './modules/portfolio.js';
 import { initCounter } from './modules/counter.js';
 import { initBackToTop } from './modules/backToTop.js';
 import { initForms } from './modules/forms.js';
+import { initTestimonials } from './modules/testimonials.js';
 
 // Ejecutar cuando el DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', () => {
@@ -24,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initCounter();
   initBackToTop();
   initForms();
+  initTestimonials();
 
   console.log('Portfolio initialized successfully');
 });

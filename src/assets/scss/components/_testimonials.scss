@@ -13,14 +13,14 @@
   background-repeat: no-repeat;
   position: relative;
   
-  &::before {
+  &.bg--overlay::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(v.$white, 0.9);
+    background-color: rgba(v.$white, 0.92);
     z-index: 1;
   }
   
@@ -29,7 +29,54 @@
     z-index: 2;
   }
   
-  .feedback--title {
+  .section--title {
+    margin-bottom: 50px;
+    text-align: center;
+
+    h2 {
+      color: v.$primary-color;
+      font-size: 36px;
+      margin-bottom: 20px;
+      position: relative;
+      display: inline-block;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -10px;
+        width: 50px;
+        height: 3px;
+        background-color: v.$accent-color;
+        transform: translateX(-50%);
+      }
+
+      strong {
+        font-weight: v.$heading-font-weight;
+      }
+    }
+  }
+
+  .feedback-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    
+    @include m.media-breakpoint-down(medium) {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  // FAQ Section
+  .feedback-faq {
+    padding-right: 20px;
+    
+    @include m.media-breakpoint-down(medium) {
+      padding-right: 0;
+    }
+  }
+  
+  .faq--title {
     color: v.$primary-color;
     font-size: 24px;
     margin-bottom: 30px;
@@ -48,160 +95,199 @@
     }
   }
   
-  // FAQ Section Styles
-  .feedback--faq {
-    .panel-group {
-      margin-bottom: 0;
+  .accordion {
+    .accordion-item {
+      margin-bottom: 15px;
+      border: none;
+      background-color: transparent;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
       
-      .panel {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    
+    .accordion-header {
+      background-color: v.$white;
+      padding: 0;
+      
+      .accordion-button {
+        width: 100%;
+        text-align: left;
+        background: none;
         border: none;
-        box-shadow: none;
-        background: transparent;
-        margin-bottom: 15px;
-        border-radius: 0;
-        
-        &-heading {
-          padding: 0;
-          background: transparent;
-          border: none;
-          
-          a {
-            display: block;
-            padding: 15px 0;
-            text-decoration: none;
-            position: relative;
-            
-            &:hover {
-              h4 {
-                color: v.$accent-color;
-              }
-            }
-            
-            &.collapsed {
-              .fa-minus::before {
-                content: '\f067'; // fa-plus
-              }
-            }
-            
-            h4 {
-              margin: 0;
-              font-size: 18px;
-              color: v.$primary-color;
-              font-weight: v.$heading-font-weight;
-              transition: color 0.3s ease;
-              padding-right: 30px;
-              
-              i {
-                position: absolute;
-                right: 0;
-                top: 50%;
-                transform: translateY(-50%);
-                color: v.$accent-color;
-                font-size: 16px;
-              }
-            }
-          }
-        }
-        
-        &-body {
-          padding: 0 0 15px;
-          color: v.$secondary-color;
-          line-height: 1.6;
-          font-size: 15px;
-        }
-      }
-    }
-  }
-  
-  // Feedback Slider Styles
-  .feedback--items {
-    .feedback--slider {
-      position: relative;
-      
-      .feedback--item {
-        padding: 30px;
-        background-color: v.$white;
-        border-radius: 5px;
-        box-shadow: 0 5px 15px rgba(v.$black, 0.08);
+        padding: 15px 20px;
+        font-size: 16px;
+        color: v.$primary-color;
+        font-weight: v.$regular-font-weight;
         position: relative;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
         
-        i.fa-quote-left {
-          font-size: 30px;
-          color: v.$accent-color;
-          opacity: 0.3;
-          margin-bottom: 15px;
-          display: block;
-        }
-        
-        p {
-          font-size: 16px;
-          color: v.$text-color;
-          margin-bottom: 20px;
-          line-height: 1.6;
-        }
-        
-        .cite {
-          display: block;
-          color: v.$primary-color;
-          font-weight: v.$heading-font-weight;
+        i {
           font-size: 14px;
+          color: v.$accent-color;
+          transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        
+        &:not(.collapsed) {
+          background-color: v.$white;
+          color: v.$accent-color;
           
-          &::before {
-            content: '— ';
+          i {
+            transform: rotate(180deg);
           }
         }
         
-        &::before {
-          content: '';
-          width: 70px;
-          height: 70px;
-          border-radius: 50%;
-          background-size: cover;
-          background-position: center;
-          position: absolute;
-          bottom: 20px;
-          right: 20px;
-          border: 3px solid v.$white;
-          box-shadow: 0 3px 10px rgba(v.$black, 0.1);
+        &:hover {
+          color: v.$accent-color;
         }
       }
+    }
+    
+    .accordion-collapse {
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: max-height 0.5s cubic-bezier(0.2, 0.8, 0.3, 1), 
+                  opacity 0.4s ease, 
+                  padding 0.2s ease;
+      padding-top: 0;
       
-      // Navegación del slider
-      .slick-dots {
-        list-style: none;
-        text-align: center;
-        padding: 0;
-        margin: 20px 0 0;
-        
-        li {
-          display: inline-block;
-          margin: 0 3px;
-          
-          button {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background-color: v.$border-color;
-            font-size: 0;
-            padding: 0;
-            border: none;
-            outline: none;
-            transition: all 0.3s ease;
-            cursor: pointer;
-          }
-          
-          &.slick-active button {
-            background-color: v.$accent-color;
-            transform: scale(1.2);
-          }
-        }
+      &.show {
+        max-height: 500px; // Valor suficientemente grande para contener el contenido
+        opacity: 1;
+        padding-top: 5px;
+      }
+    }
+    
+    .accordion-body {
+      transform: translateY(10px);
+      transition: transform 0.3s ease-out;
+      padding: 0 20px 20px;
+      background-color: v.$white;
+      color: v.$text-color;
+      line-height: 1.6;
+      font-size: 15px;
+      
+      .show & {
+        transform: translateY(0);
       }
     }
   }
   
-  @include m.media-breakpoint-down(medium) {
-    .feedback--faq {
-      margin-bottom: 50px;
+  // Testimonials
+  .feedback-testimonials {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .testimonials-container {
+    position: relative;
+    overflow: hidden;
+    background-color: v.$white;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    height: 300px;
+    
+    @include m.media-breakpoint-down(small) {
+      height: auto;
+    }
+  }
+  
+  .testimonial-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    
+    &.active {
+      opacity: 1;
+      visibility: visible;
+      z-index: 2;
+    }
+    
+    @include m.media-breakpoint-down(small) {
+      position: relative;
+      height: auto;
+      opacity: 1;
+      visibility: visible;
+      display: none;
+      
+      &.active {
+        display: flex;
+      }
+    }
+  }
+  
+  .testimonial-content {
+    width: 100%;
+    
+    i.fa-quote-left {
+      font-size: 36px;
+      color: v.$accent-color;
+      opacity: 0.3;
+      margin-bottom: 15px;
+      display: block;
+    }
+    
+    p {
+      font-size: 16px;
+      color: v.$text-color;
+      margin-bottom: 20px;
+      line-height: 1.6;
+      font-style: italic;
+    }
+    
+    cite {
+      display: block;
+      color: v.$primary-color;
+      font-weight: v.$regular-font-weight;
+      font-size: 15px;
+      font-style: normal;
+      
+      &::before {
+        content: '— ';
+      }
+    }
+  }
+  
+  .testimonial-navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+    .testimonial-nav-btn {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: v.$light-gray;
+      border: none;
+      padding: 0;
+      margin: 0 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      
+      &.active {
+        background-color: v.$accent-color;
+        transform: scale(1.2);
+      }
+      
+      &:hover {
+        background-color: f.tint(v.$accent-color, 30%);
+      }
     }
   }
 }

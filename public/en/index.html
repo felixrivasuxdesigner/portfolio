@@ -899,88 +899,97 @@
     </div>
     <!-- Section Title End -->
 
-    <div class="row">
-      <div class="col-md-4">
+    <div class="feedback-container">
+      <div class="feedback-faq">
         <!-- Feedback FAQ Start -->
-        <div class="feedback--faq panel-group" id="feedbackFAQ" role="tablist">
+        <div class="feedback--faq accordion" id="feedbackFAQ">
           <h3 class="faq--title">Why me?</h3>
 
-          <!-- FAQ Panel Start -->
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="feedbackFAQHeading01">
-              <a role="button" data-toggle="collapse" href="#feedbackA01" aria-expanded="true" aria-controls="feedbackA01">
+          <!-- FAQ Item Start -->
+          <div class="accordion-item">
+            <div class="accordion-header" id="feedbackFAQHeading01">
+              <button class="accordion-button" type="button" data-target="#feedbackA01" aria-expanded="true" aria-controls="feedbackA01">
                 I specialize in human-centered UX/UI design
-                <i class="fa fa-minus"></i>
-              </a>
+                <i class="fa fa-chevron-down"></i>
+              </button>
             </div>
 
-            <div id="feedbackA01" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="feedbackFAQHeading01">
-              <div class="panel-body">
+            <div id="feedbackA01" class="accordion-collapse collapse show" aria-labelledby="feedbackFAQHeading01">
+              <div class="accordion-body">
                 With over 12 years of experience across diverse industries, I&#39;ve developed expertise in creating intuitive interfaces and meaningful experiences for both mobile and web. My technical proficiency spans front-end technologies (HTML, CSS, JavaScript, React) and design tools (Sketch, Photoshop, After Effects), enabling me to craft compelling experiences that enhance user engagement while driving business results.
               </div>
             </div>
           </div>
-          <!-- FAQ Panel End -->
+          <!-- FAQ Item End -->
 
-          <!-- FAQ Panel Start -->
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="feedbackFAQHeading02">
-              <a class="collapsed" role="button" data-toggle="collapse" href="#feedbackA02" aria-expanded="false" aria-controls="feedbackA02">
+          <!-- FAQ Item Start -->
+          <div class="accordion-item">
+            <div class="accordion-header" id="feedbackFAQHeading02">
+              <button class="accordion-button collapsed" type="button" data-target="#feedbackA02" aria-expanded="false" aria-controls="feedbackA02">
                 I've led cross-functional<br/>design teams
-                <i class="fa fa-plus"></i>
-              </a>
+                <i class="fa fa-chevron-down"></i>
+              </button>
             </div>
 
-            <div id="feedbackA02" class="panel-collapse collapse" role="tabpanel" aria-labelledby="feedbackFAQHeading02">
-              <div class="panel-body">
+            <div id="feedbackA02" class="accordion-collapse collapse" aria-labelledby="feedbackFAQHeading02">
+              <div class="accordion-body">
                 My experience leading design and development teams has sharpened my ability to align diverse perspectives toward common goals. By integrating user research into our process, I help teams create products that not only meet technical requirements but genuinely enhance how people interact with technology. This collaborative approach results in more efficient workflows and ultimately delivers more impactful digital experiences.
               </div>
             </div>
           </div>
-          <!-- FAQ Panel End -->
+          <!-- FAQ Item End -->
 
-          <!-- FAQ Panel Start -->
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="feedbackFAQHeading03">
-              <a class="collapsed" role="button" data-toggle="collapse" href="#feedbackA03" aria-expanded="false" aria-controls="feedbackA03">
+          <!-- FAQ Item Start -->
+          <div class="accordion-item">
+            <div class="accordion-header" id="feedbackFAQHeading03">
+              <button class="accordion-button collapsed" type="button" data-target="#feedbackA03" aria-expanded="false" aria-controls="feedbackA03">
                 I'm passionate about innovation and continuous growth
-                <i class="fa fa-plus"></i>
-              </a>
+                <i class="fa fa-chevron-down"></i>
+              </button>
             </div>
 
-            <div id="feedbackA03" class="panel-collapse collapse" role="tabpanel" aria-labelledby="feedbackFAQHeading03">
-              <div class="panel-body">
+            <div id="feedbackA03" class="accordion-collapse collapse" aria-labelledby="feedbackFAQHeading03">
+              <div class="accordion-body">
                 My ongoing exploration of artificial intelligence and its influence on design reflects my commitment to staying at the forefront of our rapidly evolving field. I&#39;m driven by the goal of developing innovative solutions that significantly improve people&#39;s lives through thoughtful design. This passion for creating positive impact through my work fuels my continuous professional development and creative problem-solving approach.
               </div>
             </div>
           </div>
-          <!-- FAQ Panel End -->
+          <!-- FAQ Item End -->
         </div>
         <!-- Feedback FAQ End -->
       </div>
 
-      <div class="col-md-8">
-        <!-- Feedback Slider Start -->
-        <div class="feedback--slider owl-carousel" data-owl-items="1" data-owl-margin="30" data-owl-autoplay="true">
-          <!-- Feedback Item Start -->
-          <div class="feedback--item">
-            <div class="feedback--content">
+      <div class="feedback-testimonials">
+        <!-- Testimonials Container Start -->
+        <div class="testimonials-container">
+          <!-- Testimonial Item Start -->
+          <div class="testimonial-item active" id="testimonial-1">
+            <div class="testimonial-content">
+              <i class="fa fa-quote-left"></i>
               <p>Félix demonstrates ideal professional qualities with his remarkable talent and genuine enthusiasm for his craft. His initiative and ingenuity in overcoming challenges make him an invaluable team member and collaborator.</p>
               <cite>Omar Florez, QA/QC Specialist</cite>
             </div>
           </div>
-          <!-- Feedback Item End -->
+          <!-- Testimonial Item End -->
 
-          <!-- Feedback Item Start -->
-          <div class="feedback--item">
-            <div class="feedback--content">
+          <!-- Testimonial Item Start -->
+          <div class="testimonial-item" id="testimonial-2">
+            <div class="testimonial-content">
+              <i class="fa fa-quote-left"></i>
               <p>Félix combines exceptional organization with initiative, creativity, and innovation. His commitment to mastering cutting-edge design tools is matched by his talent for optimizing the presentation layer of web applications for maximum impact and usability.</p>
               <cite>Amigley Bastardo, Applications and Systems Manager</cite>
             </div>
           </div>
-          <!-- Feedback Item End -->
+          <!-- Testimonial Item End -->
         </div>
-        <!-- Feedback Slider End -->
+        <!-- Testimonials Container End -->
+
+        <!-- Testimonial Navigation Start -->
+        <div class="testimonial-navigation">
+          <button class="testimonial-nav-btn active" data-target="testimonial-1"></button>
+          <button class="testimonial-nav-btn" data-target="testimonial-2"></button>
+        </div>
+        <!-- Testimonial Navigation End -->
       </div>
     </div>
   </div>
