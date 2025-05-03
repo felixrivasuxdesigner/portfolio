@@ -213,26 +213,26 @@
     }
   ],
   "services": {
-    "title": "Lo que Hago",
+    "title": "Lo que <strong>Hago</strong>",
     "web_design": {
       "title": "Diseño <strong>Web</strong>",
-      "description": "Creo interfaces atractivas y accesibles para sitios y aplicaciones web que equilibran atractivo visual con funcionalidad intuitiva. Cada diseño prioriza las necesidades del usuario mientras apoya objetivos comerciales clave mediante arquitectura de información reflexiva y layouts responsivos."
+      "description": "Me enfoco en la creación de interfaces de usuario atractivas y accesibles para sitios web y aplicaciones web."
     },
     "flow": {
-      "title": "Flujo de <strong>Usuario</strong> y <strong>Wireframing</strong>",
-      "description": "Construyo estructuras lógicas y eficientes que guían naturalmente a los usuarios a través de productos digitales. Mediante el mapeo de recorridos completos y wireframing de puntos clave, desarrollo marcos que ofrecen experiencias intuitivas y satisfactorias que reducen la carga cognitiva y aumentan el engagement."
+      "title": "Flujo de <strong>Usuarios</strong> &amp; <strong>Wireframe</strong>",
+      "description": "El servicio busca crear una estructura lógica y eficiente para el usuario, y mejorar la interacción del usuario con el producto digital. El objetivo final es ofrecer una experiencia de usuario intuitiva y satisfactoria."
     },
     "visual": {
       "title": "Diseño <strong>Visual</strong>",
-      "description": "Aprovecho el poder del color, tipografía, imágenes y jerarquía visual para crear experiencias digitales cohesivas y emocionalmente resonantes. Mi enfoque de diseño visual equilibra atractivo estético con claridad funcional para reforzar la identidad de marca mientras mejora la usabilidad en todos los puntos de contacto."
+      "description": "A través del uso de colores, tipografía, imágenes y otros elementos visuales, se busca crear una estética atractiva y coherente para el producto digital."
     },
     "mobile": {
-      "title": "Diseño de <strong>APP</strong> Móviles",
-      "description": "Diseño experiencias móviles que combinan patrones de interacción intuitivos con tratamientos visuales convincentes para crear aplicaciones memorables y efectivas. Mi enfoque considera las limitaciones y oportunidades específicas de cada dispositivo para ofrecer experiencias que se sienten naturales, receptivas y deleitables en pantallas más pequeñas."
+      "title": "Diseño de <strong>APP</strong> Moviles",
+      "description": "A través del uso de diseños intuitivos, funcionalidades efectivas y un diseño visual atractivo, se busca crear una experiencia de usuario que genere un impacto positivo y memorable en el usuario."
     },
     "ux_ui": {
-      "title": "Diseño <strong>UX</strong> y UI",
-      "description": "Mediante investigación con usuarios, wireframing, prototipado y pruebas estratégicas, creo experiencias digitales coherentes que conectan con los usuarios tanto a nivel práctico como emocional. Mi enfoque equilibra objetivos comerciales con necesidades del usuario para ofrecer soluciones que resulten intuitivas, significativas y agradables de usar."
+      "title": "Diseño <strong>UX</strong> &amp; UI",
+      "description": "A través del uso de técnicas de investigación de usuario, wireframing, prototipado y pruebas de usabilidad, se busca crear una experiencia de usuario coherente y significativa que genere un impacto positivo en la percepción del usuario sobre el producto digital."
     }
   },
   "portfolio": {
