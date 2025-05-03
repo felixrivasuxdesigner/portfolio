@@ -45,6 +45,9 @@
 - ✅ Renovación de la sección de Testimonios con diseño moderno
 - ✅ Implementación de acordeón mejorado en la sección "Why Me" con animaciones suaves
 - ✅ Desarrollo de carrusel de testimonios con JavaScript nativo (sin dependencias)
+- ✅ Corrección del posicionamiento del modal para que aparezca centrado en la pantalla
+- ✅ Uniformización de estilos y espaciado entre ambos formularios de contacto (general y modal "Contrátame")
+- ✅ Verificación de que ambos formularios utilicen FormSubmit correctamente con redirección a página de agradecimiento propia
 
 ## Próximos Pasos
 
@@ -104,6 +107,6 @@
 - Mejor rendimiento en dispositivos de gama baja
 - Navegación más fluida con JavaScript moderno
 - Mayor accesibilidad y usabilidad
-- Animaciones más suaves y naturales 
+- Animaciones más suaves y naturales
 - Interfaces más intuitivas y consistentes
 - Interacciones mejoradas para componentes como acordeones y modales
