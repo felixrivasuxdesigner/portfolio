@@ -1,0 +1,39 @@
+name: Build and Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+  # Permite ejecutar este workflow manualmente desde la pestaña Actions
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js ⚙️
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+          
+      - name: Install dependencies 📦
+        run: npm ci
+        
+      - name: Build project 🔨
+        run: npm run build:prod
+        
+      - name: Copy files to docs folder 📋
+        run: |
+          rm -rf docs
+          cp -r public docs
+          
+      - name: Commit docs folder 📤
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add docs
+          git commit -m "Update docs folder with latest build" || echo "No changes to commit"
+          git push
