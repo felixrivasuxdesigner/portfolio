@@ -5,16 +5,14 @@ permalink: /index.html
 <html>
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="refresh" content="0;url=./es/">
+  <meta http-equiv="refresh" content="0;url={{ site.baseUrl }}es/">
   <title>Redirecting...</title>
   <script>
     // Detectar el idioma preferido del navegador
     (function() {
       var language = navigator.language || navigator.userLanguage;
-      // Obtener la base del sitio (para funcionar en GitHub Pages)
-      var baseUrl = window.location.pathname.endsWith('/') 
-                      ? window.location.pathname 
-                      : window.location.pathname + '/';
+      // Ruta base para GitHub Pages
+      var baseUrl = "{{ site.baseUrl }}";
       
       if (language) {
         language = language.split('-')[0].toLowerCase();
@@ -28,6 +26,6 @@ permalink: /index.html
   </script>
 </head>
 <body>
-  <p>Redirecting to <a href="./es/">Spanish version</a>...</p>
+  <p>Redirecting to <a href="{{ site.baseUrl }}es/">Spanish version</a>...</p>
 </body>
 </html>

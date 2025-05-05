@@ -3,10 +3,10 @@
     <i class="fa-solid fa-globe"></i>
   </div>
   <div class="language-selector__dropdown" id="langDropdown">
-    <a href="../es/{{ page.url }}" class="{% if locale == 'es' %}active{% endif %}">
+    <a href="{{ site.baseUrl }}es/" class="{% if locale == 'es' %}active{% endif %}">
       <span class="flag flag--es"></span>Español
     </a>
-    <a href="../en/{{ page.url }}" class="{% if locale == 'en' %}active{% endif %}">
+    <a href="{{ site.baseUrl }}en/" class="{% if locale == 'en' %}active{% endif %}">
       <span class="flag flag--en"></span>English
     </a>
   </div>
