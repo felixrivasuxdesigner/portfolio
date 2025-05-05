@@ -84,7 +84,7 @@ p {
 }
 
 .text-regular {
-  font-weight: v.$regular-font-weight;
+  font-weight: 400; // Cambiado de v.$regular-font-weight
 }
 
 .text-bold,

@@ -1,0 +1,39 @@
+/* 
+ * Correcciones de rutas para GitHub Pages
+ * Este archivo asegura que todas las rutas absolutas se ajusten a la estructura de subdirectorios
+ */
+
+@use '../abstracts/variables' as v;
+
+// Corrección para las banderas en el selector de idioma
+.language-selector__dropdown a {
+  .flag {
+    &--es {
+      background-image: url('#{v.$base-url}assets/img/flags/es.svg') !important;
+    }
+    &--en {
+      background-image: url('#{v.$base-url}assets/img/flags/en.svg') !important;
+    }
+  }
+}
+
+// Otras imágenes que podrían necesitar corrección
+.logo--img img {
+  // Asegura que el logo use la ruta correcta si está referenciado en CSS
+  src: url('#{v.$base-url}assets/img/logo.webp') !important;
+}
+
+// Corrección para fondos de servicios y banner si son referenciados en CSS
+#services {
+  background-image: url('#{v.$base-url}assets/img/services-img/bg.webp') !important;
+}
+
+#banner {
+  background-image: url('#{v.$base-url}assets/img/banner-img/bg.webp') !important;
+}
+
+// Favicon (por si acaso)
+link[rel='icon'],
+link[rel='shortcut icon'] {
+  href: url('#{v.$base-url}assets/img/favicon.png') !important;
+}

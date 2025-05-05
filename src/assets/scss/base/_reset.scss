@@ -23,9 +23,9 @@ html {
 }
 
 body {
-  font-family: v.$base-font-family;
+  font-family: v.$body-font;
   font-size: 1rem;
-  font-weight: v.$regular-font-weight;
+  font-weight: 400; // Usamos un valor literal ya que no tenemos $regular-font-weight
   line-height: 1.5;
   color: v.$text-color;
   background-color: v.$white;
