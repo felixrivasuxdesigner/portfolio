@@ -2,24 +2,29 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="refresh" content="0;url=/es/">
+  <meta http-equiv="refresh" content="0;url=./es/">
   <title>Redirecting...</title>
   <script>
     // Detectar el idioma preferido del navegador
     (function() {
       var language = navigator.language || navigator.userLanguage;
+      // Obtener la base del sitio (para funcionar en GitHub Pages)
+      var baseUrl = window.location.pathname.endsWith('/') 
+                      ? window.location.pathname 
+                      : window.location.pathname + '/';
+      
       if (language) {
         language = language.split('-')[0].toLowerCase();
         if (language === 'en') {
-          window.location.replace('/en/');
+          window.location.replace(baseUrl + 'en/');
         } else {
-          window.location.replace('/es/'); // Predeterminado a español si no es inglés
+          window.location.replace(baseUrl + 'es/'); // Predeterminado a español si no es inglés
         }
       }
     })();
   </script>
 </head>
 <body>
-  <p>Redirecting to <a href="/es/">Spanish version</a>...</p>
+  <p>Redirecting to <a href="./es/">Spanish version</a>...</p>
 </body>
 </html>
