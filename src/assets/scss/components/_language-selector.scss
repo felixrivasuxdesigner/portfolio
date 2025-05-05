@@ -100,10 +100,10 @@
         box-shadow: 0 1px 2px rgba(v.$black, 0.2);
 
         &--es {
-          background-image: url('/assets/img/flags/es.svg');
+          background-image: url('#{v.$base-url}assets/img/flags/es.svg');
         }
         &--en {
-          background-image: url('/assets/img/flags/en.svg');
+          background-image: url('#{v.$base-url}assets/img/flags/en.svg');
         }
       }
     }

@@ -28,12 +28,22 @@ export function initLanguageSelector() {
   // Adaptar los URLs para mantener la ruta actual al cambiar idioma
   const languageLinks = langDropdown.querySelectorAll('a');
   languageLinks.forEach((link) => {
-    // Obtener la URL actual sin el prefijo de idioma
+    // Obtener la URL actual sin el prefijo de idioma y sin la base URL
     const currentPath = window.location.pathname;
-    const pathWithoutLang = currentPath.replace(/^\/(es|en)\//, '');
+
+    // Elimina primero la base URL '/portfolio/' si existe
+    let cleanPath = currentPath.replace(/^\/portfolio\//, '');
+
+    // Luego elimina el prefijo de idioma 'es/' o 'en/'
+    cleanPath = cleanPath.replace(/^(es|en)\//, '');
+
+    // Obtener el idioma destino del enlace (es o en)
+    const targetLang = link.getAttribute('href').includes('/es/') ? 'es' : 'en';
+
+    // Construir la URL correcta con la base URL desde site.json
+    const baseUrl = '/portfolio/'; // Debe coincidir con site.baseUrl
 
     // Actualizar href con la ruta correcta
-    const baseHref = link.getAttribute('href').split('/').slice(0, 2).join('/');
-    link.setAttribute('href', `${baseHref}/${pathWithoutLang}`);
+    link.setAttribute('href', `${baseUrl}${targetLang}/${cleanPath}`);
   });
 }
