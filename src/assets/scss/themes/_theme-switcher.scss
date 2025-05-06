@@ -70,11 +70,12 @@
   --control-btn-hover-color: #ffffff;
 }
 
-// Estilos para el menú fijo al hacer scroll
-#header.fixed .header--navbar {
+// Estilos para el header cuando está fijo (sticky) al hacer scroll
+#header.fixed {
   background-color: var(--navbar-scroll-bg);
   box-shadow: var(--navbar-scroll-shadow);
 
+  // Ajustes a los enlaces de navegación dentro del header fijo
   .nav > li > a {
     color: var(--navbar-link-color);
 
@@ -84,7 +85,7 @@
     }
   }
 
-  // Estilos para el logo cuando el menú está fijo
+  // Estilos para el logo cuando el header está fijo
   .logo--content {
     h1,
     p {
@@ -92,7 +93,7 @@
     }
   }
 
-  // Estilo para el botón de "Contrátame" cuando el menú está fijo
+  // Estilo para el botón de "Contrátame" cuando el header está fijo
   .header--custom-btn .btn--default {
     background-color: var(--accent-color);
     color: #ffffff;
@@ -102,7 +103,7 @@
     }
   }
 
-  // Iconos del menú cuando está fijo
+  // Iconos del menú hamburguesa cuando el header está fijo
   .navbar-toggle .icon-bar {
     background-color: var(--navbar-link-color);
   }

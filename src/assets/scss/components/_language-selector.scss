@@ -33,23 +33,8 @@
       }
     }
 
-    // Específico para el botón de tema en sticky
-    .theme-toggle.in-language-selector {
-      .fa-moon,
-      .fa-sun {
-        color: var(--control-btn-color);
-      }
-
-      &:hover {
-        .fa-moon,
-        .fa-sun {
-          color: var(--control-btn-hover-color);
-        }
-      }
-    }
-
-    // Override para el sol en modo oscuro
-    &[data-theme='dark'] .theme-toggle.in-language-selector .fa-sun {
+    // Corrección de colores para los iconos en modo oscuro
+    [data-theme='dark'] & .theme-toggle.in-language-selector .fa-sun {
       color: var(--control-btn-color);
 
       &:hover {
