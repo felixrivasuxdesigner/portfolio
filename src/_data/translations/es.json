@@ -29,10 +29,8 @@
     }
   },
   "cv_sections": {
-    "education_first": "Edu",
-    "education_second": "cación",
-    "experience_first": "Ex",
-    "experience_second": "periencia"
+    "education": "<strong>Edu</strong>cación",
+    "experience": "<strong>Ex</strong>periencia"
   },
   "education": [
     {
