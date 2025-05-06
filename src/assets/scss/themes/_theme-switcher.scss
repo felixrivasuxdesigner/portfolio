@@ -46,11 +46,11 @@
   --about-secondary-text: #{v.$secondary-color};
   
   // Variables específicas para la sección Servicios en modo claro
-  --services-overlay-bg: rgba(#{v.$primary-color}, 0.85);
+  --services-overlay-bg: rgba(#{v.$primary-color}, 0.9);
   --services-title-color: #{v.$white};
-  --services-item-bg: rgba(#{v.$white}, 0.1);
-  --services-item-hover-bg: rgba(#{v.$white}, 0.15);
-  --services-item-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  --services-item-bg: rgba(#{v.$primary-color}, 0.7);
+  --services-item-hover-bg: rgba(#{v.$primary-color}, 0.8);
+  --services-item-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   --services-icon-bg: rgba(#{v.$white}, 0.1);
   --services-heading-color: #{v.$white};
   --services-text-color: #{v.$white};
