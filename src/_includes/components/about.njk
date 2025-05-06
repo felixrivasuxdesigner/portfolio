@@ -3,7 +3,7 @@
   <div class="container">
     <!-- Section Title Start -->
     <div class="section--title">
-      <h2><strong>{{ translations[locale].about.title }}</strong></h2>
+      <h2>{{ translations[locale].about.title | safe }}</h2>
     </div>
     <!-- Section Title End -->
 
@@ -19,9 +19,9 @@
       </div>
 
       <div class="col-md-6">
-        <h3>{{ translations[locale].about.technologies }}</h3>
+        <h3>{{ translations[locale].about.technologies | safe }}</h3>
         
-        <p>{{ translations[locale].about.technologies_desc }}</p>
+        <p>{{ translations[locale].about.technologies_desc | safe }}</p>
 
         <!-- About Progrees Items Start -->
         <div class="about--progress-items">
@@ -115,7 +115,7 @@
       <div class="row">
         <div class="col-md-6">
           <div class="about--info-wrapper">
-            <h3><strong>{{ translations[locale].cv_sections.education_first }}</strong>{{ translations[locale].cv_sections.education_second }}</h3>
+            <h3>{{ '<strong>' + translations[locale].cv_sections.education_first + '</strong>' + translations[locale].cv_sections.education_second | safe }}</h3>
 
             {% for education in translations[locale].education %}
             <!-- About Info Item Start -->
@@ -139,7 +139,7 @@
 
         <div class="col-md-6">
           <div class="about--info-wrapper">
-            <h3><strong>{{ translations[locale].cv_sections.experience_first }}</strong>{{ translations[locale].cv_sections.experience_second }}</h3>
+            <h3>{{ '<strong>' + translations[locale].cv_sections.experience_first + '</strong>' + translations[locale].cv_sections.experience_second | safe }}</h3>
 
             {% for experience in translations[locale].experience %}
             <!-- About Info Item Start -->
