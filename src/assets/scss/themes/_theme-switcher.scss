@@ -54,6 +54,26 @@
   --services-icon-bg: rgba(#{v.$white}, 0.1);
   --services-heading-color: #{v.$white};
   --services-text-color: #{v.$white};
+  
+  // Variables específicas para la sección Portfolio en modo claro
+  --portfolio-filter-bg: #{v.$white};
+  --portfolio-filter-text: #{v.$text-color};
+  --portfolio-filter-active-bg: #{v.$accent-color};
+  --portfolio-filter-active-text: #{v.$white};
+  --portfolio-overlay-bg: rgba(0, 0, 0, 0.7);
+  --portfolio-overlay-text: #{v.$white};
+  --portfolio-case-study-bg: #{v.$accent-color};
+  --portfolio-case-study-text: #{v.$white};
+  --portfolio-btn-bg: #{v.$white};
+  --portfolio-btn-text: #{v.$text-color};
+  --portfolio-btn-hover-bg: #{v.$accent-color};
+  --portfolio-btn-hover-text: #{v.$white};
+  --portfolio-modal-bg: #{v.$white};
+  --portfolio-modal-text: #{v.$text-color};
+  --portfolio-modal-title: #{v.$primary-color};
+  --portfolio-modal-close: #{v.$text-color};
+  --portfolio-modal-close-hover: #{v.$accent-color};
+  --portfolio-modal-border: #{v.$border-color};
 }
 
 // Estilo específico para el modo oscuro
@@ -104,6 +124,26 @@
   --services-icon-bg: rgba(255, 255, 255, 0.05);
   --services-heading-color: #ffffff;
   --services-text-color: #e0e0e0;
+  
+  // Variables específicas para la sección Portfolio en modo oscuro
+  --portfolio-filter-bg: #1e1e1e;
+  --portfolio-filter-text: #e0e0e0;
+  --portfolio-filter-active-bg: #{v.$accent-color};
+  --portfolio-filter-active-text: #ffffff;
+  --portfolio-overlay-bg: rgba(0, 0, 0, 0.8);
+  --portfolio-overlay-text: #ffffff;
+  --portfolio-case-study-bg: #{v.$accent-color};
+  --portfolio-case-study-text: #ffffff;
+  --portfolio-btn-bg: #333333;
+  --portfolio-btn-text: #ffffff;
+  --portfolio-btn-hover-bg: #{v.$accent-color};
+  --portfolio-btn-hover-text: #ffffff;
+  --portfolio-modal-bg: #1e1e1e;
+  --portfolio-modal-text: #e0e0e0;
+  --portfolio-modal-title: #ffffff;
+  --portfolio-modal-close: #e0e0e0;
+  --portfolio-modal-close-hover: #{v.$accent-color};
+  --portfolio-modal-border: #333333;
 }
 
 // Estilos para el header cuando está fijo (sticky) al hacer scroll

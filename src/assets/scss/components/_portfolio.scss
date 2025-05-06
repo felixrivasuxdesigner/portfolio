@@ -8,13 +8,15 @@
 
 #gallery {
   padding: 80px 0;
+  background-color: var(--background-color);
+  transition: var(--theme-transition);
 
   .section--title {
     margin-bottom: 60px;
     text-align: center;
 
     h2 {
-      color: v.$primary-color;
+      color: var(--heading-color);
       font-size: 36px;
       margin-bottom: 20px;
       position: relative;
@@ -27,7 +29,7 @@
         bottom: -10px;
         width: 50px;
         height: 3px;
-        background-color: v.$accent-color;
+        background-color: var(--accent-color);
         transform: translateX(-50%);
       }
 
@@ -52,14 +54,14 @@
         margin: 0 5px 10px;
 
         &.active .btn--default {
-          background-color: v.$accent-color;
-          color: v.$white;
+          background-color: var(--portfolio-filter-active-bg);
+          color: var(--portfolio-filter-active-text);
         }
 
         .btn--default {
           display: inline-block;
-          background-color: v.$light-gray;
-          color: v.$primary-color;
+          background-color: var(--portfolio-filter-bg);
+          color: var(--portfolio-filter-text);
           padding: 8px 20px;
           border-radius: 4px;
           font-weight: v.$regular-font-weight;
@@ -69,8 +71,8 @@
           border: none;
 
           &:hover {
-            background-color: v.$accent-color;
-            color: v.$white;
+            background-color: var(--portfolio-filter-active-bg);
+            color: var(--portfolio-filter-active-text);
           }
         }
       }
@@ -190,7 +192,7 @@
     overflow: hidden;
     border-radius: 8px;
     cursor: pointer;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--box-shadow);
     transition: all 0.3s ease;
     height: 0;
     padding-bottom: 75%; // Aspect ratio 4:3
@@ -228,8 +230,8 @@
       position: absolute;
       top: 15px;
       left: 15px;
-      background-color: v.$accent-color;
-      color: v.$white;
+      background-color: var(--portfolio-case-study-bg);
+      color: var(--portfolio-case-study-text);
       padding: 5px 10px;
       font-size: 12px;
       border-radius: 3px;
@@ -242,7 +244,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(v.$primary-color, 0.85);
+      background-color: var(--portfolio-overlay-bg);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -256,7 +258,7 @@
         padding: 20px;
 
         h2 {
-          color: v.$white;
+          color: var(--portfolio-overlay-text);
           font-size: 20px;
           margin-bottom: 20px;
           transform: translateY(-20px);
@@ -266,8 +268,8 @@
 
         .btn {
           display: inline-block;
-          background-color: v.$accent-color;
-          color: v.$white;
+          background-color: var(--portfolio-btn-bg);
+          color: var(--portfolio-btn-text);
           padding: 8px 20px;
           border-radius: 4px;
           font-weight: v.$regular-font-weight;
@@ -280,7 +282,8 @@
           transition: all 0.4s ease 0.2s;
 
           &:hover {
-            background-color: f.shade(v.$accent-color, 15%);
+            background-color: var(--portfolio-btn-hover-bg);
+            color: var(--portfolio-btn-hover-text);
           }
         }
       }
@@ -350,7 +353,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(v.$primary-color, 0.9);
+  background-color: var(--overlay-bg);
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -367,13 +370,13 @@
   }
 
   .modal-container {
-    background-color: v.$white;
+    background-color: var(--portfolio-modal-bg);
     width: 90%;
     max-width: 1000px;
     max-height: none; // Eliminamos la restricción de altura máxima
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--box-shadow);
     transform: scale(0.8);
     transition: transform 0.3s ease;
     margin: auto; // Centrar verticalmente cuando el contenido es más corto que la ventana
@@ -389,7 +392,7 @@
 
   .modal-header {
     padding: 20px 30px;
-    border-bottom: 1px solid v.$border-color;
+    border-bottom: 1px solid var(--portfolio-modal-border);
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -399,12 +402,12 @@
       font-size: 24px;
       font-weight: v.$heading-font-weight;
       margin: 0;
-      color: v.$primary-color;
+      color: var(--portfolio-modal-title);
       flex: 1;
     }
 
     .modal-categories {
-      color: v.$secondary-color;
+      color: var(--light-text-color);
       margin: 5px 30px 0 0;
       font-size: 14px;
     }
@@ -416,12 +419,13 @@
       font-size: 30px;
       line-height: 1;
       padding: 0;
-      color: v.$secondary-color;
+      color: var(--portfolio-modal-close);
       opacity: 0.6;
       transition: opacity 0.3s ease;
 
       &:hover {
         opacity: 1;
+        color: var(--portfolio-modal-close-hover);
       }
     }
   }
@@ -444,12 +448,12 @@
 
     .modal-description {
       padding: 30px;
-      background-color: f.tint(v.$light-gray, 50%);
+      background-color: var(--card-bg-color);
 
       p {
         margin: 0;
         line-height: 1.6;
-        color: v.$text-color;
+        color: var(--portfolio-modal-text);
       }
     }
   }
