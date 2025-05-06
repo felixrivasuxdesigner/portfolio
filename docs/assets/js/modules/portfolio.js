@@ -77,7 +77,7 @@ function initProjectModals() {
           ?.closest('.gallery-item')
           .querySelector('h2').textContent || '',
       categories: getTranslation('portfolio.projects.wallet.categories'),
-      imageSrc: '/assets/img/gallery-img/belcorp/belcorp.webp',
+      imageSrc: '/portfolio/assets/img/gallery-img/belcorp/belcorp.webp',
       description: getTranslation('portfolio.projects.wallet.description'),
     },
     factoring: {
@@ -87,7 +87,7 @@ function initProjectModals() {
           ?.closest('.gallery-item')
           .querySelector('h2').textContent || '',
       categories: getTranslation('portfolio.projects.factoring.categories'),
-      imageSrc: '/assets/img/gallery-img/security/factoring.webp',
+      imageSrc: '/portfolio/assets/img/gallery-img/security/factoring.webp',
       description: getTranslation('portfolio.projects.factoring.description'),
     },
     nomadix: {
@@ -97,7 +97,7 @@ function initProjectModals() {
           ?.closest('.gallery-item')
           .querySelector('h2').textContent || '',
       categories: getTranslation('portfolio.projects.nomadix.categories'),
-      imageSrc: '/assets/img/gallery-img/nomadix/nomadix.webp',
+      imageSrc: '/portfolio/assets/img/gallery-img/nomadix/nomadix.webp',
       description: getTranslation('portfolio.projects.nomadix.description'),
     },
   };
