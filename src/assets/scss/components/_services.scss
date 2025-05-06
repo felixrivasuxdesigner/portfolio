@@ -20,8 +20,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(v.$primary-color, 0.85);
+    background-color: var(--services-overlay-bg, rgba(v.$primary-color, 0.85));
     z-index: 1;
+    transition: var(--theme-transition);
   }
 
   .container {
@@ -34,11 +35,12 @@
     text-align: center;
 
     h2 {
-      color: v.$white;
+      color: var(--services-title-color, v.$white);
       font-size: 36px;
       margin-bottom: 20px;
       position: relative;
       display: inline-block;
+      transition: var(--theme-transition);
 
       &::after {
         content: '';
@@ -75,15 +77,15 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    background-color: rgba(v.$white, 0.1);
+    background-color: var(--services-item-bg, rgba(v.$white, 0.1));
     border-radius: 8px;
     padding: 30px;
-    transition: all 0.3s ease;
+    transition: var(--theme-transition);
 
     &:hover {
       transform: translateY(-10px);
-      background-color: rgba(v.$white, 0.15);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      background-color: var(--services-item-hover-bg, rgba(v.$white, 0.15));
+      box-shadow: var(--services-item-shadow, 0 10px 20px rgba(0, 0, 0, 0.1));
     }
 
     .service--icon {
@@ -97,9 +99,9 @@
         height: 80px;
         line-height: 80px;
         text-align: center;
-        background-color: rgba(v.$white, 0.1);
+        background-color: var(--services-icon-bg, rgba(v.$white, 0.1));
         border-radius: 50%;
-        transition: all 0.3s ease;
+        transition: var(--theme-transition);
       }
     }
 
@@ -107,10 +109,11 @@
       flex: 1;
 
       h2 {
-        color: v.$white;
+        color: var(--services-heading-color, v.$white);
         font-size: 22px;
         margin-bottom: 15px;
         font-weight: v.$light-font-weight;
+        transition: var(--theme-transition);
 
         strong {
           font-weight: v.$heading-font-weight;
@@ -118,10 +121,11 @@
       }
 
       p {
-        color: v.$white;
+        color: var(--services-text-color, v.$white);
         margin-bottom: 0;
         opacity: 0.8;
         line-height: 1.6;
+        transition: var(--theme-transition);
       }
     }
   }

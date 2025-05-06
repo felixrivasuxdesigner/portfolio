@@ -44,6 +44,16 @@
   --about-progress-bg: #{v.$light-gray};
   --about-separator-color: #{v.$border-color};
   --about-secondary-text: #{v.$secondary-color};
+  
+  // Variables específicas para la sección Servicios en modo claro
+  --services-overlay-bg: rgba(#{v.$primary-color}, 0.85);
+  --services-title-color: #{v.$white};
+  --services-item-bg: rgba(#{v.$white}, 0.1);
+  --services-item-hover-bg: rgba(#{v.$white}, 0.15);
+  --services-item-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  --services-icon-bg: rgba(#{v.$white}, 0.1);
+  --services-heading-color: #{v.$white};
+  --services-text-color: #{v.$white};
 }
 
 // Estilo específico para el modo oscuro
@@ -84,6 +94,16 @@
   --about-progress-bg: #333333;
   --about-separator-color: #444444;
   --about-secondary-text: #cccccc;
+  
+  // Variables específicas para la sección Servicios en modo oscuro
+  --services-overlay-bg: rgba(0, 0, 0, 0.9);
+  --services-title-color: #ffffff;
+  --services-item-bg: rgba(30, 30, 30, 0.6);
+  --services-item-hover-bg: rgba(40, 40, 40, 0.7);
+  --services-item-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  --services-icon-bg: rgba(255, 255, 255, 0.05);
+  --services-heading-color: #ffffff;
+  --services-text-color: #e0e0e0;
 }
 
 // Estilos para el header cuando está fijo (sticky) al hacer scroll
