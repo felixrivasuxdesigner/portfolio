@@ -168,10 +168,10 @@ function initProjectModals() {
       // usando la función getFixedImagePath para ajustar la ruta según el entorno
       if (projectKey === 'nomadix') {
         // Reemplazar la imagen del modal con la versión detallada
-        projectImage.src = getFixedImagePath('/assets/img/gallery-img/nomadix/nomadix.webp');
+        projectImage.src = getFixedImagePath('/assets/img/gallery-img/nomadix/Nomadix.webp');
       } else if (projectKey === 'wallet') {
         // Reemplazar la imagen del modal con la versión detallada
-        projectImage.src = getFixedImagePath('/assets/img/gallery-img/belcorp/belcorp.webp');
+        projectImage.src = getFixedImagePath('/assets/img/gallery-img/belcorp/Belcorp.webp');
       } else if (projectKey === 'factoring') {
         // Reemplazar la imagen del modal con la versión detallada
         projectImage.src = getFixedImagePath('/assets/img/gallery-img/security/factoring.webp');
