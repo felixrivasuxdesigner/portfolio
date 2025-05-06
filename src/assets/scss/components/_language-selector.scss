@@ -19,16 +19,41 @@
   &.fixed {
     .language-selector__toggle,
     .theme-toggle.in-language-selector {
-      background-color: v.$accent-color;
-      color: v.$white;
-      border-color: v.$accent-color;
+      background-color: var(--control-btn-bg);
+      color: var(--control-btn-color);
+      border-color: var(--control-btn-border);
 
       &:hover {
-        background-color: color.adjust(v.$accent-color, $lightness: -10%);
+        background-color: var(--control-btn-hover-bg);
+        color: var(--control-btn-hover-color);
       }
 
       i {
-        color: v.$white;
+        color: var(--control-btn-color);
+      }
+    }
+
+    // Específico para el botón de tema en sticky
+    .theme-toggle.in-language-selector {
+      .fa-moon,
+      .fa-sun {
+        color: var(--control-btn-color);
+      }
+
+      &:hover {
+        .fa-moon,
+        .fa-sun {
+          color: var(--control-btn-hover-color);
+        }
+      }
+    }
+
+    // Override para el sol en modo oscuro
+    &[data-theme='dark'] .theme-toggle.in-language-selector .fa-sun {
+      color: var(--control-btn-color);
+
+      &:hover {
+        color: var(--control-btn-hover-color);
       }
     }
   }
@@ -115,32 +140,32 @@
       }
     }
   }
-}
 
-/* Estilos para el botón de tema cuando está junto al selector de idioma */
-.language-selector .theme-toggle.in-language-selector {
-  @include m.flex-center;
-  background-color: rgba(v.$white, 0.2);
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  border: 1px solid rgba(v.$white, 0.3);
-  cursor: pointer;
-  margin-left: 10px;
-  @include m.transition;
-  box-shadow: 0 2px 5px rgba(v.$black, 0.1);
+  // Estilos para el botón de tema cuando está junto al selector de idioma
+  .theme-toggle.in-language-selector {
+    @include m.flex-center;
+    background-color: rgba(v.$white, 0.2);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(v.$white, 0.3);
+    cursor: pointer;
+    margin-left: 10px;
+    @include m.transition;
+    box-shadow: 0 2px 5px rgba(v.$black, 0.1);
 
-  &:hover {
-    background-color: v.$accent-color;
-    border-color: v.$accent-color;
+    &:hover {
+      background-color: v.$accent-color;
+      border-color: v.$accent-color;
+
+      i {
+        color: v.$white;
+      }
+    }
 
     i {
+      font-size: 18px;
       color: v.$white;
     }
-  }
-
-  i {
-    font-size: 18px;
-    color: v.$white;
   }
 }

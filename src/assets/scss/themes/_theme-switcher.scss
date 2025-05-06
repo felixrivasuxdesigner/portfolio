@@ -26,6 +26,13 @@
   --navbar-link-color: #{v.$text-color};
   --navbar-link-hover-color: #{v.$accent-color};
 
+  // Variables para los controles de idioma/tema cuando el menú está sticky
+  --control-btn-bg: #{v.$white};
+  --control-btn-color: #{v.$text-color};
+  --control-btn-border: #{v.$border-color};
+  --control-btn-hover-bg: #{v.$accent-color};
+  --control-btn-hover-color: #{v.$white};
+
   // Transitions para cambio de tema suave
   --theme-transition: background-color 0.3s ease, color 0.3s ease,
     border-color 0.3s ease, box-shadow 0.3s ease;
@@ -50,14 +57,21 @@
   --subtle-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
   // Variables específicas para menú en scroll en modo oscuro
-  --navbar-scroll-bg: #1a1a1a;
-  --navbar-scroll-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-  --navbar-link-color: #e0e0e0;
+  --navbar-scroll-bg: #000000; // Negro puro para el menú sticky en modo oscuro
+  --navbar-scroll-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+  --navbar-link-color: #ffffff; // Texto blanco para los enlaces
   --navbar-link-hover-color: #{v.$accent-color};
+
+  // Variables para los controles en modo oscuro cuando el menú está sticky
+  --control-btn-bg: #ffffff; // Fondo blanco para los botones en modo oscuro
+  --control-btn-color: #000000; // Color negro para los iconos
+  --control-btn-border: #ffffff;
+  --control-btn-hover-bg: #{v.$accent-color};
+  --control-btn-hover-color: #ffffff;
 }
 
 // Estilos para el menú fijo al hacer scroll
-.header--navbar.navbar-fixed {
+#header.fixed .header--navbar {
   background-color: var(--navbar-scroll-bg);
   box-shadow: var(--navbar-scroll-shadow);
 
@@ -68,6 +82,29 @@
     &:focus {
       color: var(--navbar-link-hover-color);
     }
+  }
+
+  // Estilos para el logo cuando el menú está fijo
+  .logo--content {
+    h1,
+    p {
+      color: var(--navbar-link-color);
+    }
+  }
+
+  // Estilo para el botón de "Contrátame" cuando el menú está fijo
+  .header--custom-btn .btn--default {
+    background-color: var(--accent-color);
+    color: #ffffff;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  // Iconos del menú cuando está fijo
+  .navbar-toggle .icon-bar {
+    background-color: var(--navbar-link-color);
   }
 }
 

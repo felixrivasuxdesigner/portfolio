@@ -17,9 +17,11 @@ export function initThemeSwitcher() {
   // Establecer tema inicial
   if (savedTheme) {
     document.documentElement.setAttribute('data-theme', savedTheme);
+    syncThemeWithLanguageSelector(savedTheme);
     updateThemeIcon(savedTheme);
   } else if (prefersDarkMode) {
     document.documentElement.setAttribute('data-theme', 'dark');
+    syncThemeWithLanguageSelector('dark');
     updateThemeIcon('dark');
   }
 
@@ -38,9 +40,18 @@ export function initThemeSwitcher() {
       // Solo cambiar si el usuario no ha establecido una preferencia explícita
       if (!localStorage.getItem('theme')) {
         document.documentElement.setAttribute('data-theme', newTheme);
+        syncThemeWithLanguageSelector(newTheme);
         updateThemeIcon(newTheme);
       }
     });
+}
+
+// Función para sincronizar el tema con el selector de idioma
+function syncThemeWithLanguageSelector(theme) {
+  const languageSelector = document.querySelector('.language-selector');
+  if (languageSelector) {
+    languageSelector.setAttribute('data-theme', theme);
+  }
 }
 
 // Cambiar entre temas
@@ -51,6 +62,9 @@ function toggleTheme() {
 
   // Actualizar el tema en el DOM
   document.documentElement.setAttribute('data-theme', newTheme);
+
+  // Sincronizar con el selector de idioma
+  syncThemeWithLanguageSelector(newTheme);
 
   // Guardar preferencia
   localStorage.setItem('theme', newTheme);
