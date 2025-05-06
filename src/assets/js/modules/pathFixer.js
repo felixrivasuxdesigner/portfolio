@@ -8,10 +8,74 @@ export function fixPaths() {
   if (window.location.hostname.includes('github.io')) {
     const baseUrl = '/portfolio/';
 
+    // Agregamos una corrección inicial para las imágenes que se cargan antes de que el script se ejecute
+    document.addEventListener('DOMContentLoaded', () => {
+      const preloadedImages = document.querySelectorAll(
+        'img[srcset], img:not([src^="http"]):not([src^="data:"]), source[srcset]'
+      );
+      preloadedImages.forEach((img) => {
+        if (img.srcset) {
+          const newSrcset = fixUrl(img.srcset);
+          if (img.srcset !== newSrcset) {
+            console.log(
+              `Pre-corrección de srcset: ${img.srcset} -> ${newSrcset}`
+            );
+            img.srcset = newSrcset;
+          }
+        }
+
+        if (
+          img.src &&
+          !img.src.startsWith('data:') &&
+          !img.src.startsWith('http')
+        ) {
+          const originalSrc = img.getAttribute('src');
+          const newSrc = fixUrl(originalSrc);
+          if (originalSrc !== newSrc) {
+            console.log(
+              `Pre-corrección de imagen: ${originalSrc} -> ${newSrc}`
+            );
+            img.src = newSrc;
+          }
+        }
+      });
+
+      // Verificación de background-images que no se corrigieron
+      document
+        .querySelectorAll('[data-bg], [data-parallax-bg-img]')
+        .forEach((el) => {
+          if (el.hasAttribute('data-bg')) {
+            const bgUrl = el.getAttribute('data-bg');
+            if (
+              bgUrl &&
+              !bgUrl.startsWith('http') &&
+              !bgUrl.startsWith(baseUrl)
+            ) {
+              const newBgUrl = fixUrl(bgUrl);
+              el.setAttribute('data-bg', newBgUrl);
+              console.log(`Corrigiendo data-bg: ${bgUrl} -> ${newBgUrl}`);
+            }
+          }
+
+          if (el.hasAttribute('data-parallax-bg-img')) {
+            const bgUrl = el.getAttribute('data-parallax-bg-img');
+            if (
+              bgUrl &&
+              !bgUrl.startsWith('http') &&
+              !bgUrl.startsWith(baseUrl)
+            ) {
+              const newBgUrl = fixUrl(bgUrl);
+              el.setAttribute('data-parallax-bg-img', newBgUrl);
+              console.log(`Corrigiendo parallax bg: ${bgUrl} -> ${newBgUrl}`);
+            }
+          }
+        });
+    });
+
     // Función para corregir una URL
     function fixUrl(url) {
       // Si la URL ya comienza con http/https o con la base URL, no la modificamos
-      if (url.startsWith('http') || url.startsWith(baseUrl)) {
+      if (!url || url.startsWith('http') || url.startsWith(baseUrl)) {
         return url;
       }
 

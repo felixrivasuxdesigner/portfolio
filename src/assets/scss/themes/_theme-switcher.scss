@@ -1,22 +1,23 @@
 // Definición de temas para el modo claro y oscuro
+@use '../abstracts/variables' as v;
 
 // Variables del tema raíz que cambiarán dinámicamente según el modo
 :root {
   // Modo claro por defecto
-  --background-color: #{$bg-color};
-  --text-color: #{$text-color};
-  --light-text-color: #{$light-text-color};
-  --heading-color: #{$primary-color};
-  --card-bg-color: #{$white};
-  --border-color: #{$border-color};
-  --accent-color: #{$accent-color};
-  --light-accent: #{$light-accent};
-  --section-bg: #{$light-gray};
+  --background-color: #{v.$bg-color};
+  --text-color: #{v.$text-color};
+  --light-text-color: #{v.$light-text-color};
+  --heading-color: #{v.$primary-color};
+  --card-bg-color: #{v.$white};
+  --border-color: #{v.$border-color};
+  --accent-color: #{v.$accent-color};
+  --light-accent: #{v.$light-accent};
+  --section-bg: #{v.$light-gray};
   --overlay-bg: rgba(0, 0, 0, 0.7);
-  --navbar-bg: #{$white};
-  --dropdown-bg: #{$white};
-  --modal-bg: #{$white};
-  --modal-text: #{$text-color};
+  --navbar-bg: #{v.$white};
+  --dropdown-bg: #{v.$white};
+  --modal-bg: #{v.$white};
+  --modal-text: #{v.$text-color};
   --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   --subtle-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 
@@ -33,7 +34,7 @@
   --heading-color: #ffffff;
   --card-bg-color: #1e1e1e;
   --border-color: #333333;
-  --accent-color: #{$accent-color}; // Mantener el color de acento
+  --accent-color: #{v.$accent-color}; // Mantener el color de acento
   --light-accent: #382527; // Versión oscura del light-accent
   --section-bg: #1a1a1a;
   --overlay-bg: rgba(0, 0, 0, 0.8);
@@ -50,7 +51,7 @@
   position: fixed;
   right: 20px;
   bottom: 80px; // Por encima del botón "back to top"
-  z-index: $z-index-back-to-top - 1;
+  z-index: v.$z-index-back-to-top - 1;
   width: 40px;
   height: 40px;
   border-radius: 50%;
