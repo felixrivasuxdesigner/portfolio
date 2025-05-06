@@ -260,15 +260,15 @@
     font-weight: v.$heading-font-weight;
     text-decoration: none;
     transition: all 0.3s ease;
-    border: 2px solid v.$white;
+    border: 2px solid v.$accent-color; // Cambiado de v.$white a v.$accent-color
 
     i {
       margin-right: 8px;
     }
 
     &:hover {
-      background-color: v.$white;
-      color: v.$accent-color;
+      background-color: v.$accent-color;
+      color: v.$white;
     }
   }
 

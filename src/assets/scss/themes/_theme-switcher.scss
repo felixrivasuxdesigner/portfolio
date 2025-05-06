@@ -36,6 +36,14 @@
   // Transitions para cambio de tema suave
   --theme-transition: background-color 0.3s ease, color 0.3s ease,
     border-color 0.3s ease, box-shadow 0.3s ease;
+
+  // Variables específicas para la sección About en modo claro
+  --about-text-color: #{v.$text-color};
+  --about-heading-color: #{v.$primary-color};
+  --about-border-color: #{v.$border-color};
+  --about-progress-bg: #{v.$light-gray};
+  --about-separator-color: #{v.$border-color};
+  --about-secondary-text: #{v.$secondary-color};
 }
 
 // Estilo específico para el modo oscuro
@@ -68,6 +76,14 @@
   --control-btn-border: #ffffff;
   --control-btn-hover-bg: #{v.$accent-color};
   --control-btn-hover-color: #ffffff;
+
+  // Variables específicas para la sección About en modo oscuro
+  --about-text-color: #e0e0e0;
+  --about-heading-color: #ffffff;
+  --about-border-color: #444444;
+  --about-progress-bg: #333333;
+  --about-separator-color: #444444;
+  --about-secondary-text: #cccccc;
 }
 
 // Estilos para el header cuando está fijo (sticky) al hacer scroll
