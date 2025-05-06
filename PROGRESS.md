@@ -55,7 +55,7 @@
 - ✅ Añadir soporte para imágenes modernas (WebP, AVIF)
 - ✅ Optimizar las fuentes web (subsetting, preloading)
 - ✅ Mejorar la accesibilidad (ARIA, contraste, navegación por teclado)
-- ⬜ Implementar Dark Mode/Light Mode con variables CSS
+- ✅ Implementar Dark Mode/Light Mode con variables CSS
 
 ### Fase 6: Performance y SEO
 
@@ -63,7 +63,7 @@
 - ✅ Optimizar Core Web Vitals (LCP, FID, CLS)
 - ✅ Implementar Schema.org para mejor SEO
 - ✅ Añadir metadatos para redes sociales (Open Graph, Twitter Cards)
-- ⬜ Configurar service worker para funcionamiento offline básico
+- ✅ Configurar service worker para funcionamiento offline básico
 
 ## Próximos Pasos
 
@@ -82,6 +82,22 @@
 - ⬜ Realizar pruebas de accesibilidad (WCAG 2.1)
 - ⬜ Configurar CI/CD para despliegue automático
 - ⬜ Lanzamiento oficial y seguimiento de métricas
+
+## Características Completadas Recientemente
+
+### Tema Oscuro/Claro (Mayo 2025)
+
+- Implementación de selector de tema con botón flotante
+- Sistema de variables CSS para cambio dinámico de colores
+- Persistencia de la preferencia del usuario mediante localStorage
+- Detección automática de preferencias del sistema
+
+### Funcionalidad Offline (Mayo 2025)
+
+- Implementación de Service Worker para caché de recursos
+- Manifiesto web para instalación como PWA
+- Iconos personalizados para aplicación
+- Soporte para instalación en pantalla de inicio en dispositivos móviles
 
 ## Beneficios Logrados
 

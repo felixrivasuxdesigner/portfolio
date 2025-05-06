@@ -5,10 +5,8 @@
 
 // Función para inicializar el selector de tema
 export function initThemeSwitcher() {
-  // Crear el botón de cambio de tema si no existe
-  if (!document.querySelector('.theme-toggle')) {
-    createThemeToggleButton();
-  }
+  // Ya no necesitamos crear el botón porque ahora está en el HTML
+  // junto al selector de idioma
 
   // Verificar si hay preferencia guardada o usar la preferencia del sistema
   const savedTheme = localStorage.getItem('theme');
@@ -45,19 +43,6 @@ export function initThemeSwitcher() {
     });
 }
 
-// Crear el botón de cambio de tema
-function createThemeToggleButton() {
-  const themeToggle = document.createElement('button');
-  themeToggle.className = 'theme-toggle';
-  themeToggle.setAttribute('aria-label', 'Cambiar tema');
-  themeToggle.setAttribute('title', 'Cambiar tema');
-  themeToggle.innerHTML = `
-    <i class="fa-solid fa-moon"></i>
-    <i class="fa-solid fa-sun"></i>
-  `;
-  document.body.appendChild(themeToggle);
-}
-
 // Cambiar entre temas
 function toggleTheme() {
   const currentTheme =
@@ -76,9 +61,6 @@ function toggleTheme() {
 
 // Actualizar el icono según el tema actual
 function updateThemeIcon(theme) {
-  const themeToggle = document.querySelector('.theme-toggle');
-  if (!themeToggle) return;
-
   // Esta parte no es necesaria porque ya manejamos la visualización con CSS,
   // pero lo dejamos como referencia en caso de necesitar más lógica
 }
