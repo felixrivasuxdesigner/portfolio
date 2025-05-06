@@ -48,9 +48,9 @@
   // Variables específicas para la sección Servicios en modo claro
   --services-overlay-bg: rgba(#{v.$primary-color}, 0.9);
   --services-title-color: #{v.$white};
-  --services-item-bg: rgba(#{v.$primary-color}, 0.7);
-  --services-item-hover-bg: rgba(#{v.$primary-color}, 0.8);
-  --services-item-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  --services-item-bg: #{v.$primary-color};
+  --services-item-hover-bg: #16142e; /* Versión ligeramente más clara del color primario */
+  --services-item-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
   --services-icon-bg: rgba(#{v.$white}, 0.1);
   --services-heading-color: #{v.$white};
   --services-text-color: #{v.$white};
@@ -98,8 +98,8 @@
   // Variables específicas para la sección Servicios en modo oscuro
   --services-overlay-bg: rgba(0, 0, 0, 0.9);
   --services-title-color: #ffffff;
-  --services-item-bg: rgba(30, 30, 30, 0.6);
-  --services-item-hover-bg: rgba(40, 40, 40, 0.7);
+  --services-item-bg: #1a1a1a;
+  --services-item-hover-bg: #2a2a2a;
   --services-item-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   --services-icon-bg: rgba(255, 255, 255, 0.05);
   --services-heading-color: #ffffff;
