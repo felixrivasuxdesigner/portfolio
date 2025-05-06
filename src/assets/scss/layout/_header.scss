@@ -1,6 +1,7 @@
 @use '../abstracts/variables' as v;
 @use '../abstracts/functions' as f;
 @use '../abstracts/mixins' as m;
+@use 'sass:color';
 
 /* 
  * Estilos para el header
@@ -267,8 +268,8 @@
     }
 
     &:hover {
-      background-color: darken(v.$accent-color, 10%);
-      border-color: darken(v.$accent-color, 10%);
+      background-color: color.adjust(v.$accent-color, $lightness: -10%);
+      border-color: color.adjust(v.$accent-color, $lightness: -10%);
     }
   }
 

@@ -77,7 +77,9 @@ function initProjectModals() {
           ?.closest('.gallery-item')
           .querySelector('h2').textContent || '',
       categories: getTranslation('portfolio.projects.wallet.categories'),
-      imageSrc: '/portfolio/assets/img/gallery-img/belcorp/belcorp.webp',
+      imageSrc: getFixedImagePath(
+        '/assets/img/gallery-img/belcorp/cover-belcorp.webp'
+      ),
       description: getTranslation('portfolio.projects.wallet.description'),
     },
     factoring: {
@@ -87,7 +89,9 @@ function initProjectModals() {
           ?.closest('.gallery-item')
           .querySelector('h2').textContent || '',
       categories: getTranslation('portfolio.projects.factoring.categories'),
-      imageSrc: '/portfolio/assets/img/gallery-img/security/factoring.webp',
+      imageSrc: getFixedImagePath(
+        '/assets/img/gallery-img/security/cover-factoring.webp'
+      ),
       description: getTranslation('portfolio.projects.factoring.description'),
     },
     nomadix: {
@@ -97,10 +101,25 @@ function initProjectModals() {
           ?.closest('.gallery-item')
           .querySelector('h2').textContent || '',
       categories: getTranslation('portfolio.projects.nomadix.categories'),
-      imageSrc: '/portfolio/assets/img/gallery-img/nomadix/nomadix.webp',
+      imageSrc: getFixedImagePath(
+        '/assets/img/gallery-img/nomadix/cover-nomadix.webp'
+      ),
       description: getTranslation('portfolio.projects.nomadix.description'),
     },
   };
+
+  // Función para corregir rutas de imágenes según el entorno
+  function getFixedImagePath(path) {
+    // Si estamos en GitHub Pages, añadir el prefijo /portfolio/
+    if (window.location.hostname.includes('github.io')) {
+      if (path.startsWith('/')) {
+        return '/portfolio' + path;
+      } else {
+        return '/portfolio/' + path;
+      }
+    }
+    return path;
+  }
 
   if (!modal || modalButtons.length === 0) return;
 
@@ -144,6 +163,22 @@ function initProjectModals() {
       const projectImage = modal.querySelector('.project-image');
       projectImage.src = projectData.imageSrc;
       projectImage.alt = projectData.title;
+
+      // Cargar la imagen detallada con el nombre correcto (respetando mayúsculas)
+      // y usando la función getFixedImagePath para ajustar la ruta según el entorno
+      if (projectKey === 'nomadix') {
+        // Precargar imagen detallada Nomadix con N mayúscula
+        const detailImage = new Image();
+        detailImage.src = getFixedImagePath('/assets/img/gallery-img/nomadix/Nomadix.webp');
+      } else if (projectKey === 'wallet') {
+        // Precargar imagen detallada Belcorp con B mayúscula
+        const detailImage = new Image();
+        detailImage.src = getFixedImagePath('/assets/img/gallery-img/belcorp/Belcorp.webp');
+      } else if (projectKey === 'factoring') {
+        // Precargar imagen detallada factoring (en minúsculas)
+        const detailImage = new Image();
+        detailImage.src = getFixedImagePath('/assets/img/gallery-img/security/factoring.webp');
+      }
 
       modal.querySelector('.project-description').textContent =
         projectData.description;
