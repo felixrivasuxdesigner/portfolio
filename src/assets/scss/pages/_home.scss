@@ -233,6 +233,8 @@ body {
         .about--info-border {
           position: relative;
           padding-left: 20px;
+          background-color: transparent; // Eliminar el fondo blanco para mejor compatibilidad con el tema oscuro
+          transition: var(--theme-transition);
 
           &::before {
             content: '';

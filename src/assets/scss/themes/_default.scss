@@ -154,8 +154,7 @@ h6 {
 // Tarjetas y elementos con fondo
 .service--item,
 .gallery-item,
-.feedback--item,
-.about--info-item {
+.feedback--item {
   background-color: var(--card-bg-color);
   box-shadow: var(--subtle-shadow);
   transition: var(--theme-transition);
@@ -163,6 +162,12 @@ h6 {
   &:hover {
     box-shadow: var(--box-shadow);
   }
+}
+
+// Separando about--info-item para quitar background y sombra
+.about--info-item {
+  background-color: transparent;
+  transition: var(--theme-transition);
 }
 
 // Ajustes para modales
