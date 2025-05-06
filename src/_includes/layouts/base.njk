@@ -9,7 +9,12 @@
   
   <meta name="description" content="{{ description | default('Diseñador UX/UI con más de 12 años de experiencia en interfaces digitales y experiencia de usuario para aplicaciones móviles y web') }}">
   <meta name="author" content="Félix Rivas">
+  <meta name="theme-color" content="#FF4F5E">
 
+  <!-- PWA - Manifest y App Icons -->
+  <link rel="manifest" href="{{ site.baseUrl }}site.webmanifest">
+  <link rel="apple-touch-icon" href="{{ site.baseUrl }}assets/img/icons/icon-192x192.png">
+  
   <!-- Precargar fuentes críticas para mejorar LCP y evitar Layout Shift -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -43,6 +43,7 @@
 
 // Themes
 @use 'themes/default';
+@use 'themes/theme-switcher';
 
 // Correcciones de rutas para GitHub Pages - DEBE SER LO ÚLTIMO para sobrescribir estilos anteriores
 @use 'components/path-fixes';
