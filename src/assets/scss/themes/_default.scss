@@ -84,7 +84,7 @@ a {
   text-align: center;
 
   h2 {
-    color: v.$primary-color;
+    color: var(--heading-color); // Cambiado para usar la variable del tema
     font-size: 36px;
     margin-bottom: 20px;
     position: relative;

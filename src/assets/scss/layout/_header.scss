@@ -253,22 +253,22 @@
 .header--custom-btn {
   .btn--default {
     display: inline-block;
-    background-color: transparent;
+    background-color: v.$accent-color;
     color: v.$white;
     padding: 8px 20px;
     border-radius: 4px;
     font-weight: v.$heading-font-weight;
     text-decoration: none;
     transition: all 0.3s ease;
-    border: 2px solid v.$accent-color; // Cambiado de v.$white a v.$accent-color
+    border: 2px solid v.$accent-color;
 
     i {
       margin-right: 8px;
     }
 
     &:hover {
-      background-color: v.$white;
-      color: v.$accent-color;
+      background-color: darken(v.$accent-color, 10%);
+      border-color: darken(v.$accent-color, 10%);
     }
   }
 
