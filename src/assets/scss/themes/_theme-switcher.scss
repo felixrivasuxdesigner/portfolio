@@ -74,6 +74,24 @@
   --portfolio-modal-close: #{v.$text-color};
   --portfolio-modal-close-hover: #{v.$accent-color};
   --portfolio-modal-border: #{v.$border-color};
+
+  // Variables específicas para la sección Testimonials en modo claro
+  --testimonials-overlay-bg: rgba(255, 255, 255, 0.92);
+  --testimonials-section-title: #{v.$primary-color};
+  --testimonials-faq-title: #{v.$primary-color};
+  --testimonials-faq-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  --testimonials-accordion-bg: #{v.$white};
+  --testimonials-accordion-text: #{v.$primary-color};
+  --testimonials-accordion-active: #{v.$accent-color};
+  --testimonials-accordion-body-bg: #{v.$white};
+  --testimonials-accordion-body-text: #{v.$text-color};
+  --testimonials-container-bg: #{v.$white};
+  --testimonials-container-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  --testimonials-quote-color: #{v.$accent-color};
+  --testimonials-text-color: #{v.$text-color};
+  --testimonials-cite-color: #{v.$primary-color};
+  --testimonials-nav-bg: #{v.$light-gray};
+  --testimonials-nav-active: #{v.$accent-color};
 }
 
 // Estilo específico para el modo oscuro
@@ -144,6 +162,24 @@
   --portfolio-modal-close: #e0e0e0;
   --portfolio-modal-close-hover: #{v.$accent-color};
   --portfolio-modal-border: #333333;
+
+  // Variables específicas para la sección Testimonials en modo oscuro
+  --testimonials-overlay-bg: rgba(0, 0, 0, 0.9);
+  --testimonials-section-title: #ffffff;
+  --testimonials-faq-title: #ffffff;
+  --testimonials-faq-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  --testimonials-accordion-bg: #1e1e1e;
+  --testimonials-accordion-text: #ffffff;
+  --testimonials-accordion-active: #{v.$accent-color};
+  --testimonials-accordion-body-bg: #1e1e1e;
+  --testimonials-accordion-body-text: #e0e0e0;
+  --testimonials-container-bg: #1e1e1e;
+  --testimonials-container-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  --testimonials-quote-color: #{v.$accent-color};
+  --testimonials-text-color: #e0e0e0;
+  --testimonials-cite-color: #ffffff;
+  --testimonials-nav-bg: #333333;
+  --testimonials-nav-active: #{v.$accent-color};
 }
 
 // Estilos para el header cuando está fijo (sticky) al hacer scroll
