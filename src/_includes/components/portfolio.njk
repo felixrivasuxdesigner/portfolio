@@ -13,7 +13,15 @@
         <li class="active">
           <a href="*" class="btn--default">{{ translations[locale].portfolio.all }}</a>
         </li>
-        <!-- Pueden agregarse más categorías de filtros si se necesitan en el futuro -->
+        <li>
+          <a href=".mobile-app" class="btn--default">{{ translations[locale].portfolio.mobile_app }}</a>
+        </li>
+        <li>
+          <a href=".web-app" class="btn--default">{{ translations[locale].portfolio.web_app }}</a>
+        </li>
+        <li>
+          <a href=".web-design" class="btn--default">{{ translations[locale].portfolio.web_design }}</a>
+        </li>
       </ul>
     </div>
     <!-- Gallery Filter Menu End -->
@@ -21,7 +29,7 @@
     <!-- Gallery Items Start -->
     <div class="portfolio-grid">
       <!-- Gallery Item Start - Wallet -->
-      <div class="gallery-item" data-cat="website-item">
+      <div class="gallery-item mobile-app" data-cat="mobile-app">
         <img src="/assets/img/gallery-img/belcorp/cover-belcorp.webp" alt="{{ translations[locale].portfolio.projects.wallet.title }}" />
         <span class="gallery--case-study">{{ translations[locale].portfolio.case_study }}</span>
         <div class="gallery-overlay">
@@ -34,7 +42,7 @@
       <!-- Gallery Item End -->
 
       <!-- Gallery Item Start - Factoring -->
-      <div class="gallery-item" data-cat="website-item">
+      <div class="gallery-item web-app" data-cat="web-app">
         <img src="/assets/img/gallery-img/security/cover-factoring.webp" alt="{{ translations[locale].portfolio.projects.factoring.title }}" />
         <span class="gallery--case-study">{{ translations[locale].portfolio.case_study }}</span>
         <div class="gallery-overlay">
@@ -47,7 +55,7 @@
       <!-- Gallery Item End -->
 
       <!-- Gallery Item Start - Nomadix -->
-      <div class="gallery-item" data-cat="website-item">
+      <div class="gallery-item web-design" data-cat="web-design">
         <img src="/assets/img/gallery-img/nomadix/cover-nomadix.webp" alt="{{ translations[locale].portfolio.projects.nomadix.title }}" />
         <span class="gallery--case-study">{{ translations[locale].portfolio.web_design }}</span>
         <div class="gallery-overlay">

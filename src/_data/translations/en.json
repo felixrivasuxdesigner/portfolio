@@ -239,6 +239,8 @@
     "view_project": "View Project",
     "case_study": "Case Study",
     "web_design": "Web Design",
+    "mobile_app": "Mobile App",
+    "web_app": "Web App",
     "projects": {
       "wallet": {
         "title": "Mobile Wallet",

@@ -239,6 +239,8 @@
     "view_project": "Ver Proyecto",
     "case_study": "Caso de Estudio",
     "web_design": "Diseño Web",
+    "mobile_app": "App Móvil",
+    "web_app": "App Web",
     "projects": {
       "wallet": {
         "title": "Billetera Móvil",
