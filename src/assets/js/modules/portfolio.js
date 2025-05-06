@@ -164,20 +164,17 @@ function initProjectModals() {
       projectImage.src = projectData.imageSrc;
       projectImage.alt = projectData.title;
 
-      // Cargar la imagen detallada con el nombre correcto (respetando mayúsculas)
-      // y usando la función getFixedImagePath para ajustar la ruta según el entorno
+      // Cargar la imagen detallada correcta para cada proyecto
+      // usando la función getFixedImagePath para ajustar la ruta según el entorno
       if (projectKey === 'nomadix') {
-        // Precargar imagen detallada Nomadix con N mayúscula
-        const detailImage = new Image();
-        detailImage.src = getFixedImagePath('/assets/img/gallery-img/nomadix/Nomadix.webp');
+        // Reemplazar la imagen del modal con la versión detallada
+        projectImage.src = getFixedImagePath('/assets/img/gallery-img/nomadix/nomadix.webp');
       } else if (projectKey === 'wallet') {
-        // Precargar imagen detallada Belcorp con B mayúscula
-        const detailImage = new Image();
-        detailImage.src = getFixedImagePath('/assets/img/gallery-img/belcorp/Belcorp.webp');
+        // Reemplazar la imagen del modal con la versión detallada
+        projectImage.src = getFixedImagePath('/assets/img/gallery-img/belcorp/belcorp.webp');
       } else if (projectKey === 'factoring') {
-        // Precargar imagen detallada factoring (en minúsculas)
-        const detailImage = new Image();
-        detailImage.src = getFixedImagePath('/assets/img/gallery-img/security/factoring.webp');
+        // Reemplazar la imagen del modal con la versión detallada
+        projectImage.src = getFixedImagePath('/assets/img/gallery-img/security/factoring.webp');
       }
 
       modal.querySelector('.project-description').textContent =
