@@ -12,6 +12,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/assets/resumen');
   eleventyConfig.addPassthroughCopy('src/robots.txt');
   eleventyConfig.addPassthroughCopy('src/sitemap.xml');
+  eleventyConfig.addPassthroughCopy('src/site.webmanifest');
 
   // Watch for changes - no observamos la carpeta CSS para evitar el bucle infinito
   eleventyConfig.addWatchTarget('src/assets/scss/');
