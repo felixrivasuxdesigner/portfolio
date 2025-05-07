@@ -56,6 +56,10 @@
 - ✅ Optimizar las fuentes web (subsetting, preloading)
 - ✅ Mejorar la accesibilidad (ARIA, contraste, navegación por teclado)
 - ✅ Implementar Dark Mode/Light Mode con variables CSS
+  - ✅ Sistema de cambio de tema con almacenamiento local
+  - ✅ Detección de preferencias del sistema
+  - ✅ Transiciones suaves entre temas
+  - ✅ Optimización para todas las secciones del sitio
 
 ### Fase 6: Performance y SEO
 
@@ -85,19 +89,22 @@
 
 ## Características Completadas Recientemente
 
-### Tema Oscuro/Claro (Mayo 2025)
+### Refinamiento del Tema Oscuro (Mayo 2025)
 
-- Implementación de selector de tema con botón flotante
-- Sistema de variables CSS para cambio dinámico de colores
-- Persistencia de la preferencia del usuario mediante localStorage
-- Detección automática de preferencias del sistema
+- ✅ Implementación completa del modo oscuro en todas las secciones (Counter, Contact, Brands)
+- ✅ Corrección de inconsistencias visuales en el cambio entre modos claro/oscuro
+- ✅ Mejora de transiciones para garantizar una experiencia fluida al cambiar de tema
+- ✅ Optimización del contraste y legibilidad en modo oscuro
+- ✅ Corrección de problemas con el overlay de fondo en secciones con imágenes
 
-### Funcionalidad Offline (Mayo 2025)
+### Mejoras en Carrusel de Marcas (Mayo 2025)
 
-- Implementación de Service Worker para caché de recursos
-- Manifiesto web para instalación como PWA
-- Iconos personalizados para aplicación
-- Soporte para instalación en pantalla de inicio en dispositivos móviles
+- ✅ Reimplementación completa del carrusel de marcas con JavaScript vanilla
+- ✅ Mejora en la respuesta y fluidez del desplazamiento del carrusel
+- ✅ Implementación de loop infinito sin saltos bruscos
+- ✅ Mejor gestión de eventos y optimización para dispositivos táctiles
+- ✅ Corrección de problemas de visualización en diferentes tamaños de pantalla
+- ✅ Integración completa con el sistema de temas claro/oscuro
 
 ## Beneficios Logrados
 
@@ -127,3 +134,18 @@
 - Interfaces más intuitivas y consistentes
 - Interacciones mejoradas para componentes como acordeones y modales
 - Optimización SEO y compartibilidad en redes sociales
+
+### Mejoras Técnicas Específicas
+
+- Implementación de un enfoque moderno para componentes interactivos:
+  - Carrusel de marcas optimizado con loop infinito y transiciones suaves
+  - Sistema de interacción mejorado con debounce para prevenir comportamientos erráticos
+  - Manejo mejorado de eventos asincrónicos para evitar problemas de timing
+  - Mayor robustez en cálculos responsivos para adaptarse a diferentes dispositivos
+  - Código más fácil de mantener con manejo de errores explícito
+
+- Optimización del tema oscuro:
+  - Variables CSS reutilizables para consistencia en toda la aplicación
+  - Implementación más robusta con reglas explícitas para casos problemáticos
+  - Transiciones suaves entre modos para mejorar la experiencia de usuario
+  - Paleta de colores optimizada para mejorar la legibilidad en ambos modos
