@@ -40,6 +40,7 @@
   margin: 0 auto;
   position: relative;
   z-index: 2; /* Asegura que el carrusel tenga un z-index menor que los botones */
+  padding: 20px 0; /* Añadir espacio vertical para evitar que los elementos se corten */
 }
 
 /* Pista del carrusel - donde se mueven los elementos */
@@ -47,18 +48,25 @@
   display: flex;
   transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
   will-change: transform;
-  width: 100%;
-  overflow: hidden;
+  width: fit-content; /* Cambiado de 100% a fit-content para acomodar todos los elementos */
+  overflow: visible; /* Cambiado de hidden a visible para que no se corten los elementos */
 }
 
 /* Elementos individuales */
 .brand-item {
   flex: 0 0 auto;
   min-width: 200px;
+  width: calc(100% / 5); /* Asignar ancho específico para 5 items por fila */
+  max-width: 250px; /* Limitar el ancho máximo */
   padding: 0 15px;
   text-align: center;
   user-select: none;
   transition: all 0.4s ease;
+}
+
+/* Clase para los elementos clonados */
+.brand-item.clone {
+  opacity: 1; /* Asegurar que los clones tengan la misma opacidad */
 }
 
 /* Imágenes de las marcas - con filtro escala de grises */
@@ -173,4 +181,24 @@
   .brands-carousel-container {
     padding: 0 40px; /* Reducir padding en pantallas pequeñas */
   }
+}
+
+/* Estilos para modo oscuro */
+[data-theme='dark'] #brands.bg--overlay::before {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+[data-theme='dark'] .brand-image {
+  -webkit-filter: grayscale(100%) brightness(1.5);
+  filter: grayscale(100%) brightness(1.5);
+}
+
+[data-theme='dark'] .carousel-button {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
+
+[data-theme='dark'] .carousel-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
 }
