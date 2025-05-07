@@ -44,7 +44,7 @@
   --about-progress-bg: #{v.$light-gray};
   --about-separator-color: #{v.$border-color};
   --about-secondary-text: #{v.$secondary-color};
-  
+
   // Variables específicas para la sección Servicios en modo claro
   --services-overlay-bg: rgba(#{v.$primary-color}, 0.9);
   --services-title-color: #{v.$white};
@@ -54,7 +54,7 @@
   --services-icon-bg: rgba(#{v.$white}, 0.1);
   --services-heading-color: #{v.$white};
   --services-text-color: #{v.$white};
-  
+
   // Variables específicas para la sección Portfolio en modo claro
   --portfolio-filter-bg: #{v.$white};
   --portfolio-filter-text: #{v.$text-color};
@@ -132,7 +132,7 @@
   --about-progress-bg: #333333;
   --about-separator-color: #444444;
   --about-secondary-text: #cccccc;
-  
+
   // Variables específicas para la sección Servicios en modo oscuro
   --services-overlay-bg: rgba(0, 0, 0, 0.9);
   --services-title-color: #ffffff;
@@ -142,7 +142,7 @@
   --services-icon-bg: rgba(255, 255, 255, 0.05);
   --services-heading-color: #ffffff;
   --services-text-color: #e0e0e0;
-  
+
   // Variables específicas para la sección Portfolio en modo oscuro
   --portfolio-filter-bg: #1e1e1e;
   --portfolio-filter-text: #e0e0e0;
@@ -180,6 +180,21 @@
   --testimonials-cite-color: #ffffff;
   --testimonials-nav-bg: #333333;
   --testimonials-nav-active: #{v.$accent-color};
+
+  // Variables específicas para la sección Contact en modo oscuro
+  --contact-bg: #1e1e1e;
+  --contact-heading-color: #ffffff;
+  --contact-text-color: #e0e0e0;
+  --contact-border-color: #333333;
+  --contact-input-bg: #2a2a2a;
+  --contact-input-border: #444444;
+  --contact-input-placeholder: #aaaaaa;
+  --contact-input-focus-border: #{v.$accent-color};
+  --contact-input-focus-shadow: rgba(#{v.$accent-color}, 0.2);
+  --contact-btn-bg: #{v.$accent-color};
+  --contact-btn-hover-bg: f.shade(#{v.$accent-color}, 15%);
+  --contact-tooltip-bg: rgba(255, 255, 255, 0.9);
+  --contact-tooltip-text: #000000;
 }
 
 // Estilos para el header cuando está fijo (sticky) al hacer scroll
