@@ -195,6 +195,11 @@
   --contact-btn-hover-bg: f.shade(#{v.$accent-color}, 15%);
   --contact-tooltip-bg: rgba(255, 255, 255, 0.9);
   --contact-tooltip-text: #000000;
+
+  // Variables específicas para la sección Counter en modo oscuro
+  --counter-overlay-bg: rgba(0, 0, 0, 0.85);
+  --counter-text-color: #ffffff;
+  --counter-icon-color: #{v.$accent-color};
 }
 
 // Estilos para el header cuando está fijo (sticky) al hacer scroll

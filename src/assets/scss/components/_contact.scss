@@ -8,15 +8,18 @@
 
 #contact {
   padding: 80px 0;
-  
+  background-color: var(--contact-bg, v.$white);
+  transition: var(--theme-transition);
+
   h2 {
-    color: v.$primary-color;
+    color: var(--contact-heading-color, v.$primary-color);
     font-size: 28px;
     margin-bottom: 30px;
     font-weight: v.$heading-font-weight;
     position: relative;
     padding-bottom: 15px;
-    
+    transition: var(--theme-transition);
+
     &::after {
       content: '';
       position: absolute;
@@ -27,20 +30,21 @@
       background-color: v.$accent-color;
     }
   }
-  
+
   // Estilos para la dirección de contacto
   .contact--address {
     margin-bottom: 40px;
-    
+
     address {
       margin-bottom: 0;
-      
+
       p {
         margin-bottom: 15px;
-        color: v.$text-color;
+        color: var(--contact-text-color, v.$text-color);
         display: flex;
         align-items: flex-start;
-        
+        transition: var(--theme-transition);
+
         i {
           color: v.$accent-color;
           width: 20px;
@@ -49,16 +53,16 @@
           position: relative;
           top: 2px;
         }
-        
+
         a {
-          color: v.$text-color;
+          color: var(--contact-text-color, v.$text-color);
           text-decoration: none;
           transition: color 0.3s ease;
-          
+
           &:hover {
             color: v.$accent-color;
           }
-          
+
           svg {
             vertical-align: middle;
           }
@@ -66,27 +70,28 @@
       }
     }
   }
-  
+
   // Estilos para las redes sociales
   .contact--social {
     margin-bottom: 40px;
-    
+
     h4 {
       font-size: 18px;
-      color: v.$primary-color;
+      color: var(--contact-heading-color, v.$primary-color);
       margin-bottom: 15px;
       font-weight: 600;
+      transition: var(--theme-transition);
     }
-    
+
     ul {
       list-style: none;
       padding: 0;
       margin: 0;
       display: flex;
-      
+
       li {
         margin-right: 15px;
-        
+
         a {
           display: flex;
           align-items: center;
@@ -96,19 +101,19 @@
           line-height: 44px;
           text-align: center;
           border-radius: 50%;
-          background-color: v.$primary-color;
+          background-color: var(--contact-heading-color, v.$primary-color);
           color: v.$white;
           font-size: 20px;
-          transition: all 0.3s ease;
+          transition: all 0.3s ease, var(--theme-transition);
           box-shadow: 0 4px 6px rgba(v.$black, 0.1);
           position: relative;
-          
+
           &:hover {
             background-color: v.$accent-color;
             transform: translateY(-3px);
             box-shadow: 0 6px 10px rgba(v.$black, 0.15);
           }
-          
+
           // Tooltip personalizado
           &::after {
             content: attr(data-tooltip);
@@ -116,8 +121,11 @@
             bottom: -40px;
             left: 50%;
             transform: translateX(-50%);
-            background-color: rgba(v.$text-color, 0.9);
-            color: v.$white;
+            background-color: var(
+              --contact-tooltip-bg,
+              rgba(v.$text-color, 0.9)
+            );
+            color: var(--contact-tooltip-text, v.$white);
             padding: 6px 12px;
             border-radius: 4px;
             font-size: 12px;
@@ -128,7 +136,7 @@
             pointer-events: none;
             z-index: 100;
           }
-          
+
           &:hover::after {
             opacity: 1;
             visibility: visible;
@@ -138,76 +146,84 @@
       }
     }
   }
-  
+
   // Estilos para el formulario de contacto
   .contact--form {
-    background-color: v.$white;
+    background-color: var(--contact-bg, v.$white);
     padding: 30px;
     border-radius: 5px;
     box-shadow: 0 5px 15px rgba(v.$black, 0.05);
-    
+    transition: var(--theme-transition);
+    border: 1px solid var(--contact-border-color, v.$border-color);
+
     .form-group {
       margin-bottom: 20px;
-      
+
       .form-control {
         height: auto;
         padding: 12px 15px;
         font-size: 14px;
-        border: 1px solid v.$border-color;
+        border: 1px solid var(--contact-input-border, v.$border-color);
         border-radius: 4px;
         box-shadow: none;
-        transition: all 0.3s ease;
-        
+        background-color: var(--contact-input-bg, v.$white);
+        color: var(--contact-text-color, v.$text-color);
+        transition: all 0.3s ease, var(--theme-transition);
+
         &:focus {
-          border-color: v.$accent-color;
-          box-shadow: 0 0 0 3px rgba(v.$accent-color, 0.1);
+          border-color: var(--contact-input-focus-border, v.$accent-color);
+          box-shadow: 0 0 0 3px
+            var(--contact-input-focus-shadow, rgba(v.$accent-color, 0.1));
         }
-        
+
         &::placeholder {
-          color: v.$secondary-color;
+          color: var(--contact-input-placeholder, v.$secondary-color);
         }
       }
-      
+
       textarea.form-control {
         resize: vertical;
         min-height: 150px;
       }
     }
-    
+
     .submit-btn {
       display: inline-block;
-      background-color: v.$accent-color;
+      background-color: var(--contact-btn-bg, v.$accent-color);
       color: v.$white;
       padding: 12px 30px;
       border-radius: 4px;
       font-weight: v.$heading-font-weight;
       text-decoration: none;
       border: none;
-      transition: all 0.3s ease;
+      transition: all 0.3s ease, var(--theme-transition);
       cursor: pointer;
-      
+
       &:hover {
-        background-color: f.shade(v.$accent-color, 15%);
+        background-color: var(
+          --contact-btn-hover-bg,
+          f.shade(v.$accent-color, 15%)
+        );
       }
     }
   }
-  
+
   // Mensajes de validación del formulario
   .contact-form-status {
     margin-bottom: 20px;
-    
+
     .alert {
       padding: 15px;
       border-radius: 4px;
       margin-bottom: 0;
       font-size: 14px;
-      
+
       &-success {
         background-color: #d4edda;
         color: #155724;
         border: 1px solid #c3e6cb;
       }
-      
+
       &-danger {
         background-color: #f8d7da;
         color: #721c24;
@@ -215,9 +231,11 @@
       }
     }
   }
-  
+
   @include m.media-breakpoint-down(small) {
-    .contact--address, .contact--social, .contact--form {
+    .contact--address,
+    .contact--social,
+    .contact--form {
       margin-bottom: 30px;
     }
   }

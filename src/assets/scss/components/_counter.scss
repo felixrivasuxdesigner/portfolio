@@ -12,7 +12,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  
+
   &.bg--overlay::before {
     content: '';
     position: absolute;
@@ -20,67 +20,72 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(v.$primary-color, 0.85);
+    background-color: var(--counter-overlay-bg, rgba(v.$primary-color, 0.85));
     z-index: 1;
+    transition: var(--theme-transition);
   }
-  
+
   .container {
     position: relative;
     z-index: 2;
   }
-  
+
   .counter--item {
     text-align: center;
-    color: v.$white;
+    color: var(--counter-text-color, v.$white);
     margin-bottom: 30px;
-    
+    transition: var(--theme-transition);
+
     .counter--num {
       font-size: 48px;
       font-weight: v.$heading-font-weight;
       margin-bottom: 15px;
-      
+      transition: var(--theme-transition);
+
       i {
         display: block;
         font-size: 40px;
         margin-bottom: 15px;
-        color: v.$accent-color;
+        color: var(--counter-icon-color, v.$accent-color);
+        transition: var(--theme-transition);
       }
-      
+
       span {
         position: relative;
       }
     }
-    
+
     .counter--text {
       font-size: 16px;
-      
+      transition: var(--theme-transition);
+
       strong {
         font-weight: v.$heading-font-weight;
       }
     }
   }
-  
+
   @include m.media-breakpoint-down(medium) {
     .counter--item {
       .counter--num {
         font-size: 36px;
-        
+
         i {
           font-size: 30px;
         }
       }
-      
+
       .counter--text {
         font-size: 14px;
       }
     }
   }
-  
+
   @include m.media-breakpoint-down(small) {
     .counter--item {
       .counter--num {
         font-size: 32px;
-        
+
         i {
           font-size: 28px;
         }
