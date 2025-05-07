@@ -200,6 +200,14 @@
   --counter-overlay-bg: rgba(0, 0, 0, 0.85);
   --counter-text-color: #ffffff;
   --counter-icon-color: #{v.$accent-color};
+
+  // Variables específicas para la sección Brands en modo oscuro
+  --brands-overlay-bg: rgba(0, 0, 0, 0.85);
+  --brands-item-filter: grayscale(100%) brightness(1.5);
+  --brands-button-bg: rgba(255, 255, 255, 0.15);
+  --brands-button-color: #ffffff;
+  --brands-button-hover-bg: rgba(255, 255, 255, 0.3);
+  --brands-button-hover-color: #ffffff;
 }
 
 // Estilos para el header cuando está fijo (sticky) al hacer scroll

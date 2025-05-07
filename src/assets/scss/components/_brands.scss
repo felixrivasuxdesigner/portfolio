@@ -2,6 +2,7 @@
 #brands {
   padding: 60px 0;
   position: relative;
+  transition: var(--theme-transition);
 }
 
 #brands.bg--overlay::before {
@@ -11,8 +12,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(48, 48, 48, 0.85);
+  background-color: var(--brands-overlay-bg, rgba(48, 48, 48, 0.85));
   z-index: 1;
+  transition: var(--theme-transition);
 }
 
 #brands .container {
@@ -64,10 +66,10 @@
   max-width: 100%;
   height: auto;
   opacity: 0.8;
-  transition: all 0.4s ease;
+  transition: all 0.4s ease, var(--theme-transition);
   /* Aplicar filtro escala de grises */
-  -webkit-filter: grayscale(100%) brightness(1.2);
-  filter: grayscale(100%) brightness(1.2);
+  -webkit-filter: var(--brands-item-filter, grayscale(100%) brightness(1.2));
+  filter: var(--brands-item-filter, grayscale(100%) brightness(1.2));
   pointer-events: auto; /* Permite eventos en la imagen */
 }
 
@@ -82,9 +84,9 @@
 
 /* Botones de navegación - posicionados fuera del carrusel */
 .carousel-button {
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: var(--brands-button-bg, rgba(255, 255, 255, 0.15));
   border: none;
-  color: white;
+  color: var(--brands-button-color, white);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -93,7 +95,7 @@
   align-items: center;
   justify-content: center;
   font-size: 14px;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease, var(--theme-transition);
   z-index: 10; /* Valor alto de z-index para asegurar que estén sobre el contenido */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   flex: 0 0 auto;
@@ -112,7 +114,8 @@
 }
 
 .carousel-button:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--brands-button-hover-bg, rgba(255, 255, 255, 0.3));
+  color: var(--brands-button-hover-color, white);
   transform: translateY(-50%) scale(1.1);
 }
 

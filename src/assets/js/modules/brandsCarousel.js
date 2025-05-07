@@ -49,9 +49,24 @@ export function initBrandsCarousel() {
     // Clonar elementos
     cloneItems();
 
-    // Event listeners para los botones
-    prevButton.addEventListener('click', movePrev);
-    nextButton.addEventListener('click', moveNext);
+    // Event listeners para los botones - con debounce para prevenir clics rápidos
+    let clickTimeout;
+
+    prevButton.addEventListener('click', function () {
+      if (clickTimeout) clearTimeout(clickTimeout);
+      movePrev();
+      clickTimeout = setTimeout(() => {
+        clickTimeout = null;
+      }, 600);
+    });
+
+    nextButton.addEventListener('click', function () {
+      if (clickTimeout) clearTimeout(clickTimeout);
+      moveNext();
+      clickTimeout = setTimeout(() => {
+        clickTimeout = null;
+      }, 600);
+    });
 
     // Pausar al pasar el ratón
     carousel.addEventListener('mouseenter', stopAutoplay);
@@ -63,8 +78,12 @@ export function initBrandsCarousel() {
     prevButton.addEventListener('mouseleave', startAutoplay);
     nextButton.addEventListener('mouseleave', startAutoplay);
 
-    // Actualizar en cambio de tamaño
-    window.addEventListener('resize', handleResize);
+    // Actualizar en cambio de tamaño con debounce
+    let resizeTimer;
+    window.addEventListener('resize', function () {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(handleResize, 100);
+    });
 
     // Iniciar animación automática
     startAutoplay();
@@ -112,14 +131,20 @@ export function initBrandsCarousel() {
     track.style.transition = 'transform 0.6s cubic-bezier(0.25, 1, 0.5, 1)';
     track.style.transform = `translateX(${offset}px)`;
 
-    track.addEventListener(
-      'transitionend',
-      function onTransitionEnd() {
-        track.removeEventListener('transitionend', onTransitionEnd);
-        if (callback) callback();
-      },
-      { once: true }
-    );
+    // Asegurarse de que el callback se ejecute incluso si el evento transitionend es interrumpido
+    const safeCallback = () => {
+      track.removeEventListener('transitionend', safeCallback);
+      if (callback && typeof callback === 'function') callback();
+    };
+
+    track.addEventListener('transitionend', safeCallback, { once: true });
+
+    // Safety timeout - ejecutar callback si por alguna razón el evento transitionend no se dispara
+    const safetyClearTimeout = setTimeout(() => {
+      track.removeEventListener('transitionend', safeCallback);
+      if (callback && typeof callback === 'function' && isTransitioning)
+        callback();
+    }, 700); // Ligeramente más largo que la duración de la transición
   }
 
   // Establecer posición sin animación
@@ -142,11 +167,14 @@ export function initBrandsCarousel() {
 
   // Autoplay con requestAnimationFrame para animación más suave
   function startAutoplay() {
+    // Si ya está corriendo, no iniciar otro
+    if (animationFrameId) return;
+
     stopAutoplay();
 
     let lastTime = 0;
-    // Intervalo para el autoplay
-    const interval = 1500;
+    // Intervalo para el autoplay - un poco más largo para darle espacio a las transiciones
+    const interval = 3000;
 
     function animate(currentTime) {
       if (!lastTime) lastTime = currentTime;
@@ -154,7 +182,10 @@ export function initBrandsCarousel() {
       const deltaTime = currentTime - lastTime;
 
       if (deltaTime > interval) {
-        moveNext();
+        // Solo avanzar si no está en transición
+        if (!isTransitioning) {
+          moveNext();
+        }
         lastTime = currentTime;
       }
 
@@ -180,11 +211,14 @@ export function initBrandsCarousel() {
     // Detener animación durante el resize
     stopAutoplay();
 
+    // Establecer valor de transición a false para prevenir problemas
+    isTransitioning = false;
+
     // Actualizar posición
     setPositionWithoutAnimation(position);
 
     // Reiniciar autoplay después de un breve retraso
-    autoplayTimeoutId = setTimeout(startAutoplay, 200);
+    autoplayTimeoutId = setTimeout(startAutoplay, 500);
   }
 
   // Inicializar carrusel
