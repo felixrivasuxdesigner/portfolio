@@ -3,15 +3,25 @@ layout: layouts/base.njk
 isCaseStudy: true
 ---
 
-<!-- Include Case Study Banner -->
-{% include "components/case-study-banner.njk" %}
-
-<!-- Include Breadcrumb - Reemplaza el botón de volver -->
-{% include "components/case-study-breadcrumb.njk" %}
-
 <!-- Case Study Content Start -->
 <div class="case-study">
   <div class="container">
+    <div class="case-study-header">
+      <div class="back-link">
+        <a href="{{ site.baseUrl }}{{ locale }}" class="btn btn--primary">
+          <i class="fa fa-arrow-left"></i> {{ translations[locale].case_studies.navigation.back_to_home }}
+        </a>
+      </div>
+      <h1 class="case-study-title">{{ title }}</h1>
+      <p class="case-study-categories">{{ categories }}</p>
+      <!-- Debug info -->
+      <div style="margin: 20px 0; padding: 10px; background: #f5f5f5; border: 1px solid #ddd; display: none;">
+        <p>Debug - locale: {{ locale }}</p>
+        <p>Debug - projectKey: {{ projectKey }}</p>
+        <p>Debug - Translations available: {{ translations[locale].case_studies.projects[projectKey].sections.context.title | default('No title found') }}</p>
+      </div>
+    </div>
+
     <div class="case-study-content">
       <!-- Hero Section -->
       <div class="case-study-hero">

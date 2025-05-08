@@ -1,8 +1,6 @@
 {
   "navigation": {
-    "back_to_home": "Volver al Inicio",
-    "home": "Inicio",
-    "portfolio": "Portafolio"
+    "back_to_home": "Volver al Inicio"
   },
   "projects": {
     "wallet": {
@@ -215,78 +213,6 @@
             }
           ],
           "conclusion": "El rediseño del sitio web de Nomadix Adventure equilibra con éxito el diseño visual inspirador con la experiencia de usuario funcional, resultando en mayores tasas de participación y conversión. El proyecto muestra cómo el diseño web reflexivo puede transformar la presentación de experiencias de viaje y simplificar el proceso de reserva."
-        }
-      }
-    },
-    "journeylaw": {
-      "title": "Journey Law",
-      "categories": "#Diseño UX #Diseño UI #Legal Tech",
-      "hero": {
-        "alt": "Journey Law - Plataforma Legal"
-      },
-      "sections": {
-        "context": {
-          "title": "Contexto del Proyecto",
-          "content": "Journey Law es una plataforma legal-tech diseñada para optimizar el proceso de gestión de documentos y seguimiento de casos para bufetes pequeños y medianos. El rediseño se centró en crear una interfaz intuitiva y eficiente que reduzca la carga administrativa y mejore la productividad de los profesionales legales."
-        },
-        "challenge": {
-          "title": "Desafío",
-          "content": "Los bufetes de abogados estaban luchando con herramientas fragmentadas de gestión de casos que requerían una extensa capacitación y creaban cuellos de botella en el flujo de trabajo. Las soluciones existentes carecían de un diseño de interfaz moderno y accesibilidad móvil, obstaculizando la productividad y causando frustración entre los usuarios."
-        },
-        "solution": {
-          "title": "Solución",
-          "content": "Desarrollamos una plataforma legal integral que incluye:",
-          "features": [
-            "Sistema unificado de gestión de documentos",
-            "Panel intuitivo de seguimiento de casos",
-            "Recordatorios automáticos de plazos",
-            "Portal de clientes para compartir documentos",
-            "Accesibilidad multiplataforma para trabajo remoto",
-            "Funciones personalizadas de informes"
-          ]
-        },
-        "process": {
-          "title": "Proceso de Diseño",
-          "steps": [
-            {
-              "title": "Análisis de Flujo de Trabajo Legal",
-              "content": "Acompañamos a profesionales legales para comprender sus tareas diarias, puntos de dolor y requisitos de flujo de trabajo.",
-              "alt": "Análisis de Flujo de Trabajo Legal"
-            },
-            {
-              "title": "Arquitectura de Información",
-              "content": "Reorganizamos la estructura del sistema para alinearse con la forma en que los profesionales legales organizan mentalmente sus casos y documentos.",
-              "alt": "Arquitectura de Información"
-            },
-            {
-              "title": "Prototipado Iterativo",
-              "content": "Se probaron múltiples iteraciones de prototipos interactivos con empleados reales de bufetes para refinar la usabilidad.",
-              "alt": "Prototipado Iterativo"
-            },
-            {
-              "title": "Sistema de Diseño Visual",
-              "content": "Creamos un sistema de diseño profesional y accesible que transmitía confianza mientras mantenía estándares modernos de usabilidad.",
-              "alt": "Sistema de Diseño Visual"
-            }
-          ]
-        },
-        "results": {
-          "title": "Resultados",
-          "metrics": [
-            {
-              "number": "42%",
-              "description": "Reducción en tiempo administrativo"
-            },
-            {
-              "number": "68%",
-              "description": "Aumento en la eficiencia de procesamiento de documentos"
-            },
-            {
-              "number": "91%",
-              "description": "Tasa de satisfacción entre profesionales legales"
-            }
-          ],
-          "conclusion": "La plataforma Journey Law transformó la forma en que los bufetes pequeños y medianos gestionan sus casos y documentos. Al crear una interfaz intuitiva y optimizada basada en una comprensión profunda de los flujos de trabajo legales, ayudamos a las firmas a reducir la carga administrativa y enfocar más tiempo en atender a sus clientes. El proyecto demuestra cómo el diseño UX especializado para industrias profesionales puede ofrecer mejoras operativas significativas."
         }
       }
     }

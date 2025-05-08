@@ -1,8 +1,6 @@
 {
   "navigation": {
-    "back_to_home": "Back to Home",
-    "home": "Home",
-    "portfolio": "Portfolio"
+    "back_to_home": "Back to Home"
   },
   "projects": {
     "wallet": {
@@ -281,78 +279,6 @@
             }
           ],
           "conclusion": "The Nomadix Adventure website redesign successfully balances inspiring visual design with functional user experience, resulting in higher engagement and conversion rates. The project showcases how thoughtful web design can transform the presentation of travel experiences and streamline the booking process."
-        }
-      }
-    },
-    "journeylaw": {
-      "title": "Journey Law",
-      "categories": "#UX Design #UI Design #Legal Tech",
-      "hero": {
-        "alt": "Journey Law - Legal Platform"
-      },
-      "sections": {
-        "context": {
-          "title": "Project Context",
-          "content": "Journey Law is a legal-tech platform designed to streamline the process of document management and case tracking for small to mid-sized law firms. The redesign focused on creating an intuitive, efficient interface that reduces administrative burden and improves productivity for legal professionals."
-        },
-        "challenge": {
-          "title": "Challenge",
-          "content": "Law firms were struggling with fragmented case management tools that required extensive training and created workflow bottlenecks. The existing solutions lacked modern interface design and mobile accessibility, hampering productivity and causing frustration among users."
-        },
-        "solution": {
-          "title": "Solution",
-          "content": "We developed a comprehensive legal platform that includes:",
-          "features": [
-            "Unified document management system",
-            "Intuitive case tracking dashboard",
-            "Automated deadline reminders",
-            "Client portal for document sharing",
-            "Cross-device accessibility for remote work",
-            "Custom reporting features"
-          ]
-        },
-        "process": {
-          "title": "Design Process",
-          "steps": [
-            {
-              "title": "Legal Workflow Analysis",
-              "content": "We shadowed legal professionals to understand their daily tasks, pain points, and workflow requirements.",
-              "alt": "Legal Workflow Analysis"
-            },
-            {
-              "title": "Information Architecture",
-              "content": "We reorganized the system structure to align with how legal professionals mentally organize their cases and documents.",
-              "alt": "Information Architecture"
-            },
-            {
-              "title": "Iterative Prototyping",
-              "content": "Multiple iterations of interactive prototypes were tested with actual law firm employees to refine usability.",
-              "alt": "Iterative Prototyping"
-            },
-            {
-              "title": "Visual Design System",
-              "content": "We created a professional, accessible design system that conveyed trust while maintaining modern usability standards.",
-              "alt": "Visual Design System"
-            }
-          ]
-        },
-        "results": {
-          "title": "Results",
-          "metrics": [
-            {
-              "number": "42%",
-              "description": "Reduction in administrative time"
-            },
-            {
-              "number": "68%",
-              "description": "Increase in document processing efficiency"
-            },
-            {
-              "number": "91%",
-              "description": "User satisfaction rate among legal professionals"
-            }
-          ],
-          "conclusion": "The Journey Law platform transformed how small and mid-sized law firms manage their cases and documents. By creating an intuitive, streamlined interface based on deep understanding of legal workflows, we helped firms reduce administrative overhead and focus more time on serving their clients. The project demonstrates how specialized UX design for professional industries can deliver significant operational improvements."
         }
       }
     }

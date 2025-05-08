@@ -6,8 +6,7 @@
 @use '../abstracts/mixins' as m;
 @use '../abstracts/functions' as f;
 
-#banner,
-#case-study-banner {
+#banner {
   position: relative;
   min-height: 100vh;
   background-position: center;
@@ -100,40 +99,6 @@
           background-color: transparent;
           color: v.$white;
         }
-      }
-    }
-  }
-}
-
-// Estilos específicos para el banner de casos de estudio
-#case-study-banner {
-  min-height: 70vh; // Altura más pequeña que el banner principal
-
-  .vc--parent {
-    min-height: calc(70vh - 80px);
-  }
-
-  .case-study-banner--content {
-    max-width: 1000px;
-
-    h1 {
-      font-size: 42px;
-      font-weight: v.$heading-font-weight;
-
-      @include m.media-breakpoint-down(medium) {
-        font-size: 32px;
-      }
-
-      @include m.media-breakpoint-down(small) {
-        font-size: 24px;
-      }
-    }
-
-    p {
-      font-size: 18px;
-
-      @include m.media-breakpoint-down(small) {
-        font-size: 15px;
       }
     }
   }
