@@ -1,0 +1,294 @@
+{
+  "navigation": {
+    "back_to_home": "Volver al Inicio",
+    "home": "Inicio",
+    "portfolio": "Portafolio"
+  },
+  "projects": {
+    "wallet": {
+      "title": "Billetera Móvil",
+      "categories": "#Diseño UX #Diseño UI #Prototipo #Diseño",
+      "hero": {
+        "alt": "Billetera Móvil - Belcorp"
+      },
+      "sections": {
+        "context": {
+          "title": "Contexto del Proyecto",
+          "content": "Belcorp, una compañía multinacional de cosméticos, buscaba mejorar la forma en que sus representantes de ventas administraban sus finanzas. La solución consistió en una billetera móvil que simplificó la gestión financiera y mejoró significativamente la experiencia de usuario."
+        },
+        "challenge": {
+          "title": "Desafío",
+          "content": "Las representantes de ventas enfrentaban dificultades para gestionar los pagos de sus clientes, mantener registros financieros y acceder a la información de sus ganancias. Esto resultaba en ineficiencias operativas y frustración por parte de las usuarias."
+        },
+        "solution": {
+          "title": "Solución",
+          "content": "Desarrollamos una billetera móvil intuitiva con las siguientes características:",
+          "features": [
+            "Dashboard financiero personalizado",
+            "Seguimiento de pagos en tiempo real",
+            "Gestión simplificada de transacciones",
+            "Notificaciones automáticas de pagos",
+            "Integración con sistemas bancarios locales"
+          ]
+        },
+        "process": {
+          "title": "Proceso de Diseño",
+          "steps": [
+            {
+              "title": "Investigación",
+              "content": "Realizamos entrevistas con más de 50 representantes de ventas para entender sus necesidades financieras, puntos de dolor y flujos de trabajo actuales.",
+              "alt": "Investigación"
+            },
+            {
+              "title": "Diseño UX",
+              "content": "Creamos flujos de usuario, wireframes y prototipos interactivos basados en los hallazgos de investigación para garantizar una experiencia fluida y centrada en el usuario.",
+              "alt": "Diseño UX"
+            },
+            {
+              "title": "Diseño UI",
+              "content": "Desarrollamos un sistema de diseño coherente con la identidad de marca de Belcorp, utilizando elementos visuales intuitivos y accesibles.",
+              "alt": "Diseño UI"
+            },
+            {
+              "title": "Pruebas de Usabilidad",
+              "content": "Realizamos múltiples rondas de pruebas con usuarias reales para refinar la interfaz y resolver problemas de usabilidad antes del lanzamiento.",
+              "alt": "Pruebas de Usabilidad"
+            }
+          ]
+        },
+        "results": {
+          "title": "Resultados",
+          "metrics": [
+            {
+              "number": "35%",
+              "description": "Aumento en la eficiencia de gestión financiera"
+            },
+            {
+              "number": "42%",
+              "description": "Reducción en errores de registro de pagos"
+            },
+            {
+              "number": "89%",
+              "description": "Satisfacción de las usuarias"
+            }
+          ],
+          "conclusion": "Esta solución de billetera móvil transformó la gestión financiera para las representantes de ventas de Belcorp, impulsando mejoras significativas en la eficiencia y rentabilidad de la empresa. El proyecto demuestra cómo el diseño UX estratégico puede abordar desafíos empresariales complejos mientras mejora la calidad de vida del usuario final mediante experiencias digitales reflexivas."
+        }
+      }
+    },
+    "factoring": {
+      "title": "Módulo Factoring",
+      "categories": "#Diseño UX #Diseño UI #Prototipo #Diseño",
+      "hero": {
+        "alt": "Módulo Factoring - Security Bank"
+      },
+      "sections": {
+        "context": {
+          "title": "Contexto del Proyecto",
+          "content": "Security Bank necesitaba modernizar su módulo de factoring obsoleto para mejorar la eficiencia y la experiencia de usuario para clientes corporativos. El rediseño integral optimizó procesos financieros complejos al tiempo que mejoró las medidas de seguridad."
+        },
+        "challenge": {
+          "title": "Desafío",
+          "content": "El módulo de factoring existente era engorroso, requiriendo pasos excesivos para completar transacciones. Los usuarios reportaron frustración con la interfaz obsoleta, y el sistema carecía de una integración adecuada con otros módulos bancarios."
+        },
+        "solution": {
+          "title": "Solución",
+          "content": "Creamos un rediseño integral que incluyó:",
+          "features": [
+            "Flujo de trabajo de transacciones simplificado",
+            "Dashboard intuitivo con análisis financieros",
+            "Protocolos de seguridad mejorados",
+            "Sistema de gestión digital de documentos",
+            "Procesos de aprobación automatizados"
+          ]
+        },
+        "process": {
+          "title": "Proceso de Diseño",
+          "steps": [
+            {
+              "title": "Análisis del Sistema",
+              "content": "Realizamos un análisis exhaustivo del sistema de factoring existente para identificar puntos débiles y oportunidades de mejora.",
+              "alt": "Análisis del Sistema"
+            },
+            {
+              "title": "Investigación de Usuarios",
+              "content": "Las entrevistas con clientes corporativos y empleados del banco revelaron problemas clave de usabilidad y requisitos de funcionalidades.",
+              "alt": "Investigación de Usuarios"
+            },
+            {
+              "title": "Rediseño del Flujo de Trabajo",
+              "content": "Simplificamos los procesos de transacción, reduciendo el número de pasos requeridos mientras manteníamos el cumplimiento de seguridad.",
+              "alt": "Rediseño del Flujo de Trabajo"
+            },
+            {
+              "title": "Desarrollo de Interfaz",
+              "content": "La nueva interfaz fue diseñada con estándares bancarios modernos, enfatizando la claridad y eficiencia.",
+              "alt": "Desarrollo de Interfaz"
+            }
+          ]
+        },
+        "results": {
+          "title": "Resultados",
+          "metrics": [
+            {
+              "number": "65%",
+              "description": "Reducción en el tiempo de procesamiento de transacciones"
+            },
+            {
+              "number": "48%",
+              "description": "Aumento en la satisfacción del cliente"
+            },
+            {
+              "number": "30%",
+              "description": "Crecimiento en la adopción del servicio de factoring"
+            }
+          ],
+          "conclusion": "La modernización del módulo de factoring transformó la experiencia de banca corporativa de Security Bank. El sistema rediseñado mejoró significativamente la eficiencia al tiempo que fortaleció los protocolos de seguridad. Este proyecto ejemplifica cómo el diseño UX/UI reflexivo puede revitalizar sistemas financieros complejos y mejorar las operaciones comerciales."
+        }
+      }
+    },
+    "nomadix": {
+      "title": "Nomadix Adventure",
+      "categories": "#Diseño Web #Diseño #Wireframe",
+      "hero": {
+        "alt": "Nomadix Adventure - Plataforma de Viajes"
+      },
+      "sections": {
+        "context": {
+          "title": "Contexto del Proyecto",
+          "content": "Nomadix Adventure es una plataforma de viajes que conecta a los buscadores de aventuras con experiencias únicas en todo el mundo. El proyecto implicó crear un diseño web atractivo que capture la emoción de los viajes de aventura mientras proporciona una experiencia de reserva intuitiva."
+        },
+        "challenge": {
+          "title": "Desafío",
+          "content": "El cliente necesitaba un sitio web que destacara en el saturado mercado de viajes, mostrara eficazmente diversas ofertas de aventura y proporcionara una experiencia de reserva fluida para usuarios con diferentes niveles de conocimientos técnicos."
+        },
+        "solution": {
+          "title": "Solución",
+          "content": "Diseñamos un sitio web visualmente impresionante con estas características clave:",
+          "features": [
+            "Narrativa visual inmersiva",
+            "Sistema intuitivo de búsqueda de aventuras",
+            "Proceso de reserva simplificado",
+            "Diseño responsive para todos los dispositivos",
+            "Mapas interactivos de aventuras"
+          ]
+        },
+        "process": {
+          "title": "Proceso de Diseño",
+          "steps": [
+            {
+              "title": "Análisis Competitivo",
+              "content": "Analizamos los principales sitios web de viajes de aventura para identificar oportunidades de diferenciación y mejora.",
+              "alt": "Análisis Competitivo"
+            },
+            {
+              "title": "Estrategia de Contenido",
+              "content": "Desarrollamos una estrategia de contenido que equilibra visuales inspiradores con información práctica de reserva.",
+              "alt": "Estrategia de Contenido"
+            },
+            {
+              "title": "Wireframing",
+              "content": "Se crearon wireframes detallados para mapear los recorridos del usuario desde la inspiración hasta la finalización de la reserva.",
+              "alt": "Wireframing"
+            },
+            {
+              "title": "Diseño Visual",
+              "content": "El diseño visual enfatizó fotografías impresionantes, colores vibrantes y tipografía clara para inspirar la aventura.",
+              "alt": "Diseño Visual"
+            }
+          ]
+        },
+        "results": {
+          "title": "Resultados",
+          "metrics": [
+            {
+              "number": "54%",
+              "description": "Aumento en el tiempo de permanencia en el sitio"
+            },
+            {
+              "number": "37%",
+              "description": "Mejora en la tasa de finalización de reservas"
+            },
+            {
+              "number": "82%",
+              "description": "Comentarios positivos de usuarios sobre el diseño"
+            }
+          ],
+          "conclusion": "El rediseño del sitio web de Nomadix Adventure equilibra con éxito el diseño visual inspirador con la experiencia de usuario funcional, resultando en mayores tasas de participación y conversión. El proyecto muestra cómo el diseño web reflexivo puede transformar la presentación de experiencias de viaje y simplificar el proceso de reserva."
+        }
+      }
+    },
+    "journeylaw": {
+      "title": "Journey Law",
+      "categories": "#Diseño UX #Diseño UI #Legal Tech",
+      "hero": {
+        "alt": "Journey Law - Plataforma Legal"
+      },
+      "sections": {
+        "context": {
+          "title": "Contexto del Proyecto",
+          "content": "Journey Law es una plataforma legal-tech diseñada para optimizar el proceso de gestión de documentos y seguimiento de casos para bufetes pequeños y medianos. El rediseño se centró en crear una interfaz intuitiva y eficiente que reduzca la carga administrativa y mejore la productividad de los profesionales legales."
+        },
+        "challenge": {
+          "title": "Desafío",
+          "content": "Los bufetes de abogados estaban luchando con herramientas fragmentadas de gestión de casos que requerían una extensa capacitación y creaban cuellos de botella en el flujo de trabajo. Las soluciones existentes carecían de un diseño de interfaz moderno y accesibilidad móvil, obstaculizando la productividad y causando frustración entre los usuarios."
+        },
+        "solution": {
+          "title": "Solución",
+          "content": "Desarrollamos una plataforma legal integral que incluye:",
+          "features": [
+            "Sistema unificado de gestión de documentos",
+            "Panel intuitivo de seguimiento de casos",
+            "Recordatorios automáticos de plazos",
+            "Portal de clientes para compartir documentos",
+            "Accesibilidad multiplataforma para trabajo remoto",
+            "Funciones personalizadas de informes"
+          ]
+        },
+        "process": {
+          "title": "Proceso de Diseño",
+          "steps": [
+            {
+              "title": "Análisis de Flujo de Trabajo Legal",
+              "content": "Acompañamos a profesionales legales para comprender sus tareas diarias, puntos de dolor y requisitos de flujo de trabajo.",
+              "alt": "Análisis de Flujo de Trabajo Legal"
+            },
+            {
+              "title": "Arquitectura de Información",
+              "content": "Reorganizamos la estructura del sistema para alinearse con la forma en que los profesionales legales organizan mentalmente sus casos y documentos.",
+              "alt": "Arquitectura de Información"
+            },
+            {
+              "title": "Prototipado Iterativo",
+              "content": "Se probaron múltiples iteraciones de prototipos interactivos con empleados reales de bufetes para refinar la usabilidad.",
+              "alt": "Prototipado Iterativo"
+            },
+            {
+              "title": "Sistema de Diseño Visual",
+              "content": "Creamos un sistema de diseño profesional y accesible que transmitía confianza mientras mantenía estándares modernos de usabilidad.",
+              "alt": "Sistema de Diseño Visual"
+            }
+          ]
+        },
+        "results": {
+          "title": "Resultados",
+          "metrics": [
+            {
+              "number": "42%",
+              "description": "Reducción en tiempo administrativo"
+            },
+            {
+              "number": "68%",
+              "description": "Aumento en la eficiencia de procesamiento de documentos"
+            },
+            {
+              "number": "91%",
+              "description": "Tasa de satisfacción entre profesionales legales"
+            }
+          ],
+          "conclusion": "La plataforma Journey Law transformó la forma en que los bufetes pequeños y medianos gestionan sus casos y documentos. Al crear una interfaz intuitiva y optimizada basada en una comprensión profunda de los flujos de trabajo legales, ayudamos a las firmas a reducir la carga administrativa y enfocar más tiempo en atender a sus clientes. El proyecto demuestra cómo el diseño UX especializado para industrias profesionales puede ofrecer mejoras operativas significativas."
+        }
+      }
+    }
+  }
+}

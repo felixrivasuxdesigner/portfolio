@@ -173,17 +173,37 @@
     }
   }
 
+  .gallery-item-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    height: auto;
+    width: 100%;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+
   .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(4, 1fr); // Cambiado a 4 columnas fijas
+    gap: 20px; // Reducido el espacio entre tarjetas
+
+    @include m.media-breakpoint-down(large) {
+      grid-template-columns: repeat(
+        3,
+        1fr
+      ); // 3 columnas en pantallas más pequeñas
+    }
 
     @include m.media-breakpoint-down(medium) {
-      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      grid-template-columns: repeat(2, 1fr); // 2 columnas en tablets
     }
 
     @include m.media-breakpoint-down(small) {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr; // 1 columna en móviles
     }
   }
 
@@ -191,14 +211,12 @@
     position: relative;
     overflow: hidden;
     border-radius: 8px;
-    cursor: pointer;
     box-shadow: var(--box-shadow);
     transition: all 0.3s ease;
     height: 0;
     padding-bottom: 75%; // Aspect ratio 4:3
 
     &:hover {
-      transform: translateY(-5px);
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 
       img {

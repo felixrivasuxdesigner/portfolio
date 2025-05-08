@@ -78,7 +78,11 @@
 
     {% include "components/language-selector.njk" %}
     
-    {% include "components/header.njk" %}
+    {% if isCaseStudy %}
+      {% include "components/case-study-header.njk" %}
+    {% else %}
+      {% include "components/header.njk" %}
+    {% endif %}
     
     {{ content | safe }}
 

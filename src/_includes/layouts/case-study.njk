@@ -1,0 +1,151 @@
+---
+layout: layouts/base.njk
+isCaseStudy: true
+---
+
+<!-- Include Case Study Banner -->
+{% include "components/case-study-banner.njk" %}
+
+<!-- Include Breadcrumb - Reemplaza el botón de volver -->
+{% include "components/case-study-breadcrumb.njk" %}
+
+<!-- Case Study Content Start -->
+<div class="case-study">
+  <div class="container">
+    <div class="case-study-content">
+      <!-- Hero Section -->
+      <div class="case-study-hero">
+        <img src="{{ site.baseUrl }}assets/img/gallery-img/{{ projectKey }}/cover-{{ projectKey }}.webp" alt="{{ translations[locale].case_studies.projects[projectKey].hero.alt }}" class="case-study-hero-image">
+      </div>
+
+      <!-- Project Overview Section -->
+      <div class="case-study-section">
+        <h2>{{ translations[locale].case_studies.projects[projectKey].sections.context.title }}</h2>
+        <p>{{ translations[locale].case_studies.projects[projectKey].sections.context.content }}</p>
+      </div>
+
+      <!-- Challenge Section -->
+      <div class="case-study-section">
+        <h2>{{ translations[locale].case_studies.projects[projectKey].sections.challenge.title }}</h2>
+        <p>{{ translations[locale].case_studies.projects[projectKey].sections.challenge.content }}</p>
+      </div>
+
+      <!-- Research Section (if available) -->
+      {% if translations[locale].case_studies.projects[projectKey].sections.research %}
+      <div class="case-study-section">
+        <h2>{{ translations[locale].case_studies.projects[projectKey].sections.research.title }}</h2>
+        
+        {% for subsection in translations[locale].case_studies.projects[projectKey].sections.research.subsections %}
+          <div class="case-study-subsection">
+            <h3>{{ subsection.title }}</h3>
+            <p>{{ subsection.content }}</p>
+            
+            {% if subsection.bullets %}
+              <ul>
+                {% for bullet in subsection.bullets %}
+                  <li>{{ bullet }}</li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+            
+            {% if subsection.stats %}
+              <div class="case-study-stats">
+                {% for stat in subsection.stats %}
+                  <div class="stat-item">
+                    <div class="stat-number">{{ stat.number }}</div>
+                    <div class="stat-description">{{ stat.description }}</div>
+                  </div>
+                {% endfor %}
+              </div>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      <!-- Personas Section (if available) -->
+      {% if translations[locale].case_studies.projects[projectKey].sections.personas %}
+      <div class="case-study-section">
+        <h2>{{ translations[locale].case_studies.projects[projectKey].sections.personas.title }}</h2>
+        
+        {% if translations[locale].case_studies.projects[projectKey].sections.personas.primaryPersona %}
+          {% set persona = translations[locale].case_studies.projects[projectKey].sections.personas.primaryPersona %}
+          <div class="persona-card">
+            <div class="persona-header">
+              <h3>{{ persona.name }}</h3>
+              <p class="persona-position">{{ persona.position }}</p>
+              <p class="persona-details">{{ persona.companySize }} • Technical Proficiency: {{ persona.technicalProficiency }}</p>
+            </div>
+            
+            <div class="persona-content">
+              {% if persona.behaviors %}
+                <div class="persona-section">
+                  <h4>Security Behaviors</h4>
+                  <ul>
+                    {% for behavior in persona.behaviors %}
+                      <li>{{ behavior }}</li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              {% endif %}
+              
+              {% if persona.painPoints %}
+                <div class="persona-section">
+                  <h4>Pain Points</h4>
+                  <ul>
+                    {% for painPoint in persona.painPoints %}
+                      <li>{{ painPoint }}</li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              {% endif %}
+            </div>
+          </div>
+        {% endif %}
+      </div>
+      {% endif %}
+
+      <!-- Solution Section -->
+      <div class="case-study-section">
+        <h2>{{ translations[locale].case_studies.projects[projectKey].sections.solution.title }}</h2>
+        <p>{{ translations[locale].case_studies.projects[projectKey].sections.solution.content }}</p>
+        <ul>
+          {% for feature in translations[locale].case_studies.projects[projectKey].sections.solution.features %}
+            <li>{{ feature }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <!-- Process/Features Section -->
+      <div class="case-study-section">
+        <h2>{{ translations[locale].case_studies.projects[projectKey].sections.process.title }}</h2>
+        <div class="case-study-grid">
+          {% for step in translations[locale].case_studies.projects[projectKey].sections.process.steps %}
+            <div class="case-study-grid-item">
+              <h3>{{ step.title }}</h3>
+              <p>{{ step.content }}</p>
+              {% if false %}
+              <img src="{{ site.baseUrl }}assets/img/gallery-img/{{ projectKey }}/{{ step.title | lower | replace(" ", "-") }}.webp" alt="{{ step.alt }}" class="case-study-image">
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      <!-- Results Section -->
+      <div class="case-study-section">
+        <h2>{{ translations[locale].case_studies.projects[projectKey].sections.results.title }}</h2>
+        <div class="case-study-results">
+          {% for metric in translations[locale].case_studies.projects[projectKey].sections.results.metrics %}
+            <div class="result-item">
+              <h3>{{ metric.number }}</h3>
+              <p>{{ metric.description }}</p>
+            </div>
+          {% endfor %}
+        </div>
+        <p>{{ translations[locale].case_studies.projects[projectKey].sections.results.conclusion }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Case Study Content End -->

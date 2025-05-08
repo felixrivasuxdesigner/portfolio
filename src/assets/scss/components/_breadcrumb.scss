@@ -1,0 +1,92 @@
+/* 
+ * Estilos para el breadcrumb de casos de estudio
+ */
+
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+@use '../abstracts/functions' as f;
+
+.case-study-breadcrumb {
+  background-color: var(--breadcrumb-bg, rgba(255, 255, 255, 0.98));
+  padding: 12px 0;
+  border-bottom: 1px solid var(--breadcrumb-border, rgba(0, 0, 0, 0.05));
+  transition: all 0.3s ease;
+
+  // Estilos para el modo sticky
+  &.sticky {
+    position: fixed;
+    top: 80px; // Altura del header
+    left: 0;
+    width: 100%;
+    z-index: 1000; // Z-index mayor que el del menú superior
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .breadcrumb {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    li {
+      display: flex;
+      align-items: center;
+      color: var(--breadcrumb-text, #666666);
+      font-size: 14px;
+
+      &:not(:last-child) {
+        margin-right: 8px;
+
+        &::after {
+          content: '/';
+          margin-left: 8px;
+          margin-right: 5px;
+          color: var(--breadcrumb-divider, #cccccc);
+        }
+      }
+
+      a {
+        color: var(--breadcrumb-link, #333333);
+        text-decoration: none;
+        transition: color 0.3s ease;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          color: var(--accent-color);
+        }
+
+        i {
+          margin-right: 5px;
+          font-size: 13px;
+        }
+      }
+
+      span {
+        color: var(--breadcrumb-active, var(--accent-color));
+        font-weight: 500;
+      }
+
+      // Estilo especial para el último elemento (actual)
+      &:last-child span {
+        display: inline-block;
+        max-width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        @include m.media-breakpoint-down(small) {
+          max-width: 120px;
+        }
+      }
+    }
+  }
+
+  @include m.media-breakpoint-down(small) {
+    .breadcrumb li {
+      font-size: 13px;
+    }
+  }
+}

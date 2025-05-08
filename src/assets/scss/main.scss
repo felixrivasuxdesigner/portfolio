@@ -36,10 +36,12 @@
 @use 'components/preloader';
 @use 'components/back-to-top';
 @use 'components/brands';
+@use 'components/breadcrumb';
 
 // Pages
 @use 'pages/home';
 @use 'pages/thankyou';
+@use 'pages/case-study';
 
 // Themes
 @use 'themes/default';
