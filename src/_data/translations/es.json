@@ -9,6 +9,10 @@
     "contact": "Contacto",
     "hire_me": "Contrátame"
   },
+  "breadcrumbs": {
+    "home": "Inicio",
+    "portfolio": "Portafolio"
+  },
   "banner": {
     "title": "Creemos <span class=\"thick\">Experiencias</span> <span class=\"thick\">Excepcionales</span> Juntos",
     "description": "Soy <strong>Líder en Diseño UX/UI</strong> con raíces en diseño gráfico, transformando espacios digitales desde <strong>Santiago de Chile, LATAM</strong>.",

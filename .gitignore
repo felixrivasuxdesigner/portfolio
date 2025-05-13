@@ -1,1 +1,63 @@
-node_modules
+# Archivo .gitignore para el proyecto de Portafolio Personal
+
+# === Dependencias ===
+# Ignorar el directorio de módulos de Node.js
+node_modules/
+
+# === Logs ===
+# Ignorar logs de npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# === Archivos de Build/Salida ===
+# Ignorar el directorio de salida por defecto de Eleventy
+_site/
+# También es común usar 'dist' o 'public' como directorios de salida
+dist/
+public/
+
+# === Cache de Sass ===
+.sass-cache/
+
+# === Archivos del Sistema Operativo ===
+# Ignorar archivos ocultos y temporales de macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# === Archivos de Entorno ===
+# Ignorar archivos de variables de entorno locales
+.env
+.env.local
+.env.*.local
+
+# === Archivos de Configuración de IDE/Editor ===
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains IDEs (WebStorm, PyCharm, etc.)
+.idea/
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# === Otros ===
+# Ignorar archivos de configuración específicos de herramientas si los hubiera
+# Por ejemplo: .eslintcache
+
+# Ignorar archivos comprimidos generados localmente (si aplica)
+*.zip
+*.tar.gz

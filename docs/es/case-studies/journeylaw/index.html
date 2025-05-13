@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  
+  <title>Plataforma Legal JourneyLaw</title>
+  
+  <meta name="description" content="Diseñador UX/UI con más de 12 años de experiencia en interfaces digitales y experiencia de usuario para aplicaciones móviles y web">
+  <meta name="author" content="Félix Rivas">
+  <meta name="theme-color" content="#FF4F5E">
+
+  <!-- PWA - Manifest y App Icons -->
+  <link rel="manifest" href="/portfolio/site.webmanifest">
+  <link rel="apple-touch-icon" href="/portfolio/assets/img/icons/icon-192x192.png">
+  
+  <!-- Precargar fuentes críticas para mejorar LCP y evitar Layout Shift -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Raleway:300,500,700,800&display=swap" as="style">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,500,700,800&display=swap" rel="stylesheet">
+  
+  <!-- Precargar CSS crítico para evitar render-blocking -->
+  <link rel="preload" href="/portfolio/assets/css/main.css" as="style">
+  <link href="/portfolio/assets/css/main.css" rel="stylesheet">
+  
+  <!-- Font Awesome - Con preload para íconos críticos -->
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="/portfolio/assets/img/favicon.png" type="image/x-icon">
+  <link rel="icon" href="/portfolio/assets/img/favicon.png" type="image/x-icon">
+  
+  <!-- Meta para SEO y redes sociales -->
+  <meta property="og:title" content="Plataforma Legal JourneyLaw">
+  <meta property="og:description" content="Diseñador UX/UI con más de 12 años de experiencia en interfaces digitales y experiencia de usuario para aplicaciones móviles y web">
+  <meta property="og:image" content="/portfolio/assets/img/felix-rivas-og-image.jpg">
+  <meta property="og:url" content="https://felixrivasuxdesigner.github.io/portfolio//es/case-studies/journeylaw/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Plataforma Legal JourneyLaw">
+  <meta name="twitter:description" content="Diseñador UX/UI con más de 12 años de experiencia en interfaces digitales y experiencia de usuario para aplicaciones móviles y web">
+  <meta name="twitter:image" content="/portfolio/assets/img/felix-rivas-og-image.jpg">
+  
+  <!-- Añadir Schema.org para mejor SEO -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Félix Rivas",
+      "url": "https://felixrivasuxdesigner.github.io/portfolio/",
+      "image": "https://felixrivasuxdesigner.github.io/portfolio/assets/img/felix-rivas-og-image.jpg",
+      "jobTitle": "UX/UI Designer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Freelance"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/rivasfelix/"
+      ]
+    }
+  </script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
+  <!-- Wrapper Start -->
+  <div class="wrapper">
+    <!-- Preloader Start -->
+    <div id="preloader">
+      <div class="preloader--bounce">
+        <div class="preloader-bouncer--1"></div>
+        <div class="preloader-bouncer--2"></div>
+      </div>
+    </div>
+    <!-- Preloader End -->
+
+    <div class="language-selector">
+  <div class="language-selector__toggle" id="langToggle">
+    <i class="fa-solid fa-globe"></i>
+  </div>
+  <div class="language-selector__dropdown" id="langDropdown">
+    <a href="/portfolio/es/" class="active">
+      <span class="flag flag--es"></span>Español
+    </a>
+    <a href="/portfolio/en/">
+      <span class="flag flag--en"></span>English
+    </a>
+  </div>
+  
+  <!-- Botón de cambio de tema junto al selector de idioma -->
+  <div class="theme-toggle in-language-selector" id="themeToggle">
+    <i class="fa-solid fa-moon"></i>
+    <i class="fa-solid fa-sun"></i>
+  </div>
+</div>
+    
+    <!-- Header Area Start -->
+<div id="header">
+  <nav class="header--navbar">
+    <div class="container">
+      <div class="navbar">
+        <div class="navbar-header">
+          <!-- Header Custom Button Start -->
+          <div class="header--custom-btn hidden-lg hidden-md">
+            <a href="#hireMeModal" class="btn--default hire-me-btn"><i class="fa fa-user-plus"></i></a>
+          </div>
+          <!-- Header Custom Button End -->
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#headerNav" aria-expanded="false" aria-controls="headerNav">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <!-- Logo Start -->
+          <a class="logo navbar-brand" href="/portfolio/es/">
+            <div class="logo--img">
+              <img fetchpriority="high" src="/portfolio/assets/img/logo.webp" class="img-responsive" alt="Félix Rivas Logo">
+            </div>
+
+            <div class="logo--content">
+              <h1><strong>Felix</strong> Rivas</h1>
+              <p>Diseñador UX/UI</p>
+            </div>
+          </a>
+          <!-- Logo End -->
+        </div>
+
+        <!-- Header Nav Start -->
+        <div id="headerNav" class="header--nav navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right AnimateScroll">
+            <li><a href="#banner">Inicio</a></li>
+            <li><a href="#about">Sobre Mí</a></li>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#gallery">Portafolio</a></li>
+            <li><a href="#feedback">Testimonios</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </div>
+        <!-- Header Nav End -->
+
+        <!-- Header Custom Button Start -->
+        <div class="header--custom-btn hidden-sm hidden-xs ml-2">
+          <a href="#hireMeModal" class="btn--default hire-me-btn">
+            <i class="fa fa-user-plus"></i>Contrátame
+          </a>
+        </div>
+        <!-- Header Custom Button End -->
+      </div>
+    </div>
+  </nav>
+</div>
+<!-- Header Area End -->
+    
+    
+    <!-- Case Study Breadcrumb Component -->
+<div class="breadcrumbs" id="breadcrumb">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="/portfolio/es/" class="home-link">
+                <i class="fa fa-home"></i> <span class="d-none d-sm-inline">Inicio</span>
+              </a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="/portfolio/es/#gallery" class="portfolio-link">
+                Portafolio
+              </a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Plataforma Legal...
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+    
+<!-- Case Study Breadcrumb se incluye después del header en el layout base -->
+
+<!-- Case Study Content Start -->
+<div class="case-study">
+  <div class="container">
+    <div class="case-study-header">
+      <h1 class="case-study-title">Plataforma Legal JourneyLaw</h1>
+      <p class="case-study-categories">#Diseño UX #Diseño UI #Legal Tech #Diseño Responsivo</p>
+      <!-- Debug info -->
+      <div style="margin: 20px 0; padding: 10px; background: #f5f5f5; border: 1px solid #ddd; display: none;">
+        <p>Debug - locale: es</p>
+        <p>Debug - projectKey: journeylaw</p>
+        <p>Debug - Translations available: No title found</p>
+      </div>
+    </div>
+
+    <div class="case-study-content">
+      <!-- Hero Section -->
+      <div class="case-study-hero">
+        <img fetchpriority="high" src="/portfolio/assets/img/gallery-img/journeylaw/cover-journeylaw.webp" alt="" class="case-study-hero-image">
+      </div>
+
+      <!-- Project Overview Section -->
+      <div class="case-study-section">
+        <h2></h2>
+        <p></p>
+      </div>
+
+      <!-- Challenge Section -->
+      <div class="case-study-section">
+        <h2></h2>
+        <p></p>
+      </div>
+
+      <!-- Research Section (if available) -->
+      
+
+      <!-- Personas Section (if available) -->
+      
+
+      <!-- Solution Section -->
+      <div class="case-study-section">
+        <h2></h2>
+        <p></p>
+        <ul>
+          
+        </ul>
+      </div>
+
+      <!-- Process/Features Section -->
+      <div class="case-study-section">
+        <h2></h2>
+        <div class="case-study-grid">
+          
+        </div>
+      </div>
+
+      <!-- Results Section -->
+      <div class="case-study-section">
+        <h2></h2>
+        <div class="case-study-results">
+          
+        </div>
+        <p></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Case Study Content End -->
+
+    <!-- Footer Area Start -->
+<div id="footer">
+  <div class="container">
+    <!-- Footer Copyright Start -->
+    <div class="footer--copyright">
+      <p>
+        Copyright © 2025 <a href="/">Félix Rivas</a>. Todos los Derechos Reservados.
+      </p>
+    </div>
+    <!-- Footer Copyright End -->
+  </div>
+</div>
+<!-- Footer Area End -->
+
+    <!-- Back To Top Area Start -->
+    <div id="backToTop">
+      <a href="#header" class="btn--default"><i class="fa fa-angle-up"></i></a>
+    </div>
+    <!-- Back To Top Area End -->
+  </div>
+  <!-- Wrapper End -->
+
+  <!-- Hire Me Modal -->
+  <!-- Hire Me Contact Modal Start -->
+<div id="hireMeModal" class="hire-me--modal modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close">×</button>
+
+        <div class="modal-title">
+          <h2>¿TIENES UN PROYECTO EN MENTE?</h2>
+          <p>Estoy listo para dar vida a tu visión. Comparte los detalles a continuación para comenzar.</p>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <form action="https://formsubmit.co/rivafelix@gmail.com" method="POST" data-form="validate">
+          <!-- Redirects to a custom "Gracias" page -->
+          <input type="hidden" name="_next" value="/thankyou/">
+          <!-- Avoid captcha -->
+          <input type="hidden" name="_captcha" value="false">
+          <!-- Email subject -->
+          <input type="hidden" name="_subject" value="New project request from portfolio">
+          <!-- Spam prevention -->
+          <input type="text" name="_honey" style="display:none">
+          
+          <div class="form-controls">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group name">
+                  <input type="text" name="name" class="form-control" placeholder="Tu Nombre..." required>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group email">
+                  <input type="email" name="email" class="form-control" placeholder="Tu Email..." required>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group project-title">
+                  <input type="text" name="project_title" class="form-control" placeholder="Título del Proyecto..." required>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group case-category">
+                  <select name="category" class="form-control bg-fa-caret-down white">
+                    <option>-Selecciona categoría del proyecto-</option>
+                    <option>Diseño UX/UI</option>
+                    <option>Diseño Web</option>
+                    <option>Diseño de App Móvil</option>
+                    <option>Investigación UX</option>
+                    <option>Otro</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group budget">
+                  <select name="budget" class="form-control bg-fa-caret-down white">
+                    <option>-Rango de presupuesto-</option>
+                    <option>$1,000 - $3,000</option>
+                    <option>$3,000 - $6,000</option>
+                    <option>$6,000 - $10,000</option>
+                    <option>$10,000+</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group date">
+                  <input type="text" name="date" class="form-control DatePicker bg-fa-calender" placeholder="-Cronograma objetivo-">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group referral-source">
+              <select name="referral_source" class="form-control bg-fa-caret-down white">
+                <option>¿Cómo me encontraste?</option>
+                <option>Google u otro buscador</option>
+                <option>Redes sociales</option>
+                <option>LinkedIn</option>
+                <option>Recomendación de un colega</option>
+                <option>Recomendación de un cliente</option>
+                <option>Evento profesional</option>
+                <option>Otro</option>
+              </select>
+            </div>
+
+            <div class="form-group message">
+              <textarea name="message" class="form-control" rows="5" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+            </div>
+
+            <div class="estimate-container">
+              <div class="estimate-text">
+                <h4>¿Necesitas un presupuesto detallado?</h4>
+              </div>
+
+              <div class="radio-text">
+                <div class="radio">
+                  <input type="radio" name="estimate" id="estimateZERO" value="0" checked>
+                  <label for="estimateZERO">No necesito presupuesto por ahora</label>
+                </div>
+
+                <div class="radio">
+                  <input type="radio" name="estimate" id="estimateONE" value="1">
+                  <label for="estimateONE">Sí, me gustaría un estimado de costos. Entiendo que tomará 2-4 días hábiles recibir un presupuesto completo.</label>
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="submit-btn btn--primary">ENVIAR SOLICITUD</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Hire Me Contact Modal End -->
+  
+  <!-- Modern JavaScript -->
+  <script src="/portfolio/assets/js/main.js" type="module"></script>
+</body>
+</html>

@@ -4,15 +4,15 @@
   "description": "Portafolio personal de Félix Rivas - UX/UI Designer",
   "main": "index.js",
   "scripts": {
-    "start": "ELEVENTY_ENV=development eleventy --serve",
-    "build": "eleventy",
-    "clean": "rm -rf public",
+    "start": "npm run clean && npm run sass && ELEVENTY_ENV=development eleventy --serve --port=8080",
+    "build": "npm run clean && npm run sass && ELEVENTY_ENV=production eleventy",
+    "clean": "rm -rf docs",
     "sass": "sass src/assets/scss/main.scss:src/assets/css/main.css --style=compressed",
     "sass:watch": "sass src/assets/scss/main.scss:src/assets/css/main.css --style=compressed --watch",
-    "dev:eleventy": "ELEVENTY_ENV=development eleventy --serve",
+    "dev:eleventy": "ELEVENTY_ENV=development eleventy --serve --port=8080",
     "dev:sass": "npm run sass:watch",
     "dev": "npm run clean && npm run sass && ELEVENTY_ENV=development npm-run-all --parallel dev:*",
-    "build:prod": "npm run clean && npm run sass && ELEVENTY_ENV=production npm run build"
+    "serve:prod": "cd docs && python -m SimpleHTTPServer 8000 || cd docs && python -m http.server 8000"
   },
   "keywords": [
     "portfolio",

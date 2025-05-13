@@ -80,6 +80,10 @@
     
     {% include "components/header.njk" %}
     
+    {% if isCaseStudy %}
+    {% include "components/case-studies/case-study-breadcrumb.njk" %}
+    {% endif %}
+    
     {{ content | safe }}
 
     {% include "components/footer.njk" %}

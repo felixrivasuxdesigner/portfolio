@@ -1,0 +1,26 @@
+<!-- Case Study Breadcrumb Component -->
+<div class="breadcrumbs" id="breadcrumb">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="{{ site.baseUrl }}{{ locale }}/" class="home-link">
+                <i class="fa fa-home"></i> <span class="d-none d-sm-inline">{{ translations[locale].breadcrumbs.home | default('Home') }}</span>
+              </a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="{{ site.baseUrl }}{{ locale }}/#gallery" class="portfolio-link">
+                {{ translations[locale].breadcrumbs.portfolio | default('Portfolio') }}
+              </a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              {{ title | truncate(25) }}
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>

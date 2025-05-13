@@ -18,6 +18,8 @@ Este proyecto es el sitio web de portafolio personal de Félix Rivas, diseñador
 - Componentes modulares y reutilizables
 - Tamaño de archivos reducido al eliminar dependencias pesadas
 - Soporte para múltiples idiomas (español e inglés)
+- Páginas detalladas de estudios de caso para proyectos del portafolio
+- Compatibilidad con GitHub Pages
 
 ## Requisitos
 
@@ -38,8 +40,10 @@ npm install
 ## Comandos Disponibles
 
 ```bash
-# Desarrollo con live reload
+# Desarrollo con live reload (sin prefijo /portfolio/)
 npm run dev
+# o
+npm start
 
 # Compilar solo Sass
 npm run sass
@@ -47,8 +51,13 @@ npm run sass
 # Compilar Sass y vigilar cambios
 npm run sass:watch
 
-# Generar build de producción
+# Generar build de producción (con prefijo /portfolio/)
 npm run build:prod
+# o
+ELEVENTY_ENV=production npm run build
+
+# Simular GitHub Pages localmente (navegar a http://localhost:8000/portfolio/)
+npm run serve:prod
 
 # Limpiar carpeta de distribución
 npm run clean
@@ -66,8 +75,10 @@ src/                  # Código fuente
   _data/              # Datos para plantillas
   _includes/          # Componentes y layouts
   en/                 # Contenido en inglés
+    case-studies/     # Estudios de caso en inglés
   es/                 # Contenido en español
-public/               # Carpeta de salida (generada)
+    case-studies/     # Estudios de caso en español
+docs/                 # Carpeta de salida para GitHub Pages (generada)
 ```
 
 ## Arquitectura CSS
@@ -89,6 +100,8 @@ Se ha implementado una arquitectura CSS basada en la metodología 7-1 con Sass:
 - Sistema de componentes modular
 - Implementación de selector de idioma nativo
 - Mejora de accesibilidad
+- Conversión de modales a páginas dedicadas de estudios de caso
+- Configuración para despliegue en GitHub Pages
 
 ## Mantenimiento
 
@@ -96,6 +109,10 @@ Para modificar el tema o personalizar estilos:
 
 1. Editar variables en `src/assets/scss/abstracts/_variables.scss`
 2. Ejecutar `npm run dev` para ver cambios en tiempo real
+
+## Despliegue a GitHub Pages
+
+Para configurar el despliegue a GitHub Pages, consulta las instrucciones detalladas en [DEPLOY-TO-GITHUB-PAGES.md](DEPLOY-TO-GITHUB-PAGES.md).
 
 ## Autor
 

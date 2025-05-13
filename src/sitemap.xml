@@ -3,37 +3,103 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <!-- Página principal en español (idioma por defecto) -->
   <url>
-    <loc>https://felixrivas.com/</loc>
+    <loc>https://felixrivasuxdesigner.github.io/portfolio/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://felixrivas.com/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://felixrivas.com/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://felixrivasuxdesigner.github.io/portfolio/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://felixrivasuxdesigner.github.io/portfolio/en/" />
   </url>
   
   <!-- Página principal en inglés -->
   <url>
-    <loc>https://felixrivas.com/en/</loc>
+    <loc>https://felixrivasuxdesigner.github.io/portfolio/en/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://felixrivas.com/en/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://felixrivas.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://felixrivasuxdesigner.github.io/portfolio/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://felixrivasuxdesigner.github.io/portfolio/" />
   </url>
   
   <!-- Página de agradecimiento en español -->
   <url>
-    <loc>https://felixrivas.com/thankyou/</loc>
+    <loc>https://felixrivasuxdesigner.github.io/portfolio/es/thankyou/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://felixrivas.com/thankyou/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://felixrivas.com/en/thankyou/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://felixrivasuxdesigner.github.io/portfolio/es/thankyou/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://felixrivasuxdesigner.github.io/portfolio/en/thankyou/" />
   </url>
   
   <!-- Página de agradecimiento en inglés -->
   <url>
-    <loc>https://felixrivas.com/en/thankyou/</loc>
+    <loc>https://felixrivasuxdesigner.github.io/portfolio/en/thankyou/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://felixrivas.com/en/thankyou/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://felixrivas.com/thankyou/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://felixrivasuxdesigner.github.io/portfolio/en/thankyou/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://felixrivasuxdesigner.github.io/portfolio/es/thankyou/" />
+  </url>
+
+  <!-- Case Studies en inglés -->
+  <url>
+    <loc>https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/wallet/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/wallet/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/wallet/" />
+  </url>
+  
+  <url>
+    <loc>https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/factoring/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/factoring/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/factoring/" />
+  </url>
+  
+  <url>
+    <loc>https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/nomadix/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/nomadix/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/nomadix/" />
+  </url>
+  
+  <url>
+    <loc>https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/journeylaw/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/journeylaw/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/journeylaw/" />
+  </url>
+  
+  <!-- Case Studies en español -->
+  <url>
+    <loc>https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/wallet/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/wallet/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/wallet/" />
+  </url>
+  
+  <url>
+    <loc>https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/factoring/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/factoring/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/factoring/" />
+  </url>
+  
+  <url>
+    <loc>https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/nomadix/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/nomadix/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/nomadix/" />
+  </url>
+  
+  <url>
+    <loc>https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/journeylaw/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/journeylaw/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/journeylaw/" />
   </url>
 </urlset>

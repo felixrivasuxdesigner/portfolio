@@ -95,12 +95,14 @@ module.exports = function (eleventyConfig) {
   return {
     dir: {
       input: 'src',
-      output: 'public',
+      output: 'docs',
       includes: '_includes',
       data: '_data',
     },
     templateFormats: ['html', 'njk', 'md'],
     htmlTemplateEngine: 'njk',
     markdownTemplateEngine: 'njk',
+    // Siempre usamos pathPrefix para mantener coherencia entre entornos
+    pathPrefix: '/portfolio/',
   };
 };

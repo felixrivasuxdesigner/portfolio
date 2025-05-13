@@ -1,0 +1,287 @@
+{
+  "navigation": {
+    "back_to_home": "Back to Home",
+    "back_to_portfolio": "Back to Portfolio"
+  },
+  "projects": {
+    "wallet": {
+      "title": "Mobile Wallet",
+      "categories": "#UX Design #UI Design #Prototype #Design",
+      "hero": {
+        "alt": "Mobile Wallet - Belcorp"
+      },
+      "sections": {
+        "context": {
+          "title": "Project Context",
+          "content": "Belcorp, a multinational cosmetics company, was looking to improve how their sales representatives managed their finances. The solution was a mobile wallet that simplified financial management and significantly enhanced the user experience."
+        },
+        "challenge": {
+          "title": "Challenge",
+          "content": "Sales representatives were facing difficulties managing customer payments, maintaining financial records, and accessing information about their earnings. This resulted in operational inefficiencies and frustration for the users."
+        },
+        "solution": {
+          "title": "Solution",
+          "content": "We developed an intuitive mobile wallet with the following features:",
+          "features": [
+            "Personalized financial dashboard",
+            "Real-time payment tracking",
+            "Simplified transaction management",
+            "Automatic payment notifications",
+            "Integration with local banking systems"
+          ]
+        },
+        "process": {
+          "title": "Design Process",
+          "steps": [
+            {
+              "title": "Research",
+              "content": "We conducted interviews with over 50 sales representatives to understand their financial needs, pain points, and current workflows.",
+              "alt": "Research"
+            },
+            {
+              "title": "UX Design",
+              "content": "We created user flows, wireframes, and interactive prototypes based on research findings to ensure a smooth and user-centered experience.",
+              "alt": "UX Design"
+            },
+            {
+              "title": "UI Design",
+              "content": "We developed a cohesive design system aligned with Belcorp's brand identity, using intuitive and accessible visual elements.",
+              "alt": "UI Design"
+            },
+            {
+              "title": "Usability Testing",
+              "content": "We conducted multiple rounds of testing with actual users to refine the interface and address usability issues before launch.",
+              "alt": "Usability Testing"
+            }
+          ]
+        },
+        "results": {
+          "title": "Results",
+          "metrics": [
+            {
+              "number": "35%",
+              "description": "Increase in financial management efficiency"
+            },
+            {
+              "number": "42%",
+              "description": "Reduction in payment recording errors"
+            },
+            {
+              "number": "89%",
+              "description": "User satisfaction"
+            }
+          ],
+          "conclusion": "This mobile wallet solution transformed financial management for Belcorp's sales representatives while driving significant improvements in company efficiency and profitability. The project demonstrates how strategic UX design can address complex business challenges while enhancing end-user quality of life through thoughtful digital experiences."
+        }
+      }
+    },
+    "factoring": {
+      "title": "Factoring Security Platform",
+      "categories": "#UX Design #UI Design #Security #Financial",
+      "hero": {
+        "alt": "Factoring Security Platform - Dashboard"
+      },
+      "sections": {
+        "context": {
+          "title": "Project Overview",
+          "content": "A comprehensive financial security platform designed to transform how businesses manage factoring processes while ensuring maximum data protection. This solution creates a secure, intuitive environment for handling sensitive financial transactions and documents."
+        },
+        "challenge": {
+          "title": "The Challenge",
+          "content": "Businesses needed a reliable way to manage factoring operations while protecting sensitive financial data from increasingly sophisticated security threats. Traditional solutions created friction between security and usability, often sacrificing one for the other."
+        },
+        "research": {
+          "title": "Discovery & Research",
+          "subsections": [
+            {
+              "title": "Security Landscape Analysis",
+              "content": "I conducted an extensive analysis of current financial security vulnerabilities and best practices, revealing critical patterns that informed our approach:",
+              "bullets": [
+                "Threat Assessment - Identifying common attack vectors in financial platforms",
+                "Compliance Mapping - Analyzing regulatory requirements across multiple markets",
+                "User Behavior Studies - Understanding how security measures impact user workflows",
+                "Competitive Evaluation - Examining security implementations across the industry"
+              ]
+            },
+            {
+              "title": "User Research Highlights",
+              "stats": [
+                {
+                  "number": "18",
+                  "description": "Security Specialists Interviewed"
+                },
+                {
+                  "number": "24",
+                  "description": "Financial Professionals Consulted"
+                },
+                {
+                  "number": "3",
+                  "description": "Financial Organizations Studied"
+                }
+              ],
+              "content": "In-depth conversations with experts to understand technical requirements and emerging threats. Comprehensive discussions with end-users to identify pain points in current security implementations. Detailed observation of real-world workflows to identify security friction points."
+            },
+            {
+              "title": "Key Research Insights",
+              "bullets": [
+                "Users frequently bypass security measures they perceive as too cumbersome",
+                "Most security breaches occur through social engineering rather than technical vulnerabilities",
+                "Financial professionals need continuous visibility into security status without disruption",
+                "Trust indicators must be both visible and meaningful within the user interface"
+              ]
+            }
+          ]
+        },
+        "personas": {
+          "title": "User Personas",
+          "primaryPersona": {
+            "name": "Rafael Moreno",
+            "position": "Financial Operations Manager",
+            "companySize": "Mid-market enterprise",
+            "technicalProficiency": "Moderate",
+            "behaviors": [
+              "Regularly handles sensitive financial documents",
+              "Manages team access to financial systems",
+              "Responsible for compliance reporting",
+              "Balances operational efficiency with security protocols"
+            ],
+            "painPoints": [
+              "Complex security procedures slow down time-sensitive transactions",
+              "Difficulty tracking which team members have access to specific documents",
+              "Frustration with multiple authentication steps throughout the day",
+              "Uncertainty about whether security measures are actually effective"
+            ]
+          }
+        },
+        "solution": {
+          "title": "Design Approach",
+          "content": "We developed a comprehensive security-focused design approach that balances protection with usability:",
+          "features": [
+            "Security-First Architecture: Layered security model that protects data at rest, in transit, and during user interactions",
+            "Progressive Authentication: Contextual security system that adapts authentication requirements based on user behavior and risk",
+            "Trust-Building Interface: Clear security indicators and status visualizations that build user confidence",
+            "Seamless Recovery Mechanisms: Intuitive processes for handling security exceptions without compromising protection"
+          ]
+        },
+        "process": {
+          "title": "Key Features",
+          "steps": [
+            {
+              "title": "Intelligent Risk Detection",
+              "content": "Advanced algorithms identify unusual patterns and potential security threats without disrupting legitimate user activities.",
+              "alt": "Risk Detection Interface"
+            },
+            {
+              "title": "Document Vault",
+              "content": "Military-grade encryption for sensitive financial documents with granular access controls and comprehensive audit trails.",
+              "alt": "Document Vault Interface"
+            },
+            {
+              "title": "Compliance Dashboard",
+              "content": "Real-time visibility into security status and compliance metrics with actionable notifications for potential issues.",
+              "alt": "Compliance Dashboard"
+            },
+            {
+              "title": "Secure Collaboration",
+              "content": "Protected communication channels and document sharing features that maintain security while enabling team collaboration.",
+              "alt": "Secure Collaboration Tools"
+            }
+          ]
+        },
+        "results": {
+          "title": "Results & Impact",
+          "metrics": [
+            {
+              "number": "96%",
+              "description": "Security compliance across all client organizations"
+            },
+            {
+              "number": "+42%",
+              "description": "Increase in security feature adoption compared to industry average"
+            },
+            {
+              "number": "-38%",
+              "description": "Reduction in security-related support tickets"
+            },
+            {
+              "number": "Zero",
+              "description": "Data breaches during the first year of implementation"
+            }
+          ],
+          "conclusion": "This project demonstrated that exceptional security and outstanding user experience are not mutually exclusive. By deeply understanding both security requirements and user workflows, we created a solution that protects sensitive financial data while enabling efficient operations. Future development will focus on expanding AI-powered threat detection capabilities and enhancing cross-platform security synchronization based on ongoing user feedback and emerging security threats."
+        }
+      }
+    },
+    "nomadix": {
+      "title": "Nomadix Adventure",
+      "categories": "#Web Design #Design #Wireframe",
+      "hero": {
+        "alt": "Nomadix Adventure - Travel Platform"
+      },
+      "sections": {
+        "context": {
+          "title": "Project Context",
+          "content": "Nomadix Adventure is a travel platform that connects adventure seekers with unique experiences worldwide. The project involved creating a compelling website design that captures the excitement of adventure travel while providing an intuitive booking experience."
+        },
+        "challenge": {
+          "title": "Challenge",
+          "content": "The client needed a website that would stand out in the crowded travel market, effectively showcase diverse adventure offerings, and provide a seamless booking experience for users with varying levels of tech savvy."
+        },
+        "solution": {
+          "title": "Solution",
+          "content": "We designed a visually stunning website with these key features:",
+          "features": [
+            "Immersive visual storytelling",
+            "Intuitive adventure search system",
+            "Simplified booking process",
+            "Responsive design for all devices",
+            "Interactive adventure maps"
+          ]
+        },
+        "process": {
+          "title": "Design Process",
+          "steps": [
+            {
+              "title": "Competitive Analysis",
+              "content": "We analyzed leading adventure travel websites to identify opportunities for differentiation and improvement.",
+              "alt": "Competitive Analysis"
+            },
+            {
+              "title": "Content Strategy",
+              "content": "We developed a content strategy that balanced inspiring visuals with practical booking information.",
+              "alt": "Content Strategy"
+            },
+            {
+              "title": "Wireframing",
+              "content": "Detailed wireframes were created to map user journeys from inspiration to booking completion.",
+              "alt": "Wireframing"
+            },
+            {
+              "title": "Visual Design",
+              "content": "The visual design emphasized breathtaking photography, vibrant colors, and clear typography to inspire adventure.",
+              "alt": "Visual Design"
+            }
+          ]
+        },
+        "results": {
+          "title": "Results",
+          "metrics": [
+            {
+              "number": "54%",
+              "description": "Increase in time spent on site"
+            },
+            {
+              "number": "37%",
+              "description": "Improvement in booking completion rate"
+            },
+            {
+              "number": "82%",
+              "description": "Positive user feedback on design"
+            }
+          ],
+          "conclusion": "The Nomadix Adventure website redesign successfully balances inspiring visual design with functional user experience, resulting in higher engagement and conversion rates. The project showcases how thoughtful web design can transform the presentation of travel experiences and streamline the booking process."
+        }
+      }
+    }
+  }
+}

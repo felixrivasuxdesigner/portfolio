@@ -1,13 +1,16 @@
 # robots.txt para portfolio de Félix Rivas
-# https://felixrivas.com
+# https://felixrivasuxdesigner.github.io/portfolio/
 
 User-agent: *
 Allow: /
 
 # Permitir rastreo de todas las páginas importantes
-Allow: /en/
-Allow: /es/
-Allow: /assets/
+Allow: /portfolio/en/
+Allow: /portfolio/es/
+Allow: /portfolio/assets/
+
+# Sitemap
+Sitemap: https://felixrivasuxdesigner.github.io/portfolio/sitemap.xml
 
 # Sitemap
 Sitemap: https://felixrivas.com/sitemap.xml

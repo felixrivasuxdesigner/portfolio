@@ -2,14 +2,20 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="refresh" content="0;url=/portfolio/es/">
+  <meta http-equiv="refresh" content="0;url=./es/">
   <title>Redirecting...</title>
   <script>
     // Detectar el idioma preferido del navegador
     (function() {
       var language = navigator.language || navigator.userLanguage;
-      // Ruta base para GitHub Pages
-      var baseUrl = "/portfolio/";
+      
+      // Determinar si estamos en ambiente de desarrollo o producción
+      var isLocalhost = window.location.hostname === 'localhost' || 
+                        window.location.hostname === '127.0.0.1' ||
+                        window.location.hostname.includes('192.168.');
+      
+      // Ruta base - adaptada según el entorno
+      var baseUrl = isLocalhost ? "./" : "/portfolio/";
       
       if (language) {
         language = language.split('-')[0].toLowerCase();
@@ -23,6 +29,6 @@
   </script>
 </head>
 <body>
-  <p>Redirecting to <a href="/portfolio/es/">Spanish version</a>...</p>
+  <p>Redirecting to <a href="./es/">Spanish version</a>...</p>
 </body>
 </html>

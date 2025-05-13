@@ -2,15 +2,16 @@
  * Configuración del sitio con adaptación automática para desarrollo local
  */
 
-// Determinar si estamos en desarrollo local o producción
+// Determinamos la URL base para ambos entornos (desarrollo y producción)
+// Siempre usamos /portfolio/ para mantener coherencia
 const isDevEnvironment = process.env.ELEVENTY_ENV === 'development';
 
 module.exports = {
   // URL base del sitio
   url: "https://felixrivasuxdesigner.github.io",
   
-  // Ruta base - vacía para desarrollo local, con /portfolio/ para producción
-  baseUrl: isDevEnvironment ? "/" : "/portfolio/",
+  // Ruta base - siempre con /portfolio/ para mantener coherencia entre entornos
+  baseUrl: "/portfolio/",
   
   // Resto de la configuración
   title: "Félix Rivas UX/UI Designer",
