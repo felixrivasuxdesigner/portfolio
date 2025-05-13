@@ -10,27 +10,33 @@
   position: sticky;
   top: 80px; // Match the header height
   z-index: 10;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  
+  // Añadir estas propiedades para el efecto sticky
+  &.is-sticky {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); // Similar al menú superior
+  }
+  
+  .container {
+    padding-right: 35px; // Añadir 5px más de padding a la derecha para alinear con el logo
+  }
   
   .breadcrumb {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
-    align-items: center;
-    flex-wrap: wrap;
+    background-color: transparent;
     
-    &-item {
-      font-size: 0.875rem;
+    .breadcrumb-item {
+      display: flex;
+      align-items: center;
       
-      &:not(:last-child) {
-        margin-right: 0.5rem;
-        
-        &::after {
-          content: "/";
-          margin-left: 0.5rem;
-          opacity: 0.5;
-        }
+      &:not(:first-child)::before {
+        content: '/';
+        padding: 0 0.5rem;
+        color: var(--color-text-muted);
       }
       
       a {
@@ -43,42 +49,14 @@
         }
         
         &.portfolio-link {
-          color: var(--accent-color);
+          color: var(--accent-color); // Naranja para el enlace de portfolio
           font-weight: 500;
-        }
-        
-        i {
-          margin-right: 0.25rem;
         }
       }
       
       &.active {
         color: var(--color-text);
         font-weight: 500;
-      }
-    }
-  }
-  
-  .back-link-breadcrumb {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 100%;
-    
-    .back-link-btn {
-      display: inline-flex;
-      align-items: center;
-      color: var(--color-text-muted);
-      text-decoration: none;
-      font-size: 0.875rem;
-      transition: color 0.2s ease;
-      
-      &:hover {
-        color: var(--color-primary);
-      }
-      
-      i {
-        margin-right: 0.5rem;
       }
     }
   }
