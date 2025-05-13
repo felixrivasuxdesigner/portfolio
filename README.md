@@ -90,6 +90,22 @@ Se ha implementado una arquitectura CSS basada en la metodología 7-1 con Sass:
 - Implementación de selector de idioma nativo
 - Mejora de accesibilidad
 
+## Protección del Repositorio
+
+Este proyecto implementa protección para el branch `main` para mantener la calidad y estabilidad del código:
+
+- Branch `main` protegido contra push directos
+- Se requieren pull requests para todos los cambios
+- Las pull requests necesitan al menos una aprobación
+- Los cambios deben pasar todas las comprobaciones antes de la fusión
+
+Para más detalles, consulta el archivo [BRANCH-PROTECTION.md](BRANCH-PROTECTION.md).
+
+Para configurar la protección del branch:
+
+- Manualmente: Sigue las instrucciones en [BRANCH-PROTECTION.md](BRANCH-PROTECTION.md)
+- Automáticamente: Ejecuta el script `scripts/protect-main-branch.sh` (requiere GitHub CLI)
+
 ## Mantenimiento
 
 Para modificar el tema o personalizar estilos:
