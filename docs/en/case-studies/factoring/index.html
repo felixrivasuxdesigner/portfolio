@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  
+  <title>Factoring Module</title>
+  
+  <meta name="description" content="Diseñador UX/UI con más de 12 años de experiencia en interfaces digitales y experiencia de usuario para aplicaciones móviles y web">
+  <meta name="author" content="Félix Rivas">
+  <meta name="theme-color" content="#FF4F5E">
+
+  <!-- PWA - Manifest y App Icons -->
+  <link rel="manifest" href="/portfolio/site.webmanifest">
+  <link rel="apple-touch-icon" href="/portfolio/assets/img/icons/icon-192x192.png">
+  
+  <!-- Precargar fuentes críticas para mejorar LCP y evitar Layout Shift -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Raleway:300,500,700,800&display=swap" as="style">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,500,700,800&display=swap" rel="stylesheet">
+  
+  <!-- Precargar CSS crítico para evitar render-blocking -->
+  <link rel="preload" href="/portfolio/assets/css/main.css" as="style">
+  <link href="/portfolio/assets/css/main.css" rel="stylesheet">
+  
+  <!-- Font Awesome - Con preload para íconos críticos -->
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="/portfolio/assets/img/favicon.png" type="image/x-icon">
+  <link rel="icon" href="/portfolio/assets/img/favicon.png" type="image/x-icon">
+  
+  <!-- Meta para SEO y redes sociales -->
+  <meta property="og:title" content="Factoring Module">
+  <meta property="og:description" content="Diseñador UX/UI con más de 12 años de experiencia en interfaces digitales y experiencia de usuario para aplicaciones móviles y web">
+  <meta property="og:image" content="/portfolio/assets/img/felix-rivas-og-image.jpg">
+  <meta property="og:url" content="https://felixrivasuxdesigner.github.io/portfolio//en/case-studies/factoring/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Factoring Module">
+  <meta name="twitter:description" content="Diseñador UX/UI con más de 12 años de experiencia en interfaces digitales y experiencia de usuario para aplicaciones móviles y web">
+  <meta name="twitter:image" content="/portfolio/assets/img/felix-rivas-og-image.jpg">
+  
+  <!-- Añadir Schema.org para mejor SEO -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Félix Rivas",
+      "url": "https://felixrivasuxdesigner.github.io/portfolio/",
+      "image": "https://felixrivasuxdesigner.github.io/portfolio/assets/img/felix-rivas-og-image.jpg",
+      "jobTitle": "UX/UI Designer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Freelance"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/rivasfelix/"
+      ]
+    }
+  </script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
+  <!-- Wrapper Start -->
+  <div class="wrapper">
+    <!-- Preloader Start -->
+    <div id="preloader">
+      <div class="preloader--bounce">
+        <div class="preloader-bouncer--1"></div>
+        <div class="preloader-bouncer--2"></div>
+      </div>
+    </div>
+    <!-- Preloader End -->
+
+    <div class="language-selector">
+  <div class="language-selector__toggle" id="langToggle">
+    <i class="fa-solid fa-globe"></i>
+  </div>
+  <div class="language-selector__dropdown" id="langDropdown">
+    <a href="/portfolio/es/">
+      <span class="flag flag--es"></span>Español
+    </a>
+    <a href="/portfolio/en/" class="active">
+      <span class="flag flag--en"></span>English
+    </a>
+  </div>
+  
+  <!-- Botón de cambio de tema junto al selector de idioma -->
+  <div class="theme-toggle in-language-selector" id="themeToggle">
+    <i class="fa-solid fa-moon"></i>
+    <i class="fa-solid fa-sun"></i>
+  </div>
+</div>
+    
+    
+      <!-- Header Area Start -->
+<div id="header">
+  <nav class="header--navbar">
+    <div class="container">
+      <div class="navbar">
+        <div class="navbar-header">
+          <!-- Header Custom Button Start -->
+          <div class="header--custom-btn hidden-lg hidden-md">
+            <a href="#hireMeModal" class="btn--default hire-me-btn"><i class="fa fa-user-plus"></i></a>
+          </div>
+          <!-- Header Custom Button End -->
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#headerNav" aria-expanded="false" aria-controls="headerNav">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <!-- Logo Start -->
+          <a class="logo navbar-brand" href="/portfolio/en">
+            <div class="logo--img">
+              <img fetchpriority="high" src="/portfolio/assets/img/logo.webp" class="img-responsive" alt="Félix Rivas Logo">
+            </div>
+
+            <div class="logo--content">
+              <h1><strong>Felix</strong> Rivas</h1>
+              <p>UX/UI Designer</p>
+            </div>
+          </a>
+          <!-- Logo End -->
+        </div>
+
+        <!-- Header Nav Start -->
+        <div id="headerNav" class="header--nav navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/portfolio/en#banner">Home</a></li>
+            <li><a href="/portfolio/en#about">About Me</a></li>
+            <li><a href="/portfolio/en#services">Services</a></li>
+            <li><a href="/portfolio/en#gallery">Portfolio</a></li>
+            <li><a href="/portfolio/en#feedback">Testimonials</a></li>
+            <li><a href="/portfolio/en#contact">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Header Nav End -->
+
+        <!-- Header Custom Button Start -->
+        <div class="header--custom-btn hidden-sm hidden-xs ml-2">
+          <a href="#hireMeModal" class="btn--default hire-me-btn">
+            <i class="fa fa-user-plus"></i>Hire Me
+          </a>
+        </div>
+        <!-- Header Custom Button End -->
+      </div>
+    </div>
+  </nav>
+</div>
+<!-- Header Area End -->
+    
+    
+    
+<!-- Case Study Content Start -->
+<div class="case-study">
+  <div class="container">
+    <div class="case-study-header">
+      <div class="back-link">
+        <a href="/portfolio/en" class="btn btn--primary">
+          <i class="fa fa-arrow-left"></i> Back to Home
+        </a>
+      </div>
+      <h1 class="case-study-title">Factoring Module</h1>
+      <p class="case-study-categories">#UX Design #UI Design #Prototype #Design</p>
+      <!-- Debug info -->
+      <div style="margin: 20px 0; padding: 10px; background: #f5f5f5; border: 1px solid #ddd; display: none;">
+        <p>Debug - locale: en</p>
+        <p>Debug - projectKey: factoring</p>
+        <p>Debug - Translations available: Project Overview</p>
+      </div>
+    </div>
+
+    <div class="case-study-content">
+      <!-- Hero Section -->
+      <div class="case-study-hero">
+        <img fetchpriority="high" src="/portfolio/assets/img/gallery-img/factoring/cover-factoring.webp" alt="Factoring Security Platform - Dashboard" class="case-study-hero-image">
+      </div>
+
+      <!-- Project Overview Section -->
+      <div class="case-study-section">
+        <h2>Project Overview</h2>
+        <p>A comprehensive financial security platform designed to transform how businesses manage factoring processes while ensuring maximum data protection. This solution creates a secure, intuitive environment for handling sensitive financial transactions and documents.</p>
+      </div>
+
+      <!-- Challenge Section -->
+      <div class="case-study-section">
+        <h2>The Challenge</h2>
+        <p>Businesses needed a reliable way to manage factoring operations while protecting sensitive financial data from increasingly sophisticated security threats. Traditional solutions created friction between security and usability, often sacrificing one for the other.</p>
+      </div>
+
+      <!-- Research Section (if available) -->
+      
+      <div class="case-study-section">
+        <h2>Discovery &amp; Research</h2>
+        
+        
+          <div class="case-study-subsection">
+            <h3>Security Landscape Analysis</h3>
+            <p>I conducted an extensive analysis of current financial security vulnerabilities and best practices, revealing critical patterns that informed our approach:</p>
+            
+            
+              <ul>
+                
+                  <li>Threat Assessment - Identifying common attack vectors in financial platforms</li>
+                
+                  <li>Compliance Mapping - Analyzing regulatory requirements across multiple markets</li>
+                
+                  <li>User Behavior Studies - Understanding how security measures impact user workflows</li>
+                
+                  <li>Competitive Evaluation - Examining security implementations across the industry</li>
+                
+              </ul>
+            
+            
+            
+          </div>
+        
+          <div class="case-study-subsection">
+            <h3>User Research Highlights</h3>
+            <p>In-depth conversations with experts to understand technical requirements and emerging threats. Comprehensive discussions with end-users to identify pain points in current security implementations. Detailed observation of real-world workflows to identify security friction points.</p>
+            
+            
+            
+            
+              <div class="case-study-stats">
+                
+                  <div class="stat-item">
+                    <div class="stat-number">18</div>
+                    <div class="stat-description">Security Specialists Interviewed</div>
+                  </div>
+                
+                  <div class="stat-item">
+                    <div class="stat-number">24</div>
+                    <div class="stat-description">Financial Professionals Consulted</div>
+                  </div>
+                
+                  <div class="stat-item">
+                    <div class="stat-number">3</div>
+                    <div class="stat-description">Financial Organizations Studied</div>
+                  </div>
+                
+              </div>
+            
+          </div>
+        
+          <div class="case-study-subsection">
+            <h3>Key Research Insights</h3>
+            <p></p>
+            
+            
+              <ul>
+                
+                  <li>Users frequently bypass security measures they perceive as too cumbersome</li>
+                
+                  <li>Most security breaches occur through social engineering rather than technical vulnerabilities</li>
+                
+                  <li>Financial professionals need continuous visibility into security status without disruption</li>
+                
+                  <li>Trust indicators must be both visible and meaningful within the user interface</li>
+                
+              </ul>
+            
+            
+            
+          </div>
+        
+      </div>
+      
+
+      <!-- Personas Section (if available) -->
+      
+      <div class="case-study-section">
+        <h2>User Personas</h2>
+        
+        
+          
+          <div class="persona-card">
+            <div class="persona-header">
+              <h3>Rafael Moreno</h3>
+              <p class="persona-position">Financial Operations Manager</p>
+              <p class="persona-details">Mid-market enterprise • Technical Proficiency: Moderate</p>
+            </div>
+            
+            <div class="persona-content">
+              
+                <div class="persona-section">
+                  <h4>Security Behaviors</h4>
+                  <ul>
+                    
+                      <li>Regularly handles sensitive financial documents</li>
+                    
+                      <li>Manages team access to financial systems</li>
+                    
+                      <li>Responsible for compliance reporting</li>
+                    
+                      <li>Balances operational efficiency with security protocols</li>
+                    
+                  </ul>
+                </div>
+              
+              
+              
+                <div class="persona-section">
+                  <h4>Pain Points</h4>
+                  <ul>
+                    
+                      <li>Complex security procedures slow down time-sensitive transactions</li>
+                    
+                      <li>Difficulty tracking which team members have access to specific documents</li>
+                    
+                      <li>Frustration with multiple authentication steps throughout the day</li>
+                    
+                      <li>Uncertainty about whether security measures are actually effective</li>
+                    
+                  </ul>
+                </div>
+              
+            </div>
+          </div>
+        
+      </div>
+      
+
+      <!-- Solution Section -->
+      <div class="case-study-section">
+        <h2>Design Approach</h2>
+        <p>We developed a comprehensive security-focused design approach that balances protection with usability:</p>
+        <ul>
+          
+            <li>Security-First Architecture: Layered security model that protects data at rest, in transit, and during user interactions</li>
+          
+            <li>Progressive Authentication: Contextual security system that adapts authentication requirements based on user behavior and risk</li>
+          
+            <li>Trust-Building Interface: Clear security indicators and status visualizations that build user confidence</li>
+          
+            <li>Seamless Recovery Mechanisms: Intuitive processes for handling security exceptions without compromising protection</li>
+          
+        </ul>
+      </div>
+
+      <!-- Process/Features Section -->
+      <div class="case-study-section">
+        <h2>Key Features</h2>
+        <div class="case-study-grid">
+          
+            <div class="case-study-grid-item">
+              <h3>Intelligent Risk Detection</h3>
+              <p>Advanced algorithms identify unusual patterns and potential security threats without disrupting legitimate user activities.</p>
+              
+            </div>
+          
+            <div class="case-study-grid-item">
+              <h3>Document Vault</h3>
+              <p>Military-grade encryption for sensitive financial documents with granular access controls and comprehensive audit trails.</p>
+              
+            </div>
+          
+            <div class="case-study-grid-item">
+              <h3>Compliance Dashboard</h3>
+              <p>Real-time visibility into security status and compliance metrics with actionable notifications for potential issues.</p>
+              
+            </div>
+          
+            <div class="case-study-grid-item">
+              <h3>Secure Collaboration</h3>
+              <p>Protected communication channels and document sharing features that maintain security while enabling team collaboration.</p>
+              
+            </div>
+          
+        </div>
+      </div>
+
+      <!-- Results Section -->
+      <div class="case-study-section">
+        <h2>Results &amp; Impact</h2>
+        <div class="case-study-results">
+          
+            <div class="result-item">
+              <h3>96%</h3>
+              <p>Security compliance across all client organizations</p>
+            </div>
+          
+            <div class="result-item">
+              <h3>+42%</h3>
+              <p>Increase in security feature adoption compared to industry average</p>
+            </div>
+          
+            <div class="result-item">
+              <h3>-38%</h3>
+              <p>Reduction in security-related support tickets</p>
+            </div>
+          
+            <div class="result-item">
+              <h3>Zero</h3>
+              <p>Data breaches during the first year of implementation</p>
+            </div>
+          
+        </div>
+        <p>This project demonstrated that exceptional security and outstanding user experience are not mutually exclusive. By deeply understanding both security requirements and user workflows, we created a solution that protects sensitive financial data while enabling efficient operations. Future development will focus on expanding AI-powered threat detection capabilities and enhancing cross-platform security synchronization based on ongoing user feedback and emerging security threats.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Case Study Content End -->
+
+    <!-- Footer Area Start -->
+<div id="footer">
+  <div class="container">
+    <!-- Footer Copyright Start -->
+    <div class="footer--copyright">
+      <p>
+        Copyright © 2025 <a href="/">Félix Rivas</a>. Todos los Derechos Reservados.
+      </p>
+    </div>
+    <!-- Footer Copyright End -->
+  </div>
+</div>
+<!-- Footer Area End -->
+
+    <!-- Back To Top Area Start -->
+    <div id="backToTop">
+      <a href="#header" class="btn--default"><i class="fa fa-angle-up"></i></a>
+    </div>
+    <!-- Back To Top Area End -->
+  </div>
+  <!-- Wrapper End -->
+
+  <!-- Hire Me Modal -->
+  <!-- Hire Me Contact Modal Start -->
+<div id="hireMeModal" class="hire-me--modal modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close">×</button>
+
+        <div class="modal-title">
+          <h2>HAVE A PROJECT IN MIND?</h2>
+          <p>I'm ready to bring your vision to life. Share the details below to get started.</p>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <form action="https://formsubmit.co/rivafelix@gmail.com" method="POST" data-form="validate">
+          <!-- Redirects to a custom "Gracias" page -->
+          <input type="hidden" name="_next" value="/thankyou/">
+          <!-- Avoid captcha -->
+          <input type="hidden" name="_captcha" value="false">
+          <!-- Email subject -->
+          <input type="hidden" name="_subject" value="New project request from portfolio">
+          <!-- Spam prevention -->
+          <input type="text" name="_honey" style="display:none">
+          
+          <div class="form-controls">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group name">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name..." required>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group email">
+                  <input type="email" name="email" class="form-control" placeholder="Your Email..." required>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group project-title">
+                  <input type="text" name="project_title" class="form-control" placeholder="Project Title..." required>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group case-category">
+                  <select name="category" class="form-control bg-fa-caret-down white">
+                    <option>-Select project category-</option>
+                    <option>UX/UI Design</option>
+                    <option>Web Design</option>
+                    <option>Mobile App Design</option>
+                    <option>UX Research</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group budget">
+                  <select name="budget" class="form-control bg-fa-caret-down white">
+                    <option>-Budget range-</option>
+                    <option>$1,000 - $3,000</option>
+                    <option>$3,000 - $6,000</option>
+                    <option>$6,000 - $10,000</option>
+                    <option>$10,000+</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group date">
+                  <input type="text" name="date" class="form-control DatePicker bg-fa-calender" placeholder="-Target timeline-">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group referral-source">
+              <select name="referral_source" class="form-control bg-fa-caret-down white">
+                <option>How did you find me?</option>
+                <option>Google or other search engine</option>
+                <option>Social media</option>
+                <option>LinkedIn</option>
+                <option>Colleague recommendation</option>
+                <option>Client recommendation</option>
+                <option>Professional event</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="form-group message">
+              <textarea name="message" class="form-control" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </div>
+
+            <div class="estimate-container">
+              <div class="estimate-text">
+                <h4>Do you need a detailed quote?</h4>
+              </div>
+
+              <div class="radio-text">
+                <div class="radio">
+                  <input type="radio" name="estimate" id="estimateZERO" value="0" checked>
+                  <label for="estimateZERO">No quote needed at this time</label>
+                </div>
+
+                <div class="radio">
+                  <input type="radio" name="estimate" id="estimateONE" value="1">
+                  <label for="estimateONE">Yes, I'd like a cost estimate. I understand it takes 2-4 business days to receive a comprehensive quote.</label>
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="submit-btn btn--primary">SUBMIT REQUEST</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Hire Me Contact Modal End -->
+  
+  <!-- Modern JavaScript -->
+  <script src="/portfolio/assets/js/main.js" type="module"></script>
+</body>
+</html>

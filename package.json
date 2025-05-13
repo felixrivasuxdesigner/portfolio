@@ -6,7 +6,7 @@
   "scripts": {
     "start": "ELEVENTY_ENV=development eleventy --serve",
     "build": "eleventy",
-    "clean": "rm -rf public",
+    "clean": "rm -rf docs",
     "sass": "sass src/assets/scss/main.scss:src/assets/css/main.css --style=compressed",
     "sass:watch": "sass src/assets/scss/main.scss:src/assets/css/main.css --style=compressed --watch",
     "dev:eleventy": "ELEVENTY_ENV=development eleventy --serve",
