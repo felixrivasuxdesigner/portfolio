@@ -1,5 +1,5 @@
 <!-- Case Study Breadcrumb Component -->
-<div class="breadcrumbs" id="breadcrumb">
+<div class="breadcrumbs is-sticky" id="breadcrumb">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -11,7 +11,7 @@
               </a>
             </li>
             <li class="breadcrumb-item">
-              <a href="{{ site.baseUrl }}{{ locale }}/#gallery" class="portfolio-link">
+              <a href="{{ site.baseUrl }}{{ locale }}/#gallery" class="portfolio-link AnimateScrollLink">
                 {{ translations[locale].breadcrumbs.portfolio | default('Portfolio') }}
               </a>
             </li>

@@ -1,9 +1,18 @@
 <!-- Case Study Banner Component -->
-<div class="case-study-banner">
+<div id="case-study-banner" class="bg--overlay" data-parallax-bg-img="{{ site.baseUrl }}assets/img/banner-img/case-study-bg.webp" style="background-image: url('{{ site.baseUrl }}assets/img/banner-img/case-study-bg.webp');">
   <div class="container">
-    <div class="case-study-banner-content">
-      <h1>{{ title }}</h1>
-      <p class="categories">{{ categories }}</p>
+    <div class="vc--parent">
+      <div class="vc--child">
+        <!-- Banner Content Start -->
+        <div class="banner--content">
+          <h1>{{ title }}</h1>
+          <p>{{ categories }}</p>
+          <a href="{{ site.baseUrl }}{{ locale }}/#gallery" class="btn btn--primary AnimateScrollLink">
+            {{ translations[locale].case_studies.back_to_portfolio | default('Back to Portfolio') }}
+          </a>
+        </div>
+        <!-- Banner Content End -->
+      </div>
     </div>
   </div>
 </div>

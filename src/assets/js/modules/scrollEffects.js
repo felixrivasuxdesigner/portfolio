@@ -6,25 +6,28 @@
 export function initScrollEffects() {
   const header = document.getElementById('header');
   const languageSelector = document.querySelector('.language-selector');
+  const breadcrumbs = document.getElementById('breadcrumb');
   const parallaxElements = document.querySelectorAll('[data-parallax-bg-img]');
   const progressBars = document.querySelectorAll('.progress-bar');
 
   // Manejar cambio de estilo del header durante scroll
-  if (header) {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 100) {
-        header.classList.add('fixed');
-        if (languageSelector) {
-          languageSelector.classList.add('fixed');
-        }
-      } else {
-        header.classList.remove('fixed');
-        if (languageSelector) {
-          languageSelector.classList.remove('fixed');
-        }
-      }
-    });
-  }
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      if (header) header.classList.add('fixed');
+      if (languageSelector) languageSelector.classList.add('fixed');
+      if (breadcrumbs) breadcrumbs.classList.add('is-sticky');
+    } else {
+      if (header) header.classList.remove('fixed');
+      if (languageSelector) languageSelector.classList.remove('fixed');
+      if (breadcrumbs) breadcrumbs.classList.remove('is-sticky');
+    }
+  };
+  
+  // Aplicar al cargar la página (para cuando ya hay scroll)
+  window.addEventListener('load', handleScroll);
+  
+  // Aplicar durante el scroll
+  window.addEventListener('scroll', handleScroll);
 
   // Animar barras de progreso cuando son visibles
   if (progressBars.length > 0) {

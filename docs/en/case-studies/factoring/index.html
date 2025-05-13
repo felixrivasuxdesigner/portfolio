@@ -96,6 +96,7 @@
   </div>
 </div>
     
+    
     <!-- Header Area Start -->
 <div id="header">
   <nav class="header--navbar">
@@ -131,13 +132,13 @@
 
         <!-- Header Nav Start -->
         <div id="headerNav" class="header--nav navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right AnimateScroll">
-            <li><a href="#banner">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#gallery">Portfolio</a></li>
-            <li><a href="#feedback">Testimonials</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/portfolio/en/#banner">Home</a></li>
+            <li><a href="/portfolio/en/#about">About Me</a></li>
+            <li><a href="/portfolio/en/#services">Services</a></li>
+            <li><a href="/portfolio/en/#gallery">Portfolio</a></li>
+            <li><a href="/portfolio/en/#feedback">Testimonials</a></li>
+            <li><a href="/portfolio/en/#contact">Contact</a></li>
           </ul>
         </div>
         <!-- Header Nav End -->
@@ -156,8 +157,9 @@
 <!-- Header Area End -->
     
     
+    
     <!-- Case Study Breadcrumb Component -->
-<div class="breadcrumbs" id="breadcrumb">
+<div class="breadcrumbs is-sticky" id="breadcrumb">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -169,7 +171,7 @@
               </a>
             </li>
             <li class="breadcrumb-item">
-              <a href="/portfolio/en/#gallery" class="portfolio-link">
+              <a href="/portfolio/en/#gallery" class="portfolio-link AnimateScrollLink">
                 Portfolio
               </a>
             </li>
@@ -187,19 +189,35 @@
     
 <!-- Case Study Breadcrumb se incluye después del header en el layout base -->
 
+<!-- Case Study Banner -->
+<!-- Case Study Banner Component -->
+<div id="case-study-banner" class="bg--overlay" data-parallax-bg-img="/portfolio/assets/img/banner-img/case-study-bg.webp" style="background-image: url('/portfolio/assets/img/banner-img/case-study-bg.webp');">
+  <div class="container">
+    <div class="vc--parent">
+      <div class="vc--child">
+        <!-- Banner Content Start -->
+        <div class="banner--content">
+          <h1>Factoring Module</h1>
+          <p>#UX Design #UI Design #Prototype #Design</p>
+          <a href="/portfolio/en/#gallery" class="btn btn--primary AnimateScrollLink">
+            Back to Portfolio
+          </a>
+        </div>
+        <!-- Banner Content End -->
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Case Study Content Start -->
 <div class="case-study">
   <div class="container">
+    <!-- No necesitamos el título aquí porque ya está en el banner
     <div class="case-study-header">
       <h1 class="case-study-title">Factoring Module</h1>
       <p class="case-study-categories">#UX Design #UI Design #Prototype #Design</p>
-      <!-- Debug info -->
-      <div style="margin: 20px 0; padding: 10px; background: #f5f5f5; border: 1px solid #ddd; display: none;">
-        <p>Debug - locale: en</p>
-        <p>Debug - projectKey: factoring</p>
-        <p>Debug - Translations available: Project Overview</p>
-      </div>
     </div>
+    -->
 
     <div class="case-study-content">
       <!-- Hero Section -->

@@ -6,7 +6,7 @@
 export function initNavigation() {
   const navbarToggle = document.querySelector('.navbar-toggle');
   const headerNav = document.getElementById('headerNav');
-  const navLinks = document.querySelectorAll('.AnimateScroll a');
+  const navLinks = document.querySelectorAll('.AnimateScroll a, .AnimateScrollLink');
 
   // Toggle para navbar móvil
   if (navbarToggle && headerNav) {
@@ -29,11 +29,13 @@ export function initNavigation() {
   if (navLinks.length > 0) {
     navLinks.forEach((link) => {
       link.addEventListener('click', (event) => {
-        // Si es un enlace de anclaje
-        if (link.getAttribute('href').startsWith('#')) {
+        const href = link.getAttribute('href');
+        
+        // Si es un enlace de anclaje local (comienza con #)
+        if (href.startsWith('#')) {
           event.preventDefault();
 
-          const targetId = link.getAttribute('href');
+          const targetId = href;
           const targetElement = document.querySelector(targetId);
 
           if (targetElement) {
@@ -51,6 +53,38 @@ export function initNavigation() {
             });
           }
         }
+        // Para enlaces que contienen tanto una URL como un hash (ej: /es/#gallery)
+        else if (href.includes('#') && !href.endsWith('#')) {
+          // No prevenimos el comportamiento predeterminado si estamos yendo a otra página
+          // Sólo intervenimos si estamos ya en la página a la que apunta el enlace
+          
+          const currentPath = window.location.pathname;
+          const linkPath = href.split('#')[0];
+          
+          // Si estamos en la misma página, entonces hacemos scroll suave
+          if (currentPath === linkPath || linkPath === '/') {
+            event.preventDefault();
+            
+            const hash = href.split('#')[1];
+            const targetElement = document.querySelector('#' + hash);
+            
+            if (targetElement) {
+              // Cerrar menú móvil si está abierto
+              if (headerNav && headerNav.classList.contains('in')) {
+                headerNav.classList.add('collapse');
+                headerNav.classList.remove('in');
+                navbarToggle.setAttribute('aria-expanded', 'false');
+              }
+              
+              // Desplazamiento suave
+              window.scrollTo({
+                top: targetElement.offsetTop - 70,
+                behavior: 'smooth',
+              });
+            }
+          }
+        }
+        // Para todos los demás enlaces, dejamos que el navegador los maneje normalmente
       });
     });
   }

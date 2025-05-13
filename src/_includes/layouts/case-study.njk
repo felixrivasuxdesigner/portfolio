@@ -5,19 +5,18 @@ isCaseStudy: true
 
 <!-- Case Study Breadcrumb se incluye después del header en el layout base -->
 
+<!-- Case Study Banner -->
+{% include "components/case-studies/case-study-banner.njk" %}
+
 <!-- Case Study Content Start -->
 <div class="case-study">
   <div class="container">
+    <!-- No necesitamos el título aquí porque ya está en el banner
     <div class="case-study-header">
       <h1 class="case-study-title">{{ title }}</h1>
       <p class="case-study-categories">{{ categories }}</p>
-      <!-- Debug info -->
-      <div style="margin: 20px 0; padding: 10px; background: #f5f5f5; border: 1px solid #ddd; display: none;">
-        <p>Debug - locale: {{ locale }}</p>
-        <p>Debug - projectKey: {{ projectKey }}</p>
-        <p>Debug - Translations available: {{ translations[locale].case_studies.projects[projectKey].sections.context.title | default('No title found') }}</p>
-      </div>
     </div>
+    -->
 
     <div class="case-study-content">
       <!-- Hero Section -->

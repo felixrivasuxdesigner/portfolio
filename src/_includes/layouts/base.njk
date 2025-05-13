@@ -78,7 +78,11 @@
 
     {% include "components/language-selector.njk" %}
     
+    {% if isCaseStudy %}
+    {% include "components/case-studies/case-study-header.njk" %}
+    {% else %}
     {% include "components/header.njk" %}
+    {% endif %}
     
     {% if isCaseStudy %}
     {% include "components/case-studies/case-study-breadcrumb.njk" %}
