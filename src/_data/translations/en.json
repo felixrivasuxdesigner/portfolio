@@ -263,6 +263,9 @@
       }
     }
   },
+  "case_study": {
+    "back_to_portfolio": "Back to Home"
+  },
   "feedback": {
     "title": "Recommendations",
     "why_me": "Why me?",

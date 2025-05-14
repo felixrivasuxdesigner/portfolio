@@ -1,6 +1,10 @@
 /**
  * Portfolio Module
+<<<<<<< HEAD
  * Maneja la funcionalidad de filtro de la galería de proyectos
+=======
+ * Maneja la funcionalidad de filtro y navegación de la galería de proyectos
+>>>>>>> c130d01d57a0783168a577d1225df5219c76b02b
  */
 
 export function initPortfolio() {
@@ -70,6 +74,7 @@ function initFilterGallery() {
     });
   });
 }
+<<<<<<< HEAD
 
 // Utilidades para obtener traducciones
 function getTranslation(key) {
@@ -247,3 +252,5 @@ function initProjectModals() {
     }, 300);
   }
 }
+=======
+>>>>>>> c130d01d57a0783168a577d1225df5219c76b02b
