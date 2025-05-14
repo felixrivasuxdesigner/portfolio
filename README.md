@@ -82,6 +82,7 @@ docs/                 # Carpeta de salida para GitHub Pages (generada)
 ## Arquitectura del Proyecto
 
 ### Arquitectura CSS
+
 Implementé una arquitectura CSS basada en la metodología 7-1 con Sass:
 
 - **abstracts/** - Variables, mixins y funciones
@@ -92,6 +93,7 @@ Implementé una arquitectura CSS basada en la metodología 7-1 con Sass:
 - **themes/** - Configuración para modo claro/oscuro
 
 ### Arquitectura JavaScript
+
 Organización modular con responsabilidades separadas:
 
 - **modules/** - Módulos independientes con funcionalidad específica
@@ -109,6 +111,7 @@ Para contactar conmigo sobre este proyecto o cualquier oportunidad profesional:
 ---
 
 © 2025 Félix Rivas - Todos los derechos reservados
+
 - Mejora de accesibilidad
 - Conversión de modales a páginas dedicadas de estudios de caso
 - Configuración para despliegue en GitHub Pages
