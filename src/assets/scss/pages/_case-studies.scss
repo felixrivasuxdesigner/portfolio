@@ -1,0 +1,402 @@
+// Case Studies Styles
+// ========================================
+
+// Breadcrumb Navigation
+// ----------------------------------------
+.breadcrumbs {
+  background-color: var(--color-background);
+  border-bottom: 1px solid var(--color-border);
+  padding: 1rem 0;
+  position: sticky;
+  top: 80px; // Match the header height
+  z-index: 10;
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  
+  // Añadir estas propiedades para el efecto sticky
+  &.is-sticky {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); // Similar al menú superior
+  }
+  
+  .container {
+    padding-right: 35px; // Añadir 5px más de padding a la derecha para alinear con el logo
+  }
+  
+  .breadcrumb {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    
+    .breadcrumb-item {
+      display: flex;
+      align-items: center;
+      
+      &:not(:first-child)::before {
+        content: '/';
+        padding: 0 0.5rem;
+        color: var(--color-text-muted);
+      }
+      
+      a {
+        color: var(--color-text-muted);
+        text-decoration: none;
+        transition: color 0.2s ease;
+        
+        &:hover {
+          color: var(--accent-color);
+        }
+        
+        &.portfolio-link {
+          color: var(--accent-color); // Naranja para el enlace de portfolio
+          font-weight: 500;
+        }
+      }
+      
+      &.active {
+        color: var(--color-text);
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+// Case Study Main Content
+// ----------------------------------------
+.case-study {
+  padding: 3rem 0;
+  
+  &-header {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  &-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-text);
+  }
+  
+  &-categories {
+    color: var(--color-primary);
+    font-size: 1.125rem;
+  }
+  
+  &-hero {
+    margin-bottom: 3rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    
+    &-image {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  
+  &-section {
+    margin-bottom: 3rem;
+    
+    h2 {
+      color: var(--color-text);
+      font-size: 1.75rem;
+      margin-bottom: 1.25rem;
+      position: relative;
+      padding-bottom: 0.75rem;
+      
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 60px;
+        height: 3px;
+        background-color: var(--color-primary);
+      }
+    }
+    
+    p {
+      margin-bottom: 1.5rem;
+      color: var(--color-text);
+      line-height: 1.6;
+    }
+    
+    ul {
+      margin-bottom: 1.5rem;
+      padding-left: 1.5rem;
+      
+      li {
+        margin-bottom: 0.75rem;
+        position: relative;
+        color: var(--color-text);
+        
+        &::before {
+          content: "•";
+          color: var(--color-primary);
+          position: absolute;
+          left: -1rem;
+        }
+      }
+    }
+  }
+  
+  &-subsection {
+    margin-bottom: 2rem;
+    
+    h3 {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      color: var(--color-text);
+    }
+  }
+  
+  &-results {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+    
+    .result-item {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: var(--color-background-alt);
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+      }
+      
+      h3 {
+        font-size: 2.5rem;
+        color: var(--color-primary);
+        margin-bottom: 0.5rem;
+      }
+      
+      p {
+        margin-bottom: 0;
+        font-size: 1rem;
+      }
+    }
+  }
+  
+  &-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+    
+    .stat-item {
+      text-align: center;
+      padding: 1.25rem;
+      background-color: var(--color-background-alt);
+      border-radius: 8px;
+      
+      .stat-number {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--color-primary);
+        margin-bottom: 0.5rem;
+      }
+      
+      .stat-description {
+        font-size: 0.875rem;
+        color: var(--color-text-muted);
+      }
+    }
+  }
+  
+  &-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+    
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    &-item {
+      h3 {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+        color: var(--color-text);
+      }
+      
+      p {
+        margin-bottom: 1rem;
+      }
+      
+      .case-study-image {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+// Persona Cards
+// ----------------------------------------
+.persona-card {
+  background-color: var(--color-background-alt);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  
+  .persona-header {
+    margin-bottom: 1.5rem;
+    
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: var(--color-text);
+    }
+    
+    .persona-position {
+      font-size: 1.125rem;
+      color: var(--color-primary);
+      margin-bottom: 0.5rem;
+    }
+    
+    .persona-details {
+      font-size: 0.875rem;
+      color: var(--color-text-muted);
+    }
+  }
+  
+  .persona-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .persona-section {
+      h4 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        color: var(--color-text);
+      }
+      
+      ul {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+// Portfolio Grid Optimization
+// ----------------------------------------
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+  
+  @media (min-width: 576px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .gallery-item-link {
+    display: block;
+    text-decoration: none;
+    position: relative;
+    height: 100%;
+  }
+  
+  .gallery-item {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 100%;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    
+    .gallery--case-study {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: var(--color-primary);
+      color: #fff;
+      font-size: 0.75rem;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      z-index: 2;
+    }
+    
+    .gallery-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      
+      .overlay-content {
+        text-align: center;
+        color: #fff;
+        transform: translateY(20px);
+        transition: transform 0.3s ease;
+        padding: 1rem;
+        
+        h2 {
+          font-size: 1.25rem;
+          margin-bottom: 1rem;
+          color: #fff;
+        }
+        
+        .btn {
+          display: inline-block;
+          background: var(--color-primary);
+          color: #fff;
+          padding: 0.5rem 1rem;
+          border-radius: 4px;
+          font-size: 0.875rem;
+          transition: background 0.3s ease;
+          
+          &:hover {
+            background: var(--color-primary-dark);
+          }
+        }
+      }
+    }
+    
+    &:hover {
+      img {
+        transform: scale(1.05);
+      }
+      
+      .gallery-overlay {
+        opacity: 1;
+        
+        .overlay-content {
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+}

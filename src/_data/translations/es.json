@@ -9,6 +9,10 @@
     "contact": "Contacto",
     "hire_me": "Contrátame"
   },
+  "breadcrumbs": {
+    "home": "Inicio",
+    "portfolio": "Portafolio"
+  },
   "banner": {
     "title": "Creemos <span class=\"thick\">Experiencias</span> <span class=\"thick\">Excepcionales</span> Juntos",
     "description": "Soy <strong>Líder en Diseño UX/UI</strong> con raíces en diseño gráfico, transformando espacios digitales desde <strong>Santiago de Chile, LATAM</strong>.",
@@ -258,6 +262,9 @@
         "description": "Este proyecto ejemplifica mi compromiso con la excelencia en diseño, integrando perfectamente creatividad con funcionalidad para ofrecer experiencias digitales convincentes. La plataforma Nomadix Adventure equilibra atractivo visual con navegación intuitiva para crear una solución centrada en el usuario que supera las expectativas."
       }
     }
+  },
+  "case_study": {
+    "back_to_portfolio": "Volver al Inicio"
   },
   "feedback": {
     "title": "Recomendaciones",

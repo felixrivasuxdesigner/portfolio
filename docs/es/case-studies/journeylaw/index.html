@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  
+  <title>JourneyLaw - Transformando la Gestión Legal con Diseño UX Centrado en el Usuario</title>
+  
+  <meta name="description" content="Diseñador UX/UI con más de 12 años de experiencia en interfaces digitales y experiencia de usuario para aplicaciones móviles y web">
+  <meta name="author" content="Félix Rivas">
+  <meta name="theme-color" content="#FF4F5E">
+
+  <!-- PWA - Manifest y App Icons -->
+  <link rel="manifest" href="/portfolio/site.webmanifest">
+  <link rel="apple-touch-icon" href="/portfolio/assets/img/icons/icon-192x192.png">
+  
+  <!-- Precargar fuentes críticas para mejorar LCP y evitar Layout Shift -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Raleway:300,500,700,800&display=swap" as="style">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,500,700,800&display=swap" rel="stylesheet">
+  
+  <!-- Precargar CSS crítico para evitar render-blocking -->
+  <link rel="preload" href="/portfolio/assets/css/main.css" as="style">
+  <link href="/portfolio/assets/css/main.css" rel="stylesheet">
+  
+  <!-- Font Awesome - Con preload para íconos críticos -->
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="/portfolio/assets/img/favicon.png" type="image/x-icon">
+  <link rel="icon" href="/portfolio/assets/img/favicon.png" type="image/x-icon">
+  
+  <!-- Meta para SEO y redes sociales -->
+  <meta property="og:title" content="JourneyLaw - Transformando la Gestión Legal con Diseño UX Centrado en el Usuario">
+  <meta property="og:description" content="Diseñador UX/UI con más de 12 años de experiencia en interfaces digitales y experiencia de usuario para aplicaciones móviles y web">
+  <meta property="og:image" content="/portfolio/assets/img/felix-rivas-og-image.jpg">
+  <meta property="og:url" content="https://felixrivasuxdesigner.github.io/portfolio//es/case-studies/journeylaw/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="JourneyLaw - Transformando la Gestión Legal con Diseño UX Centrado en el Usuario">
+  <meta name="twitter:description" content="Diseñador UX/UI con más de 12 años de experiencia en interfaces digitales y experiencia de usuario para aplicaciones móviles y web">
+  <meta name="twitter:image" content="/portfolio/assets/img/felix-rivas-og-image.jpg">
+  
+  <!-- Añadir Schema.org para mejor SEO -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Félix Rivas",
+      "url": "https://felixrivasuxdesigner.github.io/portfolio/",
+      "image": "https://felixrivasuxdesigner.github.io/portfolio/assets/img/felix-rivas-og-image.jpg",
+      "jobTitle": "UX/UI Designer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Freelance"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/rivasfelix/"
+      ]
+    }
+  </script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="100" class="case-study-journeylaw">
+  <!-- Wrapper Start -->
+  <div class="wrapper">
+    <!-- Preloader Start -->
+    <div id="preloader">
+      <div class="preloader--bounce">
+        <div class="preloader-bouncer--1"></div>
+        <div class="preloader-bouncer--2"></div>
+      </div>
+    </div>
+    <!-- Preloader End -->
+
+    <div class="language-selector">
+  <div class="language-selector__toggle" id="langToggle">
+    <i class="fa-solid fa-globe"></i>
+  </div>
+  <div class="language-selector__dropdown" id="langDropdown">
+    <a href="/portfolio/es/" class="active">
+      <span class="flag flag--es"></span>Español
+    </a>
+    <a href="/portfolio/en/">
+      <span class="flag flag--en"></span>English
+    </a>
+  </div>
+  
+  <!-- Botón de cambio de tema junto al selector de idioma -->
+  <div class="theme-toggle in-language-selector" id="themeToggle">
+    <i class="fa-solid fa-moon"></i>
+    <i class="fa-solid fa-sun"></i>
+  </div>
+</div>
+    
+    
+    <!-- Header Area Start -->
+<div id="header">
+  <nav class="header--navbar">
+    <div class="container">
+      <div class="navbar">
+        <div class="navbar-header">
+          <!-- Header Custom Button Start -->
+          <div class="header--custom-btn hidden-lg hidden-md">
+            <a href="#hireMeModal" class="btn--default hire-me-btn"><i class="fa fa-user-plus"></i></a>
+          </div>
+          <!-- Header Custom Button End -->
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#headerNav" aria-expanded="false" aria-controls="headerNav">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <!-- Logo Start -->
+          <a class="logo navbar-brand" href="/portfolio/es/">
+            <div class="logo--img">
+              <img fetchpriority="high" src="/portfolio/assets/img/logo.webp" class="img-responsive" alt="Félix Rivas Logo">
+            </div>
+
+            <div class="logo--content">
+              <h1><strong>Felix</strong> Rivas</h1>
+              <p>Diseñador UX/UI</p>
+            </div>
+          </a>
+          <!-- Logo End -->
+        </div>
+
+        <!-- Header Nav Start -->
+        <div id="headerNav" class="header--nav navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/portfolio/es/#banner">Inicio</a></li>
+            <li><a href="/portfolio/es/#about">Sobre Mí</a></li>
+            <li><a href="/portfolio/es/#services">Servicios</a></li>
+            <li><a href="/portfolio/es/#gallery">Portafolio</a></li>
+            <li><a href="/portfolio/es/#feedback">Testimonios</a></li>
+            <li><a href="/portfolio/es/#contact">Contacto</a></li>
+          </ul>
+        </div>
+        <!-- Header Nav End -->
+
+        <!-- Header Custom Button Start -->
+        <div class="header--custom-btn hidden-sm hidden-xs ml-2">
+          <a href="#hireMeModal" class="btn--default hire-me-btn">
+            <i class="fa fa-user-plus"></i>Contrátame
+          </a>
+        </div>
+        <!-- Header Custom Button End -->
+      </div>
+    </div>
+  </nav>
+</div>
+<!-- Header Area End -->
+    
+    
+    
+<!-- Case Study Breadcrumb se incluye después del header en el layout base -->
+
+<!-- Case Study Banner -->
+<!-- Case Study Banner Component -->
+
+
+
+<div id="case-study-banner" class="bg--overlay" data-parallax-bg-img="/portfolio/assets/img/banner-img/journeylaw-banner.webp" style="background-image: url('/portfolio/assets/img/banner-img/journeylaw-banner.webp'), url('/portfolio/assets/img/banner-img/case-study-bg.webp');">
+  <div class="container">
+    <div class="vc--parent">
+      <div class="vc--child">
+        <!-- Banner Content Start -->
+        <div class="banner--content">
+          <h1>JourneyLaw - Transformando la Gestión Legal con Diseño UX Centrado en el Usuario</h1>
+          <p>#Diseño UX #Diseño UI #Legal Tech #Desarrollo Frontend #Plataforma SaaS</p>
+        </div>
+        <!-- Banner Content End -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Case Study Breadcrumb -->
+<!-- Case Study Breadcrumb Component -->
+<div class="breadcrumbs is-sticky" id="breadcrumb">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="/portfolio/es/" class="home-link">
+                <i class="fa fa-home"></i> <span class="d-none d-sm-inline">Inicio</span>
+              </a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="/portfolio/es/#gallery" class="portfolio-link AnimateScrollLink">
+                Portafolio
+              </a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              JourneyLaw -...
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Case Study Content Start -->
+<div class="case-study">
+  <div class="container">
+    <!-- No necesitamos el título aquí porque ya está en el banner
+    <div class="case-study-header">
+      <h1 class="case-study-title">JourneyLaw - Transformando la Gestión Legal con Diseño UX Centrado en el Usuario</h1>
+      <p class="case-study-categories">#Diseño UX #Diseño UI #Legal Tech #Desarrollo Frontend #Plataforma SaaS</p>
+    </div>
+    -->
+
+    <div class="case-study-content">
+      <!-- Hero Section -->
+      <div class="case-study-hero">
+        <img fetchpriority="high" src="/portfolio/assets/img/gallery-img/journeylaw/cover-journeylaw.webp" alt="JourneyLaw - Plataforma Legal" class="case-study-hero-image">
+      </div>
+
+      <!-- Project Overview Section -->
+      <div class="case-study-section">
+        <h2>Resumen Ejecutivo</h2>
+        <p>JourneyLaw es una plataforma SaaS de gestión legal diseñada para modernizar y simplificar la administración de casos jurídicos. Como UX/UI Designer líder y desarrollador front-end con más de 15 años de experiencia, lideré la transformación digital de esta plataforma que revoluciona la forma en que los profesionales legales gestionan sus casos. El proyecto destaca mi capacidad para crear experiencias digitales intuitivas que resuelven desafíos complejos del sector legal, implementando un sistema multi-tenant escalable con una interfaz moderna y accesible que realmente conecta con los usuarios.</p>
+      </div>
+
+      <!-- Challenge Section -->
+      <div class="case-study-section">
+        <h2>El Desafío</h2>
+        <p>Los profesionales legales enfrentaban numerosos desafíos con herramientas anticuadas: interfaces innecesariamente complejas que desperdiciaban tiempo valioso, flujos de trabajo fragmentados entre múltiples aplicaciones, tareas repetitivas que podían —pero no estaban— siendo automatizadas, escalabilidad limitada que dificultaba el crecimiento y la gestión de clientes, y experiencias inconsistentes entre dispositivos que interrumpían la productividad.</p>
+      </div>
+
+      <!-- Design System Section (if available) -->
+      
+        
+        
+<div class="case-study-section design-system-section">
+  <h2>Sistema de Diseño</h2>
+  
+  <div class="design-system-intro">
+    <p>El sistema de diseño implementa una filosofía de "Profesionalismo Cálido" que transmite confianza y sofisticación mientras mantiene calidez y accesibilidad.</p>
+  </div>
+  
+  <div class="design-system-tabs">
+    <button class="tab-btn active" data-tab="colors">Paleta de Colores</button>
+    <button class="tab-btn" data-tab="typography">Sistema Tipográfico</button>
+    <button class="tab-btn" data-tab="components">Componentes Base</button>
+    <button class="tab-btn" data-tab="buttons">Botones</button>
+    <button class="tab-btn" data-tab="forms">Elementos de Formulario</button>
+    <button class="tab-btn" data-tab="cards">Tarjetas</button>
+    <button class="tab-btn" data-tab="badges">Insignias</button>
+    <button class="tab-btn" data-tab="navigation">Navegación</button>
+    <button class="tab-btn" data-tab="messages">Mensajes</button>
+  </div>
+  
+  <div class="tab-content active" id="colors-tab">
+    <h3>Paleta de Colores</h3>
+    <p>El sistema de colores fue cuidadosamente elaborado para equilibrar el profesionalismo con la calidez, creando un entorno que se siente confiable y accesible a la vez.</p>
+    
+    <div class="color-palette">
+      
+      <div class="color-swatch">
+        <div class="color-preview" style="background-color: #2C1B0C">
+          <span class="color-name-preview">Marrón Profundo</span>
+        </div>
+        <div class="color-info">
+          <div class="color-name">Marrón Profundo</div>
+          <div class="color-hex">#2C1B0C</div>
+          <div class="color-usage">Color primario para encabezados, texto importante y representación de marca</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch">
+        <div class="color-preview" style="background-color: #C5B4A3">
+          <span class="color-name-preview">Topo Cálido</span>
+        </div>
+        <div class="color-info">
+          <div class="color-name">Topo Cálido</div>
+          <div class="color-hex">#C5B4A3</div>
+          <div class="color-usage">Color secundario para fondos, tarjetas y contenedores</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch">
+        <div class="color-preview" style="background-color: #8C765C">
+          <span class="color-name-preview">Dorado Apagado</span>
+        </div>
+        <div class="color-info">
+          <div class="color-name">Dorado Apagado</div>
+          <div class="color-hex">#8C765C</div>
+          <div class="color-usage">Color de acento para elementos interactivos, destacados y botones de llamada a la acción</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch">
+        <div class="color-preview" style="background-color: #EFE9DC">
+          <span class="color-name-preview">Beige Cálido</span>
+        </div>
+        <div class="color-info">
+          <div class="color-name">Beige Cálido</div>
+          <div class="color-hex">#EFE9DC</div>
+          <div class="color-usage">Color de fondo que proporciona calidez manteniendo la legibilidad</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch">
+        <div class="color-preview" style="background-color: #F7F2EA">
+          <span class="color-name-preview">Blanco Roto</span>
+        </div>
+        <div class="color-info">
+          <div class="color-name">Blanco Roto</div>
+          <div class="color-hex">#F7F2EA</div>
+          <div class="color-usage">Color de fondo para áreas de contenido y modales</div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <div class="tab-content" id="typography-tab">
+    <h3>Sistema Tipográfico</h3>
+    <p>Un sistema tipográfico que prioriza la legibilidad y jerarquía, permitiendo a los usuarios escanear y comprender información legal compleja de manera efectiva.</p>
+    
+    <div class="typography-showcase">
+      
+      <div class="font-family primary-font">
+        <div class="font-header">
+          <div class="font-name">Inter</div>
+          <div class="font-category">Encabezados y Texto Principal</div>
+        </div>
+        <div class="font-details">
+          <div class="font-weights">400 (Regular), 500 (Medium), 600 (Semibold), 700 (Bold)</div>
+          <div class="font-usage">Fuente principal para todo el texto de la interfaz, proporcionando excelente legibilidad en todos los tamaños</div>
+        </div>
+        <div class="font-sample">
+          
+          <div class="sample-xl">Encabezado XL</div>
+          <div class="sample-large">Encabezado Grande</div>
+          <div class="sample-medium">Encabezado Medio</div>
+          <div class="sample-body">Texto Principal: Texto de contenido primario</div>
+          <div class="sample-small">Texto Pequeño: Información secundaria, etiquetas y leyendas</div>
+          
+        </div>
+      </div>
+      
+      <div class="font-family code-font">
+        <div class="font-header">
+          <div class="font-name">JetBrains Mono</div>
+          <div class="font-category">Código y Referencias Legales</div>
+        </div>
+        <div class="font-details">
+          <div class="font-weights">400 (Regular)</div>
+          <div class="font-usage">Fuente monoespaciada para bloques de código, citas legales y números de referencia</div>
+        </div>
+        <div class="font-sample">
+          
+          <div class="sample-body">function calculateDamages(caseType, amount) {<br>  return caseType === 'liability' ? amount * 1.5 : amount;<br>}</div>
+          <div class="sample-small">// Legal reference: §304.2-p</div>
+          
+        </div>
+      </div>
+      
+    </div>
+    
+    <div class="font-sizes">
+      <h4>Font Sizes</h4>
+      <div class="font-size-grid">
+        
+        <div class="font-size-item">
+          <div class="font-size-name">Encabezado XL</div>
+          <div class="font-size-value">30px/36px</div>
+          <div class="font-size-usage">Encabezados principales de sección y títulos de página</div>
+        </div>
+        
+        <div class="font-size-item">
+          <div class="font-size-name">Encabezado Grande</div>
+          <div class="font-size-value">24px/32px</div>
+          <div class="font-size-usage">Títulos de sección y encabezados de modal</div>
+        </div>
+        
+        <div class="font-size-item">
+          <div class="font-size-name">Encabezado Medio</div>
+          <div class="font-size-value">18px/24px</div>
+          <div class="font-size-usage">Títulos de tarjeta y grupos de contenido</div>
+        </div>
+        
+        <div class="font-size-item">
+          <div class="font-size-name">Texto Principal</div>
+          <div class="font-size-value">16px/24px</div>
+          <div class="font-size-usage">Texto de contenido primario</div>
+        </div>
+        
+        <div class="font-size-item">
+          <div class="font-size-name">Texto Pequeño</div>
+          <div class="font-size-value">14px/20px</div>
+          <div class="font-size-usage">Información secundaria, etiquetas y leyendas</div>
+        </div>
+        
+        <div class="font-size-item">
+          <div class="font-size-name">Extra Pequeño</div>
+          <div class="font-size-value">12px/16px</div>
+          <div class="font-size-usage">Letra pequeña y descargos de responsabilidad legales</div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="tab-content" id="components-tab">
+    <h3>Componentes Base</h3>
+    <p>Un sistema de componentes modulares y reutilizables que se combinan para crear interfaces consistentes en toda la plataforma.</p>
+    
+    <div class="component-library">
+      
+      <div class="component-category">
+        <div class="category-name">Navegación</div>
+        <div class="component-list">
+          
+          <div class="component-tag">Barra de navegación global</div>
+          
+          <div class="component-tag">Menús laterales</div>
+          
+          <div class="component-tag">Breadcrumbs</div>
+          
+          <div class="component-tag">Sistemas de pestañas</div>
+          
+        </div>
+      </div>
+      
+      <div class="component-category">
+        <div class="category-name">Controles de Entrada</div>
+        <div class="component-list">
+          
+          <div class="component-tag">Campos de texto</div>
+          
+          <div class="component-tag">Selectores desplegables</div>
+          
+          <div class="component-tag">Selectores de fecha</div>
+          
+          <div class="component-tag">Interruptores</div>
+          
+          <div class="component-tag">Cargadores de documentos legales</div>
+          
+        </div>
+      </div>
+      
+      <div class="component-category">
+        <div class="category-name">Visualización de Información</div>
+        <div class="component-list">
+          
+          <div class="component-tag">Tarjetas de caso</div>
+          
+          <div class="component-tag">Visualizaciones de línea de tiempo</div>
+          
+          <div class="component-tag">Tablas de datos</div>
+          
+          <div class="component-tag">Indicadores de progreso</div>
+          
+          <div class="component-tag">Paneles de notificación</div>
+          
+        </div>
+      </div>
+      
+      <div class="component-category">
+        <div class="category-name">Acciones</div>
+        <div class="component-list">
+          
+          <div class="component-tag">Botones primarios</div>
+          
+          <div class="component-tag">Botones secundarios</div>
+          
+          <div class="component-tag">Botones de icono</div>
+          
+          <div class="component-tag">Menús de acción</div>
+          
+          <div class="component-tag">Diálogos de confirmación</div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <div class="tab-content" id="buttons-tab">
+    <h3>Botones</h3>
+    <p>Elementos interactivos diseñados con jerarquía clara y retroalimentación visual.</p>
+    
+    <div class="buttons-showcase">
+      <div class="button-group">
+        
+        <button class="jl-btn jl-btn-primary">Botón Primario</button>
+        
+        <button class="jl-btn jl-btn-secondary">Botón Secundario</button>
+        
+        <button class="jl-btn jl-btn-text">Botón de Texto</button>
+        
+      </div>
+      
+      <div class="button-states">
+        
+        <button class="jl-btn jl-btn-primary">Predeterminado</button>
+        
+        <button class="jl-btn jl-btn-primary jl-hover">Hover</button>
+        
+        <button class="jl-btn jl-btn-primary jl-activo">Activo</button>
+        
+        <button class="jl-btn jl-btn-primary jl-enfoque">Enfoque</button>
+        
+        <button class="jl-btn jl-btn-primary" disabled>Desactivado</button>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="tab-content" id="forms-tab">
+    <h3>Elementos de Formulario</h3>
+    <p>Componentes de entrada consistentes y accesibles para la recolección de datos.</p>
+    
+    <div class="forms-showcase">
+      
+      <div class="form-group">
+        
+        <label for="demo-input">Campo de Texto</label>
+        <input type="text" id="demo-input" class="jl-input" placeholder="Enter text here">
+        
+      </div>
+      
+      <div class="form-group">
+        
+        <label for="demo-select">Menú Desplegable</label>
+        <select id="demo-select" class="jl-select">
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+        </select>
+        
+      </div>
+      
+      <div class="form-group">
+        
+        <label class="checkbox-label">
+          <input type="checkbox" class="jl-checkbox">
+          <span>Casilla de Verificación Option</span>
+        </label>
+        
+      </div>
+      
+    </div>
+  </div>
+  
+  <div class="tab-content" id="cards-tab">
+    <h3>Tarjetas</h3>
+    <p>Contenedores de contenido con espaciado y elevación consistentes.</p>
+    
+    <div class="cards-showcase">
+      <div class="jl-card">
+        <div class="jl-card-header">
+          <h4>Resumen del Caso</h4>
+        </div>
+        <div class="jl-card-body">
+          <p>Esta es una tarjeta estándar con área de encabezado y contenido, comúnmente utilizada para mostrar información agrupada.</p>
+        </div>
+        <div class="jl-card-footer">
+          <button class="jl-btn jl-btn-text">Acción</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="tab-content" id="badges-tab">
+    <h3>Insignias</h3>
+    <p>Indicadores visuales para estado, categorías o notificaciones.</p>
+    
+    <div class="badges-showcase">
+      
+      <span class="jl-badge jl-badge-primary">Nuevo</span>
+      
+      <span class="jl-badge jl-badge-success">Completado</span>
+      
+      <span class="jl-badge jl-badge-warning">Pendiente</span>
+      
+      <span class="jl-badge jl-badge-error">Urgente</span>
+      
+      <span class="jl-badge jl-badge-neutral">Borrador</span>
+      
+    </div>
+  </div>
+  
+  <div class="tab-content" id="navigation-tab">
+    <h3>Navegación</h3>
+    <p>Patrones consistentes para moverse a través de la aplicación.</p>
+    
+    <div class="navigation-showcase">
+      <div class="jl-nav-sample">
+        <div class="jl-tabs">
+          
+          <button class="jl-tab active">Panel</button>
+          
+          <button class="jl-tab">Casos</button>
+          
+          <button class="jl-tab">Calendario</button>
+          
+          <button class="jl-tab">Documentos</button>
+          
+        </div>
+      </div>
+      
+      <div class="jl-breadcrumbs">
+        
+        <span>Casos</span>
+        
+        <span class="jl-breadcrumb-separator">›</span>
+        
+        
+        <span>Smith vs. Jones</span>
+        
+        <span class="jl-breadcrumb-separator">›</span>
+        
+        
+        <span>Documentos</span>
+        
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="tab-content" id="messages-tab">
+    <h3>Mensajes</h3>
+    <p>Componentes de retroalimentación y comunicación.</p>
+    
+    <div class="messages-showcase">
+      
+      <div class="jl-alert jl-alert-info">
+        <div class="jl-alert-icon">i</div>
+        <div class="jl-alert-content">Este es un mensaje informativo.</div>
+      </div>
+      
+      <div class="jl-alert jl-alert-success">
+        <div class="jl-alert-icon">✓</div>
+        <div class="jl-alert-content">Tu caso ha sido actualizado con éxito.</div>
+      </div>
+      
+      <div class="jl-alert jl-alert-warning">
+        <div class="jl-alert-icon">!</div>
+        <div class="jl-alert-content">Por favor revisa antes de continuar.</div>
+      </div>
+      
+      <div class="jl-alert jl-alert-error">
+        <div class="jl-alert-icon">×</div>
+        <div class="jl-alert-content">Hubo un problema con tu envío.</div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+      
+
+      <!-- Research Section (if available) -->
+      
+
+      <!-- Personas Section (if available) -->
+      
+
+      <!-- Solution Section -->
+      <div class="case-study-section">
+        <h2>Propuesta de Valor</h2>
+        <p>Desarrollamos una solución integral con estos elementos clave:</p>
+        <ul class="feature-list">
+          
+            <li>Experiencia centrada en el usuario: Interfaz intuitiva que minimiza la curva de aprendizaje</li>
+          
+            <li>Flujos de trabajo optimizados: Automatización de procesos repetitivos para abogados</li>
+          
+            <li>Diseño adaptativo: Funciona perfectamente en escritorio y dispositivos móviles</li>
+          
+            <li>Modelo multi-tenant: Separación segura de datos entre diferentes despachos legales</li>
+          
+            <li>Integración con IA: Análisis automático de documentos y recomendaciones inteligentes</li>
+          
+        </ul>
+      </div>
+
+      <!-- Process/Features Section -->
+      <div class="case-study-section">
+        <h2>Proceso de Diseño</h2>
+        <div class="case-study-grid">
+          
+            <div class="case-study-grid-item design-process-step">
+              <h3>Discovery e Investigación</h3>
+              <p>Comencé con una fase intensiva de investigación para construir un entendimiento genuino: escuchando atentamente las necesidades de los abogados, descubriendo requisitos clave como gestión centralizada de casos, automatización de documentos y predicciones basadas en IA, identificando oportunidades de diferenciación y estableciendo KPIs claros para medir el éxito.</p>
+              
+            </div>
+          
+            <div class="case-study-grid-item design-process-step">
+              <h3>Arquitectura de Información</h3>
+              <p>Rediseñé completamente la estructura de la aplicación para coincidir con los modelos mentales de los usuarios: desarrollando un sistema de organización intuitivo que refleja cómo los abogados piensan realmente sobre sus casos y reduciendo los pasos necesarios para tareas comunes, eliminando puntos de fricción.</p>
+              
+            </div>
+          
+            <div class="case-study-grid-item design-process-step">
+              <h3>Sistema de Diseño</h3>
+              <p>Desarrollé un sistema de diseño modular que equilibraba consistencia con flexibilidad, implementando una filosofía de 'Profesionalismo Cálido' con una paleta de colores cuidadosamente elaborada, sistema tipográfico y componentes modulares.</p>
+              
+            </div>
+          
+            <div class="case-study-grid-item design-process-step">
+              <h3>Testing con Usuarios</h3>
+              <p>Múltiples rondas de testing con 8 abogados de diferentes especialidades aseguraron que estábamos realmente satisfaciendo las necesidades de los usuarios, con pruebas A/B para validar diferentes enfoques e iteraciones basadas en datos de tasas de éxito en tareas, tiempo promedio por tarea y puntuaciones de escala de usabilidad del sistema.</p>
+              
+            </div>
+          
+        </div>
+      </div>
+
+      <!-- Results Section -->
+      <div class="case-study-section">
+        <h2>Resultados e Impacto</h2>
+        <div class="case-study-results">
+          
+            <div class="result-item">
+              <h3>87%</h3>
+              <p>Aumento en retención de clientes</p>
+            </div>
+          
+            <div class="result-item">
+              <h3>43%</h3>
+              <p>Reducción en trabajo administrativo</p>
+            </div>
+          
+            <div class="result-item">
+              <h3>62%</h3>
+              <p>Mayor rapidez en preparación de documentos</p>
+            </div>
+          
+            <div class="result-item">
+              <h3>28%</h3>
+              <p>Aumento en horas facturables capturadas</p>
+            </div>
+          
+        </div>
+        <p>JourneyLaw demuestra mi capacidad para transformar un dominio complejo en una experiencia digital intuitiva y valiosa. El proyecto representa un equilibrio perfecto entre diseño centrado en el usuario, implementación técnica robusta y estrategia de negocio efectiva. Como UX/UI Designer líder y desarrollador front-end en este proyecto, apliqué mis años de experiencia para crear un producto que no solo se ve y funciona excepcionalmente bien, sino que genera un impacto real y medible en el trabajo diario de los profesionales legales.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Case Study Content End -->
+
+    <!-- Footer Area Start -->
+<div id="footer">
+  <div class="container">
+    <!-- Footer Copyright Start -->
+    <div class="footer--copyright">
+      <p>
+        Copyright © 2025 <a href="/">Félix Rivas</a>. Todos los Derechos Reservados.
+      </p>
+    </div>
+    <!-- Footer Copyright End -->
+  </div>
+</div>
+<!-- Footer Area End -->
+
+    <!-- Back To Top Area Start -->
+    <div id="backToTop">
+      <a href="#header" class="btn--default"><i class="fa fa-angle-up"></i></a>
+    </div>
+    <!-- Back To Top Area End -->
+  </div>
+  <!-- Wrapper End -->
+
+  <!-- Hire Me Modal -->
+  <!-- Hire Me Contact Modal Start -->
+<div id="hireMeModal" class="hire-me--modal modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close">×</button>
+
+        <div class="modal-title">
+          <h2>¿TIENES UN PROYECTO EN MENTE?</h2>
+          <p>Estoy listo para dar vida a tu visión. Comparte los detalles a continuación para comenzar.</p>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <form action="https://formsubmit.co/rivafelix@gmail.com" method="POST" data-form="validate">
+          <!-- Redirects to a custom "Gracias" page -->
+          <input type="hidden" name="_next" value="/thankyou/">
+          <!-- Avoid captcha -->
+          <input type="hidden" name="_captcha" value="false">
+          <!-- Email subject -->
+          <input type="hidden" name="_subject" value="New project request from portfolio">
+          <!-- Spam prevention -->
+          <input type="text" name="_honey" style="display:none">
+          
+          <div class="form-controls">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group name">
+                  <input type="text" name="name" class="form-control" placeholder="Tu Nombre..." required>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group email">
+                  <input type="email" name="email" class="form-control" placeholder="Tu Email..." required>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group project-title">
+                  <input type="text" name="project_title" class="form-control" placeholder="Título del Proyecto..." required>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group case-category">
+                  <select name="category" class="form-control bg-fa-caret-down white">
+                    <option>-Selecciona categoría del proyecto-</option>
+                    <option>Diseño UX/UI</option>
+                    <option>Diseño Web</option>
+                    <option>Diseño de App Móvil</option>
+                    <option>Investigación UX</option>
+                    <option>Otro</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group budget">
+                  <select name="budget" class="form-control bg-fa-caret-down white">
+                    <option>-Rango de presupuesto-</option>
+                    <option>$1,000 - $3,000</option>
+                    <option>$3,000 - $6,000</option>
+                    <option>$6,000 - $10,000</option>
+                    <option>$10,000+</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group date">
+                  <input type="text" name="date" class="form-control DatePicker bg-fa-calender" placeholder="-Cronograma objetivo-">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group referral-source">
+              <select name="referral_source" class="form-control bg-fa-caret-down white">
+                <option>¿Cómo me encontraste?</option>
+                <option>Google u otro buscador</option>
+                <option>Redes sociales</option>
+                <option>LinkedIn</option>
+                <option>Recomendación de un colega</option>
+                <option>Recomendación de un cliente</option>
+                <option>Evento profesional</option>
+                <option>Otro</option>
+              </select>
+            </div>
+
+            <div class="form-group message">
+              <textarea name="message" class="form-control" rows="5" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+            </div>
+
+            <div class="estimate-container">
+              <div class="estimate-text">
+                <h4>¿Necesitas un presupuesto detallado?</h4>
+              </div>
+
+              <div class="radio-text">
+                <div class="radio">
+                  <input type="radio" name="estimate" id="estimateZERO" value="0" checked>
+                  <label for="estimateZERO">No necesito presupuesto por ahora</label>
+                </div>
+
+                <div class="radio">
+                  <input type="radio" name="estimate" id="estimateONE" value="1">
+                  <label for="estimateONE">Sí, me gustaría un estimado de costos. Entiendo que tomará 2-4 días hábiles recibir un presupuesto completo.</label>
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="submit-btn btn--primary">ENVIAR SOLICITUD</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Hire Me Contact Modal End -->
+  
+  <!-- Modern JavaScript -->
+  <script src="/portfolio/assets/js/main.js" type="module"></script>
+</body>
+</html>

@@ -1,14 +1,11 @@
 /**
  * Portfolio Module
- * Maneja la funcionalidad de filtro y modal de la galería de proyectos
+ * Maneja la funcionalidad de filtro de la galería de proyectos
  */
 
 export function initPortfolio() {
   // Gestión de filtros para la galería
   initFilterGallery();
-
-  // Manejar modales de proyectos
-  initProjectModals();
 }
 
 // Inicializar el sistema de filtrado de la galería
@@ -38,27 +35,57 @@ function initFilterGallery() {
       // Mostrar/ocultar elementos según el filtro
       galleryItems.forEach((item) => {
         const itemCategory = item.getAttribute('data-cat');
+        const galleryLink = item.closest('.gallery-item-link'); // Obtener el enlace padre
 
         if (filter === '*' || itemCategory === filter) {
-          item.style.display = 'block';
+          if (galleryLink) galleryLink.style.display = 'block';
+          else item.style.display = 'block';
 
           // Animación de aparición
           setTimeout(() => {
-            item.style.opacity = '1';
-            item.style.transform = 'scale(1)';
+            if (galleryLink) {
+              galleryLink.style.opacity = '1';
+              galleryLink.style.transform = 'scale(1)';
+            } else {
+              item.style.opacity = '1';
+              item.style.transform = 'scale(1)';
+            }
           }, 50);
         } else {
-          item.style.opacity = '0';
-          item.style.transform = 'scale(0.8)';
+          if (galleryLink) {
+            galleryLink.style.opacity = '0';
+            galleryLink.style.transform = 'scale(0.8)';
+          } else {
+            item.style.opacity = '0';
+            item.style.transform = 'scale(0.8)';
+          }
 
           // Ocultar después de la animación
           setTimeout(() => {
-            item.style.display = 'none';
+            if (galleryLink) galleryLink.style.display = 'none';
+            else item.style.display = 'none';
           }, 300);
         }
       });
     });
   });
+}
+
+// Utilidades para obtener traducciones
+function getTranslation(key) {
+  const locale = document.documentElement.lang || 'es';
+  const translations = window.siteTranslations?.[locale] || {};
+  
+  // Dividir la clave por puntos para acceder a objetos anidados
+  return key.split('.').reduce((obj, k) => obj?.[k], translations) || '';
+}
+
+// Utilidad para ajustar rutas de imágenes (para GitHub Pages)
+function getFixedImagePath(path) {
+  if (window.isGitHubPages) {
+    return window.basePath + path;
+  }
+  return path;
 }
 
 // Inicializar modales de proyectos
@@ -78,7 +105,7 @@ function initProjectModals() {
           .querySelector('h2').textContent || '',
       categories: getTranslation('portfolio.projects.wallet.categories'),
       imageSrc: getFixedImagePath(
-        '/assets/img/gallery-img/belcorp/cover-belcorp.webp'
+        '/assets/img/gallery-img/wallet/cover-wallet.webp'
       ),
       description: getTranslation('portfolio.projects.wallet.description'),
     },
@@ -90,7 +117,7 @@ function initProjectModals() {
           .querySelector('h2').textContent || '',
       categories: getTranslation('portfolio.projects.factoring.categories'),
       imageSrc: getFixedImagePath(
-        '/assets/img/gallery-img/security/cover-factoring.webp'
+        '/assets/img/gallery-img/factoring/cover-factoring.webp'
       ),
       description: getTranslation('portfolio.projects.factoring.description'),
     },
@@ -171,10 +198,10 @@ function initProjectModals() {
         projectImage.src = getFixedImagePath('/assets/img/gallery-img/nomadix/Nomadix.webp');
       } else if (projectKey === 'wallet') {
         // Reemplazar la imagen del modal con la versión detallada
-        projectImage.src = getFixedImagePath('/assets/img/gallery-img/belcorp/Belcorp.webp');
+        projectImage.src = getFixedImagePath('/assets/img/gallery-img/wallet/wallet.webp');
       } else if (projectKey === 'factoring') {
         // Reemplazar la imagen del modal con la versión detallada
-        projectImage.src = getFixedImagePath('/assets/img/gallery-img/security/factoring.webp');
+        projectImage.src = getFixedImagePath('/assets/img/gallery-img/factoring/factoring.webp');
       }
 
       modal.querySelector('.project-description').textContent =
@@ -219,34 +246,4 @@ function initProjectModals() {
       document.body.style.overflow = 'auto';
     }, 300);
   }
-}
-
-// Función auxiliar para obtener traducciones
-function getTranslation(key) {
-  // Obtener el idioma actual
-  const locale = document.documentElement.lang || 'es';
-
-  // Intentar encontrar el elemento por su ID, que podría contener la traducción
-  const dataElement = document.getElementById(
-    `data-${key.replace(/\./g, '-')}`
-  );
-  if (dataElement) {
-    return dataElement.textContent;
-  }
-
-  // Fallback para algunas traducciones comunes
-  const fallbackTranslations = {
-    es: {
-      'portfolio.projects.wallet.categories': 'UX/UI, Diseño Web',
-      'portfolio.projects.factoring.categories': 'UX/UI, Diseño Web',
-      'portfolio.projects.nomadix.categories': 'Diseño Web',
-    },
-    en: {
-      'portfolio.projects.wallet.categories': 'UX/UI, Web Design',
-      'portfolio.projects.factoring.categories': 'UX/UI, Web Design',
-      'portfolio.projects.nomadix.categories': 'Web Design',
-    },
-  };
-
-  return fallbackTranslations[locale]?.[key] || '';
 }

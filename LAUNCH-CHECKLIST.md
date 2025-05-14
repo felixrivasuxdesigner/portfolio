@@ -22,21 +22,24 @@
    - Colocarla en `src/assets/img/felix-rivas-og-image.jpg`
 
 2. **Verificar configuración del dominio**:
-   - Confirmar que la URL en `src/_data/site.json` es correcta
+   - Confirmar que la URL en `src/_data/site.js` es correcta
+   - Verificar que el baseUrl está configurado como `/portfolio/` para GitHub Pages
    - Verificar que las URLs en el sitemap.xml son correctas
 
-3. **Ejecutar la compilación final**:
+3. **Ejecutar la compilación final para GitHub Pages**:
 
    ```bash
-   npm run build
+   ELEVENTY_ENV=production npm run build
    ```
 
-4. **Verificar el directorio `/public`**:
+4. **Verificar el directorio `/docs`**:
    - Confirmar que todos los recursos se han compilado correctamente
    - Revisar las páginas HTML generadas
 
-5. **Subir al servidor de producción**:
-   - Transferir el contenido del directorio `/public` al servidor web
+5. **Subir a GitHub Pages**:
+   - Hacer commit de los cambios incluyendo el directorio `/docs`
+   - Empujar los cambios a GitHub
+   - Configurar GitHub Pages para usar la carpeta `/docs` en la rama principal
 
 ## Verificaciones post-lanzamiento
 

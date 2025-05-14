@@ -29,64 +29,66 @@
     <!-- Gallery Items Start -->
     <div class="portfolio-grid">
       <!-- Gallery Item Start - Wallet -->
-      <div class="gallery-item mobile-app" data-cat="mobile-app">
-        <img src="/assets/img/gallery-img/belcorp/cover-belcorp.webp" alt="{{ translations[locale].portfolio.projects.wallet.title }}" />
-        <span class="gallery--case-study">{{ translations[locale].portfolio.case_study }}</span>
-        <div class="gallery-overlay">
-          <div class="overlay-content">
-            <h2>{{ translations[locale].portfolio.projects.wallet.title }}</h2>
-            <a href="#" class="btn gallery--window" data-project="wallet">{{ translations[locale].portfolio.view_project }}</a>
+      <a href="{{ site.baseUrl }}{{ locale }}/case-studies/wallet/" class="gallery-item-link">
+        <div class="gallery-item mobile-app" data-cat="mobile-app">
+          <img src="{{ site.baseUrl }}assets/img/gallery-img/wallet/cover-wallet.webp" alt="{{ translations[locale].portfolio.projects.wallet.title }}" />
+          <span class="gallery--case-study">{{ translations[locale].portfolio.case_study }}</span>
+          <div class="gallery-overlay">
+            <div class="overlay-content">
+              <h2>{{ translations[locale].portfolio.projects.wallet.title }}</h2>
+              <span class="btn">{{ translations[locale].portfolio.view_project }}</span>
+            </div>
           </div>
         </div>
-      </div>
+      </a>
       <!-- Gallery Item End -->
 
       <!-- Gallery Item Start - Factoring -->
-      <div class="gallery-item web-app" data-cat="web-app">
-        <img src="/assets/img/gallery-img/security/cover-factoring.webp" alt="{{ translations[locale].portfolio.projects.factoring.title }}" />
-        <span class="gallery--case-study">{{ translations[locale].portfolio.case_study }}</span>
-        <div class="gallery-overlay">
-          <div class="overlay-content">
-            <h2>{{ translations[locale].portfolio.projects.factoring.title }}</h2>
-            <a href="#" class="btn gallery--window" data-project="factoring">{{ translations[locale].portfolio.view_project }}</a>
+      <a href="{{ site.baseUrl }}{{ locale }}/case-studies/factoring/" class="gallery-item-link">
+        <div class="gallery-item web-app" data-cat="web-app">
+          <img src="{{ site.baseUrl }}assets/img/gallery-img/factoring/cover-factoring.webp" alt="{{ translations[locale].portfolio.projects.factoring.title }}" />
+          <span class="gallery--case-study">{{ translations[locale].portfolio.case_study }}</span>
+          <div class="gallery-overlay">
+            <div class="overlay-content">
+              <h2>{{ translations[locale].portfolio.projects.factoring.title }}</h2>
+              <span class="btn">{{ translations[locale].portfolio.view_project }}</span>
+            </div>
           </div>
         </div>
-      </div>
+      </a>
       <!-- Gallery Item End -->
 
       <!-- Gallery Item Start - Nomadix -->
-      <div class="gallery-item web-design" data-cat="web-design">
-        <img src="/assets/img/gallery-img/nomadix/cover-nomadix.webp" alt="{{ translations[locale].portfolio.projects.nomadix.title }}" />
-        <span class="gallery--case-study">{{ translations[locale].portfolio.web_design }}</span>
-        <div class="gallery-overlay">
-          <div class="overlay-content">
-            <h2>{{ translations[locale].portfolio.projects.nomadix.title }}</h2>
-            <a href="#" class="btn gallery--window" data-project="nomadix">{{ translations[locale].portfolio.view_project }}</a>
+      <a href="{{ site.baseUrl }}{{ locale }}/case-studies/nomadix/" class="gallery-item-link">
+        <div class="gallery-item web-design" data-cat="web-design">
+          <img src="{{ site.baseUrl }}assets/img/gallery-img/nomadix/cover-nomadix.webp" alt="{{ translations[locale].portfolio.projects.nomadix.title }}" />
+          <span class="gallery--case-study">{{ translations[locale].portfolio.web_design }}</span>
+          <div class="gallery-overlay">
+            <div class="overlay-content">
+              <h2>{{ translations[locale].portfolio.projects.nomadix.title }}</h2>
+              <span class="btn">{{ translations[locale].portfolio.view_project }}</span>
+            </div>
           </div>
         </div>
-      </div>
+      </a>
+      <!-- Gallery Item End -->
+      
+      <!-- Gallery Item Start - JourneyLaw -->
+      <a href="{{ site.baseUrl }}{{ locale }}/case-studies/journeylaw/" class="gallery-item-link">
+        <div class="gallery-item web-app" data-cat="web-app">
+          <img src="{{ site.baseUrl }}assets/img/gallery-img/journeylaw/cover-journeylaw.webp" alt="{{ translations[locale].portfolio.projects.journeylaw.title }}" />
+          <span class="gallery--case-study">{{ translations[locale].portfolio.case_study }}</span>
+          <div class="gallery-overlay">
+            <div class="overlay-content">
+              <h2>{{ translations[locale].portfolio.projects.journeylaw.title }}</h2>
+              <span class="btn">{{ translations[locale].portfolio.view_project }}</span>
+            </div>
+          </div>
+        </div>
+      </a>
       <!-- Gallery Item End -->
     </div>
     <!-- Gallery Items End -->
   </div>
 </div>
 <!-- Gallery Area End -->
-
-<!-- Project Modal Template -->
-<div id="projectModal" class="modal project-modal">
-  <div class="modal-container">
-    <div class="modal-header">
-      <h2 class="modal-title"></h2>
-      <p class="modal-categories"></p>
-      <button class="modal-close">&times;</button>
-    </div>
-    <div class="modal-body">
-      <div class="modal-image">
-        <img src="" alt="" class="project-image">
-      </div>
-      <div class="modal-description">
-        <p class="project-description"></p>
-      </div>
-    </div>
-  </div>
-</div>

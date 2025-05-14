@@ -1,0 +1,20 @@
+<!-- Case Study Banner Component -->
+{% set bannerImagePath = site.baseUrl + 'assets/img/banner-img/' + projectKey + '-banner.webp' %}
+{% set fallbackImagePath = site.baseUrl + 'assets/img/banner-img/case-study-bg.webp' %}
+
+<div id="case-study-banner" class="bg--overlay" 
+     data-parallax-bg-img="{{ bannerImagePath }}" 
+     style="background-image: url('{{ bannerImagePath }}'), url('{{ fallbackImagePath }}');">
+  <div class="container">
+    <div class="vc--parent">
+      <div class="vc--child">
+        <!-- Banner Content Start -->
+        <div class="banner--content">
+          <h1>{{ title }}</h1>
+          <p>{{ categories }}</p>
+        </div>
+        <!-- Banner Content End -->
+      </div>
+    </div>
+  </div>
+</div>

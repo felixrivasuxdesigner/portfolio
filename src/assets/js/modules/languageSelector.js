@@ -30,18 +30,28 @@ export function initLanguageSelector() {
   languageLinks.forEach((link) => {
     // Obtener la URL actual sin el prefijo de idioma y sin la base URL
     const currentPath = window.location.pathname;
+    
+    // Determinar si estamos en localhost o producción
+    const isLocalhost = window.location.hostname === 'localhost' || 
+                         window.location.hostname === '127.0.0.1' ||
+                         window.location.hostname.includes('192.168.');
+    
+    // Usar la base URL apropiada según el entorno
+    const baseUrl = isLocalhost ? '/' : '/portfolio/';
 
-    // Elimina primero la base URL '/portfolio/' si existe
-    let cleanPath = currentPath.replace(/^\/portfolio\//, '');
+    // Elimina primero la base URL '/portfolio/' o '/' según corresponda
+    let cleanPath = currentPath;
+    if (isLocalhost) {
+      cleanPath = cleanPath.replace(/^\//, '');
+    } else {
+      cleanPath = cleanPath.replace(/^\/portfolio\//, '');
+    }
 
     // Luego elimina el prefijo de idioma 'es/' o 'en/'
     cleanPath = cleanPath.replace(/^(es|en)\//, '');
 
     // Obtener el idioma destino del enlace (es o en)
     const targetLang = link.getAttribute('href').includes('/es/') ? 'es' : 'en';
-
-    // Construir la URL correcta con la base URL desde site.json
-    const baseUrl = '/portfolio/'; // Debe coincidir con site.baseUrl
 
     // Actualizar href con la ruta correcta
     link.setAttribute('href', `${baseUrl}${targetLang}/${cleanPath}`);

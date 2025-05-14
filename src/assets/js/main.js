@@ -18,12 +18,13 @@ import { initAccessibility } from './modules/accessibility.js';
 import { initBrandsCarousel } from './modules/brandsCarousel.js';
 import { fixPaths } from './modules/pathFixer.js';
 import { initThemeSwitcher } from './modules/theme-switcher.js';
+import { initCaseStudies } from './modules/caseStudies.js';
+import './modules/design-system-tabs.js';
 
 // Ejecutar cuando el DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', () => {
   // Corregir rutas para GitHub Pages (debe ejecutarse primero)
   fixPaths();
-
   // Inicializar módulos
   initPreloader();
   initLanguageSelector();
@@ -38,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initAccessibility(); // Inicializar mejoras de accesibilidad
   initBrandsCarousel(); // Inicializar el carrusel de marcas moderno
   initThemeSwitcher(); // Inicializar selector de tema claro/oscuro
+  initCaseStudies(); // Inicializar funcionalidad para case studies
 
   // Registrar Service Worker para funcionalidad offline
   if ('serviceWorker' in navigator) {

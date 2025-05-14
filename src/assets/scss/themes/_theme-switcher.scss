@@ -32,6 +32,11 @@
   --control-btn-border: #{v.$border-color};
   --control-btn-hover-bg: #{v.$accent-color};
   --control-btn-hover-color: #{v.$white};
+  
+  // Variables para el breadcrumb en modo claro
+  --breadcrumb-bg: #{v.$white};
+  --breadcrumb-text: #{v.$text-color};
+  --breadcrumb-active: #{v.$accent-color};
 
   // Transitions para cambio de tema suave
   --theme-transition: background-color 0.3s ease, color 0.3s ease,
@@ -117,6 +122,11 @@
   --navbar-scroll-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
   --navbar-link-color: #ffffff; // Texto blanco para los enlaces
   --navbar-link-hover-color: #{v.$accent-color};
+  
+  // Variables para el breadcrumb en modo oscuro
+  --breadcrumb-bg: #000000;
+  --breadcrumb-text: #e0e0e0;
+  --breadcrumb-active: #{v.$accent-color};
 
   // Variables para los controles en modo oscuro cuando el menú está sticky
   --control-btn-bg: #ffffff; // Fondo blanco para los botones en modo oscuro

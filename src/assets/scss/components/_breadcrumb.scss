@@ -1,0 +1,113 @@
+// Breadcrumb Component
+// ========================================
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.breadcrumbs {
+  background-color: transparent;
+  border-bottom: 1px solid var(--border-color);
+  padding: 1rem 0;
+  position: sticky;
+  top: 80px; // Match the header height
+  z-index: 100;
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  
+  // Añadir fondo sólido y sombra cuando tenga la clase is-sticky
+  &.is-sticky {
+    background-color: #f1f1f1 !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    z-index: 100;
+  }
+  
+  // Contenedor con padding ajustado
+  .container {
+    padding-right: 35px; // Añadir 5px más de padding a la derecha para alinear con el logo
+  }
+  
+  // Navegación breadcrumb  
+  .breadcrumb {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem 1rem; // Añadir padding para dar más espacio
+    background-color: transparent;
+    border-radius: 4px;
+    
+    .breadcrumb-item {
+      display: flex;
+      align-items: center;
+      
+      &:not(:first-child)::before {
+        content: '/';
+        padding: 0 0.5rem;
+        color: var(--light-text-color);
+      }
+      
+      a {
+        color: var(--light-text-color);
+        text-decoration: none;
+        transition: color 0.2s ease;
+        font-weight: 500;
+        
+        &:hover {
+          color: var(--accent-color);
+        }
+        
+        &.home-link {
+          display: flex;
+          align-items: center;
+          
+          i {
+            margin-right: 5px;
+          }
+        }
+        
+        &.portfolio-link {
+          color: var(--accent-color); // Naranja para el enlace de portfolio
+          font-weight: 500;
+        }
+      }
+      
+      &.active {
+        color: var(--text-color);
+        font-weight: 700;
+      }
+    }
+  }
+  
+  // Modo oscuro
+  [data-theme='dark'] & {
+    background-color: transparent;
+    border-color: var(--border-color);
+    
+    &.is-sticky {
+      background-color: var(--navbar-scroll-bg);
+      box-shadow: var(--navbar-scroll-shadow);
+    }
+    
+    .breadcrumb-item {
+      a {
+        color: var(--breadcrumb-text);
+        
+        &:hover, &.portfolio-link {
+          color: var(--accent-color);
+        }
+      }
+      
+      &.active {
+        color: var(--breadcrumb-text);
+      }
+    }
+  }
+  
+  // Responsive
+  @media (max-width: 767px) {
+    .breadcrumb {
+      padding: 0.3rem 0.5rem;
+      
+      .breadcrumb-item {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

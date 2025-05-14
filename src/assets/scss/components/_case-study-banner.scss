@@ -1,0 +1,200 @@
+// Estilos para el Banner de Case Studies
+// ========================================
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+@use 'sass:color';
+
+#case-study-banner {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  color: v.$white;
+  margin-top: 0;
+  padding-top: 80px; /* Espacio para compensar la altura del header */
+  
+  // Mismo estilo del banner principal
+  &.bg--overlay:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+  
+  .container {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+  }
+  
+  .vc--parent {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .vc--child {
+    width: 100%;
+  }
+  
+  .banner--content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: v.$white;
+      
+      @media (max-width: 767px) {
+        font-size: 2rem;
+      }
+      
+      @media (max-width: 575px) {
+        font-size: 1.75rem;
+      }
+    }
+    
+    p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+      
+      @media (max-width: 767px) {
+        font-size: 1.1rem;
+      }
+      
+      @media (max-width: 575px) {
+        font-size: 1rem;
+      }
+    }
+    
+    .btn {
+      display: inline-block;
+      padding: 0.875rem 1.75rem;
+      border-radius: 2rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease;
+      
+      &.btn--primary {
+        background-color: v.$accent-color;
+        color: v.$white;
+        
+        &:hover {
+          background-color: color.adjust(v.$accent-color, $lightness: -10%);
+          transform: translateY(-3px);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+      }
+    }
+  }
+  
+  // Soporte para modo oscuro
+  [data-theme='dark'] & {
+    &.bg--overlay:before {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    .banner--content {
+      h1, p {
+        color: v.$white;
+      }
+    }
+  }
+}
+  
+  .vc--parent {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .vc--child {
+    width: 100%;
+  }
+  
+  .banner--content {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+    
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      margin-bottom: 1.5rem;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      line-height: 1.2;
+    }
+    
+    p {
+      font-size: 1.25rem;
+      font-weight: 400;
+      margin-bottom: 2rem;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    }
+    
+    .btn {
+      padding: 12px 30px;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+}
+
+// Responsive
+@media (max-width: 767px) {
+  #case-study-banner {
+    height: 400px;
+
+    .banner--content {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  #case-study-banner {
+    height: 350px;
+
+    .banner--content {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .btn {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+// Ajustes para el tema oscuro
+// No necesita ajustes especiales para el tema oscuro,
+// ya que el fondo oscuro del banner funciona bien en ambos temas

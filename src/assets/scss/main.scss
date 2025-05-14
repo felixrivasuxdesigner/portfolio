@@ -36,10 +36,14 @@
 @use 'components/preloader';
 @use 'components/back-to-top';
 @use 'components/brands';
+@use 'components/breadcrumb';
+@use 'components/case-study-banner';
 
 // Pages
 @use 'pages/home';
 @use 'pages/thankyou';
+@use 'pages/case-studies';
+@use 'pages/journeylaw';
 
 // Themes
 @use 'themes/default';

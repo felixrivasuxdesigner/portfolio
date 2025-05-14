@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 60 30">
   <clipPath id="a">
-    <path d="M30 15h30v15zv15H0zH0V0zV0h30z"/>
+    <path d="M30 15h30v15H30zM0 15v15h30V15zM0 0v15h30V0zM30 0v15h30V0z"/>
   </clipPath>
   <path d="M0 0v30h60V0z" fill="#012169"/>
   <path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/>
