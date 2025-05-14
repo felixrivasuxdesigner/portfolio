@@ -1,0 +1,302 @@
+{% if designSystem %}
+<div class="case-study-section design-system-section">
+  <h2>{{ designSystem.title }}</h2>
+  
+  <div class="design-system-intro">
+    <p>{{ designSystem.intro }}</p>
+  </div>
+  
+  <div class="design-system-tabs">
+    <button class="tab-btn active" data-tab="colors">Colors</button>
+    <button class="tab-btn" data-tab="typography">Typography</button>
+    <button class="tab-btn" data-tab="components">Components</button>
+    <button class="tab-btn" data-tab="buttons">Buttons</button>
+    <button class="tab-btn" data-tab="forms">Forms</button>
+    <button class="tab-btn" data-tab="cards">Cards</button>
+    <button class="tab-btn" data-tab="badges">Badges</button>
+    <button class="tab-btn" data-tab="navigation">Navigation</button>
+    <button class="tab-btn" data-tab="messages">Messages</button>
+  </div>
+  
+  <div class="tab-content active" id="colors-tab">
+    <h3>{{ designSystem.colorPalette.title }}</h3>
+    <p>{{ designSystem.colorPalette.description }}</p>
+    
+    <div class="color-palette">
+      <div class="color-swatch">
+        <div class="color-preview primary-color">
+          <span class="color-name-preview">{{ designSystem.colorPalette.colors[0].name }}</span>
+        </div>
+        <div class="color-info">
+          <div class="color-name">{{ designSystem.colorPalette.colors[0].name }}</div>
+          <div class="color-hex">{{ designSystem.colorPalette.colors[0].hex }}</div>
+          <div class="color-usage">{{ designSystem.colorPalette.colors[0].usage }}</div>
+        </div>
+      </div>
+    
+    <div class="color-swatch">
+      <div class="color-preview secondary-color">
+        <span class="color-name-preview">{{ designSystem.colorPalette.colors[1].name }}</span>
+      </div>
+      <div class="color-info">
+        <div class="color-name">{{ designSystem.colorPalette.colors[1].name }}</div>
+        <div class="color-hex">{{ designSystem.colorPalette.colors[1].hex }}</div>
+        <div class="color-usage">{{ designSystem.colorPalette.colors[1].usage }}</div>
+      </div>
+    </div>
+    
+    <div class="color-swatch">
+      <div class="color-preview accent-color">
+        <span class="color-name-preview">{{ designSystem.colorPalette.colors[2].name }}</span>
+      </div>
+      <div class="color-info">
+        <div class="color-name">{{ designSystem.colorPalette.colors[2].name }}</div>
+        <div class="color-hex">{{ designSystem.colorPalette.colors[2].hex }}</div>
+        <div class="color-usage">{{ designSystem.colorPalette.colors[2].usage }}</div>
+      </div>
+    </div>
+    
+    <div class="color-swatch">
+      <div class="color-preview background-color">
+        <span class="color-name-preview">{{ designSystem.colorPalette.colors[3].name }}</span>
+      </div>
+      <div class="color-info">
+        <div class="color-name">{{ designSystem.colorPalette.colors[3].name }}</div>
+        <div class="color-hex">{{ designSystem.colorPalette.colors[3].hex }}</div>
+        <div class="color-usage">{{ designSystem.colorPalette.colors[3].usage }}</div>
+      </div>
+    </div>
+    
+    <div class="color-swatch">
+      <div class="color-preview card-color">
+        <span class="color-name-preview">{{ designSystem.colorPalette.colors[4].name }}</span>
+      </div>
+      <div class="color-info">
+        <div class="color-name">{{ designSystem.colorPalette.colors[4].name }}</div>
+        <div class="color-hex">{{ designSystem.colorPalette.colors[4].hex }}</div>
+        <div class="color-usage">{{ designSystem.colorPalette.colors[4].usage }}</div>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  <div class="tab-content" id="typography-tab">
+    <h3>{{ designSystem.typography.title }}</h3>
+    <p>{{ designSystem.typography.description }}</p>
+    
+    <div class="typography-showcase">
+      <div class="font-family primary-font">
+        <div class="font-header">
+          <div class="font-name">{{ designSystem.typography.fonts[0].name }}</div>
+          <div class="font-category">{{ designSystem.typography.fonts[0].category }}</div>
+        </div>
+        <div class="font-details">
+          <div class="font-weights">{{ designSystem.typography.fonts[0].weights }}</div>
+          <div class="font-usage">{{ designSystem.typography.fonts[0].usage }}</div>
+        </div>
+        <div class="font-sample">
+          <div class="sample-xl">Heading XL</div>
+          <div class="sample-large">Heading Large</div>
+          <div class="sample-medium">Heading Medium</div>
+          <div class="sample-body">This is body text that would appear in paragraphs throughout the application, providing clear and readable content for users.</div>
+          <div class="sample-small">This is smaller text used for secondary information and UI labels.</div>
+        </div>
+      </div>
+      
+      <div class="font-family code-font">
+        <div class="font-header">
+          <div class="font-name">{{ designSystem.typography.fonts[1].name }}</div>
+          <div class="font-category">{{ designSystem.typography.fonts[1].category }}</div>
+        </div>
+        <div class="font-details">
+          <div class="font-weights">{{ designSystem.typography.fonts[1].weights }}</div>
+          <div class="font-usage">{{ designSystem.typography.fonts[1].usage }}</div>
+        </div>
+        <div class="font-sample">
+          <div class="sample-body">function calculateDamages(caseType, amount) {<br>  return caseType === 'liability' ? amount * 1.5 : amount;<br>}</div>
+          <div class="sample-small">// Legal reference: §304.2-p</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="tab-content" id="components-tab">
+    <h3>{{ designSystem.components.title }}</h3>
+    <p>{{ designSystem.components.description }}</p>
+    
+    <div class="component-library">
+      <div class="component-category">
+        <div class="category-name">{{ designSystem.components.categories[0].name }}</div>
+        <div class="component-list">
+          <div class="component-tag">{{ designSystem.components.categories[0].components[0] }}</div>
+          <div class="component-tag">{{ designSystem.components.categories[0].components[1] }}</div>
+          <div class="component-tag">{{ designSystem.components.categories[0].components[2] }}</div>
+          <div class="component-tag">{{ designSystem.components.categories[0].components[3] }}</div>
+        </div>
+      </div>
+      
+      <div class="component-category">
+        <div class="category-name">{{ designSystem.components.categories[1].name }}</div>
+        <div class="component-list">
+          <div class="component-tag">{{ designSystem.components.categories[1].components[0] }}</div>
+          <div class="component-tag">{{ designSystem.components.categories[1].components[1] }}</div>
+          <div class="component-tag">{{ designSystem.components.categories[1].components[2] }}</div>
+          <div class="component-tag">{{ designSystem.components.categories[1].components[3] }}</div>
+        </div>
+      </div>
+      
+      <div class="component-category">
+        <div class="category-name">{{ designSystem.components.categories[2].name }}</div>
+        <div class="component-list">
+          <div class="component-tag">{{ designSystem.components.categories[2].components[0] }}</div>
+          <div class="component-tag">{{ designSystem.components.categories[2].components[1] }}</div>
+          <div class="component-tag">{{ designSystem.components.categories[2].components[2] }}</div>
+          <div class="component-tag">{{ designSystem.components.categories[2].components[3] }}</div>
+        </div>
+      </div>
+      
+      <div class="component-category">
+        <div class="category-name">{{ designSystem.components.categories[3].name }}</div>
+        <div class="component-list">
+          <div class="component-tag">{{ designSystem.components.categories[3].components[0] }}</div>
+          <div class="component-tag">{{ designSystem.components.categories[3].components[1] }}</div>
+          <div class="component-tag">{{ designSystem.components.categories[3].components[2] }}</div>
+          <div class="component-tag">{{ designSystem.components.categories[3].components[3] }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="tab-content" id="buttons-tab">
+    <h3>Buttons</h3>
+    <p>Interactive elements designed with clear hierarchy and visual feedback.</p>
+    
+    <div class="buttons-showcase">
+      <div class="button-group">
+        <button class="jl-btn jl-btn-primary">Primary Button</button>
+        <button class="jl-btn jl-btn-secondary">Secondary Button</button>
+        <button class="jl-btn jl-btn-text">Text Button</button>
+      </div>
+      
+      <div class="button-states">
+        <button class="jl-btn jl-btn-primary">Default</button>
+        <button class="jl-btn jl-btn-primary jl-hover">Hover</button>
+        <button class="jl-btn jl-btn-primary jl-active">Active</button>
+        <button class="jl-btn jl-btn-primary jl-focus">Focus</button>
+        <button class="jl-btn jl-btn-primary" disabled>Disabled</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="tab-content" id="forms-tab">
+    <h3>Form Elements</h3>
+    <p>Consistent and accessible input components for data collection.</p>
+    
+    <div class="forms-showcase">
+      <div class="form-group">
+        <label for="demo-input">Text Input</label>
+        <input type="text" id="demo-input" class="jl-input" placeholder="Enter text here">
+      </div>
+      
+      <div class="form-group">
+        <label for="demo-select">Select Menu</label>
+        <select id="demo-select" class="jl-select">
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label class="checkbox-label">
+          <input type="checkbox" class="jl-checkbox">
+          <span>Checkbox Option</span>
+        </label>
+      </div>
+    </div>
+  </div>
+  
+  <div class="tab-content" id="cards-tab">
+    <h3>Cards</h3>
+    <p>Content containers with consistent spacing and elevation.</p>
+    
+    <div class="cards-showcase">
+      <div class="jl-card">
+        <div class="jl-card-header">
+          <h4>Case Summary</h4>
+        </div>
+        <div class="jl-card-body">
+          <p>This is a standard card with header and content area, commonly used to display grouped information.</p>
+        </div>
+        <div class="jl-card-footer">
+          <button class="jl-btn jl-btn-text">Action</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="tab-content" id="badges-tab">
+    <h3>Badges</h3>
+    <p>Visual indicators for status, categories, or notifications.</p>
+    
+    <div class="badges-showcase">
+      <span class="jl-badge jl-badge-primary">New</span>
+      <span class="jl-badge jl-badge-success">Completed</span>
+      <span class="jl-badge jl-badge-warning">Pending</span>
+      <span class="jl-badge jl-badge-error">Urgent</span>
+      <span class="jl-badge jl-badge-neutral">Draft</span>
+    </div>
+  </div>
+  
+  <div class="tab-content" id="navigation-tab">
+    <h3>Navigation</h3>
+    <p>Consistent patterns for moving through the application.</p>
+    
+    <div class="navigation-showcase">
+      <div class="jl-nav-sample">
+        <div class="jl-tabs">
+          <button class="jl-tab active">Dashboard</button>
+          <button class="jl-tab">Cases</button>
+          <button class="jl-tab">Calendar</button>
+          <button class="jl-tab">Documents</button>
+        </div>
+      </div>
+      
+      <div class="jl-breadcrumbs">
+        <span>Cases</span>
+        <span class="jl-breadcrumb-separator">›</span>
+        <span>Smith vs. Jones</span>
+        <span class="jl-breadcrumb-separator">›</span>
+        <span>Documents</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="tab-content" id="messages-tab">
+    <h3>Messages</h3>
+    <p>Feedback and communication components.</p>
+    
+    <div class="messages-showcase">
+      <div class="jl-alert jl-alert-info">
+        <div class="jl-alert-icon">i</div>
+        <div class="jl-alert-content">This is an informational message.</div>
+      </div>
+      
+      <div class="jl-alert jl-alert-success">
+        <div class="jl-alert-icon">✓</div>
+        <div class="jl-alert-content">Your case has been successfully updated.</div>
+      </div>
+      
+      <div class="jl-alert jl-alert-warning">
+        <div class="jl-alert-icon">!</div>
+        <div class="jl-alert-content">Please review before proceeding.</div>
+      </div>
+      
+      <div class="jl-alert jl-alert-error">
+        <div class="jl-alert-icon">×</div>
+        <div class="jl-alert-content">There was a problem with your submission.</div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}

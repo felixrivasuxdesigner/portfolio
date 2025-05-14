@@ -19,6 +19,108 @@
           "title": "El Desafío",
           "content": "Los profesionales legales enfrentaban numerosos desafíos con herramientas anticuadas: interfaces innecesariamente complejas que desperdiciaban tiempo valioso, flujos de trabajo fragmentados entre múltiples aplicaciones, tareas repetitivas que podían —pero no estaban— siendo automatizadas, escalabilidad limitada que dificultaba el crecimiento y la gestión de clientes, y experiencias inconsistentes entre dispositivos que interrumpían la productividad."
         },
+        "designSystem": {
+          "title": "Sistema de Diseño",
+          "intro": "En el centro de la transformación de JourneyLaw se encuentra un sistema de diseño integral construido alrededor del concepto de 'Profesionalismo Cálido'. Este sistema proporciona una base para una experiencia de usuario consistente, accesible y escalable.",
+          "colorPalette": {
+            "title": "Paleta de Colores",
+            "description": "El sistema de colores fue cuidadosamente elaborado para equilibrar el profesionalismo con la calidez, creando un entorno que se siente confiable y accesible a la vez.",
+            "colors": [
+              {
+                "name": "Marrón Profundo",
+                "hex": "#2C1B0C",
+                "usage": "Color primario para encabezados, texto importante y representación de marca"
+              },
+              {
+                "name": "Topo Cálido",
+                "hex": "#C5B4A3",
+                "usage": "Color secundario para fondos, tarjetas y contenedores"
+              },
+              {
+                "name": "Dorado Apagado",
+                "hex": "#8C765C",
+                "usage": "Color de acento para elementos interactivos, destacados y botones de llamada a la acción"
+              },
+              {
+                "name": "Beige Cálido",
+                "hex": "#EFE9DC",
+                "usage": "Color de fondo que proporciona calidez manteniendo la legibilidad"
+              },
+              {
+                "name": "Blanco Roto",
+                "hex": "#F7F2EA",
+                "usage": "Color de fondo para áreas de contenido y modales"
+              }
+            ]
+          },
+          "typography": {
+            "title": "Tipografía",
+            "description": "Un sistema tipográfico que prioriza la legibilidad y la jerarquía, permitiendo a los usuarios escanear y comprender información legal compleja de manera efectiva.",
+            "fonts": [
+              {
+                "name": "Inter",
+                "category": "Encabezados y Texto Principal",
+                "weights": "400 (Regular), 500 (Medium), 600 (Semibold), 700 (Bold)",
+                "usage": "Fuente principal para todo el texto de la interfaz, proporcionando excelente legibilidad en todos los tamaños"
+              },
+              {
+                "name": "JetBrains Mono",
+                "category": "Código y Referencias Legales",
+                "weights": "400 (Regular)",
+                "usage": "Fuente monoespaciada para bloques de código, citas legales y números de referencia"
+              }
+            ],
+            "fontSizes": [
+              {
+                "name": "Encabezado XL",
+                "size": "32px/40px",
+                "usage": "Encabezados principales de sección y títulos de página"
+              },
+              {
+                "name": "Encabezado Grande",
+                "size": "24px/32px",
+                "usage": "Títulos de sección y encabezados de modal"
+              },
+              {
+                "name": "Encabezado Medio",
+                "size": "18px/28px",
+                "usage": "Títulos de tarjetas y grupos de contenido"
+              },
+              {
+                "name": "Texto Principal",
+                "size": "16px/24px",
+                "usage": "Texto principal de contenido"
+              },
+              {
+                "name": "Texto Pequeño",
+                "size": "14px/20px",
+                "usage": "Información secundaria, etiquetas y leyendas"
+              }
+            ]
+          },
+          "components": {
+            "title": "Biblioteca de Componentes",
+            "description": "Un sistema de componentes modulares y reutilizables que se combinan para crear interfaces consistentes en toda la plataforma.",
+            "categories": [
+              {
+                "name": "Navegación",
+                "components": ["Barra de navegación global", "Menús laterales", "Migas de pan", "Sistemas de pestañas"]
+              },
+              {
+                "name": "Controles de Entrada",
+                "components": ["Campos de texto", "Selectores desplegables", "Selectores de fecha", "Interruptores", "Cargadores de documentos legales"]
+              },
+              {
+                "name": "Visualización de Información",
+                "components": ["Tarjetas de casos", "Visualizaciones de línea de tiempo", "Tablas de datos", "Indicadores de progreso", "Paneles de notificación"]
+              },
+              {
+                "name": "Acciones",
+                "components": ["Botones primarios", "Botones secundarios", "Botones de iconos", "Menús de acción", "Diálogos de confirmación"]
+              }
+            ]
+          }
+        },
         "solution": {
           "title": "Propuesta de Valor",
           "content": "Desarrollamos una solución integral con estos elementos clave:",

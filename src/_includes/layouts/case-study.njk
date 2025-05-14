@@ -39,6 +39,12 @@ isCaseStudy: true
         <p>{{ translations[locale].case_studies.projects[projectKey].sections.challenge.content }}</p>
       </div>
 
+      <!-- Design System Section (if available) -->
+      {% if translations[locale].case_studies.projects[projectKey].sections.designSystem %}
+        {% set designSystem = translations[locale].case_studies.projects[projectKey].sections.designSystem %}
+        {% include "components/case-studies/design-system-showcase.njk" %}
+      {% endif %}
+
       <!-- Research Section (if available) -->
       {% if translations[locale].case_studies.projects[projectKey].sections.research %}
       <div class="case-study-section">
@@ -118,7 +124,7 @@ isCaseStudy: true
       <div class="case-study-section">
         <h2>{{ translations[locale].case_studies.projects[projectKey].sections.solution.title }}</h2>
         <p>{{ translations[locale].case_studies.projects[projectKey].sections.solution.content }}</p>
-        <ul>
+        <ul class="feature-list">
           {% for feature in translations[locale].case_studies.projects[projectKey].sections.solution.features %}
             <li>{{ feature }}</li>
           {% endfor %}
@@ -130,7 +136,7 @@ isCaseStudy: true
         <h2>{{ translations[locale].case_studies.projects[projectKey].sections.process.title }}</h2>
         <div class="case-study-grid">
           {% for step in translations[locale].case_studies.projects[projectKey].sections.process.steps %}
-            <div class="case-study-grid-item">
+            <div class="case-study-grid-item design-process-step">
               <h3>{{ step.title }}</h3>
               <p>{{ step.content }}</p>
               {% if false %}

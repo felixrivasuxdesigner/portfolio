@@ -19,6 +19,7 @@ import { initBrandsCarousel } from './modules/brandsCarousel.js';
 import { fixPaths } from './modules/pathFixer.js';
 import { initThemeSwitcher } from './modules/theme-switcher.js';
 import { initCaseStudies } from './modules/caseStudies.js';
+import './modules/design-system-tabs.js';
 
 // Ejecutar cuando el DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', () => {
