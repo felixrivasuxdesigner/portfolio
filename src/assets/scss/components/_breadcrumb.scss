@@ -4,18 +4,19 @@
 @use '../abstracts/mixins' as m;
 
 .breadcrumbs {
-  background-color: var(--background-color);
+  background-color: transparent;
   border-bottom: 1px solid var(--border-color);
   padding: 1rem 0;
   position: sticky;
   top: 80px; // Match the header height
-  z-index: 10;
+  z-index: 101;
   transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
   
   // Añadir fondo sólido y sombra cuando tenga la clase is-sticky
   &.is-sticky {
-    background-color: var(--navbar-scroll-bg);
-    box-shadow: var(--navbar-scroll-shadow);
+    background-color: #f1f1f1 !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    z-index: 101;
   }
   
   // Contenedor con padding ajustado

@@ -23,8 +23,10 @@ export function initScrollEffects() {
     }
   };
   
-  // Aplicar al cargar la página (para cuando ya hay scroll)
-  window.addEventListener('load', handleScroll);
+  // Asegurarse de que el header comience como transparente
+  if (header) header.classList.remove('fixed');
+  if (languageSelector) languageSelector.classList.remove('fixed');
+  if (breadcrumbs) breadcrumbs.classList.remove('is-sticky');
   
   // Aplicar durante el scroll
   window.addEventListener('scroll', handleScroll);
