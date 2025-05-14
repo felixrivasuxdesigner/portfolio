@@ -27,18 +27,21 @@ Legal professionals were struggling with outdated tools that created daily frust
 As the lead UX/UI Designer and front-end developer, I was responsible for:
 
 ### UX Research & Strategy
+
 - Conducted empathetic interviews with 15 legal professionals to understand their daily struggles
 - Mapped detailed user journeys to pinpoint frustration moments and opportunities
 - Defined an intuitive information architecture and legal taxonomy that reflected how lawyers actually think
 - Developed realistic user personas and scenarios to guide our design decisions
 
 ### Interface Design
+
 - Created a comprehensive design system with reusable components that streamlined development
 - Designed intuitive dashboards with data visualizations that transform complexity into clarity
 - Implemented contextual AI assistance that empowers rather than overwhelms users
 - Developed responsive interfaces that deliver a seamless experience across all devices
 
 ### Front-end Implementation
+
 - Developed React components following accessibility standards to ensure inclusivity
 - Integrated with back-end APIs to create a cohesive, reliable experience
 - Optimized performance across devices to ensure smooth interactions
@@ -83,8 +86,9 @@ I developed a modular design system that balanced consistency with flexibility:
 
 The design system implements a "Warm Professionalism" philosophy that conveys trust and sophistication while maintaining warmth and accessibility.
 
-**Color Palette**
-```
+#### Color Palette
+
+```text
 Primary:      #2C1B0C (Deep Brown)
 Secondary:    #C5B4A3 (Warm Taupe)
 Accent:       #8C765C (Muted Gold)
@@ -92,8 +96,9 @@ Background:   #EFE9DC (Warm Beige)
 Card:         #F7F2EA (Off-White)
 ```
 
-**Typography System**
-```
+#### Typography System
+
+```text
 Font Hierarchy:
 - Headers:    Inter (Bold, Semi-bold)
 - Body:       Inter (Regular, Medium)
@@ -111,6 +116,7 @@ Size Scale:
 
 **Base Components**
 A system of modular components that includes:
+
 1. **Button**: Extensible system with multiple variants and states
 2. **StatusBadge**: Specialized component for case states
 3. **Input/Form Elements**: Components with integrated validation states
@@ -228,6 +234,7 @@ I integrated AI capabilities while keeping users in control of their experience:
 **Problem**: Large firms handle thousands of documents and cases, causing UI performance issues.
 
 **Solution**: I designed a progressive loading system with:
+
 - List virtualization to handle thousands of items with native-like performance
 - Lazy loading of heavy assets like PDFs and scanned documents
 - Intelligent caching for frequently accessed documents
@@ -244,6 +251,7 @@ I integrated AI capabilities while keeping users in control of their experience:
 **Problem**: Users had varying levels of technical experience, and some faced accessibility challenges.
 
 **Solution**:
+
 - Implemented high-contrast controls and adjustable text size
 - Created fully keyboard-navigable interfaces
 - Designed multiple viewing modes: simplified, standard, and advanced
@@ -377,7 +385,7 @@ JourneyLaw incorporates an accessibility preferences panel that allows users to 
 
 The JourneyLaw redesign achieved impressive results:
 
-- **Client Retention:** 87% increase 
+- **Client Retention:** 87% increase
 - **Plan Conversion:** 34% more upgrades from Basic to Pro
 - **Time to Value:** 58% reduction in onboarding time
 - **NPS:** Improvement from 32 to 76 points

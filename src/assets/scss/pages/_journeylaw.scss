@@ -1,21 +1,25 @@
 // JourneyLaw Project Design System
 // ================================
 
+// Import SASS color module to use modern color functions
+@use "sass:color";
+@use '../abstracts/variables' as v;
+
 // Import Fonts (Inter and JetBrains Mono)
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono&display=swap');
 
-// Custom Variables for JourneyLaw project
+// Custom Variables for JourneyLaw project - Using global portfolio colors
 :root {
-  // JourneyLaw Color Palette
-  --jl-primary: #2C1B0C; // Deep Brown
-  --jl-secondary: #C5B4A3; // Warm Taupe
-  --jl-accent: #8C765C; // Muted Gold
-  --jl-background: #EFE9DC; // Warm Beige
-  --jl-card: #F7F2EA; // Off-White
+  // JourneyLaw Color Palette (using portfolio's global colors)
+  --jl-primary: #{v.$primary-color}; // Primary Color
+  --jl-secondary: #{v.$secondary-color}; // Secondary Color
+  --jl-accent: #{v.$accent-color}; // Accent Color
+  --jl-background: #{v.$bg-color}; // Background Color
+  --jl-card: #{v.$white}; // Card Color
   
   // Typography
-  --jl-heading-font: 'Inter', sans-serif;
-  --jl-body-font: 'Inter', sans-serif;
+  --jl-heading-font: #{v.$heading-font};
+  --jl-body-font: #{v.$body-font};
   --jl-code-font: 'JetBrains Mono', monospace;
 }
 
@@ -27,7 +31,7 @@
     position: relative;
     
     &::before {
-      background-color: rgba(44, 27, 12, 0.75) !important; // Overlay with primary color
+      background-color: rgba(7, 3, 24, 0.75) !important; // Overlay con el color primario global
     }
     
     .banner--content h1 {
@@ -88,7 +92,7 @@
         
         img {
           border-radius: 8px;
-          box-shadow: 0 8px 24px rgba(44, 27, 12, 0.15);
+          box-shadow: 0 8px 24px rgba(7, 3, 24, 0.15);
           transition: transform 0.3s ease;
           
           &:hover {
@@ -583,15 +587,15 @@
           color: white;
           
           &:hover:not(:disabled), &.jl-hover {
-            background-color: lighten(#2C1B0C, 10%);
+            background-color: color.adjust(v.$primary-color, $lightness: 10%);
           }
           
           &:active, &.jl-active {
-            background-color: darken(#2C1B0C, 5%);
+            background-color: color.adjust(v.$primary-color, $lightness: -5%);
           }
           
           &:focus, &.jl-focus {
-            outline: 3px solid rgba(140, 118, 92, 0.4);
+            outline: 3px solid rgba(252, 103, 54, 0.4);
           }
           
           &:disabled {
@@ -605,7 +609,7 @@
           color: var(--jl-primary);
           
           &:hover:not(:disabled) {
-            background-color: darken(#C5B4A3, 10%);
+            background-color: color.adjust(v.$secondary-color, $lightness: -10%);
           }
         }
         

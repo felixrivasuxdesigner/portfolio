@@ -244,15 +244,15 @@
   <h2>Design System</h2>
   
   <div class="design-system-intro">
-    <p>At the heart of JourneyLaw's transformation is a comprehensive design system built around the concept of 'Warm Professionalism'. This system provides a foundation for a consistent, accessible, and scalable user experience.</p>
+    <p>The design system implements a "Warm Professionalism" philosophy that conveys trust and sophistication while maintaining warmth and accessibility.</p>
   </div>
   
   <div class="design-system-tabs">
-    <button class="tab-btn active" data-tab="colors">Colors</button>
-    <button class="tab-btn" data-tab="typography">Typography</button>
-    <button class="tab-btn" data-tab="components">Components</button>
+    <button class="tab-btn active" data-tab="colors">Color Palette</button>
+    <button class="tab-btn" data-tab="typography">Typography System</button>
+    <button class="tab-btn" data-tab="components">Base Components</button>
     <button class="tab-btn" data-tab="buttons">Buttons</button>
-    <button class="tab-btn" data-tab="forms">Forms</button>
+    <button class="tab-btn" data-tab="forms">Form Elements</button>
     <button class="tab-btn" data-tab="cards">Cards</button>
     <button class="tab-btn" data-tab="badges">Badges</button>
     <button class="tab-btn" data-tab="navigation">Navigation</button>
@@ -264,8 +264,9 @@
     <p>The color system was carefully crafted to balance professionalism with warmth, creating an environment that feels both trustworthy and approachable.</p>
     
     <div class="color-palette">
+      
       <div class="color-swatch">
-        <div class="color-preview primary-color">
+        <div class="color-preview" style="background-color: #2C1B0C">
           <span class="color-name-preview">Deep Brown</span>
         </div>
         <div class="color-info">
@@ -274,58 +275,60 @@
           <div class="color-usage">Primary color for headers, important text, and brand representation</div>
         </div>
       </div>
-    
-    <div class="color-swatch">
-      <div class="color-preview secondary-color">
-        <span class="color-name-preview">Warm Taupe</span>
+      
+      <div class="color-swatch">
+        <div class="color-preview" style="background-color: #C5B4A3">
+          <span class="color-name-preview">Warm Taupe</span>
+        </div>
+        <div class="color-info">
+          <div class="color-name">Warm Taupe</div>
+          <div class="color-hex">#C5B4A3</div>
+          <div class="color-usage">Secondary color for backgrounds, cards, and containers</div>
+        </div>
       </div>
-      <div class="color-info">
-        <div class="color-name">Warm Taupe</div>
-        <div class="color-hex">#C5B4A3</div>
-        <div class="color-usage">Secondary color for backgrounds, cards, and containers</div>
+      
+      <div class="color-swatch">
+        <div class="color-preview" style="background-color: #8C765C">
+          <span class="color-name-preview">Muted Gold</span>
+        </div>
+        <div class="color-info">
+          <div class="color-name">Muted Gold</div>
+          <div class="color-hex">#8C765C</div>
+          <div class="color-usage">Accent color for interactive elements, highlights, and call-to-action buttons</div>
+        </div>
       </div>
+      
+      <div class="color-swatch">
+        <div class="color-preview" style="background-color: #EFE9DC">
+          <span class="color-name-preview">Warm Beige</span>
+        </div>
+        <div class="color-info">
+          <div class="color-name">Warm Beige</div>
+          <div class="color-hex">#EFE9DC</div>
+          <div class="color-usage">Background color providing warmth while maintaining readability</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch">
+        <div class="color-preview" style="background-color: #F7F2EA">
+          <span class="color-name-preview">Off-White</span>
+        </div>
+        <div class="color-info">
+          <div class="color-name">Off-White</div>
+          <div class="color-hex">#F7F2EA</div>
+          <div class="color-usage">Card background color for content areas and modals</div>
+        </div>
+      </div>
+      
     </div>
-    
-    <div class="color-swatch">
-      <div class="color-preview accent-color">
-        <span class="color-name-preview">Muted Gold</span>
-      </div>
-      <div class="color-info">
-        <div class="color-name">Muted Gold</div>
-        <div class="color-hex">#8C765C</div>
-        <div class="color-usage">Accent color for interactive elements, highlights, and call-to-action buttons</div>
-      </div>
-    </div>
-    
-    <div class="color-swatch">
-      <div class="color-preview background-color">
-        <span class="color-name-preview">Warm Beige</span>
-      </div>
-      <div class="color-info">
-        <div class="color-name">Warm Beige</div>
-        <div class="color-hex">#EFE9DC</div>
-        <div class="color-usage">Background color providing warmth while maintaining readability</div>
-      </div>
-    </div>
-    
-    <div class="color-swatch">
-      <div class="color-preview card-color">
-        <span class="color-name-preview">Off-White</span>
-      </div>
-      <div class="color-info">
-        <div class="color-name">Off-White</div>
-        <div class="color-hex">#F7F2EA</div>
-        <div class="color-usage">Card background color for content areas and modals</div>
-      </div>
-    </div>
-  </div>
   </div>
   
   <div class="tab-content" id="typography-tab">
-    <h3>Typography</h3>
+    <h3>Typography System</h3>
     <p>A typographic system that prioritizes legibility and hierarchy, enabling users to scan and understand complex legal information effectively.</p>
     
     <div class="typography-showcase">
+      
       <div class="font-family primary-font">
         <div class="font-header">
           <div class="font-name">Inter</div>
@@ -336,11 +339,13 @@
           <div class="font-usage">Primary font for all interface text, providing excellent readability at all sizes</div>
         </div>
         <div class="font-sample">
-          <div class="sample-xl">Heading XL</div>
-          <div class="sample-large">Heading Large</div>
-          <div class="sample-medium">Heading Medium</div>
-          <div class="sample-body">This is body text that would appear in paragraphs throughout the application, providing clear and readable content for users.</div>
-          <div class="sample-small">This is smaller text used for secondary information and UI labels.</div>
+          
+          <div class="sample-xl">XL Heading</div>
+          <div class="sample-large">Large Heading</div>
+          <div class="sample-medium">Medium Heading</div>
+          <div class="sample-body">Body Text: Primary content text</div>
+          <div class="sample-small">Small Text: Secondary information, labels, and captions</div>
+          
         </div>
       </div>
       
@@ -354,57 +359,131 @@
           <div class="font-usage">Monospace font for code blocks, legal citations, and reference numbers</div>
         </div>
         <div class="font-sample">
+          
           <div class="sample-body">function calculateDamages(caseType, amount) {<br>  return caseType === 'liability' ? amount * 1.5 : amount;<br>}</div>
           <div class="sample-small">// Legal reference: §304.2-p</div>
+          
         </div>
+      </div>
+      
+    </div>
+    
+    <div class="font-sizes">
+      <h4>Font Sizes</h4>
+      <div class="font-size-grid">
+        
+        <div class="font-size-item">
+          <div class="font-size-name">XL Heading</div>
+          <div class="font-size-value">30px/36px</div>
+          <div class="font-size-usage">Main section headings and page titles</div>
+        </div>
+        
+        <div class="font-size-item">
+          <div class="font-size-name">Large Heading</div>
+          <div class="font-size-value">24px/32px</div>
+          <div class="font-size-usage">Section titles and modal headers</div>
+        </div>
+        
+        <div class="font-size-item">
+          <div class="font-size-name">Medium Heading</div>
+          <div class="font-size-value">18px/24px</div>
+          <div class="font-size-usage">Card titles and content groups</div>
+        </div>
+        
+        <div class="font-size-item">
+          <div class="font-size-name">Body Text</div>
+          <div class="font-size-value">16px/24px</div>
+          <div class="font-size-usage">Primary content text</div>
+        </div>
+        
+        <div class="font-size-item">
+          <div class="font-size-name">Small Text</div>
+          <div class="font-size-value">14px/20px</div>
+          <div class="font-size-usage">Secondary information, labels, and captions</div>
+        </div>
+        
+        <div class="font-size-item">
+          <div class="font-size-name">Extra Small</div>
+          <div class="font-size-value">12px/16px</div>
+          <div class="font-size-usage">Fine print and legal disclaimers</div>
+        </div>
+        
       </div>
     </div>
   </div>
   
   <div class="tab-content" id="components-tab">
-    <h3>Component Library</h3>
+    <h3>Base Components</h3>
     <p>A system of modular, reusable components that combine to create consistent interfaces across the platform.</p>
     
     <div class="component-library">
+      
       <div class="component-category">
         <div class="category-name">Navigation</div>
         <div class="component-list">
+          
           <div class="component-tag">Global navigation bar</div>
+          
           <div class="component-tag">Sidebar menus</div>
+          
           <div class="component-tag">Breadcrumbs</div>
+          
           <div class="component-tag">Tab systems</div>
+          
         </div>
       </div>
       
       <div class="component-category">
         <div class="category-name">Input Controls</div>
         <div class="component-list">
+          
           <div class="component-tag">Text fields</div>
+          
           <div class="component-tag">Dropdown selectors</div>
+          
           <div class="component-tag">Date pickers</div>
+          
           <div class="component-tag">Toggle switches</div>
+          
+          <div class="component-tag">Legal document uploaders</div>
+          
         </div>
       </div>
       
       <div class="component-category">
         <div class="category-name">Information Display</div>
         <div class="component-list">
+          
           <div class="component-tag">Case cards</div>
+          
           <div class="component-tag">Timeline visualizations</div>
+          
           <div class="component-tag">Data tables</div>
+          
           <div class="component-tag">Progress indicators</div>
+          
+          <div class="component-tag">Notification panels</div>
+          
         </div>
       </div>
       
       <div class="component-category">
         <div class="category-name">Actions</div>
         <div class="component-list">
+          
           <div class="component-tag">Primary buttons</div>
+          
           <div class="component-tag">Secondary buttons</div>
+          
           <div class="component-tag">Icon buttons</div>
+          
           <div class="component-tag">Action menus</div>
+          
+          <div class="component-tag">Confirmation dialogs</div>
+          
         </div>
       </div>
+      
     </div>
   </div>
   
@@ -414,17 +493,27 @@
     
     <div class="buttons-showcase">
       <div class="button-group">
+        
         <button class="jl-btn jl-btn-primary">Primary Button</button>
+        
         <button class="jl-btn jl-btn-secondary">Secondary Button</button>
+        
         <button class="jl-btn jl-btn-text">Text Button</button>
+        
       </div>
       
       <div class="button-states">
+        
         <button class="jl-btn jl-btn-primary">Default</button>
+        
         <button class="jl-btn jl-btn-primary jl-hover">Hover</button>
+        
         <button class="jl-btn jl-btn-primary jl-active">Active</button>
+        
         <button class="jl-btn jl-btn-primary jl-focus">Focus</button>
+        
         <button class="jl-btn jl-btn-primary" disabled>Disabled</button>
+        
       </div>
     </div>
   </div>
@@ -434,26 +523,34 @@
     <p>Consistent and accessible input components for data collection.</p>
     
     <div class="forms-showcase">
+      
       <div class="form-group">
+        
         <label for="demo-input">Text Input</label>
         <input type="text" id="demo-input" class="jl-input" placeholder="Enter text here">
+        
       </div>
       
       <div class="form-group">
+        
         <label for="demo-select">Select Menu</label>
         <select id="demo-select" class="jl-select">
           <option>Option 1</option>
           <option>Option 2</option>
           <option>Option 3</option>
         </select>
+        
       </div>
       
       <div class="form-group">
+        
         <label class="checkbox-label">
           <input type="checkbox" class="jl-checkbox">
           <span>Checkbox Option</span>
         </label>
+        
       </div>
+      
     </div>
   </div>
   
@@ -481,11 +578,17 @@
     <p>Visual indicators for status, categories, or notifications.</p>
     
     <div class="badges-showcase">
+      
       <span class="jl-badge jl-badge-primary">New</span>
+      
       <span class="jl-badge jl-badge-success">Completed</span>
+      
       <span class="jl-badge jl-badge-warning">Pending</span>
+      
       <span class="jl-badge jl-badge-error">Urgent</span>
+      
       <span class="jl-badge jl-badge-neutral">Draft</span>
+      
     </div>
   </div>
   
@@ -496,19 +599,33 @@
     <div class="navigation-showcase">
       <div class="jl-nav-sample">
         <div class="jl-tabs">
+          
           <button class="jl-tab active">Dashboard</button>
+          
           <button class="jl-tab">Cases</button>
+          
           <button class="jl-tab">Calendar</button>
+          
           <button class="jl-tab">Documents</button>
+          
         </div>
       </div>
       
       <div class="jl-breadcrumbs">
+        
         <span>Cases</span>
+        
         <span class="jl-breadcrumb-separator">›</span>
+        
+        
         <span>Smith vs. Jones</span>
+        
         <span class="jl-breadcrumb-separator">›</span>
+        
+        
         <span>Documents</span>
+        
+        
       </div>
     </div>
   </div>
@@ -518,6 +635,7 @@
     <p>Feedback and communication components.</p>
     
     <div class="messages-showcase">
+      
       <div class="jl-alert jl-alert-info">
         <div class="jl-alert-icon">i</div>
         <div class="jl-alert-content">This is an informational message.</div>
@@ -537,6 +655,7 @@
         <div class="jl-alert-icon">×</div>
         <div class="jl-alert-content">There was a problem with your submission.</div>
       </div>
+      
     </div>
   </div>
 </div>

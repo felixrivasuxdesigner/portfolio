@@ -7,15 +7,15 @@
   </div>
   
   <div class="design-system-tabs">
-    <button class="tab-btn active" data-tab="colors">Colors</button>
-    <button class="tab-btn" data-tab="typography">Typography</button>
-    <button class="tab-btn" data-tab="components">Components</button>
-    <button class="tab-btn" data-tab="buttons">Buttons</button>
-    <button class="tab-btn" data-tab="forms">Forms</button>
-    <button class="tab-btn" data-tab="cards">Cards</button>
-    <button class="tab-btn" data-tab="badges">Badges</button>
-    <button class="tab-btn" data-tab="navigation">Navigation</button>
-    <button class="tab-btn" data-tab="messages">Messages</button>
+    <button class="tab-btn active" data-tab="colors">{{ designSystem.colorPalette.title }}</button>
+    <button class="tab-btn" data-tab="typography">{{ designSystem.typography.title }}</button>
+    <button class="tab-btn" data-tab="components">{{ designSystem.components.title }}</button>
+    <button class="tab-btn" data-tab="buttons">{{ designSystem.buttons.title }}</button>
+    <button class="tab-btn" data-tab="forms">{{ designSystem.forms.title }}</button>
+    <button class="tab-btn" data-tab="cards">{{ designSystem.cards.title }}</button>
+    <button class="tab-btn" data-tab="badges">{{ designSystem.badges.title }}</button>
+    <button class="tab-btn" data-tab="navigation">{{ designSystem.navigation.title }}</button>
+    <button class="tab-btn" data-tab="messages">{{ designSystem.messages.title }}</button>
   </div>
   
   <div class="tab-content active" id="colors-tab">
@@ -23,61 +23,19 @@
     <p>{{ designSystem.colorPalette.description }}</p>
     
     <div class="color-palette">
+      {% for color in designSystem.colorPalette.colors %}
       <div class="color-swatch">
-        <div class="color-preview primary-color">
-          <span class="color-name-preview">{{ designSystem.colorPalette.colors[0].name }}</span>
+        <div class="color-preview" style="background-color: {{ color.hex }}">
+          <span class="color-name-preview">{{ color.name }}</span>
         </div>
         <div class="color-info">
-          <div class="color-name">{{ designSystem.colorPalette.colors[0].name }}</div>
-          <div class="color-hex">{{ designSystem.colorPalette.colors[0].hex }}</div>
-          <div class="color-usage">{{ designSystem.colorPalette.colors[0].usage }}</div>
+          <div class="color-name">{{ color.name }}</div>
+          <div class="color-hex">{{ color.hex }}</div>
+          <div class="color-usage">{{ color.usage }}</div>
         </div>
       </div>
-    
-    <div class="color-swatch">
-      <div class="color-preview secondary-color">
-        <span class="color-name-preview">{{ designSystem.colorPalette.colors[1].name }}</span>
-      </div>
-      <div class="color-info">
-        <div class="color-name">{{ designSystem.colorPalette.colors[1].name }}</div>
-        <div class="color-hex">{{ designSystem.colorPalette.colors[1].hex }}</div>
-        <div class="color-usage">{{ designSystem.colorPalette.colors[1].usage }}</div>
-      </div>
+      {% endfor %}
     </div>
-    
-    <div class="color-swatch">
-      <div class="color-preview accent-color">
-        <span class="color-name-preview">{{ designSystem.colorPalette.colors[2].name }}</span>
-      </div>
-      <div class="color-info">
-        <div class="color-name">{{ designSystem.colorPalette.colors[2].name }}</div>
-        <div class="color-hex">{{ designSystem.colorPalette.colors[2].hex }}</div>
-        <div class="color-usage">{{ designSystem.colorPalette.colors[2].usage }}</div>
-      </div>
-    </div>
-    
-    <div class="color-swatch">
-      <div class="color-preview background-color">
-        <span class="color-name-preview">{{ designSystem.colorPalette.colors[3].name }}</span>
-      </div>
-      <div class="color-info">
-        <div class="color-name">{{ designSystem.colorPalette.colors[3].name }}</div>
-        <div class="color-hex">{{ designSystem.colorPalette.colors[3].hex }}</div>
-        <div class="color-usage">{{ designSystem.colorPalette.colors[3].usage }}</div>
-      </div>
-    </div>
-    
-    <div class="color-swatch">
-      <div class="color-preview card-color">
-        <span class="color-name-preview">{{ designSystem.colorPalette.colors[4].name }}</span>
-      </div>
-      <div class="color-info">
-        <div class="color-name">{{ designSystem.colorPalette.colors[4].name }}</div>
-        <div class="color-hex">{{ designSystem.colorPalette.colors[4].hex }}</div>
-        <div class="color-usage">{{ designSystem.colorPalette.colors[4].usage }}</div>
-      </div>
-    </div>
-  </div>
   </div>
   
   <div class="tab-content" id="typography-tab">
@@ -85,37 +43,42 @@
     <p>{{ designSystem.typography.description }}</p>
     
     <div class="typography-showcase">
-      <div class="font-family primary-font">
+      {% for font in designSystem.typography.fonts %}
+      <div class="font-family {% if loop.index == 1 %}primary-font{% elif loop.index == 2 %}code-font{% endif %}">
         <div class="font-header">
-          <div class="font-name">{{ designSystem.typography.fonts[0].name }}</div>
-          <div class="font-category">{{ designSystem.typography.fonts[0].category }}</div>
+          <div class="font-name">{{ font.name }}</div>
+          <div class="font-category">{{ font.category }}</div>
         </div>
         <div class="font-details">
-          <div class="font-weights">{{ designSystem.typography.fonts[0].weights }}</div>
-          <div class="font-usage">{{ designSystem.typography.fonts[0].usage }}</div>
+          <div class="font-weights">{{ font.weights }}</div>
+          <div class="font-usage">{{ font.usage }}</div>
         </div>
         <div class="font-sample">
-          <div class="sample-xl">Heading XL</div>
-          <div class="sample-large">Heading Large</div>
-          <div class="sample-medium">Heading Medium</div>
-          <div class="sample-body">This is body text that would appear in paragraphs throughout the application, providing clear and readable content for users.</div>
-          <div class="sample-small">This is smaller text used for secondary information and UI labels.</div>
-        </div>
-      </div>
-      
-      <div class="font-family code-font">
-        <div class="font-header">
-          <div class="font-name">{{ designSystem.typography.fonts[1].name }}</div>
-          <div class="font-category">{{ designSystem.typography.fonts[1].category }}</div>
-        </div>
-        <div class="font-details">
-          <div class="font-weights">{{ designSystem.typography.fonts[1].weights }}</div>
-          <div class="font-usage">{{ designSystem.typography.fonts[1].usage }}</div>
-        </div>
-        <div class="font-sample">
+          {% if loop.index == 1 %}
+          <div class="sample-xl">{{ designSystem.typography.fontSizes[0].name }}</div>
+          <div class="sample-large">{{ designSystem.typography.fontSizes[1].name }}</div>
+          <div class="sample-medium">{{ designSystem.typography.fontSizes[2].name }}</div>
+          <div class="sample-body">{{ designSystem.typography.fontSizes[3].name }}: {{ designSystem.typography.fontSizes[3].usage }}</div>
+          <div class="sample-small">{{ designSystem.typography.fontSizes[4].name }}: {{ designSystem.typography.fontSizes[4].usage }}</div>
+          {% elif loop.index == 2 %}
           <div class="sample-body">function calculateDamages(caseType, amount) {<br>  return caseType === 'liability' ? amount * 1.5 : amount;<br>}</div>
           <div class="sample-small">// Legal reference: §304.2-p</div>
+          {% endif %}
         </div>
+      </div>
+      {% endfor %}
+    </div>
+    
+    <div class="font-sizes">
+      <h4>Font Sizes</h4>
+      <div class="font-size-grid">
+        {% for fontSize in designSystem.typography.fontSizes %}
+        <div class="font-size-item">
+          <div class="font-size-name">{{ fontSize.name }}</div>
+          <div class="font-size-value">{{ fontSize.size }}</div>
+          <div class="font-size-usage">{{ fontSize.usage }}</div>
+        </div>
+        {% endfor %}
       </div>
     </div>
   </div>
@@ -125,177 +88,131 @@
     <p>{{ designSystem.components.description }}</p>
     
     <div class="component-library">
+      {% for category in designSystem.components.categories %}
       <div class="component-category">
-        <div class="category-name">{{ designSystem.components.categories[0].name }}</div>
+        <div class="category-name">{{ category.name }}</div>
         <div class="component-list">
-          <div class="component-tag">{{ designSystem.components.categories[0].components[0] }}</div>
-          <div class="component-tag">{{ designSystem.components.categories[0].components[1] }}</div>
-          <div class="component-tag">{{ designSystem.components.categories[0].components[2] }}</div>
-          <div class="component-tag">{{ designSystem.components.categories[0].components[3] }}</div>
+          {% for component in category.components %}
+          <div class="component-tag">{{ component }}</div>
+          {% endfor %}
         </div>
       </div>
-      
-      <div class="component-category">
-        <div class="category-name">{{ designSystem.components.categories[1].name }}</div>
-        <div class="component-list">
-          <div class="component-tag">{{ designSystem.components.categories[1].components[0] }}</div>
-          <div class="component-tag">{{ designSystem.components.categories[1].components[1] }}</div>
-          <div class="component-tag">{{ designSystem.components.categories[1].components[2] }}</div>
-          <div class="component-tag">{{ designSystem.components.categories[1].components[3] }}</div>
-        </div>
-      </div>
-      
-      <div class="component-category">
-        <div class="category-name">{{ designSystem.components.categories[2].name }}</div>
-        <div class="component-list">
-          <div class="component-tag">{{ designSystem.components.categories[2].components[0] }}</div>
-          <div class="component-tag">{{ designSystem.components.categories[2].components[1] }}</div>
-          <div class="component-tag">{{ designSystem.components.categories[2].components[2] }}</div>
-          <div class="component-tag">{{ designSystem.components.categories[2].components[3] }}</div>
-        </div>
-      </div>
-      
-      <div class="component-category">
-        <div class="category-name">{{ designSystem.components.categories[3].name }}</div>
-        <div class="component-list">
-          <div class="component-tag">{{ designSystem.components.categories[3].components[0] }}</div>
-          <div class="component-tag">{{ designSystem.components.categories[3].components[1] }}</div>
-          <div class="component-tag">{{ designSystem.components.categories[3].components[2] }}</div>
-          <div class="component-tag">{{ designSystem.components.categories[3].components[3] }}</div>
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
   
   <div class="tab-content" id="buttons-tab">
-    <h3>Buttons</h3>
-    <p>Interactive elements designed with clear hierarchy and visual feedback.</p>
+    <h3>{{ designSystem.buttons.title }}</h3>
+    <p>{{ designSystem.buttons.description }}</p>
     
     <div class="buttons-showcase">
       <div class="button-group">
-        <button class="jl-btn jl-btn-primary">Primary Button</button>
-        <button class="jl-btn jl-btn-secondary">Secondary Button</button>
-        <button class="jl-btn jl-btn-text">Text Button</button>
+        {% for type in designSystem.buttons.types %}
+        <button class="{{ type.class }}">{{ type.name }}</button>
+        {% endfor %}
       </div>
       
       <div class="button-states">
-        <button class="jl-btn jl-btn-primary">Default</button>
-        <button class="jl-btn jl-btn-primary jl-hover">Hover</button>
-        <button class="jl-btn jl-btn-primary jl-active">Active</button>
-        <button class="jl-btn jl-btn-primary jl-focus">Focus</button>
-        <button class="jl-btn jl-btn-primary" disabled>Disabled</button>
+        {% for state in designSystem.buttons.states %}
+        <button class="jl-btn jl-btn-primary {% if loop.index > 1 and loop.index < 5 %}jl-{{ state | lower }}{% endif %}" {% if loop.index == 5 %}disabled{% endif %}>{{ state }}</button>
+        {% endfor %}
       </div>
     </div>
   </div>
   
   <div class="tab-content" id="forms-tab">
-    <h3>Form Elements</h3>
-    <p>Consistent and accessible input components for data collection.</p>
+    <h3>{{ designSystem.forms.title }}</h3>
+    <p>{{ designSystem.forms.description }}</p>
     
     <div class="forms-showcase">
+      {% for element in designSystem.forms.elements %}
       <div class="form-group">
-        <label for="demo-input">Text Input</label>
+        {% if loop.index == 1 %}
+        <label for="demo-input">{{ element.name }}</label>
         <input type="text" id="demo-input" class="jl-input" placeholder="Enter text here">
-      </div>
-      
-      <div class="form-group">
-        <label for="demo-select">Select Menu</label>
+        {% elif loop.index == 2 %}
+        <label for="demo-select">{{ element.name }}</label>
         <select id="demo-select" class="jl-select">
           <option>Option 1</option>
           <option>Option 2</option>
           <option>Option 3</option>
         </select>
-      </div>
-      
-      <div class="form-group">
+        {% elif loop.index == 3 %}
         <label class="checkbox-label">
           <input type="checkbox" class="jl-checkbox">
-          <span>Checkbox Option</span>
+          <span>{{ element.name }} Option</span>
         </label>
+        {% endif %}
       </div>
+      {% endfor %}
     </div>
   </div>
   
   <div class="tab-content" id="cards-tab">
-    <h3>Cards</h3>
-    <p>Content containers with consistent spacing and elevation.</p>
+    <h3>{{ designSystem.cards.title }}</h3>
+    <p>{{ designSystem.cards.description }}</p>
     
     <div class="cards-showcase">
       <div class="jl-card">
         <div class="jl-card-header">
-          <h4>Case Summary</h4>
+          <h4>{{ designSystem.cards.samples[0].title }}</h4>
         </div>
         <div class="jl-card-body">
-          <p>This is a standard card with header and content area, commonly used to display grouped information.</p>
+          <p>{{ designSystem.cards.samples[0].content }}</p>
         </div>
         <div class="jl-card-footer">
-          <button class="jl-btn jl-btn-text">Action</button>
+          <button class="jl-btn jl-btn-text">{{ designSystem.cards.samples[0].action }}</button>
         </div>
       </div>
     </div>
   </div>
   
   <div class="tab-content" id="badges-tab">
-    <h3>Badges</h3>
-    <p>Visual indicators for status, categories, or notifications.</p>
+    <h3>{{ designSystem.badges.title }}</h3>
+    <p>{{ designSystem.badges.description }}</p>
     
     <div class="badges-showcase">
-      <span class="jl-badge jl-badge-primary">New</span>
-      <span class="jl-badge jl-badge-success">Completed</span>
-      <span class="jl-badge jl-badge-warning">Pending</span>
-      <span class="jl-badge jl-badge-error">Urgent</span>
-      <span class="jl-badge jl-badge-neutral">Draft</span>
+      {% for badge in designSystem.badges.types %}
+      <span class="{{ badge.class }}">{{ badge.label }}</span>
+      {% endfor %}
     </div>
   </div>
   
   <div class="tab-content" id="navigation-tab">
-    <h3>Navigation</h3>
-    <p>Consistent patterns for moving through the application.</p>
+    <h3>{{ designSystem.navigation.title }}</h3>
+    <p>{{ designSystem.navigation.description }}</p>
     
     <div class="navigation-showcase">
       <div class="jl-nav-sample">
         <div class="jl-tabs">
-          <button class="jl-tab active">Dashboard</button>
-          <button class="jl-tab">Cases</button>
-          <button class="jl-tab">Calendar</button>
-          <button class="jl-tab">Documents</button>
+          {% for tab in designSystem.navigation.tabs %}
+          <button class="jl-tab {% if loop.index == 1 %}active{% endif %}">{{ tab }}</button>
+          {% endfor %}
         </div>
       </div>
       
       <div class="jl-breadcrumbs">
-        <span>Cases</span>
+        {% for crumb in designSystem.navigation.breadcrumbs %}
+        <span>{{ crumb }}</span>
+        {% if not loop.last %}
         <span class="jl-breadcrumb-separator">›</span>
-        <span>Smith vs. Jones</span>
-        <span class="jl-breadcrumb-separator">›</span>
-        <span>Documents</span>
+        {% endif %}
+        {% endfor %}
       </div>
     </div>
   </div>
   
   <div class="tab-content" id="messages-tab">
-    <h3>Messages</h3>
-    <p>Feedback and communication components.</p>
+    <h3>{{ designSystem.messages.title }}</h3>
+    <p>{{ designSystem.messages.description }}</p>
     
     <div class="messages-showcase">
-      <div class="jl-alert jl-alert-info">
-        <div class="jl-alert-icon">i</div>
-        <div class="jl-alert-content">This is an informational message.</div>
+      {% for alert in designSystem.messages.alerts %}
+      <div class="jl-alert jl-alert-{{ alert.type }}">
+        <div class="jl-alert-icon">{{ alert.icon }}</div>
+        <div class="jl-alert-content">{{ alert.content }}</div>
       </div>
-      
-      <div class="jl-alert jl-alert-success">
-        <div class="jl-alert-icon">✓</div>
-        <div class="jl-alert-content">Your case has been successfully updated.</div>
-      </div>
-      
-      <div class="jl-alert jl-alert-warning">
-        <div class="jl-alert-icon">!</div>
-        <div class="jl-alert-content">Please review before proceeding.</div>
-      </div>
-      
-      <div class="jl-alert jl-alert-error">
-        <div class="jl-alert-icon">×</div>
-        <div class="jl-alert-content">There was a problem with your submission.</div>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </div>
