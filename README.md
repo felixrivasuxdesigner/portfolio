@@ -1,6 +1,12 @@
 # Portafolio Personal de Félix Rivas - UX/UI Designer
 
-Este proyecto es el sitio web de portafolio personal de Félix Rivas, diseñador UX/UI. El sitio se ha modernizado para utilizar tecnologías más actuales y eficientes, eliminando dependencias innecesarias como Bootstrap y jQuery.
+Este repositorio contiene mi sitio web personal de portafolio como diseñador UX/UI. Este es un proyecto **personal** que está público únicamente para aprovechar las capacidades de alojamiento de GitHub Pages, pero no está diseñado para recibir contribuciones externas.
+
+> **Nota**: La rama `main` está protegida y requiere pull requests para cualquier cambio, debido a que es un sitio web profesional en producción.
+
+## Sobre Este Portafolio
+
+Este sitio web ha sido completamente renovado desde su versión original para utilizar tecnologías modernas y eficientes, eliminando dependencias innecesarias como Bootstrap y jQuery.
 
 ## Tecnologías Utilizadas
 
@@ -10,37 +16,30 @@ Este proyecto es el sitio web de portafolio personal de Félix Rivas, diseñador
 - **Nunjucks** - Sistema de plantillas
 - **Multi-idioma** - Soporte completo para español e inglés
 
-## Características
+## Características Principales
 
+- Diseño totalmente responsivo y optimizado para todos los dispositivos
 - Sistema de grid personalizado basado en Flexbox
-- Diseño totalmente responsivo
 - Optimizado para rendimiento y SEO
 - Componentes modulares y reutilizables
 - Tamaño de archivos reducido al eliminar dependencias pesadas
 - Soporte para múltiples idiomas (español e inglés)
 - Páginas detalladas de estudios de caso para proyectos del portafolio
-- Compatibilidad con GitHub Pages
+- Compatible con GitHub Pages y optimizado para su despliegue automático
 
-## Requisitos
+## Desarrollo Local
+
+> **Nota**: Este repositorio no está diseñado para recibir contribuciones externas. Esta información es únicamente para mi referencia personal.
+
+### Requisitos
 
 - Node.js (v14.0.0 o superior)
 - npm (v6.0.0 o superior)
 
-## Instalación
+### Comandos Disponibles
 
 ```bash
-# Clonar el repositorio
-git clone https://github.com/felixrivas/portfolio.git
-cd portfolio
-
-# Instalar dependencias
-npm install
-```
-
-## Comandos Disponibles
-
-```bash
-# Desarrollo con live reload (sin prefijo /portfolio/)
+# Desarrollo con live reload
 npm run dev
 # o
 npm start
@@ -71,8 +70,7 @@ src/                  # Código fuente
     scss/             # Archivos Sass (estructura 7-1)
     js/               # JavaScript modular
     img/              # Imágenes
-    fonts/            # Fuentes
-  _data/              # Datos para plantillas
+  _data/              # Datos y traducciones para plantillas
   _includes/          # Componentes y layouts
   en/                 # Contenido en inglés
     case-studies/     # Estudios de caso en inglés
@@ -81,24 +79,36 @@ src/                  # Código fuente
 docs/                 # Carpeta de salida para GitHub Pages (generada)
 ```
 
-## Arquitectura CSS
+## Arquitectura del Proyecto
 
-Se ha implementado una arquitectura CSS basada en la metodología 7-1 con Sass:
+### Arquitectura CSS
+Implementé una arquitectura CSS basada en la metodología 7-1 con Sass:
 
-- **abstracts/** - Variables, mixins, funciones
-- **base/** - Estilos base, reset, tipografía
+- **abstracts/** - Variables, mixins y funciones
+- **base/** - Estilos base, reset y tipografía
 - **components/** - Componentes reutilizables
 - **layout/** - Estructuras principales
 - **pages/** - Estilos específicos por página
-- **themes/** - Temas (si aplica)
+- **themes/** - Configuración para modo claro/oscuro
 
-## Mejoras Implementadas
+### Arquitectura JavaScript
+Organización modular con responsabilidades separadas:
 
-- Eliminación de Bootstrap en favor de un sistema CSS personalizado
-- Reemplazo de jQuery por JavaScript moderno
-- Mejora de rendimiento y tiempos de carga
-- Sistema de componentes modular
-- Implementación de selector de idioma nativo
+- **modules/** - Módulos independientes con funcionalidad específica
+- **main.js** - Punto de entrada que importa los módulos necesarios
+- **service-worker.js** - Para funcionalidades offline y mejor rendimiento
+
+## Contacto
+
+Para contactar conmigo sobre este proyecto o cualquier oportunidad profesional:
+
+- **Email**: [hi@felixrivas.co](mailto:hi@felixrivas.co)
+- **Sitio Web**: [felixrivas.co](https://felixrivas.co)
+- **LinkedIn**: [Felix Rivas](https://www.linkedin.com/in/felixrivasuxdesigner/)
+
+---
+
+© 2025 Félix Rivas - Todos los derechos reservados
 - Mejora de accesibilidad
 - Conversión de modales a páginas dedicadas de estudios de caso
 - Configuración para despliegue en GitHub Pages
