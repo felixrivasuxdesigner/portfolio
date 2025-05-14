@@ -21,7 +21,7 @@
           <!-- Logo Start -->
           <a class="logo navbar-brand" href="{{ site.baseUrl }}{{ locale }}/">
             <div class="logo--img">
-              <img src="{{ site.baseUrl }}assets/img/logo.webp" class="img-responsive" alt="{{ translations[locale].header.logo_alt | default('Félix Rivas Logo') }}" />
+              <img fetchpriority="high" src="{{ site.baseUrl }}assets/img/logo.webp" class="img-responsive" alt="{{ translations[locale].header.logo_alt | default('Félix Rivas Logo') }}" />
             </div>
 
             <div class="logo--content">

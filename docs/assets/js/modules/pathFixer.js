@@ -4,8 +4,14 @@
  */
 
 export function fixPaths() {
-  // Solo ejecutar si estamos en GitHub Pages (felixrivasuxdesigner.github.io)
-  const isGithubPages = window.location.hostname.includes('github.io');
+  // Determinar si estamos en GitHub Pages o en desarrollo local
+  const isLocalhost = window.location.hostname === 'localhost' || 
+                      window.location.hostname === '127.0.0.1' ||
+                      window.location.hostname.includes('192.168.');
+  
+  // La variable isGithubPages ahora detecta cualquier entorno que no sea local
+  const isGithubPages = !isLocalhost;
+  
   if (isGithubPages) {
     const baseUrl = '/portfolio/';
     const fullDomain = 'https://felixrivasuxdesigner.github.io';
@@ -14,14 +20,18 @@ export function fixPaths() {
     function fixUrl(url) {
       if (!url) return url;
 
-      // Si ya tiene la estructura correcta con /portfolio/, no hacemos nada
-      if (url.includes('/portfolio/')) {
+      // Si es una URL de datos o absoluta con http, no hacemos nada
+      if (url.startsWith('data:') || url.startsWith('http://') || url.startsWith('https://')) {
+        // Excepto si es una URL que apunta a nuestro dominio sin /portfolio/
+        if (url.startsWith(fullDomain) && !url.includes('/portfolio/')) {
+          return url.replace(fullDomain, fullDomain + '/portfolio');
+        }
         return url;
       }
 
-      // Corregir URLs absolutas que apuntan al dominio pero sin /portfolio/
-      if (url.startsWith(fullDomain)) {
-        return url.replace(fullDomain, fullDomain + '/portfolio');
+      // Si ya tiene la estructura correcta con /portfolio/, no hacemos nada
+      if (url.includes('/portfolio/')) {
+        return url;
       }
 
       // Si la URL comienza con una barra, la reemplazamos con la base URL
@@ -29,8 +39,12 @@ export function fixPaths() {
         return baseUrl + url.substring(1);
       }
 
-      // URL relativa, añadir baseUrl
-      return baseUrl + url;
+      // URL relativa, añadir baseUrl si no comienza con baseUrl
+      if (!url.startsWith(baseUrl)) {
+        return baseUrl + url;
+      }
+
+      return url;
     }
     
     // Función para corregir srcset
@@ -56,14 +70,18 @@ export function fixPaths() {
         function fixUrl(url) {
           if (!url) return url;
           
-          // Si ya tiene la estructura correcta con /portfolio/, no hacemos nada
-          if (url.includes('/portfolio/')) {
+          // Si es una URL de datos o absoluta con http, no hacemos nada
+          if (url.startsWith('data:') || url.startsWith('http://') || url.startsWith('https://')) {
+            // Excepto si es una URL que apunta a nuestro dominio sin /portfolio/
+            if (url.startsWith(fullDomain) && !url.includes('/portfolio/')) {
+              return url.replace(fullDomain, fullDomain + '/portfolio');
+            }
             return url;
           }
           
-          // Corregir URLs absolutas que apuntan al dominio pero sin /portfolio/
-          if (url.startsWith(fullDomain)) {
-            return url.replace(fullDomain, fullDomain + '/portfolio');
+          // Si ya tiene la estructura correcta con /portfolio/, no hacemos nada
+          if (url.includes('/portfolio/')) {
+            return url;
           }
           
           // Si la URL comienza con una barra, la reemplazamos con la base URL
@@ -71,8 +89,12 @@ export function fixPaths() {
             return baseUrl + url.substring(1);
           }
           
-          // URL relativa, añadir baseUrl
-          return baseUrl + url;
+          // URL relativa, añadir baseUrl si no comienza con baseUrl
+          if (!url.startsWith(baseUrl)) {
+            return baseUrl + url;
+          }
+          
+          return url;
         }
 
         // Pre-interceptar solicitudes de imágenes
@@ -100,11 +122,14 @@ export function fixPaths() {
     const allImages = document.querySelectorAll('img');
     allImages.forEach((img) => {
       if (img.src) {
-        const newSrc = fixUrl(img.src);
-        if (img.src !== newSrc) {
-          console.log(`[URGENTE] Corrigiendo imagen: ${img.src} -> ${newSrc}`);
-          // Usar setAttribute para evitar que el navegador intente cargar la imagen antes
-          img.setAttribute('src', newSrc);
+        const originalSrc = img.getAttribute('src');
+        if (originalSrc && !originalSrc.startsWith('data:') && !originalSrc.startsWith('http')) {
+          const newSrc = fixUrl(originalSrc);
+          if (originalSrc !== newSrc) {
+            console.log(`[PathFixer] Corrigiendo imagen: ${originalSrc} -> ${newSrc}`);
+            // Usar setAttribute para evitar que el navegador intente cargar la imagen antes
+            img.setAttribute('src', newSrc);
+          }
         }
       }
     });
@@ -116,125 +141,68 @@ export function fixPaths() {
         const urlMatch = bgImage.match(/url\(['"]?([^'")]+)['"]?\)/i);
         if (urlMatch && urlMatch[1]) {
           const originalUrl = urlMatch[1];
-          const newUrl = fixUrl(originalUrl);
-          if (originalUrl !== newUrl) {
-            console.log(
-              `[URGENTE] Corrigiendo background: ${originalUrl} -> ${newUrl}`
-            );
-            el.style.backgroundImage = `url('${newUrl}')`;
+          if (!originalUrl.startsWith('data:') && !originalUrl.startsWith('http')) {
+            const newUrl = fixUrl(originalUrl);
+            if (originalUrl !== newUrl) {
+              console.log(`[PathFixer] Corrigiendo background: ${originalUrl} -> ${newUrl}`);
+              el.style.backgroundImage = `url('${newUrl}')`;
+            }
           }
         }
       }
     });
 
-    // Corregir errores de SVG inmediatamente
-    document.querySelectorAll('svg path').forEach((path) => {
-      const d = path.getAttribute('d');
-      if (d) {
-        try {
-          // El patrón común en errores es cuando hay números seguidos directamente por comandos SVG sin espacio
-          const fixedD = d
-            .replace(/(\d+[\.,]\d*|\d+)\s*C/g, '$1 C')
-            .replace(/(\d+[\.,]\d*|\d+)\s*c/g, '$1 c')
-            .replace(/(\d+[\.,]\d*|\d+)\s*M/g, '$1 M')
-            .replace(/(\d+[\.,]\d*|\d+)\s*m/g, '$1 m')
-            .replace(/(\d+[\.,]\d*|\d+)\s*L/g, '$1 L')
-            .replace(/(\d+[\.,]\d*|\d+)\s*l/g, '$1 l')
-            .replace(/(\d+[\.,]\d*|\d+)\s*H/g, '$1 H')
-            .replace(/(\d+[\.,]\d*|\d+)\s*h/g, '$1 h')
-            .replace(/(\d+[\.,]\d*|\d+)\s*V/g, '$1 V')
-            .replace(/(\d+[\.,]\d*|\d+)\s*v/g, '$1 v')
-            .replace(/(\d+[\.,]\d*|\d+)\s*S/g, '$1 S')
-            .replace(/(\d+[\.,]\d*|\d+)\s*s/g, '$1 s')
-            .replace(/(\d+[\.,]\d*|\d+)\s*Q/g, '$1 Q')
-            .replace(/(\d+[\.,]\d*|\d+)\s*q/g, '$1 q')
-            .replace(/(\d+[\.,]\d*|\d+)\s*T/g, '$1 T')
-            .replace(/(\d+[\.,]\d*|\d+)\s*t/g, '$1 t')
-            .replace(/(\d+[\.,]\d*|\d+)\s*A/g, '$1 A')
-            .replace(/(\d+[\.,]\d*|\d+)\s*a/g, '$1 a');
-
-          if (d !== fixedD) {
-            console.log('[URGENTE] Corrigiendo SVG path');
-            path.setAttribute('d', fixedD);
-          }
-        } catch (e) {
-          console.warn('Error al corregir SVG:', e);
-        }
-      }
-    });
-
-    // Agregar correcciones adicionales cuando el DOM esté listo
-    document.addEventListener('DOMContentLoaded', () => {
-      // Corregir imágenes precargadas
-      const preloadedImages = document.querySelectorAll(
-        'img:not([src^="http"]):not([src^="data:"]), source:not([srcset^="http"]):not([srcset^="data:"])'
-      );
-
-      preloadedImages.forEach((img) => {
-        // Corregir srcset
-        if (img.srcset) {
-          const newSrcset = fixSrcSet(img.srcset);
-          if (img.srcset !== newSrcset) {
-            console.log(`Pre-corrección de srcset: ${img.srcset} -> ${newSrcset}`);
-            img.srcset = newSrcset;
-          }
-        }
-
-        // Corregir src
-        if (img.src && !img.src.startsWith('data:') && !img.src.startsWith('http')) {
-          const originalSrc = img.getAttribute('src');
-          const newSrc = fixUrl(originalSrc);
-          if (originalSrc !== newSrc) {
-            console.log(`Pre-corrección de imagen: ${originalSrc} -> ${newSrc}`);
-            img.src = newSrc;
-          }
-        }
-      });
-
-      // Verificación de background-images que no se corrigieron
-      document.querySelectorAll('[data-bg], [data-parallax-bg-img], [style*="background-image"]').forEach((el) => {
-        // Corregir data-bg
-        if (el.hasAttribute('data-bg')) {
-          const bgUrl = el.getAttribute('data-bg');
-          if (bgUrl && !bgUrl.startsWith('http') && !bgUrl.startsWith(baseUrl)) {
-            const newBgUrl = fixUrl(bgUrl);
+    // Corregir rutas en atributos data-*
+    document.querySelectorAll('[data-bg], [data-parallax-bg-img]').forEach((el) => {
+      // Corregir data-bg
+      if (el.hasAttribute('data-bg')) {
+        const bgUrl = el.getAttribute('data-bg');
+        if (bgUrl && !bgUrl.startsWith('data:') && !bgUrl.startsWith('http')) {
+          const newBgUrl = fixUrl(bgUrl);
+          if (bgUrl !== newBgUrl) {
+            console.log(`[PathFixer] Corrigiendo data-bg: ${bgUrl} -> ${newBgUrl}`);
             el.setAttribute('data-bg', newBgUrl);
-            console.log(`Corrigiendo data-bg: ${bgUrl} -> ${newBgUrl}`);
           }
         }
+      }
 
-        // Corregir data-parallax-bg-img
-        if (el.hasAttribute('data-parallax-bg-img')) {
-          const bgUrl = el.getAttribute('data-parallax-bg-img');
-          if (bgUrl && !bgUrl.startsWith('http') && !bgUrl.startsWith(baseUrl)) {
-            const newBgUrl = fixUrl(bgUrl);
+      // Corregir data-parallax-bg-img
+      if (el.hasAttribute('data-parallax-bg-img')) {
+        const bgUrl = el.getAttribute('data-parallax-bg-img');
+        if (bgUrl && !bgUrl.startsWith('data:') && !bgUrl.startsWith('http')) {
+          const newBgUrl = fixUrl(bgUrl);
+          if (bgUrl !== newBgUrl) {
+            console.log(`[PathFixer] Corrigiendo parallax bg: ${bgUrl} -> ${newBgUrl}`);
             el.setAttribute('data-parallax-bg-img', newBgUrl);
-            console.log(`Corrigiendo parallax bg: ${bgUrl} -> ${newBgUrl}`);
           }
         }
-      });
+      }
     });
 
     // Esperar a que la página se cargue completamente
     window.addEventListener('load', () => {
       // Corrección final de todas las imágenes
       document.querySelectorAll('img').forEach((img) => {
-        if (img.src && !img.src.startsWith('data:')) {
+        if (img.src) {
           const originalSrc = img.getAttribute('src');
-          const newSrc = fixUrl(originalSrc);
-          if (originalSrc !== newSrc) {
-            console.log(`Corrección final de imagen: ${originalSrc} -> ${newSrc}`);
-            img.src = newSrc;
+          if (originalSrc && !originalSrc.startsWith('data:') && !originalSrc.startsWith('http')) {
+            const newSrc = fixUrl(originalSrc);
+            if (originalSrc !== newSrc) {
+              console.log(`[PathFixer] Corrección final de imagen: ${originalSrc} -> ${newSrc}`);
+              img.src = newSrc;
+            }
           }
         }
         
         // También verificar srcset
         if (img.srcset) {
           const originalSrcset = img.getAttribute('srcset');
-          const newSrcset = fixSrcSet(originalSrcset);
-          if (originalSrcset !== newSrcset) {
-            console.log(`Corrección final de srcset: ${originalSrcset} -> ${newSrcset}`);
-            img.srcset = newSrcset;
+          if (originalSrcset && !originalSrcset.startsWith('data:') && !originalSrcset.startsWith('http')) {
+            const newSrcset = fixSrcSet(originalSrcset);
+            if (originalSrcset !== newSrcset) {
+              console.log(`[PathFixer] Corrección final de srcset: ${originalSrcset} -> ${newSrcset}`);
+              img.srcset = newSrcset;
+            }
           }
         }
       });
@@ -243,10 +211,12 @@ export function fixPaths() {
       document.querySelectorAll('source').forEach((source) => {
         if (source.srcset) {
           const originalSrcset = source.getAttribute('srcset');
-          const newSrcset = fixSrcSet(originalSrcset);
-          if (originalSrcset !== newSrcset) {
-            console.log(`Corrigiendo ruta de source: ${originalSrcset} -> ${newSrcset}`);
-            source.srcset = newSrcset;
+          if (originalSrcset && !originalSrcset.startsWith('data:') && !originalSrcset.startsWith('http')) {
+            const newSrcset = fixSrcSet(originalSrcset);
+            if (originalSrcset !== newSrcset) {
+              console.log(`[PathFixer] Corrigiendo ruta de source: ${originalSrcset} -> ${newSrcset}`);
+              source.srcset = newSrcset;
+            }
           }
         }
       });
@@ -255,11 +225,20 @@ export function fixPaths() {
       const images = document.querySelectorAll('img');
       images.forEach((img) => {
         if (img.complete && img.naturalWidth === 0) {
-          console.warn('Imagen no cargada después de corrección:', img.src);
+          console.warn('[PathFixer] Imagen no cargada después de corrección:', img.src);
+          
+          // Intento final de corrección para imágenes que no se cargaron
+          if (!img.src.includes('/portfolio/') && !img.src.startsWith('data:') && !img.src.startsWith('http')) {
+            const correctedSrc = '/portfolio/' + img.src.replace(/^\//, '');
+            console.log(`[PathFixer] Intento final de corrección: ${img.src} -> ${correctedSrc}`);
+            img.src = correctedSrc;
+          }
         }
       });
 
-      console.log('Path Fixer ejecutado completamente');
+      console.log('[PathFixer] ejecutado completamente');
     });
+  } else {
+    console.log('[PathFixer] No se ejecuta en entorno local');
   }
 }

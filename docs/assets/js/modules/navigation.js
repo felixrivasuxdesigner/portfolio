@@ -62,7 +62,10 @@ export function initNavigation() {
           const linkPath = href.split('#')[0];
           
           // Si estamos en la misma página, entonces hacemos scroll suave
-          if (currentPath === linkPath || linkPath === '/') {
+          if (currentPath === linkPath || linkPath === '/' || 
+              // Para manejar casos específicos en producción con /portfolio/
+              (currentPath.includes('/portfolio/') && linkPath.includes('/portfolio/') && 
+               currentPath.replace('/portfolio/', '/') === linkPath.replace('/portfolio/', '/'))) {
             event.preventDefault();
             
             const hash = href.split('#')[1];

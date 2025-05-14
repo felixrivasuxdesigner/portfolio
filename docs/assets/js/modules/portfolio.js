@@ -105,7 +105,7 @@ function initProjectModals() {
           .querySelector('h2').textContent || '',
       categories: getTranslation('portfolio.projects.wallet.categories'),
       imageSrc: getFixedImagePath(
-        '/assets/img/gallery-img/belcorp/cover-belcorp.webp'
+        '/assets/img/gallery-img/wallet/cover-wallet.webp'
       ),
       description: getTranslation('portfolio.projects.wallet.description'),
     },
@@ -117,7 +117,7 @@ function initProjectModals() {
           .querySelector('h2').textContent || '',
       categories: getTranslation('portfolio.projects.factoring.categories'),
       imageSrc: getFixedImagePath(
-        '/assets/img/gallery-img/security/cover-factoring.webp'
+        '/assets/img/gallery-img/factoring/cover-factoring.webp'
       ),
       description: getTranslation('portfolio.projects.factoring.description'),
     },
@@ -198,10 +198,10 @@ function initProjectModals() {
         projectImage.src = getFixedImagePath('/assets/img/gallery-img/nomadix/Nomadix.webp');
       } else if (projectKey === 'wallet') {
         // Reemplazar la imagen del modal con la versión detallada
-        projectImage.src = getFixedImagePath('/assets/img/gallery-img/belcorp/Belcorp.webp');
+        projectImage.src = getFixedImagePath('/assets/img/gallery-img/wallet/wallet.webp');
       } else if (projectKey === 'factoring') {
         // Reemplazar la imagen del modal con la versión detallada
-        projectImage.src = getFixedImagePath('/assets/img/gallery-img/security/factoring.webp');
+        projectImage.src = getFixedImagePath('/assets/img/gallery-img/factoring/factoring.webp');
       }
 
       modal.querySelector('.project-description').textContent =

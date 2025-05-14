@@ -26,7 +26,14 @@ function initCaseStudyNavigation() {
                             window.location.hostname === '127.0.0.1' ||
                             window.location.hostname.includes('192.168.');
           
-          if (isLocalhost) {
+          // Obtener la URL actual y la URL del enlace para comparar
+          const currentUrl = window.location.pathname;
+          const linkUrl = link.getAttribute('href').split('#')[0];
+          
+          // Si estamos en desarrollo o si las URLs coinciden (estamos en la misma página)
+          if (isLocalhost || currentUrl === linkUrl || 
+              (currentUrl.includes('/portfolio/') && linkUrl.includes('/portfolio/') && 
+               currentUrl.replace('/portfolio/', '/') === linkUrl.replace('/portfolio/', '/'))) {
             event.preventDefault();
             const href = link.getAttribute('href');
             const baseUrl = href.split('#')[0];
