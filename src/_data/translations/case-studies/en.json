@@ -306,6 +306,10 @@
           "title": "Challenge",
           "content": "The client needed a website that would stand out in the crowded travel market, effectively showcase diverse adventure offerings, and provide a seamless booking experience for users with varying levels of tech savvy."
         },
+        "designSystem": {
+          "title": "Design System",
+          "intro": "The design system for Nomadix Adventure is built around the concept of 'Inspiring Adventure', creating a visual language that excites and motivates users to explore the outdoors."
+        },
         "solution": {
           "title": "Solution",
           "content": "We designed a visually stunning website with these key features:",

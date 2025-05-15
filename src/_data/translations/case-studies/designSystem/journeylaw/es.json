@@ -1,0 +1,216 @@
+{
+  "title": "Sistema de Diseño",
+  "intro": "El sistema de diseño implementa una filosofía de \"Profesionalismo Cálido\" que transmite confianza y sofisticación mientras mantiene calidez y accesibilidad.",
+  "colorPalette": {
+    "title": "Paleta de Colores",
+    "description": "El sistema de colores fue cuidadosamente elaborado para equilibrar el profesionalismo con la calidez, creando un entorno que se siente confiable y accesible a la vez.",
+    "colors": [
+      {
+        "name": "Marrón Profundo",
+        "hex": "#2C1B0C",
+        "usage": "Color primario para encabezados, texto importante y representación de marca"
+      },
+      {
+        "name": "Topo Cálido",
+        "hex": "#C5B4A3",
+        "usage": "Color secundario para fondos, tarjetas y contenedores"
+      },
+      {
+        "name": "Dorado Apagado",
+        "hex": "#8C765C",
+        "usage": "Color de acento para elementos interactivos, destacados y botones de llamada a la acción"
+      },
+      {
+        "name": "Beige Cálido",
+        "hex": "#EFE9DC",
+        "usage": "Color de fondo que proporciona calidez manteniendo la legibilidad"
+      },
+      {
+        "name": "Blanco Roto",
+        "hex": "#F7F2EA",
+        "usage": "Color de fondo para áreas de contenido y modales"
+      }
+    ]
+  },
+  "typography": {
+    "title": "Sistema Tipográfico",
+    "description": "Un sistema tipográfico que prioriza la legibilidad y jerarquía, permitiendo a los usuarios escanear y comprender información legal compleja de manera efectiva.",
+    "fonts": [
+      {
+        "name": "Inter",
+        "category": "Encabezados y Texto Principal",
+        "weights": "400 (Regular), 500 (Medium), 600 (Semibold), 700 (Bold)",
+        "usage": "Fuente principal para todo el texto de la interfaz, proporcionando excelente legibilidad en todos los tamaños"
+      },
+      {
+        "name": "JetBrains Mono",
+        "category": "Código y Referencias Legales",
+        "weights": "400 (Regular)",
+        "usage": "Fuente monoespaciada para bloques de código, citas legales y números de referencia"
+      }
+    ],
+    "fontSizes": [
+      {
+        "name": "Encabezado XL",
+        "size": "30px/36px",
+        "usage": "Encabezados principales de sección y títulos de página"
+      },
+      {
+        "name": "Encabezado Grande",
+        "size": "24px/32px",
+        "usage": "Títulos de sección y encabezados de modal"
+      },
+      {
+        "name": "Encabezado Medio",
+        "size": "18px/24px",
+        "usage": "Títulos de tarjeta y grupos de contenido"
+      },
+      {
+        "name": "Texto Principal",
+        "size": "16px/24px",
+        "usage": "Texto de contenido primario"
+      },
+      {
+        "name": "Texto Pequeño",
+        "size": "14px/20px",
+        "usage": "Información secundaria, etiquetas y leyendas"
+      },
+      {
+        "name": "Extra Pequeño",
+        "size": "12px/16px",
+        "usage": "Letra pequeña y descargos de responsabilidad legales"
+      }
+    ]
+  },
+  "components": {
+    "title": "Componentes Base",
+    "description": "Un sistema de componentes modulares y reutilizables que se combinan para crear interfaces consistentes en toda la plataforma.",
+    "categories": [
+      {
+        "name": "Navegación",
+        "components": ["Barra de navegación global", "Menús laterales", "Breadcrumbs", "Sistemas de pestañas"]
+      },
+      {
+        "name": "Controles de Entrada",
+        "components": ["Campos de texto", "Selectores desplegables", "Selectores de fecha", "Interruptores", "Cargadores de documentos legales"]
+      },
+      {
+        "name": "Visualización de Información",
+        "components": ["Tarjetas de caso", "Visualizaciones de línea de tiempo", "Tablas de datos", "Indicadores de progreso", "Paneles de notificación"]
+      },
+      {
+        "name": "Acciones",
+        "components": ["Botones primarios", "Botones secundarios", "Botones de icono", "Menús de acción", "Diálogos de confirmación"]
+      }
+    ]
+  },
+  "buttons": {
+    "title": "Botones",
+    "description": "Elementos interactivos diseñados con jerarquía clara y retroalimentación visual.",
+    "types": [
+      {
+        "name": "Botón Primario",
+        "class": "jl-btn jl-btn-primary",
+        "usage": "Llamadas a la acción principales y acciones de envío"
+      },
+      {
+        "name": "Botón Secundario",
+        "class": "jl-btn jl-btn-secondary",
+        "usage": "Acciones secundarias y alternativas a acciones primarias"
+      },
+      {
+        "name": "Botón de Texto",
+        "class": "jl-btn jl-btn-text",
+        "usage": "Acciones terciarias y controles de interfaz sutiles"
+      }
+    ],
+    "states": ["Predeterminado", "Hover", "Activo", "Enfoque", "Desactivado"]
+  },
+  "forms": {
+    "title": "Elementos de Formulario",
+    "description": "Componentes de entrada consistentes y accesibles para la recolección de datos.",
+    "elements": [
+      {
+        "name": "Campo de Texto",
+        "usage": "Entrada de texto de una sola línea para recopilación estándar de datos"
+      },
+      {
+        "name": "Menú Desplegable",
+        "usage": "Selección de opciones de listas predefinidas"
+      },
+      {
+        "name": "Casilla de Verificación",
+        "usage": "Selección de múltiples opciones e interruptores"
+      }
+    ]
+  },
+  "cards": {
+    "title": "Tarjetas",
+    "description": "Contenedores de contenido con espaciado y elevación consistentes.",
+    "samples": [
+      {
+        "title": "Resumen del Caso",
+        "content": "Esta es una tarjeta estándar con área de encabezado y contenido, comúnmente utilizada para mostrar información agrupada.",
+        "action": "Acción"
+      }
+    ]
+  },
+  "badges": {
+    "title": "Insignias",
+    "description": "Indicadores visuales para estado, categorías o notificaciones.",
+    "types": [
+      {
+        "label": "Nuevo",
+        "class": "jl-badge jl-badge-primary"
+      },
+      {
+        "label": "Completado",
+        "class": "jl-badge jl-badge-success"
+      },
+      {
+        "label": "Pendiente",
+        "class": "jl-badge jl-badge-warning"
+      },
+      {
+        "label": "Urgente",
+        "class": "jl-badge jl-badge-error"
+      },
+      {
+        "label": "Borrador",
+        "class": "jl-badge jl-badge-neutral"
+      }
+    ]
+  },
+  "navigation": {
+    "title": "Navegación",
+    "description": "Patrones consistentes para moverse a través de la aplicación.",
+    "tabs": ["Panel", "Casos", "Calendario", "Documentos"],
+    "breadcrumbs": ["Casos", "Smith vs. Jones", "Documentos"]
+  },
+  "messages": {
+    "title": "Mensajes",
+    "description": "Componentes de retroalimentación y comunicación.",
+    "alerts": [
+      {
+        "type": "info",
+        "icon": "i",
+        "content": "Este es un mensaje informativo."
+      },
+      {
+        "type": "success",
+        "icon": "✓",
+        "content": "Tu caso ha sido actualizado con éxito."
+      },
+      {
+        "type": "warning",
+        "icon": "!",
+        "content": "Por favor revisa antes de continuar."
+      },
+      {
+        "type": "error",
+        "icon": "×",
+        "content": "Hubo un problema con tu envío."
+      }
+    ]
+  }
+}
