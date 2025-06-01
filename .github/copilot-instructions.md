@@ -46,3 +46,16 @@ Este es un portfolio personal para Felix Rivas, un diseñador UX/UI. El sitio we
 - Mantener el SEO optimizado
 - Asegurar que los enlaces internos respeten la estructura de idiomas
 - Los estudios de caso deben seguir un formato consistente
+
+## Flujo de Trabajo Git
+- Utilizar GitFlow como metodología de control de versiones
+- Mantener las siguientes ramas principales:
+  - `main`: Versión de producción estable
+  - `development`: Rama de integración para nuevas características
+- Para nuevas características:
+  1. Crear rama `feature/nombre-caracteristica` desde `development`
+  2. Desarrollar y probar la característica en esta rama
+  3. Hacer merge a `development` cuando esté completa
+  4. Hacer merge a `main` después de verificar estabilidad en `development`
+- Seguir este flujo asegura que `development` siempre esté actualizada con todas las características más recientes
+- Usar mensajes de commit descriptivos en español que expliquen claramente los cambios realizados
