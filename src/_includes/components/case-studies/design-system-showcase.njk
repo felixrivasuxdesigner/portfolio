@@ -108,13 +108,13 @@
     <div class="buttons-showcase">
       <div class="button-group">
         {% for type in designSystem.buttons.types %}
-        <button class="{{ type.class }}">{{ type.name }}</button>
+        <button class="{% if projectKey == 'nomadix' %}nomadix-btn nomadix-btn-{{ type.class and (type.class | replace('jl-btn ', '') | replace('jl-btn-', '') | trim) or 'primary' }}{% else %}{{ type.class or 'jl-btn jl-btn-primary' }}{% endif %}">{{ type.name }}</button>
         {% endfor %}
       </div>
       
       <div class="button-states">
         {% for state in designSystem.buttons.states %}
-        <button class="jl-btn jl-btn-primary {% if loop.index > 1 and loop.index < 5 %}jl-{{ state | lower }}{% endif %}" {% if loop.index == 5 %}disabled{% endif %}>{{ state }}</button>
+        <button class="{% if projectKey == 'journeylaw' %}jl-btn jl-btn-primary{% elif projectKey == 'nomadix' %}nomadix-btn nomadix-btn-primary{% endif %} {% if loop.index > 1 and loop.index < 5 %}{% if projectKey == 'journeylaw' %}jl-{% elif projectKey == 'nomadix' %}nomadix-{% endif %}{{ state | lower }}{% endif %}" {% if loop.index == 5 %}disabled{% endif %}>{{ state }}</button>
         {% endfor %}
       </div>
     </div>
@@ -129,17 +129,17 @@
       <div class="form-group">
         {% if loop.index == 1 %}
         <label for="demo-input">{{ element.name }}</label>
-        <input type="text" id="demo-input" class="jl-input" placeholder="Enter text here">
+        <input type="text" id="demo-input" class="{% if projectKey == 'journeylaw' %}jl-input{% elif projectKey == 'nomadix' %}nomadix-input{% endif %}" placeholder="Enter text here">
         {% elif loop.index == 2 %}
         <label for="demo-select">{{ element.name }}</label>
-        <select id="demo-select" class="jl-select">
+        <select id="demo-select" class="{% if projectKey == 'journeylaw' %}jl-select{% elif projectKey == 'nomadix' %}nomadix-select{% endif %}">
           <option>Option 1</option>
           <option>Option 2</option>
           <option>Option 3</option>
         </select>
         {% elif loop.index == 3 %}
         <label class="checkbox-label">
-          <input type="checkbox" class="jl-checkbox">
+          <input type="checkbox" class="{% if projectKey == 'journeylaw' %}jl-checkbox{% elif projectKey == 'nomadix' %}nomadix-checkbox{% endif %}">
           <span>{{ element.name }} Option</span>
         </label>
         {% endif %}
@@ -153,15 +153,15 @@
     <p>{{ designSystem.cards.description }}</p>
     
     <div class="cards-showcase">
-      <div class="jl-card">
-        <div class="jl-card-header">
+      <div class="{% if projectKey == 'journeylaw' %}jl-card{% elif projectKey == 'nomadix' %}nomadix-card{% endif %}">
+        <div class="{% if projectKey == 'journeylaw' %}jl-card-header{% elif projectKey == 'nomadix' %}nomadix-card-header{% endif %}">
           <h4>{{ designSystem.cards.samples[0].title }}</h4>
         </div>
-        <div class="jl-card-body">
+        <div class="{% if projectKey == 'journeylaw' %}jl-card-body{% elif projectKey == 'nomadix' %}nomadix-card-body{% endif %}">
           <p>{{ designSystem.cards.samples[0].content }}</p>
         </div>
-        <div class="jl-card-footer">
-          <button class="jl-btn jl-btn-text">{{ designSystem.cards.samples[0].action }}</button>
+        <div class="{% if projectKey == 'journeylaw' %}jl-card-footer{% elif projectKey == 'nomadix' %}nomadix-card-footer{% endif %}">
+          <button class="{% if projectKey == 'journeylaw' %}jl-btn jl-btn-text{% elif projectKey == 'nomadix' %}nomadix-btn nomadix-btn-text{% endif %}">{{ designSystem.cards.samples[0].action }}</button>
         </div>
       </div>
     </div>
@@ -173,7 +173,7 @@
     
     <div class="badges-showcase">
       {% for badge in designSystem.badges.types %}
-      <span class="{{ badge.class }}">{{ badge.label }}</span>
+      <span class="{% if projectKey == 'nomadix' %}{% if badge.class %}{{ badge.class | replace('jl-badge', 'nomadix-badge') | replace('jl-badge-', 'nomadix-badge-') }}{% else %}nomadix-badge nomadix-badge-primary{% endif %}{% else %}{{ badge.class or 'jl-badge jl-badge-primary' }}{% endif %}">{{ badge.label }}</span>
       {% endfor %}
     </div>
   </div>
@@ -183,19 +183,19 @@
     <p>{{ designSystem.navigation.description }}</p>
     
     <div class="navigation-showcase">
-      <div class="jl-nav-sample">
-        <div class="jl-tabs">
+      <div class="{% if projectKey == 'journeylaw' %}jl-nav-sample{% elif projectKey == 'nomadix' %}nomadix-nav-sample{% endif %}">
+        <div class="{% if projectKey == 'journeylaw' %}jl-tabs{% elif projectKey == 'nomadix' %}nomadix-tabs{% endif %}">
           {% for tab in designSystem.navigation.tabs %}
-          <button class="jl-tab {% if loop.index == 1 %}active{% endif %}">{{ tab }}</button>
+          <button class="{% if projectKey == 'journeylaw' %}jl-tab{% elif projectKey == 'nomadix' %}nomadix-tab{% endif %} {% if loop.index == 1 %}active{% endif %}">{{ tab }}</button>
           {% endfor %}
         </div>
       </div>
       
-      <div class="jl-breadcrumbs">
+      <div class="{% if projectKey == 'journeylaw' %}jl-breadcrumbs{% elif projectKey == 'nomadix' %}nomadix-breadcrumbs{% endif %}">
         {% for crumb in designSystem.navigation.breadcrumbs %}
         <span>{{ crumb }}</span>
         {% if not loop.last %}
-        <span class="jl-breadcrumb-separator">›</span>
+        <span class="{% if projectKey == 'journeylaw' %}jl-breadcrumb-separator{% elif projectKey == 'nomadix' %}nomadix-breadcrumb-separator{% endif %}">›</span>
         {% endif %}
         {% endfor %}
       </div>
@@ -208,9 +208,9 @@
     
     <div class="messages-showcase">
       {% for alert in designSystem.messages.alerts %}
-      <div class="jl-alert jl-alert-{{ alert.type }}">
-        <div class="jl-alert-icon">{{ alert.icon }}</div>
-        <div class="jl-alert-content">{{ alert.content }}</div>
+      <div class="{% if projectKey == 'journeylaw' %}jl-alert jl-alert-{{ alert.type }}{% elif projectKey == 'nomadix' %}nomadix-alert nomadix-alert-{{ alert.type }}{% endif %}">
+        <div class="{% if projectKey == 'journeylaw' %}jl-alert-icon{% elif projectKey == 'nomadix' %}nomadix-alert-icon{% endif %}">{{ alert.icon }}</div>
+        <div class="{% if projectKey == 'journeylaw' %}jl-alert-content{% elif projectKey == 'nomadix' %}nomadix-alert-content{% endif %}">{{ alert.content }}</div>
       </div>
       {% endfor %}
     </div>

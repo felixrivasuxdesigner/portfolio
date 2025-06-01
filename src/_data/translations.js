@@ -6,6 +6,12 @@ module.exports = {
     },
     designSystem: {
       ...require('./translations/case-studies/designSystem/es.json')
+    },
+    designSystemNomadix: {
+      ...require('./translations/case-studies/designSystem/nomadix/es.json')
+    },
+    designSystemJourneyLaw: {
+      ...require('./translations/case-studies/designSystem/journeylaw/es.json')
     }
   },
   en: {
@@ -15,6 +21,12 @@ module.exports = {
     },
     designSystem: {
       ...require('./translations/case-studies/designSystem/en.json')
+    },
+    designSystemNomadix: {
+      ...require('./translations/case-studies/designSystem/nomadix/en.json')
+    },
+    designSystemJourneyLaw: {
+      ...require('./translations/case-studies/designSystem/journeylaw/en.json')
     }
   }
 };

@@ -12,7 +12,7 @@ isCaseStudy: true
 {% include "components/case-studies/case-study-breadcrumb.njk" %}
 
 <!-- Case Study Content Start -->
-<div class="case-study">
+<div class="case-study {{ projectKey }}">
   <div class="container">
     <!-- No necesitamos el título aquí porque ya está en el banner
     <div class="case-study-header">
@@ -41,7 +41,13 @@ isCaseStudy: true
 
       <!-- Design System Section (if available) -->
       {% if translations[locale].case_studies.projects[projectKey].sections.designSystem %}
-        {% set designSystem = translations[locale].designSystem %}
+        {% if projectKey == "journeylaw" %}
+          {% set designSystem = translations[locale].designSystemJourneyLaw %}
+        {% elif projectKey == "nomadix" %}
+          {% set designSystem = translations[locale].designSystemNomadix %}
+        {% else %}
+          {% set designSystem = translations[locale].designSystem %}
+        {% endif %}
         {% include "components/case-studies/design-system-showcase.njk" %}
       {% endif %}
 

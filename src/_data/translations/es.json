@@ -15,7 +15,7 @@
   },
   "banner": {
     "title": "Creemos <span class=\"thick\">Experiencias</span> <span class=\"thick\">Excepcionales</span> Juntos",
-    "description": "Soy <strong>Líder en Diseño UX/UI</strong> con raíces en diseño gráfico, transformando espacios digitales desde <strong>Santiago de Chile, LATAM</strong>.",
+    "description": "Soy <strong>Líder en Diseño UX/UI</strong> con raíces en diseño gráfico, <br/>transformando desafíos complejos en espacios digitales intuitivos <br/>desde <strong>Santiago de Chile, LATAM</strong>.",
     "button": "Conectemos"
   },
   "about": {
@@ -264,7 +264,158 @@
     }
   },
   "case_study": {
-    "back_to_portfolio": "Volver al Inicio"
+    "back_to_portfolio": "Volver al Portafolio"
+  },
+  "case_studies": {
+    "nomadix": {
+      "title": "Transformación digital: Nomadix Adventure Ocean to Ocean",
+      "challenge": {
+        "title": "El desafío",
+        "description": "Nomadix Adventure buscaba una presencia digital que capturara la esencia de su evento insignia 'Ocean to Ocean' - una travesía en bicicleta a través de Baja California. Necesitaban un sitio que no solo informara, sino que inspirara a los aventureros a unirse a este viaje transformador.",
+        "quote": "Queríamos un sitio que hiciera latir el corazón de los ciclistas tan rápido como cuando están en la cima de una montaña."
+      },
+      "approach": {
+        "title": "Mi acercamiento",
+        "discovery": {
+          "title": "Descubrimiento e inspiración",
+          "description": "Comencé sumergiéndome en el mundo del ciclismo de aventura, entendiendo las motivaciones emocionales detrás de quienes se desafían a sí mismos en terrenos desconocidos."
+        },
+        "experience": {
+          "title": "Definición de experiencia",
+          "description": "Creé una arquitectura de información que guía al visitante en un viaje digital que refleja la travesía física:",
+          "sections": [
+            {"name": "Página inicial", "description": "Una invitación irresistible a la aventura"},
+            {"name": "Quiénes somos", "description": "La historia y valores que dan vida al evento"},
+            {"name": "Evento", "description": "Detalles prácticos presentados de forma inspiradora"},
+            {"name": "Bases", "description": "Información crucial presentada con claridad y emoción"},
+            {"name": "Travel", "description": "Contenido que despierta el espíritu nómada"},
+            {"name": "Recursos", "description": "Herramientas útiles para participantes"},
+            {"name": "Contacto", "description": "Un puente personal entre la organización y los aventureros"}
+          ]
+        }
+      },
+      "design_system": {
+        "title": "Sistema de diseño",
+        "color_palette": {
+          "title": "Paleta cromática con propósito",
+          "description": "Desarrollé un sistema de colores que combina:",
+          "colors": [
+            {"name": "Negro profundo y grises", "description": "Base elegante que permite que las imágenes destaquen"},
+            {"name": "Naranja vibrante (#F26B24)", "description": "Color de acción e identidad que evoca energía y aventura"},
+            {"name": "Azules complementarios", "description": "Conexión con la naturaleza y los océanos"},
+            {"name": "Colores semánticos", "description": "Señales intuitivas que guían al usuario", "details": [
+              {"name": "Éxito", "value": "#30D158"},
+              {"name": "Información", "value": "#0A84FF"},
+              {"name": "Peligro", "value": "#FF453A"},
+              {"name": "Advertencia", "value": "#FF9F0A"}
+            ]}
+          ]
+        },
+        "photography": {
+          "title": "Fotografía impactante",
+          "description": "Prioricé imágenes que transmiten las emociones auténticas de la aventura - desde la adrenalina de la competencia hasta la serenidad de los paisajes naturales."
+        },
+        "interactive": {
+          "title": "Elementos interactivos",
+          "description": "Implementé componentes como la cuenta regresiva y mapas que no solo informan, sino que generan anticipación y entusiasmo."
+        }
+      },
+      "implementation": {
+        "title": "Implementación técnica",
+        "wordpress": {
+          "title": "WordPress + plantilla premium",
+          "description": "Aproveché la flexibilidad de WordPress combinada con una plantilla premium para crear:",
+          "features": [
+            {"description": "Experiencia responsiva perfecta en cualquier dispositivo"},
+            {"description": "Carga rápida incluso en conexiones variables"},
+            {"description": "Sistema de gestión de contenido intuitivo para el cliente"},
+            {"description": "Integración fluida con herramientas de registro y pago"}
+          ]
+        },
+        "optimization": {
+          "title": "Optimización para aventureros en movimiento",
+          "description": "El sitio fue diseñado pensando en usuarios que pueden estar planificando su aventura desde cualquier lugar - desde su oficina hasta una tienda de campaña."
+        }
+      },
+      "results": {
+        "title": "Resultados transformadores",
+        "participants": {
+          "title": "Para los participantes",
+          "quote": "Por fin un sitio que me hace sentir como si ya estuviera en la ruta, con toda la información que necesito para prepararme adecuadamente."
+        },
+        "client": {
+          "title": "Para Nomadix Adventure",
+          "achievements": [
+            {"description": "Aumento significativo en inscripciones anticipadas"},
+            {"description": "Reducción notable en consultas repetitivas por correo/teléfono"},
+            {"description": "Presencia digital que refleja fielmente el profesionalismo y pasión de la organización"}
+          ]
+        },
+        "impact": {
+          "title": "El impacto real de mi trabajo",
+          "description": "Más allá de métricas, mi diseño transformó cómo Nomadix Adventure conecta con su comunidad. Cada elemento del sitio invita a los visitantes a dar el primer paso en su propia aventura transformadora.",
+          "conclusion": "El sitio no solo proporciona información - crea una experiencia digital que inspira acción y construye confianza a través de un diseño centrado en el usuario y sus emociones."
+        }
+      }
+    }
+  },
+  "design_systems": {
+    "nomadix": {
+      "title": "Sistema de Diseño: Nomadix Adventure",
+      "colors": {
+        "title": "01. Colores",
+        "base": {
+          "title": "Colores base",
+          "items": [
+            {"name": "Negro (#000000)", "description": "Color primario para textos y fondos"},
+            {"name": "Negro-5 (#F0F2F2)", "description": "Fondos sutiles, separadores"},
+            {"name": "Negro-25 (#D1D1D1)", "description": "Bordes, elementos secundarios"},
+            {"name": "Blanco (#FFFFFF)", "description": "Contraste y legibilidad"}
+          ]
+        },
+        "brand": {
+          "title": "Colores de marca",
+          "items": [
+            {"name": "Naranja (#F26B24)", "description": "Color principal, CTA y acentos"},
+            {"name": "Gris (#686868)", "description": "Elementos neutros, textos secundarios"}
+          ]
+        },
+        "complementary": {
+          "title": "Colores complementarios",
+          "items": [
+            {"name": "Azul (#205375)", "description": "Fondos secundarios, conexión con la naturaleza"},
+            {"name": "Azul marino (#112B3C)", "description": "Profundidad, solidez y confianza"}
+          ]
+        },
+        "indication": {
+          "title": "Colores de indicación",
+          "items": [
+            {"name": "Peligro (#FF453A)", "description": "Alertas críticas, errores"},
+            {"name": "Información (#0A84FF)", "description": "Estados informativos, enlaces"},
+            {"name": "Éxito (#30D158)", "description": "Confirmaciones, acciones completadas"},
+            {"name": "Advertencia (#FF9F0A)", "description": "Precaución, atención requerida"}
+          ]
+        }
+      },
+      "typography": {
+        "title": "02. Tipografía",
+        "main_font": {
+          "title": "Fuente principal",
+          "items": [
+            {"name": "Familia", "description": "Open Sans"},
+            {"name": "Usos", "description": "Toda la interfaz para mantener cohesión y legibilidad"}
+          ]
+        },
+        "type_scale": {
+          "title": "Escalas tipográficas",
+          "items": [
+            {"name": "Display", "description": "42px/46px - Títulos principales de sección"},
+            {"name": "H1", "description": "32px/38px - Encabezados de página"},
+            {"name": "H2", "description": "28px/34px - Subtítulos principales"}
+          ]
+        }
+      }
+    }
   },
   "feedback": {
     "title": "Recomendaciones",

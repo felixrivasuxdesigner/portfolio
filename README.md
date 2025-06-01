@@ -79,6 +79,54 @@ src/                  # Código fuente
 docs/                 # Carpeta de salida para GitHub Pages (generada)
 ```
 
+## Estructura del Sistema de Diseño
+
+El portafolio incluye presentaciones de sistemas de diseño para diferentes proyectos. Cada proyecto tiene su propio estilo visual diferenciado:
+
+### Organización de Archivos
+
+```
+src/
+  _data/
+    translations/
+      case-studies/
+        designSystem/         # Sistemas de diseño organizados por proyecto
+          journeylaw/         # Sistema de diseño específico para el proyecto JourneyLaw
+            en.json           # Versión en inglés
+            es.json           # Versión en español
+          nomadix/            # Sistema de diseño específico para el proyecto Nomadix
+            en.json           # Versión en inglés
+            es.json           # Versión en español
+```
+
+### Estructura de Estilos
+
+```
+src/
+  assets/
+    scss/
+      pages/
+        _journeylaw.scss      # Estilos específicos para Journey Law
+        _nomadix.scss         # Estilos específicos para Nomadix 
+```
+
+### Implementación
+
+Cada sistema de diseño se construye usando:
+
+1. **Datos JSON**: Estructura con información de colores, tipografía, componentes, etc.
+2. **Plantillas Nunjucks**: Componente compartido (`design-system-showcase.njk`) que visualiza el sistema
+3. **Estilos SCSS**: Archivos dedicados que aplican la identidad visual específica de cada proyecto
+
+El sistema determina qué estilos aplicar basándose en el `projectKey` del estudio de caso actual.
+
+### Ejemplo de un Sistema de Diseño
+
+Para el proyecto **JourneyLaw**, el sistema de diseño se encuentra en:
+
+- Archivos JSON: `src/_data/translations/case-studies/designSystem/journeylaw/`
+- Estilos SCSS: `src/assets/scss/pages/_journeylaw.scss`
+
 ## Arquitectura del Proyecto
 
 ### Arquitectura CSS
