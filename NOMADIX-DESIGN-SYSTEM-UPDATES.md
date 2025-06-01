@@ -36,17 +36,19 @@ Se ha implementado un sistema de diseño específico para el proyecto Nomadix, a
 - Badges con estilos modernos y bordes redondeados
 - Sistema de navegación y alertas personalizado
 
-### 4. Pendiente
-- Refinamiento de estilos responsivos
-- Mejoras en la tipografía
-- Actualización de funciones SCSS depreciadas
+### 4. Actualizaciones recientes y pendientes
+- ~~Refinamiento de estilos responsivos~~ ✅ Completado (1 junio 2025)
+- ~~Mejoras en la tipografía~~ ✅ Completado (1 junio 2025)
+- ~~Actualización de funciones SCSS depreciadas~~ ✅ Completado (1 junio 2025)
 - Pruebas adicionales en diferentes navegadores
 
 ## Referencia Visual
 La nueva implementación respeta la estética más moderna y minimalista de Nomadix, con énfasis en sus colores corporativos (negro, naranja y azul), diferenciándose claramente del sistema "Warm Professionalism" de Journey Law, que utiliza tonos terrosos y marrones.
 
 ## Próximos Pasos
-1. Revisar el comportamiento responsivo del sistema de diseño
-2. Mejorar las transiciones entre pestañas
-3. Optimizar los estilos para dispositivos móviles
+1. ~~Revisar el comportamiento responsivo del sistema de diseño~~ ✓ Completado
+2. ~~Mejorar las transiciones entre pestañas~~ ✓ Completado
+3. ~~Optimizar los estilos para dispositivos móviles~~ ✓ Completado
+4. Realizar pruebas en diferentes navegadores (Chrome, Firefox, Safari, Edge)
+5. Añadir soporte para tema oscuro
 4. Considerar la implementación de temas oscuros específicos para el proyecto

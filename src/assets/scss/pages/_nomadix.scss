@@ -2,16 +2,45 @@
 @use '../abstracts/variables' as v;
 @use 'sass:color';
 
+// Variables de tema claro y oscuro
 .case-study.nomadix {
-  --nomadix-black: #000000;
-  --nomadix-gray: #686868;
+  // Variables comunes (no cambian con el tema)
   --nomadix-orange: #F26B24;
   --nomadix-blue: #205375;
   --nomadix-navy: #112B3C;
+  
+  // Variables tema claro (predeterminado)
+  --nomadix-black: #000000;
+  --nomadix-gray: #686868;
   --nomadix-white: #FFFFFF;
+  --nomadix-bg-main: #FFFFFF;
+  --nomadix-bg-alt: #f5f5f5;
+  --nomadix-bg-card: #FFFFFF;
+  --nomadix-border-color: #eee;
+  --nomadix-shadow-color: rgba(0, 0, 0, 0.08);
+  --nomadix-text-main: #000000;
+  --nomadix-text-secondary: #686868;
+
+  // Variables específicas para modo oscuro
+  &[data-theme='dark'] {
+    --nomadix-black: #FFFFFF;
+    --nomadix-gray: #B0B0B0;
+    --nomadix-white: #000000;
+    --nomadix-bg-main: #121212;
+    --nomadix-bg-alt: #1e1e1e;
+    --nomadix-bg-card: #1e1e1e;
+    --nomadix-border-color: #333333;
+    --nomadix-shadow-color: rgba(0, 0, 0, 0.3);
+    --nomadix-text-main: #FFFFFF;
+    --nomadix-text-secondary: #B0B0B0;
+  }
+}
   
   // Design System showcase styles
   .design-system-section {
+    color: var(--nomadix-text-main);
+    background-color: var(--nomadix-bg-main);
+    
     .design-system-intro {
       border-left: 4px solid var(--nomadix-orange);
       padding: 1rem 1.5rem;
@@ -34,7 +63,7 @@
         padding: 10px 16px;
         cursor: pointer;
         font-weight: 600;
-        color: var(--nomadix-black);
+        color: var(--nomadix-text-main);
         border-bottom: 3px solid transparent;
         transition: all 0.3s ease;
         
@@ -122,7 +151,7 @@
       
       .font-family {
         padding: 1.5rem;
-        background-color: #f5f5f5;
+        background-color: var(--nomadix-bg-alt);
         border-radius: 8px;
         margin-bottom: 1.5rem;
         
@@ -135,10 +164,11 @@
           .font-name {
             font-weight: 700;
             font-size: 18px;
+            color: var(--nomadix-text-main);
           }
           
           .font-category {
-            color: var(--nomadix-gray);
+            color: var(--nomadix-text-secondary);
           }
         }
         
@@ -152,35 +182,76 @@
         
         .font-sample {
           .sample-xl {
-            font-size: 30px;
-            line-height: 36px;
+            font-size: 32px;
+            line-height: 1.2;
             font-weight: 700;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.75rem;
+            letter-spacing: -0.01em;
+            color: var(--nomadix-text-main);
           }
           
           .sample-large {
-            font-size: 24px;
-            line-height: 32px;
+            font-size: 26px;
+            line-height: 1.25;
             font-weight: 600;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.75rem;
+            letter-spacing: -0.005em;
+            color: var(--nomadix-text-main);
           }
           
           .sample-medium {
-            font-size: 18px;
-            line-height: 24px;
+            font-size: 20px;
+            line-height: 1.3;
             font-weight: 600;
             margin-bottom: 0.5rem;
+            color: var(--nomadix-text-main);
           }
           
           .sample-body {
             font-size: 16px;
-            line-height: 24px;
+            line-height: 1.5;
+            font-weight: 400;
             margin-bottom: 0.5rem;
+            color: var(--nomadix-text-main);
           }
           
           .sample-small {
             font-size: 14px;
             line-height: 20px;
+          }
+        }
+      }
+    }
+    
+    // Additional font improvements
+    .font-sizes {
+      margin-top: 2rem;
+      
+      h4 {
+        margin-bottom: 1rem;
+        color: var(--nomadix-text-main);
+        font-weight: 600;
+      }
+      
+      .font-size-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 1.5rem;
+        
+        .font-size-item {
+          background-color: rgba(242, 107, 36, 0.03);
+          border-left: 3px solid var(--nomadix-orange);
+          padding: 1rem;
+          
+          .font-size-name {
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+          }
+          
+          .font-size-value {
+            color: var(--nomadix-text-secondary);
+            font-family: monospace;
+            margin-bottom: 0.25rem;
           }
         }
       }
@@ -201,11 +272,11 @@
         color: white;
         
         &:hover:not(:disabled), &.nomadix-hover {
-          background-color: darken(#F26B24, 10%);
+          background-color: color.adjust(#F26B24, $lightness: -10%);
         }
         
         &:active, &.nomadix-active {
-          background-color: darken(#F26B24, 15%);
+          background-color: color.adjust(#F26B24, $lightness: -15%);
         }
         
         &:focus, &.nomadix-focus {
@@ -223,7 +294,7 @@
         color: white;
         
         &:hover:not(:disabled) {
-          background-color: darken(#205375, 10%);
+          background-color: color.adjust(#205375, $lightness: -10%);
         }
       }
       
@@ -242,9 +313,10 @@
       width: 100%;
       max-width: 400px;
       padding: 10px 12px;
-      border: 1px solid var(--nomadix-gray);
+      border: 1px solid var(--nomadix-text-secondary);
       border-radius: 4px;
-      color: var(--nomadix-black);
+      color: var(--nomadix-text-main);
+      background-color: var(--nomadix-bg-alt);
       
       &:focus {
         outline: none;
@@ -264,21 +336,21 @@
     
     // Cards
     .nomadix-card {
-      background-color: white;
+      background-color: var(--nomadix-bg-card);
       border-radius: 6px;
       overflow: hidden;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 4px 12px var(--nomadix-shadow-color);
       max-width: 400px;
-      border: 1px solid #eee;
+      border: 1px solid var(--nomadix-border-color);
       
       .nomadix-card-header {
         padding: 16px 20px;
-        border-bottom: 1px solid #eee;
+        border-bottom: 1px solid var(--nomadix-border-color);
         background-color: rgba(242, 107, 36, 0.05);
         
         h4 {
           margin: 0;
-          color: var(--nomadix-black);
+          color: var(--nomadix-text-main);
           font-weight: 600;
         }
       }
@@ -293,10 +365,27 @@
       
       .nomadix-card-footer {
         padding: 12px 20px;
-        border-top: 1px solid #eee;
-        background-color: #f9f9f9;
+        border-top: 1px solid var(--nomadix-border-color);
+        background-color: var(--nomadix-bg-alt);
         display: flex;
         justify-content: flex-end;
+      }
+    }
+    
+    // Card improvements
+    .cards-showcase {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+      
+      .nomadix-card {
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 8px 16px var(--nomadix-shadow-color);
+        }
       }
     }
     
@@ -346,7 +435,7 @@
       
       .nomadix-nav-sample {
         margin-bottom: 2rem;
-        border-bottom: 1px solid #eee;
+        border-bottom: 1px solid var(--nomadix-border-color);
         
         .nomadix-tabs {
           display: flex;
@@ -358,7 +447,7 @@
             border: none;
             cursor: pointer;
             position: relative;
-            color: var(--nomadix-gray);
+            color: var(--nomadix-text-secondary);
             
             &:hover {
               color: var(--nomadix-orange);
@@ -388,11 +477,11 @@
         font-size: 14px;
         
         span {
-          color: var(--nomadix-black);
+          color: var(--nomadix-text-main);
           
           &.nomadix-breadcrumb-separator {
             margin: 0 8px;
-            color: var(--nomadix-gray);
+            color: var(--nomadix-text-secondary);
           }
         }
       }
@@ -452,15 +541,83 @@
     }
     
     // Responsive adjustments
+    @media (max-width: 992px) {
+      .color-palette {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .font-sizes {
+        .font-size-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      
+      .component-category {
+        .component-list {
+          flex-wrap: wrap;
+        }
+      }
+      
+      .nomadix-btn {
+        padding: 8px 16px;
+      }
+    }
+    
     @media (max-width: 768px) {
       .color-palette {
         grid-template-columns: 1fr;
       }
       
       .design-system-tabs {
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 8px;
+        
         .tab-btn {
           font-size: 14px;
           padding: 8px 12px;
+        }
+      }
+      
+      .typography-showcase {
+        .font-sample {
+          .sample-xl {
+            font-size: 28px;
+          }
+          
+          .sample-large {
+            font-size: 22px;
+          }
+          
+          .sample-medium {
+            font-size: 18px;
+          }
+        }
+      }
+      
+      .font-sizes {
+        .font-size-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .typography-showcase {
+        .font-header {
+          flex-direction: column;
+          align-items: flex-start;
+          
+          .font-category {
+            margin-top: 4px;
+          }
+        }
+      }
+      
+      .color-swatch {
+        .color-preview {
+          height: 80px;
         }
       }
     }
