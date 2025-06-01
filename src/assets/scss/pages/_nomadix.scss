@@ -2,9 +2,9 @@
 @use '../abstracts/variables' as v;
 @use 'sass:color';
 
-// Variables de tema claro y oscuro
+// Variables específicas para el case study de Nomadix
 .case-study.nomadix {
-  // Variables comunes (no cambian con el tema)
+  // Variables comunes que no cambian con el tema
   --nomadix-orange: #F26B24;
   --nomadix-blue: #205375;
   --nomadix-navy: #112B3C;
@@ -20,19 +20,17 @@
   --nomadix-shadow-color: rgba(0, 0, 0, 0.08);
   --nomadix-text-main: #000000;
   --nomadix-text-secondary: #686868;
-
-  // Variables específicas para modo oscuro
-  &[data-theme='dark'] {
-    --nomadix-black: #FFFFFF;
-    --nomadix-gray: #B0B0B0;
-    --nomadix-white: #000000;
-    --nomadix-bg-main: #121212;
-    --nomadix-bg-alt: #1e1e1e;
+  
+  // Variables para tema oscuro
+  &[data-theme='dark'],
+  [data-theme='dark'] & {
+    --nomadix-bg-main: #1a1a1a;
+    --nomadix-bg-alt: #2a2a2a;
     --nomadix-bg-card: #1e1e1e;
     --nomadix-border-color: #333333;
     --nomadix-shadow-color: rgba(0, 0, 0, 0.3);
-    --nomadix-text-main: #FFFFFF;
-    --nomadix-text-secondary: #B0B0B0;
+    --nomadix-text-main: #e0e0e0;
+    --nomadix-text-secondary: #aaaaaa;
   }
 }
   
@@ -125,7 +123,8 @@
         
         .color-info {
           padding: 1rem;
-          background-color: white;
+          background-color: var(--nomadix-bg-card);
+          color: var(--nomadix-text-main);
           
           .color-name {
             font-weight: 600;
@@ -133,13 +132,14 @@
           }
           
           .color-hex {
-            color: var(--nomadix-gray);
+            color: var(--nomadix-text-secondary);
             font-family: monospace;
             margin-bottom: 0.5rem;
           }
           
           .color-usage {
             font-size: 14px;
+            color: var(--nomadix-text-main);
           }
         }
       }
@@ -622,4 +622,3 @@
       }
     }
   }
-}

@@ -14,8 +14,8 @@
   
   // Añadir fondo sólido y sombra cuando tenga la clase is-sticky
   &.is-sticky {
-    background-color: #f1f1f1 !important;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    background-color: var(--breadcrumb-bg) !important;
+    box-shadow: var(--navbar-scroll-shadow);
     z-index: 100;
   }
   
