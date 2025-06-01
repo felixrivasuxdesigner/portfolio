@@ -97,6 +97,41 @@
   --testimonials-cite-color: #{v.$primary-color};
   --testimonials-nav-bg: #{v.$light-gray};
   --testimonials-nav-active: #{v.$accent-color};
+
+  // Variables específicas para la sección Contact en modo claro
+  --contact-bg: #{v.$white};
+  --contact-heading-color: #{v.$primary-color};
+  --contact-text-color: #{v.$text-color};
+  --contact-border-color: #{v.$border-color};
+  --contact-input-bg: #{v.$white};
+  --contact-input-border: #{v.$border-color};
+  --contact-input-placeholder: #{v.$light-text-color};
+  --contact-input-focus-border: #{v.$accent-color};
+  --contact-input-focus-shadow: rgba(#{v.$accent-color}, 0.2);
+  --contact-btn-bg: #{v.$accent-color};
+  --contact-btn-hover-bg: f.shade(#{v.$accent-color}, 15%);
+  --contact-tooltip-bg: rgba(255, 255, 255, 0.9);
+  --contact-tooltip-text: #000000;
+
+  // Variables específicas para case studies en modo claro
+  --case-study-bg: #{v.$white};
+  --case-study-section-bg: #{v.$white};
+  --case-study-hero-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  --case-study-grid-item-bg: #{v.$light-gray};
+  --case-study-grid-item-hover-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+
+  // Variables específicas para la sección Counter en modo claro
+  --counter-overlay-bg: rgba(0, 0, 0, 0.85);
+  --counter-text-color: #ffffff;
+  --counter-icon-color: #{v.$accent-color};
+
+  // Variables específicas para la sección Brands en modo claro
+  --brands-overlay-bg: rgba(0, 0, 0, 0.85);
+  --brands-item-filter: grayscale(100%) brightness(1.5);
+  --brands-button-bg: rgba(255, 255, 255, 0.15);
+  --brands-button-color: #ffffff;
+  --brands-button-hover-bg: rgba(255, 255, 255, 0.3);
+  --brands-button-hover-color: #ffffff;
 }
 
 // Estilo específico para el modo oscuro
@@ -205,6 +240,13 @@
   --contact-btn-hover-bg: f.shade(#{v.$accent-color}, 15%);
   --contact-tooltip-bg: rgba(255, 255, 255, 0.9);
   --contact-tooltip-text: #000000;
+
+  // Variables específicas para case studies en modo oscuro
+  --case-study-bg: #121212;
+  --case-study-section-bg: #1e1e1e;
+  --case-study-hero-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  --case-study-grid-item-bg: #1a1a1a;
+  --case-study-grid-item-hover-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 
   // Variables específicas para la sección Counter en modo oscuro
   --counter-overlay-bg: rgba(0, 0, 0, 0.85);

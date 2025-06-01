@@ -69,8 +69,6 @@
 - ✅ Añadir metadatos para redes sociales (Open Graph, Twitter Cards)
 - ✅ Configurar service worker para funcionamiento offline básico
 
-## Próximos Pasos
-
 ### Fase 7: Integración de Características Adicionales
 
 - ⬜ Implementar sistema de blog minimalista (si se requiere)
@@ -79,13 +77,39 @@
 - ⬜ Implementar sistema de comentarios sin dependencias externas
 - ⬜ Añadir modo presentación para proyectos destacados
 
-### Fase 8: Pruebas y Lanzamiento
+### Fase 8: Reorganización de los Sistemas de Diseño por Proyecto
+
+- ✅ Creación de una estructura organizada de carpetas para sistemas de diseño de cada proyecto 
+- ✅ Migración del sistema de diseño de JourneyLaw a su propia carpeta específica
+- ✅ Migración del sistema de diseño de Nomadix a su propia carpeta específica
+- ✅ Actualización del sistema de carga de traducciones para usar la nueva estructura
+- ✅ Implementación de lógica condicional para cargar el sistema de diseño correcto según el proyecto
+- ✅ Documentación de la nueva estructura en el README para futuros desarrolladores
+
+### Fase 9: Pruebas y Lanzamiento
 
 - ⬜ Realizar pruebas de compatibilidad entre navegadores
 - ⬜ Verificar responsividad en diferentes dispositivos
 - ⬜ Realizar pruebas de accesibilidad (WCAG 2.1)
 - ⬜ Configurar CI/CD para despliegue automático
 - ⬜ Lanzamiento oficial y seguimiento de métricas
+
+### Fase 9: Mejora del Sistema de Diseño de Nomadix
+
+- ✅ Implementación de estilos específicos para el sistema de diseño de Nomadix:
+  - Creación de archivo SCSS dedicado (`_nomadix.scss`) con variables CSS personalizadas
+  - Implementación de visualización de colores adaptada a la marca de Nomadix
+  - Estilización de componentes (botones, tarjetas, badges, etc.) específicos para Nomadix
+
+- ✅ Generalización del componente de showcase del sistema de diseño:
+  - Adaptación de la plantilla para detectar el proyecto actual mediante `projectKey`
+  - Implementación de lógica condicional para aplicar clases CSS según el proyecto
+  - Solución de problemas con propiedades indefinidas para mayor robustez
+
+- ✅ Reorganización y mejora de la estructura visual:
+  - Separación clara de estilos entre Journey Law y Nomadix
+  - Mantenimiento de una estructura HTML compartida con aplicación de estilos específicos
+  - Mejora visual para asegurar que cada sistema de diseño tenga su propia identidad
 
 ## Características Completadas Recientemente
 

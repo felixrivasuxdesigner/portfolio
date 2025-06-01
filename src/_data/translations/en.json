@@ -266,6 +266,157 @@
   "case_study": {
     "back_to_portfolio": "Back to Home"
   },
+  "case_studies": {
+    "nomadix": {
+      "title": "Digital Transformation: Nomadix Adventure Ocean to Ocean",
+      "challenge": {
+        "title": "The Challenge",
+        "description": "Nomadix Adventure needed a digital presence that would capture the essence of their flagship event 'Ocean to Ocean' - a bicycle journey across Baja California. They required a website that would not only inform but inspire adventurers to join this transformative journey.",
+        "quote": "We wanted a site that would make cyclists' hearts beat as fast as when they're standing on a mountain summit."
+      },
+      "approach": {
+        "title": "My Approach",
+        "discovery": {
+          "title": "Discovery & Inspiration",
+          "description": "I began by immersing myself in the world of adventure cycling, understanding the emotional motivations behind those who challenge themselves in unfamiliar terrain."
+        },
+        "experience": {
+          "title": "Experience Definition",
+          "description": "I created an information architecture that guides visitors through a digital journey reflecting the physical adventure:",
+          "sections": [
+            {"name": "Homepage", "description": "An irresistible invitation to adventure"},
+            {"name": "About Us", "description": "The story and values that bring the event to life"},
+            {"name": "Event", "description": "Practical details presented in an inspiring way"},
+            {"name": "Rules", "description": "Critical information presented with clarity and emotion"},
+            {"name": "Travel", "description": "Content that awakens the nomadic spirit"},
+            {"name": "Resources", "description": "Useful tools for participants"},
+            {"name": "Contact", "description": "A personal bridge between the organization and adventurers"}
+          ]
+        }
+      },
+      "design_system": {
+        "title": "Design System",
+        "color_palette": {
+          "title": "Purposeful Color Palette",
+          "description": "I developed a color system that combines:",
+          "colors": [
+            {"name": "Deep black and grays", "description": "Elegant foundation that allows images to stand out"},
+            {"name": "Vibrant orange (#F26B24)", "description": "Action and identity color that evokes energy and adventure"},
+            {"name": "Complementary blues", "description": "Connection with nature and oceans"},
+            {"name": "Semantic colors", "description": "Intuitive signals that guide the user", "details": [
+              {"name": "Success", "value": "#30D158"},
+              {"name": "Information", "value": "#0A84FF"},
+              {"name": "Danger", "value": "#FF453A"},
+              {"name": "Warning", "value": "#FF9F0A"}
+            ]}
+          ]
+        },
+        "photography": {
+          "title": "Impactful Photography",
+          "description": "I prioritized images that convey the authentic emotions of adventure - from the adrenaline of competition to the serenity of natural landscapes."
+        },
+        "interactive": {
+          "title": "Interactive Elements",
+          "description": "I implemented components such as the countdown timer and maps that not only inform but generate anticipation and excitement."
+        }
+      },
+      "implementation": {
+        "title": "Technical Implementation",
+        "wordpress": {
+          "title": "WordPress + Premium Template",
+          "description": "I leveraged the flexibility of WordPress combined with a premium template to create:",
+          "features": [
+            {"description": "Perfect responsive experience on any device"},
+            {"description": "Fast loading even on variable connections"},
+            {"description": "Intuitive content management system for the client"},
+            {"description": "Seamless integration with registration and payment tools"}
+          ]
+        },
+        "optimization": {
+          "title": "Optimization for Adventurers on the Move",
+          "description": "The site was designed with users in mind who might be planning their adventure from anywhere - from their office to a tent."
+        }
+      },
+      "results": {
+        "title": "Transformative Results",
+        "participants": {
+          "title": "For Participants",
+          "quote": "Finally a site that makes me feel like I'm already on the route, with all the information I need to prepare properly."
+        },
+        "client": {
+          "title": "For Nomadix Adventure",
+          "achievements": [
+            {"description": "Significant increase in early registrations"},
+            {"description": "Notable reduction in repetitive queries via email/phone"},
+            {"description": "Digital presence that faithfully reflects the organization's professionalism and passion"}
+          ]
+        },
+        "impact": {
+          "title": "The Real Impact of My Work",
+          "description": "Beyond metrics, my design transformed how Nomadix Adventure connects with their community. Every element of the site invites visitors to take the first step in their own transformative adventure.",
+          "conclusion": "The site doesn't just provide information - it creates a digital experience that inspires action and builds trust through user-centered design focused on emotions."
+        }
+      }
+    }
+  },
+  "design_systems": {
+    "nomadix": {
+      "title": "Design System: Nomadix Adventure",
+      "colors": {
+        "title": "01. Colors",
+        "base": {
+          "title": "Base Colors",
+          "items": [
+            {"name": "Black (#000000)", "description": "Primary color for text and backgrounds"},
+            {"name": "Black-5 (#F0F2F2)", "description": "Subtle backgrounds, separators"},
+            {"name": "Black-25 (#D1D1D1)", "description": "Borders, secondary elements"},
+            {"name": "White (#FFFFFF)", "description": "Contrast and readability"}
+          ]
+        },
+        "brand": {
+          "title": "Brand Colors",
+          "items": [
+            {"name": "Orange (#F26B24)", "description": "Primary color, CTAs and accents"},
+            {"name": "Gray (#686868)", "description": "Neutral elements, secondary text"}
+          ]
+        },
+        "complementary": {
+          "title": "Complementary Colors",
+          "items": [
+            {"name": "Blue (#205375)", "description": "Secondary backgrounds, connection to nature"},
+            {"name": "Navy (#112B3C)", "description": "Depth, solidity and trust"}
+          ]
+        },
+        "indication": {
+          "title": "Indication Colors",
+          "items": [
+            {"name": "Danger (#FF453A)", "description": "Critical alerts, errors"},
+            {"name": "Information (#0A84FF)", "description": "Informational states, links"},
+            {"name": "Success (#30D158)", "description": "Confirmations, completed actions"},
+            {"name": "Warning (#FF9F0A)", "description": "Caution, attention required"}
+          ]
+        }
+      },
+      "typography": {
+        "title": "02. Typography",
+        "main_font": {
+          "title": "Primary Font",
+          "items": [
+            {"name": "Family", "description": "Open Sans"},
+            {"name": "Uses", "description": "Entire interface to maintain cohesion and readability"}
+          ]
+        },
+        "type_scale": {
+          "title": "Type Scale",
+          "items": [
+            {"name": "Display", "description": "42px/46px - Main section titles"},
+            {"name": "H1", "description": "32px/38px - Page headers"},
+            {"name": "H2", "description": "28px/34px - Primary subtitles"}
+          ]
+        }
+      }
+    }
+  },
   "feedback": {
     "title": "Recommendations",
     "why_me": "Why me?",

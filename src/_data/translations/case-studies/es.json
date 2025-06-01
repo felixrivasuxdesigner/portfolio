@@ -338,6 +338,10 @@
           "title": "Desafío",
           "content": "El cliente necesitaba un sitio web que destacara en el saturado mercado de viajes, mostrara eficazmente diversas ofertas de aventura y proporcionara una experiencia de reserva fluida para usuarios con diferentes niveles de conocimientos técnicos."
         },
+        "designSystem": {
+          "title": "Sistema de Diseño",
+          "intro": "El sistema de diseño para Nomadix Adventure está construido alrededor del concepto de 'Inspirar Aventura', creando un lenguaje visual que emociona y motiva a los usuarios a explorar el aire libre."
+        },
         "solution": {
           "title": "Solución",
           "content": "Diseñamos un sitio web visualmente impresionante con estas características clave:",
