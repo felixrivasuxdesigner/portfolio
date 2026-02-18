@@ -277,263 +277,323 @@
     "back_to_portfolio": "Volver al Portafolio"
   },
   "case_studies": {
-    "nomadix": {
-      "title": "Transformación digital: Nomadix Adventure Ocean to Ocean",
-      "challenge": {
-        "title": "El desafío",
-        "description": "Nomadix Adventure buscaba una presencia digital que capturara la esencia de su evento insignia 'Ocean to Ocean' - una travesía en bicicleta a través de Baja California. Necesitaban un sitio que no solo informara, sino que inspirara a los aventureros a unirse a este viaje transformador.",
-        "quote": "Queríamos un sitio que hiciera latir el corazón de los ciclistas tan rápido como cuando están en la cima de una montaña."
-      },
-      "approach": {
-        "title": "Mi acercamiento",
-        "discovery": {
-          "title": "Descubrimiento e inspiración",
-          "description": "Comencé sumergiéndome en el mundo del ciclismo de aventura, entendiendo las motivaciones emocionales detrás de quienes se desafían a sí mismos en terrenos desconocidos."
+    "projects": {
+      "nomadix": {
+        "hero": {
+          "alt": "Nomadix Adventure Cover"
         },
-        "experience": {
-          "title": "Definición de experiencia",
-          "description": "Creé una arquitectura de información que guía al visitante en un viaje digital que refleja la travesía física:",
-          "sections": [
-            {
-              "name": "Página inicial",
-              "description": "Una invitación irresistible a la aventura"
-            },
-            {
-              "name": "Quiénes somos",
-              "description": "La historia y valores que dan vida al evento"
-            },
-            {
-              "name": "Evento",
-              "description": "Detalles prácticos presentados de forma inspiradora"
-            },
-            {
-              "name": "Bases",
-              "description": "Información crucial presentada con claridad y emoción"
-            },
-            {
-              "name": "Travel",
-              "description": "Contenido que despierta el espíritu nómada"
-            },
-            {
-              "name": "Recursos",
-              "description": "Herramientas útiles para participantes"
-            },
-            {
-              "name": "Contacto",
-              "description": "Un puente personal entre la organización y los aventureros"
-            }
-          ]
+        "sections": {
+          "context": {
+            "title": "Contexto",
+            "content": "Nomadix Adventure buscaba una presencia digital que capturara la esencia de su evento insignia 'Ocean to Ocean' - una travesía en bicicleta a través de Baja California."
+          },
+          "challenge": {
+            "title": "El desafío",
+            "content": "Nomadix Adventure buscaba una presencia digital que capturara la esencia de su evento insignia 'Ocean to Ocean' - una travesía en bicicleta a través de Baja California. Necesitaban un sitio que no solo informara, sino que inspirara a los aventureros a unirse a este viaje transformador."
+          },
+          "designSystem": true,
+          "research": {
+            "title": "Mi acercamiento",
+            "subsections": [
+              {
+                "title": "Descubrimiento e inspiración",
+                "content": "Comencé sumergiéndome en el mundo del ciclismo de aventura, entendiendo las motivaciones emocionales detrás de quienes se desafían a sí mismos en terrenos desconocidos."
+              },
+              {
+                "title": "Definición de experiencia",
+                "content": "Creé una arquitectura de información que guía al visitante en un viaje digital que refleja la travesía física.",
+                "bullets": [
+                  "Página inicial: Una invitación irresistible a la aventura",
+                  "Quiénes somos: La historia y valores que dan vida al evento",
+                  "Evento: Detalles prácticos presentados de forma inspiradora",
+                  "Bases: Información crucial presentada con claridad y emoción",
+                  "Travel: Contenido que despierta el espíritu nómada",
+                  "Recursos: Herramientas útiles para participantes",
+                  "Contacto: Un puente personal entre la organización y los aventureros"
+                ]
+              }
+            ]
+          },
+          "solution": {
+            "title": "Implementación técnica",
+            "content": "Aproveché la flexibilidad de WordPress combinada con una plantilla premium para crear una experiencia responsiva perfecta.",
+            "features": [
+              "Experiencia responsiva perfecta en cualquier dispositivo",
+              "Carga rápida incluso en conexiones variables",
+              "Sistema de gestión de contenido intuitivo para el cliente",
+              "Integración fluida con herramientas de registro y pago"
+            ]
+          },
+          "results": {
+            "title": "Resultados transformadores",
+            "metrics": [
+              {
+                "number": "Impacto",
+                "description": "Aumento significativo en inscripciones anticipadas"
+              },
+              {
+                "number": "Eficiencia",
+                "description": "Reducción notable en consultas repetitivas"
+              }
+            ],
+            "conclusion": "Más allá de métricas, mi diseño transformó cómo Nomadix Adventure conecta con su comunidad. El sitio no solo proporciona información - crea una experiencia digital que inspira acción y construye confianza."
+          }
         }
       },
-      "design_system": {
-        "title": "Sistema de diseño",
-        "color_palette": {
-          "title": "Paleta cromática con propósito",
-          "description": "Desarrollé un sistema de colores que combina:",
-          "colors": [
-            {
-              "name": "Negro profundo y grises",
-              "description": "Base elegante que permite que las imágenes destaquen"
-            },
-            {
-              "name": "Naranja vibrante (#F26B24)",
-              "description": "Color de acción e identidad que evoca energía y aventura"
-            },
-            {
-              "name": "Azules complementarios",
-              "description": "Conexión con la naturaleza y los océanos"
-            },
-            {
-              "name": "Colores semánticos",
-              "description": "Señales intuitivas que guían al usuario",
-              "details": [
-                {
-                  "name": "Éxito",
-                  "value": "#30D158"
-                },
-                {
-                  "name": "Información",
-                  "value": "#0A84FF"
-                },
-                {
-                  "name": "Peligro",
-                  "value": "#FF453A"
-                },
-                {
-                  "name": "Advertencia",
-                  "value": "#FF9F0A"
-                }
-              ]
-            }
-          ]
+      "intelliresearch": {
+        "hero": {
+          "alt": "IntelliResearch Dashboard"
         },
-        "photography": {
-          "title": "Fotografía impactante",
-          "description": "Prioricé imágenes que transmiten las emociones auténticas de la aventura - desde la adrenalina de la competencia hasta la serenidad de los paisajes naturales."
-        },
-        "interactive": {
-          "title": "Elementos interactivos",
-          "description": "Implementé componentes como la cuenta regresiva y mapas que no solo informan, sino que generan anticipación y entusiasmo."
+        "sections": {
+          "context": {
+            "title": "Contexto",
+            "content": "Plataforma de análisis de investigación UX potenciada por IA que transforma horas de entrevistas en insights estratégicos en minutos, reduciendo el tiempo de síntesis en un 80%."
+          },
+          "challenge": {
+            "title": "El desafío",
+            "content": "El \"Analysis Paralysis\" es el enemigo silencioso de todo equipo de producto. Los UX Researchers pasaban más tiempo transcribiendo y etiquetando horas de entrevistas que conectando puntos y generando insights estratégicos. La riqueza cualitativa se perdía en hojas de cálculo interminables o se quedaba encerrada en videos de una hora que nadie volvía a ver. El desafío era crear una herramienta que no solo transcribiera, sino que \"pensara\" como un investigador senior, automatizando la síntesis sin perder la empatía humana."
+          },
+          "research": {
+            "title": "Mi acercamiento",
+            "subsections": [
+              {
+                "title": "Descubrimiento e inspiración",
+                "content": "Realicé shadowing a equipos de investigación en startups y corporativos. Identifiqué que el dolor real no era la captura de datos, sino la síntesis y la trazabilidad. La inspiración visual provino de los dashboards financieros de alta frecuencia."
+              },
+              {
+                "title": "Definición de experiencia",
+                "content": "Diseñé un flujo de trabajo que actúa como un \"copiloto\" para el investigador, estructurado en tres niveles de profundidad:",
+                "bullets": [
+                  "Procesamiento Inteligente: Ingesta de video/audio con diarización de hablantes en tiempo real.",
+                  "Síntesis Aumentada: Generación automática de \"Golden Quotes\" y detección de sentimientos.",
+                  "Validación Estructurada: Matrices dinámicas donde las hipótesis se cruzan automáticamente con la evidencia recolectada."
+                ]
+              }
+            ]
+          },
+          "process": {
+            "title": "Sistema de diseño",
+            "steps": [
+              {
+                "title": "Paleta cromática con propósito",
+                "content": "Azul Cobalto (#0047AB) para autoridad, Cian Eléctrico (#00E5FF) para insights de IA, y Gris Pizarra (#263238) para reducir fatiga visual."
+              },
+              {
+                "title": "Interfaz",
+                "content": "Estilo \"Data-First\". Priorizamos la legibilidad de textos largos y la visualización de patrones. Uso de \"Glassmorphism\" sutil."
+              },
+              {
+                "title": "Elementos interactivos",
+                "content": "Línea de Tiempo Aumentada y Panel de Insights Lateral como asistente contextual."
+              }
+            ]
+          },
+          "solution": {
+            "title": "Implementación técnica",
+            "content": "Lideré la definición de una arquitectura robusta para manejar datos sensibles y procesamiento pesado.",
+            "features": [
+              "Streaming Seguro: Protocolos encriptados para transmisión.",
+              "NLP Avanzado: LLMs ajustados para terminología UX.",
+              "Feedback en Tiempo Real: Websockets para colaboración.",
+              "Optimización: Lazy loading y renderizado virtualizado."
+            ]
+          },
+          "results": {
+            "title": "Resultados transformadores",
+            "metrics": [
+              {
+                "number": "80%",
+                "description": "Reducción en tiempo de procesamiento"
+              },
+              {
+                "number": "40%",
+                "description": "Aumento en reutilización de insights"
+              }
+            ],
+            "conclusion": "IntelliResearch transformó el rol del investigador, liberándolo de la tarea administrativa para potenciar su capacidad estratégica. Demostramos que la IA no reemplaza la intuición humana, sino que la amplifica."
+          }
         }
       },
-      "implementation": {
-        "title": "Implementación técnica",
-        "wordpress": {
-          "title": "WordPress + plantilla premium",
-          "description": "Aproveché la flexibilidad de WordPress combinada con una plantilla premium para crear:",
-          "features": [
-            {
-              "description": "Experiencia responsiva perfecta en cualquier dispositivo"
-            },
-            {
-              "description": "Carga rápida incluso en conexiones variables"
-            },
-            {
-              "description": "Sistema de gestión de contenido intuitivo para el cliente"
-            },
-            {
-              "description": "Integración fluida con herramientas de registro y pago"
-            }
-          ]
+      "radio_dao": {
+        "hero": {
+          "alt": "Radio Barrio Centenario App"
         },
-        "optimization": {
-          "title": "Optimización para aventureros en movimiento",
-          "description": "El sitio fue diseñado pensando en usuarios que pueden estar planificando su aventura desde cualquier lugar - desde su oficina hasta una tienda de campaña."
-        }
-      },
-      "results": {
-        "title": "Resultados transformadores",
-        "participants": {
-          "title": "Para los participantes",
-          "quote": "Por fin un sitio que me hace sentir como si ya estuviera en la ruta, con toda la información que necesito para prepararme adecuadamente."
-        },
-        "client": {
-          "title": "Para Nomadix Adventure",
-          "achievements": [
-            {
-              "description": "Aumento significativo en inscripciones anticipadas"
-            },
-            {
-              "description": "Reducción notable en consultas repetitivas por correo/teléfono"
-            },
-            {
-              "description": "Presencia digital que refleja fielmente el profesionalismo y pasión de la organización"
-            }
-          ]
-        },
-        "impact": {
-          "title": "El impacto real de mi trabajo",
-          "description": "Más allá de métricas, mi diseño transformó cómo Nomadix Adventure conecta con su comunidad. Cada elemento del sitio invita a los visitantes a dar el primer paso en su propia aventura transformadora.",
-          "conclusion": "El sitio no solo proporciona información - crea una experiencia digital que inspira acción y construye confianza a través de un diseño centrado en el usuario y sus emociones."
+        "sections": {
+          "context": {
+            "title": "Contexto",
+            "content": "Transformación digital de una radio comunitaria histórica mediante tecnologías Web3 y streaming híbrido, permitiendo la gobernanza descentralizada."
+          },
+          "challenge": {
+            "title": "El desafío",
+            "content": "La Radio Barrio Centenario enfrentaba un estancamiento generacional y tecnológico. Su modelo tradicional limitaba su alcance, y la toma de decisiones estaba centralizada. El desafío no era solo digitalizar la señal, sino democratizar la propiedad y la gestión del medio, transformando a los oyentes pasivos en miembros activos con voz y voto."
+          },
+          "research": {
+            "title": "Mi acercamiento",
+            "subsections": [
+              {
+                "title": "Descubrimiento e inspiración",
+                "content": "Inicié con una inmersión profunda en la comunidad. Descubrí que la identidad debía evocar calidez y tradición, pero la infraestructura debía ser radicalmente moderna. Inspiración en la fusión de lo \"analógico\" y lo \"digital\"."
+              },
+              {
+                "title": "Definición de experiencia",
+                "content": "Diseñé una arquitectura centrada en tres pilares, haciendo invisible la complejidad Web3:",
+                "bullets": [
+                  "Gobernanza (DAO): Sistema de votación simplificado con tokens.",
+                  "Streaming Híbrido: Audio de baja latencia y podcasting on-demand.",
+                  "Comunidad Viva: Espacios de interacción en tiempo real integrados."
+                ]
+              }
+            ]
+          },
+          "process": {
+            "title": "Sistema de diseño",
+            "steps": [
+              {
+                "title": "Paleta cromática con propósito",
+                "content": "Naranja Ladrillo (#E65100) para calidez, Azul Noche (#1A237E) para profundidad, y Crema Papel (#F5F5F6) para lectura."
+              },
+              {
+                "title": "Interfaz",
+                "content": "Estilo \"Neo-Brutalismo Suave\". Botones grandes y legibles con alto contraste y micro-interacciones sutiles."
+              },
+              {
+                "title": "Elementos interactivos",
+                "content": "El Dial Digital para sintonizar y Tarjetas de Votación digeribles."
+              }
+            ]
+          },
+          "solution": {
+            "title": "Implementación técnica",
+            "content": "Lideré el diseño de un ecosistema multiplataforma.",
+            "features": [
+              "Streaming: Protocolos Icecast optimizados.",
+              "Web3 Invisible: Autenticación via Account Abstraction.",
+              "Apps Nativas: Web App, iOS y Android consistentes."
+            ]
+          },
+          "results": {
+            "title": "Resultados transformadores",
+            "metrics": [
+              {
+                "number": "300%",
+                "description": "Incremento en audiencia global"
+              },
+              {
+                "number": "Récord",
+                "description": "Participación histórica en votación DAO"
+              }
+            ],
+            "conclusion": "Este proyecto demostró que la tecnología descentralizada es una herramienta poderosa para la innovación social. Logramos tejer lazos comunitarios más fuertes a través de bits y ondas."
+          }
         }
       }
-    }
-  },
-  "design_systems": {
-    "nomadix": {
-      "title": "Sistema de Diseño: Nomadix Adventure",
-      "colors": {
-        "title": "01. Colores",
-        "base": {
-          "title": "Colores base",
-          "items": [
-            {
-              "name": "Negro (#000000)",
-              "description": "Color primario para textos y fondos"
-            },
-            {
-              "name": "Negro-5 (#F0F2F2)",
-              "description": "Fondos sutiles, separadores"
-            },
-            {
-              "name": "Negro-25 (#D1D1D1)",
-              "description": "Bordes, elementos secundarios"
-            },
-            {
-              "name": "Blanco (#FFFFFF)",
-              "description": "Contraste y legibilidad"
-            }
-          ]
+    },
+    "design_systems": {
+      "nomadix": {
+        "title": "Sistema de Diseño: Nomadix Adventure",
+        "colors": {
+          "title": "01. Colores",
+          "base": {
+            "title": "Colores base",
+            "items": [
+              {
+                "name": "Negro (#000000)",
+                "description": "Color primario para textos y fondos"
+              },
+              {
+                "name": "Negro-5 (#F0F2F2)",
+                "description": "Fondos sutiles, separadores"
+              },
+              {
+                "name": "Negro-25 (#D1D1D1)",
+                "description": "Bordes, elementos secundarios"
+              },
+              {
+                "name": "Blanco (#FFFFFF)",
+                "description": "Contraste y legibilidad"
+              }
+            ]
+          },
+          "brand": {
+            "title": "Colores de marca",
+            "items": [
+              {
+                "name": "Naranja (#F26B24)",
+                "description": "Color principal, CTA y acentos"
+              },
+              {
+                "name": "Gris (#686868)",
+                "description": "Elementos neutros, textos secundarios"
+              }
+            ]
+          },
+          "complementary": {
+            "title": "Colores complementarios",
+            "items": [
+              {
+                "name": "Azul (#205375)",
+                "description": "Fondos secundarios, conexión con la naturaleza"
+              },
+              {
+                "name": "Azul marino (#112B3C)",
+                "description": "Profundidad, solidez y confianza"
+              }
+            ]
+          },
+          "indication": {
+            "title": "Colores de indicación",
+            "items": [
+              {
+                "name": "Peligro (#FF453A)",
+                "description": "Alertas críticas, errores"
+              },
+              {
+                "name": "Información (#0A84FF)",
+                "description": "Estados informativos, enlaces"
+              },
+              {
+                "name": "Éxito (#30D158)",
+                "description": "Confirmaciones, acciones completadas"
+              },
+              {
+                "name": "Advertencia (#FF9F0A)",
+                "description": "Precaución, atención requerida"
+              }
+            ]
+          }
         },
-        "brand": {
-          "title": "Colores de marca",
-          "items": [
-            {
-              "name": "Naranja (#F26B24)",
-              "description": "Color principal, CTA y acentos"
-            },
-            {
-              "name": "Gris (#686868)",
-              "description": "Elementos neutros, textos secundarios"
-            }
-          ]
-        },
-        "complementary": {
-          "title": "Colores complementarios",
-          "items": [
-            {
-              "name": "Azul (#205375)",
-              "description": "Fondos secundarios, conexión con la naturaleza"
-            },
-            {
-              "name": "Azul marino (#112B3C)",
-              "description": "Profundidad, solidez y confianza"
-            }
-          ]
-        },
-        "indication": {
-          "title": "Colores de indicación",
-          "items": [
-            {
-              "name": "Peligro (#FF453A)",
-              "description": "Alertas críticas, errores"
-            },
-            {
-              "name": "Información (#0A84FF)",
-              "description": "Estados informativos, enlaces"
-            },
-            {
-              "name": "Éxito (#30D158)",
-              "description": "Confirmaciones, acciones completadas"
-            },
-            {
-              "name": "Advertencia (#FF9F0A)",
-              "description": "Precaución, atención requerida"
-            }
-          ]
-        }
-      },
-      "typography": {
-        "title": "02. Tipografía",
-        "main_font": {
-          "title": "Fuente principal",
-          "items": [
-            {
-              "name": "Familia",
-              "description": "Open Sans"
-            },
-            {
-              "name": "Usos",
-              "description": "Toda la interfaz para mantener cohesión y legibilidad"
-            }
-          ]
-        },
-        "type_scale": {
-          "title": "Escalas tipográficas",
-          "items": [
-            {
-              "name": "Display",
-              "description": "42px/46px - Títulos principales de sección"
-            },
-            {
-              "name": "H1",
-              "description": "32px/38px - Encabezados de página"
-            },
-            {
-              "name": "H2",
-              "description": "28px/34px - Subtítulos principales"
-            }
-          ]
+        "typography": {
+          "title": "02. Tipografía",
+          "main_font": {
+            "title": "Fuente principal",
+            "items": [
+              {
+                "name": "Familia",
+                "description": "Open Sans"
+              },
+              {
+                "name": "Usos",
+                "description": "Toda la interfaz para mantener cohesión y legibilidad"
+              }
+            ]
+          },
+          "type_scale": {
+            "title": "Escalas tipográficas",
+            "items": [
+              {
+                "name": "Display",
+                "description": "42px/46px - Títulos principales de sección"
+              },
+              {
+                "name": "H1",
+                "description": "32px/38px - Encabezados de página"
+              },
+              {
+                "name": "H2",
+                "description": "28px/34px - Subtítulos principales"
+              }
+            ]
+          }
         }
       }
     }
