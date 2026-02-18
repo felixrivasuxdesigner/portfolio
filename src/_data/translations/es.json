@@ -246,16 +246,6 @@
     "mobile_app": "App Móvil",
     "web_app": "App Web",
     "projects": {
-      "intelliresearch": {
-        "title": "IntelliResearch",
-        "categories": "#UX Research #AI #SaaS",
-        "description": "Plataforma de análisis de investigación UX potenciada por IA que transforma horas de entrevistas en insights estratégicos en minutos, reduciendo el tiempo de síntesis en un 80%."
-      },
-      "radio_dao": {
-        "title": "Radio Barrio Centenario",
-        "categories": "#Mobile App #Community #Web3",
-        "description": "Transformación digital de una radio comunitaria histórica mediante tecnologías Web3 y streaming híbrido, permitiendo la gobernanza descentralizada y aumentando la audiencia global en un 300%."
-      },
       "wallet": {
         "title": "Billetera Móvil",
         "categories": "#Diseño UX #Diseño UI #Prototipo #Diseño",
@@ -339,261 +329,114 @@
             "conclusion": "Más allá de métricas, mi diseño transformó cómo Nomadix Adventure conecta con su comunidad. El sitio no solo proporciona información - crea una experiencia digital que inspira acción y construye confianza."
           }
         }
-      },
-      "intelliresearch": {
-        "hero": {
-          "alt": "IntelliResearch Dashboard"
-        },
-        "sections": {
-          "context": {
-            "title": "Contexto",
-            "content": "Plataforma de análisis de investigación UX potenciada por IA que transforma horas de entrevistas en insights estratégicos en minutos, reduciendo el tiempo de síntesis en un 80%."
-          },
-          "challenge": {
-            "title": "El desafío",
-            "content": "El \"Analysis Paralysis\" es el enemigo silencioso de todo equipo de producto. Los UX Researchers pasaban más tiempo transcribiendo y etiquetando horas de entrevistas que conectando puntos y generando insights estratégicos. La riqueza cualitativa se perdía en hojas de cálculo interminables o se quedaba encerrada en videos de una hora que nadie volvía a ver. El desafío era crear una herramienta que no solo transcribiera, sino que \"pensara\" como un investigador senior, automatizando la síntesis sin perder la empatía humana."
-          },
-          "research": {
-            "title": "Mi acercamiento",
-            "subsections": [
-              {
-                "title": "Descubrimiento e inspiración",
-                "content": "Realicé shadowing a equipos de investigación en startups y corporativos. Identifiqué que el dolor real no era la captura de datos, sino la síntesis y la trazabilidad. La inspiración visual provino de los dashboards financieros de alta frecuencia."
-              },
-              {
-                "title": "Definición de experiencia",
-                "content": "Diseñé un flujo de trabajo que actúa como un \"copiloto\" para el investigador, estructurado en tres niveles de profundidad:",
-                "bullets": [
-                  "Procesamiento Inteligente: Ingesta de video/audio con diarización de hablantes en tiempo real.",
-                  "Síntesis Aumentada: Generación automática de \"Golden Quotes\" y detección de sentimientos.",
-                  "Validación Estructurada: Matrices dinámicas donde las hipótesis se cruzan automáticamente con la evidencia recolectada."
-                ]
-              }
-            ]
-          },
-          "process": {
-            "title": "Sistema de diseño",
-            "steps": [
-              {
-                "title": "Paleta cromática con propósito",
-                "content": "Azul Cobalto (#0047AB) para autoridad, Cian Eléctrico (#00E5FF) para insights de IA, y Gris Pizarra (#263238) para reducir fatiga visual."
-              },
-              {
-                "title": "Interfaz",
-                "content": "Estilo \"Data-First\". Priorizamos la legibilidad de textos largos y la visualización de patrones. Uso de \"Glassmorphism\" sutil."
-              },
-              {
-                "title": "Elementos interactivos",
-                "content": "Línea de Tiempo Aumentada y Panel de Insights Lateral como asistente contextual."
-              }
-            ]
-          },
-          "solution": {
-            "title": "Implementación técnica",
-            "content": "Lideré la definición de una arquitectura robusta para manejar datos sensibles y procesamiento pesado.",
-            "features": [
-              "Streaming Seguro: Protocolos encriptados para transmisión.",
-              "NLP Avanzado: LLMs ajustados para terminología UX.",
-              "Feedback en Tiempo Real: Websockets para colaboración.",
-              "Optimización: Lazy loading y renderizado virtualizado."
-            ]
-          },
-          "results": {
-            "title": "Resultados transformadores",
-            "metrics": [
-              {
-                "number": "80%",
-                "description": "Reducción en tiempo de procesamiento"
-              },
-              {
-                "number": "40%",
-                "description": "Aumento en reutilización de insights"
-              }
-            ],
-            "conclusion": "IntelliResearch transformó el rol del investigador, liberándolo de la tarea administrativa para potenciar su capacidad estratégica. Demostramos que la IA no reemplaza la intuición humana, sino que la amplifica."
-          }
-        }
-      },
-      "radio_dao": {
-        "hero": {
-          "alt": "Radio Barrio Centenario App"
-        },
-        "sections": {
-          "context": {
-            "title": "Contexto",
-            "content": "Transformación digital de una radio comunitaria histórica mediante tecnologías Web3 y streaming híbrido, permitiendo la gobernanza descentralizada."
-          },
-          "challenge": {
-            "title": "El desafío",
-            "content": "La Radio Barrio Centenario enfrentaba un estancamiento generacional y tecnológico. Su modelo tradicional limitaba su alcance, y la toma de decisiones estaba centralizada. El desafío no era solo digitalizar la señal, sino democratizar la propiedad y la gestión del medio, transformando a los oyentes pasivos en miembros activos con voz y voto."
-          },
-          "research": {
-            "title": "Mi acercamiento",
-            "subsections": [
-              {
-                "title": "Descubrimiento e inspiración",
-                "content": "Inicié con una inmersión profunda en la comunidad. Descubrí que la identidad debía evocar calidez y tradición, pero la infraestructura debía ser radicalmente moderna. Inspiración en la fusión de lo \"analógico\" y lo \"digital\"."
-              },
-              {
-                "title": "Definición de experiencia",
-                "content": "Diseñé una arquitectura centrada en tres pilares, haciendo invisible la complejidad Web3:",
-                "bullets": [
-                  "Gobernanza (DAO): Sistema de votación simplificado con tokens.",
-                  "Streaming Híbrido: Audio de baja latencia y podcasting on-demand.",
-                  "Comunidad Viva: Espacios de interacción en tiempo real integrados."
-                ]
-              }
-            ]
-          },
-          "process": {
-            "title": "Sistema de diseño",
-            "steps": [
-              {
-                "title": "Paleta cromática con propósito",
-                "content": "Naranja Ladrillo (#E65100) para calidez, Azul Noche (#1A237E) para profundidad, y Crema Papel (#F5F5F6) para lectura."
-              },
-              {
-                "title": "Interfaz",
-                "content": "Estilo \"Neo-Brutalismo Suave\". Botones grandes y legibles con alto contraste y micro-interacciones sutiles."
-              },
-              {
-                "title": "Elementos interactivos",
-                "content": "El Dial Digital para sintonizar y Tarjetas de Votación digeribles."
-              }
-            ]
-          },
-          "solution": {
-            "title": "Implementación técnica",
-            "content": "Lideré el diseño de un ecosistema multiplataforma.",
-            "features": [
-              "Streaming: Protocolos Icecast optimizados.",
-              "Web3 Invisible: Autenticación via Account Abstraction.",
-              "Apps Nativas: Web App, iOS y Android consistentes."
-            ]
-          },
-          "results": {
-            "title": "Resultados transformadores",
-            "metrics": [
-              {
-                "number": "300%",
-                "description": "Incremento en audiencia global"
-              },
-              {
-                "number": "Récord",
-                "description": "Participación histórica en votación DAO"
-              }
-            ],
-            "conclusion": "Este proyecto demostró que la tecnología descentralizada es una herramienta poderosa para la innovación social. Logramos tejer lazos comunitarios más fuertes a través de bits y ondas."
-          }
-        }
       }
-    },
-    "design_systems": {
-      "nomadix": {
-        "title": "Sistema de Diseño: Nomadix Adventure",
-        "colors": {
-          "title": "01. Colores",
-          "base": {
-            "title": "Colores base",
-            "items": [
-              {
-                "name": "Negro (#000000)",
-                "description": "Color primario para textos y fondos"
-              },
-              {
-                "name": "Negro-5 (#F0F2F2)",
-                "description": "Fondos sutiles, separadores"
-              },
-              {
-                "name": "Negro-25 (#D1D1D1)",
-                "description": "Bordes, elementos secundarios"
-              },
-              {
-                "name": "Blanco (#FFFFFF)",
-                "description": "Contraste y legibilidad"
-              }
-            ]
-          },
-          "brand": {
-            "title": "Colores de marca",
-            "items": [
-              {
-                "name": "Naranja (#F26B24)",
-                "description": "Color principal, CTA y acentos"
-              },
-              {
-                "name": "Gris (#686868)",
-                "description": "Elementos neutros, textos secundarios"
-              }
-            ]
-          },
-          "complementary": {
-            "title": "Colores complementarios",
-            "items": [
-              {
-                "name": "Azul (#205375)",
-                "description": "Fondos secundarios, conexión con la naturaleza"
-              },
-              {
-                "name": "Azul marino (#112B3C)",
-                "description": "Profundidad, solidez y confianza"
-              }
-            ]
-          },
-          "indication": {
-            "title": "Colores de indicación",
-            "items": [
-              {
-                "name": "Peligro (#FF453A)",
-                "description": "Alertas críticas, errores"
-              },
-              {
-                "name": "Información (#0A84FF)",
-                "description": "Estados informativos, enlaces"
-              },
-              {
-                "name": "Éxito (#30D158)",
-                "description": "Confirmaciones, acciones completadas"
-              },
-              {
-                "name": "Advertencia (#FF9F0A)",
-                "description": "Precaución, atención requerida"
-              }
-            ]
-          }
+    }
+  },
+  "design_systems": {
+    "nomadix": {
+      "title": "Sistema de Diseño: Nomadix Adventure",
+      "colors": {
+        "title": "01. Colores",
+        "base": {
+          "title": "Colores base",
+          "items": [
+            {
+              "name": "Negro (#000000)",
+              "description": "Color primario para textos y fondos"
+            },
+            {
+              "name": "Negro-5 (#F0F2F2)",
+              "description": "Fondos sutiles, separadores"
+            },
+            {
+              "name": "Negro-25 (#D1D1D1)",
+              "description": "Bordes, elementos secundarios"
+            },
+            {
+              "name": "Blanco (#FFFFFF)",
+              "description": "Contraste y legibilidad"
+            }
+          ]
         },
-        "typography": {
-          "title": "02. Tipografía",
-          "main_font": {
-            "title": "Fuente principal",
-            "items": [
-              {
-                "name": "Familia",
-                "description": "Open Sans"
-              },
-              {
-                "name": "Usos",
-                "description": "Toda la interfaz para mantener cohesión y legibilidad"
-              }
-            ]
-          },
-          "type_scale": {
-            "title": "Escalas tipográficas",
-            "items": [
-              {
-                "name": "Display",
-                "description": "42px/46px - Títulos principales de sección"
-              },
-              {
-                "name": "H1",
-                "description": "32px/38px - Encabezados de página"
-              },
-              {
-                "name": "H2",
-                "description": "28px/34px - Subtítulos principales"
-              }
-            ]
-          }
+        "brand": {
+          "title": "Colores de marca",
+          "items": [
+            {
+              "name": "Naranja (#F26B24)",
+              "description": "Color principal, CTA y acentos"
+            },
+            {
+              "name": "Gris (#686868)",
+              "description": "Elementos neutros, textos secundarios"
+            }
+          ]
+        },
+        "complementary": {
+          "title": "Colores complementarios",
+          "items": [
+            {
+              "name": "Azul (#205375)",
+              "description": "Fondos secundarios, conexión con la naturaleza"
+            },
+            {
+              "name": "Azul marino (#112B3C)",
+              "description": "Profundidad, solidez y confianza"
+            }
+          ]
+        },
+        "indication": {
+          "title": "Colores de indicación",
+          "items": [
+            {
+              "name": "Peligro (#FF453A)",
+              "description": "Alertas críticas, errores"
+            },
+            {
+              "name": "Información (#0A84FF)",
+              "description": "Estados informativos, enlaces"
+            },
+            {
+              "name": "Éxito (#30D158)",
+              "description": "Confirmaciones, acciones completadas"
+            },
+            {
+              "name": "Advertencia (#FF9F0A)",
+              "description": "Precaución, atención requerida"
+            }
+          ]
+        }
+      },
+      "typography": {
+        "title": "02. Tipografía",
+        "main_font": {
+          "title": "Fuente principal",
+          "items": [
+            {
+              "name": "Familia",
+              "description": "Open Sans"
+            },
+            {
+              "name": "Usos",
+              "description": "Toda la interfaz para mantener cohesión y legibilidad"
+            }
+          ]
+        },
+        "type_scale": {
+          "title": "Escalas tipográficas",
+          "items": [
+            {
+              "name": "Display",
+              "description": "42px/46px - Títulos principales de sección"
+            },
+            {
+              "name": "H1",
+              "description": "32px/38px - Encabezados de página"
+            },
+            {
+              "name": "H2",
+              "description": "28px/34px - Subtítulos principales"
+            }
+          ]
         }
       }
     }

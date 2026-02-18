@@ -166,6 +166,11 @@ isCaseStudy: true
         </div>
         <p>{{ translations[locale].case_studies.projects[projectKey].sections.results.conclusion }}</p>
       </div>
+
+      <!-- Markdown/Direct Content -->
+      <div class="case-study-markdown">
+        {{ content | safe }}
+      </div>
     </div>
   </div>
 </div>

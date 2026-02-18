@@ -246,16 +246,6 @@
     "mobile_app": "Mobile App",
     "web_app": "Web App",
     "projects": {
-      "intelliresearch": {
-        "title": "IntelliResearch",
-        "categories": "#UX Research #AI #SaaS",
-        "description": "AI-powered UX research analysis platform that transforms hours of interviews into strategic insights in minutes, reducing synthesis time by 80%."
-      },
-      "radio_dao": {
-        "title": "Radio Barrio Centenario",
-        "categories": "#Mobile App #Community #Web3",
-        "description": "Digital transformation of a historic community radio station using Web3 technologies and hybrid streaming, enabling decentralized governance and increasing global audience by 300%."
-      },
       "wallet": {
         "title": "Mobile Wallet",
         "categories": "#UX Design #UI Design #Prototype #Design",
@@ -426,120 +416,6 @@
             "title": "The Real Impact of My Work",
             "description": "Beyond metrics, my design transformed how Nomadix Adventure connects with their community. Every element of the site invites visitors to take the first step in their own transformative adventure.",
             "conclusion": "The site doesn't just provide information - it creates a digital experience that inspires action and builds trust through user-centered design focused on emotions."
-          }
-        }
-      },
-      "intelliresearch": {
-        "hero": {
-          "alt": "IntelliResearch Dashboard"
-        },
-        "sections": {
-          "context": {
-            "title": "Context",
-            "content": "AI-powered UX research analysis platform that transforms hours of interviews into strategic insights in minutes, reducing synthesis time by 80%."
-          },
-          "challenge": {
-            "title": "The Challenge",
-            "content": "\"Analysis Paralysis\" is the silent enemy of every product team. UX Researchers were spending more time transcribing and tagging hours of interviews than connecting dots and generating strategic insights. Qualitative richness was lost in endless spreadsheets or locked away in hour-long videos no one ever watched again. The challenge was to create a tool that didn't just transcribe, but \"thought\" like a senior researcher, automating synthesis without losing human empathy."
-          },
-          "research": {
-            "title": "My Approach",
-            "subsections": [
-              {
-                "title": "Discovery & Inspiration",
-                "content": "I shadowed research teams in startups and corporations. I identified that the real pain wasn't data capture, but synthesis and traceability. Visual inspiration came from high-frequency financial dashboards: information density, absolute clarity, and smart alerts, but adapted to the language of human behavior."
-              },
-              {
-                "title": "Experience Definition",
-                "content": "I designed a workflow that acts as a \"copilot\" for the researcher, structured in three levels of depth:",
-                "bullets": [
-                  "Intelligent Processing: Video/audio ingestion with real-time speaker diarization.",
-                  "Augmented Synthesis: Automatic generation of \"Golden Quotes\", sentiment detection, and pain point prioritization classified by severity (Critical/High/Medium).",
-                  "Structured Validation: Dynamic matrices where hypotheses are automatically cross-referenced with collected evidence, allowing assumptions to be validated or refuted in seconds."
-                ]
-              }
-            ]
-          },
-          "solution": {
-            "title": "Technical Implementation",
-            "content": "I led the definition of a robust architecture to handle sensitive data and heavy processing:",
-            "features": [
-              "Secure Streaming: Encrypted protocols for transmission and storage of confidential user material.",
-              "Advanced NLP: Integration of Large Language Models (LLMs) fine-tuned specifically for UX and Product terminology.",
-              "Real-time Feedback: Websockets to allow other team members to add notes or marks during a live interview.",
-              "Optimization: Lazy loading was implemented for massive transcripts and virtualized rendering for lists of thousands of data points, ensuring fluidity even in massive projects."
-            ]
-          },
-          "results": {
-            "title": "Transformative Results",
-            "metrics": [
-              {
-                "number": "80%",
-                "description": "Reduction in post-interview processing time"
-              },
-              {
-                "number": "40%",
-                "description": "Increase in reuse of old insights thanks to a centralized semantic search engine"
-              }
-            ],
-            "conclusion": "IntelliResearch transformed the researcher's role, freeing them from administrative tasks to empower their strategic capacity. We demonstrated that AI does not replace human intuition, but amplifies it, allowing us to listen to more users with greater depth and turn that empathy into better digital products."
-          }
-        }
-      },
-      "radio_dao": {
-        "hero": {
-          "alt": "Radio Barrio Centenario App"
-        },
-        "sections": {
-          "context": {
-            "title": "Context",
-            "content": "A historic community radio station facing stagnation, transformed into a DAO to democratize ownership and modernize its reach."
-          },
-          "challenge": {
-            "title": "The Challenge",
-            "content": "Radio Barrio Centenario, a historic pillar of the community, was facing generational and technological stagnation. Its traditional transmission model (FM) limited its geographic reach, and decision-making was centralized, pushing away new voices seeking to participate. The challenge was not just to digitize the signal, but to democratize ownership and management of the medium, transforming passive listeners into active members with a voice and vote."
-          },
-          "research": {
-            "title": "My Approach",
-            "subsections": [
-              {
-                "title": "Discovery & Inspiration",
-                "content": "I started with a deep immersion in the community, conducting interviews with historic founders and workshops with young local creators. I discovered that the visual identity needed to evoke warmth and tradition, but the infrastructure had to be radically modern and transparent. Inspiration came from the fusion of the \"analog\" (human voice, history) and the \"digital\" (blockchain, global streaming)."
-              },
-              {
-                "title": "Experience Definition",
-                "content": "I designed an information architecture centered on three fundamental pillars, guaranteeing that the technological complexity of a DAO was invisible to the end user:",
-                "bullets": [
-                  "Governance (DAO): A simplified voting system where community members use participation \"tokens\" to decide programming and elect directives.",
-                  "Hybrid Streaming: Low-latency audio playback accessible from any mobile connection, with on-demand podcasting capabilities to preserve historical memory.",
-                  "Living Community: Real-time interaction spaces (chat, reactions) integrated directly into the listening experience, eliminating the need for external social networks for immediate feedback."
-                ]
-              }
-            ]
-          },
-          "solution": {
-            "title": "Technical Implementation",
-            "content": "I led the experience design for a multi-platform ecosystem:",
-            "features": [
-              "Streaming: Integration of Icecast protocols optimized for unstable mobile networks.",
-              "Invisible Web3: Authentication via simplified wallets (account abstraction) so users vote on the blockchain without managing complex seed phrases.",
-              "Native Apps: Development of Web App and Mobile App (iOS/Android) ready for deployment, ensuring visual and behavioral consistency.",
-              "Optimization: Performance in audio loading and data consumption was prioritized, implementing aggressive caching strategies for static content and adaptive compression for the audio stream."
-            ]
-          },
-          "results": {
-            "title": "Transformative Results",
-            "metrics": [
-              {
-                "number": "300%",
-                "description": "Increase in global audience thanks to digital streaming"
-              },
-              {
-                "number": "Record",
-                "description": "Historic participation in the first digital governance vote"
-              }
-            ],
-            "conclusion": "This project demonstrated that decentralized technology (Web3/DAO) is not exclusive to finance, but a powerful tool for social innovation. We managed to weave stronger community ties through bits and waves, ensuring that Radio Barrio Centenario not only survives the digital age but defines what community media of the future should look like."
           }
         }
       }

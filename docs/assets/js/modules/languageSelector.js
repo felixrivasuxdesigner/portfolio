@@ -28,32 +28,30 @@ export function initLanguageSelector() {
   // Adaptar los URLs para mantener la ruta actual al cambiar idioma
   const languageLinks = langDropdown.querySelectorAll('a');
   languageLinks.forEach((link) => {
-    // Obtener la URL actual sin el prefijo de idioma y sin la base URL
+    // Obtener la URL actual
     const currentPath = window.location.pathname;
     
-    // Determinar si estamos en localhost o producción
-    const isLocalhost = window.location.hostname === 'localhost' || 
-                         window.location.hostname === '127.0.0.1' ||
-                         window.location.hostname.includes('192.168.');
-    
-    // Usar la base URL apropiada según el entorno
-    const baseUrl = isLocalhost ? '/' : '/portfolio/';
+    // La base URL común para el sitio
+    const baseUrl = '/portfolio/';
 
-    // Elimina primero la base URL '/portfolio/' o '/' según corresponda
+    // 1. Eliminar la base URL '/portfolio/' si está presente al principio
     let cleanPath = currentPath;
-    if (isLocalhost) {
-      cleanPath = cleanPath.replace(/^\//, '');
-    } else {
-      cleanPath = cleanPath.replace(/^\/portfolio\//, '');
+    if (cleanPath.startsWith(baseUrl)) {
+      cleanPath = cleanPath.substring(baseUrl.length);
+    } else if (cleanPath.startsWith('/')) {
+      // Si no tiene baseUrl pero empieza con /, quitar la /
+      cleanPath = cleanPath.substring(1);
     }
 
-    // Luego elimina el prefijo de idioma 'es/' o 'en/'
+    // 2. Eliminar el prefijo de idioma 'es/' o 'en/' si está presente al principio
     cleanPath = cleanPath.replace(/^(es|en)\//, '');
 
-    // Obtener el idioma destino del enlace (es o en)
+    // 3. Obtener el idioma destino del enlace del atributo href original
+    // (Por defecto el selector tiene enlaces a /portfolio/es/ y /portfolio/en/)
     const targetLang = link.getAttribute('href').includes('/es/') ? 'es' : 'en';
 
-    // Actualizar href con la ruta correcta
+    // 4. Actualizar href con la ruta completa reconstruida
+    // Aseguramos que siempre empiece con la baseUrl correcta
     link.setAttribute('href', `${baseUrl}${targetLang}/${cleanPath}`);
   });
 }
