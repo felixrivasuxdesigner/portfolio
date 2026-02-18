@@ -27,7 +27,7 @@
     "technologies": "Con experiencia <strong>en</strong>",
     "technologies_desc": "Algunas de las Tecnologías en las que tengo experiencia",
     "paragraphs": {
-      "first": "Cuento con más de 12 años de experiencia en el campo del diseño, he trabajado en diferentes áreas, como medios de comunicación, banca y finanzas, seguros y retail. Me especializo en diseño de interfaces y experiencia de usuario para aplicaciones móviles y web, tengo conocimientos en tecnologías front-end como HTML, CSS, Sass, JavaScript, React y herramientas de diseño como Sketch, Photoshop, After Effects, InDesign y Final Cut Pro. Actualmente estoy involucrado en el estudio de la IA y su influencia en el diseño.",
+      "first": "Cuento con más de 8 años de experiencia en el campo del diseño, he trabajado en diferentes áreas, como medios de comunicación, banca y finanzas, seguros y retail. Me especializo en diseño de interfaces y experiencia de usuario para aplicaciones móviles y web, tengo conocimientos en tecnologías front-end como HTML, CSS, Sass, JavaScript, React y herramientas de diseño como Sketch, Photoshop, After Effects, InDesign y Final Cut Pro. Actualmente estoy involucrado en el estudio de la IA y su influencia en el diseño.",
       "second": "He participado y liderado equipos de diseño y desarrollo. Dentro del área de Diseño de Productos he participado en proyectos de investigación con usuarios para desarrollar bases de datos con el fin de entender sus necesidades y deseos. Esto me ha permitido crear experiencias de usuario atractivas que mejoran la interacción de las personas con los productos diseñados.",
       "third": "Mis objetivos profesionales a largo plazo son seguir creciendo en mi carrera y desarrollar proyectos innovadores que contribuyan a mejorar la vida de las personas a través del diseño."
     }
@@ -246,6 +246,16 @@
     "mobile_app": "App Móvil",
     "web_app": "App Web",
     "projects": {
+      "intelliresearch": {
+        "title": "IntelliResearch",
+        "categories": "#UX Research #AI #SaaS",
+        "description": "Plataforma de análisis de investigación UX potenciada por IA que transforma horas de entrevistas en insights estratégicos en minutos, reduciendo el tiempo de síntesis en un 80%."
+      },
+      "radio_dao": {
+        "title": "Radio Barrio Centenario",
+        "categories": "#Mobile App #Community #Web3",
+        "description": "Transformación digital de una radio comunitaria histórica mediante tecnologías Web3 y streaming híbrido, permitiendo la gobernanza descentralizada y aumentando la audiencia global en un 300%."
+      },
       "wallet": {
         "title": "Billetera Móvil",
         "categories": "#Diseño UX #Diseño UI #Prototipo #Diseño",
@@ -284,13 +294,34 @@
           "title": "Definición de experiencia",
           "description": "Creé una arquitectura de información que guía al visitante en un viaje digital que refleja la travesía física:",
           "sections": [
-            {"name": "Página inicial", "description": "Una invitación irresistible a la aventura"},
-            {"name": "Quiénes somos", "description": "La historia y valores que dan vida al evento"},
-            {"name": "Evento", "description": "Detalles prácticos presentados de forma inspiradora"},
-            {"name": "Bases", "description": "Información crucial presentada con claridad y emoción"},
-            {"name": "Travel", "description": "Contenido que despierta el espíritu nómada"},
-            {"name": "Recursos", "description": "Herramientas útiles para participantes"},
-            {"name": "Contacto", "description": "Un puente personal entre la organización y los aventureros"}
+            {
+              "name": "Página inicial",
+              "description": "Una invitación irresistible a la aventura"
+            },
+            {
+              "name": "Quiénes somos",
+              "description": "La historia y valores que dan vida al evento"
+            },
+            {
+              "name": "Evento",
+              "description": "Detalles prácticos presentados de forma inspiradora"
+            },
+            {
+              "name": "Bases",
+              "description": "Información crucial presentada con claridad y emoción"
+            },
+            {
+              "name": "Travel",
+              "description": "Contenido que despierta el espíritu nómada"
+            },
+            {
+              "name": "Recursos",
+              "description": "Herramientas útiles para participantes"
+            },
+            {
+              "name": "Contacto",
+              "description": "Un puente personal entre la organización y los aventureros"
+            }
           ]
         }
       },
@@ -300,15 +331,40 @@
           "title": "Paleta cromática con propósito",
           "description": "Desarrollé un sistema de colores que combina:",
           "colors": [
-            {"name": "Negro profundo y grises", "description": "Base elegante que permite que las imágenes destaquen"},
-            {"name": "Naranja vibrante (#F26B24)", "description": "Color de acción e identidad que evoca energía y aventura"},
-            {"name": "Azules complementarios", "description": "Conexión con la naturaleza y los océanos"},
-            {"name": "Colores semánticos", "description": "Señales intuitivas que guían al usuario", "details": [
-              {"name": "Éxito", "value": "#30D158"},
-              {"name": "Información", "value": "#0A84FF"},
-              {"name": "Peligro", "value": "#FF453A"},
-              {"name": "Advertencia", "value": "#FF9F0A"}
-            ]}
+            {
+              "name": "Negro profundo y grises",
+              "description": "Base elegante que permite que las imágenes destaquen"
+            },
+            {
+              "name": "Naranja vibrante (#F26B24)",
+              "description": "Color de acción e identidad que evoca energía y aventura"
+            },
+            {
+              "name": "Azules complementarios",
+              "description": "Conexión con la naturaleza y los océanos"
+            },
+            {
+              "name": "Colores semánticos",
+              "description": "Señales intuitivas que guían al usuario",
+              "details": [
+                {
+                  "name": "Éxito",
+                  "value": "#30D158"
+                },
+                {
+                  "name": "Información",
+                  "value": "#0A84FF"
+                },
+                {
+                  "name": "Peligro",
+                  "value": "#FF453A"
+                },
+                {
+                  "name": "Advertencia",
+                  "value": "#FF9F0A"
+                }
+              ]
+            }
           ]
         },
         "photography": {
@@ -326,10 +382,18 @@
           "title": "WordPress + plantilla premium",
           "description": "Aproveché la flexibilidad de WordPress combinada con una plantilla premium para crear:",
           "features": [
-            {"description": "Experiencia responsiva perfecta en cualquier dispositivo"},
-            {"description": "Carga rápida incluso en conexiones variables"},
-            {"description": "Sistema de gestión de contenido intuitivo para el cliente"},
-            {"description": "Integración fluida con herramientas de registro y pago"}
+            {
+              "description": "Experiencia responsiva perfecta en cualquier dispositivo"
+            },
+            {
+              "description": "Carga rápida incluso en conexiones variables"
+            },
+            {
+              "description": "Sistema de gestión de contenido intuitivo para el cliente"
+            },
+            {
+              "description": "Integración fluida con herramientas de registro y pago"
+            }
           ]
         },
         "optimization": {
@@ -346,9 +410,15 @@
         "client": {
           "title": "Para Nomadix Adventure",
           "achievements": [
-            {"description": "Aumento significativo en inscripciones anticipadas"},
-            {"description": "Reducción notable en consultas repetitivas por correo/teléfono"},
-            {"description": "Presencia digital que refleja fielmente el profesionalismo y pasión de la organización"}
+            {
+              "description": "Aumento significativo en inscripciones anticipadas"
+            },
+            {
+              "description": "Reducción notable en consultas repetitivas por correo/teléfono"
+            },
+            {
+              "description": "Presencia digital que refleja fielmente el profesionalismo y pasión de la organización"
+            }
           ]
         },
         "impact": {
@@ -367,33 +437,69 @@
         "base": {
           "title": "Colores base",
           "items": [
-            {"name": "Negro (#000000)", "description": "Color primario para textos y fondos"},
-            {"name": "Negro-5 (#F0F2F2)", "description": "Fondos sutiles, separadores"},
-            {"name": "Negro-25 (#D1D1D1)", "description": "Bordes, elementos secundarios"},
-            {"name": "Blanco (#FFFFFF)", "description": "Contraste y legibilidad"}
+            {
+              "name": "Negro (#000000)",
+              "description": "Color primario para textos y fondos"
+            },
+            {
+              "name": "Negro-5 (#F0F2F2)",
+              "description": "Fondos sutiles, separadores"
+            },
+            {
+              "name": "Negro-25 (#D1D1D1)",
+              "description": "Bordes, elementos secundarios"
+            },
+            {
+              "name": "Blanco (#FFFFFF)",
+              "description": "Contraste y legibilidad"
+            }
           ]
         },
         "brand": {
           "title": "Colores de marca",
           "items": [
-            {"name": "Naranja (#F26B24)", "description": "Color principal, CTA y acentos"},
-            {"name": "Gris (#686868)", "description": "Elementos neutros, textos secundarios"}
+            {
+              "name": "Naranja (#F26B24)",
+              "description": "Color principal, CTA y acentos"
+            },
+            {
+              "name": "Gris (#686868)",
+              "description": "Elementos neutros, textos secundarios"
+            }
           ]
         },
         "complementary": {
           "title": "Colores complementarios",
           "items": [
-            {"name": "Azul (#205375)", "description": "Fondos secundarios, conexión con la naturaleza"},
-            {"name": "Azul marino (#112B3C)", "description": "Profundidad, solidez y confianza"}
+            {
+              "name": "Azul (#205375)",
+              "description": "Fondos secundarios, conexión con la naturaleza"
+            },
+            {
+              "name": "Azul marino (#112B3C)",
+              "description": "Profundidad, solidez y confianza"
+            }
           ]
         },
         "indication": {
           "title": "Colores de indicación",
           "items": [
-            {"name": "Peligro (#FF453A)", "description": "Alertas críticas, errores"},
-            {"name": "Información (#0A84FF)", "description": "Estados informativos, enlaces"},
-            {"name": "Éxito (#30D158)", "description": "Confirmaciones, acciones completadas"},
-            {"name": "Advertencia (#FF9F0A)", "description": "Precaución, atención requerida"}
+            {
+              "name": "Peligro (#FF453A)",
+              "description": "Alertas críticas, errores"
+            },
+            {
+              "name": "Información (#0A84FF)",
+              "description": "Estados informativos, enlaces"
+            },
+            {
+              "name": "Éxito (#30D158)",
+              "description": "Confirmaciones, acciones completadas"
+            },
+            {
+              "name": "Advertencia (#FF9F0A)",
+              "description": "Precaución, atención requerida"
+            }
           ]
         }
       },
@@ -402,16 +508,31 @@
         "main_font": {
           "title": "Fuente principal",
           "items": [
-            {"name": "Familia", "description": "Open Sans"},
-            {"name": "Usos", "description": "Toda la interfaz para mantener cohesión y legibilidad"}
+            {
+              "name": "Familia",
+              "description": "Open Sans"
+            },
+            {
+              "name": "Usos",
+              "description": "Toda la interfaz para mantener cohesión y legibilidad"
+            }
           ]
         },
         "type_scale": {
           "title": "Escalas tipográficas",
           "items": [
-            {"name": "Display", "description": "42px/46px - Títulos principales de sección"},
-            {"name": "H1", "description": "32px/38px - Encabezados de página"},
-            {"name": "H2", "description": "28px/34px - Subtítulos principales"}
+            {
+              "name": "Display",
+              "description": "42px/46px - Títulos principales de sección"
+            },
+            {
+              "name": "H1",
+              "description": "32px/38px - Encabezados de página"
+            },
+            {
+              "name": "H2",
+              "description": "28px/34px - Subtítulos principales"
+            }
           ]
         }
       }

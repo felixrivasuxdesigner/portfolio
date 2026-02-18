@@ -246,6 +246,16 @@
     "mobile_app": "Mobile App",
     "web_app": "Web App",
     "projects": {
+      "intelliresearch": {
+        "title": "IntelliResearch",
+        "categories": "#UX Research #AI #SaaS",
+        "description": "AI-powered UX research analysis platform that transforms hours of interviews into strategic insights in minutes, reducing synthesis time by 80%."
+      },
+      "radio_dao": {
+        "title": "Radio Barrio Centenario",
+        "categories": "#Mobile App #Community #Web3",
+        "description": "Digital transformation of a historic community radio station using Web3 technologies and hybrid streaming, enabling decentralized governance and increasing global audience by 300%."
+      },
       "wallet": {
         "title": "Mobile Wallet",
         "categories": "#UX Design #UI Design #Prototype #Design",
@@ -284,13 +294,34 @@
           "title": "Experience Definition",
           "description": "I created an information architecture that guides visitors through a digital journey reflecting the physical adventure:",
           "sections": [
-            {"name": "Homepage", "description": "An irresistible invitation to adventure"},
-            {"name": "About Us", "description": "The story and values that bring the event to life"},
-            {"name": "Event", "description": "Practical details presented in an inspiring way"},
-            {"name": "Rules", "description": "Critical information presented with clarity and emotion"},
-            {"name": "Travel", "description": "Content that awakens the nomadic spirit"},
-            {"name": "Resources", "description": "Useful tools for participants"},
-            {"name": "Contact", "description": "A personal bridge between the organization and adventurers"}
+            {
+              "name": "Homepage",
+              "description": "An irresistible invitation to adventure"
+            },
+            {
+              "name": "About Us",
+              "description": "The story and values that bring the event to life"
+            },
+            {
+              "name": "Event",
+              "description": "Practical details presented in an inspiring way"
+            },
+            {
+              "name": "Rules",
+              "description": "Critical information presented with clarity and emotion"
+            },
+            {
+              "name": "Travel",
+              "description": "Content that awakens the nomadic spirit"
+            },
+            {
+              "name": "Resources",
+              "description": "Useful tools for participants"
+            },
+            {
+              "name": "Contact",
+              "description": "A personal bridge between the organization and adventurers"
+            }
           ]
         }
       },
@@ -300,15 +331,40 @@
           "title": "Purposeful Color Palette",
           "description": "I developed a color system that combines:",
           "colors": [
-            {"name": "Deep black and grays", "description": "Elegant foundation that allows images to stand out"},
-            {"name": "Vibrant orange (#F26B24)", "description": "Action and identity color that evokes energy and adventure"},
-            {"name": "Complementary blues", "description": "Connection with nature and oceans"},
-            {"name": "Semantic colors", "description": "Intuitive signals that guide the user", "details": [
-              {"name": "Success", "value": "#30D158"},
-              {"name": "Information", "value": "#0A84FF"},
-              {"name": "Danger", "value": "#FF453A"},
-              {"name": "Warning", "value": "#FF9F0A"}
-            ]}
+            {
+              "name": "Deep black and grays",
+              "description": "Elegant foundation that allows images to stand out"
+            },
+            {
+              "name": "Vibrant orange (#F26B24)",
+              "description": "Action and identity color that evokes energy and adventure"
+            },
+            {
+              "name": "Complementary blues",
+              "description": "Connection with nature and oceans"
+            },
+            {
+              "name": "Semantic colors",
+              "description": "Intuitive signals that guide the user",
+              "details": [
+                {
+                  "name": "Success",
+                  "value": "#30D158"
+                },
+                {
+                  "name": "Information",
+                  "value": "#0A84FF"
+                },
+                {
+                  "name": "Danger",
+                  "value": "#FF453A"
+                },
+                {
+                  "name": "Warning",
+                  "value": "#FF9F0A"
+                }
+              ]
+            }
           ]
         },
         "photography": {
@@ -326,10 +382,18 @@
           "title": "WordPress + Premium Template",
           "description": "I leveraged the flexibility of WordPress combined with a premium template to create:",
           "features": [
-            {"description": "Perfect responsive experience on any device"},
-            {"description": "Fast loading even on variable connections"},
-            {"description": "Intuitive content management system for the client"},
-            {"description": "Seamless integration with registration and payment tools"}
+            {
+              "description": "Perfect responsive experience on any device"
+            },
+            {
+              "description": "Fast loading even on variable connections"
+            },
+            {
+              "description": "Intuitive content management system for the client"
+            },
+            {
+              "description": "Seamless integration with registration and payment tools"
+            }
           ]
         },
         "optimization": {
@@ -346,9 +410,15 @@
         "client": {
           "title": "For Nomadix Adventure",
           "achievements": [
-            {"description": "Significant increase in early registrations"},
-            {"description": "Notable reduction in repetitive queries via email/phone"},
-            {"description": "Digital presence that faithfully reflects the organization's professionalism and passion"}
+            {
+              "description": "Significant increase in early registrations"
+            },
+            {
+              "description": "Notable reduction in repetitive queries via email/phone"
+            },
+            {
+              "description": "Digital presence that faithfully reflects the organization's professionalism and passion"
+            }
           ]
         },
         "impact": {
@@ -367,33 +437,69 @@
         "base": {
           "title": "Base Colors",
           "items": [
-            {"name": "Black (#000000)", "description": "Primary color for text and backgrounds"},
-            {"name": "Black-5 (#F0F2F2)", "description": "Subtle backgrounds, separators"},
-            {"name": "Black-25 (#D1D1D1)", "description": "Borders, secondary elements"},
-            {"name": "White (#FFFFFF)", "description": "Contrast and readability"}
+            {
+              "name": "Black (#000000)",
+              "description": "Primary color for text and backgrounds"
+            },
+            {
+              "name": "Black-5 (#F0F2F2)",
+              "description": "Subtle backgrounds, separators"
+            },
+            {
+              "name": "Black-25 (#D1D1D1)",
+              "description": "Borders, secondary elements"
+            },
+            {
+              "name": "White (#FFFFFF)",
+              "description": "Contrast and readability"
+            }
           ]
         },
         "brand": {
           "title": "Brand Colors",
           "items": [
-            {"name": "Orange (#F26B24)", "description": "Primary color, CTAs and accents"},
-            {"name": "Gray (#686868)", "description": "Neutral elements, secondary text"}
+            {
+              "name": "Orange (#F26B24)",
+              "description": "Primary color, CTAs and accents"
+            },
+            {
+              "name": "Gray (#686868)",
+              "description": "Neutral elements, secondary text"
+            }
           ]
         },
         "complementary": {
           "title": "Complementary Colors",
           "items": [
-            {"name": "Blue (#205375)", "description": "Secondary backgrounds, connection to nature"},
-            {"name": "Navy (#112B3C)", "description": "Depth, solidity and trust"}
+            {
+              "name": "Blue (#205375)",
+              "description": "Secondary backgrounds, connection to nature"
+            },
+            {
+              "name": "Navy (#112B3C)",
+              "description": "Depth, solidity and trust"
+            }
           ]
         },
         "indication": {
           "title": "Indication Colors",
           "items": [
-            {"name": "Danger (#FF453A)", "description": "Critical alerts, errors"},
-            {"name": "Information (#0A84FF)", "description": "Informational states, links"},
-            {"name": "Success (#30D158)", "description": "Confirmations, completed actions"},
-            {"name": "Warning (#FF9F0A)", "description": "Caution, attention required"}
+            {
+              "name": "Danger (#FF453A)",
+              "description": "Critical alerts, errors"
+            },
+            {
+              "name": "Information (#0A84FF)",
+              "description": "Informational states, links"
+            },
+            {
+              "name": "Success (#30D158)",
+              "description": "Confirmations, completed actions"
+            },
+            {
+              "name": "Warning (#FF9F0A)",
+              "description": "Caution, attention required"
+            }
           ]
         }
       },
@@ -402,16 +508,31 @@
         "main_font": {
           "title": "Primary Font",
           "items": [
-            {"name": "Family", "description": "Open Sans"},
-            {"name": "Uses", "description": "Entire interface to maintain cohesion and readability"}
+            {
+              "name": "Family",
+              "description": "Open Sans"
+            },
+            {
+              "name": "Uses",
+              "description": "Entire interface to maintain cohesion and readability"
+            }
           ]
         },
         "type_scale": {
           "title": "Type Scale",
           "items": [
-            {"name": "Display", "description": "42px/46px - Main section titles"},
-            {"name": "H1", "description": "32px/38px - Page headers"},
-            {"name": "H2", "description": "28px/34px - Primary subtitles"}
+            {
+              "name": "Display",
+              "description": "42px/46px - Main section titles"
+            },
+            {
+              "name": "H1",
+              "description": "32px/38px - Page headers"
+            },
+            {
+              "name": "H2",
+              "description": "28px/34px - Primary subtitles"
+            }
           ]
         }
       }
