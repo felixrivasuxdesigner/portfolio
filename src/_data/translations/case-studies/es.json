@@ -454,22 +454,9 @@
             }
           ]
         },
-        "process": {
+        "designSystem": {
           "title": "Sistema de diseño",
-          "steps": [
-            {
-              "title": "Paleta cromática con propósito",
-              "content": "Azul Cobalto (#0047AB) para autoridad, Cian Eléctrico (#00E5FF) para insights de IA, y Gris Pizarra (#263238) para reducir fatiga visual."
-            },
-            {
-              "title": "Interfaz",
-              "content": "Estilo \"Data-First\". Priorizamos la legibilidad de textos largos y la visualización de patrones. Uso de \"Glassmorphism\" sutil."
-            },
-            {
-              "title": "Elementos interactivos",
-              "content": "Línea de Tiempo Aumentada y Panel de Insights Lateral como asistente contextual."
-            }
-          ]
+          "intro": "El sistema de diseño para IntelliResearch se centra en la eficiencia y la claridad, permitiendo una síntesis rápida de datos complejos."
         },
         "solution": {
           "title": "Implementación técnica",
@@ -530,22 +517,9 @@
             }
           ]
         },
-        "process": {
+        "designSystem": {
           "title": "Sistema de diseño",
-          "steps": [
-            {
-              "title": "Paleta cromática con propósito",
-              "content": "Naranja Ladrillo (#E65100) para calidez, Azul Noche (#1A237E) para profundidad, y Crema Papel (#F5F5F6) para lectura."
-            },
-            {
-              "title": "Interfaz",
-              "content": "Estilo \"Neo-Brutalismo Suave\". Botones grandes y legibles con alto contraste y micro-interacciones sutiles."
-            },
-            {
-              "title": "Elementos interactivos",
-              "content": "El Dial Digital para sintonizar y Tarjetas de Votación digeribles."
-            }
-          ]
+          "intro": "El sistema de diseño para Radio Barrio Centenario combina la calidez de la tradición con la modernidad de la descentralización."
         },
         "solution": {
           "title": "Implementación técnica",

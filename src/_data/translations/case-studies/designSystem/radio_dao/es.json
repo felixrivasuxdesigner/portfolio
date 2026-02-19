@@ -1,0 +1,191 @@
+{
+    "title": "Sistema de Diseño Radio DAO",
+    "intro": "Un lenguaje visual vibrante y comunitario diseñado para empederar a las radioemisoras locales en el ecosistema Web3.",
+    "colorPalette": {
+        "title": "Paleta de Colores",
+        "description": "Tonos energéticos que reflejan la pasión de la radio y la transparencia de la blockchain.",
+        "colors": [
+            {
+                "name": "Naranja Ladrillo",
+                "hex": "#E65100",
+                "usage": "El alma de la marca, calidez y energía comunitaria"
+            },
+            {
+                "name": "Azul Noche",
+                "hex": "#1A237E",
+                "usage": "Profundidad, confianza y contraste visual potente"
+            },
+            {
+                "name": "Crema Papel",
+                "hex": "#F5F5F6",
+                "usage": "Fondo suave para mejorar la legibilidad de textos largos"
+            },
+            {
+                "name": "Ámbar Vibrante",
+                "hex": "#FFB300",
+                "usage": "Acentos para interacciones Web3 y estados activos"
+            }
+        ]
+    },
+    "typography": {
+        "title": "Tipografía Comunitaria",
+        "description": "Combinamos Montserrat para el impacto visual y Roboto Mono para los datos técnicos de la blockchain.",
+        "fonts": [
+            {
+                "name": "Montserrat",
+                "category": "Encabezados y Marca",
+                "weights": "600 (Semibold), 700 (Bold), 900 (Black)",
+                "usage": "Títulos con fuerte personalidad y elementos de branding"
+            },
+            {
+                "name": "Roboto Mono",
+                "category": "Datos y Metadata",
+                "weights": "400 (Regular), 500 (Medium)",
+                "usage": "Valores de tokens, direcciones de billetera y metadatos técnicos"
+            }
+        ],
+        "fontSizes": [
+            {
+                "name": "Hero Title",
+                "size": "48px/56px",
+                "usage": "Grandes mensajes de impacto en la landing"
+            },
+            {
+                "name": "Section Header",
+                "size": "28px/36px",
+                "usage": "Títulos de secciones principales"
+            },
+            {
+                "name": "Body Text",
+                "size": "18px/28px",
+                "usage": "Lectura cómoda para artículos y descripciones"
+            },
+            {
+                "name": "Mono Label",
+                "size": "14px/20px",
+                "usage": "Etiquetas de datos y valores técnicos"
+            }
+        ]
+    },
+    "components": {
+        "title": "Biblioteca de Radio Digital",
+        "description": "Adaptados para una experiencia de 'On-Air' moderna y participativa.",
+        "categories": [
+            {
+                "name": "Streaming",
+                "components": [
+                    "Dial Digital",
+                    "Visualizador de Ondas",
+                    "Control de Volumen Táctil",
+                    "Selector de Calidad"
+                ]
+            },
+            {
+                "name": "Gobernanza",
+                "components": [
+                    "Tarjetas de Votación",
+                    "Progreso de DAO",
+                    "Selector de Tokens",
+                    "Historial de Propuestas"
+                ]
+            }
+        ]
+    },
+    "buttons": {
+        "title": "Interacciones",
+        "description": "Diseñados con estilo 'Neo-Brutalismo Suave' para máxima claridad.",
+        "types": [
+            {
+                "name": "Votar Propuesta",
+                "class": "jl-btn jl-btn-primary",
+                "usage": "Acción principal de gobernanza comunitaria"
+            },
+            {
+                "name": "Sintonizar",
+                "class": "jl-btn jl-btn-secondary",
+                "usage": "Acción de conexión con la señal en vivo"
+            }
+        ],
+        "states": [
+            "En Aire",
+            "Hover",
+            "Presionado",
+            "Focus",
+            "Fuera de Línea"
+        ]
+    },
+    "forms": {
+        "title": "Participación",
+        "description": "Entradas simplificadas para reducir la fricción técnica.",
+        "elements": [
+            {
+                "name": "Buscador de Estaciones",
+                "usage": "Filtro rápido por género o ubicación"
+            },
+            {
+                "name": "Campo de Comentarios",
+                "usage": "Interacción directa con el locutor"
+            }
+        ]
+    },
+    "cards": {
+        "title": "Contenedores de Programa",
+        "description": "Estructuras para programas y podcasts destacados.",
+        "samples": [
+            {
+                "title": "Ahora Sonando",
+                "content": "Información detallada del locutor y el tema actual en tiempo real.",
+                "action": "Participar"
+            }
+        ]
+    },
+    "badges": {
+        "title": "Insignias de Estado",
+        "description": "Indicadores visuales de estados de transmisión y roles en la DAO.",
+        "types": [
+            {
+                "label": "EN VIVO",
+                "class": "jl-badge jl-badge-error"
+            },
+            {
+                "label": "MIEMBRO DAO",
+                "class": "jl-badge jl-badge-primary"
+            },
+            {
+                "label": "PROPUESTA ACTIVA",
+                "class": "jl-badge jl-badge-success"
+            }
+        ]
+    },
+    "navigation": {
+        "title": "Navegación Híbrida",
+        "description": "Acceso fluido a contenidos lineales y on-demand.",
+        "tabs": [
+            "En Directo",
+            "Programas",
+            "Votaciones",
+            "Mi Billetera"
+        ],
+        "breadcrumbs": [
+            "Radio",
+            "Barrio Centenario",
+            "Propuestas"
+        ]
+    },
+    "messages": {
+        "title": "Notificaciones de Red",
+        "description": "Alertas sobre el estado del streaming y eventos de red.",
+        "alerts": [
+            {
+                "type": "success",
+                "icon": "✓",
+                "content": "Conectado a la blockchain exitosamente."
+            },
+            {
+                "type": "info",
+                "icon": "i",
+                "content": "Próxima votación en 2 horas."
+            }
+        ]
+    }
+}

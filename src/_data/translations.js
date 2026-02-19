@@ -12,6 +12,12 @@ module.exports = {
     },
     designSystemJourneyLaw: {
       ...require('./translations/case-studies/designSystem/journeylaw/es.json')
+    },
+    designSystemIntelliResearch: {
+      ...require('./translations/case-studies/designSystem/intelliresearch/es.json')
+    },
+    designSystemRadioDAO: {
+      ...require('./translations/case-studies/designSystem/radio_dao/es.json')
     }
   },
   en: {
@@ -27,6 +33,12 @@ module.exports = {
     },
     designSystemJourneyLaw: {
       ...require('./translations/case-studies/designSystem/journeylaw/en.json')
+    },
+    designSystemIntelliResearch: {
+      ...require('./translations/case-studies/designSystem/intelliresearch/en.json')
+    },
+    designSystemRadioDAO: {
+      ...require('./translations/case-studies/designSystem/radio_dao/en.json')
     }
   }
 };

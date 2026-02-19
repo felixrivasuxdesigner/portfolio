@@ -19,7 +19,7 @@ import { initBrandsCarousel } from './modules/brandsCarousel.js';
 import { fixPaths } from './modules/pathFixer.js';
 import { initThemeSwitcher } from './modules/theme-switcher.js';
 import { initCaseStudies } from './modules/caseStudies.js';
-import './modules/design-system-tabs.js';
+import { initDesignSystemTabs } from './modules/design-system-tabs.js';
 
 // Ejecutar cuando el DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', () => {
@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initBrandsCarousel(); // Inicializar el carrusel de marcas moderno
   initThemeSwitcher(); // Inicializar selector de tema claro/oscuro
   initCaseStudies(); // Inicializar funcionalidad para case studies
+  initDesignSystemTabs(); // Inicializar pestañas del sistema de diseño
 
   // Registrar Service Worker para funcionalidad offline
   if ('serviceWorker' in navigator) {

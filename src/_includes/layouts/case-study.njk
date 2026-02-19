@@ -45,6 +45,10 @@ isCaseStudy: true
           {% set designSystem = translations[locale].designSystemJourneyLaw %}
         {% elif projectKey == "nomadix" %}
           {% set designSystem = translations[locale].designSystemNomadix %}
+        {% elif projectKey == "intelliresearch" %}
+          {% set designSystem = translations[locale].designSystemIntelliResearch %}
+        {% elif projectKey == "radio_dao" %}
+          {% set designSystem = translations[locale].designSystemRadioDAO %}
         {% else %}
           {% set designSystem = translations[locale].designSystem %}
         {% endif %}

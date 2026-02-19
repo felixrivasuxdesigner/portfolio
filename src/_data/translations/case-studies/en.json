@@ -399,6 +399,10 @@
             }
           ]
         },
+        "designSystem": {
+          "title": "Design System",
+          "intro": "The IntelliResearch design system focuses on efficiency and clarity, allowing for fast synthesis of complex data."
+        },
         "solution": {
           "title": "Technical Implementation",
           "content": "I led the definition of a robust architecture to handle sensitive data and heavy processing:",
@@ -457,6 +461,10 @@
               ]
             }
           ]
+        },
+        "designSystem": {
+          "title": "Design System",
+          "intro": "The Radio Barrio Centenario design system combines the warmth of tradition with the modernity of decentralization."
         },
         "solution": {
           "title": "Technical Implementation",
