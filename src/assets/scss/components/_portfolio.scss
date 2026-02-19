@@ -175,12 +175,8 @@
 
   .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); // Cambiado a 4 columnas exactas
+    grid-template-columns: repeat(3, 1fr); // Cambiado a 3 columnas exactas para mejor visual
     gap: 24px;
-
-    @include m.media-breakpoint-down(large) {
-      grid-template-columns: repeat(3, 1fr); // 3 columnas en pantallas grandes-medianas
-    }
 
     @include m.media-breakpoint-down(medium) {
       grid-template-columns: repeat(2, 1fr); // 2 columnas en pantallas medianas

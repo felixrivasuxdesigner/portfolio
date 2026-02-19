@@ -16,7 +16,7 @@
   --jl-accent: #{v.$accent-color}; // Accent Color
   --jl-background: #{v.$bg-color}; // Background Color
   --jl-card: #{v.$white}; // Card Color
-  
+
   // Typography
   --jl-heading-font: #{v.$heading-font};
   --jl-body-font: #{v.$body-font};
@@ -26,19 +26,19 @@
 // Apply JourneyLaw styles only to the JourneyLaw case study page
 .case-study-journeylaw {
   font-family: var(--jl-body-font);
-  
+
   #case-study-banner {
     position: relative;
-    
+
     &::before {
       background-color: rgba(7, 3, 24, 0.75) !important; // Overlay con el color primario global
     }
-    
+
     .banner--content h1 {
       font-family: var(--jl-heading-font);
       font-weight: 700;
       position: relative;
-      
+
       &::after {
         content: '';
         position: absolute;
@@ -50,14 +50,14 @@
       }
     }
   }
-  
+
   .breadcrumbs {
     background-color: var(--jl-card);
     border-color: var(--jl-secondary);
-    
+
     .breadcrumb-item a {
       color: var(--jl-primary);
-      
+
       &:hover {
         color: var(--jl-accent);
       }
@@ -67,14 +67,14 @@
   .case-study {
     background-color: var(--jl-background);
     padding: 30px 0;
-    
+
     .case-study-content {
       .case-study-hero {
         margin-bottom: 2.5rem;
         position: relative;
         overflow: hidden;
         border-radius: 8px;
-        
+
         &::after {
           content: 'JourneyLaw';
           position: absolute;
@@ -89,25 +89,25 @@
           font-size: 14px;
           opacity: 0.9;
         }
-        
+
         img {
           border-radius: 8px;
           box-shadow: 0 8px 24px rgba(7, 3, 24, 0.15);
           transition: transform 0.3s ease;
-          
+
           &:hover {
             transform: scale(1.02);
           }
         }
       }
-      
+
       .case-study-section {
         background-color: var(--jl-card);
         padding: 30px;
         margin-bottom: 2rem;
         border-radius: 8px;
         box-shadow: 0 4px 12px rgba(44, 27, 12, 0.08);
-        
+
         h2 {
           color: var(--jl-primary);
           font-family: var(--jl-heading-font);
@@ -116,7 +116,7 @@
           padding-bottom: 0.5rem;
           margin-bottom: 1.5rem;
         }
-        
+
         h3 {
           color: var(--jl-primary);
           font-family: var(--jl-heading-font);
@@ -124,7 +124,7 @@
           margin-top: 1.5rem;
           margin-bottom: 1rem;
         }
-        
+
         p {
           color: var(--jl-primary);
           font-family: var(--jl-body-font);
@@ -132,10 +132,10 @@
           line-height: 1.7;
           margin-bottom: 1rem;
         }
-        
+
         ul {
           margin-bottom: 1.5rem;
-          
+
           li {
             color: var(--jl-primary);
             font-family: var(--jl-body-font);
@@ -143,7 +143,7 @@
             position: relative;
             padding-left: 1.25rem;
             transition: transform 0.3s ease;
-            
+
             &::before {
               content: '';
               position: absolute;
@@ -154,13 +154,13 @@
               border-radius: 50%;
               background-color: var(--jl-accent);
             }
-            
+
             &:hover {
               transform: translateX(5px);
             }
           }
         }
-        
+
         // Design System Visualization Styles
         .design-system-intro {
           margin-bottom: 2rem;
@@ -169,60 +169,60 @@
           border-radius: 8px;
           border-left: 4px solid var(--jl-accent);
         }
-        
+
         // Color Palette Visualization
         .color-palette {
           display: grid;
           grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
           gap: 1.5rem;
           margin: 2rem 0;
-          
+
           .color-swatch {
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 4px 12px rgba(44, 27, 12, 0.1);
-            
+
             .color-preview {
               height: 120px;
               display: flex;
               align-items: flex-end;
               padding: 1rem;
-              
+
               &.primary-color {
                 background-color: var(--jl-primary);
                 color: white;
               }
-              
+
               &.secondary-color {
                 background-color: var(--jl-secondary);
                 color: var(--jl-primary);
               }
-              
+
               &.accent-color {
                 background-color: var(--jl-accent);
                 color: white;
               }
-              
+
               &.background-color {
                 background-color: var(--jl-background);
                 color: var(--jl-primary);
               }
-              
+
               &.card-color {
                 background-color: var(--jl-card);
                 color: var(--jl-primary);
               }
             }
-            
+
             .color-info {
               background-color: white;
               padding: 1rem;
-              
+
               .color-name {
                 font-weight: 600;
                 margin-bottom: 0.5rem;
               }
-              
+
               .color-hex {
                 font-family: var(--jl-code-font);
                 font-size: 13px;
@@ -232,7 +232,7 @@
                 display: inline-block;
                 margin-bottom: 0.5rem;
               }
-              
+
               .color-usage {
                 font-size: 14px;
                 line-height: 1.4;
@@ -241,28 +241,28 @@
             }
           }
         }
-        
+
         // Typography Visualization
         .typography-showcase {
           margin: 2rem 0;
-          
+
           .font-family {
             background-color: var(--jl-background);
             border-radius: 8px;
             padding: 1.5rem;
             margin-bottom: 1.5rem;
-            
+
             .font-header {
               display: flex;
               justify-content: space-between;
               align-items: flex-start;
               margin-bottom: 1rem;
-              
+
               .font-name {
                 font-weight: 700;
                 font-size: 20px;
               }
-              
+
               .font-category {
                 font-size: 14px;
                 background-color: var(--jl-accent);
@@ -271,10 +271,10 @@
                 border-radius: 4px;
               }
             }
-            
+
             .font-details {
               margin-bottom: 1.5rem;
-              
+
               .font-weights {
                 font-family: var(--jl-code-font);
                 font-size: 14px;
@@ -283,50 +283,50 @@
                 border-radius: 4px;
                 margin-bottom: 0.75rem;
               }
-              
+
               .font-usage {
                 font-size: 15px;
                 line-height: 1.5;
               }
             }
-            
+
             &.primary-font {
               .font-sample {
                 font-family: var(--jl-heading-font);
               }
             }
-            
+
             &.code-font {
               .font-sample {
                 font-family: var(--jl-code-font);
               }
             }
-            
+
             .font-sample {
               .sample-xl {
                 font-size: 32px;
                 line-height: 40px;
                 margin-bottom: 1rem;
               }
-              
+
               .sample-large {
                 font-size: 24px;
                 line-height: 32px;
                 margin-bottom: 1rem;
               }
-              
+
               .sample-medium {
                 font-size: 18px;
                 line-height: 28px;
                 margin-bottom: 1rem;
               }
-              
+
               .sample-body {
                 font-size: 16px;
                 line-height: 24px;
                 margin-bottom: 1rem;
               }
-              
+
               .sample-small {
                 font-size: 14px;
                 line-height: 20px;
@@ -334,29 +334,29 @@
             }
           }
         }
-        
+
         // Component Library Visualization
         .component-library {
           margin: 2rem 0;
-          
+
           .component-category {
             background-color: var(--jl-background);
             border-radius: 8px;
             padding: 1.5rem;
             margin-bottom: 1.5rem;
-            
+
             .category-name {
               font-weight: 600;
               font-size: 18px;
               margin-bottom: 1rem;
               color: var(--jl-primary);
             }
-            
+
             .component-list {
               display: flex;
               flex-wrap: wrap;
               gap: 10px;
-              
+
               .component-tag {
                 background-color: rgba(255, 255, 255, 0.7);
                 border: 1px solid var(--jl-secondary);
@@ -364,7 +364,7 @@
                 border-radius: 30px;
                 font-size: 14px;
                 transition: all 0.2s ease;
-                
+
                 &:hover {
                   background-color: var(--jl-accent);
                   color: white;
@@ -374,26 +374,26 @@
             }
           }
         }
-        
+
         // Style for process steps
         .case-study-grid {
           display: grid;
           grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
           gap: 1.5rem;
           margin: 2rem 0;
-          
+
           .case-study-grid-item {
             background-color: var(--jl-background);
             border-radius: 8px;
             padding: 1.5rem;
             box-shadow: 0 4px 12px rgba(44, 27, 12, 0.08);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            
+
             &:hover {
               transform: translateY(-5px);
               box-shadow: 0 8px 16px rgba(44, 27, 12, 0.15);
             }
-            
+
             h3 {
               color: var(--jl-primary);
               margin-top: 0;
@@ -403,14 +403,14 @@
             }
           }
         }
-        
+
         // Metrics visualization
         .case-study-results {
           display: grid;
           grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
           gap: 1.5rem;
           margin: 2rem 0;
-          
+
           .result-item {
             background-color: var(--jl-background);
             border-radius: 8px;
@@ -419,19 +419,19 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             box-shadow: 0 4px 12px rgba(44, 27, 12, 0.08);
             border-top: 3px solid var(--jl-accent);
-            
+
             &:hover {
               transform: translateY(-5px);
               box-shadow: 0 8px 16px rgba(44, 27, 12, 0.15);
             }
-            
+
             h3 {
               color: var(--jl-accent);
               font-size: 2.5rem;
               font-weight: 700;
               margin: 0 0 0.5rem 0;
             }
-            
+
             p {
               color: var(--jl-primary);
               margin: 0;
@@ -441,7 +441,7 @@
       }
     }
   }
-  
+
   // Code syntax highlighting with JourneyLaw colors
   pre {
     background-color: var(--jl-card);
@@ -451,54 +451,66 @@
     overflow-x: auto;
     margin: 1.5rem 0;
     border-left: 4px solid var(--jl-accent);
-    
+
     code {
       font-family: var(--jl-code-font);
       color: var(--jl-primary);
       font-size: 14px;
       line-height: 1.6;
-      
-      .keyword { color: #8B008B; }
-      .function { color: #0000FF; }
-      .string { color: #006400; }
-      .comment { color: #808080; font-style: italic; }
-      .number { color: #FF8C00; }
-      .punctuation { color: #2C1B0C; }
-      .operator { color: #8C765C; }
+
+      .keyword {
+        color: #8B008B;
+      }
+
+      .function {
+        color: #0000FF;
+      }
+
+      .string {
+        color: #006400;
+      }
+
+      .comment {
+        color: #808080;
+        font-style: italic;
+      }
+
+      .number {
+        color: #FF8C00;
+      }
+
+      .punctuation {
+        color: #2C1B0C;
+      }
+
+      .operator {
+        color: #8C765C;
+      }
     }
   }
-  
-  // Footer styling
-  #footer {
-    background-color: var(--jl-primary);
-    
-    .copyright {
-      color: var(--jl-card);
-    }
-  }
-  
+
   // Gallery styling
   .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1.5rem;
     margin: 2rem 0;
-    
+
     .gallery-item {
       overflow: hidden;
       border-radius: 8px;
       box-shadow: 0 4px 12px rgba(44, 27, 12, 0.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-      
+
       &:hover {
         transform: translateY(-5px);
         box-shadow: 0 8px 24px rgba(44, 27, 12, 0.2);
-        
+
         img {
           transform: scale(1.05);
         }
       }
-      
+
       img {
         width: 100%;
         height: auto;
@@ -507,369 +519,343 @@
       }
     }
   }
-  
-  // Design System Tabs
-  .design-system-section {
-    .design-system-tabs {
+
+  // Design System section styles are now centralized in _design-system.scss
+
+
+  .tab-content {
+    display: none;
+    animation: fadeIn 0.5s ease forwards;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  // Styles for JourneyLaw components in the design system
+  .buttons-showcase {
+    margin: 2rem 0;
+
+    .button-group,
+    .button-states {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 2rem;
-      border-bottom: 1px solid var(--jl-secondary);
-      padding-bottom: 1px;
-      position: relative;
-      
-      .tab-btn {
-        background: none;
-        border: none;
-        padding: 10px 16px;
-        cursor: pointer;
-        font-family: var(--jl-heading-font);
-        font-size: 15px;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .jl-btn {
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-family: var(--jl-body-font);
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      border: none;
+
+      &.jl-btn-primary {
+        background-color: var(--jl-primary);
+        color: white;
+
+        &:hover:not(:disabled),
+        &.jl-hover {
+          background-color: color.adjust(#F26B24, $lightness: 10%); // Use hex or variable correctly
+        }
+
+        &:active,
+        &.jl-active {
+          background-color: color.adjust(#F26B24, $lightness: -5%);
+        }
+
+        &:focus,
+        &.jl-focus {
+          outline: 3px solid rgba(252, 103, 54, 0.4);
+        }
+
+        &:disabled {
+          opacity: 0.5;
+          cursor: not-allowed;
+        }
+      }
+
+      &.jl-btn-secondary {
+        background-color: var(--jl-secondary);
         color: var(--jl-primary);
-        border-bottom: 3px solid transparent;
-        transition: all 0.3s ease;
-        
-        &:hover {
-          color: var(--jl-accent);
+
+        &:hover:not(:disabled) {
+          background-color: color.adjust(#C5B4A3, $lightness: -10%);
         }
-        
-        &.active {
-          color: var(--jl-accent);
-          font-weight: 600;
-          border-bottom: 3px solid var(--jl-accent);
+      }
+
+      &.jl-btn-text {
+        background-color: transparent;
+        color: var(--jl-accent);
+        padding: 10px 0;
+
+        &:hover:not(:disabled) {
+          text-decoration: underline;
         }
       }
     }
-    
-    .tab-content {
-      display: none;
-      animation: fadeIn 0.5s ease forwards;
-      
-      &.active {
+  }
+
+  .forms-showcase {
+    margin: 2rem 0;
+
+    .form-group {
+      margin-bottom: 1.5rem;
+
+      label {
         display: block;
+        margin-bottom: 8px;
+        font-weight: 500;
+        color: var(--jl-primary);
       }
-    }
-    
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(10px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    
-    // Styles for JourneyLaw components in the design system
-    .buttons-showcase {
-      margin: 2rem 0;
-      
-      .button-group, .button-states {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-        margin-bottom: 1.5rem;
-      }
-      
-      .jl-btn {
-        padding: 10px 20px;
+
+      .jl-input,
+      .jl-select {
+        width: 100%;
+        max-width: 400px;
+        padding: 10px 12px;
+        border: 1px solid var(--jl-secondary);
         border-radius: 6px;
         font-family: var(--jl-body-font);
-        font-weight: 500;
-        cursor: pointer;
-        transition: all 0.2s ease;
-        border: none;
-        
-        &.jl-btn-primary {
-          background-color: var(--jl-primary);
-          color: white;
-          
-          &:hover:not(:disabled), &.jl-hover {
-            background-color: color.adjust(v.$primary-color, $lightness: 10%);
-          }
-          
-          &:active, &.jl-active {
-            background-color: color.adjust(v.$primary-color, $lightness: -5%);
-          }
-          
-          &:focus, &.jl-focus {
-            outline: 3px solid rgba(252, 103, 54, 0.4);
-          }
-          
-          &:disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
-          }
+        color: var(--jl-primary);
+
+        &:focus {
+          outline: none;
+          border-color: var(--jl-accent);
+          box-shadow: 0 0 0 3px rgba(140, 118, 92, 0.2);
         }
-        
-        &.jl-btn-secondary {
-          background-color: var(--jl-secondary);
-          color: var(--jl-primary);
-          
-          &:hover:not(:disabled) {
-            background-color: color.adjust(v.$secondary-color, $lightness: -10%);
-          }
-        }
-        
-        &.jl-btn-text {
-          background-color: transparent;
-          color: var(--jl-accent);
-          padding: 10px 0;
-          
-          &:hover:not(:disabled) {
-            text-decoration: underline;
-          }
+      }
+
+      .checkbox-label {
+        display: flex;
+        align-items: center;
+
+        .jl-checkbox {
+          margin-right: 8px;
         }
       }
     }
-    
-    .forms-showcase {
-      margin: 2rem 0;
-      
-      .form-group {
-        margin-bottom: 1.5rem;
-        
-        label {
-          display: block;
-          margin-bottom: 8px;
-          font-weight: 500;
+  }
+
+  .cards-showcase {
+    margin: 2rem 0;
+
+    .jl-card {
+      background-color: var(--jl-card);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(44, 27, 12, 0.08);
+      max-width: 400px;
+
+      .jl-card-header {
+        padding: 16px 20px;
+        border-bottom: 1px solid var(--jl-secondary);
+        background-color: rgba(197, 180, 163, 0.2);
+
+        h4 {
+          margin: 0;
           color: var(--jl-primary);
-        }
-        
-        .jl-input, .jl-select {
-          width: 100%;
-          max-width: 400px;
-          padding: 10px 12px;
-          border: 1px solid var(--jl-secondary);
-          border-radius: 6px;
-          font-family: var(--jl-body-font);
-          color: var(--jl-primary);
-          
-          &:focus {
-            outline: none;
-            border-color: var(--jl-accent);
-            box-shadow: 0 0 0 3px rgba(140, 118, 92, 0.2);
-          }
-        }
-        
-        .checkbox-label {
-          display: flex;
-          align-items: center;
-          
-          .jl-checkbox {
-            margin-right: 8px;
-          }
+          font-weight: 600;
         }
       }
+
+      .jl-card-body {
+        padding: 20px;
+
+        p {
+          margin: 0;
+        }
+      }
+
+      .jl-card-footer {
+        padding: 12px 20px;
+        border-top: 1px solid var(--jl-secondary);
+        background-color: rgba(197, 180, 163, 0.1);
+        display: flex;
+        justify-content: flex-end;
+      }
     }
-    
-    .cards-showcase {
-      margin: 2rem 0;
-      
-      .jl-card {
-        background-color: var(--jl-card);
-        border-radius: 8px;
-        overflow: hidden;
-        box-shadow: 0 4px 12px rgba(44, 27, 12, 0.08);
-        max-width: 400px;
-        
-        .jl-card-header {
-          padding: 16px 20px;
-          border-bottom: 1px solid var(--jl-secondary);
-          background-color: rgba(197, 180, 163, 0.2);
-          
-          h4 {
-            margin: 0;
-            color: var(--jl-primary);
-            font-weight: 600;
-          }
-        }
-        
-        .jl-card-body {
-          padding: 20px;
-          
-          p {
-            margin: 0;
-          }
-        }
-        
-        .jl-card-footer {
+  }
+
+  .badges-showcase {
+    margin: 2rem 0;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    .jl-badge {
+      padding: 4px 10px;
+      border-radius: 16px;
+      font-size: 14px;
+      font-weight: 500;
+
+      &.jl-badge-primary {
+        background-color: var(--jl-primary);
+        color: white;
+      }
+
+      &.jl-badge-success {
+        background-color: #2E7D32;
+        color: white;
+      }
+
+      &.jl-badge-warning {
+        background-color: #ED6C02;
+        color: white;
+      }
+
+      &.jl-badge-error {
+        background-color: #D32F2F;
+        color: white;
+      }
+
+      &.jl-badge-neutral {
+        background-color: #757575;
+        color: white;
+      }
+    }
+  }
+
+  .navigation-showcase {
+    margin: 2rem 0;
+
+    .jl-nav-sample {
+      margin-bottom: 2rem;
+
+      .jl-tabs {
+        display: flex;
+        border-bottom: 1px solid var(--jl-secondary);
+
+        .jl-tab {
           padding: 12px 20px;
-          border-top: 1px solid var(--jl-secondary);
-          background-color: rgba(197, 180, 163, 0.1);
-          display: flex;
-          justify-content: flex-end;
+          background: none;
+          border: none;
+          border-bottom: 3px solid transparent;
+          cursor: pointer;
+          color: var(--jl-primary);
+          font-weight: 500;
+          font-family: var(--jl-body-font);
+
+          &.active {
+            border-bottom: 3px solid var(--jl-accent);
+            color: var(--jl-accent);
+          }
+
+          &:hover:not(.active) {
+            border-bottom: 3px solid rgba(140, 118, 92, 0.3);
+          }
         }
       }
     }
-    
-    .badges-showcase {
-      margin: 2rem 0;
+
+    .jl-breadcrumbs {
       display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      
-      .jl-badge {
-        padding: 4px 10px;
-        border-radius: 16px;
+      align-items: center;
+
+      span {
+        color: var(--jl-primary);
         font-size: 14px;
-        font-weight: 500;
-        
-        &.jl-badge-primary {
-          background-color: var(--jl-primary);
+
+        &:last-child {
+          font-weight: 600;
+          color: var(--jl-accent);
+        }
+      }
+
+      .jl-breadcrumb-separator {
+        margin: 0 8px;
+        color: var(--jl-secondary);
+      }
+    }
+  }
+
+  .messages-showcase {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .jl-alert {
+      padding: 12px 16px;
+      border-radius: 6px;
+      display: flex;
+      align-items: flex-start;
+
+      .jl-alert-icon {
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin-right: 12px;
+        font-weight: bold;
+      }
+
+      &.jl-alert-info {
+        background-color: rgba(2, 136, 209, 0.1);
+
+        .jl-alert-icon {
+          background-color: #0288D1;
           color: white;
         }
-        
-        &.jl-badge-success {
+
+        .jl-alert-content {
+          color: #01579B;
+        }
+      }
+
+      &.jl-alert-success {
+        background-color: rgba(46, 125, 50, 0.1);
+
+        .jl-alert-icon {
           background-color: #2E7D32;
           color: white;
         }
-        
-        &.jl-badge-warning {
+
+        .jl-alert-content {
+          color: #1B5E20;
+        }
+      }
+
+      &.jl-alert-warning {
+        background-color: rgba(237, 108, 2, 0.1);
+
+        .jl-alert-icon {
           background-color: #ED6C02;
           color: white;
         }
-        
-        &.jl-badge-error {
+
+        .jl-alert-content {
+          color: #E65100;
+        }
+      }
+
+      &.jl-alert-error {
+        background-color: rgba(211, 47, 47, 0.1);
+
+        .jl-alert-icon {
           background-color: #D32F2F;
           color: white;
         }
-        
-        &.jl-badge-neutral {
-          background-color: #757575;
-          color: white;
-        }
-      }
-    }
-    
-    .navigation-showcase {
-      margin: 2rem 0;
-      
-      .jl-nav-sample {
-        margin-bottom: 2rem;
-        
-        .jl-tabs {
-          display: flex;
-          border-bottom: 1px solid var(--jl-secondary);
-          
-          .jl-tab {
-            padding: 12px 20px;
-            background: none;
-            border: none;
-            border-bottom: 3px solid transparent;
-            cursor: pointer;
-            color: var(--jl-primary);
-            font-weight: 500;
-            font-family: var(--jl-body-font);
-            
-            &.active {
-              border-bottom: 3px solid var(--jl-accent);
-              color: var(--jl-accent);
-            }
-            
-            &:hover:not(.active) {
-              border-bottom: 3px solid rgba(140, 118, 92, 0.3);
-            }
-          }
-        }
-      }
-      
-      .jl-breadcrumbs {
-        display: flex;
-        align-items: center;
-        
-        span {
-          color: var(--jl-primary);
-          font-size: 14px;
-          
-          &:last-child {
-            font-weight: 600;
-            color: var(--jl-accent);
-          }
-        }
-        
-        .jl-breadcrumb-separator {
-          margin: 0 8px;
-          color: var(--jl-secondary);
-        }
-      }
-    }
-    
-    .messages-showcase {
-      margin: 2rem 0;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      
-      .jl-alert {
-        padding: 12px 16px;
-        border-radius: 6px;
-        display: flex;
-        align-items: flex-start;
-        
-        .jl-alert-icon {
-          width: 24px;
-          height: 24px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border-radius: 50%;
-          margin-right: 12px;
-          font-weight: bold;
-        }
-        
-        &.jl-alert-info {
-          background-color: rgba(2, 136, 209, 0.1);
-          
-          .jl-alert-icon {
-            background-color: #0288D1;
-            color: white;
-          }
-          
-          .jl-alert-content {
-            color: #01579B;
-          }
-        }
-        
-        &.jl-alert-success {
-          background-color: rgba(46, 125, 50, 0.1);
-          
-          .jl-alert-icon {
-            background-color: #2E7D32;
-            color: white;
-          }
-          
-          .jl-alert-content {
-            color: #1B5E20;
-          }
-        }
-        
-        &.jl-alert-warning {
-          background-color: rgba(237, 108, 2, 0.1);
-          
-          .jl-alert-icon {
-            background-color: #ED6C02;
-            color: white;
-          }
-          
-          .jl-alert-content {
-            color: #E65100;
-          }
-        }
-        
-        &.jl-alert-error {
-          background-color: rgba(211, 47, 47, 0.1);
-          
-          .jl-alert-icon {
-            background-color: #D32F2F;
-            color: white;
-          }
-          
-          .jl-alert-content {
-            color: #B71C1C;
-          }
+
+        .jl-alert-content {
+          color: #B71C1C;
         }
       }
     }

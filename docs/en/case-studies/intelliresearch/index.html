@@ -249,16 +249,18 @@
     <p>A scalable design system built on principles of clarity and efficiency for AI-driven research tools.</p>
   </div>
   
-  <div class="design-system-tabs">
-    <button class="tab-btn active" data-tab="colors">Color Palette</button>
-    <button class="tab-btn" data-tab="typography">Typography System</button>
-    <button class="tab-btn" data-tab="components">Analysis Components</button>
-    <button class="tab-btn" data-tab="buttons">Action Buttons</button>
-    <button class="tab-btn" data-tab="forms">Data Inputs</button>
-    <button class="tab-btn" data-tab="cards">Insight Containers</button>
-    <button class="tab-btn" data-tab="badges">Status Badges</button>
-    <button class="tab-btn" data-tab="navigation">Dashboard Navigation</button>
-    <button class="tab-btn" data-tab="messages">System Feedback</button>
+  <div class="design-system-tabs-container">
+    <div class="design-system-tabs">
+      <button class="tab-btn active" data-tab="colors">Color Palette</button>
+      <button class="tab-btn" data-tab="typography">Typography System</button>
+      <button class="tab-btn" data-tab="components">Analysis Components</button>
+      <button class="tab-btn" data-tab="buttons">Action Buttons</button>
+      <button class="tab-btn" data-tab="forms">Data Inputs</button>
+      <button class="tab-btn" data-tab="cards">Insight Containers</button>
+      <button class="tab-btn" data-tab="badges">Status Badges</button>
+      <button class="tab-btn" data-tab="navigation">Dashboard Navigation</button>
+      <button class="tab-btn" data-tab="messages">System Feedback</button>
+    </div>
   </div>
   
   <div class="tab-content active" id="colors-tab">
@@ -441,6 +443,9 @@
     </div>
   </div>
   
+  
+  
+
   <div class="tab-content" id="buttons-tab">
     <h3>Action Buttons</h3>
     <p>Direct controls for research workflow management.</p>
@@ -448,23 +453,23 @@
     <div class="buttons-showcase">
       <div class="button-group">
         
-        <button class="jl-btn jl-btn-primary">Process Analysis</button>
+        <button class="intelliresearch-btn intelliresearch-btn-jl-btn jl-btn-primary">Process Analysis</button>
         
-        <button class="jl-btn jl-btn-secondary">Export Report</button>
+        <button class="intelliresearch-btn intelliresearch-btn-jl-btn jl-btn-secondary">Export Report</button>
         
       </div>
       
       <div class="button-states">
         
-        <button>Active</button>
+        <button class="intelliresearch-btn intelliresearch-btn-primary">Active</button>
         
-        <button class="hover">Hover</button>
+        <button class="intelliresearch-btn intelliresearch-btn-primary intelliresearch-hover">Hover</button>
         
-        <button class="pressed">Pressed</button>
+        <button class="intelliresearch-btn intelliresearch-btn-primary intelliresearch-pressed">Pressed</button>
         
-        <button class="focus">Focus</button>
+        <button class="intelliresearch-btn intelliresearch-btn-primary intelliresearch-focus">Focus</button>
         
-        <button disabled>Locked</button>
+        <button class="intelliresearch-btn intelliresearch-btn-primary" disabled>Locked</button>
         
       </div>
     </div>
@@ -479,14 +484,14 @@
       <div class="form-group">
         
         <label for="demo-input">File Uploader</label>
-        <input type="text" id="demo-input" placeholder="Enter text here">
+        <input type="text" id="demo-input" class="intelliresearch-input" placeholder="Enter text here">
         
       </div>
       
       <div class="form-group">
         
         <label for="demo-select">Tag Selector</label>
-        <select id="demo-select">
+        <select id="demo-select" class="intelliresearch-select">
           <option>Option 1</option>
           <option>Option 2</option>
           <option>Option 3</option>
@@ -502,15 +507,15 @@
     <p>Modular structures to present key findings.</p>
     
     <div class="cards-showcase">
-      <div>
-        <div>
+      <div class="intelliresearch-card">
+        <div class="intelliresearch-card-header">
           <h4>User Insight</h4>
         </div>
-        <div>
+        <div class="intelliresearch-card-body">
           <p>Visual representation of a critical finding with its associated evidence.</p>
         </div>
-        <div>
-          <button>View Evidence</button>
+        <div class="intelliresearch-card-footer">
+          <button class="intelliresearch-btn intelliresearch-btn-text">View Evidence</button>
         </div>
       </div>
     </div>
@@ -536,30 +541,30 @@
     <p>Quick access systems for projects and analysis.</p>
     
     <div class="navigation-showcase">
-      <div>
-        <div>
+      <div class="intelliresearch-nav-sample">
+        <div class="intelliresearch-tabs">
           
-          <button class="active">Interviews</button>
+          <button class="intelliresearch-tab active">Interviews</button>
           
-          <button>Analysis</button>
+          <button class="intelliresearch-tab">Analysis</button>
           
-          <button>Insights</button>
+          <button class="intelliresearch-tab">Insights</button>
           
-          <button>Report</button>
+          <button class="intelliresearch-tab">Report</button>
           
         </div>
       </div>
       
-      <div>
+      <div class="intelliresearch-breadcrumbs">
         
         <span>Projects</span>
         
-        <span>›</span>
+        <span class="intelliresearch-breadcrumb-separator">›</span>
         
         
         <span>App Redesign</span>
         
-        <span>›</span>
+        <span class="intelliresearch-breadcrumb-separator">›</span>
         
         
         <span>September</span>
@@ -575,14 +580,14 @@
     
     <div class="messages-showcase">
       
-      <div>
-        <div>✓</div>
-        <div>Analysis completed in 2.4 seconds.</div>
+      <div class="intelliresearch-alert intelliresearch-alert-success">
+        <div class="intelliresearch-alert-icon">✓</div>
+        <div class="intelliresearch-alert-content">Analysis completed in 2.4 seconds.</div>
       </div>
       
-      <div>
-        <div>i</div>
-        <div>AI is identifying common patterns...</div>
+      <div class="intelliresearch-alert intelliresearch-alert-info">
+        <div class="intelliresearch-alert-icon">i</div>
+        <div class="intelliresearch-alert-content">AI is identifying common patterns...</div>
       </div>
       
     </div>

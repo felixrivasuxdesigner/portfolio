@@ -249,16 +249,18 @@
     <p>The Nomadix Adventure design system embodies the spirit of adventure and exploration, creating an interface that inspires visitors to embark on their own journey.</p>
   </div>
   
-  <div class="design-system-tabs">
-    <button class="tab-btn active" data-tab="colors">Color Palette</button>
-    <button class="tab-btn" data-tab="typography">Typography System</button>
-    <button class="tab-btn" data-tab="components">Components</button>
-    <button class="tab-btn" data-tab="buttons">Buttons</button>
-    <button class="tab-btn" data-tab="forms">Forms</button>
-    <button class="tab-btn" data-tab="cards">Cards</button>
-    <button class="tab-btn" data-tab="badges">Badges</button>
-    <button class="tab-btn" data-tab="navigation">Navigation Patterns</button>
-    <button class="tab-btn" data-tab="messages">Messaging System</button>
+  <div class="design-system-tabs-container">
+    <div class="design-system-tabs">
+      <button class="tab-btn active" data-tab="colors">Color Palette</button>
+      <button class="tab-btn" data-tab="typography">Typography System</button>
+      <button class="tab-btn" data-tab="components">Components</button>
+      <button class="tab-btn" data-tab="buttons">Buttons</button>
+      <button class="tab-btn" data-tab="forms">Forms</button>
+      <button class="tab-btn" data-tab="cards">Cards</button>
+      <button class="tab-btn" data-tab="badges">Badges</button>
+      <button class="tab-btn" data-tab="navigation">Navigation Patterns</button>
+      <button class="tab-btn" data-tab="messages">Messaging System</button>
+    </div>
   </div>
   
   <div class="tab-content active" id="colors-tab">
@@ -473,6 +475,9 @@
     </div>
   </div>
   
+  
+  
+
   <div class="tab-content" id="buttons-tab">
     <h3>Buttons</h3>
     <p>Action-oriented buttons designed to inspire interaction and guide users through their journey.</p>
@@ -482,13 +487,23 @@
         
         <button class="nomadix-btn nomadix-btn-primary">Primary</button>
         
-        <button class="nomadix-btn nomadix-btn-primary">Secondary</button>
+        <button class="nomadix-btn nomadix-btn-secondary">Secondary</button>
         
-        <button class="nomadix-btn nomadix-btn-primary">Text</button>
+        <button class="nomadix-btn nomadix-btn-text">Texto</button>
         
       </div>
       
       <div class="button-states">
+        
+        <button class="nomadix-btn nomadix-btn-primary">Default</button>
+        
+        <button class="nomadix-btn nomadix-btn-primary nomadix-hover">Hover</button>
+        
+        <button class="nomadix-btn nomadix-btn-primary nomadix-active">Active</button>
+        
+        <button class="nomadix-btn nomadix-btn-primary nomadix-focus">Focus</button>
+        
+        <button class="nomadix-btn nomadix-btn-primary" disabled>Disabled</button>
         
       </div>
     </div>
@@ -541,13 +556,13 @@
     <div class="cards-showcase">
       <div class="nomadix-card">
         <div class="nomadix-card-header">
-          <h4></h4>
+          <h4>Baja Expedition</h4>
         </div>
         <div class="nomadix-card-body">
-          <p></p>
+          <p>Explore the hidden gems of the Sea of Cortez with our expert guides.</p>
         </div>
         <div class="nomadix-card-footer">
-          <button class="nomadix-btn nomadix-btn-text"></button>
+          <button class="nomadix-btn nomadix-btn-text">View More</button>
         </div>
       </div>
     </div>
@@ -559,11 +574,11 @@
     
     <div class="badges-showcase">
       
-      <span class="nomadix-badge nomadix-badge-primary"></span>
+      <span class="nomadix-badge nomadix-badge-warning">Intermediate</span>
       
-      <span class="nomadix-badge nomadix-badge-primary"></span>
+      <span class="nomadix-badge nomadix-badge-primary">Safari</span>
       
-      <span class="nomadix-badge nomadix-badge-primary"></span>
+      <span class="nomadix-badge nomadix-badge-success">Explorer</span>
       
     </div>
   </div>
@@ -576,10 +591,31 @@
       <div class="nomadix-nav-sample">
         <div class="nomadix-tabs">
           
+          <button class="nomadix-tab active">Adventures</button>
+          
+          <button class="nomadix-tab">Events</button>
+          
+          <button class="nomadix-tab">Community</button>
+          
+          <button class="nomadix-tab">About Us</button>
+          
         </div>
       </div>
       
       <div class="nomadix-breadcrumbs">
+        
+        <span>Home</span>
+        
+        <span class="nomadix-breadcrumb-separator">›</span>
+        
+        
+        <span>Baja California</span>
+        
+        <span class="nomadix-breadcrumb-separator">›</span>
+        
+        
+        <span>Expeditions</span>
+        
         
       </div>
     </div>

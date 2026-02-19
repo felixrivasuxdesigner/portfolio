@@ -1,0 +1,185 @@
+{
+    "title": "Design System",
+    "intro": "The design system for Belcorp's Mobile Wallet was built on the pillars of 'Trust and Accessibility', ensuring that sales representatives could manage their finances with complete security.",
+    "colorPalette": {
+        "title": "Color Palette",
+        "description": "We used colors that evoke professionalism and calm, aligned with Belcorp's identity.",
+        "colors": [
+            {
+                "name": "Belcorp Pink",
+                "hex": "#E91E63",
+                "usage": "Brand color and accents"
+            },
+            {
+                "name": "Deep Blue",
+                "hex": "#1A237E",
+                "usage": "Main text and headings"
+            },
+            {
+                "name": "Soft Grey",
+                "hex": "#F5F5F5",
+                "usage": "Section backgrounds"
+            }
+        ]
+    },
+    "typography": {
+        "title": "Typography",
+        "description": "A typographic combination designed for extreme legibility on small mobile screens.",
+        "fonts": [
+            {
+                "name": "Roboto",
+                "category": "San Serif UI",
+                "weights": "400, 500, 700",
+                "usage": "Main interface font"
+            }
+        ],
+        "fontSizes": [
+            {
+                "name": "Title",
+                "size": "24px",
+                "usage": "Main headings"
+            },
+            {
+                "name": "Body",
+                "size": "16px",
+                "usage": "Reading text"
+            },
+            {
+                "name": "Caption",
+                "size": "12px",
+                "usage": "Metadata and dates"
+            }
+        ]
+    },
+    "components": {
+        "title": "Components",
+        "description": "Modular elements designed for fast and secure transactions.",
+        "categories": [
+            {
+                "name": "Input",
+                "components": [
+                    "Numerical fields",
+                    "Bank selectors",
+                    "Card scanner"
+                ]
+            },
+            {
+                "name": "Action",
+                "components": [
+                    "Payment buttons",
+                    "Security toggle",
+                    "Biometric confirmation"
+                ]
+            }
+        ]
+    },
+    "buttons": {
+        "title": "Buttons",
+        "description": "Button styles optimized for touch interaction on mobile devices.",
+        "types": [
+            {
+                "name": "Primary",
+                "class": "primary",
+                "description": "Main actions like making a payment or confirming transfer.",
+                "properties": "Belcorp pink color, rounded borders (pill-shape), soft shadow."
+            },
+            {
+                "name": "Secondary",
+                "class": "secondary",
+                "description": "Alternative actions like viewing balance or history.",
+                "properties": "Deep blue background, light text, same dimensions as primary."
+            },
+            {
+                "name": "Text",
+                "class": "text",
+                "description": "Navigation or back actions.",
+                "properties": "No background, deep blue color, enlarged touch area."
+            }
+        ],
+        "states": [
+            "Default",
+            "Pressed",
+            "Loading",
+            "Disabled"
+        ]
+    },
+    "forms": {
+        "title": "Forms",
+        "description": "Inputs optimized for rapid entry of amounts and banking details.",
+        "elements": [
+            {
+                "name": "Amount",
+                "description": "Custom numeric keypad with common amount shortcuts."
+            },
+            {
+                "name": "Bank Selector",
+                "description": "Visual list with logos of partner financial institutions."
+            }
+        ]
+    },
+    "cards": {
+        "title": "Cards",
+        "description": "Easy-to-read financial summaries.",
+        "samples": [
+            {
+                "title": "Balance",
+                "content": "$1,250.00",
+                "action": "See details"
+            },
+            {
+                "title": "Next Payment",
+                "content": "May 24th",
+                "action": "Pay now"
+            }
+        ]
+    },
+    "badges": {
+        "title": "Badges",
+        "description": "Transaction statuses and account levels.",
+        "types": [
+            {
+                "label": "Completed",
+                "class": "wallet-badge-success"
+            },
+            {
+                "label": "Processing",
+                "class": "wallet-badge-info"
+            },
+            {
+                "label": "Rejected",
+                "class": "wallet-badge-error"
+            }
+        ]
+    },
+    "navigation": {
+        "title": "Navigation",
+        "description": "Intuitive mobile structure based on tabs.",
+        "tabs": [
+            "Home",
+            "Payments",
+            "Savings",
+            "Profile"
+        ],
+        "breadcrumbs": [
+            "Home",
+            "My Wallet",
+            "Transfer"
+        ]
+    },
+    "messages": {
+        "title": "Messages",
+        "description": "Visual feedback to confirm financial operations.",
+        "alerts": [
+            {
+                "type": "success",
+                "icon": "✓",
+                "content": "Payment successful"
+            },
+            {
+                "type": "error",
+                "icon": "!",
+                "content": "Insufficient funds"
+            }
+        ]
+    }
+}

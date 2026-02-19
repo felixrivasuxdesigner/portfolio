@@ -87,19 +87,37 @@
     "categories": [
       {
         "name": "Navegación",
-        "components": ["Navegación principal responsive", "Migas de pan de aventura", "Indicadores de progreso de jornada"]
+        "components": [
+          "Navegación principal responsive",
+          "Migas de pan de aventura",
+          "Indicadores de progreso de jornada"
+        ]
       },
       {
         "name": "Participación",
-        "components": ["Contador de tiempo", "Mapas interactivos", "Visor de galería", "Tarjetas de testimonios"]
+        "components": [
+          "Contador de tiempo",
+          "Mapas interactivos",
+          "Visor de galería",
+          "Tarjetas de testimonios"
+        ]
       },
       {
         "name": "Información",
-        "components": ["Detalles del evento", "Tarjetas de aventura", "Descargas de recursos", "Acordeones de preguntas frecuentes"]
+        "components": [
+          "Detalles del evento",
+          "Tarjetas de aventura",
+          "Descargas de recursos",
+          "Acordeones de preguntas frecuentes"
+        ]
       },
       {
         "name": "Registro",
-        "components": ["Formulario de varios pasos", "Perfiles de participantes", "Integración de pagos"]
+        "components": [
+          "Formulario de varios pasos",
+          "Perfiles de participantes",
+          "Integración de pagos"
+        ]
       }
     ]
   },
@@ -109,19 +127,29 @@
     "types": [
       {
         "name": "Primario",
+        "class": "primary",
         "description": "Botones naranja vibrante para acciones primarias como registro y llamadas a la acción importantes",
         "properties": "Esquinas redondeadas, texto en negrita, animación sutil al pasar el cursor"
       },
       {
         "name": "Secundario",
+        "class": "secondary",
         "description": "Botones azul marino para acciones secundarias",
         "properties": "Mismas dimensiones que el primario, esquema de color diferente"
       },
       {
         "name": "Texto",
+        "class": "text",
         "description": "Botones mínimos para acciones terciarias",
         "properties": "Sin fondo, subrayado al pasar el cursor"
       }
+    ],
+    "states": [
+      "Predeterminado",
+      "Hover",
+      "Activo",
+      "Enfoque",
+      "Desactivado"
     ]
   },
   "forms": {
@@ -162,6 +190,13 @@
         "name": "Tarjetas de Testimonios",
         "description": "Comparten historias de aventureros anteriores"
       }
+    ],
+    "samples": [
+      {
+        "title": "Baja Expedition",
+        "content": "Explore the hidden gems of the Sea of Cortez with our expert guides.",
+        "action": "View More"
+      }
     ]
   },
   "badges": {
@@ -170,14 +205,20 @@
     "types": [
       {
         "name": "Niveles de Dificultad",
+        "label": "Intermedio",
+        "class": "nomadix-badge nomadix-badge-warning",
         "description": "Insignias codificadas por color que indican la dificultad de la aventura"
       },
       {
         "name": "Tipos de Experiencia",
+        "label": "Safari",
+        "class": "nomadix-badge nomadix-badge-primary",
         "description": "Categorización visual de diferentes experiencias de aventura"
       },
       {
         "name": "Marcadores de Logros",
+        "label": "Explorador",
+        "class": "nomadix-badge nomadix-badge-success",
         "description": "Insignias de celebración para viajes completados"
       }
     ]
@@ -198,6 +239,17 @@
         "name": "Biblioteca de Recursos",
         "description": "Acceso organizado a materiales de preparación y guías"
       }
+    ],
+    "tabs": [
+      "Aventuras",
+      "Eventos",
+      "Comunidad",
+      "Sobre Nosotros"
+    ],
+    "breadcrumbs": [
+      "Inicio",
+      "Baja California",
+      "Expediciones"
     ]
   },
   "messages": {

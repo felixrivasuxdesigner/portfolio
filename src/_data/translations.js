@@ -18,6 +18,12 @@ module.exports = {
     },
     designSystemRadioDAO: {
       ...require('./translations/case-studies/designSystem/radio_dao/es.json')
+    },
+    designSystemWallet: {
+      ...require('./translations/case-studies/designSystem/wallet/es.json')
+    },
+    designSystemFactoring: {
+      ...require('./translations/case-studies/designSystem/factoring/es.json')
     }
   },
   en: {
@@ -39,6 +45,12 @@ module.exports = {
     },
     designSystemRadioDAO: {
       ...require('./translations/case-studies/designSystem/radio_dao/en.json')
+    },
+    designSystemWallet: {
+      ...require('./translations/case-studies/designSystem/wallet/en.json')
+    },
+    designSystemFactoring: {
+      ...require('./translations/case-studies/designSystem/factoring/en.json')
     }
   }
 };

@@ -38,6 +38,7 @@
 @use 'components/brands';
 @use 'components/breadcrumb';
 @use 'components/case-study-banner';
+@use 'components/design-system';
 
 // Pages
 @use 'pages/home';
@@ -45,6 +46,8 @@
 @use 'pages/case-studies';
 @use 'pages/journeylaw';
 @use 'pages/nomadix';
+@use 'pages/factoring';
+@use 'pages/wallet';
 
 // Themes
 @use 'themes/default';

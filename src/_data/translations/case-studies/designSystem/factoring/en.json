@@ -1,0 +1,164 @@
+{
+    "title": "Design System",
+    "intro": "The Security Bank Factoring Module uses a robust corporate visual language, focused on technical precision and operational efficiency.",
+    "colorPalette": {
+        "title": "Color Palette",
+        "description": "Institutional colors that reinforce banking security.",
+        "colors": [
+            {
+                "name": "Security Blue",
+                "hex": "#003366",
+                "usage": "Primary institutional color"
+            },
+            {
+                "name": "Gold",
+                "hex": "#C9A050",
+                "usage": "Accents and premium states"
+            },
+            {
+                "name": "Charcoal Grey",
+                "hex": "#333333",
+                "usage": "Corporate typography"
+            }
+        ]
+    },
+    "typography": {
+        "title": "Typography",
+        "description": "Solid typefaces that guarantee clarity in complex data tables.",
+        "fonts": [
+            {
+                "name": "Montserrat",
+                "category": "San Serif",
+                "weights": "400, 600, 700",
+                "usage": "Headings and data"
+            }
+        ],
+        "fontSizes": [
+            {
+                "name": "Header",
+                "size": "20px",
+                "usage": "Table headers"
+            },
+            {
+                "name": "Data",
+                "size": "14px",
+                "usage": "Information cells"
+            }
+        ]
+    },
+    "components": {
+        "title": "Components",
+        "description": "Corporate library of elements.",
+        "categories": [
+            {
+                "name": "Data",
+                "components": [
+                    "Bar charts",
+                    "Filterable tables"
+                ]
+            },
+            {
+                "name": "Operations",
+                "components": [
+                    "Digital signature",
+                    "Date selector"
+                ]
+            }
+        ]
+    },
+    "buttons": {
+        "title": "Buttons",
+        "description": "Corporate banking actions designed for precision and clarity.",
+        "types": [
+            {
+                "name": "Primary",
+                "class": "primary",
+                "description": "Buttons for main actions like transactional approvals.",
+                "properties": "Institutional blue color, square borders, medium typographic weight."
+            },
+            {
+                "name": "Secondary",
+                "class": "secondary",
+                "description": "Buttons for consultations or data export.",
+                "properties": "Defined border, subtle background, gold accent color."
+            },
+            {
+                "name": "Text",
+                "class": "text",
+                "description": "Auxiliary actions like cancel or close.",
+                "properties": "No background, subtle underline on hover."
+            }
+        ],
+        "states": [
+            "Default",
+            "Hover",
+            "Active",
+            "Focus",
+            "Disabled"
+        ]
+    },
+    "forms": {
+        "title": "Forms",
+        "description": "Complex filters designed for managing large volumes of data.",
+        "elements": [
+            {
+                "name": "Date Range",
+                "description": "Control to filter transactions by specific periods."
+            },
+            {
+                "name": "Predictive Search",
+                "description": "Search field with real-time suggestions by invoice number or client."
+            }
+        ]
+    },
+    "cards": {
+        "title": "Cards",
+        "description": "Business KPIs.",
+        "samples": [
+            {
+                "title": "Pending",
+                "content": "Invoices to approve",
+                "action": "Review"
+            }
+        ]
+    },
+    "badges": {
+        "title": "Badges",
+        "description": "Invoice and transaction statuses.",
+        "types": [
+            {
+                "label": "Pending",
+                "class": "factoring-badge-warning"
+            },
+            {
+                "label": "Approved",
+                "class": "factoring-badge-success"
+            }
+        ]
+    },
+    "navigation": {
+        "title": "Navigation",
+        "description": "Complex sidebar menus.",
+        "tabs": [
+            "Dashboard",
+            "Invoices",
+            "Clients"
+        ],
+        "breadcrumbs": [
+            "Banking",
+            "Factoring",
+            "Dashboard"
+        ]
+    },
+    "messages": {
+        "title": "Messages",
+        "description": "Security alerts and operational feedback.",
+        "alerts": [
+            {
+                "type": "warning",
+                "icon": "!",
+                "content": "Session about to expire"
+            }
+        ]
+    }
+}

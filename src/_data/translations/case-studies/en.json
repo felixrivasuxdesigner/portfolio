@@ -151,6 +151,10 @@
             }
           ],
           "conclusion": "This mobile wallet solution transformed financial management for Belcorp's sales representatives while driving significant improvements in company efficiency and profitability. The project demonstrates how strategic UX design can address complex business challenges while enhancing end-user quality of life through thoughtful digital experiences."
+        },
+        "designSystem": {
+          "title": "Design System",
+          "intro": "The design system for Belcorp's Mobile Wallet was built on the pillars of 'Trust and Accessibility', ensuring that sales representatives could manage their finances with complete security."
         }
       }
     },
@@ -288,6 +292,10 @@
             }
           ],
           "conclusion": "This project demonstrated that exceptional security and outstanding user experience are not mutually exclusive. By deeply understanding both security requirements and user workflows, we created a solution that protects sensitive financial data while enabling efficient operations. Future development will focus on expanding AI-powered threat detection capabilities and enhancing cross-platform security synchronization based on ongoing user feedback and emerging security threats."
+        },
+        "designSystem": {
+          "title": "Design System",
+          "intro": "Security Bank's Factoring Module uses a robust and corporate visual language, focused on technical precision and operational efficiency."
         }
       }
     },

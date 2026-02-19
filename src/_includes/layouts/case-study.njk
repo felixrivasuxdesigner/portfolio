@@ -49,6 +49,10 @@ isCaseStudy: true
           {% set designSystem = translations[locale].designSystemIntelliResearch %}
         {% elif projectKey == "radio_dao" %}
           {% set designSystem = translations[locale].designSystemRadioDAO %}
+        {% elif projectKey == "wallet" %}
+          {% set designSystem = translations[locale].designSystemWallet %}
+        {% elif projectKey == "factoring" %}
+          {% set designSystem = translations[locale].designSystemFactoring %}
         {% else %}
           {% set designSystem = translations[locale].designSystem %}
         {% endif %}

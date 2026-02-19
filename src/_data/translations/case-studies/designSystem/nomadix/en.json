@@ -87,19 +87,37 @@
     "categories": [
       {
         "name": "Navigation",
-        "components": ["Responsive main navigation", "Adventure breadcrumbs", "Journey progress indicators"]
+        "components": [
+          "Responsive main navigation",
+          "Adventure breadcrumbs",
+          "Journey progress indicators"
+        ]
       },
       {
         "name": "Engagement",
-        "components": ["Countdown timer", "Interactive maps", "Gallery viewer", "Testimonial cards"]
+        "components": [
+          "Countdown timer",
+          "Interactive maps",
+          "Gallery viewer",
+          "Testimonial cards"
+        ]
       },
       {
         "name": "Information",
-        "components": ["Event details", "Adventure cards", "Resource downloads", "FAQ accordions"]
+        "components": [
+          "Event details",
+          "Adventure cards",
+          "Resource downloads",
+          "FAQ accordions"
+        ]
       },
       {
         "name": "Registration",
-        "components": ["Multi-step form", "Participant profiles", "Payment integration"]
+        "components": [
+          "Multi-step form",
+          "Participant profiles",
+          "Payment integration"
+        ]
       }
     ]
   },
@@ -109,19 +127,29 @@
     "types": [
       {
         "name": "Primary",
+        "class": "primary",
         "description": "Vibrant orange buttons for primary actions like registration and important calls to action",
         "properties": "Rounded corners, bold text, subtle hover animation"
       },
       {
         "name": "Secondary",
+        "class": "secondary",
         "description": "Navy blue buttons for secondary actions",
         "properties": "Same dimensions as primary, different color scheme"
       },
       {
-        "name": "Text",
+        "name": "Texto",
+        "class": "text",
         "description": "Minimal buttons for tertiary actions",
         "properties": "No background, underline on hover"
       }
+    ],
+    "states": [
+      "Default",
+      "Hover",
+      "Active",
+      "Focus",
+      "Disabled"
     ]
   },
   "forms": {
@@ -162,6 +190,13 @@
         "name": "Testimonial Cards",
         "description": "Share stories from past adventurers"
       }
+    ],
+    "samples": [
+      {
+        "title": "Baja Expedition",
+        "content": "Explore the hidden gems of the Sea of Cortez with our expert guides.",
+        "action": "View More"
+      }
     ]
   },
   "badges": {
@@ -170,14 +205,20 @@
     "types": [
       {
         "name": "Difficulty Levels",
+        "label": "Intermediate",
+        "class": "nomadix-badge nomadix-badge-warning",
         "description": "Color-coded badges indicating adventure difficulty"
       },
       {
         "name": "Experience Types",
+        "label": "Safari",
+        "class": "nomadix-badge nomadix-badge-primary",
         "description": "Visual categorization of different adventure experiences"
       },
       {
         "name": "Achievement Markers",
+        "label": "Explorer",
+        "class": "nomadix-badge nomadix-badge-success",
         "description": "Celebration badges for completed journeys"
       }
     ]
@@ -198,6 +239,17 @@
         "name": "Resource Library",
         "description": "Organized access to preparation materials and guides"
       }
+    ],
+    "tabs": [
+      "Adventures",
+      "Events",
+      "Community",
+      "About Us"
+    ],
+    "breadcrumbs": [
+      "Home",
+      "Baja California",
+      "Expeditions"
     ]
   },
   "messages": {

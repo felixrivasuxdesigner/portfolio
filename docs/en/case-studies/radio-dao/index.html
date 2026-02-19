@@ -249,16 +249,18 @@
     <p>A vibrant and community-driven visual language designed to empower local radio stations in the Web3 ecosystem.</p>
   </div>
   
-  <div class="design-system-tabs">
-    <button class="tab-btn active" data-tab="colors">Color Palette</button>
-    <button class="tab-btn" data-tab="typography">Community Typography</button>
-    <button class="tab-btn" data-tab="components">Digital Radio Library</button>
-    <button class="tab-btn" data-tab="buttons">Interactions</button>
-    <button class="tab-btn" data-tab="forms">Participation</button>
-    <button class="tab-btn" data-tab="cards">Show Containers</button>
-    <button class="tab-btn" data-tab="badges">Status Badges</button>
-    <button class="tab-btn" data-tab="navigation">Hybrid Navigation</button>
-    <button class="tab-btn" data-tab="messages">Network Notifications</button>
+  <div class="design-system-tabs-container">
+    <div class="design-system-tabs">
+      <button class="tab-btn active" data-tab="colors">Color Palette</button>
+      <button class="tab-btn" data-tab="typography">Community Typography</button>
+      <button class="tab-btn" data-tab="components">Digital Radio Library</button>
+      <button class="tab-btn" data-tab="buttons">Interactions</button>
+      <button class="tab-btn" data-tab="forms">Participation</button>
+      <button class="tab-btn" data-tab="cards">Show Containers</button>
+      <button class="tab-btn" data-tab="badges">Status Badges</button>
+      <button class="tab-btn" data-tab="navigation">Hybrid Navigation</button>
+      <button class="tab-btn" data-tab="messages">Network Notifications</button>
+    </div>
   </div>
   
   <div class="tab-content active" id="colors-tab">
@@ -430,6 +432,9 @@
     </div>
   </div>
   
+  
+  
+
   <div class="tab-content" id="buttons-tab">
     <h3>Interactions</h3>
     <p>Designed with 'Soft Neo-Brutalism' style for maximum clarity.</p>
@@ -437,23 +442,23 @@
     <div class="buttons-showcase">
       <div class="button-group">
         
-        <button class="jl-btn jl-btn-primary">Vote Proposal</button>
+        <button class="radio-dao-btn radio-dao-btn-jl-btn jl-btn-primary">Vote Proposal</button>
         
-        <button class="jl-btn jl-btn-secondary">Tune In</button>
+        <button class="radio-dao-btn radio-dao-btn-jl-btn jl-btn-secondary">Tune In</button>
         
       </div>
       
       <div class="button-states">
         
-        <button>On Air</button>
+        <button class="radio-dao-btn radio-dao-btn-primary">On Air</button>
         
-        <button class="hover">Hover</button>
+        <button class="radio-dao-btn radio-dao-btn-primary radio-dao-hover">Hover</button>
         
-        <button class="pressed">Pressed</button>
+        <button class="radio-dao-btn radio-dao-btn-primary radio-dao-pressed">Pressed</button>
         
-        <button class="focus">Focus</button>
+        <button class="radio-dao-btn radio-dao-btn-primary radio-dao-focus">Focus</button>
         
-        <button disabled>Offline</button>
+        <button class="radio-dao-btn radio-dao-btn-primary" disabled>Offline</button>
         
       </div>
     </div>
@@ -468,14 +473,14 @@
       <div class="form-group">
         
         <label for="demo-input">Station Search</label>
-        <input type="text" id="demo-input" placeholder="Enter text here">
+        <input type="text" id="demo-input" class="radio-dao-input" placeholder="Enter text here">
         
       </div>
       
       <div class="form-group">
         
         <label for="demo-select">Comment Field</label>
-        <select id="demo-select">
+        <select id="demo-select" class="radio-dao-select">
           <option>Option 1</option>
           <option>Option 2</option>
           <option>Option 3</option>
@@ -491,15 +496,15 @@
     <p>Structures for featured shows and podcasts.</p>
     
     <div class="cards-showcase">
-      <div>
-        <div>
+      <div class="radio-dao-card">
+        <div class="radio-dao-card-header">
           <h4>Now Playing</h4>
         </div>
-        <div>
+        <div class="radio-dao-card-body">
           <p>Detailed host information and current track in real-time.</p>
         </div>
-        <div>
-          <button>Participate</button>
+        <div class="radio-dao-card-footer">
+          <button class="radio-dao-btn radio-dao-btn-text">Participate</button>
         </div>
       </div>
     </div>
@@ -525,30 +530,30 @@
     <p>Fluid access to linear and on-demand content.</p>
     
     <div class="navigation-showcase">
-      <div>
-        <div>
+      <div class="radio-dao-nav-sample">
+        <div class="radio-dao-tabs">
           
-          <button class="active">Live</button>
+          <button class="radio-dao-tab active">Live</button>
           
-          <button>Shows</button>
+          <button class="radio-dao-tab">Shows</button>
           
-          <button>Votes</button>
+          <button class="radio-dao-tab">Votes</button>
           
-          <button>My Wallet</button>
+          <button class="radio-dao-tab">My Wallet</button>
           
         </div>
       </div>
       
-      <div>
+      <div class="radio-dao-breadcrumbs">
         
         <span>Radio</span>
         
-        <span>›</span>
+        <span class="radio-dao-breadcrumb-separator">›</span>
         
         
         <span>Barrio Centenario</span>
         
-        <span>›</span>
+        <span class="radio-dao-breadcrumb-separator">›</span>
         
         
         <span>Proposals</span>
@@ -564,14 +569,14 @@
     
     <div class="messages-showcase">
       
-      <div>
-        <div>✓</div>
-        <div>Connected to blockchain successfully.</div>
+      <div class="radio-dao-alert radio-dao-alert-success">
+        <div class="radio-dao-alert-icon">✓</div>
+        <div class="radio-dao-alert-content">Connected to blockchain successfully.</div>
       </div>
       
-      <div>
-        <div>i</div>
-        <div>Next vote in 2 hours.</div>
+      <div class="radio-dao-alert radio-dao-alert-info">
+        <div class="radio-dao-alert-icon">i</div>
+        <div class="radio-dao-alert-content">Next vote in 2 hours.</div>
       </div>
       
     </div>
