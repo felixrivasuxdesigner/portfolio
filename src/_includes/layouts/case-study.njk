@@ -41,22 +41,10 @@ isCaseStudy: true
 
       <!-- Design System Section (if available) -->
       {% if translations[locale].case_studies.projects[projectKey].sections.designSystem %}
-        {% if projectKey == "journeylaw" %}
-          {% set designSystem = translations[locale].designSystemJourneyLaw %}
-        {% elif projectKey == "nomadix" %}
-          {% set designSystem = translations[locale].designSystemNomadix %}
-        {% elif projectKey == "intelliresearch" %}
-          {% set designSystem = translations[locale].designSystemIntelliResearch %}
-        {% elif projectKey == "radio_dao" %}
-          {% set designSystem = translations[locale].designSystemRadioDAO %}
-        {% elif projectKey == "wallet" %}
-          {% set designSystem = translations[locale].designSystemWallet %}
-        {% elif projectKey == "factoring" %}
-          {% set designSystem = translations[locale].designSystemFactoring %}
-        {% else %}
-          {% set designSystem = translations[locale].designSystem %}
+        {% set designSystem = translations['case-studies'].designSystem[projectKey][locale] %}
+        {% if designSystem %}
+          {% include "components/case-studies/design-system-board.njk" %}
         {% endif %}
-        {% include "components/case-studies/design-system-board.njk" %}
       {% endif %}
 
       <!-- Research Section (if available) -->
