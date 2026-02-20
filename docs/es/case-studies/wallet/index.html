@@ -240,6 +240,236 @@
       
         
         
+          <div class="design-board-wrapper" style="
+  --theme-primary: #E91E63;
+  --theme-secondary: #1A237E;
+  --theme-gray-dark: #111827;
+  --theme-gray-medium: #6B7280;
+  --theme-gray-light: #F3F4F6;
+  --theme-gray-white: #FFFFFF;
+  --theme-font-primary: 'Roboto', sans-serif;
+  --theme-radius: 8px;
+  --theme-button-radius: 100px;
+  --theme-input-radius: 6px;
+">
+
+  <div class="board-header" style="text-align: center; margin-bottom: 3rem;">
+    <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;">Sistema de Diseño</h2>
+    <p style="font-size: 1.1rem; color: var(--theme-gray-medium); max-width: 600px; margin: 0 auto; line-height: 1.6;">
+      El sistema de diseño para la Billetera Móvil de Belcorp se construyó bajo los pilares de 'Confianza y Accesibilidad', asegurando que las representantes de ventas pudieran gestionar sus finanzas con total seguridad.
+    </p>
+  </div>
+
+  <!-- 1. Color Palette -->
+  <section class="board-section">
+    <div class="section-header">
+      <h3>Color Palette</h3>
+      <p>The primary, secondary, and grayscale colors defining the visual identity.</p>
+    </div>
+    
+    <div class="colors-grid">
+      <!-- Primary -->
+      <div class="color-swatch-card" aria-label="Primary Color">
+        <div class="swatch-color" style="background-color: var(--theme-primary);"></div>
+        <div class="swatch-info">
+          <div class="color-name">Rosa Belcorp</div>
+          <div class="color-codes">
+            <span>HEX #E91E63</span>
+            <span>RGB 233, 30, 99</span>
+          </div>
+          <div class="color-usage">Color de marca y acentos</div>
+        </div>
+      </div>
+
+      <!-- Secondary -->
+      <div class="color-swatch-card" aria-label="Secondary Color">
+        <div class="swatch-color" style="background-color: var(--theme-secondary);"></div>
+        <div class="swatch-info">
+          <div class="color-name">Azul Profundo</div>
+          <div class="color-codes">
+            <span>HEX #1A237E</span>
+            <span>RGB 26, 35, 126</span>
+          </div>
+          <div class="color-usage">Texto principal y encabezados</div>
+        </div>
+      </div>
+      
+      <!-- Grayscale (Loop over grayscale obj) -->
+      
+      <div class="color-swatch-card" aria-label="Text Dark">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #111827; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Text Dark</div>
+          <div class="color-codes">
+            <span>HEX #111827</span>
+            <span>RGB 17, 24, 39</span>
+          </div>
+          <div class="color-usage">Headings and primary text</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Text Medium">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #6B7280; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Text Medium</div>
+          <div class="color-codes">
+            <span>HEX #6B7280</span>
+            <span>RGB 107, 114, 128</span>
+          </div>
+          <div class="color-usage">Body text and secondary info</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Background Light">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #F3F4F6; border-bottom: 1px solid rgba(0,0,0,0.05);"></div>
+        <div class="swatch-info">
+          <div class="color-name">Background Light</div>
+          <div class="color-codes">
+            <span>HEX #F3F4F6</span>
+            <span>RGB 243, 244, 246</span>
+          </div>
+          <div class="color-usage">App backgrounds</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Surface White">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #FFFFFF; border-bottom: 1px solid rgba(0,0,0,0.05);"></div>
+        <div class="swatch-info">
+          <div class="color-name">Surface White</div>
+          <div class="color-codes">
+            <span>HEX #FFFFFF</span>
+            <span>RGB 255, 255, 255</span>
+          </div>
+          <div class="color-usage">Card surfaces</div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- 2. Typography -->
+  <section class="board-section">
+    <div class="section-header">
+      <h3>Typography</h3>
+      <p>Primary Typeface: <strong>Roboto</strong> (San Serif UI)</p>
+    </div>
+
+    <div class="typography-grid">
+      
+      <div class="type-specimen">
+        <div class="type-label">
+          <strong>Title</strong>
+          <span>24px / 400</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Encabezados principales</span>
+        </div>
+        <div class="type-sample" style="font-size: 24px; font-weight: 400;">
+          The quick brown fox jumps over the lazy dog
+        </div>
+      </div>
+      
+      <div class="type-specimen">
+        <div class="type-label">
+          <strong>Body</strong>
+          <span>16px / 400</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Texto de lectura</span>
+        </div>
+        <div class="type-sample" style="font-size: 16px; font-weight: 400;">
+          The quick brown fox jumps over the lazy dog
+        </div>
+      </div>
+      
+      <div class="type-specimen">
+        <div class="type-label">
+          <strong>Caption</strong>
+          <span>12px / 400</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Metadatos y fechas</span>
+        </div>
+        <div class="type-sample" style="font-size: 12px; font-weight: 400;">
+          The quick brown fox jumps over the lazy dog
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- 3. UI Components -->
+  <section class="board-section">
+    <div class="section-header">
+      <h3>UI Components</h3>
+      <p>Interactive elements utilizing the design tokens (Colors, Typography, Border Radius).</p>
+    </div>
+
+    <div class="ui-grid">
+      
+      <!-- Buttons -->
+      <div class="ui-group">
+        <h4>Buttons</h4>
+        <div class="button-states">
+          
+          <div class="state-row">
+            <span class="state-label">Default</span>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+              <button class="btn-primary">Primary Action</button>
+              <button class="btn-secondary">Secondary Action</button>
+              <button class="btn-ghost">Ghost</button>
+            </div>
+          </div>
+          
+          <div class="state-row">
+            <span class="state-label">Hover (simulated)</span>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+              <button class="btn-primary hover">Primary Action</button>
+              <button class="btn-secondary hover">Secondary Action</button>
+              <button class="btn-ghost hover">Ghost</button>
+            </div>
+          </div>
+          
+          <div class="state-row">
+            <span class="state-label">Active (simulated)</span>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+              <button class="btn-primary active">Primary Action</button>
+              <button class="btn-secondary active">Secondary Action</button>
+              <button class="btn-ghost active">Ghost</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Forms -->
+      <div class="ui-group">
+        <h4>Form Inputs</h4>
+        <div class="form-states">
+          
+          <div class="input-group">
+            <label>Default State</label>
+            <input type="text" placeholder="Enter your email address">
+          </div>
+          
+          <div class="input-group">
+            <label>Focus State (simulated)</label>
+            <input type="text" class="focus" placeholder="typing..." value="user@example.com">
+          </div>
+          
+          <div class="input-group">
+            <label>Error State (simulated)</label>
+            <input type="text" class="error" placeholder="" value="invalid-email">
+            <span style="color: #ef4444; font-size: 0.8rem; margin-top: 0.25rem;">Please enter a valid email address.</span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+
+        
       
 
       <!-- Research Section (if available) -->
