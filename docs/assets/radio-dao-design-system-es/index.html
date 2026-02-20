@@ -1,0 +1,101 @@
+<h1>Sistema de Diseño: Radio DAO</h1>
+<h2>01. Colores</h2>
+<h3>Colores base</h3>
+<ul>
+<li><strong>Naranja Ladrillo (#E65100)</strong> - Primario. Usado en CTAs principales, identidad de marca y estados activos.</li>
+<li><strong>Azul Noche (#1A237E)</strong> - Secundario. Usado en fondos de cabecera, navegación y elementos de gobernanza.</li>
+<li><strong>Gris Piedra (#37474F)</strong> - Texto principal y bordes de componentes inactivos.</li>
+<li><strong>Blanco Puro (#FFFFFF)</strong> - Fondos de tarjetas y superficies elevadas.</li>
+<li><strong>Crema Papel (#F5F5F6)</strong> - Fondo general de la aplicación.</li>
+</ul>
+<h3>Colores de marca</h3>
+<ul>
+<li><strong>Amarillo Sol (#FBC02D)</strong> - Acentos y destacados (ej. "En vivo").</li>
+<li><strong>Verde Esperanza (#388E3C)</strong> - Indicador de éxito y votos positivos.</li>
+</ul>
+<h3>Colores de indicación</h3>
+<ul>
+<li><strong>Rojo Alerta (#D32F2F)</strong> - Errores, estados de "Desconectado" o votos negativos.</li>
+<li><strong>Azul Info (#1976D2)</strong> - Enlaces informativos y notificaciones del sistema.</li>
+</ul>
+<h2>02. Tipografía</h2>
+<h3>Fuente principal</h3>
+<p><strong>Inter</strong> (Google Fonts). Seleccionada por su excelente legibilidad en pantallas pequeñas y su neutralidad moderna.</p>
+<h3>Escalas tipográficas</h3>
+<ul>
+<li><strong>H1 (Titular):</strong> Bold, 32px (Mobile) / 40px (Desktop).</li>
+<li><strong>H2 (Subtítulo):</strong> SemiBold, 24px / 28px.</li>
+<li><strong>H3 (Sección):</strong> Medium, 20px / 24px.</li>
+<li><strong>Body 1 (Texto Principal):</strong> Regular, 16px / 1.5 line-height.</li>
+<li><strong>Body 2 (Secundario/Metadatos):</strong> Regular, 14px / 1.4 line-height.</li>
+<li><strong>Caption (Etiquetas):</strong> Medium, 12px / Uppercase tracking 1px.</li>
+</ul>
+<h2>03. Espaciado</h2>
+<p>Sistema base de 8px (Grid de 8pt).</p>
+<ul>
+<li><strong>XS (4px):</strong> Espacio mínimo entre iconos y texto.</li>
+<li><strong>S (8px):</strong> Separación interna en botones y chips.</li>
+<li><strong>M (16px):</strong> Padding estándar de tarjetas y contenedores.</li>
+<li><strong>L (24px):</strong> Separación entre secciones de contenido.</li>
+<li><strong>XL (32px):</strong> Márgenes de pantalla y separación de bloques mayores.</li>
+<li><strong>XXL (48px+):</strong> Espaciado para secciones de aterrizaje.</li>
+</ul>
+<h2>04. Componentes</h2>
+<h3>Navegación</h3>
+<ul>
+<li><strong>Barra de Navegación Inferior (Mobile):</strong> 4 items (Inicio, Radio, Votar, Perfil). Iconos outline, filled en estado activo.</li>
+<li><strong>Header:</strong> Sticky, contiene el logo y el estado de conexión (En vivo/Offline).</li>
+</ul>
+<h3>Botones (Votar, Escuchar, Participar)</h3>
+<ul>
+<li><strong>Primario:</strong> Fondo Naranja Ladrillo, texto Blanco, bordes redondeados (8px). Sombra suave.</li>
+<li><strong>Secundario:</strong> Borde Azul Noche, texto Azul Noche, fondo transparente.</li>
+<li><strong>Botón de Reproducción (FAB):</strong> Flotante, circular, gradiente Naranja a Amarillo, sombra elevada.</li>
+</ul>
+<h3>Tarjetas (Propuestas, Noticias)</h3>
+<ul>
+<li><strong>Tarjeta de Propuesta:</strong> Contiene título, estado (Abierta/Cerrada), barra de progreso de votación y botón de acción. Borde sutil, fondo blanco.</li>
+<li><strong>Tarjeta de Programa:</strong> Imagen de portada cuadrada, título del show, hora de emisión.</li>
+</ul>
+<h3>Elementos especiales (Reproductor, Gráficos de Votación)</h3>
+<ul>
+<li><strong>Mini Reproductor:</strong> Barra persistente en la parte inferior con controles básicos (Play/Pause) y visualizador de onda de audio simplificado.</li>
+<li><strong>Gráfico de Dona:</strong> Para visualizar resultados de votaciones (Si/No/Abstención) con colores de indicación.</li>
+</ul>
+<h2>05. Iconografía</h2>
+<p>Set de iconos <strong>Phosphor Icons</strong> o similar (estilo Lineal).
+Grosor de trazo consistente (2px).
+Iconos clave: Micrófono (Radio), Urna/Ticket (Votar), Usuarios (Comunidad), Play/Pause.</p>
+<h2>06. Imágenes</h2>
+<ul>
+<li><strong>Fotografía:</strong> Estilo documental, alto contraste, mostrando personas reales de la comunidad y equipos de radio. Filtro cálido sutil.</li>
+<li><strong>Ilustraciones:</strong> Estilo lineal simple para estados vacíos (empty states) u onboarding.</li>
+</ul>
+<h2>07. Principios UX</h2>
+<ul>
+<li><strong>Inmediatez:</strong> El audio debe comenzar a sonar en menos de 2 segundos.</li>
+<li><strong>Transparencia:</strong> El estado de las votaciones y la gobernanza debe ser comprensible para usuarios no técnicos.</li>
+<li><strong>Pertenencia:</strong> El usuario siempre debe ver su impacto (ej. "Tu voto fue registrado").</li>
+</ul>
+<h2>08. Responsive</h2>
+<p>Diseño <em>Mobile-First</em>.
+Adaptación fluida a tablets y desktop mediante grid flexible.
+En desktop, el reproductor y el chat se fijan en una barra lateral persistente (sidebar).</p>
+<h2>09. Microcopy</h2>
+<ul>
+<li><strong>Tono:</strong> Cercano, inclusivo, motivador.</li>
+<li><strong>Ejemplos:</strong>
+<ul>
+<li>Botón Play: "Sintonizar ahora"</li>
+<li>Votar: "Haz oír tu voz"</li>
+<li>Error: "La señal esta débil, intentemos de nuevo."</li>
+</ul>
+</li>
+</ul>
+<h2>10. Accesibilidad</h2>
+<ul>
+<li>Cumplimiento WCAG AA.</li>
+<li>Alto contraste en todos los textos de lectura.</li>
+<li>Soporte completo para lectores de pantalla (VoiceOver/TalkBack), especialmente en los flujos de votación.</li>
+<li>Áreas de toque mínimas de 44x44px.</li>
+</ul>
