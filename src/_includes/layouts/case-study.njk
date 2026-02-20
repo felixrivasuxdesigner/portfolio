@@ -41,7 +41,7 @@ isCaseStudy: true
 
       <!-- Design System Section (if available) -->
       {% if translations[locale].case_studies.projects[projectKey].sections.designSystem %}
-        {% set designSystem = translations['case-studies'].designSystem[projectKey][locale] %}
+        {% set designSystem = translations[locale].projectDesignSystems[projectKey] %}
         {% if designSystem %}
           {% include "components/case-studies/design-system-board.njk" %}
         {% endif %}

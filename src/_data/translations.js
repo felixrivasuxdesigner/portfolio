@@ -24,6 +24,14 @@ module.exports = {
     },
     designSystemFactoring: {
       ...require('./translations/case-studies/designSystem/factoring/es.json')
+    },
+    projectDesignSystems: {
+      nomadix: require('./translations/case-studies/designSystem/nomadix/es.json'),
+      journeylaw: require('./translations/case-studies/designSystem/journeylaw/es.json'),
+      intelliresearch: require('./translations/case-studies/designSystem/intelliresearch/es.json'),
+      radio_dao: require('./translations/case-studies/designSystem/radio_dao/es.json'),
+      wallet: require('./translations/case-studies/designSystem/wallet/es.json'),
+      factoring: require('./translations/case-studies/designSystem/factoring/es.json')
     }
   },
   en: {
@@ -51,6 +59,14 @@ module.exports = {
     },
     designSystemFactoring: {
       ...require('./translations/case-studies/designSystem/factoring/en.json')
+    },
+    projectDesignSystems: {
+      nomadix: require('./translations/case-studies/designSystem/nomadix/en.json'),
+      journeylaw: require('./translations/case-studies/designSystem/journeylaw/en.json'),
+      intelliresearch: require('./translations/case-studies/designSystem/intelliresearch/en.json'),
+      radio_dao: require('./translations/case-studies/designSystem/radio_dao/en.json'),
+      wallet: require('./translations/case-studies/designSystem/wallet/en.json'),
+      factoring: require('./translations/case-studies/designSystem/factoring/en.json')
     }
   }
 };
