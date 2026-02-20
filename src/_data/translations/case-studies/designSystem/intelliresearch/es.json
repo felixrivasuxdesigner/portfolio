@@ -1,196 +1,89 @@
 {
-    "title": "Sistema de Diseño IntelliResearch",
-    "intro": "Un sistema de diseño escalable construido con principios de claridad y eficiencia para herramientas de investigación impulsadas por IA.",
-    "colorPalette": {
-        "title": "Paleta de Colores",
-        "description": "Una paleta profesional que equilibra la confianza institucional con la claridad tecnológica.",
-        "colors": [
-            {
-                "name": "Azul Cobalto",
-                "hex": "#0047AB",
-                "usage": "Color primario para autoridad y acciones principales"
-            },
-            {
-                "name": "Cian Eléctrico",
-                "hex": "#00E5FF",
-                "usage": "Insights de IA y destacados inteligentes"
-            },
-            {
-                "name": "Gris Pizarra",
-                "hex": "#263238",
-                "usage": "Texto principal y elementos estructurales para reducir fatiga visual"
-            },
-            {
-                "name": "Blanco Puro",
-                "hex": "#FFFFFF",
-                "usage": "Fondos de superficie y áreas de trabajo"
-            },
-            {
-                "name": "Gris Suave",
-                "hex": "#F5F7F9",
-                "usage": "Fondos de sección y elementos secundarios"
-            }
-        ]
+  "title": "Sistema de Diseño IntelliResearch",
+  "intro": "Un sistema de diseño escalable construido con principios de claridad y eficiencia para herramientas de investigación impulsadas por IA.",
+  "tokens": {
+    "colors": {
+      "primary": {
+        "name": "Azul Cobalto",
+        "hex": "#0047AB",
+        "rgb": "0, 71, 171",
+        "usage": "Color primario para autoridad y acciones principales"
+      },
+      "secondary": {
+        "name": "Cian Eléctrico",
+        "hex": "#00E5FF",
+        "rgb": "0, 229, 255",
+        "usage": "Insights de IA y destacados inteligentes"
+      },
+      "grayscale": {
+        "dark": {
+          "name": "Text Dark",
+          "hex": "#111827",
+          "rgb": "17, 24, 39",
+          "usage": "Headings and primary text"
+        },
+        "medium": {
+          "name": "Text Medium",
+          "hex": "#6B7280",
+          "rgb": "107, 114, 128",
+          "usage": "Body text and secondary info"
+        },
+        "light": {
+          "name": "Background Light",
+          "hex": "#F3F4F6",
+          "rgb": "243, 244, 246",
+          "usage": "App backgrounds"
+        },
+        "white": {
+          "name": "Surface White",
+          "hex": "#FFFFFF",
+          "rgb": "255, 255, 255",
+          "usage": "Card surfaces"
+        }
+      }
     },
     "typography": {
-        "title": "Sistema Tipográfico",
-        "description": "Usamos Inter por su excepcional legibilidad en interfaces de usuario densas en datos y JetBrains Mono para fragmentos de transcripción.",
-        "fonts": [
-            {
-                "name": "Inter",
-                "category": "Interfaz y Texto de Análisis",
-                "weights": "400 (Regular), 500 (Medium), 600 (Semibold), 700 (Bold)",
-                "usage": "Fuente principal para todo el contenido y elementos de la interfaz"
-            },
-            {
-                "name": "JetBrains Mono",
-                "category": "Transcripciones y Metadata",
-                "weights": "400 (Regular)",
-                "usage": "Fuente monoespaciada para bloques de transcripción y datos técnicos"
-            }
+      "primary": {
+        "family": "Inter",
+        "weights": [
+          400,
+          500,
+          600,
+          700
         ],
-        "fontSizes": [
-            {
-                "name": "Display L",
-                "size": "32px/40px",
-                "usage": "Títulos principales del dashboard"
-            },
-            {
-                "name": "Heading M",
-                "size": "24px/32px",
-                "usage": "Títulos de secciones y resúmenes"
-            },
-            {
-                "name": "Body Regular",
-                "size": "16px/24px",
-                "usage": "Contenido principal y análisis detallado"
-            },
-            {
-                "name": "Caption",
-                "size": "14px/20px",
-                "usage": "Etiquetas, metadatos y micro-copy"
-            }
-        ]
+        "category": "Interfaz y Texto de Análisis"
+      },
+      "hierarchy": [
+        {
+          "name": "Display L",
+          "size": "32px/40px",
+          "weight": "400",
+          "usage": "Títulos principales del dashboard"
+        },
+        {
+          "name": "Heading M",
+          "size": "24px/32px",
+          "weight": "400",
+          "usage": "Títulos de secciones y resúmenes"
+        },
+        {
+          "name": "Body Regular",
+          "size": "16px/24px",
+          "weight": "400",
+          "usage": "Contenido principal y análisis detallado"
+        },
+        {
+          "name": "Caption",
+          "size": "14px/20px",
+          "weight": "400",
+          "usage": "Etiquetas, metadatos y micro-copy"
+        }
+      ]
     },
-    "components": {
-        "title": "Componentes de Análisis",
-        "description": "Elementos atómicos diseñados para la síntesis rápida de información cualitativa.",
-        "categories": [
-            {
-                "name": "Investigación",
-                "components": [
-                    "Línea de tiempo de audio",
-                    "Reproductor de video",
-                    "Editor de transcripciones",
-                    "Buscador semántico"
-                ]
-            },
-            {
-                "name": "Visualización",
-                "components": [
-                    "Matriz de insights",
-                    "Nube de etiquetas de sentimiento",
-                    "Gráficos de frecuencia de dolor",
-                    "Tarjetas de evidencia"
-                ]
-            }
-        ]
-    },
-    "buttons": {
-        "title": "Botones de Acción",
-        "description": "Controles directos para la gestión del flujo de trabajo de investigación.",
-        "types": [
-            {
-                "name": "Procesar Análisis",
-                "class": "jl-btn jl-btn-primary",
-                "usage": "Llamada a la acción principal para iniciar el procesamiento de IA"
-            },
-            {
-                "name": "Exportar Reporte",
-                "class": "jl-btn jl-btn-secondary",
-                "usage": "Acción secundaria para compartir hallazgos"
-            }
-        ],
-        "states": [
-            "Activo",
-            "Hover",
-            "Presionado",
-            "Focus",
-            "Bloqueado"
-        ]
-    },
-    "forms": {
-        "title": "Entradas de Datos",
-        "description": "Componentes optimizados para la ingesta de grandes volúmenes de información.",
-        "elements": [
-            {
-                "name": "Cargador de Archivos",
-                "usage": "Upload masivo de entrevistas"
-            },
-            {
-                "name": "Selector de Etiquetas",
-                "usage": "Categorización rápida de sentimientos"
-            }
-        ]
-    },
-    "cards": {
-        "title": "Contenedores de Insights",
-        "description": "Estructuras modulares para presentar hallazgos clave.",
-        "samples": [
-            {
-                "title": "Insight del Usuario",
-                "content": "Representación visual de un hallazgo crítico con su evidencia asociada.",
-                "action": "Ver Evidencia"
-            }
-        ]
-    },
-    "badges": {
-        "title": "Etiquetas de Estado",
-        "description": "Clasificadores visuales para la severidad y el estado de la investigación.",
-        "types": [
-            {
-                "label": "Crítico",
-                "class": "jl-badge jl-badge-error"
-            },
-            {
-                "label": "En Proceso",
-                "class": "jl-badge jl-badge-warning"
-            },
-            {
-                "label": "Validado",
-                "class": "jl-badge jl-badge-success"
-            }
-        ]
-    },
-    "navigation": {
-        "title": "Navegación del Dashboard",
-        "description": "Sistemas de acceso rápido a proyectos y análisis.",
-        "tabs": [
-            "Entrevistas",
-            "Análisis",
-            "Insights",
-            "Reporte"
-        ],
-        "breadcrumbs": [
-            "Proyectos",
-            "Rediseño App",
-            "Septiembre"
-        ]
-    },
-    "messages": {
-        "title": "Feedback del Sistema",
-        "description": "Comunicaciones sobre el estado del procesamiento de IA.",
-        "alerts": [
-            {
-                "type": "success",
-                "icon": "✓",
-                "content": "Análisis completado en 2.4 segundos."
-            },
-            {
-                "type": "info",
-                "icon": "i",
-                "content": "IA está identificando patrones comunes..."
-            }
-        ]
+    "shape": {
+      "borderRadius": "8px",
+      "buttonRadius": "100px",
+      "inputRadius": "6px"
     }
+  }
 }

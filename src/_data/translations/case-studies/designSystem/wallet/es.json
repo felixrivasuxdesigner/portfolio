@@ -1,185 +1,83 @@
 {
-    "title": "Sistema de Diseño",
-    "intro": "El sistema de diseño para la Billetera Móvil de Belcorp se construyó bajo los pilares de 'Confianza y Accesibilidad', asegurando que las representantes de ventas pudieran gestionar sus finanzas con total seguridad.",
-    "colorPalette": {
-        "title": "Paleta de Colores",
-        "description": "Utilizamos colores que evocan profesionalismo y calma, alineados con la identidad de Belcorp.",
-        "colors": [
-            {
-                "name": "Rosa Belcorp",
-                "hex": "#E91E63",
-                "usage": "Color de marca y acentos"
-            },
-            {
-                "name": "Azul Profundo",
-                "hex": "#1A237E",
-                "usage": "Texto principal y encabezados"
-            },
-            {
-                "name": "Gris Suave",
-                "hex": "#F5F5F5",
-                "usage": "Fondos de sección"
-            }
-        ]
+  "title": "Sistema de Diseño",
+  "intro": "El sistema de diseño para la Billetera Móvil de Belcorp se construyó bajo los pilares de 'Confianza y Accesibilidad', asegurando que las representantes de ventas pudieran gestionar sus finanzas con total seguridad.",
+  "tokens": {
+    "colors": {
+      "primary": {
+        "name": "Rosa Belcorp",
+        "hex": "#E91E63",
+        "rgb": "233, 30, 99",
+        "usage": "Color de marca y acentos"
+      },
+      "secondary": {
+        "name": "Azul Profundo",
+        "hex": "#1A237E",
+        "rgb": "26, 35, 126",
+        "usage": "Texto principal y encabezados"
+      },
+      "grayscale": {
+        "dark": {
+          "name": "Text Dark",
+          "hex": "#111827",
+          "rgb": "17, 24, 39",
+          "usage": "Headings and primary text"
+        },
+        "medium": {
+          "name": "Text Medium",
+          "hex": "#6B7280",
+          "rgb": "107, 114, 128",
+          "usage": "Body text and secondary info"
+        },
+        "light": {
+          "name": "Background Light",
+          "hex": "#F3F4F6",
+          "rgb": "243, 244, 246",
+          "usage": "App backgrounds"
+        },
+        "white": {
+          "name": "Surface White",
+          "hex": "#FFFFFF",
+          "rgb": "255, 255, 255",
+          "usage": "Card surfaces"
+        }
+      }
     },
     "typography": {
-        "title": "Tipografía",
-        "description": "Una combinación tipográfica diseñada para la legibilidad extrema en pantallas móviles pequeñas.",
-        "fonts": [
-            {
-                "name": "Roboto",
-                "category": "San Serif UI",
-                "weights": "400, 500, 700",
-                "usage": "Fuente principal de la interfaz"
-            }
+      "primary": {
+        "family": "Roboto",
+        "weights": [
+          400,
+          500,
+          600,
+          700
         ],
-        "fontSizes": [
-            {
-                "name": "Title",
-                "size": "24px",
-                "usage": "Encabezados principales"
-            },
-            {
-                "name": "Body",
-                "size": "16px",
-                "usage": "Texto de lectura"
-            },
-            {
-                "name": "Caption",
-                "size": "12px",
-                "usage": "Metadatos y fechas"
-            }
-        ]
+        "category": "San Serif UI"
+      },
+      "hierarchy": [
+        {
+          "name": "Title",
+          "size": "24px",
+          "weight": "400",
+          "usage": "Encabezados principales"
+        },
+        {
+          "name": "Body",
+          "size": "16px",
+          "weight": "400",
+          "usage": "Texto de lectura"
+        },
+        {
+          "name": "Caption",
+          "size": "12px",
+          "weight": "400",
+          "usage": "Metadatos y fechas"
+        }
+      ]
     },
-    "components": {
-        "title": "Componentes",
-        "description": "Elementos modulares diseñados para transacciones rápidas y seguras.",
-        "categories": [
-            {
-                "name": "Entrada",
-                "components": [
-                    "Campos numéricos",
-                    "Selectores de banco",
-                    "Escaner de tarjetas"
-                ]
-            },
-            {
-                "name": "Acción",
-                "components": [
-                    "Botones de pago",
-                    "Toggle de seguridad",
-                    "Confirmación biométrica"
-                ]
-            }
-        ]
-    },
-    "buttons": {
-        "title": "Botones",
-        "description": "Estilos de botones optimizados para la interacción táctil en dispositivos móviles.",
-        "types": [
-            {
-                "name": "Primario",
-                "class": "primary",
-                "description": "Acciones principales como realizar un pago o confirmar transferencia.",
-                "properties": "Color rosa Belcorp, bordes redondeados (pill-shape), sombra suave."
-            },
-            {
-                "name": "Secundario",
-                "class": "secondary",
-                "description": "Acciones alternativas como ver el saldo o historial.",
-                "properties": "Fondo azul profundo, texto claro, mismas dimensiones que el primario."
-            },
-            {
-                "name": "Texto",
-                "class": "text",
-                "description": "Navegación o retroseso.",
-                "properties": "Sin fondo, color azul profundo, área de toque ampliada."
-            }
-        ],
-        "states": [
-            "Predeterminado",
-            "Presionado",
-            "Cargando",
-            "Desactivado"
-        ]
-    },
-    "forms": {
-        "title": "Formularios",
-        "description": "Inputs optimizados para la entrada rápida de montos y datos bancarios.",
-        "elements": [
-            {
-                "name": "Monto",
-                "description": "Teclado numérico personalizado con atajos de montos comunes."
-            },
-            {
-                "name": "Selector de Banco",
-                "description": "Lista visual con logos de instituciones financieras aliadas."
-            }
-        ]
-    },
-    "cards": {
-        "title": "Tarjetas",
-        "description": "Resúmenes financieros de fácil lectura.",
-        "samples": [
-            {
-                "title": "Saldo",
-                "content": "$1,250.00",
-                "action": "Ver detalles"
-            },
-            {
-                "title": "Próximo Pago",
-                "content": "24 de Mayo",
-                "action": "Pagar ahora"
-            }
-        ]
-    },
-    "badges": {
-        "title": "Etiquetas",
-        "description": "Estados de transacción y niveles de cuenta.",
-        "types": [
-            {
-                "label": "Completado",
-                "class": "wallet-badge-success"
-            },
-            {
-                "label": "Procesando",
-                "class": "wallet-badge-info"
-            },
-            {
-                "label": "Rechazado",
-                "class": "wallet-badge-error"
-            }
-        ]
-    },
-    "navigation": {
-        "title": "Navegación",
-        "description": "Estructura móvil intuitiva basada en pestañas.",
-        "tabs": [
-            "Inicio",
-            "Pagos",
-            "Ahorro",
-            "Perfil"
-        ],
-        "breadcrumbs": [
-            "Inicio",
-            "Mi Cartera",
-            "Transferir"
-        ]
-    },
-    "messages": {
-        "title": "Mensajes",
-        "description": "Feedback visual para confirmar operaciones financieras.",
-        "alerts": [
-            {
-                "type": "success",
-                "icon": "✓",
-                "content": "Pago realizado exitosamente"
-            },
-            {
-                "type": "error",
-                "icon": "!",
-                "content": "Fondos insuficientes"
-            }
-        ]
+    "shape": {
+      "borderRadius": "8px",
+      "buttonRadius": "100px",
+      "inputRadius": "6px"
     }
+  }
 }

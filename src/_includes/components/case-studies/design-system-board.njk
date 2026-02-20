@@ -1,0 +1,167 @@
+<div class="design-board-wrapper" style="
+  --theme-primary: {{ designSystem.tokens.colors.primary.hex }};
+  --theme-secondary: {{ designSystem.tokens.colors.secondary.hex }};
+  --theme-gray-dark: {{ designSystem.tokens.colors.grayscale.dark.hex }};
+  --theme-gray-medium: {{ designSystem.tokens.colors.grayscale.medium.hex }};
+  --theme-gray-light: {{ designSystem.tokens.colors.grayscale.light.hex }};
+  --theme-gray-white: {{ designSystem.tokens.colors.grayscale.white.hex }};
+  --theme-font-primary: '{{ designSystem.tokens.typography.primary.family }}', sans-serif;
+  --theme-radius: {{ designSystem.tokens.shape.borderRadius }};
+  --theme-button-radius: {{ designSystem.tokens.shape.buttonRadius }};
+  --theme-input-radius: {{ designSystem.tokens.shape.inputRadius }};
+">
+
+  <div class="board-header" style="text-align: center; margin-bottom: 3rem;">
+    <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;">{{ designSystem.title }}</h2>
+    <p style="font-size: 1.1rem; color: var(--theme-gray-medium); max-width: 600px; margin: 0 auto; line-height: 1.6;">
+      {{ designSystem.intro }}
+    </p>
+  </div>
+
+  <!-- 1. Color Palette -->
+  <section class="board-section">
+    <div class="section-header">
+      <h3>Color Palette</h3>
+      <p>The primary, secondary, and grayscale colors defining the visual identity.</p>
+    </div>
+    
+    <div class="colors-grid">
+      <!-- Primary -->
+      <div class="color-swatch-card" aria-label="Primary Color">
+        <div class="swatch-color" style="background-color: var(--theme-primary);"></div>
+        <div class="swatch-info">
+          <div class="color-name">{{ designSystem.tokens.colors.primary.name }}</div>
+          <div class="color-codes">
+            <span>HEX {{ designSystem.tokens.colors.primary.hex }}</span>
+            <span>RGB {{ designSystem.tokens.colors.primary.rgb }}</span>
+          </div>
+          <div class="color-usage">{{ designSystem.tokens.colors.primary.usage }}</div>
+        </div>
+      </div>
+
+      <!-- Secondary -->
+      <div class="color-swatch-card" aria-label="Secondary Color">
+        <div class="swatch-color" style="background-color: var(--theme-secondary);"></div>
+        <div class="swatch-info">
+          <div class="color-name">{{ designSystem.tokens.colors.secondary.name }}</div>
+          <div class="color-codes">
+            <span>HEX {{ designSystem.tokens.colors.secondary.hex }}</span>
+            <span>RGB {{ designSystem.tokens.colors.secondary.rgb }}</span>
+          </div>
+          <div class="color-usage">{{ designSystem.tokens.colors.secondary.usage }}</div>
+        </div>
+      </div>
+      
+      <!-- Grayscale (Loop over grayscale obj) -->
+      {% for key, val in designSystem.tokens.colors.grayscale %}
+      <div class="color-swatch-card" aria-label="{{ val.name }}">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: {{ val.hex }}; {% if key == 'white' or key == 'light' %}border-bottom: 1px solid rgba(0,0,0,0.05);{% endif %}"></div>
+        <div class="swatch-info">
+          <div class="color-name">{{ val.name }}</div>
+          <div class="color-codes">
+            <span>HEX {{ val.hex }}</span>
+            <span>RGB {{ val.rgb }}</span>
+          </div>
+          <div class="color-usage">{{ val.usage }}</div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- 2. Typography -->
+  <section class="board-section">
+    <div class="section-header">
+      <h3>Typography</h3>
+      <p>Primary Typeface: <strong>{{ designSystem.tokens.typography.primary.family }}</strong> ({{ designSystem.tokens.typography.primary.category }})</p>
+    </div>
+
+    <div class="typography-grid">
+      {% for font in designSystem.tokens.typography.hierarchy %}
+      <div class="type-specimen">
+        <div class="type-label">
+          <strong>{{ font.name }}</strong>
+          <span>{{ font.size }} / {{ font.weight }}</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">{{ font.usage }}</span>
+        </div>
+        <div class="type-sample" style="font-size: {{ font.size }}; font-weight: {{ font.weight }};">
+          The quick brown fox jumps over the lazy dog
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- 3. UI Components -->
+  <section class="board-section">
+    <div class="section-header">
+      <h3>UI Components</h3>
+      <p>Interactive elements utilizing the design tokens (Colors, Typography, Border Radius).</p>
+    </div>
+
+    <div class="ui-grid">
+      
+      <!-- Buttons -->
+      <div class="ui-group">
+        <h4>Buttons</h4>
+        <div class="button-states">
+          
+          <div class="state-row">
+            <span class="state-label">Default</span>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+              <button class="btn-primary">Primary Action</button>
+              <button class="btn-secondary">Secondary Action</button>
+              <button class="btn-ghost">Ghost</button>
+            </div>
+          </div>
+          
+          <div class="state-row">
+            <span class="state-label">Hover (simulated)</span>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+              <button class="btn-primary hover">Primary Action</button>
+              <button class="btn-secondary hover">Secondary Action</button>
+              <button class="btn-ghost hover">Ghost</button>
+            </div>
+          </div>
+          
+          <div class="state-row">
+            <span class="state-label">Active (simulated)</span>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+              <button class="btn-primary active">Primary Action</button>
+              <button class="btn-secondary active">Secondary Action</button>
+              <button class="btn-ghost active">Ghost</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Forms -->
+      <div class="ui-group">
+        <h4>Form Inputs</h4>
+        <div class="form-states">
+          
+          <div class="input-group">
+            <label>Default State</label>
+            <input type="text" placeholder="Enter your email address">
+          </div>
+          
+          <div class="input-group">
+            <label>Focus State (simulated)</label>
+            <input type="text" class="focus" placeholder="typing..." value="user@example.com">
+          </div>
+          
+          <div class="input-group">
+            <label>Error State (simulated)</label>
+            <input type="text" class="error" placeholder="" value="invalid-email">
+            <span style="color: #ef4444; font-size: 0.8rem; margin-top: 0.25rem;">Please enter a valid email address.</span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</div>

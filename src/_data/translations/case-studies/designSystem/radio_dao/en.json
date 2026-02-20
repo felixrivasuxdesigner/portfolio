@@ -1,191 +1,89 @@
 {
-    "title": "Radio DAO Design System",
-    "intro": "A vibrant and community-driven visual language designed to empower local radio stations in the Web3 ecosystem.",
-    "colorPalette": {
-        "title": "Color Palette",
-        "description": "Energetic tones reflecting the passion of radio and the transparency of blockchain.",
-        "colors": [
-            {
-                "name": "Brick Orange",
-                "hex": "#E65100",
-                "usage": "The brand's soul, warmth, and community energy"
-            },
-            {
-                "name": "Night Blue",
-                "hex": "#1A237E",
-                "usage": "Depth, trust, and powerful visual contrast"
-            },
-            {
-                "name": "Paper Cream",
-                "hex": "#F5F5F6",
-                "usage": "Soft background to improve legibility for long texts"
-            },
-            {
-                "name": "Vibrant Amber",
-                "hex": "#FFB300",
-                "usage": "Accents for Web3 interactions and active states"
-            }
-        ]
+  "title": "Radio DAO Design System",
+  "intro": "A vibrant and community-driven visual language designed to empower local radio stations in the Web3 ecosystem.",
+  "tokens": {
+    "colors": {
+      "primary": {
+        "name": "Brick Orange",
+        "hex": "#E65100",
+        "rgb": "230, 81, 0",
+        "usage": "The brand's soul, warmth, and community energy"
+      },
+      "secondary": {
+        "name": "Night Blue",
+        "hex": "#1A237E",
+        "rgb": "26, 35, 126",
+        "usage": "Depth, trust, and powerful visual contrast"
+      },
+      "grayscale": {
+        "dark": {
+          "name": "Text Dark",
+          "hex": "#111827",
+          "rgb": "17, 24, 39",
+          "usage": "Headings and primary text"
+        },
+        "medium": {
+          "name": "Text Medium",
+          "hex": "#6B7280",
+          "rgb": "107, 114, 128",
+          "usage": "Body text and secondary info"
+        },
+        "light": {
+          "name": "Background Light",
+          "hex": "#F3F4F6",
+          "rgb": "243, 244, 246",
+          "usage": "App backgrounds"
+        },
+        "white": {
+          "name": "Surface White",
+          "hex": "#FFFFFF",
+          "rgb": "255, 255, 255",
+          "usage": "Card surfaces"
+        }
+      }
     },
     "typography": {
-        "title": "Community Typography",
-        "description": "We combine Montserrat for visual impact and Roboto Mono for technical blockchain data.",
-        "fonts": [
-            {
-                "name": "Montserrat",
-                "category": "Headers and Branding",
-                "weights": "600 (Semibold), 700 (Bold), 900 (Black)",
-                "usage": "Titles with strong personality and branding elements"
-            },
-            {
-                "name": "Roboto Mono",
-                "category": "Data and Metadata",
-                "weights": "400 (Regular), 500 (Medium)",
-                "usage": "Token values, wallet addresses, and technical metadata"
-            }
+      "primary": {
+        "family": "Montserrat",
+        "weights": [
+          400,
+          500,
+          600,
+          700
         ],
-        "fontSizes": [
-            {
-                "name": "Hero Title",
-                "size": "48px/56px",
-                "usage": "High impact messages on landing pages"
-            },
-            {
-                "name": "Section Header",
-                "size": "28px/36px",
-                "usage": "Main section titles"
-            },
-            {
-                "name": "Body Text",
-                "size": "18px/28px",
-                "usage": "Comfortable reading for articles and descriptions"
-            },
-            {
-                "name": "Mono Label",
-                "size": "14px/20px",
-                "usage": "Data labels and technical values"
-            }
-        ]
+        "category": "Headers and Branding"
+      },
+      "hierarchy": [
+        {
+          "name": "Hero Title",
+          "size": "48px/56px",
+          "weight": "400",
+          "usage": "High impact messages on landing pages"
+        },
+        {
+          "name": "Section Header",
+          "size": "28px/36px",
+          "weight": "400",
+          "usage": "Main section titles"
+        },
+        {
+          "name": "Body Text",
+          "size": "18px/28px",
+          "weight": "400",
+          "usage": "Comfortable reading for articles and descriptions"
+        },
+        {
+          "name": "Mono Label",
+          "size": "14px/20px",
+          "weight": "400",
+          "usage": "Data labels and technical values"
+        }
+      ]
     },
-    "components": {
-        "title": "Digital Radio Library",
-        "description": "Adapted for a modern and participatory 'On-Air' experience.",
-        "categories": [
-            {
-                "name": "Streaming",
-                "components": [
-                    "Digital Dial",
-                    "Waveform Visualizer",
-                    "Tactile Volume Control",
-                    "Quality Selector"
-                ]
-            },
-            {
-                "name": "Governance",
-                "components": [
-                    "Voting Cards",
-                    "DAO Progress",
-                    "Token Selector",
-                    "Proposal History"
-                ]
-            }
-        ]
-    },
-    "buttons": {
-        "title": "Interactions",
-        "description": "Designed with 'Soft Neo-Brutalism' style for maximum clarity.",
-        "types": [
-            {
-                "name": "Vote Proposal",
-                "class": "jl-btn jl-btn-primary",
-                "usage": "Primary community governance action"
-            },
-            {
-                "name": "Tune In",
-                "class": "jl-btn jl-btn-secondary",
-                "usage": "Connection action for live signal"
-            }
-        ],
-        "states": [
-            "On Air",
-            "Hover",
-            "Pressed",
-            "Focus",
-            "Offline"
-        ]
-    },
-    "forms": {
-        "title": "Participation",
-        "description": "Simplified inputs to reduce technical friction.",
-        "elements": [
-            {
-                "name": "Station Search",
-                "usage": "Fast filter by genre or location"
-            },
-            {
-                "name": "Comment Field",
-                "usage": "Direct interaction with the host"
-            }
-        ]
-    },
-    "cards": {
-        "title": "Show Containers",
-        "description": "Structures for featured shows and podcasts.",
-        "samples": [
-            {
-                "title": "Now Playing",
-                "content": "Detailed host information and current track in real-time.",
-                "action": "Participate"
-            }
-        ]
-    },
-    "badges": {
-        "title": "Status Badges",
-        "description": "Visual indicators of transmission status and DAO roles.",
-        "types": [
-            {
-                "label": "LIVE",
-                "class": "jl-badge jl-badge-error"
-            },
-            {
-                "label": "DAO MEMBER",
-                "class": "jl-badge jl-badge-primary"
-            },
-            {
-                "label": "ACTIVE PROPOSAL",
-                "class": "jl-badge jl-badge-success"
-            }
-        ]
-    },
-    "navigation": {
-        "title": "Hybrid Navigation",
-        "description": "Fluid access to linear and on-demand content.",
-        "tabs": [
-            "Live",
-            "Shows",
-            "Votes",
-            "My Wallet"
-        ],
-        "breadcrumbs": [
-            "Radio",
-            "Barrio Centenario",
-            "Proposals"
-        ]
-    },
-    "messages": {
-        "title": "Network Notifications",
-        "description": "Alerts regarding streaming status and network events.",
-        "alerts": [
-            {
-                "type": "success",
-                "icon": "✓",
-                "content": "Connected to blockchain successfully."
-            },
-            {
-                "type": "info",
-                "icon": "i",
-                "content": "Next vote in 2 hours."
-            }
-        ]
+    "shape": {
+      "borderRadius": "8px",
+      "buttonRadius": "100px",
+      "inputRadius": "6px"
     }
+  }
 }

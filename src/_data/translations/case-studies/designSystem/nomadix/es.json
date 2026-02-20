@@ -1,281 +1,101 @@
 {
   "title": "Sistema de Diseño",
   "intro": "El sistema de diseño de Nomadix Adventure encarna el espíritu de aventura y exploración, creando una interfaz que inspira a los visitantes a embarcarse en su propio viaje.",
-  "colorPalette": {
-    "title": "Paleta de Colores",
-    "description": "Un sistema de colores cuidadosamente seleccionado que equilibra la aventura con la confiabilidad, evocando los paisajes naturales de Baja California.",
-    "colors": [
-      {
-        "name": "Negro (#000000)",
+  "tokens": {
+    "colors": {
+      "primary": {
+        "name": "Negro",
         "hex": "#000000",
+        "rgb": "0, 0, 0",
         "usage": "Color primario para textos y fondos"
       },
-      {
-        "name": "Gris (#686868)",
+      "secondary": {
+        "name": "Gris",
         "hex": "#686868",
+        "rgb": "104, 104, 104",
         "usage": "Elementos neutros y textos secundarios"
       },
-      {
-        "name": "Naranja Vibrante (#F26B24)",
-        "hex": "#F26B24",
-        "usage": "Color de acento primario para CTAs y elementos interactivos clave"
-      },
-      {
-        "name": "Azul (#205375)",
-        "hex": "#205375",
-        "usage": "Fondos secundarios y conexión con la naturaleza"
-      },
-      {
-        "name": "Azul Marino (#112B3C)",
-        "hex": "#112B3C",
-        "usage": "Profundidad, solidez y confianza"
-      },
-      {
-        "name": "Blanco (#FFFFFF)",
-        "hex": "#FFFFFF",
-        "usage": "Contraste y legibilidad"
+      "grayscale": {
+        "dark": {
+          "name": "Text Dark",
+          "hex": "#111827",
+          "rgb": "17, 24, 39",
+          "usage": "Headings and primary text"
+        },
+        "medium": {
+          "name": "Text Medium",
+          "hex": "#6B7280",
+          "rgb": "107, 114, 128",
+          "usage": "Body text and secondary info"
+        },
+        "light": {
+          "name": "Background Light",
+          "hex": "#F3F4F6",
+          "rgb": "243, 244, 246",
+          "usage": "App backgrounds"
+        },
+        "white": {
+          "name": "Surface White",
+          "hex": "#FFFFFF",
+          "rgb": "255, 255, 255",
+          "usage": "Card surfaces"
+        }
       }
-    ]
-  },
-  "typography": {
-    "title": "Sistema Tipográfico",
-    "description": "Un sistema tipográfico que equilibra claridad con carácter, asegurando contenido legible que también capture el espíritu aventurero de la marca.",
-    "fonts": [
-      {
-        "name": "Open Sans",
-        "category": "Fuente Principal",
-        "weights": "400 (Regular), 600 (Semibold), 700 (Bold)",
-        "usage": "Utilizada en toda la interfaz para mantener cohesión y legibilidad"
-      }
-    ],
-    "fontSizes": [
-      {
-        "name": "Display",
-        "size": "42px/46px",
-        "usage": "Títulos principales de sección"
+    },
+    "typography": {
+      "primary": {
+        "family": "Open Sans",
+        "weights": [
+          400,
+          500,
+          600,
+          700
+        ],
+        "category": "Fuente Principal"
       },
-      {
-        "name": "H1",
-        "size": "32px/38px",
-        "usage": "Encabezados de página"
-      },
-      {
-        "name": "H2",
-        "size": "28px/34px",
-        "usage": "Subtítulos principales"
-      },
-      {
-        "name": "H3",
-        "size": "22px/28px",
-        "usage": "Subtítulos secundarios"
-      },
-      {
-        "name": "Texto Principal",
-        "size": "16px/24px",
-        "usage": "Texto principal de contenido"
-      },
-      {
-        "name": "Texto Pequeño",
-        "size": "14px/20px",
-        "usage": "Información secundaria y leyendas"
-      }
-    ]
-  },
-  "components": {
-    "title": "Componentes",
-    "description": "Una biblioteca de componentes versátil diseñada para crear experiencias de usuario atractivas, informativas e inspiradoras para entusiastas de la aventura.",
-    "categories": [
-      {
-        "name": "Navegación",
-        "components": [
-          "Navegación principal responsive",
-          "Migas de pan de aventura",
-          "Indicadores de progreso de jornada"
-        ]
-      },
-      {
-        "name": "Participación",
-        "components": [
-          "Contador de tiempo",
-          "Mapas interactivos",
-          "Visor de galería",
-          "Tarjetas de testimonios"
-        ]
-      },
-      {
-        "name": "Información",
-        "components": [
-          "Detalles del evento",
-          "Tarjetas de aventura",
-          "Descargas de recursos",
-          "Acordeones de preguntas frecuentes"
-        ]
-      },
-      {
-        "name": "Registro",
-        "components": [
-          "Formulario de varios pasos",
-          "Perfiles de participantes",
-          "Integración de pagos"
-        ]
-      }
-    ]
-  },
-  "buttons": {
-    "title": "Botones",
-    "description": "Botones orientados a la acción diseñados para inspirar interacción y guiar a los usuarios a través de su viaje.",
-    "types": [
-      {
-        "name": "Primario",
-        "class": "primary",
-        "description": "Botones naranja vibrante para acciones primarias como registro y llamadas a la acción importantes",
-        "properties": "Esquinas redondeadas, texto en negrita, animación sutil al pasar el cursor"
-      },
-      {
-        "name": "Secundario",
-        "class": "secondary",
-        "description": "Botones azul marino para acciones secundarias",
-        "properties": "Mismas dimensiones que el primario, esquema de color diferente"
-      },
-      {
-        "name": "Texto",
-        "class": "text",
-        "description": "Botones mínimos para acciones terciarias",
-        "properties": "Sin fondo, subrayado al pasar el cursor"
-      }
-    ],
-    "states": [
-      "Predeterminado",
-      "Hover",
-      "Activo",
-      "Enfoque",
-      "Desactivado"
-    ]
-  },
-  "forms": {
-    "title": "Formularios",
-    "description": "Formularios amigables optimizados para la planificación y registro de aventuras.",
-    "elements": [
-      {
-        "name": "Campos de Texto",
-        "description": "Campos de entrada limpios y accesibles con etiquetas claras y validación"
-      },
-      {
-        "name": "Desplegables",
-        "description": "Componentes de selección personalizados para niveles de experiencia y preferencias"
-      },
-      {
-        "name": "Casillas de Verificación",
-        "description": "Componentes de acuerdo estilizados para exenciones y términos"
-      },
-      {
-        "name": "Interruptores",
-        "description": "Interruptores visuales para opciones binarias simples"
-      }
-    ]
-  },
-  "cards": {
-    "title": "Tarjetas",
-    "description": "Contenedores que muestran aventuras, eventos y testimonios.",
-    "types": [
-      {
-        "name": "Tarjetas de Evento",
-        "description": "Destacan próximas aventuras con imágenes atractivas"
-      },
-      {
-        "name": "Tarjetas de Características",
-        "description": "Muestran características y beneficios clave del viaje"
-      },
-      {
-        "name": "Tarjetas de Testimonios",
-        "description": "Comparten historias de aventureros anteriores"
-      }
-    ],
-    "samples": [
-      {
-        "title": "Baja Expedition",
-        "content": "Explore the hidden gems of the Sea of Cortez with our expert guides.",
-        "action": "View More"
-      }
-    ]
-  },
-  "badges": {
-    "title": "Insignias",
-    "description": "Indicadores visuales que comunican estado, categoría y logros.",
-    "types": [
-      {
-        "name": "Niveles de Dificultad",
-        "label": "Intermedio",
-        "class": "nomadix-badge nomadix-badge-warning",
-        "description": "Insignias codificadas por color que indican la dificultad de la aventura"
-      },
-      {
-        "name": "Tipos de Experiencia",
-        "label": "Safari",
-        "class": "nomadix-badge nomadix-badge-primary",
-        "description": "Categorización visual de diferentes experiencias de aventura"
-      },
-      {
-        "name": "Marcadores de Logros",
-        "label": "Explorador",
-        "class": "nomadix-badge nomadix-badge-success",
-        "description": "Insignias de celebración para viajes completados"
-      }
-    ]
-  },
-  "navigation": {
-    "title": "Patrones de Navegación",
-    "description": "Sistemas de navegación intuitivos que guían a los usuarios a través de su viaje de planificación.",
-    "patterns": [
-      {
-        "name": "Navegación Principal",
-        "description": "Navegación responsive y accesible que se adapta a todos los dispositivos"
-      },
-      {
-        "name": "Mapa de Viaje",
-        "description": "Búsqueda de rutas interactiva para explorar las rutas de aventura"
-      },
-      {
-        "name": "Biblioteca de Recursos",
-        "description": "Acceso organizado a materiales de preparación y guías"
-      }
-    ],
-    "tabs": [
-      "Aventuras",
-      "Eventos",
-      "Comunidad",
-      "Sobre Nosotros"
-    ],
-    "breadcrumbs": [
-      "Inicio",
-      "Baja California",
-      "Expediciones"
-    ]
-  },
-  "messages": {
-    "title": "Sistema de Mensajes",
-    "description": "Marco de comunicación claro para actualizaciones importantes y notificaciones.",
-    "types": [
-      {
-        "name": "Mensajes de Éxito",
-        "description": "Confirmación positiva de acciones completadas",
-        "color": "#30D158"
-      },
-      {
-        "name": "Alertas de Información",
-        "description": "Información neutral y actualizaciones",
-        "color": "#0A84FF"
-      },
-      {
-        "name": "Avisos de Advertencia",
-        "description": "Consideraciones importantes y precauciones",
-        "color": "#FF9F0A"
-      },
-      {
-        "name": "Mensajes de Error",
-        "description": "Problemas críticos que requieren atención",
-        "color": "#FF453A"
-      }
-    ]
+      "hierarchy": [
+        {
+          "name": "Display",
+          "size": "42px/46px",
+          "weight": "400",
+          "usage": "Títulos principales de sección"
+        },
+        {
+          "name": "H1",
+          "size": "32px/38px",
+          "weight": "400",
+          "usage": "Encabezados de página"
+        },
+        {
+          "name": "H2",
+          "size": "28px/34px",
+          "weight": "400",
+          "usage": "Subtítulos principales"
+        },
+        {
+          "name": "H3",
+          "size": "22px/28px",
+          "weight": "400",
+          "usage": "Subtítulos secundarios"
+        },
+        {
+          "name": "Texto Principal",
+          "size": "16px/24px",
+          "weight": "400",
+          "usage": "Texto principal de contenido"
+        },
+        {
+          "name": "Texto Pequeño",
+          "size": "14px/20px",
+          "weight": "400",
+          "usage": "Información secundaria y leyendas"
+        }
+      ]
+    },
+    "shape": {
+      "borderRadius": "8px",
+      "buttonRadius": "100px",
+      "inputRadius": "6px"
+    }
   }
 }

@@ -1,216 +1,101 @@
 {
   "title": "Design System",
   "intro": "The design system implements a \"Warm Professionalism\" philosophy that conveys trust and sophistication while maintaining warmth and accessibility.",
-  "colorPalette": {
-    "title": "Color Palette",
-    "description": "The color system was carefully crafted to balance professionalism with warmth, creating an environment that feels both trustworthy and approachable.",
-    "colors": [
-      {
+  "tokens": {
+    "colors": {
+      "primary": {
         "name": "Deep Brown",
         "hex": "#2C1B0C",
+        "rgb": "44, 27, 12",
         "usage": "Primary color for headers, important text, and brand representation"
       },
-      {
+      "secondary": {
         "name": "Warm Taupe",
         "hex": "#C5B4A3",
+        "rgb": "197, 180, 163",
         "usage": "Secondary color for backgrounds, cards, and containers"
       },
-      {
-        "name": "Muted Gold",
-        "hex": "#8C765C",
-        "usage": "Accent color for interactive elements, highlights, and call-to-action buttons"
-      },
-      {
-        "name": "Warm Beige",
-        "hex": "#EFE9DC",
-        "usage": "Background color providing warmth while maintaining readability"
-      },
-      {
-        "name": "Off-White",
-        "hex": "#F7F2EA",
-        "usage": "Card background color for content areas and modals"
+      "grayscale": {
+        "dark": {
+          "name": "Text Dark",
+          "hex": "#111827",
+          "rgb": "17, 24, 39",
+          "usage": "Headings and primary text"
+        },
+        "medium": {
+          "name": "Text Medium",
+          "hex": "#6B7280",
+          "rgb": "107, 114, 128",
+          "usage": "Body text and secondary info"
+        },
+        "light": {
+          "name": "Background Light",
+          "hex": "#F3F4F6",
+          "rgb": "243, 244, 246",
+          "usage": "App backgrounds"
+        },
+        "white": {
+          "name": "Surface White",
+          "hex": "#FFFFFF",
+          "rgb": "255, 255, 255",
+          "usage": "Card surfaces"
+        }
       }
-    ]
-  },
-  "typography": {
-    "title": "Typography System",
-    "description": "A typographic system that prioritizes legibility and hierarchy, enabling users to scan and understand complex legal information effectively.",
-    "fonts": [
-      {
-        "name": "Inter",
-        "category": "Headings & Body Text",
-        "weights": "400 (Regular), 500 (Medium), 600 (Semibold), 700 (Bold)",
-        "usage": "Primary font for all interface text, providing excellent readability at all sizes"
+    },
+    "typography": {
+      "primary": {
+        "family": "Inter",
+        "weights": [
+          400,
+          500,
+          600,
+          700
+        ],
+        "category": "Headings & Body Text"
       },
-      {
-        "name": "JetBrains Mono",
-        "category": "Code & Legal References",
-        "weights": "400 (Regular)",
-        "usage": "Monospace font for code blocks, legal citations, and reference numbers"
-      }
-    ],
-    "fontSizes": [
-      {
-        "name": "XL Heading",
-        "size": "30px/36px",
-        "usage": "Main section headings and page titles"
-      },
-      {
-        "name": "Large Heading",
-        "size": "24px/32px",
-        "usage": "Section titles and modal headers"
-      },
-      {
-        "name": "Medium Heading",
-        "size": "18px/24px",
-        "usage": "Card titles and content groups"
-      },
-      {
-        "name": "Body Text",
-        "size": "16px/24px",
-        "usage": "Primary content text"
-      },
-      {
-        "name": "Small Text",
-        "size": "14px/20px",
-        "usage": "Secondary information, labels, and captions"
-      },
-      {
-        "name": "Extra Small",
-        "size": "12px/16px",
-        "usage": "Fine print and legal disclaimers"
-      }
-    ]
-  },
-  "components": {
-    "title": "Base Components",
-    "description": "A system of modular, reusable components that combine to create consistent interfaces across the platform.",
-    "categories": [
-      {
-        "name": "Navigation",
-        "components": ["Global navigation bar", "Sidebar menus", "Breadcrumbs", "Tab systems"]
-      },
-      {
-        "name": "Input Controls",
-        "components": ["Text fields", "Dropdown selectors", "Date pickers", "Toggle switches", "Legal document uploaders"]
-      },
-      {
-        "name": "Information Display",
-        "components": ["Case cards", "Timeline visualizations", "Data tables", "Progress indicators", "Notification panels"]
-      },
-      {
-        "name": "Actions",
-        "components": ["Primary buttons", "Secondary buttons", "Icon buttons", "Action menus", "Confirmation dialogs"]
-      }
-    ]
-  },
-  "buttons": {
-    "title": "Buttons",
-    "description": "Interactive elements designed with clear hierarchy and visual feedback.",
-    "types": [
-      {
-        "name": "Primary Button",
-        "class": "jl-btn jl-btn-primary",
-        "usage": "Main calls-to-action and submission actions"
-      },
-      {
-        "name": "Secondary Button",
-        "class": "jl-btn jl-btn-secondary",
-        "usage": "Secondary actions and alternatives to primary actions"
-      },
-      {
-        "name": "Text Button",
-        "class": "jl-btn jl-btn-text",
-        "usage": "Tertiary actions and subtle interface controls"
-      }
-    ],
-    "states": ["Default", "Hover", "Active", "Focus", "Disabled"]
-  },
-  "forms": {
-    "title": "Form Elements",
-    "description": "Consistent and accessible input components for data collection.",
-    "elements": [
-      {
-        "name": "Text Input",
-        "usage": "Single-line text entry for standard data collection"
-      },
-      {
-        "name": "Select Menu",
-        "usage": "Option selection from predefined lists"
-      },
-      {
-        "name": "Checkbox",
-        "usage": "Multiple option selection and toggles"
-      }
-    ]
-  },
-  "cards": {
-    "title": "Cards",
-    "description": "Content containers with consistent spacing and elevation.",
-    "samples": [
-      {
-        "title": "Case Summary",
-        "content": "This is a standard card with header and content area, commonly used to display grouped information.",
-        "action": "Action"
-      }
-    ]
-  },
-  "badges": {
-    "title": "Badges",
-    "description": "Visual indicators for status, categories, or notifications.",
-    "types": [
-      {
-        "label": "New",
-        "class": "jl-badge jl-badge-primary"
-      },
-      {
-        "label": "Completed",
-        "class": "jl-badge jl-badge-success"
-      },
-      {
-        "label": "Pending",
-        "class": "jl-badge jl-badge-warning"
-      },
-      {
-        "label": "Urgent",
-        "class": "jl-badge jl-badge-error"
-      },
-      {
-        "label": "Draft",
-        "class": "jl-badge jl-badge-neutral"
-      }
-    ]
-  },
-  "navigation": {
-    "title": "Navigation",
-    "description": "Consistent patterns for moving through the application.",
-    "tabs": ["Dashboard", "Cases", "Calendar", "Documents"],
-    "breadcrumbs": ["Cases", "Smith vs. Jones", "Documents"]
-  },
-  "messages": {
-    "title": "Messages",
-    "description": "Feedback and communication components.",
-    "alerts": [
-      {
-        "type": "info",
-        "icon": "i",
-        "content": "This is an informational message."
-      },
-      {
-        "type": "success",
-        "icon": "✓",
-        "content": "Your case has been successfully updated."
-      },
-      {
-        "type": "warning",
-        "icon": "!",
-        "content": "Please review before proceeding."
-      },
-      {
-        "type": "error",
-        "icon": "×",
-        "content": "There was a problem with your submission."
-      }
-    ]
+      "hierarchy": [
+        {
+          "name": "XL Heading",
+          "size": "30px/36px",
+          "weight": "400",
+          "usage": "Main section headings and page titles"
+        },
+        {
+          "name": "Large Heading",
+          "size": "24px/32px",
+          "weight": "400",
+          "usage": "Section titles and modal headers"
+        },
+        {
+          "name": "Medium Heading",
+          "size": "18px/24px",
+          "weight": "400",
+          "usage": "Card titles and content groups"
+        },
+        {
+          "name": "Body Text",
+          "size": "16px/24px",
+          "weight": "400",
+          "usage": "Primary content text"
+        },
+        {
+          "name": "Small Text",
+          "size": "14px/20px",
+          "weight": "400",
+          "usage": "Secondary information, labels, and captions"
+        },
+        {
+          "name": "Extra Small",
+          "size": "12px/16px",
+          "weight": "400",
+          "usage": "Fine print and legal disclaimers"
+        }
+      ]
+    },
+    "shape": {
+      "borderRadius": "8px",
+      "buttonRadius": "100px",
+      "inputRadius": "6px"
+    }
   }
 }

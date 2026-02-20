@@ -1,0 +1,95 @@
+{
+    "title": "Design System",
+    "intro": "A presentation of the visual language, typography, and components that make up the foundation of the project.",
+    "tokens": {
+        "colors": {
+            "primary": {
+                "name": "Brand Color",
+                "hex": "#4F46E5",
+                "rgb": "79, 70, 229",
+                "usage": "Main actions, highlights, primary brand identity"
+            },
+            "secondary": {
+                "name": "Accent Color",
+                "hex": "#10B981",
+                "rgb": "16, 185, 129",
+                "usage": "Success states, secondary actions, supportive accents"
+            },
+            "grayscale": {
+                "dark": {
+                    "name": "Text Dark",
+                    "hex": "#111827",
+                    "rgb": "17, 24, 39",
+                    "usage": "Headings and primary text"
+                },
+                "medium": {
+                    "name": "Text Medium",
+                    "hex": "#6B7280",
+                    "rgb": "107, 114, 128",
+                    "usage": "Body text and secondary information"
+                },
+                "light": {
+                    "name": "Background Light",
+                    "hex": "#F3F4F6",
+                    "rgb": "243, 244, 246",
+                    "usage": "App backgrounds and subtle borders"
+                },
+                "white": {
+                    "name": "Surface White",
+                    "hex": "#FFFFFF",
+                    "rgb": "255, 255, 255",
+                    "usage": "Card surfaces, input backgrounds"
+                }
+            }
+        },
+        "typography": {
+            "primary": {
+                "family": "Inter",
+                "weights": [
+                    400,
+                    500,
+                    600,
+                    700
+                ],
+                "category": "Sans-serif"
+            },
+            "hierarchy": [
+                {
+                    "name": "Display",
+                    "size": "48px",
+                    "weight": "700",
+                    "usage": "Hero sections"
+                },
+                {
+                    "name": "Heading 1",
+                    "size": "36px",
+                    "weight": "600",
+                    "usage": "Page titles"
+                },
+                {
+                    "name": "Heading 2",
+                    "size": "24px",
+                    "weight": "600",
+                    "usage": "Section titles"
+                },
+                {
+                    "name": "Body Text",
+                    "size": "16px",
+                    "weight": "400",
+                    "usage": "Main content paragraphs"
+                },
+                {
+                    "name": "Caption",
+                    "size": "14px",
+                    "weight": "400",
+                    "usage": "Helper text, metadata"
+                }
+            ]
+        },
+        "shape": {
+            "borderRadius": "8px",
+            "buttonRadius": "100px",
+            "inputRadius": "6px"
+        }
+    }
+}

@@ -8,21 +8,23 @@
   
   <div class="design-system-tabs-container">
     <div class="design-system-tabs">
-      <button class="tab-btn active" data-tab="colors">{{ designSystem.colorPalette.title }}</button>
-      <button class="tab-btn" data-tab="typography">{{ designSystem.typography.title }}</button>
-      <button class="tab-btn" data-tab="components">{{ designSystem.components.title }}</button>
-      <button class="tab-btn" data-tab="buttons">{{ designSystem.buttons.title }}</button>
-      <button class="tab-btn" data-tab="forms">{{ designSystem.forms.title }}</button>
-      <button class="tab-btn" data-tab="cards">{{ designSystem.cards.title }}</button>
-      <button class="tab-btn" data-tab="badges">{{ designSystem.badges.title }}</button>
-      <button class="tab-btn" data-tab="navigation">{{ designSystem.navigation.title }}</button>
-      <button class="tab-btn" data-tab="messages">{{ designSystem.messages.title }}</button>
+      <button class="tab-btn active" data-tab="colors">{{ designSystem.colorPalette.title | default("Colors") }}</button>
+      <button class="tab-btn" data-tab="typography">{{ designSystem.typography.title | default("Typography") }}</button>
+      {% if designSystem.layout %}
+      <button class="tab-btn" data-tab="layout">{{ designSystem.layout.title | default("Layout") }}</button>
+      {% endif %}
+      
+      {% for key, component in designSystem.components %}
+      <button class="tab-btn" data-tab="{{ key }}">{{ component.title }}</button>
+      {% endfor %}
     </div>
   </div>
   
   <div class="tab-content active" id="colors-tab">
     <h3>{{ designSystem.colorPalette.title }}</h3>
+    {% if designSystem.colorPalette.description %}
     <p>{{ designSystem.colorPalette.description }}</p>
+    {% endif %}
     
     <div class="color-palette">
       {% for color in designSystem.colorPalette.colors %}
@@ -42,11 +44,13 @@
   
   <div class="tab-content" id="typography-tab">
     <h3>{{ designSystem.typography.title }}</h3>
+    {% if designSystem.typography.description %}
     <p>{{ designSystem.typography.description }}</p>
+    {% endif %}
     
     <div class="typography-showcase">
       {% for font in designSystem.typography.fonts %}
-      <div class="font-family {% if loop.index == 1 %}primary-font{% elif loop.index == 2 %}code-font{% endif %}">
+      <div class="font-family">
         <div class="font-header">
           <div class="font-name">{{ font.name }}</div>
           <div class="font-category">{{ font.category }}</div>
@@ -54,18 +58,6 @@
         <div class="font-details">
           <div class="font-weights">{{ font.weights }}</div>
           <div class="font-usage">{{ font.usage }}</div>
-        </div>
-        <div class="font-sample">
-          {% if loop.index == 1 %}
-          <div class="sample-xl">{{ designSystem.typography.fontSizes[0].name }}</div>
-          <div class="sample-large">{{ designSystem.typography.fontSizes[1].name }}</div>
-          <div class="sample-medium">{{ designSystem.typography.fontSizes[2].name }}</div>
-          <div class="sample-body">{{ designSystem.typography.fontSizes[3].name }}: {{ designSystem.typography.fontSizes[3].usage }}</div>
-          <div class="sample-small">{{ designSystem.typography.fontSizes[4].name }}: {{ designSystem.typography.fontSizes[4].usage }}</div>
-          {% elif loop.index == 2 %}
-          <div class="sample-body">function calculateDamages(caseType, amount) {<br>  return caseType === 'liability' ? amount * 1.5 : amount;<br>}</div>
-          <div class="sample-small">// Legal reference: §304.2-p</div>
-          {% endif %}
         </div>
       </div>
       {% endfor %}
@@ -84,141 +76,92 @@
       </div>
     </div>
   </div>
-  
-  <div class="tab-content" id="components-tab">
-    <h3>{{ designSystem.components.title }}</h3>
-    <p>{{ designSystem.components.description }}</p>
-    
-    <div class="component-library">
-      {% for category in designSystem.components.categories %}
-      <div class="component-category">
-        <div class="category-name">{{ category.name }}</div>
-        <div class="component-list">
-          {% for component in category.components %}
-          <div class="component-tag">{{ component }}</div>
-          {% endfor %}
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-  
-  {% set prefix = projectKey | replace('_', '-') %}
-  {% if projectKey == 'journeylaw' %}{% set prefix = 'jl' %}{% endif %}
 
-  <div class="tab-content" id="buttons-tab">
-    <h3>{{ designSystem.buttons.title }}</h3>
-    <p>{{ designSystem.buttons.description }}</p>
+  {% if designSystem.layout %}
+  <div class="tab-content" id="layout-tab">
+    <h3>{{ designSystem.layout.title }}</h3>
+    {% if designSystem.layout.description %}
+    <p>{{ designSystem.layout.description }}</p>
+    {% endif %}
     
-    <div class="buttons-showcase">
-      <div class="button-group">
-        {% for type in designSystem.buttons.types %}
-        <button class="{{ prefix }}-btn {{ prefix }}-btn-{{ type.class or 'primary' }}">{{ type.name }}</button>
-        {% endfor %}
-      </div>
-      
-      <div class="button-states">
-        {% for state in designSystem.buttons.states %}
-        <button class="{{ prefix }}-btn {{ prefix }}-btn-primary {% if loop.index > 1 and loop.index < 5 %}{{ prefix }}-{{ state | lower }}{% endif %}" {% if loop.index == 5 %}disabled{% endif %}>{{ state }}</button>
+    {% if designSystem.layout.spacing %}
+    <div class="spacing-system">
+      <h4>Spacing</h4>
+      <div class="spacing-grid">
+        {% for space in designSystem.layout.spacing %}
+        <div class="spacing-item">
+          <div class="spacing-name">{{ space.name }}</div>
+          <div class="spacing-value">{{ space.value }}</div>
+          <div class="spacing-usage">{{ space.usage }}</div>
+        </div>
         {% endfor %}
       </div>
     </div>
+    {% endif %}
   </div>
+  {% endif %}
   
-  <div class="tab-content" id="forms-tab">
-    <h3>{{ designSystem.forms.title }}</h3>
-    <p>{{ designSystem.forms.description }}</p>
+  {% for key, component in designSystem.components %}
+  <div class="tab-content" id="{{ key }}-tab">
+    <h3>{{ component.title }}</h3>
+    {% if component.description %}
+    <p class="component-description">{{ component.description }}</p>
+    {% endif %}
     
-    <div class="forms-showcase">
-      {% for element in designSystem.forms.elements %}
-      <div class="form-group">
-        {% if loop.index == 1 %}
-        <label for="demo-input">{{ element.name }}</label>
-        <input type="text" id="demo-input" class="{{ prefix }}-input" placeholder="Enter text here">
-        {% elif loop.index == 2 %}
-        <label for="demo-select">{{ element.name }}</label>
-        <select id="demo-select" class="{{ prefix }}-select">
-          <option>Option 1</option>
-          <option>Option 2</option>
-          <option>Option 3</option>
-        </select>
-        {% elif loop.index == 3 %}
-        <label class="checkbox-label">
-          <input type="checkbox" class="{{ prefix }}-checkbox">
-          <span>{{ element.name }} Option</span>
-        </label>
+    {% if component.usageGuidelines %}
+    <div class="usage-guidelines">
+      <div class="guideline guideline-usage">
+        <strong>When to use:</strong> {{ component.usageGuidelines.whenToUse }}
+      </div>
+      <div class="guideline guideline-a11y">
+        <strong>Accessibility:</strong> {{ component.usageGuidelines.accessibility }}
+      </div>
+    </div>
+    {% endif %}
+    
+    {% if component.variants %}
+    <div class="component-variants">
+      {% for variant in component.variants %}
+      <div class="variant-card">
+        <div class="variant-header">
+          <h4>{{ variant.name }}</h4>
+          {% if variant.class %}
+          <code class="variant-class">.{{ variant.class }}</code>
+          {% endif %}
+        </div>
+        <p class="variant-description">{{ variant.description }}</p>
+        
+        {% if variant.designTokens %}
+        <div class="design-tokens">
+          <h5>Design Tokens</h5>
+          <ul class="tokens-list">
+            {% for tokenKey, tokenValue in variant.designTokens %}
+            <li><strong>{{ tokenKey | capitalize }}:</strong> {{ tokenValue }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+        
+        {% if variant.states %}
+        <div class="component-states">
+          <h5>Interaction States</h5>
+          <ul class="states-list">
+            {% for stateKey, stateDesc in variant.states %}
+            <li>
+              <span class="state-badge state-{{ stateKey }}">{{ stateKey | capitalize }}</span>
+              <span class="state-desc">{{ stateDesc }}</span>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
         {% endif %}
       </div>
       {% endfor %}
     </div>
-  </div>
-  
-  <div class="tab-content" id="cards-tab">
-    <h3>{{ designSystem.cards.title }}</h3>
-    <p>{{ designSystem.cards.description }}</p>
+    {% endif %}
     
-    <div class="cards-showcase">
-      <div class="{{ prefix }}-card">
-        <div class="{{ prefix }}-card-header">
-          <h4>{{ designSystem.cards.samples[0].title }}</h4>
-        </div>
-        <div class="{{ prefix }}-card-body">
-          <p>{{ designSystem.cards.samples[0].content }}</p>
-        </div>
-        <div class="{{ prefix }}-card-footer">
-          <button class="{{ prefix }}-btn {{ prefix }}-btn-text">{{ designSystem.cards.samples[0].action }}</button>
-        </div>
-      </div>
-    </div>
   </div>
+  {% endfor %}
   
-  <div class="tab-content" id="badges-tab">
-    <h3>{{ designSystem.badges.title }}</h3>
-    <p>{{ designSystem.badges.description }}</p>
-    
-    <div class="badges-showcase">
-      {% for badge in designSystem.badges.types %}
-      <span class="{{ badge.class or (prefix + '-badge ' + prefix + '-badge-primary') }}">{{ badge.label }}</span>
-      {% endfor %}
-    </div>
-  </div>
-  
-  <div class="tab-content" id="navigation-tab">
-    <h3>{{ designSystem.navigation.title }}</h3>
-    <p>{{ designSystem.navigation.description }}</p>
-    
-    <div class="navigation-showcase">
-      <div class="{{ prefix }}-nav-sample">
-        <div class="{{ prefix }}-tabs">
-          {% for tab in designSystem.navigation.tabs %}
-          <button class="{{ prefix }}-tab {% if loop.index == 1 %}active{% endif %}">{{ tab }}</button>
-          {% endfor %}
-        </div>
-      </div>
-      
-      <div class="{{ prefix }}-breadcrumbs">
-        {% for crumb in designSystem.navigation.breadcrumbs %}
-        <span>{{ crumb }}</span>
-        {% if not loop.last %}
-        <span class="{{ prefix }}-breadcrumb-separator">›</span>
-        {% endif %}
-        {% endfor %}
-      </div>
-    </div>
-  </div>
-  
-  <div class="tab-content" id="messages-tab">
-    <h3>{{ designSystem.messages.title }}</h3>
-    <p>{{ designSystem.messages.description }}</p>
-    
-    <div class="messages-showcase">
-      {% for alert in designSystem.messages.alerts %}
-      <div class="{{ prefix }}-alert {{ prefix }}-alert-{{ alert.type }}">
-        <div class="{{ prefix }}-alert-icon">{{ alert.icon }}</div>
-        <div class="{{ prefix }}-alert-content">{{ alert.content }}</div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
 </div>
 {% endif %}

@@ -1,281 +1,101 @@
 {
   "title": "Design System",
   "intro": "The Nomadix Adventure design system embodies the spirit of adventure and exploration, creating an interface that inspires visitors to embark on their own journey.",
-  "colorPalette": {
-    "title": "Color Palette",
-    "description": "A carefully selected color system that balances adventure with reliability, evoking the natural landscapes of Baja California.",
-    "colors": [
-      {
-        "name": "Black (#000000)",
+  "tokens": {
+    "colors": {
+      "primary": {
+        "name": "Black",
         "hex": "#000000",
+        "rgb": "0, 0, 0",
         "usage": "Primary color for text and backgrounds"
       },
-      {
-        "name": "Gray (#686868)",
+      "secondary": {
+        "name": "Gray",
         "hex": "#686868",
+        "rgb": "104, 104, 104",
         "usage": "Neutral elements and secondary text"
       },
-      {
-        "name": "Vibrant Orange (#F26B24)",
-        "hex": "#F26B24",
-        "usage": "Primary accent color for CTAs and key interactive elements"
-      },
-      {
-        "name": "Blue (#205375)",
-        "hex": "#205375",
-        "usage": "Secondary backgrounds and connection with nature"
-      },
-      {
-        "name": "Navy (#112B3C)",
-        "hex": "#112B3C",
-        "usage": "Depth, solidity and trust"
-      },
-      {
-        "name": "White (#FFFFFF)",
-        "hex": "#FFFFFF",
-        "usage": "Contrast and readability"
+      "grayscale": {
+        "dark": {
+          "name": "Text Dark",
+          "hex": "#111827",
+          "rgb": "17, 24, 39",
+          "usage": "Headings and primary text"
+        },
+        "medium": {
+          "name": "Text Medium",
+          "hex": "#6B7280",
+          "rgb": "107, 114, 128",
+          "usage": "Body text and secondary info"
+        },
+        "light": {
+          "name": "Background Light",
+          "hex": "#F3F4F6",
+          "rgb": "243, 244, 246",
+          "usage": "App backgrounds"
+        },
+        "white": {
+          "name": "Surface White",
+          "hex": "#FFFFFF",
+          "rgb": "255, 255, 255",
+          "usage": "Card surfaces"
+        }
       }
-    ]
-  },
-  "typography": {
-    "title": "Typography System",
-    "description": "A typography system that balances clarity with character, ensuring readable content that also captures the adventurous spirit of the brand.",
-    "fonts": [
-      {
-        "name": "Open Sans",
-        "category": "Primary Font",
-        "weights": "400 (Regular), 600 (Semibold), 700 (Bold)",
-        "usage": "Used throughout the interface to maintain cohesion and readability"
-      }
-    ],
-    "fontSizes": [
-      {
-        "name": "Display",
-        "size": "42px/46px",
-        "usage": "Main section titles"
+    },
+    "typography": {
+      "primary": {
+        "family": "Open Sans",
+        "weights": [
+          400,
+          500,
+          600,
+          700
+        ],
+        "category": "Primary Font"
       },
-      {
-        "name": "H1",
-        "size": "32px/38px",
-        "usage": "Page headers"
-      },
-      {
-        "name": "H2",
-        "size": "28px/34px",
-        "usage": "Primary subtitles"
-      },
-      {
-        "name": "H3",
-        "size": "22px/28px",
-        "usage": "Secondary subtitles"
-      },
-      {
-        "name": "Body Text",
-        "size": "16px/24px",
-        "usage": "Primary content text"
-      },
-      {
-        "name": "Small Text",
-        "size": "14px/20px",
-        "usage": "Secondary information and captions"
-      }
-    ]
-  },
-  "components": {
-    "title": "Components",
-    "description": "A versatile component library designed to create engaging, informative and inspiring user experiences for adventure enthusiasts.",
-    "categories": [
-      {
-        "name": "Navigation",
-        "components": [
-          "Responsive main navigation",
-          "Adventure breadcrumbs",
-          "Journey progress indicators"
-        ]
-      },
-      {
-        "name": "Engagement",
-        "components": [
-          "Countdown timer",
-          "Interactive maps",
-          "Gallery viewer",
-          "Testimonial cards"
-        ]
-      },
-      {
-        "name": "Information",
-        "components": [
-          "Event details",
-          "Adventure cards",
-          "Resource downloads",
-          "FAQ accordions"
-        ]
-      },
-      {
-        "name": "Registration",
-        "components": [
-          "Multi-step form",
-          "Participant profiles",
-          "Payment integration"
-        ]
-      }
-    ]
-  },
-  "buttons": {
-    "title": "Buttons",
-    "description": "Action-oriented buttons designed to inspire interaction and guide users through their journey.",
-    "types": [
-      {
-        "name": "Primary",
-        "class": "primary",
-        "description": "Vibrant orange buttons for primary actions like registration and important calls to action",
-        "properties": "Rounded corners, bold text, subtle hover animation"
-      },
-      {
-        "name": "Secondary",
-        "class": "secondary",
-        "description": "Navy blue buttons for secondary actions",
-        "properties": "Same dimensions as primary, different color scheme"
-      },
-      {
-        "name": "Texto",
-        "class": "text",
-        "description": "Minimal buttons for tertiary actions",
-        "properties": "No background, underline on hover"
-      }
-    ],
-    "states": [
-      "Default",
-      "Hover",
-      "Active",
-      "Focus",
-      "Disabled"
-    ]
-  },
-  "forms": {
-    "title": "Forms",
-    "description": "User-friendly forms optimized for adventure planning and registration.",
-    "elements": [
-      {
-        "name": "Text Fields",
-        "description": "Clean, accessible input fields with clear labels and validation"
-      },
-      {
-        "name": "Dropdowns",
-        "description": "Custom-styled select components for experience levels and preferences"
-      },
-      {
-        "name": "Checkboxes",
-        "description": "Styled agreement components for waivers and terms"
-      },
-      {
-        "name": "Toggles",
-        "description": "Visual toggles for simple binary options"
-      }
-    ]
-  },
-  "cards": {
-    "title": "Cards",
-    "description": "Content containers that showcase adventures, events, and testimonials.",
-    "types": [
-      {
-        "name": "Event Cards",
-        "description": "Highlight upcoming adventures with engaging imagery"
-      },
-      {
-        "name": "Feature Cards",
-        "description": "Showcase key features and benefits of the journey"
-      },
-      {
-        "name": "Testimonial Cards",
-        "description": "Share stories from past adventurers"
-      }
-    ],
-    "samples": [
-      {
-        "title": "Baja Expedition",
-        "content": "Explore the hidden gems of the Sea of Cortez with our expert guides.",
-        "action": "View More"
-      }
-    ]
-  },
-  "badges": {
-    "title": "Badges",
-    "description": "Visual indicators that communicate status, category, and achievements.",
-    "types": [
-      {
-        "name": "Difficulty Levels",
-        "label": "Intermediate",
-        "class": "nomadix-badge nomadix-badge-warning",
-        "description": "Color-coded badges indicating adventure difficulty"
-      },
-      {
-        "name": "Experience Types",
-        "label": "Safari",
-        "class": "nomadix-badge nomadix-badge-primary",
-        "description": "Visual categorization of different adventure experiences"
-      },
-      {
-        "name": "Achievement Markers",
-        "label": "Explorer",
-        "class": "nomadix-badge nomadix-badge-success",
-        "description": "Celebration badges for completed journeys"
-      }
-    ]
-  },
-  "navigation": {
-    "title": "Navigation Patterns",
-    "description": "Intuitive navigation systems that guide users through their planning journey.",
-    "patterns": [
-      {
-        "name": "Main Navigation",
-        "description": "Responsive, accessible navigation that adapts to all devices"
-      },
-      {
-        "name": "Journey Map",
-        "description": "Interactive pathfinding to explore the adventure routes"
-      },
-      {
-        "name": "Resource Library",
-        "description": "Organized access to preparation materials and guides"
-      }
-    ],
-    "tabs": [
-      "Adventures",
-      "Events",
-      "Community",
-      "About Us"
-    ],
-    "breadcrumbs": [
-      "Home",
-      "Baja California",
-      "Expeditions"
-    ]
-  },
-  "messages": {
-    "title": "Messaging System",
-    "description": "Clear communication framework for important updates and notifications.",
-    "types": [
-      {
-        "name": "Success Messages",
-        "description": "Positive confirmation of completed actions",
-        "color": "#30D158"
-      },
-      {
-        "name": "Information Alerts",
-        "description": "Neutral information and updates",
-        "color": "#0A84FF"
-      },
-      {
-        "name": "Warning Notices",
-        "description": "Important considerations and cautions",
-        "color": "#FF9F0A"
-      },
-      {
-        "name": "Error Messages",
-        "description": "Critical issues requiring attention",
-        "color": "#FF453A"
-      }
-    ]
+      "hierarchy": [
+        {
+          "name": "Display",
+          "size": "42px/46px",
+          "weight": "400",
+          "usage": "Main section titles"
+        },
+        {
+          "name": "H1",
+          "size": "32px/38px",
+          "weight": "400",
+          "usage": "Page headers"
+        },
+        {
+          "name": "H2",
+          "size": "28px/34px",
+          "weight": "400",
+          "usage": "Primary subtitles"
+        },
+        {
+          "name": "H3",
+          "size": "22px/28px",
+          "weight": "400",
+          "usage": "Secondary subtitles"
+        },
+        {
+          "name": "Body Text",
+          "size": "16px/24px",
+          "weight": "400",
+          "usage": "Primary content text"
+        },
+        {
+          "name": "Small Text",
+          "size": "14px/20px",
+          "weight": "400",
+          "usage": "Secondary information and captions"
+        }
+      ]
+    },
+    "shape": {
+      "borderRadius": "8px",
+      "buttonRadius": "100px",
+      "inputRadius": "6px"
+    }
   }
 }

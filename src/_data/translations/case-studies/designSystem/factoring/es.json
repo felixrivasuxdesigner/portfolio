@@ -1,164 +1,77 @@
 {
-    "title": "Sistema de Diseño",
-    "intro": "El Módulo de Factoring de Security Bank utiliza un lenguaje visual robusto y corporativo, enfocado en la precisión técnica y la eficiencia operativa.",
-    "colorPalette": {
-        "title": "Paleta de Colores",
-        "description": "Colores institucionales que refuerzan la seguridad bancaria.",
-        "colors": [
-            {
-                "name": "Azul Security",
-                "hex": "#003366",
-                "usage": "Color primario institucional"
-            },
-            {
-                "name": "Dorado",
-                "hex": "#C9A050",
-                "usage": "Acentos y estados premium"
-            },
-            {
-                "name": "Gris Carbón",
-                "hex": "#333333",
-                "usage": "Tipografía corporativa"
-            }
-        ]
+  "title": "Sistema de Diseño",
+  "intro": "El Módulo de Factoring de Security Bank utiliza un lenguaje visual robusto y corporativo, enfocado en la precisión técnica y la eficiencia operativa.",
+  "tokens": {
+    "colors": {
+      "primary": {
+        "name": "Azul Security",
+        "hex": "#003366",
+        "rgb": "0, 51, 102",
+        "usage": "Color primario institucional"
+      },
+      "secondary": {
+        "name": "Dorado",
+        "hex": "#C9A050",
+        "rgb": "201, 160, 80",
+        "usage": "Acentos y estados premium"
+      },
+      "grayscale": {
+        "dark": {
+          "name": "Text Dark",
+          "hex": "#111827",
+          "rgb": "17, 24, 39",
+          "usage": "Headings and primary text"
+        },
+        "medium": {
+          "name": "Text Medium",
+          "hex": "#6B7280",
+          "rgb": "107, 114, 128",
+          "usage": "Body text and secondary info"
+        },
+        "light": {
+          "name": "Background Light",
+          "hex": "#F3F4F6",
+          "rgb": "243, 244, 246",
+          "usage": "App backgrounds"
+        },
+        "white": {
+          "name": "Surface White",
+          "hex": "#FFFFFF",
+          "rgb": "255, 255, 255",
+          "usage": "Card surfaces"
+        }
+      }
     },
     "typography": {
-        "title": "Tipografía",
-        "description": "Tipografías sólidas que garantizan la claridad en tablas de datos complejos.",
-        "fonts": [
-            {
-                "name": "Montserrat",
-                "category": "San Serif",
-                "weights": "400, 600, 700",
-                "usage": "Encabezados y datos"
-            }
+      "primary": {
+        "family": "Montserrat",
+        "weights": [
+          400,
+          500,
+          600,
+          700
         ],
-        "fontSizes": [
-            {
-                "name": "Header",
-                "size": "20px",
-                "usage": "Títulos de tabla"
-            },
-            {
-                "name": "Data",
-                "size": "14px",
-                "usage": "Celdas de información"
-            }
-        ]
+        "category": "San Serif"
+      },
+      "hierarchy": [
+        {
+          "name": "Header",
+          "size": "20px",
+          "weight": "400",
+          "usage": "Títulos de tabla"
+        },
+        {
+          "name": "Data",
+          "size": "14px",
+          "weight": "400",
+          "usage": "Celdas de información"
+        }
+      ]
     },
-    "components": {
-        "title": "Componentes",
-        "description": "Biblioteca de elementos corporativos.",
-        "categories": [
-            {
-                "name": "Datos",
-                "components": [
-                    "Gráficos de barras",
-                    "Tablas filtrables"
-                ]
-            },
-            {
-                "name": "Operaciones",
-                "components": [
-                    "Firma digital",
-                    "Selector de fechas"
-                ]
-            }
-        ]
-    },
-    "buttons": {
-        "title": "Botones",
-        "description": "Acciones de banca corporativa diseñadas para la precisión y claridad.",
-        "types": [
-            {
-                "name": "Primario",
-                "class": "primary",
-                "description": "Botones para acciones principales como aprobaciones transaccionales.",
-                "properties": "Color azul institucional, bordes cuadrados, peso tipográfico medio."
-            },
-            {
-                "name": "Secundario",
-                "class": "secondary",
-                "description": "Botones para consultas o exportación de datos.",
-                "properties": "Borde definido, fondo sutil, color de acento dorado."
-            },
-            {
-                "name": "Texto",
-                "class": "text",
-                "description": "Acciones auxiliares como cancelar o cerrar.",
-                "properties": "Sin fondo, subrayado sutil al pasar el cursor."
-            }
-        ],
-        "states": [
-            "Predeterminado",
-            "Hover",
-            "Activo",
-            "Enfoque",
-            "Desactivado"
-        ]
-    },
-    "forms": {
-        "title": "Formularios",
-        "description": "Filtros complejos diseñados para la gestión de grandes volúmenes de datos.",
-        "elements": [
-            {
-                "name": "Rango de fechas",
-                "description": "Control para filtrar transacciones por periodos específicos."
-            },
-            {
-                "name": "Buscador Predictivo",
-                "description": "Campo de búsqueda con sugerencias en tiempo real por número de factura o cliente."
-            }
-        ]
-    },
-    "cards": {
-        "title": "Tarjetas",
-        "description": "Kpis de negocio.",
-        "samples": [
-            {
-                "title": "Pendientes",
-                "content": "Facturas por aprobar",
-                "action": "Revisar"
-            }
-        ]
-    },
-    "badges": {
-        "title": "Etiquetas",
-        "description": "Estados de factura y transacciones.",
-        "types": [
-            {
-                "label": "Pendiente",
-                "class": "factoring-badge-warning"
-            },
-            {
-                "label": "Aprobado",
-                "class": "factoring-badge-success"
-            }
-        ]
-    },
-    "navigation": {
-        "title": "Navegación",
-        "description": "Menús laterales complejos.",
-        "tabs": [
-            "Dashboard",
-            "Facturas",
-            "Clientes"
-        ],
-        "breadcrumbs": [
-            "Banking",
-            "Factoring",
-            "Dashboard"
-        ]
-    },
-    "messages": {
-        "title": "Mensajes",
-        "description": "Alertas de seguridad y feedback operacional.",
-        "alerts": [
-            {
-                "type": "warning",
-                "icon": "!",
-                "content": "Sesión por expirar"
-            }
-        ]
+    "shape": {
+      "borderRadius": "8px",
+      "buttonRadius": "100px",
+      "inputRadius": "6px"
     }
+  }
 }

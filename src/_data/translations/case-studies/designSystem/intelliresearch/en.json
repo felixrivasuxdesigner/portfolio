@@ -1,196 +1,89 @@
 {
   "title": "IntelliResearch Design System",
   "intro": "A scalable design system built on principles of clarity and efficiency for AI-driven research tools.",
-  "colorPalette": {
-    "title": "Color Palette",
-    "description": "A professional palette that balances institutional trust with technological clarity.",
-    "colors": [
-      {
+  "tokens": {
+    "colors": {
+      "primary": {
         "name": "Cobalt Blue",
         "hex": "#0047AB",
+        "rgb": "0, 71, 171",
         "usage": "Primary color for authority and main actions"
       },
-      {
+      "secondary": {
         "name": "Electric Cyan",
         "hex": "#00E5FF",
+        "rgb": "0, 229, 255",
         "usage": "AI insights and smart highlights"
       },
-      {
-        "name": "Slate Gray",
-        "hex": "#263238",
-        "usage": "Main text and structural elements to reduce visual fatigue"
-      },
-      {
-        "name": "Pure White",
-        "hex": "#FFFFFF",
-        "usage": "Surface backgrounds and work areas"
-      },
-      {
-        "name": "Soft Gray",
-        "hex": "#F5F7F9",
-        "usage": "Section backgrounds and secondary elements"
+      "grayscale": {
+        "dark": {
+          "name": "Text Dark",
+          "hex": "#111827",
+          "rgb": "17, 24, 39",
+          "usage": "Headings and primary text"
+        },
+        "medium": {
+          "name": "Text Medium",
+          "hex": "#6B7280",
+          "rgb": "107, 114, 128",
+          "usage": "Body text and secondary info"
+        },
+        "light": {
+          "name": "Background Light",
+          "hex": "#F3F4F6",
+          "rgb": "243, 244, 246",
+          "usage": "App backgrounds"
+        },
+        "white": {
+          "name": "Surface White",
+          "hex": "#FFFFFF",
+          "rgb": "255, 255, 255",
+          "usage": "Card surfaces"
+        }
       }
-    ]
-  },
-  "typography": {
-    "title": "Typography System",
-    "description": "We use Inter for its exceptional legibility in data-dense user interfaces and JetBrains Mono for transcript snippets.",
-    "fonts": [
-      {
-        "name": "Inter",
-        "category": "Interface and Analysis Text",
-        "weights": "400 (Regular), 500 (Medium), 600 (Semibold), 700 (Bold)",
-        "usage": "Main font for all content and interface elements"
+    },
+    "typography": {
+      "primary": {
+        "family": "Inter",
+        "weights": [
+          400,
+          500,
+          600,
+          700
+        ],
+        "category": "Interface and Analysis Text"
       },
-      {
-        "name": "JetBrains Mono",
-        "category": "Transcripts and Metadata",
-        "weights": "400 (Regular)",
-        "usage": "Monospaced font for transcript blocks and technical data"
-      }
-    ],
-    "fontSizes": [
-      {
-        "name": "Display L",
-        "size": "32px/40px",
-        "usage": "Main dashboard titles"
-      },
-      {
-        "name": "Heading M",
-        "size": "24px/32px",
-        "usage": "Section titles and summaries"
-      },
-      {
-        "name": "Body Regular",
-        "size": "16px/24px",
-        "usage": "Main content and detailed analysis"
-      },
-      {
-        "name": "Caption",
-        "size": "14px/20px",
-        "usage": "Labels, metadata, and micro-copy"
-      }
-    ]
-  },
-  "components": {
-    "title": "Analysis Components",
-    "description": "Atomic elements designed for rapid synthesis of qualitative information.",
-    "categories": [
-      {
-        "name": "Research",
-        "components": [
-          "Audio Timeline",
-          "Video Player",
-          "Transcript Editor",
-          "Semantic Search"
-        ]
-      },
-      {
-        "name": "Visualization",
-        "components": [
-          "Insight Matrix",
-          "Sentiment Tag Cloud",
-          "Pain Point Frequency Charts",
-          "Evidence Cards"
-        ]
-      }
-    ]
-  },
-  "buttons": {
-    "title": "Action Buttons",
-    "description": "Direct controls for research workflow management.",
-    "types": [
-      {
-        "name": "Process Analysis",
-        "class": "jl-btn jl-btn-primary",
-        "usage": "Main call to action to start AI processing"
-      },
-      {
-        "name": "Export Report",
-        "class": "jl-btn jl-btn-secondary",
-        "usage": "Secondary action to share findings"
-      }
-    ],
-    "states": [
-      "Active",
-      "Hover",
-      "Pressed",
-      "Focus",
-      "Locked"
-    ]
-  },
-  "forms": {
-    "title": "Data Inputs",
-    "description": "Optimized components for ingesting large volumes of information.",
-    "elements": [
-      {
-        "name": "File Uploader",
-        "usage": "Mass upload of interviews"
-      },
-      {
-        "name": "Tag Selector",
-        "usage": "Fast sentiment categorization"
-      }
-    ]
-  },
-  "cards": {
-    "title": "Insight Containers",
-    "description": "Modular structures to present key findings.",
-    "samples": [
-      {
-        "title": "User Insight",
-        "content": "Visual representation of a critical finding with its associated evidence.",
-        "action": "View Evidence"
-      }
-    ]
-  },
-  "badges": {
-    "title": "Status Badges",
-    "description": "Visual classifiers for severity and research status.",
-    "types": [
-      {
-        "label": "Critical",
-        "class": "jl-badge jl-badge-error"
-      },
-      {
-        "label": "In Progress",
-        "class": "jl-badge jl-badge-warning"
-      },
-      {
-        "label": "Validated",
-        "class": "jl-badge jl-badge-success"
-      }
-    ]
-  },
-  "navigation": {
-    "title": "Dashboard Navigation",
-    "description": "Quick access systems for projects and analysis.",
-    "tabs": [
-      "Interviews",
-      "Analysis",
-      "Insights",
-      "Report"
-    ],
-    "breadcrumbs": [
-      "Projects",
-      "App Redesign",
-      "September"
-    ]
-  },
-  "messages": {
-    "title": "System Feedback",
-    "description": "Communications regarding AI processing status.",
-    "alerts": [
-      {
-        "type": "success",
-        "icon": "✓",
-        "content": "Analysis completed in 2.4 seconds."
-      },
-      {
-        "type": "info",
-        "icon": "i",
-        "content": "AI is identifying common patterns..."
-      }
-    ]
+      "hierarchy": [
+        {
+          "name": "Display L",
+          "size": "32px/40px",
+          "weight": "400",
+          "usage": "Main dashboard titles"
+        },
+        {
+          "name": "Heading M",
+          "size": "24px/32px",
+          "weight": "400",
+          "usage": "Section titles and summaries"
+        },
+        {
+          "name": "Body Regular",
+          "size": "16px/24px",
+          "weight": "400",
+          "usage": "Main content and detailed analysis"
+        },
+        {
+          "name": "Caption",
+          "size": "14px/20px",
+          "weight": "400",
+          "usage": "Labels, metadata, and micro-copy"
+        }
+      ]
+    },
+    "shape": {
+      "borderRadius": "8px",
+      "buttonRadius": "100px",
+      "inputRadius": "6px"
+    }
   }
 }
