@@ -241,293 +241,223 @@
         
           
         
-        
-<div class="case-study-section design-system-section">
-  <h2>Design System</h2>
-  
-  <div class="design-system-intro">
-    <p>The Security Bank Factoring Module uses a robust corporate visual language, focused on technical precision and operational efficiency.</p>
+        <div class="design-board-wrapper" style="
+  --theme-primary: #003366;
+  --theme-secondary: #C9A050;
+  --theme-gray-dark: #111827;
+  --theme-gray-medium: #6B7280;
+  --theme-gray-light: #F3F4F6;
+  --theme-gray-white: #FFFFFF;
+  --theme-font-primary: 'Montserrat', sans-serif;
+  --theme-radius: 8px;
+  --theme-button-radius: 100px;
+  --theme-input-radius: 6px;
+">
+
+  <div class="board-header" style="text-align: center; margin-bottom: 3rem;">
+    <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;">Design System</h2>
+    <p style="font-size: 1.1rem; color: var(--theme-gray-medium); max-width: 600px; margin: 0 auto; line-height: 1.6;">
+      The Security Bank Factoring Module uses a robust corporate visual language, focused on technical precision and operational efficiency.
+    </p>
   </div>
-  
-  <div class="design-system-tabs-container">
-    <div class="design-system-tabs">
-      <button class="tab-btn active" data-tab="colors">Color Palette</button>
-      <button class="tab-btn" data-tab="typography">Typography</button>
-      <button class="tab-btn" data-tab="components">Components</button>
-      <button class="tab-btn" data-tab="buttons">Buttons</button>
-      <button class="tab-btn" data-tab="forms">Forms</button>
-      <button class="tab-btn" data-tab="cards">Cards</button>
-      <button class="tab-btn" data-tab="badges">Badges</button>
-      <button class="tab-btn" data-tab="navigation">Navigation</button>
-      <button class="tab-btn" data-tab="messages">Messages</button>
+
+  <!-- 1. Color Palette -->
+  <section class="board-section">
+    <div class="section-header">
+      <h3>Color Palette</h3>
+      <p>The primary, secondary, and grayscale colors defining the visual identity.</p>
     </div>
-  </div>
-  
-  <div class="tab-content active" id="colors-tab">
-    <h3>Color Palette</h3>
-    <p>Institutional colors that reinforce banking security.</p>
     
-    <div class="color-palette">
-      
-      <div class="color-swatch">
-        <div class="color-preview" style="background-color: #003366">
-          <span class="color-name-preview">Security Blue</span>
-        </div>
-        <div class="color-info">
+    <div class="colors-grid">
+      <!-- Primary -->
+      <div class="color-swatch-card" aria-label="Primary Color">
+        <div class="swatch-color" style="background-color: var(--theme-primary);"></div>
+        <div class="swatch-info">
           <div class="color-name">Security Blue</div>
-          <div class="color-hex">#003366</div>
+          <div class="color-codes">
+            <span>HEX #003366</span>
+            <span>RGB 0, 51, 102</span>
+          </div>
           <div class="color-usage">Primary institutional color</div>
         </div>
       </div>
-      
-      <div class="color-swatch">
-        <div class="color-preview" style="background-color: #C9A050">
-          <span class="color-name-preview">Gold</span>
-        </div>
-        <div class="color-info">
+
+      <!-- Secondary -->
+      <div class="color-swatch-card" aria-label="Secondary Color">
+        <div class="swatch-color" style="background-color: var(--theme-secondary);"></div>
+        <div class="swatch-info">
           <div class="color-name">Gold</div>
-          <div class="color-hex">#C9A050</div>
+          <div class="color-codes">
+            <span>HEX #C9A050</span>
+            <span>RGB 201, 160, 80</span>
+          </div>
           <div class="color-usage">Accents and premium states</div>
         </div>
       </div>
       
-      <div class="color-swatch">
-        <div class="color-preview" style="background-color: #333333">
-          <span class="color-name-preview">Charcoal Grey</span>
+      <!-- Grayscale (Loop over grayscale obj) -->
+      
+      <div class="color-swatch-card" aria-label="Text Dark">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #111827; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Text Dark</div>
+          <div class="color-codes">
+            <span>HEX #111827</span>
+            <span>RGB 17, 24, 39</span>
+          </div>
+          <div class="color-usage">Headings and primary text</div>
         </div>
-        <div class="color-info">
-          <div class="color-name">Charcoal Grey</div>
-          <div class="color-hex">#333333</div>
-          <div class="color-usage">Corporate typography</div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Text Medium">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #6B7280; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Text Medium</div>
+          <div class="color-codes">
+            <span>HEX #6B7280</span>
+            <span>RGB 107, 114, 128</span>
+          </div>
+          <div class="color-usage">Body text and secondary info</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Background Light">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #F3F4F6; border-bottom: 1px solid rgba(0,0,0,0.05);"></div>
+        <div class="swatch-info">
+          <div class="color-name">Background Light</div>
+          <div class="color-codes">
+            <span>HEX #F3F4F6</span>
+            <span>RGB 243, 244, 246</span>
+          </div>
+          <div class="color-usage">App backgrounds</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Surface White">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #FFFFFF; border-bottom: 1px solid rgba(0,0,0,0.05);"></div>
+        <div class="swatch-info">
+          <div class="color-name">Surface White</div>
+          <div class="color-codes">
+            <span>HEX #FFFFFF</span>
+            <span>RGB 255, 255, 255</span>
+          </div>
+          <div class="color-usage">Card surfaces</div>
         </div>
       </div>
       
     </div>
-  </div>
-  
-  <div class="tab-content" id="typography-tab">
-    <h3>Typography</h3>
-    <p>Solid typefaces that guarantee clarity in complex data tables.</p>
-    
-    <div class="typography-showcase">
-      
-      <div class="font-family primary-font">
-        <div class="font-header">
-          <div class="font-name">Montserrat</div>
-          <div class="font-category">San Serif</div>
-        </div>
-        <div class="font-details">
-          <div class="font-weights">400, 600, 700</div>
-          <div class="font-usage">Headings and data</div>
-        </div>
-        <div class="font-sample">
-          
-          <div class="sample-xl">Header</div>
-          <div class="sample-large">Data</div>
-          <div class="sample-medium"></div>
-          <div class="sample-body">: </div>
-          <div class="sample-small">: </div>
-          
-        </div>
-      </div>
-      
-    </div>
-    
-    <div class="font-sizes">
-      <h4>Font Sizes</h4>
-      <div class="font-size-grid">
-        
-        <div class="font-size-item">
-          <div class="font-size-name">Header</div>
-          <div class="font-size-value">20px</div>
-          <div class="font-size-usage">Table headers</div>
-        </div>
-        
-        <div class="font-size-item">
-          <div class="font-size-name">Data</div>
-          <div class="font-size-value">14px</div>
-          <div class="font-size-usage">Information cells</div>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-  
-  <div class="tab-content" id="components-tab">
-    <h3>Components</h3>
-    <p>Corporate library of elements.</p>
-    
-    <div class="component-library">
-      
-      <div class="component-category">
-        <div class="category-name">Data</div>
-        <div class="component-list">
-          
-          <div class="component-tag">Bar charts</div>
-          
-          <div class="component-tag">Filterable tables</div>
-          
-        </div>
-      </div>
-      
-      <div class="component-category">
-        <div class="category-name">Operations</div>
-        <div class="component-list">
-          
-          <div class="component-tag">Digital signature</div>
-          
-          <div class="component-tag">Date selector</div>
-          
-        </div>
-      </div>
-      
-    </div>
-  </div>
-  
-  
-  
+  </section>
 
-  <div class="tab-content" id="buttons-tab">
-    <h3>Buttons</h3>
-    <p>Corporate banking actions designed for precision and clarity.</p>
-    
-    <div class="buttons-showcase">
-      <div class="button-group">
-        
-        <button class="factoring-btn factoring-btn-primary">Primary</button>
-        
-        <button class="factoring-btn factoring-btn-secondary">Secondary</button>
-        
-        <button class="factoring-btn factoring-btn-text">Text</button>
-        
-      </div>
-      
-      <div class="button-states">
-        
-        <button class="factoring-btn factoring-btn-primary">Default</button>
-        
-        <button class="factoring-btn factoring-btn-primary factoring-hover">Hover</button>
-        
-        <button class="factoring-btn factoring-btn-primary factoring-active">Active</button>
-        
-        <button class="factoring-btn factoring-btn-primary factoring-focus">Focus</button>
-        
-        <button class="factoring-btn factoring-btn-primary" disabled>Disabled</button>
-        
-      </div>
+  <!-- 2. Typography -->
+  <section class="board-section">
+    <div class="section-header">
+      <h3>Typography</h3>
+      <p>Primary Typeface: <strong>Montserrat</strong> (San Serif)</p>
     </div>
-  </div>
-  
-  <div class="tab-content" id="forms-tab">
-    <h3>Forms</h3>
-    <p>Complex filters designed for managing large volumes of data.</p>
-    
-    <div class="forms-showcase">
+
+    <div class="typography-grid">
       
-      <div class="form-group">
-        
-        <label for="demo-input">Date Range</label>
-        <input type="text" id="demo-input" class="factoring-input" placeholder="Enter text here">
-        
-      </div>
-      
-      <div class="form-group">
-        
-        <label for="demo-select">Predictive Search</label>
-        <select id="demo-select" class="factoring-select">
-          <option>Option 1</option>
-          <option>Option 2</option>
-          <option>Option 3</option>
-        </select>
-        
-      </div>
-      
-    </div>
-  </div>
-  
-  <div class="tab-content" id="cards-tab">
-    <h3>Cards</h3>
-    <p>Business KPIs.</p>
-    
-    <div class="cards-showcase">
-      <div class="factoring-card">
-        <div class="factoring-card-header">
-          <h4>Pending</h4>
+      <div class="type-specimen">
+        <div class="type-label">
+          <strong>Header</strong>
+          <span>20px / 400</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Table headers</span>
         </div>
-        <div class="factoring-card-body">
-          <p>Invoices to approve</p>
-        </div>
-        <div class="factoring-card-footer">
-          <button class="factoring-btn factoring-btn-text">Review</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="tab-content" id="badges-tab">
-    <h3>Badges</h3>
-    <p>Invoice and transaction statuses.</p>
-    
-    <div class="badges-showcase">
-      
-      <span class="factoring-badge-warning">Pending</span>
-      
-      <span class="factoring-badge-success">Approved</span>
-      
-    </div>
-  </div>
-  
-  <div class="tab-content" id="navigation-tab">
-    <h3>Navigation</h3>
-    <p>Complex sidebar menus.</p>
-    
-    <div class="navigation-showcase">
-      <div class="factoring-nav-sample">
-        <div class="factoring-tabs">
-          
-          <button class="factoring-tab active">Dashboard</button>
-          
-          <button class="factoring-tab">Invoices</button>
-          
-          <button class="factoring-tab">Clients</button>
-          
+        <div class="type-sample" style="font-size: 20px; font-weight: 400;">
+          The quick brown fox jumps over the lazy dog
         </div>
       </div>
       
-      <div class="factoring-breadcrumbs">
-        
-        <span>Banking</span>
-        
-        <span class="factoring-breadcrumb-separator">›</span>
-        
-        
-        <span>Factoring</span>
-        
-        <span class="factoring-breadcrumb-separator">›</span>
-        
-        
-        <span>Dashboard</span>
-        
-        
-      </div>
-    </div>
-  </div>
-  
-  <div class="tab-content" id="messages-tab">
-    <h3>Messages</h3>
-    <p>Security alerts and operational feedback.</p>
-    
-    <div class="messages-showcase">
-      
-      <div class="factoring-alert factoring-alert-warning">
-        <div class="factoring-alert-icon">!</div>
-        <div class="factoring-alert-content">Session about to expire</div>
+      <div class="type-specimen">
+        <div class="type-label">
+          <strong>Data</strong>
+          <span>14px / 400</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Information cells</span>
+        </div>
+        <div class="type-sample" style="font-size: 14px; font-weight: 400;">
+          The quick brown fox jumps over the lazy dog
+        </div>
       </div>
       
     </div>
-  </div>
+  </section>
+
+  <!-- 3. UI Components -->
+  <section class="board-section">
+    <div class="section-header">
+      <h3>UI Components</h3>
+      <p>Interactive elements utilizing the design tokens (Colors, Typography, Border Radius).</p>
+    </div>
+
+    <div class="ui-grid">
+      
+      <!-- Buttons -->
+      <div class="ui-group">
+        <h4>Buttons</h4>
+        <div class="button-states">
+          
+          <div class="state-row">
+            <span class="state-label">Default</span>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+              <button class="btn-primary">Primary Action</button>
+              <button class="btn-secondary">Secondary Action</button>
+              <button class="btn-ghost">Ghost</button>
+            </div>
+          </div>
+          
+          <div class="state-row">
+            <span class="state-label">Hover (simulated)</span>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+              <button class="btn-primary hover">Primary Action</button>
+              <button class="btn-secondary hover">Secondary Action</button>
+              <button class="btn-ghost hover">Ghost</button>
+            </div>
+          </div>
+          
+          <div class="state-row">
+            <span class="state-label">Active (simulated)</span>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+              <button class="btn-primary active">Primary Action</button>
+              <button class="btn-secondary active">Secondary Action</button>
+              <button class="btn-ghost active">Ghost</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Forms -->
+      <div class="ui-group">
+        <h4>Form Inputs</h4>
+        <div class="form-states">
+          
+          <div class="input-group">
+            <label>Default State</label>
+            <input type="text" placeholder="Enter your email address">
+          </div>
+          
+          <div class="input-group">
+            <label>Focus State (simulated)</label>
+            <input type="text" class="focus" placeholder="typing..." value="user@example.com">
+          </div>
+          
+          <div class="input-group">
+            <label>Error State (simulated)</label>
+            <input type="text" class="error" placeholder="" value="invalid-email">
+            <span style="color: #ef4444; font-size: 0.8rem; margin-top: 0.25rem;">Please enter a valid email address.</span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
 </div>
-
 
       
 

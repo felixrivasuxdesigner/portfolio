@@ -241,359 +241,245 @@
         
           
         
-        
-<div class="case-study-section design-system-section">
-  <h2>IntelliResearch Design System</h2>
-  
-  <div class="design-system-intro">
-    <p>A scalable design system built on principles of clarity and efficiency for AI-driven research tools.</p>
+        <div class="design-board-wrapper" style="
+  --theme-primary: #0047AB;
+  --theme-secondary: #00E5FF;
+  --theme-gray-dark: #111827;
+  --theme-gray-medium: #6B7280;
+  --theme-gray-light: #F3F4F6;
+  --theme-gray-white: #FFFFFF;
+  --theme-font-primary: 'Inter', sans-serif;
+  --theme-radius: 8px;
+  --theme-button-radius: 100px;
+  --theme-input-radius: 6px;
+">
+
+  <div class="board-header" style="text-align: center; margin-bottom: 3rem;">
+    <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;">IntelliResearch Design System</h2>
+    <p style="font-size: 1.1rem; color: var(--theme-gray-medium); max-width: 600px; margin: 0 auto; line-height: 1.6;">
+      A scalable design system built on principles of clarity and efficiency for AI-driven research tools.
+    </p>
   </div>
-  
-  <div class="design-system-tabs-container">
-    <div class="design-system-tabs">
-      <button class="tab-btn active" data-tab="colors">Color Palette</button>
-      <button class="tab-btn" data-tab="typography">Typography System</button>
-      <button class="tab-btn" data-tab="components">Analysis Components</button>
-      <button class="tab-btn" data-tab="buttons">Action Buttons</button>
-      <button class="tab-btn" data-tab="forms">Data Inputs</button>
-      <button class="tab-btn" data-tab="cards">Insight Containers</button>
-      <button class="tab-btn" data-tab="badges">Status Badges</button>
-      <button class="tab-btn" data-tab="navigation">Dashboard Navigation</button>
-      <button class="tab-btn" data-tab="messages">System Feedback</button>
+
+  <!-- 1. Color Palette -->
+  <section class="board-section">
+    <div class="section-header">
+      <h3>Color Palette</h3>
+      <p>The primary, secondary, and grayscale colors defining the visual identity.</p>
     </div>
-  </div>
-  
-  <div class="tab-content active" id="colors-tab">
-    <h3>Color Palette</h3>
-    <p>A professional palette that balances institutional trust with technological clarity.</p>
     
-    <div class="color-palette">
-      
-      <div class="color-swatch">
-        <div class="color-preview" style="background-color: #0047AB">
-          <span class="color-name-preview">Cobalt Blue</span>
-        </div>
-        <div class="color-info">
+    <div class="colors-grid">
+      <!-- Primary -->
+      <div class="color-swatch-card" aria-label="Primary Color">
+        <div class="swatch-color" style="background-color: var(--theme-primary);"></div>
+        <div class="swatch-info">
           <div class="color-name">Cobalt Blue</div>
-          <div class="color-hex">#0047AB</div>
+          <div class="color-codes">
+            <span>HEX #0047AB</span>
+            <span>RGB 0, 71, 171</span>
+          </div>
           <div class="color-usage">Primary color for authority and main actions</div>
         </div>
       </div>
-      
-      <div class="color-swatch">
-        <div class="color-preview" style="background-color: #00E5FF">
-          <span class="color-name-preview">Electric Cyan</span>
-        </div>
-        <div class="color-info">
+
+      <!-- Secondary -->
+      <div class="color-swatch-card" aria-label="Secondary Color">
+        <div class="swatch-color" style="background-color: var(--theme-secondary);"></div>
+        <div class="swatch-info">
           <div class="color-name">Electric Cyan</div>
-          <div class="color-hex">#00E5FF</div>
+          <div class="color-codes">
+            <span>HEX #00E5FF</span>
+            <span>RGB 0, 229, 255</span>
+          </div>
           <div class="color-usage">AI insights and smart highlights</div>
         </div>
       </div>
       
-      <div class="color-swatch">
-        <div class="color-preview" style="background-color: #263238">
-          <span class="color-name-preview">Slate Gray</span>
-        </div>
-        <div class="color-info">
-          <div class="color-name">Slate Gray</div>
-          <div class="color-hex">#263238</div>
-          <div class="color-usage">Main text and structural elements to reduce visual fatigue</div>
+      <!-- Grayscale (Loop over grayscale obj) -->
+      
+      <div class="color-swatch-card" aria-label="Text Dark">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #111827; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Text Dark</div>
+          <div class="color-codes">
+            <span>HEX #111827</span>
+            <span>RGB 17, 24, 39</span>
+          </div>
+          <div class="color-usage">Headings and primary text</div>
         </div>
       </div>
       
-      <div class="color-swatch">
-        <div class="color-preview" style="background-color: #FFFFFF">
-          <span class="color-name-preview">Pure White</span>
-        </div>
-        <div class="color-info">
-          <div class="color-name">Pure White</div>
-          <div class="color-hex">#FFFFFF</div>
-          <div class="color-usage">Surface backgrounds and work areas</div>
-        </div>
-      </div>
-      
-      <div class="color-swatch">
-        <div class="color-preview" style="background-color: #F5F7F9">
-          <span class="color-name-preview">Soft Gray</span>
-        </div>
-        <div class="color-info">
-          <div class="color-name">Soft Gray</div>
-          <div class="color-hex">#F5F7F9</div>
-          <div class="color-usage">Section backgrounds and secondary elements</div>
+      <div class="color-swatch-card" aria-label="Text Medium">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #6B7280; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Text Medium</div>
+          <div class="color-codes">
+            <span>HEX #6B7280</span>
+            <span>RGB 107, 114, 128</span>
+          </div>
+          <div class="color-usage">Body text and secondary info</div>
         </div>
       </div>
       
-    </div>
-  </div>
-  
-  <div class="tab-content" id="typography-tab">
-    <h3>Typography System</h3>
-    <p>We use Inter for its exceptional legibility in data-dense user interfaces and JetBrains Mono for transcript snippets.</p>
-    
-    <div class="typography-showcase">
-      
-      <div class="font-family primary-font">
-        <div class="font-header">
-          <div class="font-name">Inter</div>
-          <div class="font-category">Interface and Analysis Text</div>
-        </div>
-        <div class="font-details">
-          <div class="font-weights">400 (Regular), 500 (Medium), 600 (Semibold), 700 (Bold)</div>
-          <div class="font-usage">Main font for all content and interface elements</div>
-        </div>
-        <div class="font-sample">
-          
-          <div class="sample-xl">Display L</div>
-          <div class="sample-large">Heading M</div>
-          <div class="sample-medium">Body Regular</div>
-          <div class="sample-body">Caption: Labels, metadata, and micro-copy</div>
-          <div class="sample-small">: </div>
-          
+      <div class="color-swatch-card" aria-label="Background Light">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #F3F4F6; border-bottom: 1px solid rgba(0,0,0,0.05);"></div>
+        <div class="swatch-info">
+          <div class="color-name">Background Light</div>
+          <div class="color-codes">
+            <span>HEX #F3F4F6</span>
+            <span>RGB 243, 244, 246</span>
+          </div>
+          <div class="color-usage">App backgrounds</div>
         </div>
       </div>
       
-      <div class="font-family code-font">
-        <div class="font-header">
-          <div class="font-name">JetBrains Mono</div>
-          <div class="font-category">Transcripts and Metadata</div>
-        </div>
-        <div class="font-details">
-          <div class="font-weights">400 (Regular)</div>
-          <div class="font-usage">Monospaced font for transcript blocks and technical data</div>
-        </div>
-        <div class="font-sample">
-          
-          <div class="sample-body">function calculateDamages(caseType, amount) {<br>  return caseType === 'liability' ? amount * 1.5 : amount;<br>}</div>
-          <div class="sample-small">// Legal reference: §304.2-p</div>
-          
+      <div class="color-swatch-card" aria-label="Surface White">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #FFFFFF; border-bottom: 1px solid rgba(0,0,0,0.05);"></div>
+        <div class="swatch-info">
+          <div class="color-name">Surface White</div>
+          <div class="color-codes">
+            <span>HEX #FFFFFF</span>
+            <span>RGB 255, 255, 255</span>
+          </div>
+          <div class="color-usage">Card surfaces</div>
         </div>
       </div>
       
     </div>
-    
-    <div class="font-sizes">
-      <h4>Font Sizes</h4>
-      <div class="font-size-grid">
-        
-        <div class="font-size-item">
-          <div class="font-size-name">Display L</div>
-          <div class="font-size-value">32px/40px</div>
-          <div class="font-size-usage">Main dashboard titles</div>
-        </div>
-        
-        <div class="font-size-item">
-          <div class="font-size-name">Heading M</div>
-          <div class="font-size-value">24px/32px</div>
-          <div class="font-size-usage">Section titles and summaries</div>
-        </div>
-        
-        <div class="font-size-item">
-          <div class="font-size-name">Body Regular</div>
-          <div class="font-size-value">16px/24px</div>
-          <div class="font-size-usage">Main content and detailed analysis</div>
-        </div>
-        
-        <div class="font-size-item">
-          <div class="font-size-name">Caption</div>
-          <div class="font-size-value">14px/20px</div>
-          <div class="font-size-usage">Labels, metadata, and micro-copy</div>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-  
-  <div class="tab-content" id="components-tab">
-    <h3>Analysis Components</h3>
-    <p>Atomic elements designed for rapid synthesis of qualitative information.</p>
-    
-    <div class="component-library">
-      
-      <div class="component-category">
-        <div class="category-name">Research</div>
-        <div class="component-list">
-          
-          <div class="component-tag">Audio Timeline</div>
-          
-          <div class="component-tag">Video Player</div>
-          
-          <div class="component-tag">Transcript Editor</div>
-          
-          <div class="component-tag">Semantic Search</div>
-          
-        </div>
-      </div>
-      
-      <div class="component-category">
-        <div class="category-name">Visualization</div>
-        <div class="component-list">
-          
-          <div class="component-tag">Insight Matrix</div>
-          
-          <div class="component-tag">Sentiment Tag Cloud</div>
-          
-          <div class="component-tag">Pain Point Frequency Charts</div>
-          
-          <div class="component-tag">Evidence Cards</div>
-          
-        </div>
-      </div>
-      
-    </div>
-  </div>
-  
-  
-  
+  </section>
 
-  <div class="tab-content" id="buttons-tab">
-    <h3>Action Buttons</h3>
-    <p>Direct controls for research workflow management.</p>
-    
-    <div class="buttons-showcase">
-      <div class="button-group">
-        
-        <button class="intelliresearch-btn intelliresearch-btn-jl-btn jl-btn-primary">Process Analysis</button>
-        
-        <button class="intelliresearch-btn intelliresearch-btn-jl-btn jl-btn-secondary">Export Report</button>
-        
-      </div>
-      
-      <div class="button-states">
-        
-        <button class="intelliresearch-btn intelliresearch-btn-primary">Active</button>
-        
-        <button class="intelliresearch-btn intelliresearch-btn-primary intelliresearch-hover">Hover</button>
-        
-        <button class="intelliresearch-btn intelliresearch-btn-primary intelliresearch-pressed">Pressed</button>
-        
-        <button class="intelliresearch-btn intelliresearch-btn-primary intelliresearch-focus">Focus</button>
-        
-        <button class="intelliresearch-btn intelliresearch-btn-primary" disabled>Locked</button>
-        
-      </div>
+  <!-- 2. Typography -->
+  <section class="board-section">
+    <div class="section-header">
+      <h3>Typography</h3>
+      <p>Primary Typeface: <strong>Inter</strong> (Interface and Analysis Text)</p>
     </div>
-  </div>
-  
-  <div class="tab-content" id="forms-tab">
-    <h3>Data Inputs</h3>
-    <p>Optimized components for ingesting large volumes of information.</p>
-    
-    <div class="forms-showcase">
+
+    <div class="typography-grid">
       
-      <div class="form-group">
-        
-        <label for="demo-input">File Uploader</label>
-        <input type="text" id="demo-input" class="intelliresearch-input" placeholder="Enter text here">
-        
-      </div>
-      
-      <div class="form-group">
-        
-        <label for="demo-select">Tag Selector</label>
-        <select id="demo-select" class="intelliresearch-select">
-          <option>Option 1</option>
-          <option>Option 2</option>
-          <option>Option 3</option>
-        </select>
-        
-      </div>
-      
-    </div>
-  </div>
-  
-  <div class="tab-content" id="cards-tab">
-    <h3>Insight Containers</h3>
-    <p>Modular structures to present key findings.</p>
-    
-    <div class="cards-showcase">
-      <div class="intelliresearch-card">
-        <div class="intelliresearch-card-header">
-          <h4>User Insight</h4>
+      <div class="type-specimen">
+        <div class="type-label">
+          <strong>Display L</strong>
+          <span>32px/40px / 400</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Main dashboard titles</span>
         </div>
-        <div class="intelliresearch-card-body">
-          <p>Visual representation of a critical finding with its associated evidence.</p>
-        </div>
-        <div class="intelliresearch-card-footer">
-          <button class="intelliresearch-btn intelliresearch-btn-text">View Evidence</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="tab-content" id="badges-tab">
-    <h3>Status Badges</h3>
-    <p>Visual classifiers for severity and research status.</p>
-    
-    <div class="badges-showcase">
-      
-      <span class="jl-badge jl-badge-error">Critical</span>
-      
-      <span class="jl-badge jl-badge-warning">In Progress</span>
-      
-      <span class="jl-badge jl-badge-success">Validated</span>
-      
-    </div>
-  </div>
-  
-  <div class="tab-content" id="navigation-tab">
-    <h3>Dashboard Navigation</h3>
-    <p>Quick access systems for projects and analysis.</p>
-    
-    <div class="navigation-showcase">
-      <div class="intelliresearch-nav-sample">
-        <div class="intelliresearch-tabs">
-          
-          <button class="intelliresearch-tab active">Interviews</button>
-          
-          <button class="intelliresearch-tab">Analysis</button>
-          
-          <button class="intelliresearch-tab">Insights</button>
-          
-          <button class="intelliresearch-tab">Report</button>
-          
+        <div class="type-sample" style="font-size: 32px/40px; font-weight: 400;">
+          The quick brown fox jumps over the lazy dog
         </div>
       </div>
       
-      <div class="intelliresearch-breadcrumbs">
-        
-        <span>Projects</span>
-        
-        <span class="intelliresearch-breadcrumb-separator">›</span>
-        
-        
-        <span>App Redesign</span>
-        
-        <span class="intelliresearch-breadcrumb-separator">›</span>
-        
-        
-        <span>September</span>
-        
-        
-      </div>
-    </div>
-  </div>
-  
-  <div class="tab-content" id="messages-tab">
-    <h3>System Feedback</h3>
-    <p>Communications regarding AI processing status.</p>
-    
-    <div class="messages-showcase">
-      
-      <div class="intelliresearch-alert intelliresearch-alert-success">
-        <div class="intelliresearch-alert-icon">✓</div>
-        <div class="intelliresearch-alert-content">Analysis completed in 2.4 seconds.</div>
+      <div class="type-specimen">
+        <div class="type-label">
+          <strong>Heading M</strong>
+          <span>24px/32px / 400</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Section titles and summaries</span>
+        </div>
+        <div class="type-sample" style="font-size: 24px/32px; font-weight: 400;">
+          The quick brown fox jumps over the lazy dog
+        </div>
       </div>
       
-      <div class="intelliresearch-alert intelliresearch-alert-info">
-        <div class="intelliresearch-alert-icon">i</div>
-        <div class="intelliresearch-alert-content">AI is identifying common patterns...</div>
+      <div class="type-specimen">
+        <div class="type-label">
+          <strong>Body Regular</strong>
+          <span>16px/24px / 400</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Main content and detailed analysis</span>
+        </div>
+        <div class="type-sample" style="font-size: 16px/24px; font-weight: 400;">
+          The quick brown fox jumps over the lazy dog
+        </div>
+      </div>
+      
+      <div class="type-specimen">
+        <div class="type-label">
+          <strong>Caption</strong>
+          <span>14px/20px / 400</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Labels, metadata, and micro-copy</span>
+        </div>
+        <div class="type-sample" style="font-size: 14px/20px; font-weight: 400;">
+          The quick brown fox jumps over the lazy dog
+        </div>
       </div>
       
     </div>
-  </div>
+  </section>
+
+  <!-- 3. UI Components -->
+  <section class="board-section">
+    <div class="section-header">
+      <h3>UI Components</h3>
+      <p>Interactive elements utilizing the design tokens (Colors, Typography, Border Radius).</p>
+    </div>
+
+    <div class="ui-grid">
+      
+      <!-- Buttons -->
+      <div class="ui-group">
+        <h4>Buttons</h4>
+        <div class="button-states">
+          
+          <div class="state-row">
+            <span class="state-label">Default</span>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+              <button class="btn-primary">Primary Action</button>
+              <button class="btn-secondary">Secondary Action</button>
+              <button class="btn-ghost">Ghost</button>
+            </div>
+          </div>
+          
+          <div class="state-row">
+            <span class="state-label">Hover (simulated)</span>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+              <button class="btn-primary hover">Primary Action</button>
+              <button class="btn-secondary hover">Secondary Action</button>
+              <button class="btn-ghost hover">Ghost</button>
+            </div>
+          </div>
+          
+          <div class="state-row">
+            <span class="state-label">Active (simulated)</span>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+              <button class="btn-primary active">Primary Action</button>
+              <button class="btn-secondary active">Secondary Action</button>
+              <button class="btn-ghost active">Ghost</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Forms -->
+      <div class="ui-group">
+        <h4>Form Inputs</h4>
+        <div class="form-states">
+          
+          <div class="input-group">
+            <label>Default State</label>
+            <input type="text" placeholder="Enter your email address">
+          </div>
+          
+          <div class="input-group">
+            <label>Focus State (simulated)</label>
+            <input type="text" class="focus" placeholder="typing..." value="user@example.com">
+          </div>
+          
+          <div class="input-group">
+            <label>Error State (simulated)</label>
+            <input type="text" class="error" placeholder="" value="invalid-email">
+            <span style="color: #ef4444; font-size: 0.8rem; margin-top: 0.25rem;">Please enter a valid email address.</span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
 </div>
-
 
       
 

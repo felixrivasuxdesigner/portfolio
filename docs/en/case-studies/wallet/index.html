@@ -241,310 +241,234 @@
         
           
         
-        
-<div class="case-study-section design-system-section">
-  <h2>Design System</h2>
-  
-  <div class="design-system-intro">
-    <p>The design system for Belcorp's Mobile Wallet was built on the pillars of 'Trust and Accessibility', ensuring that sales representatives could manage their finances with complete security.</p>
+        <div class="design-board-wrapper" style="
+  --theme-primary: #E91E63;
+  --theme-secondary: #1A237E;
+  --theme-gray-dark: #111827;
+  --theme-gray-medium: #6B7280;
+  --theme-gray-light: #F3F4F6;
+  --theme-gray-white: #FFFFFF;
+  --theme-font-primary: 'Roboto', sans-serif;
+  --theme-radius: 8px;
+  --theme-button-radius: 100px;
+  --theme-input-radius: 6px;
+">
+
+  <div class="board-header" style="text-align: center; margin-bottom: 3rem;">
+    <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;">Design System</h2>
+    <p style="font-size: 1.1rem; color: var(--theme-gray-medium); max-width: 600px; margin: 0 auto; line-height: 1.6;">
+      The design system for Belcorp's Mobile Wallet was built on the pillars of 'Trust and Accessibility', ensuring that sales representatives could manage their finances with complete security.
+    </p>
   </div>
-  
-  <div class="design-system-tabs-container">
-    <div class="design-system-tabs">
-      <button class="tab-btn active" data-tab="colors">Color Palette</button>
-      <button class="tab-btn" data-tab="typography">Typography</button>
-      <button class="tab-btn" data-tab="components">Components</button>
-      <button class="tab-btn" data-tab="buttons">Buttons</button>
-      <button class="tab-btn" data-tab="forms">Forms</button>
-      <button class="tab-btn" data-tab="cards">Cards</button>
-      <button class="tab-btn" data-tab="badges">Badges</button>
-      <button class="tab-btn" data-tab="navigation">Navigation</button>
-      <button class="tab-btn" data-tab="messages">Messages</button>
+
+  <!-- 1. Color Palette -->
+  <section class="board-section">
+    <div class="section-header">
+      <h3>Color Palette</h3>
+      <p>The primary, secondary, and grayscale colors defining the visual identity.</p>
     </div>
-  </div>
-  
-  <div class="tab-content active" id="colors-tab">
-    <h3>Color Palette</h3>
-    <p>We used colors that evoke professionalism and calm, aligned with Belcorp's identity.</p>
     
-    <div class="color-palette">
-      
-      <div class="color-swatch">
-        <div class="color-preview" style="background-color: #E91E63">
-          <span class="color-name-preview">Belcorp Pink</span>
-        </div>
-        <div class="color-info">
+    <div class="colors-grid">
+      <!-- Primary -->
+      <div class="color-swatch-card" aria-label="Primary Color">
+        <div class="swatch-color" style="background-color: var(--theme-primary);"></div>
+        <div class="swatch-info">
           <div class="color-name">Belcorp Pink</div>
-          <div class="color-hex">#E91E63</div>
+          <div class="color-codes">
+            <span>HEX #E91E63</span>
+            <span>RGB 233, 30, 99</span>
+          </div>
           <div class="color-usage">Brand color and accents</div>
         </div>
       </div>
-      
-      <div class="color-swatch">
-        <div class="color-preview" style="background-color: #1A237E">
-          <span class="color-name-preview">Deep Blue</span>
-        </div>
-        <div class="color-info">
+
+      <!-- Secondary -->
+      <div class="color-swatch-card" aria-label="Secondary Color">
+        <div class="swatch-color" style="background-color: var(--theme-secondary);"></div>
+        <div class="swatch-info">
           <div class="color-name">Deep Blue</div>
-          <div class="color-hex">#1A237E</div>
+          <div class="color-codes">
+            <span>HEX #1A237E</span>
+            <span>RGB 26, 35, 126</span>
+          </div>
           <div class="color-usage">Main text and headings</div>
         </div>
       </div>
       
-      <div class="color-swatch">
-        <div class="color-preview" style="background-color: #F5F5F5">
-          <span class="color-name-preview">Soft Grey</span>
+      <!-- Grayscale (Loop over grayscale obj) -->
+      
+      <div class="color-swatch-card" aria-label="Text Dark">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #111827; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Text Dark</div>
+          <div class="color-codes">
+            <span>HEX #111827</span>
+            <span>RGB 17, 24, 39</span>
+          </div>
+          <div class="color-usage">Headings and primary text</div>
         </div>
-        <div class="color-info">
-          <div class="color-name">Soft Grey</div>
-          <div class="color-hex">#F5F5F5</div>
-          <div class="color-usage">Section backgrounds</div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Text Medium">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #6B7280; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Text Medium</div>
+          <div class="color-codes">
+            <span>HEX #6B7280</span>
+            <span>RGB 107, 114, 128</span>
+          </div>
+          <div class="color-usage">Body text and secondary info</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Background Light">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #F3F4F6; border-bottom: 1px solid rgba(0,0,0,0.05);"></div>
+        <div class="swatch-info">
+          <div class="color-name">Background Light</div>
+          <div class="color-codes">
+            <span>HEX #F3F4F6</span>
+            <span>RGB 243, 244, 246</span>
+          </div>
+          <div class="color-usage">App backgrounds</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Surface White">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #FFFFFF; border-bottom: 1px solid rgba(0,0,0,0.05);"></div>
+        <div class="swatch-info">
+          <div class="color-name">Surface White</div>
+          <div class="color-codes">
+            <span>HEX #FFFFFF</span>
+            <span>RGB 255, 255, 255</span>
+          </div>
+          <div class="color-usage">Card surfaces</div>
         </div>
       </div>
       
     </div>
-  </div>
-  
-  <div class="tab-content" id="typography-tab">
-    <h3>Typography</h3>
-    <p>A typographic combination designed for extreme legibility on small mobile screens.</p>
-    
-    <div class="typography-showcase">
-      
-      <div class="font-family primary-font">
-        <div class="font-header">
-          <div class="font-name">Roboto</div>
-          <div class="font-category">San Serif UI</div>
-        </div>
-        <div class="font-details">
-          <div class="font-weights">400, 500, 700</div>
-          <div class="font-usage">Main interface font</div>
-        </div>
-        <div class="font-sample">
-          
-          <div class="sample-xl">Title</div>
-          <div class="sample-large">Body</div>
-          <div class="sample-medium">Caption</div>
-          <div class="sample-body">: </div>
-          <div class="sample-small">: </div>
-          
-        </div>
-      </div>
-      
-    </div>
-    
-    <div class="font-sizes">
-      <h4>Font Sizes</h4>
-      <div class="font-size-grid">
-        
-        <div class="font-size-item">
-          <div class="font-size-name">Title</div>
-          <div class="font-size-value">24px</div>
-          <div class="font-size-usage">Main headings</div>
-        </div>
-        
-        <div class="font-size-item">
-          <div class="font-size-name">Body</div>
-          <div class="font-size-value">16px</div>
-          <div class="font-size-usage">Reading text</div>
-        </div>
-        
-        <div class="font-size-item">
-          <div class="font-size-name">Caption</div>
-          <div class="font-size-value">12px</div>
-          <div class="font-size-usage">Metadata and dates</div>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-  
-  <div class="tab-content" id="components-tab">
-    <h3>Components</h3>
-    <p>Modular elements designed for fast and secure transactions.</p>
-    
-    <div class="component-library">
-      
-      <div class="component-category">
-        <div class="category-name">Input</div>
-        <div class="component-list">
-          
-          <div class="component-tag">Numerical fields</div>
-          
-          <div class="component-tag">Bank selectors</div>
-          
-          <div class="component-tag">Card scanner</div>
-          
-        </div>
-      </div>
-      
-      <div class="component-category">
-        <div class="category-name">Action</div>
-        <div class="component-list">
-          
-          <div class="component-tag">Payment buttons</div>
-          
-          <div class="component-tag">Security toggle</div>
-          
-          <div class="component-tag">Biometric confirmation</div>
-          
-        </div>
-      </div>
-      
-    </div>
-  </div>
-  
-  
-  
+  </section>
 
-  <div class="tab-content" id="buttons-tab">
-    <h3>Buttons</h3>
-    <p>Button styles optimized for touch interaction on mobile devices.</p>
-    
-    <div class="buttons-showcase">
-      <div class="button-group">
-        
-        <button class="wallet-btn wallet-btn-primary">Primary</button>
-        
-        <button class="wallet-btn wallet-btn-secondary">Secondary</button>
-        
-        <button class="wallet-btn wallet-btn-text">Text</button>
-        
-      </div>
-      
-      <div class="button-states">
-        
-        <button class="wallet-btn wallet-btn-primary">Default</button>
-        
-        <button class="wallet-btn wallet-btn-primary wallet-pressed">Pressed</button>
-        
-        <button class="wallet-btn wallet-btn-primary wallet-loading">Loading</button>
-        
-        <button class="wallet-btn wallet-btn-primary wallet-disabled">Disabled</button>
-        
-      </div>
+  <!-- 2. Typography -->
+  <section class="board-section">
+    <div class="section-header">
+      <h3>Typography</h3>
+      <p>Primary Typeface: <strong>Roboto</strong> (San Serif UI)</p>
     </div>
-  </div>
-  
-  <div class="tab-content" id="forms-tab">
-    <h3>Forms</h3>
-    <p>Inputs optimized for rapid entry of amounts and banking details.</p>
-    
-    <div class="forms-showcase">
+
+    <div class="typography-grid">
       
-      <div class="form-group">
-        
-        <label for="demo-input">Amount</label>
-        <input type="text" id="demo-input" class="wallet-input" placeholder="Enter text here">
-        
-      </div>
-      
-      <div class="form-group">
-        
-        <label for="demo-select">Bank Selector</label>
-        <select id="demo-select" class="wallet-select">
-          <option>Option 1</option>
-          <option>Option 2</option>
-          <option>Option 3</option>
-        </select>
-        
-      </div>
-      
-    </div>
-  </div>
-  
-  <div class="tab-content" id="cards-tab">
-    <h3>Cards</h3>
-    <p>Easy-to-read financial summaries.</p>
-    
-    <div class="cards-showcase">
-      <div class="wallet-card">
-        <div class="wallet-card-header">
-          <h4>Balance</h4>
+      <div class="type-specimen">
+        <div class="type-label">
+          <strong>Title</strong>
+          <span>24px / 400</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Main headings</span>
         </div>
-        <div class="wallet-card-body">
-          <p>$1,250.00</p>
-        </div>
-        <div class="wallet-card-footer">
-          <button class="wallet-btn wallet-btn-text">See details</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="tab-content" id="badges-tab">
-    <h3>Badges</h3>
-    <p>Transaction statuses and account levels.</p>
-    
-    <div class="badges-showcase">
-      
-      <span class="wallet-badge-success">Completed</span>
-      
-      <span class="wallet-badge-info">Processing</span>
-      
-      <span class="wallet-badge-error">Rejected</span>
-      
-    </div>
-  </div>
-  
-  <div class="tab-content" id="navigation-tab">
-    <h3>Navigation</h3>
-    <p>Intuitive mobile structure based on tabs.</p>
-    
-    <div class="navigation-showcase">
-      <div class="wallet-nav-sample">
-        <div class="wallet-tabs">
-          
-          <button class="wallet-tab active">Home</button>
-          
-          <button class="wallet-tab">Payments</button>
-          
-          <button class="wallet-tab">Savings</button>
-          
-          <button class="wallet-tab">Profile</button>
-          
+        <div class="type-sample" style="font-size: 24px; font-weight: 400;">
+          The quick brown fox jumps over the lazy dog
         </div>
       </div>
       
-      <div class="wallet-breadcrumbs">
-        
-        <span>Home</span>
-        
-        <span class="wallet-breadcrumb-separator">›</span>
-        
-        
-        <span>My Wallet</span>
-        
-        <span class="wallet-breadcrumb-separator">›</span>
-        
-        
-        <span>Transfer</span>
-        
-        
-      </div>
-    </div>
-  </div>
-  
-  <div class="tab-content" id="messages-tab">
-    <h3>Messages</h3>
-    <p>Visual feedback to confirm financial operations.</p>
-    
-    <div class="messages-showcase">
-      
-      <div class="wallet-alert wallet-alert-success">
-        <div class="wallet-alert-icon">✓</div>
-        <div class="wallet-alert-content">Payment successful</div>
+      <div class="type-specimen">
+        <div class="type-label">
+          <strong>Body</strong>
+          <span>16px / 400</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Reading text</span>
+        </div>
+        <div class="type-sample" style="font-size: 16px; font-weight: 400;">
+          The quick brown fox jumps over the lazy dog
+        </div>
       </div>
       
-      <div class="wallet-alert wallet-alert-error">
-        <div class="wallet-alert-icon">!</div>
-        <div class="wallet-alert-content">Insufficient funds</div>
+      <div class="type-specimen">
+        <div class="type-label">
+          <strong>Caption</strong>
+          <span>12px / 400</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Metadata and dates</span>
+        </div>
+        <div class="type-sample" style="font-size: 12px; font-weight: 400;">
+          The quick brown fox jumps over the lazy dog
+        </div>
       </div>
       
     </div>
-  </div>
+  </section>
+
+  <!-- 3. UI Components -->
+  <section class="board-section">
+    <div class="section-header">
+      <h3>UI Components</h3>
+      <p>Interactive elements utilizing the design tokens (Colors, Typography, Border Radius).</p>
+    </div>
+
+    <div class="ui-grid">
+      
+      <!-- Buttons -->
+      <div class="ui-group">
+        <h4>Buttons</h4>
+        <div class="button-states">
+          
+          <div class="state-row">
+            <span class="state-label">Default</span>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+              <button class="btn-primary">Primary Action</button>
+              <button class="btn-secondary">Secondary Action</button>
+              <button class="btn-ghost">Ghost</button>
+            </div>
+          </div>
+          
+          <div class="state-row">
+            <span class="state-label">Hover (simulated)</span>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+              <button class="btn-primary hover">Primary Action</button>
+              <button class="btn-secondary hover">Secondary Action</button>
+              <button class="btn-ghost hover">Ghost</button>
+            </div>
+          </div>
+          
+          <div class="state-row">
+            <span class="state-label">Active (simulated)</span>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+              <button class="btn-primary active">Primary Action</button>
+              <button class="btn-secondary active">Secondary Action</button>
+              <button class="btn-ghost active">Ghost</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Forms -->
+      <div class="ui-group">
+        <h4>Form Inputs</h4>
+        <div class="form-states">
+          
+          <div class="input-group">
+            <label>Default State</label>
+            <input type="text" placeholder="Enter your email address">
+          </div>
+          
+          <div class="input-group">
+            <label>Focus State (simulated)</label>
+            <input type="text" class="focus" placeholder="typing..." value="user@example.com">
+          </div>
+          
+          <div class="input-group">
+            <label>Error State (simulated)</label>
+            <input type="text" class="error" placeholder="" value="invalid-email">
+            <span style="color: #ef4444; font-size: 0.8rem; margin-top: 0.25rem;">Please enter a valid email address.</span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
 </div>
-
 
       
 
