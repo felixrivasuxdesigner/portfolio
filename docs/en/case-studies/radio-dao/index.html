@@ -241,22 +241,22 @@
         
         
           <div class="design-board-wrapper" style="
-  --theme-primary: #E65100;
-  --theme-secondary: #1A237E;
-  --theme-gray-dark: #111827;
-  --theme-gray-medium: #6B7280;
-  --theme-gray-light: #F3F4F6;
-  --theme-gray-white: #FFFFFF;
-  --theme-font-primary: 'Montserrat', sans-serif;
+  --theme-primary: #F1619B;
+  --theme-secondary: #E9ECEF;
+  --theme-gray-dark: ;
+  --theme-gray-medium: ;
+  --theme-gray-light: ;
+  --theme-gray-white: ;
+  --theme-font-primary: 'System Default (React Native)', sans-serif;
   --theme-radius: 8px;
   --theme-button-radius: 100px;
-  --theme-input-radius: 6px;
+  --theme-input-radius: 8px;
 ">
 
   <div class="board-header" style="text-align: center; margin-bottom: 3rem;">
     <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;">Radio DAO Design System</h2>
     <p style="font-size: 1.1rem; color: var(--theme-gray-medium); max-width: 600px; margin: 0 auto; line-height: 1.6;">
-      A vibrant and community-driven visual language designed to empower local radio stations in the Web3 ecosystem.
+      A vibrant, community-driven visual language with glassmorphism, designed to empower local radio stations in the Web3 ecosystem. Mobile-first, built on React Native.
     </p>
   </div>
 
@@ -272,12 +272,12 @@
       <div class="color-swatch-card" aria-label="Primary Color">
         <div class="swatch-color" style="background-color: var(--theme-primary);"></div>
         <div class="swatch-info">
-          <div class="color-name">Brick Orange</div>
+          <div class="color-name">Pink</div>
           <div class="color-codes">
-            <span>HEX #E65100</span>
-            <span>RGB 230, 81, 0</span>
+            <span>HEX #F1619B</span>
+            <span>RGB 241, 97, 155</span>
           </div>
-          <div class="color-usage">The brand's soul, warmth, and community energy</div>
+          <div class="color-usage">Primary brand color. Play button, CTAs and primary action elements</div>
         </div>
       </div>
 
@@ -285,66 +285,105 @@
       <div class="color-swatch-card" aria-label="Secondary Color">
         <div class="swatch-color" style="background-color: var(--theme-secondary);"></div>
         <div class="swatch-info">
-          <div class="color-name">Night Blue</div>
+          <div class="color-name">Light Grey</div>
           <div class="color-codes">
-            <span>HEX #1A237E</span>
-            <span>RGB 26, 35, 126</span>
+            <span>HEX #E9ECEF</span>
+            <span>RGB 233, 236, 239</span>
           </div>
-          <div class="color-usage">Depth, trust, and powerful visual contrast</div>
+          <div class="color-usage">Secondary buttons, UI backgrounds and supporting surfaces</div>
         </div>
       </div>
       
       <!-- Grayscale (Loop over grayscale obj) -->
       
-      <div class="color-swatch-card" aria-label="Text Dark">
+      <div class="color-swatch-card" aria-label="Gold">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #111827; "></div>
+        <div class="swatch-color" style="background-color: #FFC809; "></div>
         <div class="swatch-info">
-          <div class="color-name">Text Dark</div>
+          <div class="color-name">Gold</div>
           <div class="color-codes">
-            <span>HEX #111827</span>
-            <span>RGB 17, 24, 39</span>
+            <span>HEX #FFC809</span>
+            <span>RGB 255, 200, 9</span>
           </div>
-          <div class="color-usage">Headings and primary text</div>
+          <div class="color-usage">Brand accent. Artwork border, highlights and premium elements</div>
         </div>
       </div>
       
-      <div class="color-swatch-card" aria-label="Text Medium">
+      <div class="color-swatch-card" aria-label="Background">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #6B7280; "></div>
+        <div class="swatch-color" style="background-color: #F8F9FA; "></div>
         <div class="swatch-info">
-          <div class="color-name">Text Medium</div>
+          <div class="color-name">Background</div>
           <div class="color-codes">
-            <span>HEX #6B7280</span>
-            <span>RGB 107, 114, 128</span>
+            <span>HEX #F8F9FA</span>
+            <span>RGB 248, 249, 250</span>
           </div>
-          <div class="color-usage">Body text and secondary info</div>
+          <div class="color-usage">General app background (Light Mode)</div>
         </div>
       </div>
       
-      <div class="color-swatch-card" aria-label="Background Light">
+      <div class="color-swatch-card" aria-label="Card">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #F3F4F6; border-bottom: 1px solid rgba(0,0,0,0.05);"></div>
+        <div class="swatch-color" style="background-color: #FFFFFF; "></div>
         <div class="swatch-info">
-          <div class="color-name">Background Light</div>
-          <div class="color-codes">
-            <span>HEX #F3F4F6</span>
-            <span>RGB 243, 244, 246</span>
-          </div>
-          <div class="color-usage">App backgrounds</div>
-        </div>
-      </div>
-      
-      <div class="color-swatch-card" aria-label="Surface White">
-        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #FFFFFF; border-bottom: 1px solid rgba(0,0,0,0.05);"></div>
-        <div class="swatch-info">
-          <div class="color-name">Surface White</div>
+          <div class="color-name">Card</div>
           <div class="color-codes">
             <span>HEX #FFFFFF</span>
             <span>RGB 255, 255, 255</span>
           </div>
-          <div class="color-usage">Card surfaces</div>
+          <div class="color-usage">Card and modal surfaces</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Text">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #212529; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Text</div>
+          <div class="color-codes">
+            <span>HEX #212529</span>
+            <span>RGB 33, 37, 41</span>
+          </div>
+          <div class="color-usage">Primary text, headings and high-priority content</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Text Muted">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #6C757D; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Text Muted</div>
+          <div class="color-codes">
+            <span>HEX #6C757D</span>
+            <span>RGB 108, 117, 125</span>
+          </div>
+          <div class="color-usage">Metadata, subtitles and secondary text</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Success">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #4CAF50; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Success</div>
+          <div class="color-codes">
+            <span>HEX #4CAF50</span>
+            <span>RGB 76, 175, 80</span>
+          </div>
+          <div class="color-usage">Confirmations, active states and established Web3 connections</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Error">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #F44336; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Error</div>
+          <div class="color-codes">
+            <span>HEX #F44336</span>
+            <span>RGB 244, 67, 54</span>
+          </div>
+          <div class="color-usage">Stream errors, failed transactions and critical states</div>
         </div>
       </div>
       
@@ -355,51 +394,51 @@
   <section class="board-section">
     <div class="section-header">
       <h3>Typography</h3>
-      <p>Primary Typeface: <strong>Montserrat</strong> (Headers and Branding)</p>
+      <p>Primary Typeface: <strong>System Default (React Native)</strong> (App native UI (iOS/Android))</p>
     </div>
 
     <div class="typography-grid">
       
       <div class="type-specimen">
         <div class="type-label">
-          <strong>Hero Title</strong>
-          <span>48px/56px / 400</span>
-          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">High impact messages on landing pages</span>
+          <strong>H1</strong>
+          <span>32px / 900</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Screen titles and station names</span>
         </div>
-        <div class="type-sample" style="font-size: 48px/56px; font-weight: 400;">
+        <div class="type-sample" style="font-size: 32px; font-weight: 900;">
           The quick brown fox jumps over the lazy dog
         </div>
       </div>
       
       <div class="type-specimen">
         <div class="type-label">
-          <strong>Section Header</strong>
-          <span>28px/36px / 400</span>
-          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Main section titles</span>
+          <strong>H2</strong>
+          <span>24px / 800</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Section subtitles and track names</span>
         </div>
-        <div class="type-sample" style="font-size: 28px/36px; font-weight: 400;">
+        <div class="type-sample" style="font-size: 24px; font-weight: 800;">
           The quick brown fox jumps over the lazy dog
         </div>
       </div>
       
       <div class="type-specimen">
         <div class="type-label">
-          <strong>Body Text</strong>
-          <span>18px/28px / 400</span>
-          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Comfortable reading for articles and descriptions</span>
+          <strong>Body</strong>
+          <span>16px / 500</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">General content, descriptions and lists</span>
         </div>
-        <div class="type-sample" style="font-size: 18px/28px; font-weight: 400;">
+        <div class="type-sample" style="font-size: 16px; font-weight: 500;">
           The quick brown fox jumps over the lazy dog
         </div>
       </div>
       
       <div class="type-specimen">
         <div class="type-label">
-          <strong>Mono Label</strong>
-          <span>14px/20px / 400</span>
-          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Data labels and technical values</span>
+          <strong>Caption</strong>
+          <span>12px / 400</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Timestamps, metadata and DAO labels</span>
         </div>
-        <div class="type-sample" style="font-size: 14px/20px; font-weight: 400;">
+        <div class="type-sample" style="font-size: 12px; font-weight: 400;">
           The quick brown fox jumps over the lazy dog
         </div>
       </div>

@@ -1,89 +1,107 @@
 {
   "title": "Sistema de Diseño Radio DAO",
-  "intro": "Un lenguaje visual vibrante y comunitario diseñado para empoderar a las radioemisoras locales en el ecosistema Web3.",
+  "intro": "Un lenguaje visual vibrante y comunitario con glassmorphism, diseñado para empoderar a las radioemisoras locales en el ecosistema Web3. Mobile-first, construido en React Native.",
   "tokens": {
     "colors": {
       "primary": {
-        "name": "Naranja Ladrillo",
-        "hex": "#E65100",
-        "rgb": "230, 81, 0",
-        "usage": "El alma de la marca, calidez y energía comunitaria"
+        "name": "Pink",
+        "hex": "#F1619B",
+        "rgb": "241, 97, 155",
+        "usage": "Color de marca principal. Botón de Play, CTAs y elementos de acción primaria"
       },
       "secondary": {
-        "name": "Azul Noche",
-        "hex": "#1A237E",
-        "rgb": "26, 35, 126",
-        "usage": "Profundidad, confianza y contraste visual potente"
+        "name": "Light Grey",
+        "hex": "#E9ECEF",
+        "rgb": "233, 236, 239",
+        "usage": "Botones secundarios, fondos de UI y superficies de soporte"
       },
       "grayscale": {
-        "dark": {
-          "name": "Text Dark",
-          "hex": "#111827",
-          "rgb": "17, 24, 39",
-          "usage": "Headings and primary text"
+        "gold": {
+          "name": "Gold",
+          "hex": "#FFC809",
+          "rgb": "255, 200, 9",
+          "usage": "Acento de marca. Borde de artwork, highlights y elementos premium"
         },
-        "medium": {
-          "name": "Text Medium",
-          "hex": "#6B7280",
-          "rgb": "107, 114, 128",
-          "usage": "Body text and secondary info"
+        "background": {
+          "name": "Background",
+          "hex": "#F8F9FA",
+          "rgb": "248, 249, 250",
+          "usage": "Fondo general de la app (Light Mode)"
         },
-        "light": {
-          "name": "Background Light",
-          "hex": "#F3F4F6",
-          "rgb": "243, 244, 246",
-          "usage": "App backgrounds"
-        },
-        "white": {
-          "name": "Surface White",
+        "card": {
+          "name": "Card",
           "hex": "#FFFFFF",
           "rgb": "255, 255, 255",
-          "usage": "Card surfaces"
+          "usage": "Superficies de tarjetas y modales"
+        },
+        "text": {
+          "name": "Text",
+          "hex": "#212529",
+          "rgb": "33, 37, 41",
+          "usage": "Texto principal, headings y contenido de alta prioridad"
+        },
+        "textMuted": {
+          "name": "Text Muted",
+          "hex": "#6C757D",
+          "rgb": "108, 117, 125",
+          "usage": "Metadatos, subtítulos y texto secundario"
+        },
+        "success": {
+          "name": "Success",
+          "hex": "#4CAF50",
+          "rgb": "76, 175, 80",
+          "usage": "Confirmaciones, estados activos y conexión Web3 establecida"
+        },
+        "error": {
+          "name": "Error",
+          "hex": "#F44336",
+          "rgb": "244, 67, 54",
+          "usage": "Errores de stream, transacciones fallidas y estados críticos"
         }
       }
     },
     "typography": {
       "primary": {
-        "family": "Montserrat",
+        "family": "System Default (React Native)",
         "weights": [
           400,
           500,
-          600,
-          700
+          800,
+          900
         ],
-        "category": "Encabezados y Marca"
+        "category": "UI nativa de la app (iOS/Android)"
       },
       "hierarchy": [
         {
-          "name": "Hero Title",
-          "size": "48px/56px",
-          "weight": "400",
-          "usage": "Grandes mensajes de impacto en la landing"
+          "name": "H1",
+          "size": "32px",
+          "weight": "900",
+          "usage": "Títulos de pantalla y estaciones"
         },
         {
-          "name": "Section Header",
-          "size": "28px/36px",
-          "weight": "400",
-          "usage": "Títulos de secciones principales"
+          "name": "H2",
+          "size": "24px",
+          "weight": "800",
+          "usage": "Subtítulos de secciones y nombres de tracks"
         },
         {
-          "name": "Body Text",
-          "size": "18px/28px",
-          "weight": "400",
-          "usage": "Lectura cómoda para artículos y descripciones"
+          "name": "Body",
+          "size": "16px",
+          "weight": "500",
+          "usage": "Contenido general, descripciones y listas"
         },
         {
-          "name": "Mono Label",
-          "size": "14px/20px",
+          "name": "Caption",
+          "size": "12px",
           "weight": "400",
-          "usage": "Etiquetas de datos y valores técnicos"
+          "usage": "Timestamps, metadatos y etiquetas de DAO"
         }
       ]
     },
     "shape": {
       "borderRadius": "8px",
       "buttonRadius": "100px",
-      "inputRadius": "6px"
+      "inputRadius": "8px"
     }
   }
 }

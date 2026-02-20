@@ -1,89 +1,107 @@
 {
   "title": "Radio DAO Design System",
-  "intro": "A vibrant and community-driven visual language designed to empower local radio stations in the Web3 ecosystem.",
+  "intro": "A vibrant, community-driven visual language with glassmorphism, designed to empower local radio stations in the Web3 ecosystem. Mobile-first, built on React Native.",
   "tokens": {
     "colors": {
       "primary": {
-        "name": "Brick Orange",
-        "hex": "#E65100",
-        "rgb": "230, 81, 0",
-        "usage": "The brand's soul, warmth, and community energy"
+        "name": "Pink",
+        "hex": "#F1619B",
+        "rgb": "241, 97, 155",
+        "usage": "Primary brand color. Play button, CTAs and primary action elements"
       },
       "secondary": {
-        "name": "Night Blue",
-        "hex": "#1A237E",
-        "rgb": "26, 35, 126",
-        "usage": "Depth, trust, and powerful visual contrast"
+        "name": "Light Grey",
+        "hex": "#E9ECEF",
+        "rgb": "233, 236, 239",
+        "usage": "Secondary buttons, UI backgrounds and supporting surfaces"
       },
       "grayscale": {
-        "dark": {
-          "name": "Text Dark",
-          "hex": "#111827",
-          "rgb": "17, 24, 39",
-          "usage": "Headings and primary text"
+        "gold": {
+          "name": "Gold",
+          "hex": "#FFC809",
+          "rgb": "255, 200, 9",
+          "usage": "Brand accent. Artwork border, highlights and premium elements"
         },
-        "medium": {
-          "name": "Text Medium",
-          "hex": "#6B7280",
-          "rgb": "107, 114, 128",
-          "usage": "Body text and secondary info"
+        "background": {
+          "name": "Background",
+          "hex": "#F8F9FA",
+          "rgb": "248, 249, 250",
+          "usage": "General app background (Light Mode)"
         },
-        "light": {
-          "name": "Background Light",
-          "hex": "#F3F4F6",
-          "rgb": "243, 244, 246",
-          "usage": "App backgrounds"
-        },
-        "white": {
-          "name": "Surface White",
+        "card": {
+          "name": "Card",
           "hex": "#FFFFFF",
           "rgb": "255, 255, 255",
-          "usage": "Card surfaces"
+          "usage": "Card and modal surfaces"
+        },
+        "text": {
+          "name": "Text",
+          "hex": "#212529",
+          "rgb": "33, 37, 41",
+          "usage": "Primary text, headings and high-priority content"
+        },
+        "textMuted": {
+          "name": "Text Muted",
+          "hex": "#6C757D",
+          "rgb": "108, 117, 125",
+          "usage": "Metadata, subtitles and secondary text"
+        },
+        "success": {
+          "name": "Success",
+          "hex": "#4CAF50",
+          "rgb": "76, 175, 80",
+          "usage": "Confirmations, active states and established Web3 connections"
+        },
+        "error": {
+          "name": "Error",
+          "hex": "#F44336",
+          "rgb": "244, 67, 54",
+          "usage": "Stream errors, failed transactions and critical states"
         }
       }
     },
     "typography": {
       "primary": {
-        "family": "Montserrat",
+        "family": "System Default (React Native)",
         "weights": [
           400,
           500,
-          600,
-          700
+          800,
+          900
         ],
-        "category": "Headers and Branding"
+        "category": "App native UI (iOS/Android)"
       },
       "hierarchy": [
         {
-          "name": "Hero Title",
-          "size": "48px/56px",
-          "weight": "400",
-          "usage": "High impact messages on landing pages"
+          "name": "H1",
+          "size": "32px",
+          "weight": "900",
+          "usage": "Screen titles and station names"
         },
         {
-          "name": "Section Header",
-          "size": "28px/36px",
-          "weight": "400",
-          "usage": "Main section titles"
+          "name": "H2",
+          "size": "24px",
+          "weight": "800",
+          "usage": "Section subtitles and track names"
         },
         {
-          "name": "Body Text",
-          "size": "18px/28px",
-          "weight": "400",
-          "usage": "Comfortable reading for articles and descriptions"
+          "name": "Body",
+          "size": "16px",
+          "weight": "500",
+          "usage": "General content, descriptions and lists"
         },
         {
-          "name": "Mono Label",
-          "size": "14px/20px",
+          "name": "Caption",
+          "size": "12px",
           "weight": "400",
-          "usage": "Data labels and technical values"
+          "usage": "Timestamps, metadata and DAO labels"
         }
       ]
     },
     "shape": {
       "borderRadius": "8px",
       "buttonRadius": "100px",
-      "inputRadius": "6px"
+      "inputRadius": "8px"
     }
   }
 }
