@@ -1,44 +1,56 @@
 {
   "title": "IntelliResearch Design System",
-  "intro": "A scalable design system built on principles of clarity and efficiency for AI-driven research tools.",
+  "intro": "A scalable design system built on a Sunset Gradient palette, Apple HIG principles and semantic tokens for AI-powered research tools.",
   "tokens": {
     "colors": {
       "primary": {
-        "name": "Cobalt Blue",
-        "hex": "#0047AB",
-        "rgb": "0, 71, 171",
-        "usage": "Primary color for authority and main actions"
+        "name": "Rose",
+        "hex": "#E65C83",
+        "rgb": "230, 92, 131",
+        "usage": "Primary brand color. CTAs, active states and primary action elements"
       },
       "secondary": {
-        "name": "Electric Cyan",
-        "hex": "#00E5FF",
-        "rgb": "0, 229, 255",
-        "usage": "AI insights and smart highlights"
+        "name": "Coral",
+        "hex": "#FA8575",
+        "rgb": "250, 133, 117",
+        "usage": "Secondary brand color. Hover states, accents and gradient endpoints"
       },
       "grayscale": {
-        "dark": {
-          "name": "Text Dark",
-          "hex": "#111827",
-          "rgb": "17, 24, 39",
-          "usage": "Headings and primary text"
+        "peach": {
+          "name": "Peach",
+          "hex": "#FFB088",
+          "rgb": "255, 176, 136",
+          "usage": "Tertiary brand color. Soft backgrounds and visual support elements"
         },
-        "medium": {
-          "name": "Text Medium",
-          "hex": "#6B7280",
-          "rgb": "107, 114, 128",
-          "usage": "Body text and secondary info"
+        "cream": {
+          "name": "Cream",
+          "hex": "#FFF9E5",
+          "rgb": "255, 249, 229",
+          "usage": "Brand light color. High-contrast surfaces and content areas"
         },
-        "light": {
-          "name": "Background Light",
-          "hex": "#F3F4F6",
-          "rgb": "243, 244, 246",
-          "usage": "App backgrounds"
+        "success": {
+          "name": "Success",
+          "hex": "#34C759",
+          "rgb": "52, 199, 89",
+          "usage": "Validated hypotheses, positive feedback, system success (Apple HIG)"
         },
-        "white": {
-          "name": "Surface White",
-          "hex": "#FFFFFF",
-          "rgb": "255, 255, 255",
-          "usage": "Card surfaces"
+        "warning": {
+          "name": "Warning",
+          "hex": "#FF9500",
+          "rgb": "255, 149, 0",
+          "usage": "Medium pain points, process warnings (Apple HIG)"
+        },
+        "error": {
+          "name": "Error",
+          "hex": "#FF3B30",
+          "rgb": "255, 59, 48",
+          "usage": "Critical pain points, system errors (Apple HIG)"
+        },
+        "info": {
+          "name": "Info",
+          "hex": "#007AFF",
+          "rgb": "0, 122, 255",
+          "usage": "Contextual information, tooltips and guides (Apple HIG)"
         }
       }
     },
@@ -49,41 +61,54 @@
           400,
           500,
           600,
-          700
+          700,
+          900
         ],
-        "category": "Interface and Analysis Text"
+        "category": "Interface, analysis and long-form text"
       },
       "hierarchy": [
         {
-          "name": "Display L",
-          "size": "32px/40px",
-          "weight": "400",
+          "name": "Display 4XL",
+          "size": "40px",
+          "weight": "700",
+          "usage": "Marketing headlines and landing pages"
+        },
+        {
+          "name": "Display 3XL",
+          "size": "32px",
+          "weight": "600",
           "usage": "Main dashboard titles"
         },
         {
-          "name": "Heading M",
-          "size": "24px/32px",
-          "weight": "400",
+          "name": "Heading 2XL",
+          "size": "24px",
+          "weight": "600",
           "usage": "Section titles and summaries"
         },
         {
           "name": "Body Regular",
-          "size": "16px/24px",
+          "size": "16px",
           "weight": "400",
-          "usage": "Main content and detailed analysis"
+          "usage": "Main content and transcriptions"
         },
         {
-          "name": "Caption",
-          "size": "14px/20px",
+          "name": "Caption SM",
+          "size": "14px",
+          "weight": "500",
+          "usage": "Labels, metadata and micro-copy"
+        },
+        {
+          "name": "Caption XS",
+          "size": "12px",
           "weight": "400",
-          "usage": "Labels, metadata, and micro-copy"
+          "usage": "Timestamps, hints and auxiliary text"
         }
       ]
     },
     "shape": {
       "borderRadius": "8px",
-      "buttonRadius": "100px",
-      "inputRadius": "6px"
+      "buttonRadius": "9999px",
+      "inputRadius": "8px"
     }
   }
 }

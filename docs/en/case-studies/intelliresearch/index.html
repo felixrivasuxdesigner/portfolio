@@ -241,22 +241,22 @@
         
         
           <div class="design-board-wrapper" style="
-  --theme-primary: #0047AB;
-  --theme-secondary: #00E5FF;
-  --theme-gray-dark: #111827;
-  --theme-gray-medium: #6B7280;
-  --theme-gray-light: #F3F4F6;
-  --theme-gray-white: #FFFFFF;
+  --theme-primary: #E65C83;
+  --theme-secondary: #FA8575;
+  --theme-gray-dark: ;
+  --theme-gray-medium: ;
+  --theme-gray-light: ;
+  --theme-gray-white: ;
   --theme-font-primary: 'Inter', sans-serif;
   --theme-radius: 8px;
-  --theme-button-radius: 100px;
-  --theme-input-radius: 6px;
+  --theme-button-radius: 9999px;
+  --theme-input-radius: 8px;
 ">
 
   <div class="board-header" style="text-align: center; margin-bottom: 3rem;">
     <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;">IntelliResearch Design System</h2>
     <p style="font-size: 1.1rem; color: var(--theme-gray-medium); max-width: 600px; margin: 0 auto; line-height: 1.6;">
-      A scalable design system built on principles of clarity and efficiency for AI-driven research tools.
+      A scalable design system built on a Sunset Gradient palette, Apple HIG principles and semantic tokens for AI-powered research tools.
     </p>
   </div>
 
@@ -272,12 +272,12 @@
       <div class="color-swatch-card" aria-label="Primary Color">
         <div class="swatch-color" style="background-color: var(--theme-primary);"></div>
         <div class="swatch-info">
-          <div class="color-name">Cobalt Blue</div>
+          <div class="color-name">Rose</div>
           <div class="color-codes">
-            <span>HEX #0047AB</span>
-            <span>RGB 0, 71, 171</span>
+            <span>HEX #E65C83</span>
+            <span>RGB 230, 92, 131</span>
           </div>
-          <div class="color-usage">Primary color for authority and main actions</div>
+          <div class="color-usage">Primary brand color. CTAs, active states and primary action elements</div>
         </div>
       </div>
 
@@ -285,66 +285,92 @@
       <div class="color-swatch-card" aria-label="Secondary Color">
         <div class="swatch-color" style="background-color: var(--theme-secondary);"></div>
         <div class="swatch-info">
-          <div class="color-name">Electric Cyan</div>
+          <div class="color-name">Coral</div>
           <div class="color-codes">
-            <span>HEX #00E5FF</span>
-            <span>RGB 0, 229, 255</span>
+            <span>HEX #FA8575</span>
+            <span>RGB 250, 133, 117</span>
           </div>
-          <div class="color-usage">AI insights and smart highlights</div>
+          <div class="color-usage">Secondary brand color. Hover states, accents and gradient endpoints</div>
         </div>
       </div>
       
       <!-- Grayscale (Loop over grayscale obj) -->
       
-      <div class="color-swatch-card" aria-label="Text Dark">
+      <div class="color-swatch-card" aria-label="Peach">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #111827; "></div>
+        <div class="swatch-color" style="background-color: #FFB088; "></div>
         <div class="swatch-info">
-          <div class="color-name">Text Dark</div>
+          <div class="color-name">Peach</div>
           <div class="color-codes">
-            <span>HEX #111827</span>
-            <span>RGB 17, 24, 39</span>
+            <span>HEX #FFB088</span>
+            <span>RGB 255, 176, 136</span>
           </div>
-          <div class="color-usage">Headings and primary text</div>
+          <div class="color-usage">Tertiary brand color. Soft backgrounds and visual support elements</div>
         </div>
       </div>
       
-      <div class="color-swatch-card" aria-label="Text Medium">
+      <div class="color-swatch-card" aria-label="Cream">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #6B7280; "></div>
+        <div class="swatch-color" style="background-color: #FFF9E5; "></div>
         <div class="swatch-info">
-          <div class="color-name">Text Medium</div>
+          <div class="color-name">Cream</div>
           <div class="color-codes">
-            <span>HEX #6B7280</span>
-            <span>RGB 107, 114, 128</span>
+            <span>HEX #FFF9E5</span>
+            <span>RGB 255, 249, 229</span>
           </div>
-          <div class="color-usage">Body text and secondary info</div>
+          <div class="color-usage">Brand light color. High-contrast surfaces and content areas</div>
         </div>
       </div>
       
-      <div class="color-swatch-card" aria-label="Background Light">
+      <div class="color-swatch-card" aria-label="Success">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #F3F4F6; border-bottom: 1px solid rgba(0,0,0,0.05);"></div>
+        <div class="swatch-color" style="background-color: #34C759; "></div>
         <div class="swatch-info">
-          <div class="color-name">Background Light</div>
+          <div class="color-name">Success</div>
           <div class="color-codes">
-            <span>HEX #F3F4F6</span>
-            <span>RGB 243, 244, 246</span>
+            <span>HEX #34C759</span>
+            <span>RGB 52, 199, 89</span>
           </div>
-          <div class="color-usage">App backgrounds</div>
+          <div class="color-usage">Validated hypotheses, positive feedback, system success (Apple HIG)</div>
         </div>
       </div>
       
-      <div class="color-swatch-card" aria-label="Surface White">
+      <div class="color-swatch-card" aria-label="Warning">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #FFFFFF; border-bottom: 1px solid rgba(0,0,0,0.05);"></div>
+        <div class="swatch-color" style="background-color: #FF9500; "></div>
         <div class="swatch-info">
-          <div class="color-name">Surface White</div>
+          <div class="color-name">Warning</div>
           <div class="color-codes">
-            <span>HEX #FFFFFF</span>
-            <span>RGB 255, 255, 255</span>
+            <span>HEX #FF9500</span>
+            <span>RGB 255, 149, 0</span>
           </div>
-          <div class="color-usage">Card surfaces</div>
+          <div class="color-usage">Medium pain points, process warnings (Apple HIG)</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Error">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #FF3B30; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Error</div>
+          <div class="color-codes">
+            <span>HEX #FF3B30</span>
+            <span>RGB 255, 59, 48</span>
+          </div>
+          <div class="color-usage">Critical pain points, system errors (Apple HIG)</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Info">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #007AFF; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Info</div>
+          <div class="color-codes">
+            <span>HEX #007AFF</span>
+            <span>RGB 0, 122, 255</span>
+          </div>
+          <div class="color-usage">Contextual information, tooltips and guides (Apple HIG)</div>
         </div>
       </div>
       
@@ -355,29 +381,40 @@
   <section class="board-section">
     <div class="section-header">
       <h3>Typography</h3>
-      <p>Primary Typeface: <strong>Inter</strong> (Interface and Analysis Text)</p>
+      <p>Primary Typeface: <strong>Inter</strong> (Interface, analysis and long-form text)</p>
     </div>
 
     <div class="typography-grid">
       
       <div class="type-specimen">
         <div class="type-label">
-          <strong>Display L</strong>
-          <span>32px/40px / 400</span>
-          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Main dashboard titles</span>
+          <strong>Display 4XL</strong>
+          <span>40px / 700</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Marketing headlines and landing pages</span>
         </div>
-        <div class="type-sample" style="font-size: 32px/40px; font-weight: 400;">
+        <div class="type-sample" style="font-size: 40px; font-weight: 700;">
           The quick brown fox jumps over the lazy dog
         </div>
       </div>
       
       <div class="type-specimen">
         <div class="type-label">
-          <strong>Heading M</strong>
-          <span>24px/32px / 400</span>
+          <strong>Display 3XL</strong>
+          <span>32px / 600</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Main dashboard titles</span>
+        </div>
+        <div class="type-sample" style="font-size: 32px; font-weight: 600;">
+          The quick brown fox jumps over the lazy dog
+        </div>
+      </div>
+      
+      <div class="type-specimen">
+        <div class="type-label">
+          <strong>Heading 2XL</strong>
+          <span>24px / 600</span>
           <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Section titles and summaries</span>
         </div>
-        <div class="type-sample" style="font-size: 24px/32px; font-weight: 400;">
+        <div class="type-sample" style="font-size: 24px; font-weight: 600;">
           The quick brown fox jumps over the lazy dog
         </div>
       </div>
@@ -385,21 +422,32 @@
       <div class="type-specimen">
         <div class="type-label">
           <strong>Body Regular</strong>
-          <span>16px/24px / 400</span>
-          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Main content and detailed analysis</span>
+          <span>16px / 400</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Main content and transcriptions</span>
         </div>
-        <div class="type-sample" style="font-size: 16px/24px; font-weight: 400;">
+        <div class="type-sample" style="font-size: 16px; font-weight: 400;">
           The quick brown fox jumps over the lazy dog
         </div>
       </div>
       
       <div class="type-specimen">
         <div class="type-label">
-          <strong>Caption</strong>
-          <span>14px/20px / 400</span>
-          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Labels, metadata, and micro-copy</span>
+          <strong>Caption SM</strong>
+          <span>14px / 500</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Labels, metadata and micro-copy</span>
         </div>
-        <div class="type-sample" style="font-size: 14px/20px; font-weight: 400;">
+        <div class="type-sample" style="font-size: 14px; font-weight: 500;">
+          The quick brown fox jumps over the lazy dog
+        </div>
+      </div>
+      
+      <div class="type-specimen">
+        <div class="type-label">
+          <strong>Caption XS</strong>
+          <span>12px / 400</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Timestamps, hints and auxiliary text</span>
+        </div>
+        <div class="type-sample" style="font-size: 12px; font-weight: 400;">
           The quick brown fox jumps over the lazy dog
         </div>
       </div>
