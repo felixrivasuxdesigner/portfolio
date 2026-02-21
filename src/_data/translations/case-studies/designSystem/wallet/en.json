@@ -4,61 +4,56 @@
   "tokens": {
     "colors": {
       "primary": {
-        "name": "Belcorp Pink",
-        "hex": "#E91E63",
-        "rgb": "233, 30, 99",
-        "usage": "Brand color and accents"
+        "name": "Belcorp Purple",
+        "hex": "#722688",
+        "rgb": "114, 38, 136",
+        "usage": "Brand color, active states, main buttons"
       },
       "secondary": {
-        "name": "Deep Blue",
-        "hex": "#1A237E",
-        "rgb": "26, 35, 126",
-        "usage": "Main text and headings"
+        "name": "Basic Normal",
+        "hex": "#485A6B",
+        "rgb": "72, 90, 107",
+        "usage": "Primary text, headings, dark icons"
       },
       "grayscale": {
-        "dark": {
-          "name": "Text Dark",
-          "hex": "#111827",
-          "rgb": "17, 24, 39",
-          "usage": "Headings and primary text"
+        "disable": {
+          "name": "Basic Disable",
+          "hex": "#AEAEB2",
+          "rgb": "174, 174, 178",
+          "usage": "Disabled states, secondary text, borders"
         },
-        "medium": {
-          "name": "Text Medium",
-          "hex": "#6B7280",
-          "rgb": "107, 114, 128",
-          "usage": "Body text and secondary info"
-        },
-        "light": {
+        "background": {
           "name": "Background Light",
           "hex": "#F3F4F6",
           "rgb": "243, 244, 246",
           "usage": "App backgrounds"
         },
         "white": {
-          "name": "Surface White",
+          "name": "Basic White",
           "hex": "#FFFFFF",
           "rgb": "255, 255, 255",
-          "usage": "Card surfaces"
+          "usage": "Card surfaces, inputs"
         }
       }
     },
     "typography": {
       "primary": {
-        "family": "Roboto",
+        "family": "SF Pro Rounded",
         "weights": [
+          300,
           400,
           500,
           600,
           700
         ],
-        "category": "San Serif UI"
+        "category": "Rounded Sans Serif"
       },
       "hierarchy": [
         {
           "name": "Title",
           "size": "24px",
-          "weight": "400",
-          "usage": "Main headings"
+          "weight": "700",
+          "usage": "Main headers"
         },
         {
           "name": "Body",
@@ -68,9 +63,9 @@
         },
         {
           "name": "Caption",
-          "size": "12px",
-          "weight": "400",
-          "usage": "Metadata and dates"
+          "size": "14px",
+          "weight": "300",
+          "usage": "Metadata & labels"
         }
       ]
     },

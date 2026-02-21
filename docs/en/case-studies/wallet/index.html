@@ -241,13 +241,13 @@
         
         
           <div class="design-board-wrapper" style="
-  --theme-primary: #E91E63;
-  --theme-secondary: #1A237E;
-  --theme-gray-dark: #111827;
-  --theme-gray-medium: #6B7280;
-  --theme-gray-light: #F3F4F6;
+  --theme-primary: #722688;
+  --theme-secondary: #485A6B;
+  --theme-gray-dark: ;
+  --theme-gray-medium: ;
+  --theme-gray-light: ;
   --theme-gray-white: #FFFFFF;
-  --theme-font-primary: 'Roboto', sans-serif;
+  --theme-font-primary: 'SF Pro Rounded', sans-serif;
   --theme-radius: 8px;
   --theme-button-radius: 100px;
   --theme-input-radius: 6px;
@@ -272,12 +272,12 @@
       <div class="color-swatch-card" aria-label="Primary Color">
         <div class="swatch-color" style="background-color: var(--theme-primary);"></div>
         <div class="swatch-info">
-          <div class="color-name">Belcorp Pink</div>
+          <div class="color-name">Belcorp Purple</div>
           <div class="color-codes">
-            <span>HEX #E91E63</span>
-            <span>RGB 233, 30, 99</span>
+            <span>HEX #722688</span>
+            <span>RGB 114, 38, 136</span>
           </div>
-          <div class="color-usage">Brand color and accents</div>
+          <div class="color-usage">Brand color, active states, main buttons</div>
         </div>
       </div>
 
@@ -285,46 +285,33 @@
       <div class="color-swatch-card" aria-label="Secondary Color">
         <div class="swatch-color" style="background-color: var(--theme-secondary);"></div>
         <div class="swatch-info">
-          <div class="color-name">Deep Blue</div>
+          <div class="color-name">Basic Normal</div>
           <div class="color-codes">
-            <span>HEX #1A237E</span>
-            <span>RGB 26, 35, 126</span>
+            <span>HEX #485A6B</span>
+            <span>RGB 72, 90, 107</span>
           </div>
-          <div class="color-usage">Main text and headings</div>
+          <div class="color-usage">Primary text, headings, dark icons</div>
         </div>
       </div>
       
       <!-- Grayscale (Loop over grayscale obj) -->
       
-      <div class="color-swatch-card" aria-label="Text Dark">
+      <div class="color-swatch-card" aria-label="Basic Disable">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #111827; "></div>
+        <div class="swatch-color" style="background-color: #AEAEB2; "></div>
         <div class="swatch-info">
-          <div class="color-name">Text Dark</div>
+          <div class="color-name">Basic Disable</div>
           <div class="color-codes">
-            <span>HEX #111827</span>
-            <span>RGB 17, 24, 39</span>
+            <span>HEX #AEAEB2</span>
+            <span>RGB 174, 174, 178</span>
           </div>
-          <div class="color-usage">Headings and primary text</div>
-        </div>
-      </div>
-      
-      <div class="color-swatch-card" aria-label="Text Medium">
-        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #6B7280; "></div>
-        <div class="swatch-info">
-          <div class="color-name">Text Medium</div>
-          <div class="color-codes">
-            <span>HEX #6B7280</span>
-            <span>RGB 107, 114, 128</span>
-          </div>
-          <div class="color-usage">Body text and secondary info</div>
+          <div class="color-usage">Disabled states, secondary text, borders</div>
         </div>
       </div>
       
       <div class="color-swatch-card" aria-label="Background Light">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #F3F4F6; border-bottom: 1px solid rgba(0,0,0,0.05);"></div>
+        <div class="swatch-color" style="background-color: #F3F4F6; "></div>
         <div class="swatch-info">
           <div class="color-name">Background Light</div>
           <div class="color-codes">
@@ -335,16 +322,16 @@
         </div>
       </div>
       
-      <div class="color-swatch-card" aria-label="Surface White">
+      <div class="color-swatch-card" aria-label="Basic White">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
         <div class="swatch-color" style="background-color: #FFFFFF; border-bottom: 1px solid rgba(0,0,0,0.05);"></div>
         <div class="swatch-info">
-          <div class="color-name">Surface White</div>
+          <div class="color-name">Basic White</div>
           <div class="color-codes">
             <span>HEX #FFFFFF</span>
             <span>RGB 255, 255, 255</span>
           </div>
-          <div class="color-usage">Card surfaces</div>
+          <div class="color-usage">Card surfaces, inputs</div>
         </div>
       </div>
       
@@ -355,7 +342,7 @@
   <section class="board-section">
     <div class="section-header">
       <h3>Typography</h3>
-      <p>Primary Typeface: <strong>Roboto</strong> (San Serif UI)</p>
+      <p>Primary Typeface: <strong>SF Pro Rounded</strong> (Rounded Sans Serif)</p>
     </div>
 
     <div class="typography-grid">
@@ -363,10 +350,10 @@
       <div class="type-specimen">
         <div class="type-label">
           <strong>Title</strong>
-          <span>24px / 400</span>
-          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Main headings</span>
+          <span>24px / 700</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Main headers</span>
         </div>
-        <div class="type-sample" style="font-size: 24px; font-weight: 400;">
+        <div class="type-sample" style="font-size: 24px; font-weight: 700;">
           The quick brown fox jumps over the lazy dog
         </div>
       </div>
@@ -385,10 +372,10 @@
       <div class="type-specimen">
         <div class="type-label">
           <strong>Caption</strong>
-          <span>12px / 400</span>
-          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Metadata and dates</span>
+          <span>14px / 300</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Metadata &amp; labels</span>
         </div>
-        <div class="type-sample" style="font-size: 12px; font-weight: 400;">
+        <div class="type-sample" style="font-size: 14px; font-weight: 300;">
           The quick brown fox jumps over the lazy dog
         </div>
       </div>
@@ -556,72 +543,6 @@
       <!-- Markdown/Direct Content -->
       <div class="case-study-markdown">
         
-<div class="case-study-section">
-  <h2>Project Context</h2>
-  <p>Belcorp, a multinational cosmetics company, was looking to improve how their sales representatives managed their finances. The solution was a mobile wallet that simplified financial management and significantly enhanced the user experience.</p>
-</div>
-
-<div class="case-study-section">
-  <h2>Challenge</h2>
-  <p>Sales representatives were facing difficulties managing customer payments, maintaining financial records, and accessing information about their earnings. This resulted in operational inefficiencies and frustration for the users.</p>
-</div>
-
-<div class="case-study-section">
-  <h2>Solution</h2>
-  <p>We developed an intuitive mobile wallet with the following features:</p>
-  <ul>
-    <li>Personalized financial dashboard</li>
-    <li>Real-time payment tracking</li>
-    <li>Simplified transaction management</li>
-    <li>Automatic payment notifications</li>
-    <li>Integration with local banking systems</li>
-  </ul>
-</div>
-
-<div class="case-study-section">
-  <h2>Design Process</h2>
-  <div class="case-study-grid">
-    <div class="case-study-grid-item">
-      <h3>Research</h3>
-      <p>We conducted interviews with over 50 sales representatives to understand their financial needs, pain points, and current workflows.</p>
-      <img loading="lazy" src="/portfolio/assets/img/gallery-img/wallet/research.webp" alt="Research" class="case-study-image">
-    </div>
-    <div class="case-study-grid-item">
-      <h3>UX Design</h3>
-      <p>We created user flows, wireframes, and interactive prototypes based on research findings to ensure a smooth and user-centered experience.</p>
-      <img loading="lazy" src="/portfolio/assets/img/gallery-img/wallet/ux-design.webp" alt="UX Design" class="case-study-image">
-    </div>
-    <div class="case-study-grid-item">
-      <h3>UI Design</h3>
-      <p>We developed a cohesive design system aligned with Belcorp's brand identity, using intuitive and accessible visual elements.</p>
-      <img loading="lazy" src="/portfolio/assets/img/gallery-img/wallet/ui-design.webp" alt="UI Design" class="case-study-image">
-    </div>
-    <div class="case-study-grid-item">
-      <h3>Usability Testing</h3>
-      <p>We conducted multiple rounds of testing with actual users to refine the interface and address usability issues before launch.</p>
-      <img loading="lazy" src="/portfolio/assets/img/gallery-img/wallet/testing.webp" alt="Usability Testing" class="case-study-image">
-    </div>
-  </div>
-</div>
-
-<div class="case-study-section">
-  <h2>Results</h2>
-  <div class="case-study-results">
-    <div class="result-item">
-      <h3>35%</h3>
-      <p>Increase in financial management efficiency</p>
-    </div>
-    <div class="result-item">
-      <h3>42%</h3>
-      <p>Reduction in payment recording errors</p>
-    </div>
-    <div class="result-item">
-      <h3>89%</h3>
-      <p>User satisfaction</p>
-    </div>
-  </div>
-  <p>This mobile wallet solution transformed financial management for Belcorp's sales representatives while driving significant improvements in company efficiency and profitability. The project demonstrates how strategic UX design can address complex business challenges while enhancing end-user quality of life through thoughtful digital experiences.</p>
-</div>
       </div>
     </div>
   </div>

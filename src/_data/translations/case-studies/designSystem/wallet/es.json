@@ -4,60 +4,55 @@
   "tokens": {
     "colors": {
       "primary": {
-        "name": "Rosa Belcorp",
-        "hex": "#E91E63",
-        "rgb": "233, 30, 99",
-        "usage": "Color de marca y acentos"
+        "name": "Belcorp Purple",
+        "hex": "#722688",
+        "rgb": "114, 38, 136",
+        "usage": "Color de marca, estados activos, botones principales"
       },
       "secondary": {
-        "name": "Azul Profundo",
-        "hex": "#1A237E",
-        "rgb": "26, 35, 126",
-        "usage": "Texto principal y encabezados"
+        "name": "Basic Normal",
+        "hex": "#485A6B",
+        "rgb": "72, 90, 107",
+        "usage": "Texto principal, encabezados, iconos oscuros"
       },
       "grayscale": {
-        "dark": {
-          "name": "Text Dark",
-          "hex": "#111827",
-          "rgb": "17, 24, 39",
-          "usage": "Headings and primary text"
+        "disable": {
+          "name": "Basic Disable",
+          "hex": "#AEAEB2",
+          "rgb": "174, 174, 178",
+          "usage": "Estados deshabilitados, texto secundario, bordes"
         },
-        "medium": {
-          "name": "Text Medium",
-          "hex": "#6B7280",
-          "rgb": "107, 114, 128",
-          "usage": "Body text and secondary info"
-        },
-        "light": {
+        "background": {
           "name": "Background Light",
           "hex": "#F3F4F6",
           "rgb": "243, 244, 246",
-          "usage": "App backgrounds"
+          "usage": "Fondos de la app"
         },
         "white": {
-          "name": "Surface White",
+          "name": "Basic White",
           "hex": "#FFFFFF",
           "rgb": "255, 255, 255",
-          "usage": "Card surfaces"
+          "usage": "Superficies de tarjetas, inputs"
         }
       }
     },
     "typography": {
       "primary": {
-        "family": "Roboto",
+        "family": "SF Pro Rounded",
         "weights": [
+          300,
           400,
           500,
           600,
           700
         ],
-        "category": "San Serif UI"
+        "category": "Rounded Sans Serif"
       },
       "hierarchy": [
         {
           "name": "Title",
           "size": "24px",
-          "weight": "400",
+          "weight": "700",
           "usage": "Encabezados principales"
         },
         {
@@ -68,9 +63,9 @@
         },
         {
           "name": "Caption",
-          "size": "12px",
-          "weight": "400",
-          "usage": "Metadatos y fechas"
+          "size": "14px",
+          "weight": "300",
+          "usage": "Metadatos y etiquetas"
         }
       ]
     },
