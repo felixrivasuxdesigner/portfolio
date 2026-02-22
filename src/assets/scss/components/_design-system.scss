@@ -10,7 +10,7 @@
     h2 {
         font-size: 2.25rem;
         margin-bottom: 1.5rem;
-        color: var(--text-color, v.$text-color);
+        color: var(--heading-color, v.$text-color);
 
         &::after {
             content: "";
@@ -25,21 +25,18 @@
 
     .design-system-intro {
         border-left: 4px solid var(--accent-color, v.$accent-color);
-        padding: 1.25rem 1.75rem;
-        margin-bottom: 3rem;
-        background-color: rgba(0, 0, 0, 0.03);
-        border-radius: 0 12px 12px 0;
-
-        [data-theme='dark'] & {
-            background-color: rgba(255, 255, 255, 0.05);
-        }
+        padding: 1rem 1.5rem;
+        margin-bottom: 2rem;
+        // The background color alpha uses a slightly distinct opacity fallback if the CSS variable fails,
+        // but modern CSS natively supports `color-mix` for dynamic opacity if needed.
+        background-color: var(--background-color-alt, rgba(0, 0, 0, 0.03));
+        border-radius: 0 4px 4px 0;
 
         p {
-            margin-bottom: 0;
-            font-size: 1.15rem;
-            line-height: 1.6;
+            margin: 0;
             color: var(--text-color, v.$text-color);
-            opacity: 0.9;
+            font-size: 1.1rem;
+            line-height: 1.6;
         }
     }
 
@@ -82,40 +79,36 @@
             rgba(0, 0, 0, 0) 100%);
 
 
-        .tab-btn {
-            position: relative;
-            background: transparent;
-            border: none;
+        .ds-tab {
             padding: 12px 24px;
-            font-size: 0.95rem;
-            font-weight: 500;
-            color: var(--text-secondary, v.$light-text-color);
+            background: none;
+            border: none;
             cursor: pointer;
-            border-radius: 12px;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            color: var(--text-secondary, v.$light-text-color);
+            font-weight: 500;
+            font-size: 1.05rem;
+            transition: all 0.3s ease;
             white-space: nowrap;
-            z-index: 1;
 
             &:hover {
-                color: var(--text-color, v.$text-color);
-                background-color: rgba(0, 0, 0, 0.03);
-
-                [data-theme='dark'] & {
-                    background-color: rgba(255, 255, 255, 0.05);
-                }
+                color: var(--accent-color, v.$accent-color);
+                background-color: transparent;
             }
 
             &.active {
                 color: var(--accent-color, v.$accent-color);
-                background-color: v.$white;
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
                 font-weight: 600;
-                transform: scale(1.02);
 
-                [data-theme='dark'] & {
-                    background-color: #2a2a2a;
-                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-                    color: v.$accent-color;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    bottom: -1px;
+                    left: 0;
+                    width: 100%;
+                    height: 3px;
+                    background-color: var(--accent-color, v.$accent-color);
+                    border-radius: 3px 3px 0 0;
                 }
             }
         }

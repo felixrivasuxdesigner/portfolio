@@ -3,15 +3,23 @@
 @use 'sass:color';
 
 .case-study.wallet {
-    --wallet-pink: #E91E63;
-    --wallet-blue: #1A237E;
+    // Global overrides for "Living Organism"
+    --primary-color: #722688; // Belcorp Purple
+    --heading-color: var(--primary-color);
+    --accent-color: var(--primary-color);
+    --text-color: #485A6B; // Basic Normal
+    --background-color-alt: #F3F4F6; // Background Light
+
+    // Legacy variables mapped for specific inner components
+    --wallet-primary: var(--primary-color);
+    --wallet-secondary: var(--text-color);
     --wallet-bg: #FFFFFF;
-    --wallet-bg-alt: #F5F5F5;
+    --wallet-bg-alt: var(--background-color-alt);
 
     // Design System showcase overrides
     .design-system-intro {
-        border-left-color: var(--wallet-pink);
-        background-color: rgba(233, 30, 99, 0.03);
+        border-left-color: var(--wallet-primary);
+        background-color: rgba(114, 38, 136, 0.03);
     }
 
     // Buttons
@@ -28,13 +36,13 @@
     }
 
     .wallet-btn-primary {
-        background-color: #E91E63;
+        background-color: var(--wallet-primary);
         color: white;
 
         &:hover {
-            background-color: color.scale(#E91E63, $lightness: -5%);
+            background-color: color.scale(#722688, $lightness: -5%);
             transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(233, 30, 99, 0.3);
+            box-shadow: 0 4px 8px rgba(114, 38, 136, 0.3);
         }
 
         &.pressed {
@@ -44,25 +52,25 @@
     }
 
     .wallet-btn-secondary {
-        background-color: #1A237E;
+        background-color: var(--wallet-secondary);
         color: white;
 
         &:hover {
-            background-color: color.scale(#1A237E, $lightness: 5%);
+            background-color: color.scale(#485A6B, $lightness: 5%);
             transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(26, 35, 126, 0.3);
+            box-shadow: 0 4px 8px rgba(72, 90, 107, 0.3);
         }
     }
 
     .wallet-btn-text {
         background-color: transparent;
-        color: #1A237E;
+        color: var(--wallet-primary);
         box-shadow: none;
         padding: 12px 15px;
 
         &:hover {
-            background-color: rgba(26, 35, 126, 0.05);
-            color: #E91E63;
+            background-color: rgba(114, 38, 136, 0.05);
+            color: color.scale(#722688, $lightness: 10%);
         }
     }
 
@@ -109,14 +117,15 @@
         border: 1px solid #f0f0f0;
 
         h4 {
-            color: #1A237E;
+            color: var(--wallet-secondary);
             margin-bottom: 10px;
         }
 
         p {
             font-size: 1.5rem;
             font-weight: bold;
-            color: #E91E63;
+            color: var(--wallet-primary);
         }
     }
+
 }

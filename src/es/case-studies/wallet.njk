@@ -5,3 +5,17 @@ categories: "#Diseño UX #Diseño UI #Prototipo #Diseño"
 locale: es
 projectKey: wallet
 ---
+
+{% set galleryImages = [
+  { src: "splash.webp", alt: "Pantalla de Inicio" },
+  { src: "home.webp", alt: "Dashboard Principal" },
+  { src: "Detail.webp", alt: "Detalle de Transacción" },
+  { src: "clients.webp", alt: "Lista de Clientes" },
+  { src: "financials.webp", alt: "Resumen Financiero" },
+  { src: "orders.webp", alt: "Gestión de Pedidos" },
+  { src: "receivable.webp", alt: "Cuentas por Cobrar" },
+  { src: "with-order.webp", alt: "Cliente con Pedido" },
+  { src: "traking.webp", alt: "Seguimiento de Pedido" },
+  { src: "Topbar-Small.webp", alt: "Detalle Barra Superior" }
+] %}
+{% include "components/case-studies/prototype-gallery.njk" %}

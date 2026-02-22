@@ -1,113 +1,18 @@
 // Factoring case study styles
 @use '../abstracts/variables' as v;
-@use 'sass:color';
 
 .case-study.factoring {
-    --factoring-primary: #003366;
+    // Global overrides for "Living Organism" theme inheritance
+    --primary-color: #003366;
+    --heading-color: var(--primary-color);
+    --accent-color: var(--primary-color);
+    --text-color: #4A4A4A;
+    --background-color-alt: #F9F9F9;
+
+    // Legacy mappings
+    --factoring-primary: var(--primary-color);
     --factoring-secondary: #C5A059;
-    --factoring-text: #4A4A4A;
+    --factoring-text: var(--text-color);
     --factoring-bg: #FFFFFF;
-    --factoring-bg-alt: #F9F9F9;
-
-    // Design System showcase overrides
-    .design-system-intro {
-        border-left-color: var(--factoring-primary);
-        background-color: rgba(0, 51, 102, 0.03);
-    }
-
-    // Buttons
-    .factoring-btn {
-        font-family: inherit;
-        padding: 10px 24px;
-        border-radius: 4px;
-        font-weight: 500;
-        transition: all 0.3s ease;
-        border: 1px solid transparent;
-        cursor: pointer;
-        display: inline-block;
-    }
-
-    .factoring-btn-primary {
-        background-color: #003366;
-        color: white;
-
-        &:hover {
-            background-color: color.scale(#003366, $lightness: -10%);
-            transform: translateY(-1px);
-        }
-
-        &.hover {
-            background-color: color.scale(#003366, $lightness: -10%);
-        }
-
-        &.active {
-            background-color: color.scale(#003366, $lightness: -20%);
-        }
-    }
-
-    .factoring-btn-secondary {
-        background-color: transparent;
-        border-color: #C5A059;
-        color: #C5A059;
-
-        &:hover {
-            background-color: rgba(197, 160, 89, 0.05);
-            transform: translateY(-1px);
-        }
-
-        &.hover {
-            background-color: rgba(197, 160, 89, 0.05);
-        }
-
-        &.active {
-            background-color: rgba(197, 160, 89, 0.1);
-        }
-    }
-
-    .factoring-btn-text {
-        background-color: transparent;
-        color: #4A4A4A;
-        text-decoration: underline;
-        text-underline-offset: 4px;
-
-        &:hover {
-            color: #003366;
-            background-color: rgba(0, 0, 0, 0.02);
-        }
-    }
-
-    // Badges
-    .factoring-badge-warning {
-        background-color: #FFF3E0;
-        color: #E65100;
-        padding: 4px 12px;
-        border-radius: 12px;
-        font-size: 0.85rem;
-        font-weight: 500;
-    }
-
-    .factoring-badge-success {
-        background-color: #E8F5E9;
-        color: #2E7D32;
-        padding: 4px 12px;
-        border-radius: 12px;
-        font-size: 0.85rem;
-        font-weight: 500;
-    }
-
-    // Forms
-    .factoring-input,
-    .factoring-select {
-        border: 1px solid #E0E0E0;
-        padding: 8px 12px;
-        border-radius: 4px;
-        width: 100%;
-        max-width: 300px;
-
-        &:focus {
-            border-color: #003366;
-            outline: none;
-            box-shadow: 0 0 0 2px rgba(0, 51, 102, 0.1);
-        }
-    }
+    --factoring-bg-alt: var(--background-color-alt);
 }

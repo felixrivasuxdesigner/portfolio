@@ -7,9 +7,10 @@ projectKey: intelliresearch
 ---
 <!-- El contenido se carga desde los archivos de traducción -->
 
-<div class="gallery">
-  <div class="gallery-item"><img src="{{ site.baseUrl }}assets/img/gallery-img/intelliresearch/intelliresearch-mockup-1.png" alt="IntelliResearch Platform - Dashboard de Análisis"></div>
-  <div class="gallery-item"><img src="{{ site.baseUrl }}assets/img/gallery-img/intelliresearch/intelliresearch-mockup-2.png" alt="IntelliResearch Platform - Procesamiento de Entrevistas"></div>
-  <div class="gallery-item"><img src="{{ site.baseUrl }}assets/img/gallery-img/intelliresearch/intelliresearch-mockup-3.png" alt="IntelliResearch Platform - Panel de Insights"></div>
-  <div class="gallery-item"><img src="{{ site.baseUrl }}assets/img/gallery-img/intelliresearch/intelliresearch-mockup-4.png" alt="IntelliResearch Platform - Síntesis y Resultados"></div>
-</div>
+{% set galleryImages = [
+  { src: "intelliresearch-mockup-1.png", alt: "Mockup de la App IntelliResearch 1" },
+  { src: "intelliresearch-mockup-2.png", alt: "Mockup de la App IntelliResearch 2" },
+  { src: "intelliresearch-mockup-3.png", alt: "Mockup de la App IntelliResearch 3" },
+  { src: "intelliresearch-mockup-4.png", alt: "Mockup de la App IntelliResearch 4" }
+] %}
+{% include "components/case-studies/prototype-gallery.njk" %}

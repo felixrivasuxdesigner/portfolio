@@ -6,4 +6,12 @@ locale: en
 projectKey: journeylaw
 ---
 <!-- El contenido se carga desde los archivos de traducción -->
-  
+
+{% set galleryImages = [
+  { src: "Journey-Law-1.png", alt: "JourneyLaw Platform Mockup 1" },
+  { src: "Journey-Law-2.png", alt: "JourneyLaw Platform Mockup 2" },
+  { src: "Journey-Law-3.png", alt: "JourneyLaw Platform Mockup 3" },
+  { src: "Journey-Law-4.png", alt: "JourneyLaw Platform Mockup 4" },
+  { src: "Journey-Law-5.png", alt: "JourneyLaw Platform Mockup 5" }
+] %}
+{% include "components/case-studies/prototype-gallery.njk" %}

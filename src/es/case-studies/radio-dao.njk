@@ -7,12 +7,13 @@ projectKey: radio_dao
 ---
 <!-- El contenido se carga desde los archivos de traducción -->
 
-<div class="gallery">
-  <div class="gallery-item"><img src="{{ site.baseUrl }}assets/img/gallery-img/radio_dao/radio_dao-mockup-1.png" alt="Radio DAO App Mockup"></div>
-  <div class="gallery-item"><img src="{{ site.baseUrl }}assets/img/gallery-img/radio_dao/radio_dao-mockup-2.png" alt="Radio DAO App Mockup"></div>
-  <div class="gallery-item"><img src="{{ site.baseUrl }}assets/img/gallery-img/radio_dao/radio_dao-mockup-3.png" alt="Radio DAO App Mockup"></div>
-  <div class="gallery-item"><img src="{{ site.baseUrl }}assets/img/gallery-img/radio_dao/radio_dao-mockup-4.png" alt="Radio DAO App Mockup"></div>
-  <div class="gallery-item"><img src="{{ site.baseUrl }}assets/img/gallery-img/radio_dao/radio_dao-mockup-5.png" alt="Radio DAO App Mockup"></div>
-  <div class="gallery-item"><img src="{{ site.baseUrl }}assets/img/gallery-img/radio_dao/radio_dao-mockup-6.png" alt="Radio DAO App Mockup"></div>
-  <div class="gallery-item"><img src="{{ site.baseUrl }}assets/img/gallery-img/radio_dao/radio_dao-mockup-7.png" alt="Radio DAO App Mockup"></div>
-</div>
+{% set galleryImages = [
+  { src: "radio_dao-mockup-1.png", alt: "Mockup de la App Radio DAO 1" },
+  { src: "radio_dao-mockup-2.png", alt: "Mockup de la App Radio DAO 2" },
+  { src: "radio_dao-mockup-3.png", alt: "Mockup de la App Radio DAO 3" },
+  { src: "radio_dao-mockup-4.png", alt: "Mockup de la App Radio DAO 4" },
+  { src: "radio_dao-mockup-5.png", alt: "Mockup de la App Radio DAO 5" },
+  { src: "radio_dao-mockup-6.png", alt: "Mockup de la App Radio DAO 6" },
+  { src: "radio_dao-mockup-7.png", alt: "Mockup de la App Radio DAO 7" }
+] %}
+{% include "components/case-studies/prototype-gallery.njk" %}
