@@ -543,6 +543,170 @@
       <!-- Markdown/Direct Content -->
       <div class="case-study-markdown">
         
+
+<!-- Generic Prototype Gallery Component -->
+<div class="case-study-section prototype-gallery-section">
+  <h2>Prototype Gallery</h2>
+  <p>Explore the app's design and flow through these key screens from the interactive prototype.</p>
+  
+  <div class="prototype-gallery">
+    
+    <div class="gallery-item" onclick="openLightbox(0)">
+      <img src="/portfolio/assets/img/gallery-img/wallet/splash.webp" alt="Splash Screen" loading="lazy">
+      <div class="gallery-overlay">
+        <span>View Full Screen</span>
+      </div>
+    </div>
+    
+    <div class="gallery-item" onclick="openLightbox(1)">
+      <img src="/portfolio/assets/img/gallery-img/wallet/home.webp" alt="Home Dashboard" loading="lazy">
+      <div class="gallery-overlay">
+        <span>View Full Screen</span>
+      </div>
+    </div>
+    
+    <div class="gallery-item" onclick="openLightbox(2)">
+      <img src="/portfolio/assets/img/gallery-img/wallet/Detail.webp" alt="Transaction Detail" loading="lazy">
+      <div class="gallery-overlay">
+        <span>View Full Screen</span>
+      </div>
+    </div>
+    
+    <div class="gallery-item" onclick="openLightbox(3)">
+      <img src="/portfolio/assets/img/gallery-img/wallet/clients.webp" alt="Client List" loading="lazy">
+      <div class="gallery-overlay">
+        <span>View Full Screen</span>
+      </div>
+    </div>
+    
+    <div class="gallery-item" onclick="openLightbox(4)">
+      <img src="/portfolio/assets/img/gallery-img/wallet/financials.webp" alt="Financial Overview" loading="lazy">
+      <div class="gallery-overlay">
+        <span>View Full Screen</span>
+      </div>
+    </div>
+    
+    <div class="gallery-item" onclick="openLightbox(5)">
+      <img src="/portfolio/assets/img/gallery-img/wallet/orders.webp" alt="Order Management" loading="lazy">
+      <div class="gallery-overlay">
+        <span>View Full Screen</span>
+      </div>
+    </div>
+    
+    <div class="gallery-item" onclick="openLightbox(6)">
+      <img src="/portfolio/assets/img/gallery-img/wallet/receivable.webp" alt="Accounts Receivable" loading="lazy">
+      <div class="gallery-overlay">
+        <span>View Full Screen</span>
+      </div>
+    </div>
+    
+    <div class="gallery-item" onclick="openLightbox(7)">
+      <img src="/portfolio/assets/img/gallery-img/wallet/with-order.webp" alt="Client with Order" loading="lazy">
+      <div class="gallery-overlay">
+        <span>View Full Screen</span>
+      </div>
+    </div>
+    
+    <div class="gallery-item" onclick="openLightbox(8)">
+      <img src="/portfolio/assets/img/gallery-img/wallet/traking.webp" alt="Order Tracking" loading="lazy">
+      <div class="gallery-overlay">
+        <span>View Full Screen</span>
+      </div>
+    </div>
+    
+    <div class="gallery-item" onclick="openLightbox(9)">
+      <img src="/portfolio/assets/img/gallery-img/wallet/Topbar-Small.webp" alt="Top Bar Detail" loading="lazy">
+      <div class="gallery-overlay">
+        <span>View Full Screen</span>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Lighbox Component -->
+<div id="prototype-lightbox" class="lightbox-modal" onclick="closeLightbox(event)">
+  <span class="lightbox-close" onclick="closeLightbox(event, true)">×</span>
+  <span class="lightbox-nav prev" onclick="navigateLightbox(-1); event.stopPropagation();">❮</span>
+  <img loading="lazy" class="lightbox-content" id="lightbox-img" src="" alt="Full Screen Prototype">
+  <span class="lightbox-nav next" onclick="navigateLightbox(1); event.stopPropagation();">❯</span>
+</div>
+
+<script>
+  // Dynamic images passed from Eleventy frontmatter
+  const galleryImages = [
+    
+    "/portfolio/assets/img/gallery-img/wallet/splash.webp",
+    
+    "/portfolio/assets/img/gallery-img/wallet/home.webp",
+    
+    "/portfolio/assets/img/gallery-img/wallet/Detail.webp",
+    
+    "/portfolio/assets/img/gallery-img/wallet/clients.webp",
+    
+    "/portfolio/assets/img/gallery-img/wallet/financials.webp",
+    
+    "/portfolio/assets/img/gallery-img/wallet/orders.webp",
+    
+    "/portfolio/assets/img/gallery-img/wallet/receivable.webp",
+    
+    "/portfolio/assets/img/gallery-img/wallet/with-order.webp",
+    
+    "/portfolio/assets/img/gallery-img/wallet/traking.webp",
+    
+    "/portfolio/assets/img/gallery-img/wallet/Topbar-Small.webp"
+    
+  ];
+  let currentImageIndex = 0;
+
+  function openLightbox(index) {
+    currentImageIndex = index;
+    const lightbox = document.getElementById('prototype-lightbox');
+    updateLightboxImage();
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden'; 
+  }
+
+  function updateLightboxImage() {
+    const lightboxImg = document.getElementById('lightbox-img');
+    if (galleryImages[currentImageIndex]) {
+      lightboxImg.src = galleryImages[currentImageIndex];
+    }
+  }
+
+  function navigateLightbox(direction) {
+    currentImageIndex = (currentImageIndex + direction + galleryImages.length) % galleryImages.length;
+    updateLightboxImage();
+  }
+
+  function closeLightbox(event, force = false) {
+    if (force || event.target.id === 'prototype-lightbox') {
+      const lightbox = document.getElementById('prototype-lightbox');
+      lightbox.classList.remove('active');
+      document.body.style.overflow = ''; 
+      
+      setTimeout(() => {
+        if (!lightbox.classList.contains('active')) {
+          document.getElementById('lightbox-img').src = '';
+        }
+      }, 300);
+    }
+  }
+  
+  document.addEventListener('keydown', function(event) {
+    const lightbox = document.getElementById('prototype-lightbox');
+    if (lightbox.classList.contains('active')) {
+      if (event.key === "Escape") {
+        closeLightbox(event, true);
+      } else if (event.key === "ArrowLeft") {
+        navigateLightbox(-1);
+      } else if (event.key === "ArrowRight") {
+        navigateLightbox(1);
+      }
+    }
+  });
+</script>
+
       </div>
     </div>
   </div>

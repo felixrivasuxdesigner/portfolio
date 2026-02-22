@@ -1,0 +1,9 @@
+.case-study.intelliresearch {
+    // Global overrides for "Living Organism" theme inheritance
+    --primary-color: #E65C83; // IntelliResearch Rose
+    --heading-color: var(--primary-color);
+    --accent-color: #FFB088; // Peach
+    --link-color: var(--primary-color);
+    --button-bg: var(--primary-color);
+    --button-color: #ffffff;
+}
