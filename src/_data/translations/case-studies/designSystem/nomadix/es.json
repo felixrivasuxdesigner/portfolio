@@ -4,41 +4,77 @@
   "tokens": {
     "colors": {
       "primary": {
-        "name": "Negro",
-        "hex": "#000000",
-        "rgb": "0, 0, 0",
-        "usage": "Color primario para textos y fondos"
+        "name": "Naranja Marca",
+        "hex": "#f16b23",
+        "rgb": "241, 107, 35",
+        "usage": "Color de acento principal para llamados a la acción (CTAs)"
       },
       "secondary": {
-        "name": "Gris",
-        "hex": "#686868",
-        "rgb": "104, 104, 104",
-        "usage": "Elementos neutros y textos secundarios"
+        "name": "Azul Marca",
+        "hex": "#1f5275",
+        "rgb": "31, 82, 117",
+        "usage": "Color secundario de la marca"
       },
       "grayscale": {
         "dark": {
-          "name": "Text Dark",
-          "hex": "#111827",
-          "rgb": "17, 24, 39",
-          "usage": "Headings and primary text"
+          "name": "Negro Marca",
+          "hex": "#000000",
+          "rgb": "0, 0, 0",
+          "usage": "Color principal para textos y fondos profundos"
         },
         "medium": {
-          "name": "Text Medium",
-          "hex": "#6B7280",
-          "rgb": "107, 114, 128",
-          "usage": "Body text and secondary info"
+          "name": "Gris Marca",
+          "hex": "#686868",
+          "rgb": "104, 104, 104",
+          "usage": "Elementos neutros y textos secundarios"
         },
         "light": {
-          "name": "Background Light",
-          "hex": "#F3F4F6",
-          "rgb": "243, 244, 246",
-          "usage": "App backgrounds"
+          "name": "Gris Claro",
+          "hex": "#d1d1d1",
+          "rgb": "209, 209, 209",
+          "usage": "Bordes y divisores"
         },
         "white": {
-          "name": "Surface White",
-          "hex": "#FFFFFF",
+          "name": "Blanco Marca",
+          "hex": "#ffffff",
           "rgb": "255, 255, 255",
-          "usage": "Card surfaces"
+          "usage": "Superficies y textos"
+        },
+        "navy": {
+          "name": "Marino Marca",
+          "hex": "#112a3c",
+          "rgb": "17, 42, 60",
+          "usage": "Color terciario de la marca"
+        },
+        "extra_light": {
+          "name": "Gris Extra Claro",
+          "hex": "#eff1f1",
+          "rgb": "239, 241, 241",
+          "usage": "Paneles de fondo sutiles"
+        },
+        "danger": {
+          "name": "Peligro",
+          "hex": "#ff453a",
+          "rgb": "255, 69, 58",
+          "usage": "Errores y acciones destructivas"
+        },
+        "info": {
+          "name": "Información",
+          "hex": "#0a83ff",
+          "rgb": "10, 131, 255",
+          "usage": "Mensajes informativos"
+        },
+        "warning": {
+          "name": "Advertencia",
+          "hex": "#ff9f0a",
+          "rgb": "255, 159, 10",
+          "usage": "Advertencias y alertas"
+        },
+        "success": {
+          "name": "Éxito",
+          "hex": "#2fd157",
+          "rgb": "47, 209, 87",
+          "usage": "Acciones exitosas"
         }
       }
     },

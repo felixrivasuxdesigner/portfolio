@@ -241,12 +241,12 @@
         
         
           <div class="design-board-wrapper" style="
-  --theme-primary: #000000;
-  --theme-secondary: #686868;
-  --theme-gray-dark: #111827;
-  --theme-gray-medium: #6B7280;
-  --theme-gray-light: #F3F4F6;
-  --theme-gray-white: #FFFFFF;
+  --theme-primary: #f16b23;
+  --theme-secondary: #1f5275;
+  --theme-gray-dark: #000000;
+  --theme-gray-medium: #686868;
+  --theme-gray-light: #d1d1d1;
+  --theme-gray-white: #ffffff;
   --theme-font-primary: 'Open Sans', sans-serif;
   --theme-radius: 8px;
   --theme-button-radius: 100px;
@@ -272,12 +272,12 @@
       <div class="color-swatch-card" aria-label="Primary Color">
         <div class="swatch-color" style="background-color: var(--theme-primary);"></div>
         <div class="swatch-info">
-          <div class="color-name">Negro</div>
+          <div class="color-name">Naranja Marca</div>
           <div class="color-codes">
-            <span>HEX #000000</span>
-            <span>RGB 0, 0, 0</span>
+            <span>HEX #f16b23</span>
+            <span>RGB 241, 107, 35</span>
           </div>
-          <div class="color-usage">Color primario para textos y fondos</div>
+          <div class="color-usage">Color de acento principal para llamados a la acción (CTAs)</div>
         </div>
       </div>
 
@@ -285,7 +285,35 @@
       <div class="color-swatch-card" aria-label="Secondary Color">
         <div class="swatch-color" style="background-color: var(--theme-secondary);"></div>
         <div class="swatch-info">
-          <div class="color-name">Gris</div>
+          <div class="color-name">Azul Marca</div>
+          <div class="color-codes">
+            <span>HEX #1f5275</span>
+            <span>RGB 31, 82, 117</span>
+          </div>
+          <div class="color-usage">Color secundario de la marca</div>
+        </div>
+      </div>
+      
+      <!-- Grayscale (Loop over grayscale obj) -->
+      
+      <div class="color-swatch-card" aria-label="Negro Marca">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #000000; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Negro Marca</div>
+          <div class="color-codes">
+            <span>HEX #000000</span>
+            <span>RGB 0, 0, 0</span>
+          </div>
+          <div class="color-usage">Color principal para textos y fondos profundos</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Gris Marca">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #686868; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Gris Marca</div>
           <div class="color-codes">
             <span>HEX #686868</span>
             <span>RGB 104, 104, 104</span>
@@ -294,57 +322,107 @@
         </div>
       </div>
       
-      <!-- Grayscale (Loop over grayscale obj) -->
-      
-      <div class="color-swatch-card" aria-label="Text Dark">
+      <div class="color-swatch-card" aria-label="Gris Claro">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #111827; "></div>
+        <div class="swatch-color" style="background-color: #d1d1d1; border-bottom: 1px solid rgba(0,0,0,0.05);"></div>
         <div class="swatch-info">
-          <div class="color-name">Text Dark</div>
+          <div class="color-name">Gris Claro</div>
           <div class="color-codes">
-            <span>HEX #111827</span>
-            <span>RGB 17, 24, 39</span>
+            <span>HEX #d1d1d1</span>
+            <span>RGB 209, 209, 209</span>
           </div>
-          <div class="color-usage">Headings and primary text</div>
+          <div class="color-usage">Bordes y divisores</div>
         </div>
       </div>
       
-      <div class="color-swatch-card" aria-label="Text Medium">
+      <div class="color-swatch-card" aria-label="Blanco Marca">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #6B7280; "></div>
+        <div class="swatch-color" style="background-color: #ffffff; border-bottom: 1px solid rgba(0,0,0,0.05);"></div>
         <div class="swatch-info">
-          <div class="color-name">Text Medium</div>
+          <div class="color-name">Blanco Marca</div>
           <div class="color-codes">
-            <span>HEX #6B7280</span>
-            <span>RGB 107, 114, 128</span>
-          </div>
-          <div class="color-usage">Body text and secondary info</div>
-        </div>
-      </div>
-      
-      <div class="color-swatch-card" aria-label="Background Light">
-        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #F3F4F6; border-bottom: 1px solid rgba(0,0,0,0.05);"></div>
-        <div class="swatch-info">
-          <div class="color-name">Background Light</div>
-          <div class="color-codes">
-            <span>HEX #F3F4F6</span>
-            <span>RGB 243, 244, 246</span>
-          </div>
-          <div class="color-usage">App backgrounds</div>
-        </div>
-      </div>
-      
-      <div class="color-swatch-card" aria-label="Surface White">
-        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #FFFFFF; border-bottom: 1px solid rgba(0,0,0,0.05);"></div>
-        <div class="swatch-info">
-          <div class="color-name">Surface White</div>
-          <div class="color-codes">
-            <span>HEX #FFFFFF</span>
+            <span>HEX #ffffff</span>
             <span>RGB 255, 255, 255</span>
           </div>
-          <div class="color-usage">Card surfaces</div>
+          <div class="color-usage">Superficies y textos</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Marino Marca">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #112a3c; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Marino Marca</div>
+          <div class="color-codes">
+            <span>HEX #112a3c</span>
+            <span>RGB 17, 42, 60</span>
+          </div>
+          <div class="color-usage">Color terciario de la marca</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Gris Extra Claro">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #eff1f1; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Gris Extra Claro</div>
+          <div class="color-codes">
+            <span>HEX #eff1f1</span>
+            <span>RGB 239, 241, 241</span>
+          </div>
+          <div class="color-usage">Paneles de fondo sutiles</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Peligro">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #ff453a; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Peligro</div>
+          <div class="color-codes">
+            <span>HEX #ff453a</span>
+            <span>RGB 255, 69, 58</span>
+          </div>
+          <div class="color-usage">Errores y acciones destructivas</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Información">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #0a83ff; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Información</div>
+          <div class="color-codes">
+            <span>HEX #0a83ff</span>
+            <span>RGB 10, 131, 255</span>
+          </div>
+          <div class="color-usage">Mensajes informativos</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Advertencia">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #ff9f0a; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Advertencia</div>
+          <div class="color-codes">
+            <span>HEX #ff9f0a</span>
+            <span>RGB 255, 159, 10</span>
+          </div>
+          <div class="color-usage">Advertencias y alertas</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Éxito">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #2fd157; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Éxito</div>
+          <div class="color-codes">
+            <span>HEX #2fd157</span>
+            <span>RGB 47, 209, 87</span>
+          </div>
+          <div class="color-usage">Acciones exitosas</div>
         </div>
       </div>
       
