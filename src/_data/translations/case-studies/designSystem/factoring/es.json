@@ -1,77 +1,110 @@
 {
-  "title": "Sistema de Diseño",
-  "intro": "El Módulo de Factoring de Security Bank utiliza un lenguaje visual robusto y corporativo, enfocado en la precisión técnica y la eficiencia operativa.",
+  "title": "Design System",
+  "intro": "El Módulo de Factoring de Security Bank utiliza un lenguaje visual corporativo robusto, enfocado en precisión técnica y eficiencia operativa.",
   "tokens": {
     "colors": {
       "primary": {
-        "name": "Azul Security",
-        "hex": "#003366",
-        "rgb": "0, 51, 102",
-        "usage": "Color primario institucional"
+        "name": "Púrpura Oscuro",
+        "hex": "#3C1053",
+        "rgb": "60, 16, 83",
+        "usage": "Header, botones primarios"
       },
       "secondary": {
-        "name": "Dorado",
-        "hex": "#C9A050",
-        "rgb": "201, 160, 80",
-        "usage": "Acentos y estados premium"
+        "name": "Azul Marino",
+        "hex": "#002A61",
+        "rgb": "0, 42, 97",
+        "usage": "Textos de títulos, pie de página"
+      },
+      "accent": {
+        "name": "Verde Lima",
+        "hex": "#96C93D",
+        "rgb": "150, 201, 61",
+        "usage": "Call to Action, \"Conoce más\""
+      },
+      "surfaceLight": {
+        "name": "Fondo Ligero",
+        "hex": "#F4F4F4",
+        "rgb": "244, 244, 244",
+        "usage": "Fondos de sección y tarjetas"
+      },
+      "textBody": {
+        "name": "Texto de Cuerpo",
+        "hex": "#666666",
+        "rgb": "102, 102, 102",
+        "usage": "Texto de lectura general"
       },
       "grayscale": {
         "dark": {
-          "name": "Text Dark",
+          "name": "Texto Oscuro",
           "hex": "#111827",
           "rgb": "17, 24, 39",
-          "usage": "Headings and primary text"
+          "usage": "Títulos y texto primario"
         },
         "medium": {
-          "name": "Text Medium",
-          "hex": "#6B7280",
-          "rgb": "107, 114, 128",
-          "usage": "Body text and secondary info"
+          "name": "Texto Medio",
+          "hex": "#666666",
+          "rgb": "102, 102, 102",
+          "usage": "Texto de lectura general"
         },
         "light": {
-          "name": "Background Light",
-          "hex": "#F3F4F6",
-          "rgb": "243, 244, 246",
-          "usage": "App backgrounds"
+          "name": "Fondo Claro",
+          "hex": "#F4F4F4",
+          "rgb": "244, 244, 244",
+          "usage": "Fondos de app"
         },
         "white": {
-          "name": "Surface White",
+          "name": "Superficie Blanca",
           "hex": "#FFFFFF",
           "rgb": "255, 255, 255",
-          "usage": "Card surfaces"
+          "usage": "Superficies de tarjetas"
         }
       }
     },
     "typography": {
       "primary": {
-        "family": "Montserrat",
+        "family": "System Sans-Serif",
         "weights": [
           400,
           500,
           600,
           700
         ],
-        "category": "San Serif"
+        "category": "Sans Serif"
       },
       "hierarchy": [
         {
-          "name": "Header",
-          "size": "20px",
-          "weight": "400",
-          "usage": "Títulos de tabla"
+          "name": "H1",
+          "size": "32px",
+          "weight": "700",
+          "usage": "Títulos principales"
         },
         {
-          "name": "Data",
-          "size": "14px",
+          "name": "H2",
+          "size": "24px",
+          "weight": "600",
+          "usage": "Subtítulos"
+        },
+        {
+          "name": "Body",
+          "size": "16px",
           "weight": "400",
-          "usage": "Celdas de información"
+          "usage": "Texto de lectura"
         }
       ]
     },
     "shape": {
       "borderRadius": "8px",
-      "buttonRadius": "100px",
+      "buttonRadius": "4px",
       "inputRadius": "6px"
+    },
+    "spacing": {
+      "unit": "8px",
+      "scale": [
+        "8px",
+        "16px",
+        "24px",
+        "32px"
+      ]
     }
   }
 }

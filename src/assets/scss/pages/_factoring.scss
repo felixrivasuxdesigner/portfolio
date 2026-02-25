@@ -2,17 +2,23 @@
 @use '../abstracts/variables' as v;
 
 .case-study.factoring {
-    // Global overrides for "Living Organism" theme inheritance
-    --primary-color: #003366;
-    --heading-color: var(--primary-color);
-    --accent-color: var(--primary-color);
-    --text-color: #4A4A4A;
-    --background-color-alt: #F9F9F9;
+    // Design System Tokens - Dark Purple / Navy Blue / Lime Green
+    --primary-color: #3C1053;      // Púrpura oscuro - Header, botones primarios
+    --secondary-color: #002A61;    // Azul marino - Textos de títulos, pie de página
+    --accent-color: #96C93D;      // Verde lima - Call to Action
+    --surface-light: #F4F4F4;     // Fondos de sección y tarjetas
+    --text-body: #666666;          // Texto de lectura general
+
+    // Semantic mappings
+    --heading-color: var(--secondary-color);
+    --text-color: var(--text-body);
+    --background-color-alt: var(--surface-light);
 
     // Legacy mappings
     --factoring-primary: var(--primary-color);
-    --factoring-secondary: #C5A059;
-    --factoring-text: var(--text-color);
+    --factoring-secondary: var(--secondary-color);
+    --factoring-accent: var(--accent-color);
+    --factoring-text: var(--text-body);
     --factoring-bg: #FFFFFF;
-    --factoring-bg-alt: var(--background-color-alt);
+    --factoring-bg-alt: var(--surface-light);
 }

@@ -241,15 +241,15 @@
         
         
           <div class="design-board-wrapper" style="
-  --theme-primary: #003366;
-  --theme-secondary: #C9A050;
+  --theme-primary: #3C1053;
+  --theme-secondary: #002A61;
   --theme-gray-dark: #111827;
-  --theme-gray-medium: #6B7280;
-  --theme-gray-light: #F3F4F6;
+  --theme-gray-medium: #666666;
+  --theme-gray-light: #F4F4F4;
   --theme-gray-white: #FFFFFF;
-  --theme-font-primary: 'Montserrat', sans-serif;
+  --theme-font-primary: 'System Sans-Serif', sans-serif;
   --theme-radius: 8px;
-  --theme-button-radius: 100px;
+  --theme-button-radius: 4px;
   --theme-input-radius: 6px;
 ">
 
@@ -272,12 +272,12 @@
       <div class="color-swatch-card" aria-label="Primary Color">
         <div class="swatch-color" style="background-color: var(--theme-primary);"></div>
         <div class="swatch-info">
-          <div class="color-name">Security Blue</div>
+          <div class="color-name">Dark Purple</div>
           <div class="color-codes">
-            <span>HEX #003366</span>
-            <span>RGB 0, 51, 102</span>
+            <span>HEX #3C1053</span>
+            <span>RGB 60, 16, 83</span>
           </div>
-          <div class="color-usage">Primary institutional color</div>
+          <div class="color-usage">Header, primary buttons</div>
         </div>
       </div>
 
@@ -285,22 +285,22 @@
       <div class="color-swatch-card" aria-label="Secondary Color">
         <div class="swatch-color" style="background-color: var(--theme-secondary);"></div>
         <div class="swatch-info">
-          <div class="color-name">Gold</div>
+          <div class="color-name">Navy Blue</div>
           <div class="color-codes">
-            <span>HEX #C9A050</span>
-            <span>RGB 201, 160, 80</span>
+            <span>HEX #002A61</span>
+            <span>RGB 0, 42, 97</span>
           </div>
-          <div class="color-usage">Accents and premium states</div>
+          <div class="color-usage">Title texts, footer</div>
         </div>
       </div>
       
       <!-- Grayscale (Loop over grayscale obj) -->
       
-      <div class="color-swatch-card" aria-label="Text Dark">
+      <div class="color-swatch-card" aria-label="Dark Text">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
         <div class="swatch-color" style="background-color: #111827; "></div>
         <div class="swatch-info">
-          <div class="color-name">Text Dark</div>
+          <div class="color-name">Dark Text</div>
           <div class="color-codes">
             <span>HEX #111827</span>
             <span>RGB 17, 24, 39</span>
@@ -309,37 +309,37 @@
         </div>
       </div>
       
-      <div class="color-swatch-card" aria-label="Text Medium">
+      <div class="color-swatch-card" aria-label="Medium Text">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #6B7280; "></div>
+        <div class="swatch-color" style="background-color: #666666; "></div>
         <div class="swatch-info">
-          <div class="color-name">Text Medium</div>
+          <div class="color-name">Medium Text</div>
           <div class="color-codes">
-            <span>HEX #6B7280</span>
-            <span>RGB 107, 114, 128</span>
+            <span>HEX #666666</span>
+            <span>RGB 102, 102, 102</span>
           </div>
-          <div class="color-usage">Body text and secondary info</div>
+          <div class="color-usage">General reading text</div>
         </div>
       </div>
       
-      <div class="color-swatch-card" aria-label="Background Light">
+      <div class="color-swatch-card" aria-label="Light Background">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #F3F4F6; border-bottom: 1px solid rgba(0,0,0,0.05);"></div>
+        <div class="swatch-color" style="background-color: #F4F4F4; border-bottom: 1px solid rgba(0,0,0,0.05);"></div>
         <div class="swatch-info">
-          <div class="color-name">Background Light</div>
+          <div class="color-name">Light Background</div>
           <div class="color-codes">
-            <span>HEX #F3F4F6</span>
-            <span>RGB 243, 244, 246</span>
+            <span>HEX #F4F4F4</span>
+            <span>RGB 244, 244, 244</span>
           </div>
           <div class="color-usage">App backgrounds</div>
         </div>
       </div>
       
-      <div class="color-swatch-card" aria-label="Surface White">
+      <div class="color-swatch-card" aria-label="White Surface">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
         <div class="swatch-color" style="background-color: #FFFFFF; border-bottom: 1px solid rgba(0,0,0,0.05);"></div>
         <div class="swatch-info">
-          <div class="color-name">Surface White</div>
+          <div class="color-name">White Surface</div>
           <div class="color-codes">
             <span>HEX #FFFFFF</span>
             <span>RGB 255, 255, 255</span>
@@ -355,29 +355,40 @@
   <section class="board-section">
     <div class="section-header">
       <h3>Typography</h3>
-      <p>Primary Typeface: <strong>Montserrat</strong> (San Serif)</p>
+      <p>Primary Typeface: <strong>System Sans-Serif</strong> (Sans Serif)</p>
     </div>
 
     <div class="typography-grid">
       
       <div class="type-specimen">
         <div class="type-label">
-          <strong>Header</strong>
-          <span>20px / 400</span>
-          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Table headers</span>
+          <strong>H1</strong>
+          <span>32px / 700</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Main headings</span>
         </div>
-        <div class="type-sample" style="font-size: 20px; font-weight: 400;">
+        <div class="type-sample" style="font-size: 32px; font-weight: 700;">
           The quick brown fox jumps over the lazy dog
         </div>
       </div>
       
       <div class="type-specimen">
         <div class="type-label">
-          <strong>Data</strong>
-          <span>14px / 400</span>
-          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Information cells</span>
+          <strong>H2</strong>
+          <span>24px / 600</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Subheadings</span>
         </div>
-        <div class="type-sample" style="font-size: 14px; font-weight: 400;">
+        <div class="type-sample" style="font-size: 24px; font-weight: 600;">
+          The quick brown fox jumps over the lazy dog
+        </div>
+      </div>
+      
+      <div class="type-specimen">
+        <div class="type-label">
+          <strong>Body</strong>
+          <span>16px / 400</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Reading text</span>
+        </div>
+        <div class="type-sample" style="font-size: 16px; font-weight: 400;">
           The quick brown fox jumps over the lazy dog
         </div>
       </div>
@@ -675,6 +686,98 @@
       <!-- Markdown/Direct Content -->
       <div class="case-study-markdown">
         
+
+<!-- Generic Prototype Gallery Component -->
+<div class="case-study-section prototype-gallery-section">
+  <h2>Prototype Gallery</h2>
+  <p>Explore the app's design and flow through these key screens from the interactive prototype.</p>
+  
+  <div class="prototype-gallery">
+    
+    <div class="gallery-item" onclick="openLightbox(0)">
+      <img src="/portfolio/assets/img/gallery-img/factoring/Aprobancion.webp" alt="Factoring Approval Screen" loading="lazy">
+      <div class="gallery-overlay">
+        <span>View Full Screen</span>
+      </div>
+    </div>
+    
+    <div class="gallery-item" onclick="openLightbox(1)">
+      <img src="/portfolio/assets/img/gallery-img/factoring/PIA.webp" alt="Factoring PIA Screen" loading="lazy">
+      <div class="gallery-overlay">
+        <span>View Full Screen</span>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Lighbox Component -->
+<div id="prototype-lightbox" class="lightbox-modal" onclick="closeLightbox(event)">
+  <span class="lightbox-close" onclick="closeLightbox(event, true)">×</span>
+  <span class="lightbox-nav prev" onclick="navigateLightbox(-1); event.stopPropagation();">❮</span>
+  <img loading="lazy" class="lightbox-content" id="lightbox-img" src="" alt="Full Screen Prototype">
+  <span class="lightbox-nav next" onclick="navigateLightbox(1); event.stopPropagation();">❯</span>
+</div>
+
+<script>
+  // Dynamic images passed from Eleventy frontmatter
+  const galleryImages = [
+    
+    "/portfolio/assets/img/gallery-img/factoring/Aprobancion.webp",
+    
+    "/portfolio/assets/img/gallery-img/factoring/PIA.webp"
+    
+  ];
+  let currentImageIndex = 0;
+
+  function openLightbox(index) {
+    currentImageIndex = index;
+    const lightbox = document.getElementById('prototype-lightbox');
+    updateLightboxImage();
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden'; 
+  }
+
+  function updateLightboxImage() {
+    const lightboxImg = document.getElementById('lightbox-img');
+    if (galleryImages[currentImageIndex]) {
+      lightboxImg.src = galleryImages[currentImageIndex];
+    }
+  }
+
+  function navigateLightbox(direction) {
+    currentImageIndex = (currentImageIndex + direction + galleryImages.length) % galleryImages.length;
+    updateLightboxImage();
+  }
+
+  function closeLightbox(event, force = false) {
+    if (force || event.target.id === 'prototype-lightbox') {
+      const lightbox = document.getElementById('prototype-lightbox');
+      lightbox.classList.remove('active');
+      document.body.style.overflow = ''; 
+      
+      setTimeout(() => {
+        if (!lightbox.classList.contains('active')) {
+          document.getElementById('lightbox-img').src = '';
+        }
+      }, 300);
+    }
+  }
+  
+  document.addEventListener('keydown', function(event) {
+    const lightbox = document.getElementById('prototype-lightbox');
+    if (lightbox.classList.contains('active')) {
+      if (event.key === "Escape") {
+        closeLightbox(event, true);
+      } else if (event.key === "ArrowLeft") {
+        navigateLightbox(-1);
+      } else if (event.key === "ArrowRight") {
+        navigateLightbox(1);
+      }
+    }
+  });
+</script>
+
       </div>
     </div>
   </div>

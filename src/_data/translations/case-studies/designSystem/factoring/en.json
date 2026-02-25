@@ -4,38 +4,56 @@
   "tokens": {
     "colors": {
       "primary": {
-        "name": "Security Blue",
-        "hex": "#003366",
-        "rgb": "0, 51, 102",
-        "usage": "Primary institutional color"
+        "name": "Dark Purple",
+        "hex": "#3C1053",
+        "rgb": "60, 16, 83",
+        "usage": "Header, primary buttons"
       },
       "secondary": {
-        "name": "Gold",
-        "hex": "#C9A050",
-        "rgb": "201, 160, 80",
-        "usage": "Accents and premium states"
+        "name": "Navy Blue",
+        "hex": "#002A61",
+        "rgb": "0, 42, 97",
+        "usage": "Title texts, footer"
+      },
+      "accent": {
+        "name": "Lime Green",
+        "hex": "#96C93D",
+        "rgb": "150, 201, 61",
+        "usage": "Call to Action, \"Learn more\""
+      },
+      "surfaceLight": {
+        "name": "Light Surface",
+        "hex": "#F4F4F4",
+        "rgb": "244, 244, 244",
+        "usage": "Section backgrounds and cards"
+      },
+      "textBody": {
+        "name": "Body Text",
+        "hex": "#666666",
+        "rgb": "102, 102, 102",
+        "usage": "General reading text"
       },
       "grayscale": {
         "dark": {
-          "name": "Text Dark",
+          "name": "Dark Text",
           "hex": "#111827",
           "rgb": "17, 24, 39",
           "usage": "Headings and primary text"
         },
         "medium": {
-          "name": "Text Medium",
-          "hex": "#6B7280",
-          "rgb": "107, 114, 128",
-          "usage": "Body text and secondary info"
+          "name": "Medium Text",
+          "hex": "#666666",
+          "rgb": "102, 102, 102",
+          "usage": "General reading text"
         },
         "light": {
-          "name": "Background Light",
-          "hex": "#F3F4F6",
-          "rgb": "243, 244, 246",
+          "name": "Light Background",
+          "hex": "#F4F4F4",
+          "rgb": "244, 244, 244",
           "usage": "App backgrounds"
         },
         "white": {
-          "name": "Surface White",
+          "name": "White Surface",
           "hex": "#FFFFFF",
           "rgb": "255, 255, 255",
           "usage": "Card surfaces"
@@ -44,34 +62,49 @@
     },
     "typography": {
       "primary": {
-        "family": "Montserrat",
+        "family": "System Sans-Serif",
         "weights": [
           400,
           500,
           600,
           700
         ],
-        "category": "San Serif"
+        "category": "Sans Serif"
       },
       "hierarchy": [
         {
-          "name": "Header",
-          "size": "20px",
-          "weight": "400",
-          "usage": "Table headers"
+          "name": "H1",
+          "size": "32px",
+          "weight": "700",
+          "usage": "Main headings"
         },
         {
-          "name": "Data",
-          "size": "14px",
+          "name": "H2",
+          "size": "24px",
+          "weight": "600",
+          "usage": "Subheadings"
+        },
+        {
+          "name": "Body",
+          "size": "16px",
           "weight": "400",
-          "usage": "Information cells"
+          "usage": "Reading text"
         }
       ]
     },
     "shape": {
       "borderRadius": "8px",
-      "buttonRadius": "100px",
+      "buttonRadius": "4px",
       "inputRadius": "6px"
+    },
+    "spacing": {
+      "unit": "8px",
+      "scale": [
+        "8px",
+        "16px",
+        "24px",
+        "32px"
+      ]
     }
   }
 }
