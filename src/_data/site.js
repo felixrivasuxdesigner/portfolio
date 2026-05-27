@@ -6,7 +6,7 @@
 // Siempre usamos /portfolio/ para mantener coherencia
 const isDevEnvironment = process.env.ELEVENTY_ENV === 'development';
 
-module.exports = {
+export default {
   // URL base del sitio
   url: "https://felixrivasuxdesigner.github.io",
   

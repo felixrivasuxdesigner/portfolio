@@ -1,4 +1,7 @@
-module.exports = {
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
+
+export default {
   es: {
     ...require('./translations/es.json'),
     case_studies: {

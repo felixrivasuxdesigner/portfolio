@@ -1,9 +1,7 @@
-const sass = require('sass');
-const fs = require('fs');
-const path = require('path');
-const { parseHTML } = require('linkedom');
+import path from 'path';
+import { parseHTML } from 'linkedom';
 
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
   // Passthroughs: Copy static assets directly to output
   eleventyConfig.addPassthroughCopy('src/assets/css');
   eleventyConfig.addPassthroughCopy('src/assets/js');
