@@ -23,6 +23,9 @@
   ],
   "author": "Félix Rivas",
   "license": "MIT",
+  "overrides": {
+    "liquidjs": "^10.27.0"
+  },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.0",
     "linkedom": "^0.18.10",
