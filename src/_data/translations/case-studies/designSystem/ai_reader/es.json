@@ -1,0 +1,102 @@
+{
+  "title": "Sistema de Diseño AI Reader (LectorIA)",
+  "intro": "Un entorno lúdico, amigable y libre de estrés con bordes redondeados orgánicos, sombras suaves y tipografía optimizada para lectura infantil. Mobile-first, construido en React Native con NativeWind.",
+  "tokens": {
+    "colors": {
+      "primary": {
+        "name": "Pastel Purple",
+        "hex": "#9F7AEA",
+        "rgb": "159, 122, 234",
+        "usage": "Color de marca primario. Títulos, botones principales e interfaz de la mascota virtual"
+      },
+      "secondary": {
+        "name": "Soft Peach",
+        "hex": "#FBD38D",
+        "rgb": "251, 211, 141",
+        "usage": "Color de acento lúdico. Recompensas, estrellas de progreso e hitos completados"
+      },
+      "grayscale": {
+        "gold": {
+          "name": "Amber Warm",
+          "hex": "#F6AD55",
+          "rgb": "246, 173, 85",
+          "usage": "Palabras en progreso evaluadas durante la lectura en voz alta"
+        },
+        "background": {
+          "name": "Pastel Sky",
+          "hex": "#EBF8FF",
+          "rgb": "235, 248, 255",
+          "usage": "Fondo relajante de la aplicación (evita fatiga visual)"
+        },
+        "card": {
+          "name": "Glass Surface",
+          "hex": "rgba(255, 255, 255, 0.8)",
+          "rgb": "255, 255, 255",
+          "usage": "Superficies de tarjetas con efecto glassmorphism para contener los textos"
+        },
+        "text": {
+          "name": "Charcoal Soft",
+          "hex": "#2D3748",
+          "rgb": "45, 55, 72",
+          "usage": "Texto principal del cuento (optimizado para lectura de niños)"
+        },
+        "textMuted": {
+          "name": "Slate Gray",
+          "hex": "#718096",
+          "rgb": "113, 128, 150",
+          "usage": "Subtítulos, nivel Lexile del texto e instrucciones guiadas por la mascota"
+        },
+        "success": {
+          "name": "Success Green",
+          "hex": "#48BB78",
+          "rgb": "72, 187, 120",
+          "usage": "Palabras pronunciadas correctamente con coincidencia fonética exitosa"
+        },
+        "error": {
+          "name": "Error Rose",
+          "hex": "#F56565",
+          "rgb": "245, 101, 101",
+          "usage": "Intentos fallidos de micrófono o errores del sistema (diseñados sin penalizaciones visuales intimidantes)"
+        }
+      }
+    },
+    "typography": {
+      "primary": {
+        "family": "Literata (Serif) & Outfit (Sans-Serif)",
+        "weights": [400, 500, 700],
+        "category": "Mobile App Infantil (iOS/Android)"
+      },
+      "hierarchy": [
+        {
+          "name": "Story Heading",
+          "size": "26px",
+          "weight": "700",
+          "usage": "Título del cuento o del capítulo actual"
+        },
+        {
+          "name": "Reading Body",
+          "size": "22px",
+          "weight": "400",
+          "usage": "Texto principal de lectura (Literata, espaciado amplio de 1.8 para niños)"
+        },
+        {
+          "name": "Button Label",
+          "size": "16px",
+          "weight": "700",
+          "usage": "Textos en botones interactivos (\"Siguiente Página\", \"Grabar\")"
+        },
+        {
+          "name": "Lexile Level",
+          "size": "14px",
+          "weight": "500",
+          "usage": "Indicador de nivel Lexile y métricas del tutor"
+        }
+      ]
+    },
+    "shape": {
+      "borderRadius": "20px",
+      "buttonRadius": "100px",
+      "inputRadius": "12px"
+    }
+  }
+}

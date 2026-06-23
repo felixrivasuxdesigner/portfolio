@@ -1,0 +1,102 @@
+{
+  "title": "FIFA Predictor Design System",
+  "intro": "A sports-oriented and competitive visual language with an immersive dark mode, modern typography, and vibrant accents to simulate the stadium environment.",
+  "tokens": {
+    "colors": {
+      "primary": {
+        "name": "Indigo",
+        "hex": "#4F46E5",
+        "rgb": "79, 70, 229",
+        "usage": "Primary brand color. Headers, key navigation accents, and main buttons"
+      },
+      "secondary": {
+        "name": "Neon Green",
+        "hex": "#22C55E",
+        "rgb": "34, 197, 94",
+        "usage": "Competitive accent color. Accurate score predictions, status check indicators, and active CTAs"
+      },
+      "grayscale": {
+        "gold": {
+          "name": "Gold",
+          "hex": "#F59E0B",
+          "rgb": "245, 158, 11",
+          "usage": "Leader highlight in the leaderboard and trophy rewards"
+        },
+        "background": {
+          "name": "Slate Background",
+          "hex": "#0F172A",
+          "rgb": "15, 23, 42",
+          "usage": "General dashboard background (Dark Mode)"
+        },
+        "card": {
+          "name": "Card Slate",
+          "hex": "#1E293B",
+          "rgb": "30, 41, 59",
+          "usage": "Match card blocks and prediction containers"
+        },
+        "text": {
+          "name": "Text White",
+          "hex": "#F8FAFC",
+          "rgb": "248, 250, 252",
+          "usage": "High-contrast primary interface text"
+        },
+        "textMuted": {
+          "name": "Text Gray",
+          "hex": "#94A3B8",
+          "rgb": "148, 163, 184",
+          "usage": "Secondary labels, match dates, and locked prediction state descriptions"
+        },
+        "success": {
+          "name": "Success",
+          "hex": "#10B981",
+          "rgb": "16, 185, 129",
+          "usage": "Maximum score achieved (+3 points for exact score)"
+        },
+        "error": {
+          "name": "Error",
+          "hex": "#EF4444",
+          "rgb": "239, 68, 68",
+          "usage": "Failed prediction or closed matches"
+        }
+      }
+    },
+    "typography": {
+      "primary": {
+        "family": "Inter & Outfit (Google Fonts)",
+        "weights": [400, 500, 600, 700],
+        "category": "Responsive Web Interface"
+      },
+      "hierarchy": [
+        {
+          "name": "Display Title",
+          "size": "36px",
+          "weight": "700",
+          "usage": "Main tournament headers and featured screens"
+        },
+        {
+          "name": "Card Heading",
+          "size": "20px",
+          "weight": "600",
+          "usage": "Country names in the match card blocks"
+        },
+        {
+          "name": "Body Text",
+          "size": "16px",
+          "weight": "400",
+          "usage": "General text, leaderboard rows, and automated bot roasts"
+        },
+        {
+          "name": "Score Value",
+          "size": "24px",
+          "weight": "700",
+          "usage": "Match numeric scores and user accumulated points"
+        }
+      ]
+    },
+    "shape": {
+      "borderRadius": "12px",
+      "buttonRadius": "8px",
+      "inputRadius": "8px"
+    }
+  }
+}

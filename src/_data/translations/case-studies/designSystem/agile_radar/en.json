@@ -1,0 +1,102 @@
+{
+  "title": "AgileRadar Design System",
+  "intro": "A premium, minimalist corporate UI designed for high information density, featuring cyan neon accents and an agile component framework for bidding proposal scouting.",
+  "tokens": {
+    "colors": {
+      "primary": {
+        "name": "Navy Dark",
+        "hex": "#0B0F19",
+        "rgb": "11, 15, 25",
+        "usage": "Primary background color and key structural layout elements"
+      },
+      "secondary": {
+        "name": "Cyan Neon",
+        "hex": "#00F2FE",
+        "rgb": "0, 242, 254",
+        "usage": "Interactive accent color. Coincidence ratings (match_score), active buttons, and hover indicators"
+      },
+      "grayscale": {
+        "gold": {
+          "name": "Amber",
+          "hex": "#F59E0B",
+          "rgb": "245, 158, 11",
+          "usage": "Bids under review and medium-scored opportunities"
+        },
+        "background": {
+          "name": "Charcoal Background",
+          "hex": "#0B0F19",
+          "rgb": "11, 15, 25",
+          "usage": "General Kanban board background"
+        },
+        "card": {
+          "name": "Slate Surface",
+          "hex": "#1E293B",
+          "rgb": "30, 41, 59",
+          "usage": "Bidding opportunity cards on the board"
+        },
+        "text": {
+          "name": "Text Off-White",
+          "hex": "#F3F4F6",
+          "rgb": "243, 244, 246",
+          "usage": "Primary proposal text and column titles"
+        },
+        "textMuted": {
+          "name": "Text Soft Gray",
+          "hex": "#9CA3AF",
+          "rgb": "156, 163, 175",
+          "usage": "Budget amounts, closing dates, and client reference labels"
+        },
+        "success": {
+          "name": "Success Teal",
+          "hex": "#10B981",
+          "rgb": "16, 185, 129",
+          "usage": "High-fit opportunity scoring (>=90%) and submitted states"
+        },
+        "error": {
+          "name": "Error Rose",
+          "hex": "#F43F5E",
+          "rgb": "244, 63, 94",
+          "usage": "Discarded opportunities and penalty notifications"
+        }
+      }
+    },
+    "typography": {
+      "primary": {
+        "family": "Outfit & Inter (Google Fonts)",
+        "weights": [400, 500, 600, 700],
+        "category": "Professional Web Interface"
+      },
+      "hierarchy": [
+        {
+          "name": "Main Header",
+          "size": "28px",
+          "weight": "700",
+          "usage": "Main proposal dashboard title"
+        },
+        {
+          "name": "Column Title",
+          "size": "16px",
+          "weight": "600",
+          "usage": "Kanban board column headers (Opportunities, In Review...)"
+        },
+        {
+          "name": "Card Title",
+          "size": "14px",
+          "weight": "600",
+          "usage": "Bid opportunity name on cards"
+        },
+        {
+          "name": "Match Badge",
+          "size": "12px",
+          "weight": "700",
+          "usage": "Percentage of compatibility evaluated by the AI"
+        }
+      ]
+    },
+    "shape": {
+      "borderRadius": "8px",
+      "buttonRadius": "6px",
+      "inputRadius": "6px"
+    }
+  }
+}

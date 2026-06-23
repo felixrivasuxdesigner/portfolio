@@ -1,0 +1,102 @@
+{
+  "title": "Sistema de Diseño FIFA Predictor",
+  "intro": "Un lenguaje visual deportivo y competitivo, con modo oscuro inmersivo, tipografía moderna y acentos vibrantes para simular el ambiente del estadio de fútbol.",
+  "tokens": {
+    "colors": {
+      "primary": {
+        "name": "Indigo",
+        "hex": "#4F46E5",
+        "rgb": "79, 70, 229",
+        "usage": "Color primario de la marca. Cabeceras, acentos clave de navegación y botones principales"
+      },
+      "secondary": {
+        "name": "Neon Green",
+        "hex": "#22C55E",
+        "rgb": "34, 197, 94",
+        "usage": "Color de acento competitivo. Indicadores de aciertos, marcadores correctos y llamadas a la acción"
+      },
+      "grayscale": {
+        "gold": {
+          "name": "Gold",
+          "hex": "#F59E0B",
+          "rgb": "245, 158, 11",
+          "usage": "Destacados del líder en la tabla de posiciones y trofeos"
+        },
+        "background": {
+          "name": "Slate Background",
+          "hex": "#0F172A",
+          "rgb": "15, 23, 42",
+          "usage": "Fondo general del dashboard (Modo Oscuro)"
+        },
+        "card": {
+          "name": "Card Slate",
+          "hex": "#1E293B",
+          "rgb": "30, 41, 59",
+          "usage": "Tarjetas de partidos y bloques de predicciones"
+        },
+        "text": {
+          "name": "Text White",
+          "hex": "#F8FAFC",
+          "rgb": "248, 250, 252",
+          "usage": "Texto principal de alto contraste"
+        },
+        "textMuted": {
+          "name": "Text Gray",
+          "hex": "#94A3B8",
+          "rgb": "148, 163, 184",
+          "usage": "Etiquetas secundarias, fechas de partidos y estados de predicciones bloqueadas"
+        },
+        "success": {
+          "name": "Success",
+          "hex": "#10B981",
+          "rgb": "16, 185, 129",
+          "usage": "Puntaje máximo obtenido (+3 puntos por marcador exacto)"
+        },
+        "error": {
+          "name": "Error",
+          "hex": "#EF4444",
+          "rgb": "239, 68, 68",
+          "usage": "Pronóstico fallido o predicciones cerradas"
+        }
+      }
+    },
+    "typography": {
+      "primary": {
+        "family": "Inter & Outfit (Google Fonts)",
+        "weights": [400, 500, 600, 700],
+        "category": "Interfaz Web Responsiva"
+      },
+      "hierarchy": [
+        {
+          "name": "Display Title",
+          "size": "36px",
+          "weight": "700",
+          "usage": "Encabezados principales del torneo y pantallas destacadas"
+        },
+        {
+          "name": "Card Heading",
+          "size": "20px",
+          "weight": "600",
+          "usage": "Nombres de los países en el bloque de enfrentamientos"
+        },
+        {
+          "name": "Body Text",
+          "size": "16px",
+          "weight": "400",
+          "usage": "Texto general, listados de la tabla de posiciones y roasts del bot"
+        },
+        {
+          "name": "Score Value",
+          "size": "24px",
+          "weight": "700",
+          "usage": "Marcador numérico del partido y puntaje acumulado por usuario"
+        }
+      ]
+    },
+    "shape": {
+      "borderRadius": "12px",
+      "buttonRadius": "8px",
+      "inputRadius": "8px"
+    }
+  }
+}

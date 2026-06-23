@@ -246,6 +246,21 @@
     "mobile_app": "Mobile App",
     "web_app": "Web App",
     "projects": {
+      "intelliresearch": {
+        "title": "IntelliResearch",
+        "categories": "#UX Research #AI #SaaS",
+        "description": "AI-powered UX research analysis platform that transforms hours of qualitative interviews into actionable insights in minutes."
+      },
+      "radio_dao": {
+        "title": "Radio Barrio Centenario",
+        "categories": "#Mobile App #Community #Web3",
+        "description": "Digital transformation of a historic community radio station through Web3 technologies and hybrid streaming, enabling decentralized governance."
+      },
+      "journeylaw": {
+        "title": "JourneyLaw",
+        "categories": "#UX Design #UI Design #Legal Tech #Frontend Development",
+        "description": "SaaS legal management platform designed to modernize and simplify legal case administration through user-centered design."
+      },
       "wallet": {
         "title": "Mobile Wallet",
         "categories": "#UX Design #UI Design #Prototype #Design",
@@ -254,12 +269,27 @@
       "factoring": {
         "title": "Factoring Module",
         "categories": "#UX Design #UI Design #Prototype #Design",
-        "description": "This comprehensive factoring module modernization not only enhanced operational efficiency but significantly improved user satisfaction and workplace experience. The project serves as a benchmark for future initiatives, highlighting the critical importance of user-centered research and design in developing effective technological solutions with measurable business impact."
+        "description": "This comprehensive factoring module modernization not only enhanced operational experience but significantly improved user satisfaction and workplace experience. The project serves as a benchmark for future initiatives, highlighting the critical importance of user-centered research and design in developing effective technological solutions with measurable business impact."
       },
       "nomadix": {
         "title": "Nomadix Adventure",
         "categories": "#Web Design #Design #Wireframe",
         "description": "This project exemplifies my commitment to design excellence, seamlessly integrating creativity with functionality to deliver compelling digital experiences. The Nomadix Adventure platform balances visual appeal with intuitive navigation to create an engaging, user-focused solution that exceeds expectations."
+      },
+      "fifa_predictor": {
+        "title": "FIFA World Cup 2026 Predictor",
+        "categories": "#Web Development #UX/UI Design #AI Integration",
+        "description": "An interactive bilingual prediction platform for the FIFA 2026 World Cup, featuring real-time score synchronization and an automated sarcastic AI WhatsApp bot."
+      },
+      "agile_radar": {
+        "title": "AgileRadar",
+        "categories": "#UX/UI Design #SaaS #AI Agent #Frontend Development",
+        "description": "An automated bidding scouting and analysis platform for Shape, interfacing with Chile's public procurement portal with AI fit-scoring and proposal generation."
+      },
+      "ai_reader": {
+        "title": "AI Reader (LectorIA)",
+        "categories": "#UX/UI Design #Mobile App #EdTech #Whisper AI",
+        "description": "A gamified mobile application designed for children to practice reading out loud, using offline on-device speech-to-text (Whisper) to ensure absolute privacy."
       }
     }
   },

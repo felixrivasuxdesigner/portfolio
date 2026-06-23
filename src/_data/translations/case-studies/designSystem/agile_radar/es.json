@@ -1,0 +1,102 @@
+{
+  "title": "Sistema de Diseño AgileRadar",
+  "intro": "Un diseño corporativo premium y minimalista con una estética de alta densidad informativa, acentos en cyan neon y un sistema de componentes ágiles para scouting de propuestas.",
+  "tokens": {
+    "colors": {
+      "primary": {
+        "name": "Navy Dark",
+        "hex": "#0B0F19",
+        "rgb": "11, 15, 25",
+        "usage": "Color de fondo principal y áreas estructurales clave de la interfaz"
+      },
+      "secondary": {
+        "name": "Cyan Neon",
+        "hex": "#00F2FE",
+        "rgb": "0, 242, 254",
+        "usage": "Color de acento interactivo. Destacados de coincidencia (match_score), botones activos y estados interactivos"
+      },
+      "grayscale": {
+        "gold": {
+          "name": "Amber",
+          "hex": "#F59E0B",
+          "rgb": "245, 158, 11",
+          "usage": "Estados en revisión y oportunidades medianamente calificadas"
+        },
+        "background": {
+          "name": "Charcoal Background",
+          "hex": "#0B0F19",
+          "rgb": "11, 15, 25",
+          "usage": "Fondo general del panel Kanban"
+        },
+        "card": {
+          "name": "Slate Surface",
+          "hex": "#1E293B",
+          "rgb": "30, 41, 59",
+          "usage": "Tarjetas de oportunidades de licitación en el tablero"
+        },
+        "text": {
+          "name": "Text Off-White",
+          "hex": "#F3F4F6",
+          "rgb": "243, 244, 246",
+          "usage": "Texto principal de la propuesta y títulos de columnas"
+        },
+        "textMuted": {
+          "name": "Text Soft Gray",
+          "hex": "#9CA3AF",
+          "rgb": "156, 163, 175",
+          "usage": "Montos presupuestarios, fechas de cierre de bases y referencias de clientes"
+        },
+        "success": {
+          "name": "Success Teal",
+          "hex": "#10B981",
+          "rgb": "16, 185, 129",
+          "usage": "Coincidencia de propuesta alta (>=90%) y estados postulados"
+        },
+        "error": {
+          "name": "Error Rose",
+          "hex": "#F43F5E",
+          "rgb": "244, 63, 94",
+          "usage": "Oportunidades descartadas o alertas de penalizaciones en bases"
+        }
+      }
+    },
+    "typography": {
+      "primary": {
+        "family": "Outfit & Inter (Google Fonts)",
+        "weights": [400, 500, 600, 700],
+        "category": "Interfaz Web Profesional"
+      },
+      "hierarchy": [
+        {
+          "name": "Main Header",
+          "size": "28px",
+          "weight": "700",
+          "usage": "Título principal del panel de propuestas"
+        },
+        {
+          "name": "Column Title",
+          "size": "16px",
+          "weight": "600",
+          "usage": "Encabezados de las columnas del Kanban (Oportunidades, En Revisión...)"
+        },
+        {
+          "name": "Card Title",
+          "size": "14px",
+          "weight": "600",
+          "usage": "Título de la licitación en la tarjeta"
+        },
+        {
+          "name": "Match Badge",
+          "size": "12px",
+          "weight": "700",
+          "usage": "Porcentaje de coincidencia evaluado por la IA"
+        }
+      ]
+    },
+    "shape": {
+      "borderRadius": "8px",
+      "buttonRadius": "6px",
+      "inputRadius": "6px"
+    }
+  }
+}

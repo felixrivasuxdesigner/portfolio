@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  
+  <title>AgileRadar - Scouting Inteligente y Propuestas Automatizadas</title>
+  
+  <meta name="description" content="Diseñador UX/UI con más de 12 años de experiencia en interfaces digitales y experiencia de usuario para aplicaciones móviles y web">
+  <meta name="author" content="Félix Rivas">
+  <meta name="theme-color" content="#FF4F5E">
+
+  <!-- PWA - Manifest y App Icons -->
+  <link rel="manifest" href="/portfolio/site.webmanifest">
+  <link rel="apple-touch-icon" href="/portfolio/assets/img/icons/icon-192x192.png">
+  
+  <!-- Precargar fuentes críticas para mejorar LCP y evitar Layout Shift -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Raleway:300,500,700,800&display=swap" as="style">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,500,700,800&display=swap" rel="stylesheet">
+  
+  <!-- Precargar CSS crítico para evitar render-blocking -->
+  <link rel="preload" href="/portfolio/assets/css/main.css" as="style">
+  <link href="/portfolio/assets/css/main.css" rel="stylesheet">
+  
+  <!-- Font Awesome - Con preload para íconos críticos -->
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="/portfolio/assets/img/favicon.png" type="image/x-icon">
+  <link rel="icon" href="/portfolio/assets/img/favicon.png" type="image/x-icon">
+  
+  <!-- Meta para SEO y redes sociales -->
+  <meta property="og:title" content="AgileRadar - Scouting Inteligente y Propuestas Automatizadas">
+  <meta property="og:description" content="Diseñador UX/UI con más de 12 años de experiencia en interfaces digitales y experiencia de usuario para aplicaciones móviles y web">
+  <meta property="og:image" content="/portfolio/assets/img/felix-rivas-og-image.jpg">
+  <meta property="og:url" content="https://felixrivasuxdesigner.github.io/portfolio//es/case-studies/agile-radar/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AgileRadar - Scouting Inteligente y Propuestas Automatizadas">
+  <meta name="twitter:description" content="Diseñador UX/UI con más de 12 años de experiencia en interfaces digitales y experiencia de usuario para aplicaciones móviles y web">
+  <meta name="twitter:image" content="/portfolio/assets/img/felix-rivas-og-image.jpg">
+  
+  <!-- Añadir Schema.org para mejor SEO -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Félix Rivas",
+      "url": "https://felixrivasuxdesigner.github.io/portfolio/",
+      "image": "https://felixrivasuxdesigner.github.io/portfolio/assets/img/felix-rivas-og-image.jpg",
+      "jobTitle": "UX/UI Designer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Freelance"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/rivasfelix/"
+      ]
+    }
+  </script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="100" class="case-study-agile_radar">
+  <!-- Wrapper Start -->
+  <div class="wrapper">
+    <!-- Preloader Start -->
+    <div id="preloader">
+      <div class="preloader--bounce">
+        <div class="preloader-bouncer--1"></div>
+        <div class="preloader-bouncer--2"></div>
+      </div>
+    </div>
+    <!-- Preloader End -->
+
+    <div class="language-selector">
+  <div class="language-selector__toggle" id="langToggle">
+    <i class="fa-solid fa-globe"></i>
+  </div>
+  <div class="language-selector__dropdown" id="langDropdown">
+    <a href="/portfolio/es/" class="active">
+      <span class="flag flag--es"></span>Español
+    </a>
+    <a href="/portfolio/en/">
+      <span class="flag flag--en"></span>English
+    </a>
+  </div>
+  
+  <!-- Botón de cambio de tema junto al selector de idioma -->
+  <div class="theme-toggle in-language-selector" id="themeToggle">
+    <i class="fa-solid fa-moon"></i>
+    <i class="fa-solid fa-sun"></i>
+  </div>
+</div>
+    
+    
+    <!-- Header Area Start -->
+<div id="header">
+  <nav class="header--navbar">
+    <div class="container">
+      <div class="navbar">
+        <div class="navbar-header">
+          <!-- Header Custom Button Start -->
+          <div class="header--custom-btn hidden-lg hidden-md">
+            <a href="#hireMeModal" class="btn--default hire-me-btn"><i class="fa fa-user-plus"></i></a>
+          </div>
+          <!-- Header Custom Button End -->
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#headerNav" aria-expanded="false" aria-controls="headerNav">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <!-- Logo Start -->
+          <a class="logo navbar-brand" href="/portfolio/es/">
+            <div class="logo--img">
+              <img fetchpriority="high" src="/portfolio/assets/img/logo.webp" class="img-responsive" alt="Félix Rivas Logo">
+            </div>
+
+            <div class="logo--content">
+              <h1><strong>Felix</strong> Rivas</h1>
+              <p>Diseñador UX/UI</p>
+            </div>
+          </a>
+          <!-- Logo End -->
+        </div>
+
+        <!-- Header Nav Start -->
+        <div id="headerNav" class="header--nav navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/portfolio/es/#banner">Inicio</a></li>
+            <li><a href="/portfolio/es/#about">Sobre Mí</a></li>
+            <li><a href="/portfolio/es/#services">Servicios</a></li>
+            <li><a href="/portfolio/es/#gallery">Portafolio</a></li>
+            <li><a href="/portfolio/es/#feedback">Testimonios</a></li>
+            <li><a href="/portfolio/es/#contact">Contacto</a></li>
+          </ul>
+        </div>
+        <!-- Header Nav End -->
+
+        <!-- Header Custom Button Start -->
+        <div class="header--custom-btn hidden-sm hidden-xs ml-2">
+          <a href="#hireMeModal" class="btn--default hire-me-btn">
+            <i class="fa fa-user-plus"></i>Contrátame
+          </a>
+        </div>
+        <!-- Header Custom Button End -->
+      </div>
+    </div>
+  </nav>
+</div>
+<!-- Header Area End -->
+    
+    
+    
+<!-- Case Study Breadcrumb se incluye después del header en el layout base -->
+
+<!-- Case Study Banner -->
+<!-- Case Study Banner Component -->
+
+
+
+<div id="case-study-banner" class="bg--overlay" data-parallax-bg-img="/portfolio/assets/img/banner-img/agile_radar-banner.webp" style="background-image: url('/portfolio/assets/img/banner-img/agile_radar-banner.webp'), url('/portfolio/assets/img/banner-img/case-study-bg.webp');">
+  <div class="container">
+    <div class="vc--parent">
+      <div class="vc--child">
+        <!-- Banner Content Start -->
+        <div class="banner--content">
+          <h1>AgileRadar - Scouting Inteligente y Propuestas Automatizadas</h1>
+          <p>#Diseño UX/UI #SaaS #AI Agent #Desarrollo Frontend</p>
+        </div>
+        <!-- Banner Content End -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Case Study Breadcrumb -->
+<!-- Case Study Breadcrumb Component -->
+<div class="breadcrumbs is-sticky" id="breadcrumb">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="/portfolio/es/" class="home-link">
+                <i class="fa fa-home"></i> <span class="d-none d-sm-inline">Inicio</span>
+              </a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="/portfolio/es/#gallery" class="portfolio-link AnimateScrollLink">
+                Portafolio
+              </a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              AgileRadar - Scouting...
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Case Study Content Start -->
+<div class="case-study agile_radar">
+  <div class="container">
+    <!-- No necesitamos el título aquí porque ya está en el banner
+    <div class="case-study-header">
+      <h1 class="case-study-title">AgileRadar - Scouting Inteligente y Propuestas Automatizadas</h1>
+      <p class="case-study-categories">#Diseño UX/UI #SaaS #AI Agent #Desarrollo Frontend</p>
+    </div>
+    -->
+
+    <div class="case-study-content">
+      <!-- Hero Section -->
+      <div class="case-study-hero">
+        <img fetchpriority="high" src="/portfolio/assets/img/gallery-img/agile_radar/cover-agile_radar.webp" alt="AgileRadar Dashboard Licitaciones" class="case-study-hero-image">
+      </div>
+
+      <!-- Project Overview Section -->
+      <div class="case-study-section">
+        <h2>Contexto del Proyecto</h2>
+        <p>AgileRadar es una plataforma interna de scouting inteligente y generación de propuestas automatizadas adaptada para Shape (estudio premium de diseño y front-end). El sistema se conecta con el portal de compras públicas de Chile (Mercado Público / Compra Ágil) para calificar la afinidad del proyecto e iniciar propuestas en minutos.</p>
+      </div>
+
+      <!-- Challenge Section -->
+      <div class="case-study-section">
+        <h2>El Desafío</h2>
+        <p>El scouting diario de licitaciones públicas es un proceso sumamente lento que requiere leer extensas bases técnicas y administrativas en PDF o Word (de 50 a 100 páginas). Esta tarea manual consume días de trabajo de diseñadores y gerentes solo para evaluar si la licitación vale la pena (cálculo de fit). El reto era centralizar, calificar automáticamente la idoneidad técnica mediante IA y agilizar el diseño de propuestas técnico-comerciales sólidas.</p>
+      </div>
+
+      <!-- Design System Section (if available) -->
+      
+        
+        
+          <div class="design-board-wrapper" style="
+  --theme-primary: #0B0F19;
+  --theme-secondary: #00F2FE;
+  --theme-gray-dark: ;
+  --theme-gray-medium: ;
+  --theme-gray-light: ;
+  --theme-gray-white: ;
+  --theme-font-primary: 'Outfit & Inter (Google Fonts)', sans-serif;
+  --theme-radius: 8px;
+  --theme-button-radius: 6px;
+  --theme-input-radius: 6px;
+">
+
+  <div class="board-header" style="text-align: center; margin-bottom: 3rem;">
+    <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;">Sistema de Diseño AgileRadar</h2>
+    <p style="font-size: 1.1rem; color: var(--theme-gray-medium); max-width: 600px; margin: 0 auto; line-height: 1.6;">
+      Un diseño corporativo premium y minimalista con una estética de alta densidad informativa, acentos en cyan neon y un sistema de componentes ágiles para scouting de propuestas.
+    </p>
+  </div>
+
+  <!-- 1. Color Palette -->
+  <section class="board-section">
+    <div class="section-header">
+      <h3>Color Palette</h3>
+      <p>The primary, secondary, and grayscale colors defining the visual identity.</p>
+    </div>
+    
+    <div class="colors-grid">
+      <!-- Primary -->
+      <div class="color-swatch-card" aria-label="Primary Color">
+        <div class="swatch-color" style="background-color: var(--theme-primary);"></div>
+        <div class="swatch-info">
+          <div class="color-name">Navy Dark</div>
+          <div class="color-codes">
+            <span>HEX #0B0F19</span>
+            <span>RGB 11, 15, 25</span>
+          </div>
+          <div class="color-usage">Color de fondo principal y áreas estructurales clave de la interfaz</div>
+        </div>
+      </div>
+
+      <!-- Secondary -->
+      <div class="color-swatch-card" aria-label="Secondary Color">
+        <div class="swatch-color" style="background-color: var(--theme-secondary);"></div>
+        <div class="swatch-info">
+          <div class="color-name">Cyan Neon</div>
+          <div class="color-codes">
+            <span>HEX #00F2FE</span>
+            <span>RGB 0, 242, 254</span>
+          </div>
+          <div class="color-usage">Color de acento interactivo. Destacados de coincidencia (match_score), botones activos y estados interactivos</div>
+        </div>
+      </div>
+      
+      <!-- Grayscale (Loop over grayscale obj) -->
+      
+      <div class="color-swatch-card" aria-label="Amber">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #F59E0B; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Amber</div>
+          <div class="color-codes">
+            <span>HEX #F59E0B</span>
+            <span>RGB 245, 158, 11</span>
+          </div>
+          <div class="color-usage">Estados en revisión y oportunidades medianamente calificadas</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Charcoal Background">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #0B0F19; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Charcoal Background</div>
+          <div class="color-codes">
+            <span>HEX #0B0F19</span>
+            <span>RGB 11, 15, 25</span>
+          </div>
+          <div class="color-usage">Fondo general del panel Kanban</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Slate Surface">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #1E293B; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Slate Surface</div>
+          <div class="color-codes">
+            <span>HEX #1E293B</span>
+            <span>RGB 30, 41, 59</span>
+          </div>
+          <div class="color-usage">Tarjetas de oportunidades de licitación en el tablero</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Text Off-White">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #F3F4F6; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Text Off-White</div>
+          <div class="color-codes">
+            <span>HEX #F3F4F6</span>
+            <span>RGB 243, 244, 246</span>
+          </div>
+          <div class="color-usage">Texto principal de la propuesta y títulos de columnas</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Text Soft Gray">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #9CA3AF; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Text Soft Gray</div>
+          <div class="color-codes">
+            <span>HEX #9CA3AF</span>
+            <span>RGB 156, 163, 175</span>
+          </div>
+          <div class="color-usage">Montos presupuestarios, fechas de cierre de bases y referencias de clientes</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Success Teal">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #10B981; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Success Teal</div>
+          <div class="color-codes">
+            <span>HEX #10B981</span>
+            <span>RGB 16, 185, 129</span>
+          </div>
+          <div class="color-usage">Coincidencia de propuesta alta (&gt;=90%) y estados postulados</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Error Rose">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #F43F5E; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Error Rose</div>
+          <div class="color-codes">
+            <span>HEX #F43F5E</span>
+            <span>RGB 244, 63, 94</span>
+          </div>
+          <div class="color-usage">Oportunidades descartadas o alertas de penalizaciones en bases</div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- 2. Typography -->
+  <section class="board-section">
+    <div class="section-header">
+      <h3>Typography</h3>
+      <p>Primary Typeface: <strong>Outfit &amp; Inter (Google Fonts)</strong> (Interfaz Web Profesional)</p>
+    </div>
+
+    <div class="typography-grid">
+      
+      <div class="type-specimen">
+        <div class="type-label">
+          <strong>Main Header</strong>
+          <span>28px / 700</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Título principal del panel de propuestas</span>
+        </div>
+        <div class="type-sample" style="font-size: 28px; font-weight: 700;">
+          The quick brown fox jumps over the lazy dog
+        </div>
+      </div>
+      
+      <div class="type-specimen">
+        <div class="type-label">
+          <strong>Column Title</strong>
+          <span>16px / 600</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Encabezados de las columnas del Kanban (Oportunidades, En Revisión...)</span>
+        </div>
+        <div class="type-sample" style="font-size: 16px; font-weight: 600;">
+          The quick brown fox jumps over the lazy dog
+        </div>
+      </div>
+      
+      <div class="type-specimen">
+        <div class="type-label">
+          <strong>Card Title</strong>
+          <span>14px / 600</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Título de la licitación en la tarjeta</span>
+        </div>
+        <div class="type-sample" style="font-size: 14px; font-weight: 600;">
+          The quick brown fox jumps over the lazy dog
+        </div>
+      </div>
+      
+      <div class="type-specimen">
+        <div class="type-label">
+          <strong>Match Badge</strong>
+          <span>12px / 700</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Porcentaje de coincidencia evaluado por la IA</span>
+        </div>
+        <div class="type-sample" style="font-size: 12px; font-weight: 700;">
+          The quick brown fox jumps over the lazy dog
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- 3. UI Components -->
+  <section class="board-section">
+    <div class="section-header">
+      <h3>UI Components</h3>
+      <p>Interactive elements utilizing the design tokens (Colors, Typography, Border Radius).</p>
+    </div>
+
+    <div class="ui-grid">
+      
+      <!-- Buttons -->
+      <div class="ui-group">
+        <h4>Buttons</h4>
+        <div class="button-states">
+          
+          <div class="state-row">
+            <span class="state-label">Default</span>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+              <button class="btn-primary">Primary Action</button>
+              <button class="btn-secondary">Secondary Action</button>
+              <button class="btn-ghost">Ghost</button>
+            </div>
+          </div>
+          
+          <div class="state-row">
+            <span class="state-label">Hover (simulated)</span>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+              <button class="btn-primary hover">Primary Action</button>
+              <button class="btn-secondary hover">Secondary Action</button>
+              <button class="btn-ghost hover">Ghost</button>
+            </div>
+          </div>
+          
+          <div class="state-row">
+            <span class="state-label">Active (simulated)</span>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+              <button class="btn-primary active">Primary Action</button>
+              <button class="btn-secondary active">Secondary Action</button>
+              <button class="btn-ghost active">Ghost</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Forms -->
+      <div class="ui-group">
+        <h4>Form Inputs</h4>
+        <div class="form-states">
+          
+          <div class="input-group">
+            <label>Default State</label>
+            <input type="text" placeholder="Enter your email address">
+          </div>
+          
+          <div class="input-group">
+            <label>Focus State (simulated)</label>
+            <input type="text" class="focus" placeholder="typing..." value="user@example.com">
+          </div>
+          
+          <div class="input-group">
+            <label>Error State (simulated)</label>
+            <input type="text" class="error" placeholder="" value="invalid-email">
+            <span style="color: #ef4444; font-size: 0.8rem; margin-top: 0.25rem;">Please enter a valid email address.</span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+
+        
+      
+
+      <!-- Research Section (if available) -->
+      
+
+      <!-- Personas Section (if available) -->
+      
+
+      <!-- Solution Section -->
+      <div class="case-study-section">
+        <h2>Propuesta de Valor</h2>
+        <p>Diseñamos un pipeline inteligente de precalificación que combina análisis de lenguaje natural y visualización ágil:</p>
+        <ul class="feature-list">
+          
+            <li>Tablero Kanban en Tiempo Real: Visualización de las licitaciones organizadas por etapas del pipeline de ventas, sincronizadas con WebSockets.</li>
+          
+            <li>Fit-Scoring con IA (Gemini 2.5 Flash): Evaluación automatizada de bases de licitación contra el stack de Shape, generando una puntuación (0-100) y justificación en español.</li>
+          
+            <li>Lector de Bases Multi-Documento: Carga inteligente mediante drag-and-drop de múltiples especificaciones técnicas oficiales (PDF/Word), consolidando el contenido en un solo paquete estructurado.</li>
+          
+            <li>Generador de Propuesta Técnico-Comercial: Generación instantánea en Markdown de propuestas personalizadas que abordan los 5 criterios críticos chilenos de licitación.</li>
+          
+        </ul>
+      </div>
+
+      <!-- Process/Features Section -->
+      <div class="case-study-section">
+        <h2>Proceso de Diseño y UX</h2>
+        <div class="case-study-grid">
+          
+            <div class="case-study-grid-item design-process-step">
+              <h3>Mapeo de Criterios Shape</h3>
+              <p>Entrevistas con el equipo directivo de Shape para traducir sus ventajas competitivas (UI/UX, React/TS, sistemas de diseño) en reglas analíticas claras para el scoring de IA.</p>
+              
+            </div>
+          
+            <div class="case-study-grid-item design-process-step">
+              <h3>Reducción de Ruido en Kanban</h3>
+              <p>Diseño del tablero Kanban priorizando las licitaciones con mayor puntuación de coincidencia técnica (match_score). El sistema auto-descarta las de bajo score para reducir ruido visual.</p>
+              
+            </div>
+          
+            <div class="case-study-grid-item design-process-step">
+              <h3>Consolidación Drag-and-Drop</h3>
+              <p>Implementación de un área de carga de documentos integrada en un panel drawer lateral que extrae el texto técnico de las bases consolidadas y las expone como contexto del modelo de IA.</p>
+              
+            </div>
+          
+            <div class="case-study-grid-item design-process-step">
+              <h3>UX de Generación Progresiva</h3>
+              <p>Diseño del flujo interactivo donde el usuario refina los criterios de la propuesta generada por Gemini antes de descargarla en Markdown listo para postular.</p>
+              
+            </div>
+          
+        </div>
+      </div>
+
+      <!-- Results Section -->
+      <div class="case-study-section">
+        <h2>Resultados e Impacto</h2>
+        <div class="case-study-results">
+          
+            <div class="result-item">
+              <h3>85%</h3>
+              <p>Reducción en tiempo de scouting y calificación</p>
+            </div>
+          
+            <div class="result-item">
+              <h3>15 min</h3>
+              <p>Tiempo promedio en generar el primer borrador técnico comercial completo</p>
+            </div>
+          
+            <div class="result-item">
+              <h3>0</h3>
+              <p>Licitaciones de alta coincidencia ignoradas</p>
+            </div>
+          
+        </div>
+        <p>AgileRadar demuestra cómo las interfaces de productividad SaaS enriquecidas con modelos de lenguaje de última generación (Gemini) pueden redefinir por completo los flujos de adquisición corporativa, convirtiendo la fricción administrativa en ventajas competitivas ágiles.</p>
+      </div>
+
+      <!-- Markdown/Direct Content -->
+      <div class="case-study-markdown">
+        <!-- El contenido se carga desde los archivos de traducción -->
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Case Study Content End -->
+
+    <!-- Footer Area Start -->
+<div id="footer">
+  <div class="container">
+    <!-- Footer Copyright Start -->
+    <div class="footer--copyright">
+      <p>
+        Copyright © 2025 <a href="/">Félix Rivas</a>. Todos los Derechos Reservados.
+      </p>
+    </div>
+    <!-- Footer Copyright End -->
+  </div>
+</div>
+<!-- Footer Area End -->
+
+    <!-- Back To Top Area Start -->
+    <div id="backToTop">
+      <a href="#header" class="btn--default"><i class="fa fa-angle-up"></i></a>
+    </div>
+    <!-- Back To Top Area End -->
+  </div>
+  <!-- Wrapper End -->
+
+  <!-- Hire Me Modal -->
+  <!-- Hire Me Contact Modal Start -->
+<div id="hireMeModal" class="hire-me--modal modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close">×</button>
+
+        <div class="modal-title">
+          <h2>¿TIENES UN PROYECTO EN MENTE?</h2>
+          <p>Estoy listo para dar vida a tu visión. Comparte los detalles a continuación para comenzar.</p>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <form action="https://formsubmit.co/rivafelix@gmail.com" method="POST" data-form="validate">
+          <!-- Redirects to a custom "Gracias" page -->
+          <input type="hidden" name="_next" value="/thankyou/">
+          <!-- Avoid captcha -->
+          <input type="hidden" name="_captcha" value="false">
+          <!-- Email subject -->
+          <input type="hidden" name="_subject" value="New project request from portfolio">
+          <!-- Spam prevention -->
+          <input type="text" name="_honey" style="display:none">
+          
+          <div class="form-controls">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group name">
+                  <input type="text" name="name" class="form-control" placeholder="Tu Nombre..." required>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group email">
+                  <input type="email" name="email" class="form-control" placeholder="Tu Email..." required>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group project-title">
+                  <input type="text" name="project_title" class="form-control" placeholder="Título del Proyecto..." required>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group case-category">
+                  <select name="category" class="form-control bg-fa-caret-down white">
+                    <option>-Selecciona categoría del proyecto-</option>
+                    <option>Diseño UX/UI</option>
+                    <option>Diseño Web</option>
+                    <option>Diseño de App Móvil</option>
+                    <option>Investigación UX</option>
+                    <option>Otro</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group budget">
+                  <select name="budget" class="form-control bg-fa-caret-down white">
+                    <option>-Rango de presupuesto-</option>
+                    <option>$1,000 - $3,000</option>
+                    <option>$3,000 - $6,000</option>
+                    <option>$6,000 - $10,000</option>
+                    <option>$10,000+</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group date">
+                  <input type="text" name="date" class="form-control DatePicker bg-fa-calender" placeholder="-Cronograma objetivo-">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group referral-source">
+              <select name="referral_source" class="form-control bg-fa-caret-down white">
+                <option>¿Cómo me encontraste?</option>
+                <option>Google u otro buscador</option>
+                <option>Redes sociales</option>
+                <option>LinkedIn</option>
+                <option>Recomendación de un colega</option>
+                <option>Recomendación de un cliente</option>
+                <option>Evento profesional</option>
+                <option>Otro</option>
+              </select>
+            </div>
+
+            <div class="form-group message">
+              <textarea name="message" class="form-control" rows="5" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+            </div>
+
+            <div class="estimate-container">
+              <div class="estimate-text">
+                <h4>¿Necesitas un presupuesto detallado?</h4>
+              </div>
+
+              <div class="radio-text">
+                <div class="radio">
+                  <input type="radio" name="estimate" id="estimateZERO" value="0" checked>
+                  <label for="estimateZERO">No necesito presupuesto por ahora</label>
+                </div>
+
+                <div class="radio">
+                  <input type="radio" name="estimate" id="estimateONE" value="1">
+                  <label for="estimateONE">Sí, me gustaría un estimado de costos. Entiendo que tomará 2-4 días hábiles recibir un presupuesto completo.</label>
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="submit-btn btn--primary">ENVIAR SOLICITUD</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Hire Me Contact Modal End -->
+  
+  <!-- Modern JavaScript -->
+  <script src="/portfolio/assets/js/main.js" type="module"></script>
+</body>
+</html>

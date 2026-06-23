@@ -499,6 +499,219 @@
           "conclusion": "This project demonstrated that decentralized technology (Web3/DAO) is not exclusive to finance, but a powerful tool for social innovation. We managed to weave stronger community ties through bits and waves, ensuring that Radio Barrio Centenario not only survives the digital age but defines what community media of the future should look like."
         }
       }
+    },
+    "fifa_predictor": {
+      "title": "FIFA World Cup 2026 Predictor",
+      "categories": "#Web Development #UX/UI Design #AI Integration",
+      "hero": {
+        "alt": "FIFA World Cup 2026 Predictor Dashboard"
+      },
+      "sections": {
+        "context": {
+          "title": "Project Overview",
+          "content": "A private, hyper-competitive, and fully automated prediction platform designed to manage the FIFA World Cup 2026 sweepstakes among a closed group of friends. The project combines a modern, fast web frontend with real-time official match score synchronization and a daily AI WhatsApp bot that adds a dynamic, hilarious element to the game."
+        },
+        "challenge": {
+          "title": "The Challenge",
+          "content": "Sports sweepstakes are traditionally managed via manual Excel spreadsheets, leading to update delays, calculation errors, and disputes among participants. They also lack immediate mobile interactivity. The challenge was to automate 100% of the game lifecycle (prediction submissions, official score sync, and ranking updates) and integrate a humorous, interactive social layer to maintain daily engagement without manual intervention."
+        },
+        "designSystem": true,
+        "solution": {
+          "title": "Value Proposition",
+          "content": "We developed an automated and immersive ecosystem with the following advantages:",
+          "features": [
+            "React 19 & Tailwind CSS v4 Frontend: An ultra-fast, dark-mode web application optimized for smooth prediction submissions on mobile devices.",
+            "Automated Synchronization: Node.js scripts that poll official FIFA matches and update Supabase standings in real-time.",
+            "Sofa Coach (AI WhatsApp Bot): Bot integrated via Evolution API and Groq (Llama 3.1) that analyzes the standings daily to post sarcastic and comical updates in the group chat.",
+            "Security & Integrity: Strict Row-Level Security in Supabase to lock predictions once a match has started."
+          ]
+        },
+        "process": {
+          "title": "UX & Development Process",
+          "steps": [
+            {
+              "title": "Rules & Database Modeling",
+              "content": "Defined the scoring rules (exact score, winner/draw, tournament phases) and the automated prediction lock threshold (75 minutes before kickoff) to maintain fair play.",
+              "alt": "Database Rules"
+            },
+            {
+              "title": "Immersive UI/UX Design",
+              "content": "Created a sports-arena dark mode interface using neon green and purple accents, clean typography, and spacious card layouts for quick scoreboard scanning.",
+              "alt": "UI/UX Design"
+            },
+            {
+              "title": "Automated Sync Workflows",
+              "content": "Configured cron scripts on macOS using launchd to regularly check the football API, update Supabase records, and recalculate user rankings.",
+              "alt": "API Synchronization"
+            },
+            {
+              "title": "Sofa Coach Prompt Engineering",
+              "content": "Designed and tested the AI agent prompts for the 'Sofa Coach'. The bot reviews the database standings and drafts a hilarious daily roast message in the WhatsApp group.",
+              "alt": "AI WhatsApp Bot"
+            }
+          ]
+        },
+        "results": {
+          "title": "Results & Engagement",
+          "metrics": [
+            {
+              "number": "100%",
+              "description": "Automated score and ranking updates"
+            },
+            {
+              "number": "0",
+              "description": "User disputes or manual data entry errors"
+            },
+            {
+              "number": "96%",
+              "description": "Daily user interaction and engagement with the WhatsApp AI agent reports"
+            }
+          ],
+          "conclusion": "This project showcases how integrating real-time API integrations with witty AI conversational agents can transform a simple spreadsheet prediction game into a highly engaging, zero-maintenance social experience."
+        }
+      }
+    },
+    "agile_radar": {
+      "title": "AgileRadar",
+      "categories": "#UX/UI Design #SaaS #AI Agent #Frontend Development",
+      "hero": {
+        "alt": "AgileRadar Bidding Dashboard"
+      },
+      "sections": {
+        "context": {
+          "title": "Project Overview",
+          "content": "AgileRadar is an internal intelligent bidding scouting and proposal drafting platform built for Shape. The system interfaces with Chile's public procurement portal (Mercado Público) to evaluate incoming bids and draft commercial proposals in minutes."
+        },
+        "challenge": {
+          "title": "The Challenge",
+          "content": "Scouting public bids on government portals is a tedious process requiring managers to read through extensive PDF or Word documentation (typically 50-100 pages per bid). Evaluating technical fit is manual and consumes days, meaning high-value opportunities can easily be missed. The challenge was to centralize, automatically assess fit using AI, and generate technical-commercial proposal drafts."
+        },
+        "designSystem": true,
+        "solution": {
+          "title": "Value Proposition",
+          "content": "We designed an automated pre-qualification workflow combining natural language processing and real-time visualization:",
+          "features": [
+            "Real-Time Kanban Board: Opportunities organized across pipeline stages, utilizing WebSockets for instant interface updates.",
+            "AI Fit-Scoring (Gemini 2.5 Flash): Automatic parsing of bid files to calculate compatibility (0-100 match score) with Shape's stack, along with a written justification.",
+            "Multi-Document consolidator: Drag-and-drop document upload (PDF/Word) that extracts text and compiles it into a structured reference context.",
+            "Technical Proposal Draft Engine: Instant generation of tailored proposals addressing critical Chilean bidding criteria in Markdown format."
+          ]
+        },
+        "process": {
+          "title": "UX & Design Process",
+          "steps": [
+            {
+              "title": "Mapping Shape's Core Stack",
+              "content": "Interfaced with Shape's team to define core criteria (UI/UX, React/TS, Design Systems) and structured them as system constraints for the Gemini scoring model.",
+              "alt": "Competency Mapping"
+            },
+            {
+              "title": "Kanban Pipeline Design",
+              "content": "Structured the board to display bids based on their compatibility match_score, automatically filtering out low-scoring bids to reduce manager cognitive fatigue.",
+              "alt": "Kanban Board UX"
+            },
+            {
+              "title": "Consolidating Bidding Documents",
+              "content": "Created an intuitive sidebar drawer supporting multiple drag-and-drop document uploads, parsing them on-the-fly to construct the context package.",
+              "alt": "Document Reader"
+            },
+            {
+              "title": "Interactive Proposal UX",
+              "content": "Designed an interface that allows managers to read, refine, and edit proposal drafts generated by Gemini before downloading the final Markdown file.",
+              "alt": "Proposal Generator Flow"
+            }
+          ]
+        },
+        "results": {
+          "title": "Results & Business Impact",
+          "metrics": [
+            {
+              "number": "85%",
+              "description": "Reduction in bid scouting and pre-qualification time"
+            },
+            {
+              "number": "15 min",
+              "description": "Average time to generate a structured technical-commercial draft proposal"
+            },
+            {
+              "number": "0",
+              "description": "High-fit public bids missed or overlooked"
+            }
+          ],
+          "conclusion": "AgileRadar demonstrates how modern web applications built with LLMs can streamline complex B2G procurement pipelines, converting days of manual document parsing into minutes of intuitive, AI-assisted operations."
+        }
+      }
+    },
+    "ai_reader": {
+      "title": "AI Reader (LectorIA)",
+      "categories": "#UX/UI Design #Mobile App #EdTech #Whisper AI",
+      "hero": {
+        "alt": "AI Reader LectorIA Mobile App"
+      },
+      "sections": {
+        "context": {
+          "title": "Project Overview",
+          "content": "AI Reader (LectorIA) is a playful mobile application built for 7-year-old children. It utilizes offline on-device AI speech-to-text to evaluate oral reading accuracy and fluency, matching reading selections to the child's Lexile scale."
+        },
+        "challenge": {
+          "title": "The Challenge",
+          "content": "Reading out loud in front of teachers, parents, or devices often induces performance anxiety in young readers. Traditional reading software heightens this by displaying aggressive countdown timers and blunt error counters. Furthermore, sending children's audio records to cloud servers raises critical privacy concerns. The challenge was to create an engaging, stress-free, and 100% offline app."
+        },
+        "designSystem": true,
+        "solution": {
+          "title": "Value Proposition",
+          "content": "We built a child-first reading practice environment centered around on-device voice processing:",
+          "features": [
+            "Offline Whisper.rn Integration: Speech-to-text processing performed locally on the device's chip using lightweight, downloadable AI models (ggml-tiny).",
+            "Zero-Stress Reading UX: No timers or ticking clocks; the child reads at their own pace accompanied by a friendly owl mascot acting as an empathetic guide.",
+            "Positive Visual Feedback: Words read correctly are highlighted in green in real-time, and completed pages reward children with collectable stars.",
+            "Absolute Child Privacy: 100% of the voice audio remains on the device, ensuring native compliance with child protection laws (COPPA/GDPR)."
+          ]
+        },
+        "process": {
+          "title": "Child-Centered UX Process",
+          "steps": [
+            {
+              "title": "Usability Observations",
+              "content": "Conducted direct sessions observing children reading aloud to screens, identifying emotional friction points and removing intimidating UI elements.",
+              "alt": "User Testing Sessions"
+            },
+            {
+              "title": "Mascot Character Design",
+              "content": "Designed the friendly owl mascot to provide supportive visual cues, celebrate successes, and offer helpful prompts without generating feelings of failure.",
+              "alt": "Mascot Integration"
+            },
+            {
+              "title": "Optimizing Child Typography",
+              "content": "Selected the Literata serif font and configured a wide 1.8 line height to improve contrast and help children with early signs of dyslexia scan text easily.",
+              "alt": "Typography Configuration"
+            },
+            {
+              "title": "On-Device Whisper Engineering",
+              "content": "Compiled native C++ Whisper bindings for React Native, managing dynamic model downloads to keep the initial App Store download package lightweight.",
+              "alt": "Native C++ Integration"
+            }
+          ]
+        },
+        "results": {
+          "title": "Pilot Results",
+          "metrics": [
+            {
+              "number": "100%",
+              "description": "Local offline audio processing (zero server leaks)"
+            },
+            {
+              "number": "+40%",
+              "description": "Increase in voluntary session reading duration compared to timed apps"
+            },
+            {
+              "number": "94%",
+              "description": "Positive tutor satisfaction score regarding reading tracking and privacy"
+            }
+          ],
+          "conclusion": "AI Reader shows that user-centered child design combined with edge computing can create highly effective educational spaces that respect children's pace, emotional well-being, and data privacy."
+        }
+      }
     }
   }
 }

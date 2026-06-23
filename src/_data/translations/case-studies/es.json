@@ -553,6 +553,219 @@
           "conclusion": "Este proyecto demostró que la tecnología descentralizada es una herramienta poderosa para la innovación social. Logramos tejer lazos comunitarios más fuertes a través de bits y ondas."
         }
       }
+    },
+    "fifa_predictor": {
+      "title": "FIFA World Cup 2026 Predictor",
+      "categories": "#Desarrollo Web #Diseño UX/UI #AI Integration",
+      "hero": {
+        "alt": "FIFA World Cup 2026 Predictor Dashboard"
+      },
+      "sections": {
+        "context": {
+          "title": "Resumen del Proyecto",
+          "content": "Una plataforma privada, hiper-competitiva y completamente automatizada diseñada para gestionar la quiniela de la Copa Mundial FIFA 2026 entre un grupo cerrado de amigos. El proyecto combina un frontend web moderno y rápido con la automatización de resultados de partidos reales y un bot de IA diario en WhatsApp que aporta un elemento dinámico e hilarante al juego."
+        },
+        "challenge": {
+          "title": "El Desafío",
+          "content": "Las quinielas de torneos deportivos suelen gestionarse en planillas de Excel manuales, lo que causa retrasos en las actualizaciones, errores de cálculo y disputas entre participantes. Además, carecen de interactividad móvil inmediata. El reto era automatizar el 100% del ciclo de vida del juego (carga de pronósticos, cálculo de puntajes reales) e integrar una capa social humorística e interactiva que mantuviera el engagement diario de los usuarios sin mantenimiento manual."
+        },
+        "designSystem": true,
+        "solution": {
+          "title": "Propuesta de Valor",
+          "content": "Desarrollamos un ecosistema automatizado e inmersivo con las siguientes ventajas:",
+          "features": [
+            "Frontend React 19 & Tailwind CSS v4: Interfaz ultra-rápida, en modo oscuro, optimizada para carga de pronósticos en dispositivos móviles.",
+            "Sincronización Automatizada: Scripts en Node.js que consultan la API de resultados oficiales de la FIFA y actualizan Supabase al instante.",
+            "DT de Sofá (Bot de IA en WhatsApp): Bot integrado mediante Evolution API y Groq (Llama 3.1) que analiza la tabla de posiciones cada noche para generar reportes cómicos y sarcásticos automáticos.",
+            "Seguridad e Integridad: Reglas estrictas en Supabase para bloquear cambios en pronósticos una vez iniciados los partidos."
+          ]
+        },
+        "process": {
+          "title": "Proceso de Desarrollo y UX",
+          "steps": [
+            {
+              "title": "Modelado de Dinámica y Reglas",
+              "content": "Definición del sistema de puntaje (exacto, ganador, empate, fase) y el umbral de bloqueo de predicciones (75 minutos antes del partido) para evitar conductas ventajosas.",
+              "alt": "Reglas y Base de Datos"
+            },
+            {
+              "title": "Diseño de Interfaz Inmersiva",
+              "content": "Creación de una UI oscura estilo 'estadio deportivo' con acentos verdes neón y morados, utilizando tipografía moderna y cards limpias para optimizar la lectura rápida de marcadores.",
+              "alt": "Diseño de UI"
+            },
+            {
+              "title": "Sincronizador Automático de Datos",
+              "content": "Configuración de scripts cron en macOS y launchd para consultar periódicamente la API de fútbol, actualizar la base de datos Supabase y gatillar las actualizaciones de puntajes de los usuarios.",
+              "alt": "Sincronización en Tiempo Real"
+            },
+            {
+              "title": "Capa Social con IA (DT de Sofá)",
+              "content": "Diseño y estructuración del prompt de IA de 'El DT de Sofá'. El bot lee la tabla de posiciones en Supabase y redacta un roast sarcástico en WhatsApp humillando amigablemente al colista y elogiando al líder.",
+              "alt": "Bot de WhatsApp con IA"
+            }
+          ]
+        },
+        "results": {
+          "title": "Resultados y Engagement",
+          "metrics": [
+            {
+              "number": "100%",
+              "description": "Automatización del cálculo de puntajes"
+            },
+            {
+              "number": "0",
+              "description": "Disputas por retraso de carga o errores"
+            },
+            {
+              "number": "96%",
+              "description": "Participación e interacción diaria con los reportes de IA en WhatsApp"
+            }
+          ],
+          "conclusion": "Este proyecto demuestra cómo la automatización técnica de datos deportivos y la integración creativa de agentes de IA y bots de WhatsApp pueden transformar una aplicación de nicho en una experiencia de entretenimiento social altamente adictiva y libre de fricciones de gestión."
+        }
+      }
+    },
+    "agile_radar": {
+      "title": "AgileRadar",
+      "categories": "#Diseño UX/UI #SaaS #AI Agent #Desarrollo Frontend",
+      "hero": {
+        "alt": "AgileRadar Dashboard Licitaciones"
+      },
+      "sections": {
+        "context": {
+          "title": "Contexto del Proyecto",
+          "content": "AgileRadar es una plataforma interna de scouting inteligente y generación de propuestas automatizadas adaptada para Shape (estudio premium de diseño y front-end). El sistema se conecta con el portal de compras públicas de Chile (Mercado Público / Compra Ágil) para calificar la afinidad del proyecto e iniciar propuestas en minutos."
+        },
+        "challenge": {
+          "title": "El Desafío",
+          "content": "El scouting diario de licitaciones públicas es un proceso sumamente lento que requiere leer extensas bases técnicas y administrativas en PDF o Word (de 50 a 100 páginas). Esta tarea manual consume días de trabajo de diseñadores y gerentes solo para evaluar si la licitación vale la pena (cálculo de fit). El reto era centralizar, calificar automáticamente la idoneidad técnica mediante IA y agilizar el diseño de propuestas técnico-comerciales sólidas."
+        },
+        "designSystem": true,
+        "solution": {
+          "title": "Propuesta de Valor",
+          "content": "Diseñamos un pipeline inteligente de precalificación que combina análisis de lenguaje natural y visualización ágil:",
+          "features": [
+            "Tablero Kanban en Tiempo Real: Visualización de las licitaciones organizadas por etapas del pipeline de ventas, sincronizadas con WebSockets.",
+            "Fit-Scoring con IA (Gemini 2.5 Flash): Evaluación automatizada de bases de licitación contra el stack de Shape, generando una puntuación (0-100) y justificación en español.",
+            "Lector de Bases Multi-Documento: Carga inteligente mediante drag-and-drop de múltiples especificaciones técnicas oficiales (PDF/Word), consolidando el contenido en un solo paquete estructurado.",
+            "Generador de Propuesta Técnico-Comercial: Generación instantánea en Markdown de propuestas personalizadas que abordan los 5 criterios críticos chilenos de licitación."
+          ]
+        },
+        "process": {
+          "title": "Proceso de Diseño y UX",
+          "steps": [
+            {
+              "title": "Mapeo de Criterios Shape",
+              "content": "Entrevistas con el equipo directivo de Shape para traducir sus ventajas competitivas (UI/UX, React/TS, sistemas de diseño) en reglas analíticas claras para el scoring de IA.",
+              "alt": "Mapeo de Criterios"
+            },
+            {
+              "title": "Reducción de Ruido en Kanban",
+              "content": "Diseño del tablero Kanban priorizando las licitaciones con mayor puntuación de coincidencia técnica (match_score). El sistema auto-descarta las de bajo score para reducir ruido visual.",
+              "alt": "Estructuración de Pipeline"
+            },
+            {
+              "title": "Consolidación Drag-and-Drop",
+              "content": "Implementación de un área de carga de documentos integrada en un panel drawer lateral que extrae el texto técnico de las bases consolidadas y las expone como contexto del modelo de IA.",
+              "alt": "Consolidación Documental"
+            },
+            {
+              "title": "UX de Generación Progresiva",
+              "content": "Diseño del flujo interactivo donde el usuario refina los criterios de la propuesta generada por Gemini antes de descargarla en Markdown listo para postular.",
+              "alt": "Generador de Propuestas"
+            }
+          ]
+        },
+        "results": {
+          "title": "Resultados e Impacto",
+          "metrics": [
+            {
+              "number": "85%",
+              "description": "Reducción en tiempo de scouting y calificación"
+            },
+            {
+              "number": "15 min",
+              "description": "Tiempo promedio en generar el primer borrador técnico comercial completo"
+            },
+            {
+              "number": "0",
+              "description": "Licitaciones de alta coincidencia ignoradas"
+            }
+          ],
+          "conclusion": "AgileRadar demuestra cómo las interfaces de productividad SaaS enriquecidas con modelos de lenguaje de última generación (Gemini) pueden redefinir por completo los flujos de adquisición corporativa, convirtiendo la fricción administrativa en ventajas competitivas ágiles."
+        }
+      }
+    },
+    "ai_reader": {
+      "title": "AI Reader (LectorIA)",
+      "categories": "#Diseño UX/UI #Mobile App #EdTech #Whisper AI",
+      "hero": {
+        "alt": "AI Reader LectorIA App Móvil"
+      },
+      "sections": {
+        "context": {
+          "title": "Contexto del Proyecto",
+          "content": "AI Reader (LectorIA) es una plataforma móvil lúdica y educativa diseñada para niños de 7 años. Utiliza Inteligencia Artificial offline para evaluar la precisión y fluidez de la lectura en voz alta en tiempo real, adaptando los textos de forma didáctica al nivel Lexile de cada niño."
+        },
+        "challenge": {
+          "title": "El Desafío",
+          "content": "Leer en voz alta frente a un maestro o un dispositivo suele generar alta ansiedad por desempeño en los niños. Las interfaces educativas tradicionales agravan esto con temporizadores parpadeantes y retroalimentación negativa directa. Además, el procesamiento de audio de menores genera serias preocupaciones de privacidad y uso de servidores externos. El reto era crear una app móvil nativa divertida, sin presiones y 100% offline."
+        },
+        "designSystem": true,
+        "solution": {
+          "title": "Propuesta de Valor",
+          "content": "Desarrollamos una experiencia infantil respetuosa y lúdica basada en procesamiento local de voz:",
+          "features": [
+            "Whisper.rn Offline Integrado: Reconocimiento y análisis fonético de voz procesado localmente en el chip del smartphone mediante modelos de IA ligeros descárgables (ggml-tiny).",
+            "UX Libre de Estrés: Sin cronómetros agresivos ni contadores regresivos; el niño lee a su propio ritmo con una mascota virtual (un tierno búho) como guía empático.",
+            "Visualización de Logros: Palabras leídas correctamente marcadas en verde en tiempo real, e hitos convertidos en estrellas coleccionables.",
+            "Privacidad Garantizada: Cero transmisión de audio infantil fuera del teléfono, garantizando cumplimiento nativo de normativas de privacidad de menores (COPPA/GDPR)."
+          ]
+        },
+        "process": {
+          "title": "Proceso de Diseño Infantil",
+          "steps": [
+            {
+              "title": "User Testing Centrado en Niños",
+              "content": "Observación directa de niños leyendo frente a pantallas para identificar bloqueos emocionales y simplificar la jerarquía visual eliminando elementos intimidantes.",
+              "alt": "Shadowing de Lectura Infantil"
+            },
+            {
+              "title": "Diseño de la Guía Empática",
+              "content": "Creación y colocación estratégica del búho mascota que ofrece palabras de aliento y anima mediante animaciones suaves al terminar cada párrafo.",
+              "alt": "Diseño de Mascota Interactiva"
+            },
+            {
+              "title": "Optimización del Text Engine",
+              "content": "Configuración de la tipografía Serif Literata con amplia separación de caracteres (1.8 line-height) para reducir el salto de líneas en niños con indicios de dislexia.",
+              "alt": "Motor Tipográfico Amigable"
+            },
+            {
+              "title": "Ingeniería Whisper en Dispositivo",
+              "content": "Compilación del motor Whisper.rn en C++ nativo para React Native, gestionando la descarga dinámica del modelo binario de 77MB para no sobrecargar el instalador de la tienda.",
+              "alt": "Compilación e Integración de IA"
+            }
+          ]
+        },
+        "results": {
+          "title": "Resultados del Piloto",
+          "metrics": [
+            {
+              "number": "100%",
+              "description": "Privacidad de audio local sin servidores"
+            },
+            {
+              "number": "+40%",
+              "description": "Incremento de sesiones voluntarias de lectura al no tener presión de tiempo"
+            },
+            {
+              "number": "94%",
+              "description": "Aceptación y feedback positivo de tutores sobre el progreso lector"
+            }
+          ],
+          "conclusion": "AI Reader demuestra que el diseño centrado en el usuario (infantil) respaldado por inteligencia artificial perimetral en el dispositivo (Edge AI) puede redefinir las experiencias educativas, proporcionando un espacio seguro, privado y empoderador para el crecimiento infantil."
+        }
+      }
     }
   }
 }

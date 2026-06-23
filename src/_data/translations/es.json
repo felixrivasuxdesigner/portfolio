@@ -246,6 +246,21 @@
     "mobile_app": "App Móvil",
     "web_app": "App Web",
     "projects": {
+      "intelliresearch": {
+        "title": "IntelliResearch",
+        "categories": "#UX Research #AI #SaaS",
+        "description": "Plataforma de análisis de investigación UX potenciada por IA que transforma horas de entrevistas cualitativas en insights accionables en minutos."
+      },
+      "radio_dao": {
+        "title": "Radio Barrio Centenario",
+        "categories": "#Mobile App #Community #Web3",
+        "description": "Transformación digital de una radio comunitaria histórica mediante tecnologías Web3 y streaming híbrido, permitiendo la gobernanza descentralizada."
+      },
+      "journeylaw": {
+        "title": "JourneyLaw",
+        "categories": "#Diseño UX #Diseño UI #Legal Tech #Desarrollo Frontend",
+        "description": "Plataforma SaaS de gestión legal diseñada para modernizar y simplificar la administración de casos jurídicos mediante un diseño centrado en el usuario."
+      },
       "wallet": {
         "title": "Billetera Móvil",
         "categories": "#Diseño UX #Diseño UI #Prototipo #Diseño",
@@ -260,6 +275,21 @@
         "title": "Nomadix Adventure",
         "categories": "#Diseño Web #Diseño #Wireframe",
         "description": "Este proyecto ejemplifica mi compromiso con la excelencia en diseño, integrando perfectamente creatividad con funcionalidad para ofrecer experiencias digitales convincentes. La plataforma Nomadix Adventure equilibra atractivo visual con navegación intuitiva para crear una solución centrada en el usuario que supera las expectativas."
+      },
+      "fifa_predictor": {
+        "title": "FIFA World Cup 2026 Predictor",
+        "categories": "#Desarrollo Web #Diseño UX/UI #AI Integration",
+        "description": "Plataforma interactiva bilingüe para pronósticos deportivos de la Copa Mundial FIFA 2026, con sincronización de resultados en tiempo real y un bot de IA sarcástico en WhatsApp."
+      },
+      "agile_radar": {
+        "title": "AgileRadar",
+        "categories": "#Diseño UX/UI #SaaS #AI Agent #Desarrollo Frontend",
+        "description": "Plataforma de scouting y análisis automatizado de licitaciones públicas de Mercado Público para Shape, con estimador de compatibilidad mediante IA y generador de propuestas."
+      },
+      "ai_reader": {
+        "title": "AI Reader (LectorIA)",
+        "categories": "#Diseño UX/UI #Mobile App #EdTech #Whisper AI",
+        "description": "Aplicación móvil gamificada diseñada para que niños practiquen lectura en voz alta usando procesamiento de voz local offline (Whisper) para garantizar total privacidad."
       }
     }
   },

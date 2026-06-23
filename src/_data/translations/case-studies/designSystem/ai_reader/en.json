@@ -1,0 +1,102 @@
+{
+  "title": "AI Reader Design System",
+  "intro": "A playful, friendly, and stress-free environment featuring organic rounded corners, soft shadows, and typography optimized for children's reading. Mobile-first, built in React Native with NativeWind.",
+  "tokens": {
+    "colors": {
+      "primary": {
+        "name": "Pastel Purple",
+        "hex": "#9F7AEA",
+        "rgb": "159, 122, 234",
+        "usage": "Primary brand color. Headings, main buttons, and virtual mascot interface"
+      },
+      "secondary": {
+        "name": "Soft Peach",
+        "hex": "#FBD38D",
+        "rgb": "251, 211, 141",
+        "usage": "Playful accent color. Rewards, progress stars, and milestone achievements"
+      },
+      "grayscale": {
+        "gold": {
+          "name": "Amber Warm",
+          "hex": "#F6AD55",
+          "rgb": "246, 173, 85",
+          "usage": "In-progress words evaluated during read-aloud practice"
+        },
+        "background": {
+          "name": "Pastel Sky",
+          "hex": "#EBF8FF",
+          "rgb": "235, 248, 255",
+          "usage": "Calming application background (prevents visual fatigue)"
+        },
+        "card": {
+          "name": "Glass Surface",
+          "hex": "rgba(255, 255, 255, 0.8)",
+          "rgb": "255, 255, 255",
+          "usage": "Glassmorphism card surfaces containing reading passages"
+        },
+        "text": {
+          "name": "Charcoal Soft",
+          "hex": "#2D3748",
+          "rgb": "45, 55, 72",
+          "usage": "Primary story passage text (optimized for children's reading contrast)"
+        },
+        "textMuted": {
+          "name": "Slate Gray",
+          "hex": "#718096",
+          "rgb": "113, 128, 150",
+          "usage": "Subtitles, Lexile text levels, and mascot guidance instructions"
+        },
+        "success": {
+          "name": "Success Green",
+          "hex": "#48BB78",
+          "rgb": "72, 187, 120",
+          "usage": "Words pronounced correctly with successful phonetic matching"
+        },
+        "error": {
+          "name": "Error Rose",
+          "hex": "#F56565",
+          "rgb": "245, 101, 101",
+          "usage": "Mic issues or system errors (designed without intimidating visual penalties)"
+        }
+      }
+    },
+    "typography": {
+      "primary": {
+        "family": "Literata (Serif) & Outfit (Sans-Serif)",
+        "weights": [400, 500, 700],
+        "category": "Child-Friendly Mobile App (iOS/Android)"
+      },
+      "hierarchy": [
+        {
+          "name": "Story Heading",
+          "size": "26px",
+          "weight": "700",
+          "usage": "Story title or current chapter headings"
+        },
+        {
+          "name": "Reading Body",
+          "size": "22px",
+          "weight": "400",
+          "usage": "Main reading text (Literata serif, 1.8 wide line height for child readability)"
+        },
+        {
+          "name": "Button Label",
+          "size": "16px",
+          "weight": "700",
+          "usage": "Texts on interactive buttons (\"Next Page\", \"Record\")"
+        },
+        {
+          "name": "Lexile Level",
+          "size": "14px",
+          "weight": "500",
+          "usage": "Lexile reading scale indicators and tutor dashboard metrics"
+        }
+      ]
+    },
+    "shape": {
+      "borderRadius": "20px",
+      "buttonRadius": "100px",
+      "inputRadius": "12px"
+    }
+  }
+}
