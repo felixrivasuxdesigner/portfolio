@@ -37,6 +37,9 @@ export default {
     designSystemAiReader: {
       ...require('./translations/case-studies/designSystem/ai_reader/es.json')
     },
+    designSystemGrantThornton: {
+      ...require('./translations/case-studies/designSystem/grant_thornton/es.json')
+    },
     projectDesignSystems: {
       nomadix: require('./translations/case-studies/designSystem/nomadix/es.json'),
       journeylaw: require('./translations/case-studies/designSystem/journeylaw/es.json'),
@@ -46,7 +49,8 @@ export default {
       factoring: require('./translations/case-studies/designSystem/factoring/es.json'),
       fifa_predictor: require('./translations/case-studies/designSystem/fifa_predictor/es.json'),
       agile_radar: require('./translations/case-studies/designSystem/agile_radar/es.json'),
-      ai_reader: require('./translations/case-studies/designSystem/ai_reader/es.json')
+      ai_reader: require('./translations/case-studies/designSystem/ai_reader/es.json'),
+      grant_thornton: require('./translations/case-studies/designSystem/grant_thornton/es.json')
     }
   },
   en: {
@@ -84,6 +88,9 @@ export default {
     designSystemAiReader: {
       ...require('./translations/case-studies/designSystem/ai_reader/en.json')
     },
+    designSystemGrantThornton: {
+      ...require('./translations/case-studies/designSystem/grant_thornton/en.json')
+    },
     projectDesignSystems: {
       nomadix: require('./translations/case-studies/designSystem/nomadix/en.json'),
       journeylaw: require('./translations/case-studies/designSystem/journeylaw/en.json'),
@@ -93,7 +100,8 @@ export default {
       factoring: require('./translations/case-studies/designSystem/factoring/en.json'),
       fifa_predictor: require('./translations/case-studies/designSystem/fifa_predictor/en.json'),
       agile_radar: require('./translations/case-studies/designSystem/agile_radar/en.json'),
-      ai_reader: require('./translations/case-studies/designSystem/ai_reader/en.json')
+      ai_reader: require('./translations/case-studies/designSystem/ai_reader/en.json'),
+      grant_thornton: require('./translations/case-studies/designSystem/grant_thornton/en.json')
     }
   }
 };

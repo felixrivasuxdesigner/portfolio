@@ -1,0 +1,102 @@
+{
+  "title": "Grant Thornton BusinessTools Design System",
+  "intro": "A professional, accessible, and adaptive component system based on native Apple HIG aesthetics, combining official Grant Thornton brand colors with optimized guidelines for web applications and PDF/Mailing exports.",
+  "tokens": {
+    "colors": {
+      "primary": {
+        "name": "GT Purple",
+        "hex": "#533B7B",
+        "rgb": "83, 59, 123",
+        "usage": "Primary brand color for main buttons (CTAs), active states, and key interactive elements across the platform."
+      },
+      "secondary": {
+        "name": "Accent Cyan",
+        "hex": "#3BA7DC",
+        "rgb": "59, 167, 220",
+        "usage": "Secondary accent color for text links, secondary buttons, active navigation, and supporting actions."
+      },
+      "grayscale": {
+        "gold": {
+          "name": "Accent Red / Warning",
+          "hex": "#C83D47",
+          "rgb": "200, 61, 71",
+          "usage": "Warning notices, critical attention calls, and highlighting tax penalties."
+        },
+        "background": {
+          "name": "Grouped Light Background",
+          "hex": "#F2F2F7",
+          "rgb": "242, 242, 247",
+          "usage": "General grouped background behind cards and portal elements to provide visual depth (iOS style)."
+        },
+        "card": {
+          "name": "White Surface",
+          "hex": "#FFFFFF",
+          "rgb": "255, 255, 255",
+          "usage": "Elevated card surfaces, data forms, and text inputs floating over the gray background."
+        },
+        "text": {
+          "name": "On-Surface Dark",
+          "hex": "#1A1A1A",
+          "rgb": "26, 26, 26",
+          "usage": "Primary text with high readability on light screens."
+        },
+        "textMuted": {
+          "name": "Neutral Gray",
+          "hex": "#8E8E93",
+          "rgb": "142, 142, 147",
+          "usage": "Subtitles, secondary labels, disabled icons, and input borders."
+        },
+        "success": {
+          "name": "Success Green",
+          "hex": "#34C759",
+          "rgb": "52, 199, 89",
+          "usage": "Indicators for completed tax compliance without errors and successful processes."
+        },
+        "error": {
+          "name": "System Error Red",
+          "hex": "#FF3B30",
+          "rgb": "255, 59, 48",
+          "usage": "Error states in validations and destructive system actions."
+        }
+      }
+    },
+    "typography": {
+      "primary": {
+        "family": "Inter & SF Pro Text (Google Fonts / Apple Native)",
+        "weights": [400, 500, 600, 700],
+        "category": "Corporate Compliance and Accessibility"
+      },
+      "hierarchy": [
+        {
+          "name": "Large Title",
+          "size": "34px",
+          "weight": "700",
+          "usage": "Primary titles for panels and compliance dashboards."
+        },
+        {
+          "name": "Body Text",
+          "size": "17px",
+          "weight": "400",
+          "usage": "General reading text and tax explanations using the Apple typographic scale."
+        },
+        {
+          "name": "Subhead / Labels",
+          "size": "15px",
+          "weight": "500",
+          "usage": "Form labels, text fields, and secondary table information."
+        },
+        {
+          "name": "Caption",
+          "size": "12px",
+          "weight": "400",
+          "usage": "Complementary information and legal footnotes at the bottom of reports."
+        }
+      ]
+    },
+    "shape": {
+      "borderRadius": "16px (Cards) / 12px (Inputs)",
+      "buttonRadius": "12px (CTAs) / 100px (Pills)",
+      "inputRadius": "12px (Web) / 0px (Mailing/PDF)"
+    }
+  }
+}

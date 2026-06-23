@@ -290,6 +290,11 @@
         "title": "AI Reader (LectorIA)",
         "categories": "#UX/UI Design #Mobile App #EdTech #Whisper AI",
         "description": "A gamified mobile application designed for children to practice reading out loud, using offline on-device speech-to-text (Whisper) to ensure absolute privacy."
+      },
+      "grant_thornton": {
+        "title": "Grant Thornton BusinessTools",
+        "categories": "#UX/UI Design #Design System #React #TypeScript #Storybook",
+        "description": "Corporate design system and interactive React component library for the comprehensive tax compliance platform of Grant Thornton Chile."
       }
     }
   },

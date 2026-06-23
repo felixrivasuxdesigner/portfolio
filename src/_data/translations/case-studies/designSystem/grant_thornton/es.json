@@ -1,0 +1,102 @@
+{
+  "title": "Sistema de Diseño Grant Thornton BusinessTools",
+  "intro": "Un sistema de componentes profesional, accesible y adaptativo basado en la estética nativa de Apple HIG, combinando los colores corporativos oficiales de Grant Thornton con directrices optimizadas para interfaces web y exportación a PDF/Mailing.",
+  "tokens": {
+    "colors": {
+      "primary": {
+        "name": "GT Purple",
+        "hex": "#533B7B",
+        "rgb": "83, 59, 123",
+        "usage": "Color de marca primario para botones principales (CTAs), estados activos y elementos interactivos clave de la plataforma."
+      },
+      "secondary": {
+        "name": "Accent Cyan",
+        "hex": "#3BA7DC",
+        "rgb": "59, 167, 220",
+        "usage": "Color de acento secundario para enlaces de texto, botones secundarios, navegación activa y acciones de soporte."
+      },
+      "grayscale": {
+        "gold": {
+          "name": "Accent Red / Warning",
+          "hex": "#C83D47",
+          "rgb": "200, 61, 71",
+          "usage": "Avisos de advertencia, llamadas de atención críticas y resaltado de penalizaciones tributarias."
+        },
+        "background": {
+          "name": "Grouped Light Background",
+          "hex": "#F2F2F7",
+          "rgb": "242, 242, 247",
+          "usage": "Fondo general agrupado detrás de las tarjetas y elementos del portal para dar profundidad visual (estilo iOS)."
+        },
+        "card": {
+          "name": "White Surface",
+          "hex": "#FFFFFF",
+          "rgb": "255, 255, 255",
+          "usage": "Superficies elevadas de tarjetas, formularios de datos e inputs de texto que flotan sobre el fondo gris."
+        },
+        "text": {
+          "name": "On-Surface Dark",
+          "hex": "#1A1A1A",
+          "rgb": "26, 26, 26",
+          "usage": "Texto principal de alta legibilidad en pantallas claras."
+        },
+        "textMuted": {
+          "name": "Neutral Gray",
+          "hex": "#8E8E93",
+          "rgb": "142, 142, 147",
+          "usage": "Subtítulos, etiquetas secundarias, iconos desactivados y bordes de inputs."
+        },
+        "success": {
+          "name": "Success Green",
+          "hex": "#34C759",
+          "rgb": "52, 199, 89",
+          "usage": "Indicadores de cumplimiento tributario completado sin errores y procesos exitosos."
+        },
+        "error": {
+          "name": "System Error Red",
+          "hex": "#FF3B30",
+          "rgb": "255, 59, 48",
+          "usage": "Estados de error en validaciones y acciones destructivas del sistema."
+        }
+      }
+    },
+    "typography": {
+      "primary": {
+        "family": "Inter & SF Pro Text (Google Fonts / Apple Native)",
+        "weights": [400, 500, 600, 700],
+        "category": "Cumplimiento Corporativo y Accesibilidad"
+      },
+      "hierarchy": [
+        {
+          "name": "Large Title",
+          "size": "34px",
+          "weight": "700",
+          "usage": "Títulos principales de paneles y dashboards de cumplimiento."
+        },
+        {
+          "name": "Body Text",
+          "size": "17px",
+          "weight": "400",
+          "usage": "Texto de lectura general y explicaciones tributarias con escala tipográfica Apple."
+        },
+        {
+          "name": "Subhead / Labels",
+          "size": "15px",
+          "weight": "500",
+          "usage": "Etiquetas de formularios, campos de texto e información secundaria de tablas."
+        },
+        {
+          "name": "Caption",
+          "size": "12px",
+          "weight": "400",
+          "usage": "Información complementaria y notas legales al pie de los reportes."
+        }
+      ]
+    },
+    "shape": {
+      "borderRadius": "16px (Cards) / 12px (Inputs)",
+      "buttonRadius": "12px (CTAs) / 100px (Pills)",
+      "inputRadius": "12px (Web) / 0px (Mailing/PDF)"
+    }
+  }
+}

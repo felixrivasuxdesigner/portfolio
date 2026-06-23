@@ -766,6 +766,77 @@
           "conclusion": "AI Reader demuestra que el diseño centrado en el usuario (infantil) respaldado por inteligencia artificial perimetral en el dispositivo (Edge AI) puede redefinir las experiencias educativas, proporcionando un espacio seguro, privado y empoderador para el crecimiento infantil."
         }
       }
+    },
+    "grant_thornton": {
+      "title": "Grant Thornton BusinessTools",
+      "categories": "#Diseño UX/UI #Sistema de Diseño #React #TypeScript #Storybook",
+      "hero": {
+        "alt": "Grant Thornton BusinessTools Sistema de Diseño"
+      },
+      "sections": {
+        "context": {
+          "title": "Contexto del Proyecto",
+          "content": "Grant Thornton Chile requería unificar y modernizar el ecosistema de herramientas internas de cumplimiento tributario en un solo portal seguro denominado BusinessTools. Como Lead UX/UI Designer, el desafío consistió en diseñar un sistema de diseño corporativo robusto en React, TypeScript y CSS Modules, documentado en Storybook, que sirviera como base coherente para tres repositorios independientes (tax-portal-frontend, portalgt-backend y celery-k8s)."
+        },
+        "challenge": {
+          "title": "El Desafío",
+          "content": "La plataforma gestiona gran densidad de información financiera: grillas complejas de impuestos (F22, F29, F50), monitores de bots en tiempo real y asignación de grupos de sociedades. El reto principal era lograr que información tributaria compleja se sintiera clara y accesible siguiendo los principios de la Apple HIG (Human Interface Guidelines). Además, el sistema requería un esquema rígido de permisos (RBAC) y la capacidad de exportar reportes a PDF (vía WeasyPrint) y correos electrónicos (Mailing) con layouts planos especiales sin soporte moderno de CSS."
+        },
+        "designSystem": true,
+        "solution": {
+          "title": "Propuesta de Valor",
+          "content": "Diseñamos una librería de componentes atómicos interactivos centrada en el cumplimiento corporativo y la legibilidad:",
+          "features": [
+            "Arquitectura de Diseño Atómico: Estructuración rigurosa de componentes en Átomos, Moléculas, Organismos y Páginas de demostración interactiva en Storybook.",
+            "Estética Apple HIG Adaptativa: Paneles flotantes sobre fondos agrupados (#F2F2F7), bordes redondeados limpios de 16px, sombras sutiles y efectos de desenfoque de fondo (glassmorphism).",
+            "Mapeo de UI Especializado para Exportación: Modos alternativos en Storybook que descartan esquinas redondeadas, efectos de desenfoque y transformaciones interactivas para una renderización perfecta en PDF e emails corporativos.",
+            "Sistema de Permisos Integrado (RBAC): Componentes de control como 'PermissionGuard' y hooks reactivos para mostrar y ocultar de forma segura opciones de menú y acciones basados en los privilegios del usuario."
+          ]
+        },
+        "process": {
+          "title": "Proceso de Diseño y Desarrollo",
+          "steps": [
+            {
+              "title": "Establecimiento de Fricción Cero en Finanzas",
+              "content": "Mapeo de los complejos flujos de trabajo de los contadores y analistas tributarios para agrupar las métricas de renta anual, IVA mensual e impuestos adicionales de manera lógica.",
+              "alt": "Mapeo de Flujos Financieros"
+            },
+            {
+              "title": "Creación del Sistema de Componentes en Storybook",
+              "content": "Desarrollo y testeo interactivo de cada componente (botones, grillas avanzadas, inputs de fecha, cargadores OCR) con controles en Storybook para garantizar consistencia y accesibilidad WCAG 2.1 AA.",
+              "alt": "Storybook Component Library"
+            },
+            {
+              "title": "Optimización para Entornos sin CSS Moderno",
+              "content": "Investigación y desarrollo de layouts alternativos sin transformaciones ni sombras, específicos para el motor de generación PDF (WeasyPrint) y plantillas de correo para Outlook.",
+              "alt": "Diseño para PDF y Email"
+            },
+            {
+              "title": "Seguridad e Integración Front-End",
+              "content": "Diseño de la navegación dinámica que se oculta según roles del usuario, y estados de carga (skeletons) para mitigar la percepción de demora al procesar reportes pesados.",
+              "alt": "Navegación y Estados de Carga"
+            }
+          ]
+        },
+        "results": {
+          "title": "Resultados y Beneficios",
+          "metrics": [
+            {
+              "number": "100%",
+              "description": "Consistencia de marca en los 3 repositorios mediante la librería compartida"
+            },
+            {
+              "number": "WCAG AA",
+              "description": "Cumplimiento en contraste tipográfico y accesibilidad del sistema"
+            },
+            {
+              "number": "0 errores",
+              "description": "De renderizado de layouts en exportaciones a PDF (WeasyPrint) y plantillas de email"
+            }
+          ],
+          "conclusion": "El Sistema de Diseño de BusinessTools demuestra que la rigurosidad técnica de los componentes en React/TS, combinada con una estética nativa premium inspirada en Apple HIG, puede transformar herramientas corporativas tradicionalmente áridas en portales eficientes, seguros y de uso agradable."
+        }
+      }
     }
   }
 }

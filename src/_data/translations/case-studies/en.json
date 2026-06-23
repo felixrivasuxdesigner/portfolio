@@ -712,6 +712,77 @@
           "conclusion": "AI Reader shows that user-centered child design combined with edge computing can create highly effective educational spaces that respect children's pace, emotional well-being, and data privacy."
         }
       }
+    },
+    "grant_thornton": {
+      "title": "Grant Thornton BusinessTools",
+      "categories": "#UX/UI Design #Design System #React #TypeScript #Storybook",
+      "hero": {
+        "alt": "Grant Thornton BusinessTools Design System"
+      },
+      "sections": {
+        "context": {
+          "title": "Project Overview",
+          "content": "Grant Thornton Chile required a unified and modernized ecosystem for its internal tax compliance tools, consolidated into a single secure portal named BusinessTools. As Lead UX/UI Designer, the challenge was to design a robust corporate design system in React, TypeScript, and CSS Modules, fully documented in Storybook, serving as a consistent foundation across three independent repositories (tax-portal-frontend, portalgt-backend, and celery-k8s)."
+        },
+        "challenge": {
+          "title": "The Challenge",
+          "content": "The platform processes heavy financial data density: complex tax grids (annual F22, monthly F29, additional F50), real-time scraping bot monitors, and company group assignments. The primary UX hurdle was to present dense tax details cleanly and accessibly following Apple's HIG (Human Interface Guidelines). Furthermore, the portal required a strict role-based access control system (RBAC) and alternative flat styling configurations for exporting reports to PDF (via WeasyPrint) and emails (Mailing) without modern CSS support."
+        },
+        "designSystem": true,
+        "solution": {
+          "title": "Value Proposition",
+          "content": "We engineered an interactive, atomic component library tailored for corporate compliance and legibility:",
+          "features": [
+            "Atomic Design Architecture: Structured components strictly into Atoms, Molecules, Organisms, and interactive demo Pages in Storybook.",
+            "Adaptive Apple HIG Aesthetic: Floating cards on grouped backdrops (#F2F2F7), clean 16px corner radii, subtle shadows, and backdrop blur effects (glassmorphism).",
+            "Specialized UI Export Modes: Dedicated Storybook configuration that discards border radii, drop shadows, and scale transforms to guarantee clean render outputs in PDFs and enterprise email clients.",
+            "Embedded Access Control (RBAC): Built-in control components like 'PermissionGuard' and reactive authorization hooks to dynamically hide/show menu items and operations based on user privileges."
+          ]
+        },
+        "process": {
+          "title": "UX & Development Process",
+          "steps": [
+            {
+              "title": "Mapping Financial Workflows",
+              "content": "Interfaced with accountants and tax analysts to organize annual income, monthly sales tax, and supplementary tax filings into a logical information hierarchy.",
+              "alt": "Financial Flow Mapping"
+            },
+            {
+              "title": "Storybook Component Library",
+              "content": "Developed and tested components (buttons, grids, inputs, OCR upload areas) with live controls in Storybook to guarantee consistent behavior and WCAG 2.1 AA accessibility.",
+              "alt": "Component Documentation"
+            },
+            {
+              "title": "Optimizing for Limited CSS Engines",
+              "content": "Investigated and developed flat UI variations specifically adapted for the Python WeasyPrint engine and enterprise Outlook email rendering.",
+              "alt": "Design for PDF and Email"
+            },
+            {
+              "title": "Role-Based Navigation and Skeletons",
+              "content": "Designed dynamic menu states based on user roles and custom skeletons to reduce perceived wait times during complex report generation.",
+              "alt": "Access and Loading States"
+            }
+          ]
+        },
+        "results": {
+          "title": "Results & Business Impact",
+          "metrics": [
+            {
+              "number": "100%",
+              "description": "Brand consistency across all three repositories using the shared package"
+            },
+            {
+              "number": "WCAG AA",
+              "description": "Compliance in typographic contrast and interactive component accessibility"
+            },
+            {
+              "number": "0 errors",
+              "description": "Layout issues when exporting to PDF (WeasyPrint) or sending emails"
+            }
+          ],
+          "conclusion": "The BusinessTools Design System demonstrates that technical rigor in React/TS component architecture, combined with a premium Apple HIG native aesthetic, can elevate complex corporate utilities into highly efficient, secure, and user-friendly web portals."
+        }
+      }
     }
   }
 }
