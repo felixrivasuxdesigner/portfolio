@@ -1,102 +1,107 @@
 {
-  "title": "Sistema de Diseño AI Reader (LectorIA)",
-  "intro": "Un entorno lúdico, amigable y libre de estrés con bordes redondeados orgánicos, sombras suaves y tipografía optimizada para lectura infantil. Mobile-first, construido en React Native con NativeWind.",
+  "title": "Sistema de Diseño Chucao",
+  "intro": "Un lenguaje cálido inspirado en el bosque chileno: verde bosque para la acción, terracota del pecho del chucao como acento y superficies crema antirreflejo para leer sin fatiga. Literata para la lectura y Plus Jakarta Sans para la interfaz.",
   "tokens": {
     "colors": {
       "primary": {
-        "name": "Pastel Purple",
-        "hex": "#9F7AEA",
-        "rgb": "159, 122, 234",
-        "usage": "Color de marca primario. Títulos, botones principales e interfaz de la mascota virtual"
+        "name": "Verde bosque",
+        "hex": "#006A46",
+        "rgb": "0, 106, 70",
+        "usage": "Color de marca. Botones principales, palabras correctas y estados de éxito"
       },
       "secondary": {
-        "name": "Soft Peach",
-        "hex": "#FBD38D",
-        "rgb": "251, 211, 141",
-        "usage": "Color de acento lúdico. Recompensas, estrellas de progreso e hitos completados"
+        "name": "Terracota",
+        "hex": "#A73918",
+        "rgb": "167, 57, 24",
+        "usage": "Acento de marca tomado del pecho del chucao. Destacados y métricas"
       },
       "grayscale": {
         "gold": {
-          "name": "Amber Warm",
-          "hex": "#F6AD55",
-          "rgb": "246, 173, 85",
-          "usage": "Palabras en progreso evaluadas durante la lectura en voz alta"
+          "name": "Coral",
+          "hex": "#FE7952",
+          "rgb": "254, 121, 82",
+          "usage": "Contenedores de acento y celebraciones. Solo decorativo: no se usa para texto"
         },
         "background": {
-          "name": "Pastel Sky",
-          "hex": "#EBF8FF",
-          "rgb": "235, 248, 255",
-          "usage": "Fondo relajante de la aplicación (evita fatiga visual)"
+          "name": "Crema",
+          "hex": "#FFF8F3",
+          "rgb": "255, 248, 243",
+          "usage": "Fondo general cálido y antirreflejo para lectura prolongada"
         },
         "card": {
-          "name": "Glass Surface",
-          "hex": "rgba(255, 255, 255, 0.8)",
+          "name": "Superficie",
+          "hex": "#FFFFFF",
           "rgb": "255, 255, 255",
-          "usage": "Superficies de tarjetas con efecto glassmorphism para contener los textos"
+          "usage": "Tarjetas, hojas de lectura y paneles del dashboard"
         },
         "text": {
-          "name": "Charcoal Soft",
-          "hex": "#2D3748",
-          "rgb": "45, 55, 72",
-          "usage": "Texto principal del cuento (optimizado para lectura de niños)"
+          "name": "Texto",
+          "hex": "#211B12",
+          "rgb": "33, 27, 18",
+          "usage": "Texto principal y cuentos (16,2:1 sobre crema)"
         },
         "textMuted": {
-          "name": "Slate Gray",
-          "hex": "#718096",
-          "rgb": "113, 128, 150",
-          "usage": "Subtítulos, nivel Lexile del texto e instrucciones guiadas por la mascota"
+          "name": "Texto secundario",
+          "hex": "#3E4942",
+          "rgb": "62, 73, 66",
+          "usage": "Instrucciones, metadatos y etiquetas"
         },
         "success": {
-          "name": "Success Green",
-          "hex": "#48BB78",
-          "rgb": "72, 187, 120",
-          "usage": "Palabras pronunciadas correctamente con coincidencia fonética exitosa"
+          "name": "Verde claro",
+          "hex": "#6EDBA7",
+          "rgb": "110, 219, 167",
+          "usage": "Progreso y estados positivos sobre fondos oscuros"
         },
         "error": {
-          "name": "Error Rose",
-          "hex": "#F56565",
-          "rgb": "245, 101, 101",
-          "usage": "Intentos fallidos de micrófono o errores del sistema (diseñados sin penalizaciones visuales intimidantes)"
+          "name": "Error",
+          "hex": "#BA1A1A",
+          "rgb": "186, 26, 26",
+          "usage": "Errores de sistema en el dashboard. Nunca se muestra al niño"
         }
       }
     },
     "typography": {
       "primary": {
-        "family": "Literata (Serif) & Outfit (Sans-Serif)",
-        "weights": [400, 500, 700],
-        "category": "Mobile App Infantil (iOS/Android)"
+        "family": "Literata (lectura) & Plus Jakarta Sans (interfaz)",
+        "weights": [
+          400,
+          500,
+          700,
+          800
+        ],
+        "category": "App para tablet y dashboard web"
       },
       "hierarchy": [
         {
-          "name": "Story Heading",
-          "size": "26px",
-          "weight": "700",
-          "usage": "Título del cuento o del capítulo actual"
-        },
-        {
-          "name": "Reading Body",
-          "size": "22px",
+          "name": "Texto de lectura",
+          "size": "28px",
           "weight": "400",
-          "usage": "Texto principal de lectura (Literata, espaciado amplio de 1.8 para niños)"
+          "usage": "Cuentos en Literata con interlineado amplio para primeros lectores"
         },
         {
-          "name": "Button Label",
-          "size": "16px",
+          "name": "Título",
+          "size": "24px",
           "weight": "700",
-          "usage": "Textos en botones interactivos (\"Siguiente Página\", \"Grabar\")"
+          "usage": "Títulos de cuentos y pantallas"
         },
         {
-          "name": "Lexile Level",
+          "name": "Botón",
+          "size": "18px",
+          "weight": "700",
+          "usage": "Acciones en la tablet, con áreas táctiles de mínimo 56×56 dp"
+        },
+        {
+          "name": "Dato",
           "size": "14px",
           "weight": "500",
-          "usage": "Indicador de nivel Lexile y métricas del tutor"
+          "usage": "Métricas, etiquetas y tablas del dashboard docente"
         }
       ]
     },
     "shape": {
-      "borderRadius": "20px",
-      "buttonRadius": "100px",
-      "inputRadius": "12px"
+      "borderRadius": "16px",
+      "buttonRadius": "9999px",
+      "inputRadius": "8px"
     }
   }
 }

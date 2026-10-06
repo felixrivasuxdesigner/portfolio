@@ -200,7 +200,7 @@
 
             &.btn-primary {
                 background-color: var(--theme-primary);
-                color: var(--theme-gray-white, #fff);
+                color: var(--theme-on-primary, #fff);
                 border: 1px solid var(--theme-primary);
 
                 &.hover {

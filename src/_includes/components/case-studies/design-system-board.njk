@@ -1,10 +1,13 @@
+{# No todos los sistemas definen dark/medium/light/white: sin ellos el tablero usa grises neutros legibles #}
+{% set gs = designSystem.tokens.colors.grayscale or {} %}
 <div class="design-board-wrapper" style="
   --theme-primary: {{ designSystem.tokens.colors.primary.hex }};
   --theme-secondary: {{ designSystem.tokens.colors.secondary.hex }};
-  --theme-gray-dark: {{ designSystem.tokens.colors.grayscale.dark.hex }};
-  --theme-gray-medium: {{ designSystem.tokens.colors.grayscale.medium.hex }};
-  --theme-gray-light: {{ designSystem.tokens.colors.grayscale.light.hex }};
-  --theme-gray-white: {{ designSystem.tokens.colors.grayscale.white.hex }};
+  --theme-gray-dark: {{ (gs.dark or {}).hex or '#212529' }};
+  --theme-gray-medium: {{ (gs.medium or {}).hex or '#6c757d' }};
+  --theme-gray-light: {{ (gs.light or {}).hex or '#f8f9fa' }};
+  --theme-gray-white: {{ (gs.white or {}).hex or '#ffffff' }};
+  --theme-on-primary: {{ (gs.white or {}).hex or '#ffffff' }};
   --theme-font-primary: '{{ designSystem.tokens.typography.primary.family }}', sans-serif;
   --theme-radius: {{ designSystem.tokens.shape.borderRadius }};
   --theme-button-radius: {{ designSystem.tokens.shape.buttonRadius }};

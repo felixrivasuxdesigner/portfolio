@@ -287,9 +287,9 @@
         "description": "Plataforma de scouting y análisis automatizado de licitaciones públicas de Mercado Público para Shape, con estimador de compatibilidad mediante IA y generador de propuestas."
       },
       "ai_reader": {
-        "title": "AI Reader (LectorIA)",
-        "categories": "#Diseño UX/UI #Mobile App #EdTech #Whisper AI",
-        "description": "Aplicación móvil gamificada diseñada para que niños practiquen lectura en voz alta usando procesamiento de voz local offline (Whisper) para garantizar total privacidad."
+        "title": "Chucao",
+        "categories": "#EdTech #Tablet App #Dashboard Docente #Edge AI",
+        "description": "Plataforma para colegios que evalúa la fluidez lectora con IA dentro de la tablet: los niños leen con Chu y los docentes revisan los resultados en un dashboard web."
       },
       "grant_thornton": {
         "title": "Grant Thornton BusinessTools",

@@ -750,73 +750,113 @@
       }
     },
     "ai_reader": {
-      "title": "AI Reader (LectorIA)",
-      "categories": "#UX/UI Design #Mobile App #EdTech #Whisper AI",
+      "title": "Chucao",
+      "categories": "#EdTech #Tablet App #Teacher Dashboard #Edge AI",
       "hero": {
-        "alt": "AI Reader LectorIA Mobile App"
+        "alt": "Chu, Chucao's mascot, reading a book surrounded by its moods"
       },
+      "facts": [
+        {
+          "label": "Role",
+          "value": "Product design and development"
+        },
+        {
+          "label": "Studio",
+          "value": "Shape Creative Studio",
+          "url": "https://shapecreativestudio.com"
+        },
+        {
+          "label": "Platforms",
+          "value": "Tablet app · Teacher web dashboard"
+        },
+        {
+          "label": "Users",
+          "value": "Students aged 5 to 8 and their teachers"
+        },
+        {
+          "label": "Status",
+          "value": "Working MVP · in validation"
+        }
+      ],
       "sections": {
         "context": {
-          "title": "Project Overview",
-          "content": "AI Reader (LectorIA) is a playful mobile application built for 7-year-old children. It utilizes offline on-device AI speech-to-text to evaluate oral reading accuracy and fluency, matching reading selections to the child's Lexile scale."
+          "title": "Context",
+          "content": "Chucao (formerly LectorIA) is a B2B platform for schools that assesses oral reading fluency. Children read stories on a tablet alongside Chu, a Chilean chucao bird, while AI measures speed, accuracy and word-by-word errors right on the device. Teachers review the results in a web dashboard. I designed and built it through Shape Creative Studio, my studio."
         },
         "challenge": {
-          "title": "The Challenge",
-          "content": "Reading out loud in front of teachers, parents, or devices often induces performance anxiety in young readers. Traditional reading software heightens this by displaying aggressive countdown timers and blunt error counters. Furthermore, sending children's audio records to cloud servers raises critical privacy concerns. The challenge was to create an engaging, stress-free, and 100% offline app."
+          "title": "The challenge",
+          "content": "Measuring reading fluency today takes a teacher with a printed text and a stopwatch, one child at a time. It is slow, it depends on who assesses, and reading in front of an adult who is timing you makes children anxious. The challenge was to automate the measurement without losing pedagogical rigor, make it feel like a game rather than a test, and protect minors' voices under Chile's new data protection law (Ley 21.719)."
         },
-        "designSystem": true,
+        "research": {
+          "title": "My approach",
+          "subsections": [
+            {
+              "title": "Two users, two experiences",
+              "content": "The product has two sides with opposite needs:",
+              "bullets": [
+                "Student: tablet, one task per screen, large text and no signs of being assessed.",
+                "Teacher: a high-density dashboard to review assessments in batches, listen to the audio and export reports.",
+                "School leadership: aggregated indicators by class and school for improvement plans."
+              ]
+            },
+            {
+              "title": "Chu, the heart of the experience",
+              "content": "I replaced the first version's generic owl with Chu, a chucao, a bird from the Chilean forest. Chu has 10 emotional states (greets, thinks, listens, celebrates, encourages after a mistake) inspired by Duolingo's positive reinforcement. There are no error sounds or visible timers: time is measured, but the child never sees it."
+            }
+          ]
+        },
+        "designSystem": {
+          "title": "Design system",
+          "intro": "Forest green, terracotta and warm anti-glare surfaces, with Literata for reading."
+        },
         "solution": {
-          "title": "Value Proposition",
-          "content": "We built a child-first reading practice environment centered around on-device voice processing:",
+          "title": "The solution",
+          "content": "A dual platform with the AI running inside the tablet:",
           "features": [
-            "Offline Whisper.rn Integration: Speech-to-text processing performed locally on the device's chip using lightweight, downloadable AI models (ggml-tiny).",
-            "Zero-Stress Reading UX: No timers or ticking clocks; the child reads at their own pace accompanied by a friendly owl mascot acting as an empathetic guide.",
-            "Positive Visual Feedback: Words read correctly are highlighted in green in real-time, and completed pages reward children with collectable stars.",
-            "Absolute Child Privacy: 100% of the voice audio remains on the device, ensuring native compliance with child protection laws (COPPA/GDPR)."
+            "Edge AI: Whisper (whisper.rn) transcribes speech on the tablet itself with a ~31 MB quantized model; after the first download it works offline.",
+            "Word-by-word analysis: each word is classified as correct, omitted, substituted or inserted, and the app computes reading speed (WCPM) and the Ministry of Education level.",
+            "Teacher dashboard: batch review, a player that syncs the audio with the word breakdown at 0.75x, 1x or 1.25x, and PDF reports for parents.",
+            "Offline-first: assessments are stored on the tablet and synced when the connection returns, built for classrooms with unreliable internet."
           ]
         },
         "process": {
-          "title": "Child-Centered UX Process",
+          "title": "Privacy by design",
           "steps": [
             {
-              "title": "Usability Observations",
-              "content": "Conducted direct sessions observing children reading aloud to screens, identifying emotional friction points and removing intimidating UI elements.",
-              "alt": "User Testing Sessions"
+              "title": "Consent first",
+              "content": "Without parental consent recorded by the teacher, the student does not appear on the tablet and the server rejects their assessments."
             },
             {
-              "title": "Mascot Character Design",
-              "content": "Designed the friendly owl mascot to provide supportive visual cues, celebrate successes, and offer helpful prompts without generating feelings of failure.",
-              "alt": "Mascot Integration"
+              "title": "The voice stays on the tablet",
+              "content": "Transcription happens on the device. Audio is only uploaded with explicit consent and is deleted automatically after 90 days."
             },
             {
-              "title": "Optimizing Child Typography",
-              "content": "Selected the Literata serif font and configured a wide 1.8 line height to improve contrast and help children with early signs of dyslexia scan text easily.",
-              "alt": "Typography Configuration"
+              "title": "Minimal data",
+              "content": "Only the initial of the student's last name is stored. Each school is isolated from the others at the database level."
             },
             {
-              "title": "On-Device Whisper Engineering",
-              "content": "Compiled native C++ Whisper bindings for React Native, managing dynamic model downloads to keep the initial App Store download package lightweight.",
-              "alt": "Native C++ Integration"
+              "title": "Documented legal framework",
+              "content": "Impact assessment (DPIA), privacy policy, consent form and processing agreement under Ley 21.719: the school is the controller and Chucao the processor."
             }
           ]
         },
         "results": {
-          "title": "Pilot Results",
+          "title": "Status and next steps",
           "metrics": [
             {
               "number": "100%",
-              "description": "Local offline audio processing (zero server leaks)"
+              "description": "Speech transcription inside the tablet"
             },
             {
-              "number": "+40%",
-              "description": "Increase in voluntary session reading duration compared to timed apps"
+              "number": "~31 MB",
+              "description": "AI model that works offline"
             },
             {
-              "number": "94%",
-              "description": "Positive tutor satisfaction score regarding reading tracking and privacy"
+              "number": "90 days",
+              "description": "Automatic deletion of backed-up audio"
             }
           ],
-          "conclusion": "AI Reader shows that user-centered child design combined with edge computing can create highly effective educational spaces that respect children's pace, emotional well-being, and data privacy."
+          "conclusion": "Chucao is a working MVP. The next step is validating it against human assessors with an agreement protocol defined before any data is collected: 20 readings per grade from 1st to 3rd, comparing speed, accuracy and word-by-word errors."
         }
       }
     },

@@ -1,102 +1,107 @@
 {
-  "title": "AI Reader Design System",
-  "intro": "A playful, friendly, and stress-free environment featuring organic rounded corners, soft shadows, and typography optimized for children's reading. Mobile-first, built in React Native with NativeWind.",
+  "title": "Chucao Design System",
+  "intro": "A warm language inspired by the Chilean forest: forest green for action, the terracotta of the chucao's breast as accent and cream anti-glare surfaces for fatigue-free reading. Literata for reading and Plus Jakarta Sans for the interface.",
   "tokens": {
     "colors": {
       "primary": {
-        "name": "Pastel Purple",
-        "hex": "#9F7AEA",
-        "rgb": "159, 122, 234",
-        "usage": "Primary brand color. Headings, main buttons, and virtual mascot interface"
+        "name": "Forest Green",
+        "hex": "#006A46",
+        "rgb": "0, 106, 70",
+        "usage": "Brand color. Primary buttons, correct words and success states"
       },
       "secondary": {
-        "name": "Soft Peach",
-        "hex": "#FBD38D",
-        "rgb": "251, 211, 141",
-        "usage": "Playful accent color. Rewards, progress stars, and milestone achievements"
+        "name": "Terracotta",
+        "hex": "#A73918",
+        "rgb": "167, 57, 24",
+        "usage": "Brand accent taken from the chucao's breast. Highlights and metrics"
       },
       "grayscale": {
         "gold": {
-          "name": "Amber Warm",
-          "hex": "#F6AD55",
-          "rgb": "246, 173, 85",
-          "usage": "In-progress words evaluated during read-aloud practice"
+          "name": "Coral",
+          "hex": "#FE7952",
+          "rgb": "254, 121, 82",
+          "usage": "Accent containers and celebrations. Decorative only: never used for text"
         },
         "background": {
-          "name": "Pastel Sky",
-          "hex": "#EBF8FF",
-          "rgb": "235, 248, 255",
-          "usage": "Calming application background (prevents visual fatigue)"
+          "name": "Cream",
+          "hex": "#FFF8F3",
+          "rgb": "255, 248, 243",
+          "usage": "Warm anti-glare background for long reading sessions"
         },
         "card": {
-          "name": "Glass Surface",
-          "hex": "rgba(255, 255, 255, 0.8)",
+          "name": "Surface",
+          "hex": "#FFFFFF",
           "rgb": "255, 255, 255",
-          "usage": "Glassmorphism card surfaces containing reading passages"
+          "usage": "Cards, reading sheets and dashboard panels"
         },
         "text": {
-          "name": "Charcoal Soft",
-          "hex": "#2D3748",
-          "rgb": "45, 55, 72",
-          "usage": "Primary story passage text (optimized for children's reading contrast)"
+          "name": "Text",
+          "hex": "#211B12",
+          "rgb": "33, 27, 18",
+          "usage": "Main text and stories (16.2:1 on cream)"
         },
         "textMuted": {
-          "name": "Slate Gray",
-          "hex": "#718096",
-          "rgb": "113, 128, 150",
-          "usage": "Subtitles, Lexile text levels, and mascot guidance instructions"
+          "name": "Secondary Text",
+          "hex": "#3E4942",
+          "rgb": "62, 73, 66",
+          "usage": "Instructions, metadata and labels"
         },
         "success": {
-          "name": "Success Green",
-          "hex": "#48BB78",
-          "rgb": "72, 187, 120",
-          "usage": "Words pronounced correctly with successful phonetic matching"
+          "name": "Light Green",
+          "hex": "#6EDBA7",
+          "rgb": "110, 219, 167",
+          "usage": "Progress and positive states on dark backgrounds"
         },
         "error": {
-          "name": "Error Rose",
-          "hex": "#F56565",
-          "rgb": "245, 101, 101",
-          "usage": "Mic issues or system errors (designed without intimidating visual penalties)"
+          "name": "Error",
+          "hex": "#BA1A1A",
+          "rgb": "186, 26, 26",
+          "usage": "System errors in the dashboard. Never shown to the child"
         }
       }
     },
     "typography": {
       "primary": {
-        "family": "Literata (Serif) & Outfit (Sans-Serif)",
-        "weights": [400, 500, 700],
-        "category": "Child-Friendly Mobile App (iOS/Android)"
+        "family": "Literata (reading) & Plus Jakarta Sans (interface)",
+        "weights": [
+          400,
+          500,
+          700,
+          800
+        ],
+        "category": "Tablet app and web dashboard"
       },
       "hierarchy": [
         {
-          "name": "Story Heading",
-          "size": "26px",
-          "weight": "700",
-          "usage": "Story title or current chapter headings"
-        },
-        {
-          "name": "Reading Body",
-          "size": "22px",
+          "name": "Reading Text",
+          "size": "28px",
           "weight": "400",
-          "usage": "Main reading text (Literata serif, 1.8 wide line height for child readability)"
+          "usage": "Stories in Literata with generous line height for early readers"
         },
         {
-          "name": "Button Label",
-          "size": "16px",
+          "name": "Title",
+          "size": "24px",
           "weight": "700",
-          "usage": "Texts on interactive buttons (\"Next Page\", \"Record\")"
+          "usage": "Story and screen titles"
         },
         {
-          "name": "Lexile Level",
+          "name": "Button",
+          "size": "18px",
+          "weight": "700",
+          "usage": "Tablet actions, with touch targets of at least 56×56 dp"
+        },
+        {
+          "name": "Data",
           "size": "14px",
           "weight": "500",
-          "usage": "Lexile reading scale indicators and tutor dashboard metrics"
+          "usage": "Metrics, labels and tables in the teacher dashboard"
         }
       ]
     },
     "shape": {
-      "borderRadius": "20px",
-      "buttonRadius": "100px",
-      "inputRadius": "12px"
+      "borderRadius": "16px",
+      "buttonRadius": "9999px",
+      "inputRadius": "8px"
     }
   }
 }

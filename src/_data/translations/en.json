@@ -287,9 +287,9 @@
         "description": "An automated bidding scouting and analysis platform for Shape, interfacing with Chile's public procurement portal with AI fit-scoring and proposal generation."
       },
       "ai_reader": {
-        "title": "AI Reader (LectorIA)",
-        "categories": "#UX/UI Design #Mobile App #EdTech #Whisper AI",
-        "description": "A gamified mobile application designed for children to practice reading out loud, using offline on-device speech-to-text (Whisper) to ensure absolute privacy."
+        "title": "Chucao",
+        "categories": "#EdTech #Tablet App #Teacher Dashboard #Edge AI",
+        "description": "A platform for schools that assesses reading fluency with on-tablet AI: children read with Chu and teachers review the results in a web dashboard."
       },
       "grant_thornton": {
         "title": "Grant Thornton BusinessTools",

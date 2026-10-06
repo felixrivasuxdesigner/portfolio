@@ -805,73 +805,113 @@
       }
     },
     "ai_reader": {
-      "title": "AI Reader (LectorIA)",
-      "categories": "#Diseño UX/UI #Mobile App #EdTech #Whisper AI",
+      "title": "Chucao",
+      "categories": "#EdTech #Tablet App #Dashboard Docente #Edge AI",
       "hero": {
-        "alt": "AI Reader LectorIA App Móvil"
+        "alt": "Chu, la mascota de Chucao, leyendo un libro junto a sus estados de ánimo"
       },
+      "facts": [
+        {
+          "label": "Rol",
+          "value": "Diseño y desarrollo de producto"
+        },
+        {
+          "label": "Estudio",
+          "value": "Shape Creative Studio",
+          "url": "https://shapecreativestudio.com"
+        },
+        {
+          "label": "Plataformas",
+          "value": "App para tablet · Dashboard web docente"
+        },
+        {
+          "label": "Usuarios",
+          "value": "Estudiantes de 5 a 8 años y sus docentes"
+        },
+        {
+          "label": "Estado",
+          "value": "MVP funcional · en validación"
+        }
+      ],
       "sections": {
         "context": {
-          "title": "Contexto del Proyecto",
-          "content": "AI Reader (LectorIA) es una plataforma móvil lúdica y educativa diseñada para niños de 7 años. Utiliza Inteligencia Artificial offline para evaluar la precisión y fluidez de la lectura en voz alta en tiempo real, adaptando los textos de forma didáctica al nivel Lexile de cada niño."
+          "title": "Contexto",
+          "content": "Chucao (antes LectorIA) es una plataforma B2B para colegios que evalúa la fluidez lectora en voz alta. Los niños leen cuentos en una tablet acompañados por Chu, un chucao chileno, mientras la inteligencia artificial mide velocidad, precisión y errores palabra por palabra directamente en el dispositivo. Los docentes revisan los resultados en un dashboard web. La diseñé y desarrollé a través de Shape Creative Studio, mi estudio."
         },
         "challenge": {
-          "title": "El Desafío",
-          "content": "Leer en voz alta frente a un maestro o un dispositivo suele generar alta ansiedad por desempeño en los niños. Las interfaces educativas tradicionales agravan esto con temporizadores parpadeantes y retroalimentación negativa directa. Además, el procesamiento de audio de menores genera serias preocupaciones de privacidad y uso de servidores externos. El reto era crear una app móvil nativa divertida, sin presiones y 100% offline."
+          "title": "El desafío",
+          "content": "Medir la fluidez lectora hoy exige a un docente con texto impreso y cronómetro, niño por niño. Es lento, depende de quién evalúa y, para el niño, leer frente a un adulto que toma el tiempo genera ansiedad. El reto era automatizar la medición sin perder rigor pedagógico, hacer que la experiencia se sintiera como un juego y no como un examen, y proteger la voz de menores de edad bajo la nueva Ley 21.719 de protección de datos."
         },
-        "designSystem": true,
+        "research": {
+          "title": "Mi acercamiento",
+          "subsections": [
+            {
+              "title": "Dos usuarios, dos experiencias",
+              "content": "El producto tiene dos caras con necesidades opuestas:",
+              "bullets": [
+                "Estudiante: tablet, una tarea por pantalla, texto grande y cero señales de evaluación.",
+                "Docente: dashboard de alta densidad para revisar evaluaciones en lote, escuchar el audio y exportar informes.",
+                "UTP o dirección: indicadores agregados por curso y colegio para los planes de mejoramiento."
+              ]
+            },
+            {
+              "title": "Chu, el corazón de la experiencia",
+              "content": "Reemplacé el búho genérico de la primera versión por Chu, un chucao, ave del bosque chileno. Chu tiene 10 estados emocionales (saluda, piensa, escucha, celebra, anima tras un error) inspirados en el refuerzo positivo de Duolingo. Nunca hay sonidos de error ni cronómetros visibles: el tiempo se mide, pero el niño no lo ve."
+            }
+          ]
+        },
+        "designSystem": {
+          "title": "Sistema de diseño",
+          "intro": "Verde bosque, terracota y superficies cálidas antirreflejo, con Literata para leer."
+        },
         "solution": {
-          "title": "Propuesta de Valor",
-          "content": "Desarrollamos una experiencia infantil respetuosa y lúdica basada en procesamiento local de voz:",
+          "title": "La solución",
+          "content": "Una plataforma dual con la inteligencia artificial corriendo dentro de la tablet:",
           "features": [
-            "Whisper.rn Offline Integrado: Reconocimiento y análisis fonético de voz procesado localmente en el chip del smartphone mediante modelos de IA ligeros descárgables (ggml-tiny).",
-            "UX Libre de Estrés: Sin cronómetros agresivos ni contadores regresivos; el niño lee a su propio ritmo con una mascota virtual (un tierno búho) como guía empático.",
-            "Visualización de Logros: Palabras leídas correctamente marcadas en verde en tiempo real, e hitos convertidos en estrellas coleccionables.",
-            "Privacidad Garantizada: Cero transmisión de audio infantil fuera del teléfono, garantizando cumplimiento nativo de normativas de privacidad de menores (COPPA/GDPR)."
+            "Edge AI: Whisper (whisper.rn) transcribe la voz en la propia tablet con un modelo cuantizado de ~31 MB; después de la primera descarga funciona sin conexión.",
+            "Análisis palabra por palabra: cada palabra se clasifica como correcta, omitida, sustituida o insertada, y se calcula la velocidad lectora (PCPM) y el nivel según MINEDUC.",
+            "Dashboard docente: revisión en lote, reproductor que sincroniza el audio con el desglose de palabras a 0.75x, 1x o 1.25x, y fichas exportables a PDF para apoderados.",
+            "Offline-first: las evaluaciones se guardan en la tablet y se sincronizan cuando vuelve la conexión, pensado para salas con internet inestable."
           ]
         },
         "process": {
-          "title": "Proceso de Diseño Infantil",
+          "title": "Privacidad por diseño",
           "steps": [
             {
-              "title": "User Testing Centrado en Niños",
-              "content": "Observación directa de niños leyendo frente a pantallas para identificar bloqueos emocionales y simplificar la jerarquía visual eliminando elementos intimidantes.",
-              "alt": "Shadowing de Lectura Infantil"
+              "title": "Consentimiento antes que todo",
+              "content": "Sin autorización del apoderado registrada por el docente, el estudiante no aparece en la tablet y el servidor rechaza sus evaluaciones."
             },
             {
-              "title": "Diseño de la Guía Empática",
-              "content": "Creación y colocación estratégica del búho mascota que ofrece palabras de aliento y anima mediante animaciones suaves al terminar cada párrafo.",
-              "alt": "Diseño de Mascota Interactiva"
+              "title": "La voz se queda en la tablet",
+              "content": "La transcripción ocurre en el dispositivo. El audio solo sube a la nube con autorización expresa y se borra automáticamente a los 90 días."
             },
             {
-              "title": "Optimización del Text Engine",
-              "content": "Configuración de la tipografía Serif Literata con amplia separación de caracteres (1.8 line-height) para reducir el salto de líneas en niños con indicios de dislexia.",
-              "alt": "Motor Tipográfico Amigable"
+              "title": "Datos mínimos",
+              "content": "Del estudiante solo se guarda la inicial del apellido. Cada colegio queda aislado de los demás a nivel de base de datos."
             },
             {
-              "title": "Ingeniería Whisper en Dispositivo",
-              "content": "Compilación del motor Whisper.rn en C++ nativo para React Native, gestionando la descarga dinámica del modelo binario de 77MB para no sobrecargar el instalador de la tienda.",
-              "alt": "Compilación e Integración de IA"
+              "title": "Marco legal documentado",
+              "content": "Evaluación de impacto (EIPD), política de privacidad, consentimiento y contrato de encargo según la Ley 21.719: el colegio es responsable y Chucao, encargado."
             }
           ]
         },
         "results": {
-          "title": "Resultados del Piloto",
+          "title": "Estado y próximos pasos",
           "metrics": [
             {
               "number": "100%",
-              "description": "Privacidad de audio local sin servidores"
+              "description": "Transcripción de voz dentro de la tablet"
             },
             {
-              "number": "+40%",
-              "description": "Incremento de sesiones voluntarias de lectura al no tener presión de tiempo"
+              "number": "~31 MB",
+              "description": "Modelo de IA que funciona sin conexión"
             },
             {
-              "number": "94%",
-              "description": "Aceptación y feedback positivo de tutores sobre el progreso lector"
+              "number": "90 días",
+              "description": "Borrado automático del audio respaldado"
             }
           ],
-          "conclusion": "AI Reader demuestra que el diseño centrado en el usuario (infantil) respaldado por inteligencia artificial perimetral en el dispositivo (Edge AI) puede redefinir las experiencias educativas, proporcionando un espacio seguro, privado y empoderador para el crecimiento infantil."
+          "conclusion": "Chucao es un MVP funcional. El siguiente paso es validarlo frente a evaluadores humanos con un protocolo de concordancia definido antes de recoger datos: 20 lecturas por curso entre 1° y 3° básico, comparando velocidad, precisión y errores palabra por palabra."
         }
       }
     },
