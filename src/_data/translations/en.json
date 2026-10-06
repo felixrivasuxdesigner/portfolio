@@ -253,8 +253,8 @@
       },
       "radio_dao": {
         "title": "Radio Barrio Centenario",
-        "categories": "#Mobile App #Community #Web3",
-        "description": "Digital transformation of a historic community radio station through Web3 technologies and hybrid streaming, enabling decentralized governance."
+        "categories": "#Mobile App #Admin Console #Community",
+        "description": "Digital platform for a live community radio station: mobile app, web player and an Admin Console to run the schedule and neighborhood votes."
       },
       "journeylaw": {
         "title": "JourneyLaw",

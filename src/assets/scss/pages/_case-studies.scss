@@ -98,6 +98,84 @@
     }
   }
 
+  // Ficha del proyecto: rol, estudio, plataformas y estado
+  &-facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1.5rem 2rem;
+    margin: -1rem 0 3rem;
+    padding: 1.5rem 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+
+    dt {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      // --light-text-color (#777) da 4.48:1 sobre blanco; se usa el color de texto
+      color: var(--text-color);
+      margin-bottom: 0.35rem;
+    }
+
+    dd {
+      margin: 0;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text-color);
+      line-height: 1.4;
+
+      a {
+        color: inherit;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+
+        &:focus-visible {
+          outline: 2px solid currentColor;
+          outline-offset: 3px;
+        }
+      }
+    }
+  }
+
+  // Pantallas reales del producto con su explicación
+  &-screens {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 2.5rem 1.5rem;
+
+    @media (min-width: 992px) {
+      grid-template-columns: repeat(5, 1fr);
+    }
+    margin-top: 2rem;
+
+    .screen-item {
+      margin: 0;
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.25);
+        margin-bottom: 1.25rem;
+      }
+
+      h3 {
+        font-size: 1.05rem;
+        margin-bottom: 0.4rem;
+        color: var(--text-color);
+      }
+
+      p {
+        font-size: 0.95rem;
+        margin-bottom: 0;
+        line-height: 1.5;
+      }
+    }
+  }
+
   &-section {
     margin-bottom: 3rem;
 

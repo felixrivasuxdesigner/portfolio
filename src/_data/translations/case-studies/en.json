@@ -439,64 +439,128 @@
     },
     "radio_dao": {
       "title": "Radio Barrio Centenario",
-      "categories": "#Mobile App #Community #Web3",
+      "categories": "#Mobile App #Admin Console #Community",
       "hero": {
-        "alt": "Radio Barrio Centenario App"
+        "alt": "Radio Barrio Centenario app: schedule, live player and mood picker"
       },
+      "facts": [
+        {
+          "label": "Role",
+          "value": "Product design and development"
+        },
+        {
+          "label": "Studio",
+          "value": "Shape Creative Studio",
+          "url": "https://shapecreativestudio.com"
+        },
+        {
+          "label": "Platforms",
+          "value": "Android app · Admin Console · Web player"
+        },
+        {
+          "label": "Status",
+          "value": "Live · v1.4.0 (Android beta)"
+        },
+        {
+          "label": "Listen",
+          "value": "radiobarriocentenario.cl",
+          "url": "https://radiobarriocentenario.cl/player/"
+        }
+      ],
       "sections": {
         "context": {
           "title": "Context",
-          "content": "A historic community radio station facing stagnation, transformed into a DAO to democratize ownership and modernize its reach."
+          "content": "Radio Barrio Centenario is a community radio station that now broadcasts around the clock on its own digital platform: a mobile app for neighbors, a web player, and an Admin Console where the team manages shows, the weekly schedule, votes and announcements. I designed and built it end to end through Shape Creative Studio, my studio."
         },
         "challenge": {
-          "title": "The Challenge",
-          "content": "Radio Barrio Centenario, a historic pillar of the community, was facing generational and technological stagnation. Its traditional transmission model (FM) limited its geographic reach, and decision-making was centralized, pushing away new voices seeking to participate. The challenge was not just to digitize the signal, but to democratize ownership and management of the medium, transforming passive listeners into active members with a voice and vote."
+          "title": "The challenge",
+          "content": "A neighborhood radio runs on volunteers, a tight budget and an audience of all ages, including older adults. The challenge was to bring it to the phone without losing what makes it theirs: neighbors feeling that the station belongs to them. The app had to be as simple as turning on a radio, and the team needed to run the schedule without relying on a technician."
         },
-        "research": {
-          "title": "My Approach",
-          "subsections": [
+        "screens": {
+          "title": "The app in use",
+          "intro": "Real screens from the live version.",
+          "items": [
             {
-              "title": "Discovery & Inspiration",
-              "content": "I started with a deep immersion in the community, conducting interviews with historic founders and workshops with young local creators. I discovered that the visual identity needed to evoke warmth and tradition, but the infrastructure had to be radically modern and transparent. Inspiration came from the fusion of the \"analog\" (human voice, history) and the \"digital\" (blockchain, global streaming)."
+              "title": "Live player",
+              "caption": "One obvious action: listen. Artwork, song and artist update in real time, and the ONLINE indicator confirms the signal is on air.",
+              "alt": "Live player with the song artwork, title and pause button",
+              "src": "screen-player.webp"
             },
             {
-              "title": "Experience Definition",
-              "content": "I designed an information architecture centered on three fundamental pillars, guaranteeing that the technological complexity of a DAO was invisible to the end user:",
+              "title": "How are you feeling?",
+              "caption": "Listeners vote on their mood and the most-voted emotion changes the music live. Taking part takes one tap.",
+              "alt": "Mood picker panel: Relax, Energy, Happy or Melancholic",
+              "src": "screen-mood.webp"
+            },
+            {
+              "title": "Schedule",
+              "caption": "The lineup by day, with recurring shows and visible exceptions such as \"only on the 3rd Tuesday of the month\".",
+              "alt": "Tuesday schedule with times and show names",
+              "src": "screen-schedule.webp"
+            },
+            {
+              "title": "Neighborhood votes",
+              "caption": "Community proposals about the programming, with minimum quorum and closing date in plain sight so every vote makes sense.",
+              "alt": "Open vote on ten minutes of open mic for neighbors, with For and Against buttons",
+              "src": "screen-votes.webp"
+            },
+            {
+              "title": "Always playing",
+              "caption": "Background audio with native controls on the lock screen and in the notification center.",
+              "alt": "Android lock screen showing the radio playback controls",
+              "src": "screen-lock.webp"
+            }
+          ]
+        },
+        "research": {
+          "title": "My approach",
+          "subsections": [
+            {
+              "title": "As simple as a radio",
+              "content": "I started from who listens: neighbors of every age, many of them not used to apps. Large type, generous buttons and a main screen with one obvious action: listen."
+            },
+            {
+              "title": "Frictionless participation",
+              "content": "The first version explored decentralized governance (DAO). In the live version, participation was simplified into three gestures any neighbor understands:",
               "bullets": [
-                "Governance (DAO): A simplified voting system where community members use participation \"tokens\" to decide programming and elect directives.",
-                "Hybrid Streaming: Low-latency audio playback accessible from any mobile connection, with on-demand podcasting capabilities to preserve historical memory.",
-                "Living Community: Real-time interaction spaces (chat, reactions) integrated directly into the listening experience, eliminating the need for external social networks for immediate feedback."
+                "Reactions: \"Like\" songs and share your mood live.",
+                "Votes: neighborhood proposals with clear quorum and closing dates.",
+                "Announcements: neighborhood notices built into the menu, no extra screens."
               ]
             }
           ]
         },
         "designSystem": {
-          "title": "Design System",
-          "intro": "The Radio Barrio Centenario design system combines the warmth of tradition with the modernity of decentralization."
+          "title": "Design system",
+          "intro": "A warm, legible visual language: the brand's pink and gold, light surfaces and generous type."
         },
         "solution": {
-          "title": "Technical Implementation",
-          "content": "I led the experience design for a multi-platform ecosystem:",
+          "title": "One ecosystem, three pieces",
+          "content": "I designed and built the whole platform, from the user experience to the infrastructure.",
           "features": [
-            "Streaming: Integration of Icecast protocols optimized for unstable mobile networks.",
-            "Invisible Web3: Authentication via simplified wallets (account abstraction) so users vote on the blockchain without managing complex seed phrases.",
-            "Native Apps: Development of Web App and Mobile App (iOS/Android) ready for deployment, ensuring visual and behavioral consistency.",
-            "Optimization: Performance in audio loading and data consumption was prioritized, implementing aggressive caching strategies for static content and adaptive compression for the audio stream."
+            "Mobile app (React Native + Expo): 24/7 streaming with background audio, native controls, reactions, votes and schedule.",
+            "Admin Console (Next.js): the team manages shows and their artwork, the weekly schedule, votes and announcements.",
+            "Host workflow: hosts upload their recorded shows from the web and they go into the schedule.",
+            "Web player: the station can also be heard in the browser at radiobarriocentenario.cl."
           ]
         },
         "results": {
-          "title": "Transformative Results",
+          "title": "Results",
           "metrics": [
             {
               "number": "300%",
-              "description": "Increase in global audience thanks to digital streaming"
+              "description": "Audience growth with the digital signal"
             },
             {
               "number": "Record",
-              "description": "Historic participation in the first digital governance vote"
+              "description": "Historic turnout in neighborhood votes"
+            },
+            {
+              "number": "24/7",
+              "description": "Continuous signal on app and web"
             }
           ],
-          "conclusion": "This project demonstrated that decentralized technology (Web3/DAO) is not exclusive to finance, but a powerful tool for social innovation. We managed to weave stronger community ties through bits and waves, ensuring that Radio Barrio Centenario not only survives the digital age but defines what community media of the future should look like."
+          "conclusion": "Radio Barrio Centenario went from concept to a platform in daily operation. The key lesson: in a community product, technology works when it disappears. What remains is the neighborhood radio, now in every neighbor's pocket."
         }
       }
     },

@@ -494,63 +494,128 @@
     },
     "radio_dao": {
       "title": "Radio Barrio Centenario",
-      "categories": "#Mobile App #Community #Web3",
+      "categories": "#Mobile App #Admin Console #Community",
       "hero": {
-        "alt": "Radio Barrio Centenario App"
+        "alt": "App de Radio Barrio Centenario: programación, reproductor en vivo y selector de estado de ánimo"
       },
+      "facts": [
+        {
+          "label": "Rol",
+          "value": "Diseño y desarrollo de producto"
+        },
+        {
+          "label": "Estudio",
+          "value": "Shape Creative Studio",
+          "url": "https://shapecreativestudio.com"
+        },
+        {
+          "label": "Plataformas",
+          "value": "App Android · Admin Console · Player web"
+        },
+        {
+          "label": "Estado",
+          "value": "En operación · v1.4.0 (beta en Android)"
+        },
+        {
+          "label": "Escúchala",
+          "value": "radiobarriocentenario.cl",
+          "url": "https://radiobarriocentenario.cl/player/"
+        }
+      ],
       "sections": {
         "context": {
           "title": "Contexto",
-          "content": "Transformación digital de una radio comunitaria histórica mediante tecnologías Web3 y streaming híbrido, permitiendo la gobernanza descentralizada."
+          "content": "Radio Barrio Centenario es una radio comunitaria que hoy transmite las 24 horas sobre una plataforma digital propia: una app móvil para los vecinos, un player web y un Admin Console donde el equipo gestiona programas, parrilla, votaciones y avisos. La diseñé y desarrollé de punta a punta a través de Shape Creative Studio, mi estudio."
         },
         "challenge": {
           "title": "El desafío",
-          "content": "La Radio Barrio Centenario enfrentaba un estancamiento generacional y tecnológico. Su modelo tradicional limitaba su alcance, y la toma de decisiones estaba centralizada. El desafío no era solo digitalizar la señal, sino democratizar la propiedad y la gestión del medio, transformando a los oyentes pasivos en miembros activos con voz y voto."
+          "content": "Una radio de barrio funciona con voluntarios, poco presupuesto y una audiencia de todas las edades, incluidos adultos mayores. El desafío era llevarla al celular sin perder lo que la hace propia: que los vecinos sientan que la radio es suya. La app debía ser tan simple como encender una radio, y el equipo necesitaba administrar la programación sin depender de un técnico."
+        },
+        "screens": {
+          "title": "La app en uso",
+          "intro": "Pantallas reales de la versión en operación.",
+          "items": [
+            {
+              "title": "Reproductor en vivo",
+              "caption": "Una sola acción evidente: escuchar. Portada, canción y artista se actualizan en tiempo real, y el indicador ONLINE confirma que la señal está al aire.",
+              "alt": "Reproductor en vivo con la portada de la canción, el título y el botón de pausa",
+              "src": "screen-player.webp"
+            },
+            {
+              "title": "¿Cómo te sientes?",
+              "caption": "Los oyentes votan su estado de ánimo y la emoción más votada cambia la música en vivo. Participar toma un toque.",
+              "alt": "Panel para elegir estado de ánimo: Relax, Energía, Feliz o Melancólico",
+              "src": "screen-mood.webp"
+            },
+            {
+              "title": "Programación",
+              "caption": "La parrilla por día, con programas recurrentes y excepciones visibles como \"solo el 3er martes del mes\".",
+              "alt": "Programación del martes con horarios y nombres de programas",
+              "src": "screen-schedule.webp"
+            },
+            {
+              "title": "Votaciones vecinales",
+              "caption": "Propuestas de la comunidad sobre la programación, con quórum mínimo y fecha de cierre a la vista para que cada voto se entienda.",
+              "alt": "Votación abierta sobre abrir diez minutos de micrófono vecinal, con botones A favor y En contra",
+              "src": "screen-votes.webp"
+            },
+            {
+              "title": "Siempre sonando",
+              "caption": "Audio en segundo plano con controles nativos en la pantalla de bloqueo y el centro de notificaciones.",
+              "alt": "Pantalla de bloqueo de Android con los controles de reproducción de la radio",
+              "src": "screen-lock.webp"
+            }
+          ]
         },
         "research": {
           "title": "Mi acercamiento",
           "subsections": [
             {
-              "title": "Descubrimiento e inspiración",
-              "content": "Inicié con una inmersión profunda en la comunidad. Descubrí que la identidad debía evocar calidez y tradición, pero la infraestructura debía ser radicalmente moderna. Inspiración en la fusión de lo \"analógico\" y lo \"digital\"."
+              "title": "Simple como una radio",
+              "content": "Partí de quién escucha: vecinos de todas las edades, muchos poco familiarizados con apps. Tipografías grandes, botones amplios y una pantalla principal con una sola acción evidente: escuchar."
             },
             {
-              "title": "Definición de experiencia",
-              "content": "Diseñé una arquitectura centrada en tres pilares, haciendo invisible la complejidad Web3:",
+              "title": "Participación sin fricción",
+              "content": "La primera versión exploraba gobernanza descentralizada (DAO). En la versión en operación, la participación se simplificó a tres gestos que cualquier vecino entiende:",
               "bullets": [
-                "Gobernanza (DAO): Sistema de votación simplificado con tokens.",
-                "Streaming Híbrido: Audio de baja latencia y podcasting on-demand.",
-                "Comunidad Viva: Espacios de interacción en tiempo real integrados."
+                "Reacciones: \"Me gusta\" a las canciones y estado de ánimo en vivo.",
+                "Votaciones: propuestas vecinales con quórum y cierre claros.",
+                "Avisos: anuncios del barrio integrados en el menú, sin pantallas extra."
               ]
             }
           ]
         },
         "designSystem": {
           "title": "Sistema de diseño",
-          "intro": "El sistema de diseño para Radio Barrio Centenario combina la calidez de la tradición con la modernidad de la descentralización."
+          "intro": "Un lenguaje visual cálido y legible: el rosa y el dorado de la marca, superficies claras y tipografía generosa."
         },
         "solution": {
-          "title": "Implementación técnica",
-          "content": "Lideré el diseño de un ecosistema multiplataforma.",
+          "title": "Un ecosistema, tres piezas",
+          "content": "Diseñé y desarrollé la plataforma completa, desde la experiencia de usuario hasta la infraestructura.",
           "features": [
-            "Streaming: Protocolos Icecast optimizados.",
-            "Web3 Invisible: Autenticación via Account Abstraction.",
-            "Apps Nativas: Web App, iOS y Android consistentes."
+            "App móvil (React Native + Expo): streaming 24/7 con audio en segundo plano, controles nativos, reacciones, votaciones y programación.",
+            "Admin Console (Next.js): el equipo gestiona programas con sus portadas, la parrilla semanal, las votaciones y los avisos.",
+            "Flujo para locutores: suben sus programas grabados desde la web y estos entran a la parrilla.",
+            "Player web: la radio también se escucha desde el navegador en radiobarriocentenario.cl."
           ]
         },
         "results": {
-          "title": "Resultados transformadores",
+          "title": "Resultados",
           "metrics": [
             {
               "number": "300%",
-              "description": "Incremento en audiencia global"
+              "description": "Incremento de audiencia con la señal digital"
             },
             {
               "number": "Récord",
-              "description": "Participación histórica en votación DAO"
+              "description": "Participación histórica en votaciones vecinales"
+            },
+            {
+              "number": "24/7",
+              "description": "Señal continua en la app y la web"
             }
           ],
-          "conclusion": "Este proyecto demostró que la tecnología descentralizada es una herramienta poderosa para la innovación social. Logramos tejer lazos comunitarios más fuertes a través de bits y ondas."
+          "conclusion": "Radio Barrio Centenario dejó de ser un concepto para convertirse en una plataforma en operación. La lección principal: en un producto comunitario, la tecnología funciona cuando desaparece. Lo que queda es la radio del barrio, ahora en el bolsillo de cada vecino."
         }
       }
     },

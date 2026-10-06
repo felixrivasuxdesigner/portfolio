@@ -1,6 +1,6 @@
 {
-  "title": "Radio DAO Design System",
-  "intro": "A vibrant, community-driven visual language with glassmorphism, designed to empower local radio stations in the Web3 ecosystem. Mobile-first, built on React Native.",
+  "title": "Radio Barrio Centenario Design System",
+  "intro": "A vibrant, community-driven visual language with glassmorphism, designed so any neighbor can listen and take part. Mobile-first, built on React Native.",
   "tokens": {
     "colors": {
       "primary": {
@@ -50,13 +50,13 @@
           "name": "Success",
           "hex": "#4CAF50",
           "rgb": "76, 175, 80",
-          "usage": "Confirmations, active states and established Web3 connections"
+          "usage": "Confirmations, active states and the ONLINE signal indicator"
         },
         "error": {
           "name": "Error",
           "hex": "#F44336",
           "rgb": "244, 67, 54",
-          "usage": "Stream errors, failed transactions and critical states"
+          "usage": "Stream errors, failed actions and critical states"
         }
       }
     },
@@ -94,7 +94,7 @@
           "name": "Caption",
           "size": "12px",
           "weight": "400",
-          "usage": "Timestamps, metadata and DAO labels"
+          "usage": "Timestamps, metadata and vote labels"
         }
       ]
     },

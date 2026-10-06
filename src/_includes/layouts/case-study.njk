@@ -27,6 +27,19 @@ isCaseStudy: true
         <img src="{{ site.baseUrl }}assets/img/gallery-img/{{ projectKey }}/cover-{{ projectKey }}.webp" alt="{{ translations[locale].case_studies.projects[projectKey].hero.alt }}" class="case-study-hero-image">
       </div>
 
+      <!-- Project Facts (if available): rol, estudio, plataformas, estado -->
+      {% set facts = translations[locale].case_studies.projects[projectKey].facts %}
+      {% if facts %}
+      <dl class="case-study-facts">
+        {% for fact in facts %}
+          <div class="fact-item">
+            <dt>{{ fact.label }}</dt>
+            <dd>{% if fact.url %}<a href="{{ fact.url }}" target="_blank" rel="noopener">{{ fact.value }}</a>{% else %}{{ fact.value }}{% endif %}</dd>
+          </div>
+        {% endfor %}
+      </dl>
+      {% endif %}
+
       <!-- Project Overview Section -->
       <div class="case-study-section">
         <h2>{{ translations[locale].case_studies.projects[projectKey].sections.context.title }}</h2>
@@ -38,6 +51,26 @@ isCaseStudy: true
         <h2>{{ translations[locale].case_studies.projects[projectKey].sections.challenge.title }}</h2>
         <p>{{ translations[locale].case_studies.projects[projectKey].sections.challenge.content }}</p>
       </div>
+
+      <!-- Product Screens Section (if available): pantallas reales con su explicación -->
+      {% set screens = translations[locale].case_studies.projects[projectKey].sections.screens %}
+      {% if screens %}
+      <div class="case-study-section">
+        <h2>{{ screens.title }}</h2>
+        {% if screens.intro %}<p>{{ screens.intro }}</p>{% endif %}
+        <div class="case-study-screens">
+          {% for screen in screens.items %}
+            <figure class="screen-item">
+              <img src="{{ site.baseUrl }}assets/img/gallery-img/{{ projectKey }}/{{ screen.src }}" alt="{{ screen.alt }}" loading="lazy" width="640" height="1423">
+              <figcaption>
+                <h3>{{ screen.title }}</h3>
+                <p>{{ screen.caption }}</p>
+              </figcaption>
+            </figure>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
 
       <!-- Design System Section (if available) -->
       {% if translations[locale].case_studies.projects[projectKey].sections.designSystem %}
@@ -133,7 +166,8 @@ isCaseStudy: true
         </ul>
       </div>
 
-      <!-- Process/Features Section -->
+      <!-- Process/Features Section (if available) -->
+      {% if translations[locale].case_studies.projects[projectKey].sections.process %}
       <div class="case-study-section">
         <h2>{{ translations[locale].case_studies.projects[projectKey].sections.process.title }}</h2>
         <div class="case-study-grid">
@@ -148,6 +182,7 @@ isCaseStudy: true
           {% endfor %}
         </div>
       </div>
+      {% endif %}
 
       <!-- Results Section -->
       <div class="case-study-section">

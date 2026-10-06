@@ -6,4 +6,9 @@
     --link-color: var(--primary-color);
     --button-bg: var(--primary-color);
     --button-color: #ffffff;
+
+    // El dorado sobre blanco da 1.55:1 (falla WCAG); las métricas usan un rosa oscuro (5.87:1)
+    .case-study-results .result-item h3 {
+        color: #C2185B;
+    }
 }
