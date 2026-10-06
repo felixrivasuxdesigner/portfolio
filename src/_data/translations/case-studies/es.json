@@ -567,6 +567,49 @@
             }
           ]
         },
+        "adminScreens": {
+          "title": "Admin Console",
+          "intro": "El panel con el que el equipo opera la radio día a día. Capturas del entorno de demostración.",
+          "openLabel": "ver captura en tamaño completo",
+          "items": [
+            {
+              "src": "admin-dashboard.webp",
+              "title": "Dashboard de control",
+              "caption": "Lo que está al aire, los oyentes conectados y las tareas pendientes del equipo en una sola vista.",
+              "alt": "Dashboard con el programa al aire, 47 oyentes conectados y pendientes de configuración"
+            },
+            {
+              "src": "admin-estadisticas.webp",
+              "title": "Estadísticas de audiencia",
+              "caption": "Oyentes en vivo, tendencia frente al ciclo anterior y evolución de la audiencia en 24 horas, 7 o 30 días.",
+              "alt": "Estadísticas con oyentes en vivo y gráfico de evolución de audiencia"
+            },
+            {
+              "src": "admin-grilla.webp",
+              "title": "Grilla semanal",
+              "caption": "La parrilla de lunes a domingo en bloques, con lo que suena ahora y lo que viene a continuación.",
+              "alt": "Grilla semanal con los bloques de cada día y el programa al aire"
+            },
+            {
+              "src": "admin-programas.webp",
+              "title": "Programas",
+              "caption": "El catálogo de programas con su locutor y estado; destaca los incompletos y los que no tienen locutor asignado.",
+              "alt": "Tabla de programas con locutor, estado y acciones"
+            },
+            {
+              "src": "admin-presets.webp",
+              "title": "Bloques musicales",
+              "caption": "Las selecciones que salen al aire cuando no hay programa en vivo, con alertas cuando un bloque se queda sin temas.",
+              "alt": "Tarjetas de bloques musicales con etiquetas de género y cantidad de temas"
+            },
+            {
+              "src": "admin-liquidsoap.webp",
+              "title": "Motor de emisión",
+              "caption": "Estado de la transmisión, tiempo al aire y la pista que suena, con la opción de saltar la canción al instante.",
+              "alt": "Motor de emisión con estado al aire, tiempo al aire y la pista actual"
+            }
+          ]
+        },
         "research": {
           "title": "Mi acercamiento",
           "subsections": [
@@ -594,7 +637,7 @@
           "content": "Diseñé y desarrollé la plataforma completa, desde la experiencia de usuario hasta la infraestructura.",
           "features": [
             "App móvil (React Native + Expo): streaming 24/7 con audio en segundo plano, controles nativos, reacciones, votaciones y programación.",
-            "Admin Console (Next.js): el equipo gestiona programas con sus portadas, la parrilla semanal, las votaciones y los avisos.",
+            "Admin Console (Next.js): el equipo gestiona la grilla semanal, los programas, los bloques musicales, las votaciones y el motor de emisión, y sigue la audiencia en tiempo real.",
             "Flujo para locutores: suben sus programas grabados desde la web y estos entran a la parrilla.",
             "Player web: la radio también se escucha desde el navegador en radiobarriocentenario.cl."
           ]

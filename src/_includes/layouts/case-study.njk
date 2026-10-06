@@ -55,21 +55,17 @@ isCaseStudy: true
       <!-- Product Screens Section (if available): pantallas reales con su explicación -->
       {% set screens = translations[locale].case_studies.projects[projectKey].sections.screens %}
       {% if screens %}
-      <div class="case-study-section">
-        <h2>{{ screens.title }}</h2>
-        {% if screens.intro %}<p>{{ screens.intro }}</p>{% endif %}
-        <div class="case-study-screens">
-          {% for screen in screens.items %}
-            <figure class="screen-item">
-              <img src="{{ site.baseUrl }}assets/img/gallery-img/{{ projectKey }}/{{ screen.src }}" alt="{{ screen.alt }}" loading="lazy" width="640" height="1423">
-              <figcaption>
-                <h3>{{ screen.title }}</h3>
-                <p>{{ screen.caption }}</p>
-              </figcaption>
-            </figure>
-          {% endfor %}
-        </div>
-      </div>
+        {% set showcase = screens %}
+        {% set showcaseVariant = 'mobile' %}
+        {% include "components/case-studies/screens-showcase.njk" %}
+      {% endif %}
+
+      <!-- Admin/Desktop Screens Section (if available) -->
+      {% set adminScreens = translations[locale].case_studies.projects[projectKey].sections.adminScreens %}
+      {% if adminScreens %}
+        {% set showcase = adminScreens %}
+        {% set showcaseVariant = 'desktop' %}
+        {% include "components/case-studies/screens-showcase.njk" %}
       {% endif %}
 
       <!-- Design System Section (if available) -->

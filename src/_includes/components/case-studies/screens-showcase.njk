@@ -1,0 +1,23 @@
+<!-- Showcase de pantallas reales: recibe `showcase` (title, intro, items) y `showcaseVariant` (mobile | desktop) -->
+<div class="case-study-section">
+  <h2>{{ showcase.title }}</h2>
+  {% if showcase.intro %}<p>{{ showcase.intro }}</p>{% endif %}
+  <div class="case-study-screens case-study-screens--{{ showcaseVariant }}">
+    {% for screen in showcase.items %}
+      {% set screenSrc = site.baseUrl + 'assets/img/gallery-img/' + projectKey + '/' + screen.src %}
+      <figure class="screen-item">
+        {% if showcaseVariant == 'desktop' %}
+          <a href="{{ screenSrc }}" target="_blank" rel="noopener" aria-label="{{ screen.title }}: {{ showcase.openLabel }}">
+            <img src="{{ screenSrc }}" alt="{{ screen.alt }}" loading="lazy" width="2000" height="1250">
+          </a>
+        {% else %}
+          <img src="{{ screenSrc }}" alt="{{ screen.alt }}" loading="lazy" width="640" height="1423">
+        {% endif %}
+        <figcaption>
+          <h3>{{ screen.title }}</h3>
+          <p>{{ screen.caption }}</p>
+        </figcaption>
+      </figure>
+    {% endfor %}
+  </div>
+</div>

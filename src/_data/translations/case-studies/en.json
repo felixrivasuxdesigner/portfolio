@@ -512,6 +512,49 @@
             }
           ]
         },
+        "adminScreens": {
+          "title": "Admin Console",
+          "intro": "The panel the team uses to run the station day to day. Screenshots from the demo environment.",
+          "openLabel": "view full-size screenshot",
+          "items": [
+            {
+              "src": "admin-dashboard.webp",
+              "title": "Control dashboard",
+              "caption": "What's on air, connected listeners and the team's pending tasks in a single view.",
+              "alt": "Dashboard showing the show on air, 47 connected listeners and pending setup items"
+            },
+            {
+              "src": "admin-estadisticas.webp",
+              "title": "Audience analytics",
+              "caption": "Live listeners, trend against the previous cycle and audience over 24 hours, 7 or 30 days.",
+              "alt": "Analytics with live listeners and an audience trend chart"
+            },
+            {
+              "src": "admin-grilla.webp",
+              "title": "Weekly schedule",
+              "caption": "The Monday-to-Sunday lineup in blocks, with what's playing now and what's up next.",
+              "alt": "Weekly schedule with each day's blocks and the show on air"
+            },
+            {
+              "src": "admin-programas.webp",
+              "title": "Shows",
+              "caption": "The show catalog with host and status; incomplete shows and shows without a host stand out.",
+              "alt": "Shows table with host, status and actions"
+            },
+            {
+              "src": "admin-presets.webp",
+              "title": "Music blocks",
+              "caption": "The selections that air when there is no live show, with alerts when a block runs short on tracks.",
+              "alt": "Music block cards with genre tags and track counts"
+            },
+            {
+              "src": "admin-liquidsoap.webp",
+              "title": "Broadcast engine",
+              "caption": "Stream status, time on air and the current track, with the option to skip a song instantly.",
+              "alt": "Broadcast engine showing on-air status, uptime and the current track"
+            }
+          ]
+        },
         "research": {
           "title": "My approach",
           "subsections": [
@@ -539,7 +582,7 @@
           "content": "I designed and built the whole platform, from the user experience to the infrastructure.",
           "features": [
             "Mobile app (React Native + Expo): 24/7 streaming with background audio, native controls, reactions, votes and schedule.",
-            "Admin Console (Next.js): the team manages shows and their artwork, the weekly schedule, votes and announcements.",
+            "Admin Console (Next.js): the team manages the weekly schedule, shows, music blocks, votes and the broadcast engine, and follows the audience in real time.",
             "Host workflow: hosts upload their recorded shows from the web and they go into the schedule.",
             "Web player: the station can also be heard in the browser at radiobarriocentenario.cl."
           ]
