@@ -39,13 +39,21 @@
 
   <!-- Case Studies en inglés -->
   <url>
-    <loc>https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/wallet/</loc>
+    <loc>https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/agile-radar/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/wallet/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/wallet/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/agile-radar/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/agile-radar/" />
   </url>
-  
+
+  <url>
+    <loc>https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/ai-reader/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/ai-reader/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/ai-reader/" />
+  </url>
+
   <url>
     <loc>https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/factoring/</loc>
     <changefreq>monthly</changefreq>
@@ -53,15 +61,31 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/factoring/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/factoring/" />
   </url>
-  
+
   <url>
-    <loc>https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/nomadix/</loc>
+    <loc>https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/fifa-predictor/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/nomadix/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/nomadix/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/fifa-predictor/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/fifa-predictor/" />
   </url>
-  
+
+  <url>
+    <loc>https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/grant-thornton/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/grant-thornton/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/grant-thornton/" />
+  </url>
+
+  <url>
+    <loc>https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/intelliresearch/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/intelliresearch/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/intelliresearch/" />
+  </url>
+
   <url>
     <loc>https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/journeylaw/</loc>
     <changefreq>monthly</changefreq>
@@ -69,16 +93,48 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/journeylaw/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/journeylaw/" />
   </url>
-  
-  <!-- Case Studies en español -->
+
   <url>
-    <loc>https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/wallet/</loc>
+    <loc>https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/nomadix/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/wallet/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/wallet/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/nomadix/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/nomadix/" />
   </url>
-  
+
+  <url>
+    <loc>https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/radio-dao/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/radio-dao/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/radio-dao/" />
+  </url>
+
+  <url>
+    <loc>https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/wallet/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/wallet/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/wallet/" />
+  </url>
+
+  <!-- Case Studies en español -->
+  <url>
+    <loc>https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/agile-radar/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/agile-radar/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/agile-radar/" />
+  </url>
+
+  <url>
+    <loc>https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/ai-reader/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/ai-reader/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/ai-reader/" />
+  </url>
+
   <url>
     <loc>https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/factoring/</loc>
     <changefreq>monthly</changefreq>
@@ -86,7 +142,39 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/factoring/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/factoring/" />
   </url>
-  
+
+  <url>
+    <loc>https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/fifa-predictor/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/fifa-predictor/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/fifa-predictor/" />
+  </url>
+
+  <url>
+    <loc>https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/grant-thornton/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/grant-thornton/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/grant-thornton/" />
+  </url>
+
+  <url>
+    <loc>https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/intelliresearch/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/intelliresearch/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/intelliresearch/" />
+  </url>
+
+  <url>
+    <loc>https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/journeylaw/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/journeylaw/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/journeylaw/" />
+  </url>
+
   <url>
     <loc>https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/nomadix/</loc>
     <changefreq>monthly</changefreq>
@@ -94,12 +182,20 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/nomadix/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/nomadix/" />
   </url>
-  
+
   <url>
-    <loc>https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/journeylaw/</loc>
+    <loc>https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/radio-dao/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/journeylaw/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/journeylaw/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/radio-dao/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/radio-dao/" />
+  </url>
+
+  <url>
+    <loc>https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/wallet/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://felixrivasuxdesigner.github.io/portfolio/es/case-studies/wallet/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://felixrivasuxdesigner.github.io/portfolio/en/case-studies/wallet/" />
   </url>
 </urlset>
