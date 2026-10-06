@@ -7,8 +7,10 @@
       {% set screenSrc = site.baseUrl + 'assets/img/gallery-img/' + projectKey + '/' + screen.src %}
       <figure class="screen-item">
         {% if showcaseVariant == 'desktop' %}
-          <a href="{{ screenSrc }}" target="_blank" rel="noopener" aria-label="{{ screen.title }}: {{ showcase.openLabel }}">
-            <img src="{{ screenSrc }}" alt="{{ screen.alt }}" loading="lazy" width="2000" height="1250">
+          {# La miniatura es un recorte 16:10; el enlace abre la captura completa si existe #}
+          {% set fullSrc = site.baseUrl + 'assets/img/gallery-img/' + projectKey + '/' + screen.full if screen.full else screenSrc %}
+          <a href="{{ fullSrc }}" target="_blank" rel="noopener" aria-label="{{ screen.title }}: {{ showcase.openLabel }}">
+            <img src="{{ screenSrc }}" alt="{{ screen.alt }}" loading="lazy" width="1600" height="1000">
           </a>
         {% else %}
           <img src="{{ screenSrc }}" alt="{{ screen.alt }}" loading="lazy" width="640" height="1423">

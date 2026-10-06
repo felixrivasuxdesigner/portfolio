@@ -575,38 +575,44 @@
             {
               "src": "admin-dashboard.webp",
               "title": "Dashboard de control",
-              "caption": "Lo que está al aire, los oyentes conectados y las tareas pendientes del equipo en una sola vista.",
-              "alt": "Dashboard con el programa al aire, 47 oyentes conectados y pendientes de configuración"
+              "caption": "Lo que está al aire, los oyentes conectados, la salud de los servicios, accesos rápidos y lo que viene en la grilla, en una sola vista.",
+              "alt": "Dashboard con el programa al aire, oyentes conectados, salud del sistema y próximos programas",
+              "full": "admin-dashboard-full.webp"
             },
             {
               "src": "admin-estadisticas.webp",
               "title": "Estadísticas de audiencia",
-              "caption": "Oyentes en vivo, tendencia frente al ciclo anterior y evolución de la audiencia en 24 horas, 7 o 30 días.",
-              "alt": "Estadísticas con oyentes en vivo y gráfico de evolución de audiencia"
+              "caption": "Oyentes en vivo, evolución de la audiencia, distribución geográfica y minutos escuchados por programa.",
+              "alt": "Estadísticas con oyentes en vivo, gráfico de audiencia, distribución geográfica y audiencia por programa",
+              "full": "admin-estadisticas-full.webp"
             },
             {
               "src": "admin-grilla.webp",
               "title": "Grilla semanal",
               "caption": "La parrilla de lunes a domingo en bloques, con lo que suena ahora y lo que viene a continuación.",
-              "alt": "Grilla semanal con los bloques de cada día y el programa al aire"
+              "alt": "Grilla semanal con los bloques de cada día y el programa al aire",
+              "full": "admin-grilla-full.webp"
             },
             {
               "src": "admin-programas.webp",
               "title": "Programas",
-              "caption": "El catálogo de programas con su locutor y estado; destaca los incompletos y los que no tienen locutor asignado.",
-              "alt": "Tabla de programas con locutor, estado y acciones"
+              "caption": "El catálogo de programas con su locutor y estado, más los feeds RSS para publicar cada programa como podcast.",
+              "alt": "Tabla de programas con locutor y estado, y lista de feeds RSS de podcasts",
+              "full": "admin-programas-full.webp"
             },
             {
               "src": "admin-presets.webp",
               "title": "Bloques musicales",
               "caption": "Las selecciones que salen al aire cuando no hay programa en vivo, con alertas cuando un bloque se queda sin temas.",
-              "alt": "Tarjetas de bloques musicales con etiquetas de género y cantidad de temas"
+              "alt": "Tarjetas de bloques musicales con etiquetas de género y cantidad de temas",
+              "full": "admin-presets-full.webp"
             },
             {
               "src": "admin-liquidsoap.webp",
               "title": "Motor de emisión",
               "caption": "Estado de la transmisión, tiempo al aire y la pista que suena, con la opción de saltar la canción al instante.",
-              "alt": "Motor de emisión con estado al aire, tiempo al aire y la pista actual"
+              "alt": "Motor de emisión con estado al aire, tiempo al aire y la pista actual",
+              "full": "admin-liquidsoap-full.webp"
             }
           ]
         },

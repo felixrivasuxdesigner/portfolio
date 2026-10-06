@@ -520,38 +520,44 @@
             {
               "src": "admin-dashboard.webp",
               "title": "Control dashboard",
-              "caption": "What's on air, connected listeners and the team's pending tasks in a single view.",
-              "alt": "Dashboard showing the show on air, 47 connected listeners and pending setup items"
+              "caption": "What's on air, connected listeners, service health, quick actions and what's next on the schedule, in a single view.",
+              "alt": "Dashboard showing the show on air, connected listeners, system health and upcoming shows",
+              "full": "admin-dashboard-full.webp"
             },
             {
               "src": "admin-estadisticas.webp",
               "title": "Audience analytics",
-              "caption": "Live listeners, trend against the previous cycle and audience over 24 hours, 7 or 30 days.",
-              "alt": "Analytics with live listeners and an audience trend chart"
+              "caption": "Live listeners, audience trend, geographic distribution and minutes listened per show.",
+              "alt": "Analytics with live listeners, audience chart, geographic distribution and audience per show",
+              "full": "admin-estadisticas-full.webp"
             },
             {
               "src": "admin-grilla.webp",
               "title": "Weekly schedule",
               "caption": "The Monday-to-Sunday lineup in blocks, with what's playing now and what's up next.",
-              "alt": "Weekly schedule with each day's blocks and the show on air"
+              "alt": "Weekly schedule with each day's blocks and the show on air",
+              "full": "admin-grilla-full.webp"
             },
             {
               "src": "admin-programas.webp",
               "title": "Shows",
-              "caption": "The show catalog with host and status; incomplete shows and shows without a host stand out.",
-              "alt": "Shows table with host, status and actions"
+              "caption": "The show catalog with host and status, plus RSS feeds to publish each show as a podcast.",
+              "alt": "Shows table with host and status, and a list of podcast RSS feeds",
+              "full": "admin-programas-full.webp"
             },
             {
               "src": "admin-presets.webp",
               "title": "Music blocks",
               "caption": "The selections that air when there is no live show, with alerts when a block runs short on tracks.",
-              "alt": "Music block cards with genre tags and track counts"
+              "alt": "Music block cards with genre tags and track counts",
+              "full": "admin-presets-full.webp"
             },
             {
               "src": "admin-liquidsoap.webp",
               "title": "Broadcast engine",
               "caption": "Stream status, time on air and the current track, with the option to skip a song instantly.",
-              "alt": "Broadcast engine showing on-air status, uptime and the current track"
+              "alt": "Broadcast engine showing on-air status, uptime and the current track",
+              "full": "admin-liquidsoap-full.webp"
             }
           ]
         },
