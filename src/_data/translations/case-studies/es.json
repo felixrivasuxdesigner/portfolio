@@ -294,6 +294,69 @@
           "title": "Desafío",
           "content": "El módulo de factoring existente era engorroso, requiriendo pasos excesivos para completar transacciones. Los usuarios reportaron frustración con la interfaz obsoleta, y el sistema carecía de una integración adecuada con otros módulos bancarios."
         },
+        "research": {
+          "title": "Descubrimiento e investigación",
+          "subsections": [
+            {
+              "title": "Análisis del panorama de seguridad",
+              "content": "Realicé un análisis extenso de las vulnerabilidades y buenas prácticas de seguridad financiera actuales, que reveló patrones clave para definir el enfoque:",
+              "bullets": [
+                "Evaluación de amenazas: identificación de los vectores de ataque más comunes en plataformas financieras",
+                "Mapa de cumplimiento: análisis de los requisitos regulatorios en distintos mercados",
+                "Estudios de comportamiento: cómo las medidas de seguridad afectan el flujo de trabajo de los usuarios",
+                "Evaluación competitiva: revisión de las implementaciones de seguridad en la industria"
+              ]
+            },
+            {
+              "title": "Hallazgos de la investigación con usuarios",
+              "stats": [
+                {
+                  "number": "18",
+                  "description": "Especialistas en seguridad entrevistados"
+                },
+                {
+                  "number": "24",
+                  "description": "Profesionales financieros consultados"
+                },
+                {
+                  "number": "3",
+                  "description": "Organizaciones financieras estudiadas"
+                }
+              ],
+              "content": "Conversaciones en profundidad con expertos para entender los requisitos técnicos y las amenazas emergentes. Entrevistas con usuarios finales para identificar los puntos de dolor de las implementaciones de seguridad actuales. Observación de flujos de trabajo reales para detectar dónde la seguridad genera fricción."
+            },
+            {
+              "title": "Principales hallazgos",
+              "bullets": [
+                "Los usuarios suelen saltarse las medidas de seguridad que perciben como engorrosas",
+                "La mayoría de las brechas ocurre por ingeniería social, no por vulnerabilidades técnicas",
+                "Los profesionales financieros necesitan visibilidad continua del estado de seguridad sin interrupciones",
+                "Los indicadores de confianza deben ser visibles y tener sentido dentro de la interfaz"
+              ]
+            }
+          ]
+        },
+        "personas": {
+          "title": "Personas de usuario",
+          "primaryPersona": {
+            "name": "Rafael Moreno",
+            "position": "Gerente de Operaciones Financieras",
+            "companySize": "Empresa mediana",
+            "technicalProficiency": "Moderado",
+            "behaviors": [
+              "Maneja documentos financieros sensibles a diario",
+              "Administra el acceso de su equipo a los sistemas financieros",
+              "Es responsable de los reportes de cumplimiento",
+              "Equilibra la eficiencia operativa con los protocolos de seguridad"
+            ],
+            "painPoints": [
+              "Los procedimientos de seguridad complejos retrasan transacciones urgentes",
+              "Le cuesta saber qué miembros del equipo tienen acceso a cada documento",
+              "Se frustra con los múltiples pasos de autenticación durante el día",
+              "No tiene claro si las medidas de seguridad realmente funcionan"
+            ]
+          }
+        },
         "solution": {
           "title": "Solución",
           "content": "Creamos un rediseño integral que incluyó:",
@@ -494,7 +557,7 @@
     },
     "radio_dao": {
       "title": "Radio Barrio Centenario",
-      "categories": "#Mobile App #Admin Console #Community",
+      "categories": "#App Móvil #Admin Console #Comunidad",
       "hero": {
         "alt": "App de Radio Barrio Centenario: programación, reproductor en vivo y selector de estado de ánimo"
       },
@@ -670,7 +733,7 @@
     },
     "fifa_predictor": {
       "title": "Quiniela Engine",
-      "categories": "#Desarrollo Web #Diseño UX/UI #AI Integration",
+      "categories": "#Desarrollo Web #Diseño UX/UI #Integración IA",
       "hero": {
         "alt": "Tres pantallas de la quiniela en su edición del Mundial de Rugby 2027"
       },
@@ -870,7 +933,7 @@
     },
     "ai_reader": {
       "title": "Chucao",
-      "categories": "#EdTech #Tablet App #Dashboard Docente #Edge AI",
+      "categories": "#EdTech #App para Tablet #Dashboard Docente #Edge AI",
       "hero": {
         "alt": "Chu, la mascota de Chucao, leyendo un libro junto a sus estados de ánimo"
       },

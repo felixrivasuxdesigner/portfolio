@@ -653,5 +653,47 @@
     "title": "Thank you for reaching out!",
     "message": "Your message has been sent successfully. I'll get back to you as soon as possible to discuss how we can work together.",
     "back_home": "Return to home"
+  },
+  "case_study_ui": {
+    "gallery": {
+      "title": "Prototype Gallery",
+      "intro": "Explore the app's design and flow through these key screens from the interactive prototype.",
+      "view": "View Full Screen",
+      "screenAlt": "Prototype screen",
+      "lightboxAlt": "Full Screen Prototype",
+      "close": "Close",
+      "prev": "Previous",
+      "next": "Next"
+    },
+    "board": {
+      "colorsTitle": "Color Palette",
+      "colorsIntro": "The primary, secondary, and grayscale colors defining the visual identity.",
+      "primaryColor": "Primary Color",
+      "secondaryColor": "Secondary Color",
+      "typeTitle": "Typography",
+      "typeLabel": "Primary Typeface",
+      "sample": "The quick brown fox jumps over the lazy dog",
+      "componentsTitle": "UI Components",
+      "componentsIntro": "Interactive elements utilizing the design tokens (Colors, Typography, Border Radius).",
+      "buttons": "Buttons",
+      "stateDefault": "Default",
+      "stateHover": "Hover (simulated)",
+      "stateActive": "Active (simulated)",
+      "primary": "Primary Action",
+      "secondary": "Secondary Action",
+      "ghost": "Ghost",
+      "inputs": "Form Inputs",
+      "inputDefault": "Default State",
+      "inputFocus": "Focus State (simulated)",
+      "inputError": "Error State (simulated)",
+      "inputPlaceholder": "Enter your email address",
+      "inputTyping": "typing...",
+      "inputErrorMsg": "Please enter a valid email address."
+    },
+    "persona": {
+      "techProficiency": "Technical Proficiency",
+      "behaviors": "Security Behaviors",
+      "painPoints": "Pain Points"
+    }
   }
 }

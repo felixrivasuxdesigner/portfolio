@@ -253,7 +253,7 @@
       },
       "radio_dao": {
         "title": "Radio Barrio Centenario",
-        "categories": "#Mobile App #Admin Console #Community",
+        "categories": "#App Móvil #Admin Console #Comunidad",
         "description": "Plataforma digital de una radio comunitaria en operación: app móvil, player web y Admin Console para gestionar programación y votaciones vecinales."
       },
       "journeylaw": {
@@ -278,7 +278,7 @@
       },
       "fifa_predictor": {
         "title": "Quiniela Engine",
-        "categories": "#Desarrollo Web #Diseño UX/UI #AI Integration",
+        "categories": "#Desarrollo Web #Diseño UX/UI #Integración IA",
         "description": "Plataforma privada de quinielas deportivas, nacida para el Mundial FIFA 2026 y convertida en un motor para varios torneos, empezando por el Mundial de Rugby 2027, con un bot de IA en WhatsApp."
       },
       "agile_radar": {
@@ -288,7 +288,7 @@
       },
       "ai_reader": {
         "title": "Chucao",
-        "categories": "#EdTech #Tablet App #Dashboard Docente #Edge AI",
+        "categories": "#EdTech #App para Tablet #Dashboard Docente #Edge AI",
         "description": "Plataforma para colegios que evalúa la fluidez lectora con IA dentro de la tablet: los niños leen con Chu y los docentes revisan los resultados en un dashboard web."
       },
       "grant_thornton": {
@@ -564,5 +564,47 @@
     "title": "¡Gracias por contactarme!",
     "message": "Tu mensaje ha sido enviado con éxito. Me pondré en contacto contigo lo antes posible para conversar sobre cómo podemos trabajar juntos.",
     "back_home": "Volver al inicio"
+  },
+  "case_study_ui": {
+    "gallery": {
+      "title": "Galería del prototipo",
+      "intro": "Recorre el diseño y el flujo de la app a través de sus pantallas clave.",
+      "view": "Ver en pantalla completa",
+      "screenAlt": "Pantalla del prototipo",
+      "lightboxAlt": "Pantalla del prototipo en tamaño completo",
+      "close": "Cerrar",
+      "prev": "Anterior",
+      "next": "Siguiente"
+    },
+    "board": {
+      "colorsTitle": "Paleta de colores",
+      "colorsIntro": "Los colores primario, secundario y neutros que definen la identidad visual.",
+      "primaryColor": "Color primario",
+      "secondaryColor": "Color secundario",
+      "typeTitle": "Tipografía",
+      "typeLabel": "Tipografía principal",
+      "sample": "El veloz murciélago hindú comía feliz cardillo y kiwi",
+      "componentsTitle": "Componentes de interfaz",
+      "componentsIntro": "Elementos interactivos construidos con los tokens de diseño (color, tipografía y bordes). Los estados hover, foco, activo y error son simulados.",
+      "buttons": "Botones",
+      "stateDefault": "Normal",
+      "stateHover": "Hover",
+      "stateActive": "Activo",
+      "primary": "Acción primaria",
+      "secondary": "Acción secundaria",
+      "ghost": "Fantasma",
+      "inputs": "Campos de formulario",
+      "inputDefault": "Estado normal",
+      "inputFocus": "Foco (simulado)",
+      "inputError": "Error (simulado)",
+      "inputPlaceholder": "Ingresa tu correo electrónico",
+      "inputTyping": "escribiendo...",
+      "inputErrorMsg": "Ingresa un correo válido."
+    },
+    "persona": {
+      "techProficiency": "Dominio tecnológico",
+      "behaviors": "Comportamientos de seguridad",
+      "painPoints": "Puntos de dolor"
+    }
   }
 }

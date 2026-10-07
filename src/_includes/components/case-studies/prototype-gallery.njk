@@ -1,14 +1,15 @@
 <!-- Generic Prototype Gallery Component -->
+{% set gui = translations[locale].case_study_ui.gallery %}
 <div class="case-study-section prototype-gallery-section">
-  <h2>Prototype Gallery</h2>
-  <p>Explore the app's design and flow through these key screens from the interactive prototype.</p>
+  <h2>{{ gui.title }}</h2>
+  <p>{{ gui.intro }}</p>
   
   <div class="prototype-gallery">
     {% for image in galleryImages %}
     <div class="gallery-item" onclick="openLightbox({{ loop.index0 }})">
-      <img src="{{ site.baseUrl }}assets/img/gallery-img/{{ projectKey }}/{{ image.src }}" alt="{{ image.alt | default('Prototype screen') }}" loading="lazy">
+      <img src="{{ site.baseUrl }}assets/img/gallery-img/{{ projectKey }}/{{ image.src }}" alt="{{ image.alt | default(gui.screenAlt) }}" loading="lazy">
       <div class="gallery-overlay">
-        <span>View Full Screen</span>
+        <span>{{ gui.view }}</span>
       </div>
     </div>
     {% endfor %}
@@ -17,10 +18,10 @@
 
 <!-- Lighbox Component -->
 <div id="prototype-lightbox" class="lightbox-modal" onclick="closeLightbox(event)">
-  <span class="lightbox-close" onclick="closeLightbox(event, true)">&times;</span>
-  <span class="lightbox-nav prev" onclick="navigateLightbox(-1); event.stopPropagation();">&#10094;</span>
-  <img class="lightbox-content" id="lightbox-img" src="" alt="Full Screen Prototype">
-  <span class="lightbox-nav next" onclick="navigateLightbox(1); event.stopPropagation();">&#10095;</span>
+  <span class="lightbox-close" aria-label="{{ gui.close }}" onclick="closeLightbox(event, true)">&times;</span>
+  <span class="lightbox-nav prev" aria-label="{{ gui.prev }}" onclick="navigateLightbox(-1); event.stopPropagation();">&#10094;</span>
+  <img class="lightbox-content" id="lightbox-img" src="" alt="{{ gui.lightboxAlt }}">
+  <span class="lightbox-nav next" aria-label="{{ gui.next }}" onclick="navigateLightbox(1); event.stopPropagation();">&#10095;</span>
 </div>
 
 <script>

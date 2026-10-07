@@ -120,13 +120,13 @@ isCaseStudy: true
             <div class="persona-header">
               <h3>{{ persona.name }}</h3>
               <p class="persona-position">{{ persona.position }}</p>
-              <p class="persona-details">{{ persona.companySize }} • Technical Proficiency: {{ persona.technicalProficiency }}</p>
+              <p class="persona-details">{{ persona.companySize }} • {{ translations[locale].case_study_ui.persona.techProficiency }}: {{ persona.technicalProficiency }}</p>
             </div>
             
             <div class="persona-content">
               {% if persona.behaviors %}
                 <div class="persona-section">
-                  <h4>Security Behaviors</h4>
+                  <h4>{{ translations[locale].case_study_ui.persona.behaviors }}</h4>
                   <ul>
                     {% for behavior in persona.behaviors %}
                       <li>{{ behavior }}</li>
@@ -137,7 +137,7 @@ isCaseStudy: true
               
               {% if persona.painPoints %}
                 <div class="persona-section">
-                  <h4>Pain Points</h4>
+                  <h4>{{ translations[locale].case_study_ui.persona.painPoints }}</h4>
                   <ul>
                     {% for painPoint in persona.painPoints %}
                       <li>{{ painPoint }}</li>

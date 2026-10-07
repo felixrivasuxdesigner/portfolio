@@ -1,5 +1,6 @@
 {# No todos los sistemas definen dark/medium/light/white: sin ellos el tablero usa grises neutros legibles #}
 {% set gs = designSystem.tokens.colors.grayscale or {} %}
+{% set ui = translations[locale].case_study_ui.board %}
 <div class="design-board-wrapper" style="
   --theme-primary: {{ designSystem.tokens.colors.primary.hex }};
   --theme-secondary: {{ designSystem.tokens.colors.secondary.hex }};
@@ -24,13 +25,13 @@
   <!-- 1. Color Palette -->
   <section class="board-section">
     <div class="section-header">
-      <h3>Color Palette</h3>
-      <p>The primary, secondary, and grayscale colors defining the visual identity.</p>
+      <h3>{{ ui.colorsTitle }}</h3>
+      <p>{{ ui.colorsIntro }}</p>
     </div>
     
     <div class="colors-grid">
       <!-- Primary -->
-      <div class="color-swatch-card" aria-label="Primary Color">
+      <div class="color-swatch-card" aria-label="{{ ui.primaryColor }}">
         <div class="swatch-color" style="background-color: var(--theme-primary);"></div>
         <div class="swatch-info">
           <div class="color-name">{{ designSystem.tokens.colors.primary.name }}</div>
@@ -43,7 +44,7 @@
       </div>
 
       <!-- Secondary -->
-      <div class="color-swatch-card" aria-label="Secondary Color">
+      <div class="color-swatch-card" aria-label="{{ ui.secondaryColor }}">
         <div class="swatch-color" style="background-color: var(--theme-secondary);"></div>
         <div class="swatch-info">
           <div class="color-name">{{ designSystem.tokens.colors.secondary.name }}</div>
@@ -76,8 +77,8 @@
   <!-- 2. Typography -->
   <section class="board-section">
     <div class="section-header">
-      <h3>Typography</h3>
-      <p>Primary Typeface: <strong>{{ designSystem.tokens.typography.primary.family }}</strong> ({{ designSystem.tokens.typography.primary.category }})</p>
+      <h3>{{ ui.typeTitle }}</h3>
+      <p>{{ ui.typeLabel }}: <strong>{{ designSystem.tokens.typography.primary.family }}</strong> ({{ designSystem.tokens.typography.primary.category }})</p>
     </div>
 
     {# Si el sistema declara fontsUrl (Google Fonts), se cargan las fuentes reales para que las muestras no caigan en una sans genérica #}
@@ -93,7 +94,7 @@
           <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">{{ font.usage }}</span>
         </div>
         <div class="type-sample" style="font-size: {{ font.size }}; font-weight: {{ font.weight }};{% if font.family %} font-family: '{{ font.family }}', sans-serif;{% endif %}{% if font.uppercase %} text-transform: uppercase;{% endif %}">
-          The quick brown fox jumps over the lazy dog
+          {{ ui.sample }}
         </div>
       </div>
       {% endfor %}
@@ -103,41 +104,41 @@
   <!-- 3. UI Components -->
   <section class="board-section">
     <div class="section-header">
-      <h3>UI Components</h3>
-      <p>Interactive elements utilizing the design tokens (Colors, Typography, Border Radius).</p>
+      <h3>{{ ui.componentsTitle }}</h3>
+      <p>{{ ui.componentsIntro }}</p>
     </div>
 
     <div class="ui-grid">
       
       <!-- Buttons -->
       <div class="ui-group">
-        <h4>Buttons</h4>
+        <h4>{{ ui.buttons }}</h4>
         <div class="button-states">
           
           <div class="state-row">
-            <span class="state-label">Default</span>
+            <span class="state-label">{{ ui.stateDefault }}</span>
             <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
-              <button class="btn-primary">Primary Action</button>
-              <button class="btn-secondary">Secondary Action</button>
-              <button class="btn-ghost">Ghost</button>
+              <button class="btn-primary">{{ ui.primary }}</button>
+              <button class="btn-secondary">{{ ui.secondary }}</button>
+              <button class="btn-ghost">{{ ui.ghost }}</button>
             </div>
           </div>
           
           <div class="state-row">
-            <span class="state-label">Hover (simulated)</span>
+            <span class="state-label">{{ ui.stateHover }}</span>
             <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
-              <button class="btn-primary hover">Primary Action</button>
-              <button class="btn-secondary hover">Secondary Action</button>
-              <button class="btn-ghost hover">Ghost</button>
+              <button class="btn-primary hover">{{ ui.primary }}</button>
+              <button class="btn-secondary hover">{{ ui.secondary }}</button>
+              <button class="btn-ghost hover">{{ ui.ghost }}</button>
             </div>
           </div>
           
           <div class="state-row">
-            <span class="state-label">Active (simulated)</span>
+            <span class="state-label">{{ ui.stateActive }}</span>
             <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
-              <button class="btn-primary active">Primary Action</button>
-              <button class="btn-secondary active">Secondary Action</button>
-              <button class="btn-ghost active">Ghost</button>
+              <button class="btn-primary active">{{ ui.primary }}</button>
+              <button class="btn-secondary active">{{ ui.secondary }}</button>
+              <button class="btn-ghost active">{{ ui.ghost }}</button>
             </div>
           </div>
 
@@ -146,23 +147,23 @@
 
       <!-- Forms -->
       <div class="ui-group">
-        <h4>Form Inputs</h4>
+        <h4>{{ ui.inputs }}</h4>
         <div class="form-states">
           
           <div class="input-group">
-            <label>Default State</label>
-            <input type="text" placeholder="Enter your email address">
+            <label>{{ ui.inputDefault }}</label>
+            <input type="text" placeholder="{{ ui.inputPlaceholder }}">
           </div>
           
           <div class="input-group">
-            <label>Focus State (simulated)</label>
-            <input type="text" class="focus" placeholder="typing..." value="user@example.com">
+            <label>{{ ui.inputFocus }}</label>
+            <input type="text" class="focus" placeholder="{{ ui.inputTyping }}" value="user@example.com">
           </div>
           
           <div class="input-group">
-            <label>Error State (simulated)</label>
+            <label>{{ ui.inputError }}</label>
             <input type="text" class="error" placeholder="" value="invalid-email">
-            <span style="color: #ef4444; font-size: 0.8rem; margin-top: 0.25rem;">Please enter a valid email address.</span>
+            <span style="color: #ef4444; font-size: 0.8rem; margin-top: 0.25rem;">{{ ui.inputErrorMsg }}</span>
           </div>
 
         </div>

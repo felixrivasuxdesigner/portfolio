@@ -255,6 +255,7 @@
         
           
 
+
 <div class="design-board-wrapper" style="
   --theme-primary: #3C1053;
   --theme-secondary: #002A61;
@@ -708,6 +709,7 @@
         
 
 <!-- Generic Prototype Gallery Component -->
+
 <div class="case-study-section prototype-gallery-section">
   <h2>Prototype Gallery</h2>
   <p>Explore the app's design and flow through these key screens from the interactive prototype.</p>
@@ -733,10 +735,10 @@
 
 <!-- Lighbox Component -->
 <div id="prototype-lightbox" class="lightbox-modal" onclick="closeLightbox(event)">
-  <span class="lightbox-close" onclick="closeLightbox(event, true)">×</span>
-  <span class="lightbox-nav prev" onclick="navigateLightbox(-1); event.stopPropagation();">❮</span>
+  <span class="lightbox-close" aria-label="Close" onclick="closeLightbox(event, true)">×</span>
+  <span class="lightbox-nav prev" aria-label="Previous" onclick="navigateLightbox(-1); event.stopPropagation();">❮</span>
   <img loading="lazy" class="lightbox-content" id="lightbox-img" src="" alt="Full Screen Prototype">
-  <span class="lightbox-nav next" onclick="navigateLightbox(1); event.stopPropagation();">❯</span>
+  <span class="lightbox-nav next" aria-label="Next" onclick="navigateLightbox(1); event.stopPropagation();">❯</span>
 </div>
 
 <script>
