@@ -9,9 +9,9 @@
 // Apply JourneyLaw styles global CSS variables for the Living Organism architecture
 .case-study.journeylaw {
   // Global overrides for "Living Organism" theme inheritance
-  --primary-color: #070318; // JourneyLaw Dark Navy
+  --primary-color: #2C1B0C; // --color-primary de tokens.css
   --secondary-color: #C5B4A3; // Tan/Beige
-  --accent-color: #FC6736; // Orange Highlight
+  --accent-color: #8C765C; // --color-accent de tokens.css (4.32:1)
   --heading-color: var(--primary-color);
   --text-color: #2C1B0C;
   --background-color: #FFFFFF;

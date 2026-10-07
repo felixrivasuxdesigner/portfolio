@@ -257,23 +257,23 @@
 
 
 <div class="design-board-wrapper" style="
-  --theme-primary: #0B0F19;
-  --theme-secondary: #00F2FE;
+  --theme-primary: #7F22FE;
+  --theme-secondary: #FC6736;
   --theme-gray-dark: #212529;
   --theme-gray-medium: #6c757d;
   --theme-gray-light: #f8f9fa;
   --theme-gray-white: #ffffff;
   --theme-on-primary: #ffffff;
-  --theme-font-primary: 'Outfit & Inter (Google Fonts)', sans-serif;
-  --theme-radius: 8px;
-  --theme-button-radius: 6px;
-  --theme-input-radius: 6px;
+  --theme-font-primary: 'Fuente del sistema (font-sans de Tailwind)', sans-serif;
+  --theme-radius: 12px;
+  --theme-button-radius: 8px;
+  --theme-input-radius: 8px;
 ">
 
   <div class="board-header" style="text-align: center; margin-bottom: 3rem;">
     <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;">Sistema de Diseño AgileRadar</h2>
     <p style="font-size: 1.1rem; color: var(--theme-gray-medium); max-width: 600px; margin: 0 auto; line-height: 1.6;">
-      Un diseño corporativo premium y minimalista con una estética de alta densidad informativa, acentos en cyan neon y un sistema de componentes ágiles para scouting de propuestas.
+      Interfaz clara de alta densidad informativa construida con Tailwind CSS v4: violeta para la acción, la paleta cálida de Shape como acento y la fuente del sistema.
     </p>
   </div>
 
@@ -289,12 +289,12 @@
       <div class="color-swatch-card" aria-label="Color primario">
         <div class="swatch-color" style="background-color: var(--theme-primary);"></div>
         <div class="swatch-info">
-          <div class="color-name">Navy Dark</div>
+          <div class="color-name">Violeta</div>
           <div class="color-codes">
-            <span>HEX #0B0F19</span>
-            <span>RGB 11, 15, 25</span>
+            <span>HEX #7F22FE</span>
+            <span>RGB 127, 34, 254</span>
           </div>
-          <div class="color-usage">Color de fondo principal y áreas estructurales clave de la interfaz</div>
+          <div class="color-usage">Acción principal, botones y estados activos (violet-600)</div>
         </div>
       </div>
 
@@ -302,105 +302,105 @@
       <div class="color-swatch-card" aria-label="Color secundario">
         <div class="swatch-color" style="background-color: var(--theme-secondary);"></div>
         <div class="swatch-info">
-          <div class="color-name">Cyan Neon</div>
+          <div class="color-name">Naranja Shape</div>
           <div class="color-codes">
-            <span>HEX #00F2FE</span>
-            <span>RGB 0, 242, 254</span>
+            <span>HEX #FC6736</span>
+            <span>RGB 252, 103, 54</span>
           </div>
-          <div class="color-usage">Color de acento interactivo. Destacados de coincidencia (match_score), botones activos y estados interactivos</div>
+          <div class="color-usage">Acento de marca en degradados y destacados</div>
         </div>
       </div>
       
       <!-- Grayscale (Loop over grayscale obj) -->
       
-      <div class="color-swatch-card" aria-label="Amber">
+      <div class="color-swatch-card" aria-label="Fondo">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #F59E0B; "></div>
+        <div class="swatch-color" style="background-color: #F8F9FA; "></div>
         <div class="swatch-info">
-          <div class="color-name">Amber</div>
+          <div class="color-name">Fondo</div>
           <div class="color-codes">
-            <span>HEX #F59E0B</span>
-            <span>RGB 245, 158, 11</span>
+            <span>HEX #F8F9FA</span>
+            <span>RGB 248, 249, 250</span>
           </div>
-          <div class="color-usage">Estados en revisión y oportunidades medianamente calificadas</div>
+          <div class="color-usage">Fondo general de la app</div>
         </div>
       </div>
       
-      <div class="color-swatch-card" aria-label="Charcoal Background">
+      <div class="color-swatch-card" aria-label="Superficie">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #0B0F19; "></div>
+        <div class="swatch-color" style="background-color: #FFFFFF; "></div>
         <div class="swatch-info">
-          <div class="color-name">Charcoal Background</div>
+          <div class="color-name">Superficie</div>
           <div class="color-codes">
-            <span>HEX #0B0F19</span>
-            <span>RGB 11, 15, 25</span>
+            <span>HEX #FFFFFF</span>
+            <span>RGB 255, 255, 255</span>
           </div>
-          <div class="color-usage">Fondo general del panel Kanban</div>
+          <div class="color-usage">Tarjetas y paneles</div>
         </div>
       </div>
       
-      <div class="color-swatch-card" aria-label="Slate Surface">
+      <div class="color-swatch-card" aria-label="Durazno Shape">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #1E293B; "></div>
+        <div class="swatch-color" style="background-color: #FFE4C9; "></div>
         <div class="swatch-info">
-          <div class="color-name">Slate Surface</div>
+          <div class="color-name">Durazno Shape</div>
           <div class="color-codes">
-            <span>HEX #1E293B</span>
-            <span>RGB 30, 41, 59</span>
+            <span>HEX #FFE4C9</span>
+            <span>RGB 255, 228, 201</span>
           </div>
-          <div class="color-usage">Tarjetas de oportunidades de licitación en el tablero</div>
+          <div class="color-usage">Fondos y bordes de acento</div>
         </div>
       </div>
       
-      <div class="color-swatch-card" aria-label="Text Off-White">
+      <div class="color-swatch-card" aria-label="Texto principal">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #F3F4F6; "></div>
+        <div class="swatch-color" style="background-color: #101828; "></div>
         <div class="swatch-info">
-          <div class="color-name">Text Off-White</div>
+          <div class="color-name">Texto principal</div>
           <div class="color-codes">
-            <span>HEX #F3F4F6</span>
-            <span>RGB 243, 244, 246</span>
+            <span>HEX #101828</span>
+            <span>RGB 16, 24, 40</span>
           </div>
-          <div class="color-usage">Texto principal de la propuesta y títulos de columnas</div>
+          <div class="color-usage">Títulos y cifras (gray-900)</div>
         </div>
       </div>
       
-      <div class="color-swatch-card" aria-label="Text Soft Gray">
+      <div class="color-swatch-card" aria-label="Texto secundario">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #9CA3AF; "></div>
+        <div class="swatch-color" style="background-color: #6A7282; "></div>
         <div class="swatch-info">
-          <div class="color-name">Text Soft Gray</div>
+          <div class="color-name">Texto secundario</div>
           <div class="color-codes">
-            <span>HEX #9CA3AF</span>
-            <span>RGB 156, 163, 175</span>
+            <span>HEX #6A7282</span>
+            <span>RGB 106, 114, 130</span>
           </div>
-          <div class="color-usage">Montos presupuestarios, fechas de cierre de bases y referencias de clientes</div>
+          <div class="color-usage">Metadatos y etiquetas (gray-500)</div>
         </div>
       </div>
       
-      <div class="color-swatch-card" aria-label="Success Teal">
+      <div class="color-swatch-card" aria-label="Éxito">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #10B981; "></div>
+        <div class="swatch-color" style="background-color: #009966; "></div>
         <div class="swatch-info">
-          <div class="color-name">Success Teal</div>
+          <div class="color-name">Éxito</div>
           <div class="color-codes">
-            <span>HEX #10B981</span>
-            <span>RGB 16, 185, 129</span>
+            <span>HEX #009966</span>
+            <span>RGB 0, 153, 102</span>
           </div>
-          <div class="color-usage">Coincidencia de propuesta alta (&gt;=90%) y estados postulados</div>
+          <div class="color-usage">Coincidencias altas y estados positivos (emerald-600)</div>
         </div>
       </div>
       
-      <div class="color-swatch-card" aria-label="Error Rose">
+      <div class="color-swatch-card" aria-label="Error">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #F43F5E; "></div>
+        <div class="swatch-color" style="background-color: #FF2056; "></div>
         <div class="swatch-info">
-          <div class="color-name">Error Rose</div>
+          <div class="color-name">Error</div>
           <div class="color-codes">
-            <span>HEX #F43F5E</span>
-            <span>RGB 244, 63, 94</span>
+            <span>HEX #FF2056</span>
+            <span>RGB 255, 32, 86</span>
           </div>
-          <div class="color-usage">Oportunidades descartadas o alertas de penalizaciones en bases</div>
+          <div class="color-usage">Alertas y oportunidades descartadas (rose-500)</div>
         </div>
       </div>
       
@@ -411,7 +411,7 @@
   <section class="board-section">
     <div class="section-header">
       <h3>Tipografía</h3>
-      <p>Tipografía principal: <strong>Outfit &amp; Inter (Google Fonts)</strong> (Interfaz Web Profesional)</p>
+      <p>Tipografía principal: <strong>Fuente del sistema (font-sans de Tailwind)</strong> (Web app)</p>
     </div>
 
     
@@ -420,44 +420,44 @@
       
       <div class="type-specimen">
         <div class="type-label">
-          <strong>Main Header</strong>
-          <span>28px / 700</span>
-          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Título principal del panel de propuestas</span>
+          <strong>Métrica</strong>
+          <span>30px / 800</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Cifras del panel de indicadores</span>
         </div>
-        <div class="type-sample" style="font-size: 28px; font-weight: 700;">
+        <div class="type-sample" style="font-size: 30px; font-weight: 800; font-family: ui-sans-serif, system-ui, sans-serif;">
           El veloz murciélago hindú comía feliz cardillo y kiwi
         </div>
       </div>
       
       <div class="type-specimen">
         <div class="type-label">
-          <strong>Column Title</strong>
-          <span>16px / 600</span>
-          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Encabezados de las columnas del Kanban (Oportunidades, En Revisión...)</span>
+          <strong>Texto</strong>
+          <span>14px / 500</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Contenido de tarjetas y tablas</span>
         </div>
-        <div class="type-sample" style="font-size: 16px; font-weight: 600;">
+        <div class="type-sample" style="font-size: 14px; font-weight: 500; font-family: ui-sans-serif, system-ui, sans-serif;">
           El veloz murciélago hindú comía feliz cardillo y kiwi
         </div>
       </div>
       
       <div class="type-specimen">
         <div class="type-label">
-          <strong>Card Title</strong>
-          <span>14px / 600</span>
-          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Título de la licitación en la tarjeta</span>
-        </div>
-        <div class="type-sample" style="font-size: 14px; font-weight: 600;">
-          El veloz murciélago hindú comía feliz cardillo y kiwi
-        </div>
-      </div>
-      
-      <div class="type-specimen">
-        <div class="type-label">
-          <strong>Match Badge</strong>
+          <strong>Etiqueta</strong>
           <span>12px / 700</span>
-          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Porcentaje de coincidencia evaluado por la IA</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Estilo más usado: etiquetas, estados y metadatos</span>
         </div>
-        <div class="type-sample" style="font-size: 12px; font-weight: 700;">
+        <div class="type-sample" style="font-size: 12px; font-weight: 700; font-family: ui-sans-serif, system-ui, sans-serif;">
+          El veloz murciélago hindú comía feliz cardillo y kiwi
+        </div>
+      </div>
+      
+      <div class="type-specimen">
+        <div class="type-label">
+          <strong>Micro</strong>
+          <span>10px / 700</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Badges y contadores</span>
+        </div>
+        <div class="type-sample" style="font-size: 10px; font-weight: 700; font-family: ui-sans-serif, system-ui, sans-serif;">
           El veloz murciélago hindú comía feliz cardillo y kiwi
         </div>
       </div>

@@ -1,102 +1,110 @@
 {
   "title": "Sistema de Diseño AgileRadar",
-  "intro": "Un diseño corporativo premium y minimalista con una estética de alta densidad informativa, acentos en cyan neon y un sistema de componentes ágiles para scouting de propuestas.",
+  "intro": "Interfaz clara de alta densidad informativa construida con Tailwind CSS v4: violeta para la acción, la paleta cálida de Shape como acento y la fuente del sistema.",
   "tokens": {
     "colors": {
       "primary": {
-        "name": "Navy Dark",
-        "hex": "#0B0F19",
-        "rgb": "11, 15, 25",
-        "usage": "Color de fondo principal y áreas estructurales clave de la interfaz"
+        "name": "Violeta",
+        "hex": "#7F22FE",
+        "rgb": "127, 34, 254",
+        "usage": "Acción principal, botones y estados activos (violet-600)"
       },
       "secondary": {
-        "name": "Cyan Neon",
-        "hex": "#00F2FE",
-        "rgb": "0, 242, 254",
-        "usage": "Color de acento interactivo. Destacados de coincidencia (match_score), botones activos y estados interactivos"
+        "name": "Naranja Shape",
+        "hex": "#FC6736",
+        "rgb": "252, 103, 54",
+        "usage": "Acento de marca en degradados y destacados"
       },
       "grayscale": {
-        "gold": {
-          "name": "Amber",
-          "hex": "#F59E0B",
-          "rgb": "245, 158, 11",
-          "usage": "Estados en revisión y oportunidades medianamente calificadas"
-        },
         "background": {
-          "name": "Charcoal Background",
-          "hex": "#0B0F19",
-          "rgb": "11, 15, 25",
-          "usage": "Fondo general del panel Kanban"
+          "name": "Fondo",
+          "hex": "#F8F9FA",
+          "rgb": "248, 249, 250",
+          "usage": "Fondo general de la app"
         },
         "card": {
-          "name": "Slate Surface",
-          "hex": "#1E293B",
-          "rgb": "30, 41, 59",
-          "usage": "Tarjetas de oportunidades de licitación en el tablero"
+          "name": "Superficie",
+          "hex": "#FFFFFF",
+          "rgb": "255, 255, 255",
+          "usage": "Tarjetas y paneles"
+        },
+        "peach": {
+          "name": "Durazno Shape",
+          "hex": "#FFE4C9",
+          "rgb": "255, 228, 201",
+          "usage": "Fondos y bordes de acento"
         },
         "text": {
-          "name": "Text Off-White",
-          "hex": "#F3F4F6",
-          "rgb": "243, 244, 246",
-          "usage": "Texto principal de la propuesta y títulos de columnas"
+          "name": "Texto principal",
+          "hex": "#101828",
+          "rgb": "16, 24, 40",
+          "usage": "Títulos y cifras (gray-900)"
         },
         "textMuted": {
-          "name": "Text Soft Gray",
-          "hex": "#9CA3AF",
-          "rgb": "156, 163, 175",
-          "usage": "Montos presupuestarios, fechas de cierre de bases y referencias de clientes"
+          "name": "Texto secundario",
+          "hex": "#6A7282",
+          "rgb": "106, 114, 130",
+          "usage": "Metadatos y etiquetas (gray-500)"
         },
         "success": {
-          "name": "Success Teal",
-          "hex": "#10B981",
-          "rgb": "16, 185, 129",
-          "usage": "Coincidencia de propuesta alta (>=90%) y estados postulados"
+          "name": "Éxito",
+          "hex": "#009966",
+          "rgb": "0, 153, 102",
+          "usage": "Coincidencias altas y estados positivos (emerald-600)"
         },
         "error": {
-          "name": "Error Rose",
-          "hex": "#F43F5E",
-          "rgb": "244, 63, 94",
-          "usage": "Oportunidades descartadas o alertas de penalizaciones en bases"
+          "name": "Error",
+          "hex": "#FF2056",
+          "rgb": "255, 32, 86",
+          "usage": "Alertas y oportunidades descartadas (rose-500)"
         }
       }
     },
     "typography": {
       "primary": {
-        "family": "Outfit & Inter (Google Fonts)",
-        "weights": [400, 500, 600, 700],
-        "category": "Interfaz Web Profesional"
+        "family": "Fuente del sistema (font-sans de Tailwind)",
+        "weights": [
+          500,
+          700,
+          800
+        ],
+        "category": "Web app"
       },
       "hierarchy": [
         {
-          "name": "Main Header",
-          "size": "28px",
-          "weight": "700",
-          "usage": "Título principal del panel de propuestas"
+          "name": "Métrica",
+          "size": "30px",
+          "weight": "800",
+          "stack": "ui-sans-serif, system-ui, sans-serif",
+          "usage": "Cifras del panel de indicadores"
         },
         {
-          "name": "Column Title",
-          "size": "16px",
-          "weight": "600",
-          "usage": "Encabezados de las columnas del Kanban (Oportunidades, En Revisión...)"
-        },
-        {
-          "name": "Card Title",
+          "name": "Texto",
           "size": "14px",
-          "weight": "600",
-          "usage": "Título de la licitación en la tarjeta"
+          "weight": "500",
+          "stack": "ui-sans-serif, system-ui, sans-serif",
+          "usage": "Contenido de tarjetas y tablas"
         },
         {
-          "name": "Match Badge",
+          "name": "Etiqueta",
           "size": "12px",
           "weight": "700",
-          "usage": "Porcentaje de coincidencia evaluado por la IA"
+          "stack": "ui-sans-serif, system-ui, sans-serif",
+          "usage": "Estilo más usado: etiquetas, estados y metadatos"
+        },
+        {
+          "name": "Micro",
+          "size": "10px",
+          "weight": "700",
+          "stack": "ui-sans-serif, system-ui, sans-serif",
+          "usage": "Badges y contadores"
         }
       ]
     },
     "shape": {
-      "borderRadius": "8px",
-      "buttonRadius": "6px",
-      "inputRadius": "6px"
+      "borderRadius": "12px",
+      "buttonRadius": "8px",
+      "inputRadius": "8px"
     }
   }
 }

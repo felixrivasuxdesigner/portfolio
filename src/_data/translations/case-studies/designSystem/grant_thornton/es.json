@@ -63,7 +63,12 @@
     "typography": {
       "primary": {
         "family": "Inter & SF Pro Text (Google Fonts / Apple Native)",
-        "weights": [400, 500, 600, 700],
+        "weights": [
+          400,
+          500,
+          600,
+          700
+        ],
         "category": "Cumplimiento Corporativo y Accesibilidad"
       },
       "hierarchy": [
@@ -71,32 +76,37 @@
           "name": "Large Title",
           "size": "34px",
           "weight": "700",
-          "usage": "Títulos principales de paneles y dashboards de cumplimiento."
+          "usage": "Títulos principales de paneles y dashboards de cumplimiento.",
+          "family": "Inter"
         },
         {
           "name": "Body Text",
           "size": "17px",
           "weight": "400",
-          "usage": "Texto de lectura general y explicaciones tributarias con escala tipográfica Apple."
+          "usage": "Texto de lectura general y explicaciones tributarias con escala tipográfica Apple.",
+          "family": "Inter"
         },
         {
           "name": "Subhead / Labels",
           "size": "15px",
           "weight": "500",
-          "usage": "Etiquetas de formularios, campos de texto e información secundaria de tablas."
+          "usage": "Etiquetas de formularios, campos de texto e información secundaria de tablas.",
+          "family": "Inter"
         },
         {
           "name": "Caption",
           "size": "12px",
           "weight": "400",
-          "usage": "Información complementaria y notas legales al pie de los reportes."
+          "usage": "Información complementaria y notas legales al pie de los reportes.",
+          "family": "Inter"
         }
-      ]
+      ],
+      "fontsUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
     },
     "shape": {
-      "borderRadius": "16px (Cards) / 12px (Inputs)",
-      "buttonRadius": "12px (CTAs) / 100px (Pills)",
-      "inputRadius": "12px (Web) / 0px (Mailing/PDF)"
+      "borderRadius": "16px",
+      "buttonRadius": "12px",
+      "inputRadius": "12px"
     }
   }
 }

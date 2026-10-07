@@ -71,39 +71,46 @@
           "name": "Display 4XL",
           "size": "40px",
           "weight": "700",
-          "usage": "Headlines de marketing y landing"
+          "usage": "Headlines de marketing y landing",
+          "family": "Inter"
         },
         {
           "name": "Display 3XL",
           "size": "32px",
           "weight": "600",
-          "usage": "Títulos principales del dashboard"
+          "usage": "Títulos principales del dashboard",
+          "family": "Inter"
         },
         {
           "name": "Heading 2XL",
           "size": "24px",
           "weight": "600",
-          "usage": "Títulos de secciones y resúmenes"
+          "usage": "Títulos de secciones y resúmenes",
+          "family": "Inter"
         },
         {
           "name": "Body Regular",
           "size": "16px",
           "weight": "400",
-          "usage": "Contenido principal y transcripciones"
+          "usage": "Contenido principal y transcripciones",
+          "family": "Inter"
         },
         {
           "name": "Caption SM",
           "size": "14px",
           "weight": "500",
-          "usage": "Etiquetas, metadatos y micro-copy"
+          "usage": "Etiquetas, metadatos y micro-copy",
+          "family": "Inter"
         },
         {
           "name": "Caption XS",
           "size": "12px",
           "weight": "400",
-          "usage": "Timestamps, hints y texto auxiliar"
+          "usage": "Timestamps, hints y texto auxiliar",
+          "family": "Inter"
         }
-      ]
+      ],
+      "fontsUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
     },
     "shape": {
       "borderRadius": "8px",

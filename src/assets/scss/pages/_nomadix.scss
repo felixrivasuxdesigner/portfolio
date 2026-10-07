@@ -5,21 +5,21 @@
 // Variables específicas para el case study de Nomadix
 .case-study.nomadix {
   // Global overrides for "Living Organism" theme inheritance
-  --primary-color: #f16b23; // Nomadix Orange (Updated from Sketch)
+  --primary-color: #F26B24; // Nomadix Orange (Updated from Sketch)
   --heading-color: var(--primary-color);
   --accent-color: var(--primary-color);
   --text-color: #000000;
   --text-secondary: #686868;
   --background-color: #ffffff;
-  --background-color-alt: #eff1f1; // Mapped to Basic/black-5
+  --background-color-alt: #F0F2F2; // Mapped to Basic/black-5
   --border-color: #d1d1d1; // Mapped to Basic/black-25
   --shadow-color: rgba(0, 0, 0, 0.08);
 
   // Indications
   --nomadix-danger: #ff453a;
-  --nomadix-info: #0a83ff;
+  --nomadix-info: #0A84FF;
   --nomadix-warning: #ff9f0a;
-  --nomadix-success: #2fd157;
+  --nomadix-success: #30D158;
 
   // Variables para tema oscuro
   &[data-theme='dark'],
@@ -34,8 +34,8 @@
 
   // Legacy mappings for internal specific components if needed
   --nomadix-orange: var(--primary-color);
-  --nomadix-blue: #1f5275; // Updated from Sketch
-  --nomadix-navy: #112a3c; // Updated from Sketch
+  --nomadix-blue: #205375; // Updated from Sketch
+  --nomadix-navy: #112B3C; // Updated from Sketch
   --nomadix-black: var(--text-color);
   --nomadix-gray: var(--text-secondary);
   --nomadix-white: #ffffff;

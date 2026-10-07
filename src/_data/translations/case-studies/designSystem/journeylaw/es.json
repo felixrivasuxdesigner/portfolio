@@ -56,41 +56,48 @@
       "hierarchy": [
         {
           "name": "Encabezado XL",
-          "size": "30px/36px",
+          "size": "30px",
           "weight": "400",
-          "usage": "Encabezados principales de sección y títulos de página"
+          "usage": "Encabezados principales de sección y títulos de página",
+          "family": "Inter"
         },
         {
           "name": "Encabezado Grande",
-          "size": "24px/32px",
+          "size": "24px",
           "weight": "400",
-          "usage": "Títulos de sección y encabezados de modal"
+          "usage": "Títulos de sección y encabezados de modal",
+          "family": "Inter"
         },
         {
           "name": "Encabezado Medio",
-          "size": "18px/24px",
+          "size": "18px",
           "weight": "400",
-          "usage": "Títulos de tarjeta y grupos de contenido"
+          "usage": "Títulos de tarjeta y grupos de contenido",
+          "family": "Inter"
         },
         {
           "name": "Texto Principal",
-          "size": "16px/24px",
+          "size": "16px",
           "weight": "400",
-          "usage": "Texto de contenido primario"
+          "usage": "Texto de contenido primario",
+          "family": "Inter"
         },
         {
           "name": "Texto Pequeño",
-          "size": "14px/20px",
+          "size": "14px",
           "weight": "400",
-          "usage": "Información secundaria, etiquetas y leyendas"
+          "usage": "Información secundaria, etiquetas y leyendas",
+          "family": "Inter"
         },
         {
           "name": "Extra Pequeño",
-          "size": "12px/16px",
+          "size": "12px",
           "weight": "400",
-          "usage": "Letra pequeña y descargos de responsabilidad legales"
+          "usage": "Letra pequeña y descargos de responsabilidad legales",
+          "family": "Inter"
         }
-      ]
+      ],
+      "fontsUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
     },
     "shape": {
       "borderRadius": "8px",

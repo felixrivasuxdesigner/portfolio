@@ -1,137 +1,144 @@
 {
-  "title": "Sistema de Diseño",
+  "title": "Sistema de Diseño Nomadix Adventure",
   "intro": "El sistema de diseño de Nomadix Adventure encarna el espíritu de aventura y exploración, creando una interfaz que inspira a los visitantes a embarcarse en su propio viaje.",
   "tokens": {
     "colors": {
       "primary": {
-        "name": "Naranja Marca",
-        "hex": "#f16b23",
-        "rgb": "241, 107, 35",
-        "usage": "Color de acento principal para llamados a la acción (CTAs)"
+        "name": "Naranja marca",
+        "hex": "#F26B24",
+        "rgb": "242, 107, 36",
+        "usage": "Brand/Orange: llamados a la acción y acentos"
       },
       "secondary": {
-        "name": "Azul Marca",
-        "hex": "#1f5275",
-        "rgb": "31, 82, 117",
-        "usage": "Color secundario de la marca"
+        "name": "Azul complementario",
+        "hex": "#205375",
+        "rgb": "32, 83, 117",
+        "usage": "Complementary/Blue"
       },
       "grayscale": {
         "dark": {
-          "name": "Negro Marca",
+          "name": "Negro",
           "hex": "#000000",
           "rgb": "0, 0, 0",
-          "usage": "Color principal para textos y fondos profundos"
+          "usage": "Texto y fondos oscuros"
         },
         "medium": {
-          "name": "Gris Marca",
+          "name": "Gris marca",
           "hex": "#686868",
           "rgb": "104, 104, 104",
-          "usage": "Elementos neutros y textos secundarios"
+          "usage": "Texto secundario"
         },
         "light": {
-          "name": "Gris Claro",
-          "hex": "#d1d1d1",
+          "name": "Gris claro",
+          "hex": "#D1D1D1",
           "rgb": "209, 209, 209",
-          "usage": "Bordes y divisores"
+          "usage": "Bordes y divisores (Black-25)"
         },
         "white": {
-          "name": "Blanco Marca",
-          "hex": "#ffffff",
+          "name": "Blanco",
+          "hex": "#FFFFFF",
           "rgb": "255, 255, 255",
-          "usage": "Superficies y textos"
+          "usage": "Superficies y texto sobre fotos"
         },
         "navy": {
-          "name": "Marino Marca",
-          "hex": "#112a3c",
-          "rgb": "17, 42, 60",
-          "usage": "Color terciario de la marca"
+          "name": "Marino complementario",
+          "hex": "#112B3C",
+          "rgb": "17, 43, 60",
+          "usage": "Fondos oscuros de sección"
         },
         "extra_light": {
-          "name": "Gris Extra Claro",
-          "hex": "#eff1f1",
-          "rgb": "239, 241, 241",
-          "usage": "Paneles de fondo sutiles"
+          "name": "Gris extra claro",
+          "hex": "#F0F2F2",
+          "rgb": "240, 242, 242",
+          "usage": "Fondos suaves (Black-5)"
         },
         "danger": {
           "name": "Peligro",
-          "hex": "#ff453a",
+          "hex": "#FF453A",
           "rgb": "255, 69, 58",
-          "usage": "Errores y acciones destructivas"
+          "usage": "Indication/Danger"
         },
         "info": {
           "name": "Información",
-          "hex": "#0a83ff",
-          "rgb": "10, 131, 255",
-          "usage": "Mensajes informativos"
+          "hex": "#0A84FF",
+          "rgb": "10, 132, 255",
+          "usage": "Indication/Info"
         },
         "warning": {
           "name": "Advertencia",
-          "hex": "#ff9f0a",
+          "hex": "#FF9F0A",
           "rgb": "255, 159, 10",
-          "usage": "Advertencias y alertas"
+          "usage": "Indication/Warning"
         },
         "success": {
           "name": "Éxito",
-          "hex": "#2fd157",
-          "rgb": "47, 209, 87",
-          "usage": "Acciones exitosas"
+          "hex": "#30D158",
+          "rgb": "48, 209, 88",
+          "usage": "Indication/Success"
         }
       }
     },
     "typography": {
       "primary": {
-        "family": "Open Sans",
+        "family": "SF Pro Display",
         "weights": [
+          100,
           400,
-          500,
           600,
-          700
+          700,
+          900
         ],
-        "category": "Fuente Principal"
+        "category": "Sitio web"
       },
       "hierarchy": [
         {
           "name": "Display",
-          "size": "42px/46px",
-          "weight": "400",
-          "usage": "Títulos principales de sección"
+          "size": "64px",
+          "weight": "900",
+          "stack": "-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif",
+          "usage": "Titulares sobre fotografía"
         },
         {
           "name": "H1",
-          "size": "32px/38px",
-          "weight": "400",
-          "usage": "Encabezados de página"
+          "size": "32px",
+          "weight": "600",
+          "stack": "-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif",
+          "usage": "Títulos de sección"
         },
         {
           "name": "H2",
-          "size": "28px/34px",
-          "weight": "400",
-          "usage": "Subtítulos principales"
+          "size": "24px",
+          "weight": "700",
+          "stack": "-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif",
+          "usage": "Subtítulos"
         },
         {
-          "name": "H3",
-          "size": "22px/28px",
-          "weight": "400",
-          "usage": "Subtítulos secundarios"
+          "name": "Texto destacado",
+          "size": "16px",
+          "weight": "700",
+          "stack": "-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif",
+          "usage": "Estilo más usado: botones, menús y datos"
         },
         {
-          "name": "Texto Principal",
-          "size": "16px/24px",
+          "name": "Texto",
+          "size": "16px",
           "weight": "400",
-          "usage": "Texto principal de contenido"
+          "stack": "-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif",
+          "usage": "Párrafos"
         },
         {
-          "name": "Texto Pequeño",
-          "size": "14px/20px",
-          "weight": "400",
-          "usage": "Información secundaria y leyendas"
+          "name": "Pequeño",
+          "size": "12px",
+          "weight": "100",
+          "stack": "-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif",
+          "usage": "Notas y metadatos (Thin)"
         }
       ]
     },
     "shape": {
-      "borderRadius": "8px",
+      "borderRadius": "20px",
       "buttonRadius": "100px",
-      "inputRadius": "6px"
+      "inputRadius": "4px"
     }
   }
 }

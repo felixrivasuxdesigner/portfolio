@@ -1,78 +1,128 @@
 {
-  "title": "Design System",
+  "title": "Mobile Wallet Design System",
   "intro": "The design system for Belcorp's Mobile Wallet was built on the pillars of 'Trust and Accessibility', ensuring that sales representatives could manage their finances with complete security.",
   "tokens": {
     "colors": {
       "primary": {
-        "name": "Belcorp Purple",
-        "hex": "#722688",
-        "rgb": "114, 38, 136",
-        "usage": "Brand color, active states, main buttons"
+        "name": "Belcorp",
+        "hex": "#722789",
+        "rgb": "114, 39, 137",
+        "usage": "Brand/belcorp and Text/Titles: brand and titles"
       },
       "secondary": {
-        "name": "Basic Normal",
-        "hex": "#485A6B",
-        "rgb": "72, 90, 107",
-        "usage": "Primary text, headings, dark icons"
+        "name": "Paragraph Text",
+        "hex": "#485B6B",
+        "rgb": "72, 91, 107",
+        "usage": "Text/Paragraph: main text"
       },
       "grayscale": {
-        "disable": {
-          "name": "Basic Disable",
-          "hex": "#AEAEB2",
-          "rgb": "174, 174, 178",
-          "usage": "Disabled states, secondary text, borders"
-        },
-        "background": {
-          "name": "Background Light",
-          "hex": "#F3F4F6",
-          "rgb": "243, 244, 246",
-          "usage": "App backgrounds"
-        },
         "white": {
-          "name": "Basic White",
+          "name": "White",
           "hex": "#FFFFFF",
           "rgb": "255, 255, 255",
-          "usage": "Card surfaces, inputs"
+          "usage": "Basic/white: surfaces"
+        },
+        "background": {
+          "name": "Gray 4",
+          "hex": "#F4F4F5",
+          "rgb": "244, 244, 245",
+          "usage": "Basic/gray4: backgrounds"
+        },
+        "gray3": {
+          "name": "Gray 3",
+          "hex": "#D1D1D6",
+          "rgb": "209, 209, 214",
+          "usage": "Basic/gray3: borders"
+        },
+        "disable": {
+          "name": "Gray 2",
+          "hex": "#AEAEB2",
+          "rgb": "174, 174, 178",
+          "usage": "Basic/gray2: disabled states"
+        },
+        "gray": {
+          "name": "Gray",
+          "hex": "#A3ADB5",
+          "rgb": "163, 173, 181",
+          "usage": "Basic/gray: helper text"
+        },
+        "danger": {
+          "name": "Danger",
+          "hex": "#FF2D55",
+          "rgb": "255, 45, 85",
+          "usage": "Basic/danger: errors and negative amounts"
+        },
+        "warning": {
+          "name": "Warning",
+          "hex": "#FFCC00",
+          "rgb": "255, 204, 0",
+          "usage": "Basic/warning"
+        },
+        "esika": {
+          "name": "Ésika",
+          "hex": "#D40B13",
+          "rgb": "212, 11, 19",
+          "usage": "Brand/esika: group brand"
+        },
+        "cyzone": {
+          "name": "Cyzone",
+          "hex": "#AF0061",
+          "rgb": "175, 0, 97",
+          "usage": "Brand/cyzone: group brand"
+        },
+        "lbel": {
+          "name": "L'Bel",
+          "hex": "#FADE9D",
+          "rgb": "250, 222, 157",
+          "usage": "Brand/lbel: group brand"
         }
       }
     },
     "typography": {
       "primary": {
-        "family": "SF Pro Rounded",
+        "family": "SF Pro & SF Pro Rounded",
         "weights": [
           300,
-          400,
           500,
-          600,
-          700
+          900
         ],
-        "category": "Rounded Sans Serif"
+        "category": "iOS mobile app"
       },
       "hierarchy": [
         {
           "name": "Title",
-          "size": "24px",
-          "weight": "700",
-          "usage": "Main headers"
+          "size": "32px",
+          "weight": "300",
+          "stack": "-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif",
+          "usage": "SF Pro Light: titles"
+        },
+        {
+          "name": "Highlighted Text",
+          "size": "16px",
+          "weight": "500",
+          "stack": "-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif",
+          "usage": "SF Pro Medium"
         },
         {
           "name": "Body",
-          "size": "16px",
-          "weight": "400",
-          "usage": "Reading text"
-        },
-        {
-          "name": "Caption",
           "size": "14px",
           "weight": "300",
-          "usage": "Metadata & labels"
+          "stack": "-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif",
+          "usage": "SF Pro Light: most used style"
+        },
+        {
+          "name": "Rounded",
+          "size": "16px",
+          "weight": "900",
+          "stack": "ui-rounded, 'SF Pro Rounded', -apple-system, BlinkMacSystemFont, sans-serif",
+          "usage": "SF Pro Rounded Black"
         }
       ]
     },
     "shape": {
-      "borderRadius": "8px",
-      "buttonRadius": "100px",
-      "inputRadius": "6px"
+      "borderRadius": "10px",
+      "buttonRadius": "5px",
+      "inputRadius": "5px"
     }
   }
 }

@@ -1,101 +1,129 @@
 {
-  "title": "Design System",
+  "title": "Sistema de Diseño Factoring",
   "intro": "El Módulo de Factoring de Security Bank utiliza un lenguaje visual corporativo robusto, enfocado en precisión técnica y eficiencia operativa.",
   "tokens": {
     "colors": {
       "primary": {
-        "name": "Púrpura Oscuro",
-        "hex": "#3C1053",
-        "rgb": "60, 16, 83",
-        "usage": "Header, botones primarios"
+        "name": "Púrpura marca",
+        "hex": "#6A2E92",
+        "rgb": "106, 46, 146",
+        "usage": "Brand/Primary: botones, títulos destacados y acentos"
       },
       "secondary": {
-        "name": "Azul Marino",
-        "hex": "#002A61",
-        "rgb": "0, 42, 97",
-        "usage": "Textos de títulos, pie de página"
-      },
-      "accent": {
-        "name": "Verde Lima",
-        "hex": "#96C93D",
-        "rgb": "150, 201, 61",
-        "usage": "Call to Action, \"Conoce más\""
-      },
-      "surfaceLight": {
-        "name": "Fondo Ligero",
-        "hex": "#F4F4F4",
-        "rgb": "244, 244, 244",
-        "usage": "Fondos de sección y tarjetas"
-      },
-      "textBody": {
-        "name": "Texto de Cuerpo",
-        "hex": "#666666",
-        "rgb": "102, 102, 102",
-        "usage": "Texto de lectura general"
+        "name": "Azul marca",
+        "hex": "#232272",
+        "rgb": "35, 34, 114",
+        "usage": "Brand/Secondary"
       },
       "grayscale": {
         "dark": {
-          "name": "Texto Oscuro",
-          "hex": "#111827",
-          "rgb": "17, 24, 39",
-          "usage": "Títulos y texto primario"
+          "name": "Gris oscuro",
+          "hex": "#333333",
+          "rgb": "51, 51, 51",
+          "usage": "Texto principal y fondos oscuros"
         },
         "medium": {
-          "name": "Texto Medio",
-          "hex": "#666666",
-          "rgb": "102, 102, 102",
-          "usage": "Texto de lectura general"
+          "name": "Gris medio oscuro",
+          "hex": "#4D4D4D",
+          "rgb": "77, 77, 77",
+          "usage": "Texto secundario"
         },
         "light": {
-          "name": "Fondo Claro",
-          "hex": "#F4F4F4",
-          "rgb": "244, 244, 244",
-          "usage": "Fondos de app"
+          "name": "Gris claro",
+          "hex": "#F0F0F0",
+          "rgb": "240, 240, 240",
+          "usage": "Fondos de secciones y tablas"
         },
         "white": {
-          "name": "Superficie Blanca",
+          "name": "Blanco",
           "hex": "#FFFFFF",
           "rgb": "255, 255, 255",
-          "usage": "Superficies de tarjetas"
+          "usage": "Superficies"
+        },
+        "gray": {
+          "name": "Gris medio",
+          "hex": "#979797",
+          "rgb": "151, 151, 151",
+          "usage": "Texto deshabilitado y metadatos"
+        },
+        "border": {
+          "name": "Gris borde",
+          "hex": "#E4E4E4",
+          "rgb": "228, 228, 228",
+          "usage": "Bordes y divisores"
+        },
+        "success": {
+          "name": "Verde estado",
+          "hex": "#27AE60",
+          "rgb": "39, 174, 96",
+          "usage": "Operaciones aprobadas"
+        },
+        "successLight": {
+          "name": "Verde claro",
+          "hex": "#8BDF69",
+          "rgb": "139, 223, 105",
+          "usage": "Indicadores positivos"
+        },
+        "warning": {
+          "name": "Naranja estado",
+          "hex": "#F2994A",
+          "rgb": "242, 153, 74",
+          "usage": "Operaciones pendientes"
+        },
+        "error": {
+          "name": "Rojo estado",
+          "hex": "#FF0000",
+          "rgb": "255, 0, 0",
+          "usage": "Errores y rechazos"
         }
       }
     },
     "typography": {
       "primary": {
-        "family": "System Sans-Serif",
+        "family": "Titillium Web",
         "weights": [
           400,
-          500,
           600,
           700
         ],
-        "category": "Sans Serif"
+        "category": "Aplicación web bancaria"
       },
+      "fontsUrl": "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap",
       "hierarchy": [
         {
-          "name": "H1",
-          "size": "32px",
-          "weight": "700",
-          "usage": "Títulos principales"
-        },
-        {
-          "name": "H2",
+          "name": "Título",
           "size": "24px",
           "weight": "600",
-          "usage": "Subtítulos"
+          "family": "Titillium Web",
+          "usage": "Títulos de sección"
         },
         {
-          "name": "Body",
+          "name": "Texto destacado",
+          "size": "16px",
+          "weight": "600",
+          "family": "Titillium Web",
+          "usage": "Encabezados y datos clave"
+        },
+        {
+          "name": "Texto",
           "size": "16px",
           "weight": "400",
-          "usage": "Texto de lectura"
+          "family": "Titillium Web",
+          "usage": "Estilo más usado en el diseño"
+        },
+        {
+          "name": "Énfasis",
+          "size": "16px",
+          "weight": "700",
+          "family": "Titillium Web",
+          "usage": "Énfasis puntual"
         }
       ]
     },
     "shape": {
-      "borderRadius": "8px",
+      "borderRadius": "4px",
       "buttonRadius": "4px",
-      "inputRadius": "6px"
+      "inputRadius": "4px"
     },
     "spacing": {
       "unit": "8px",

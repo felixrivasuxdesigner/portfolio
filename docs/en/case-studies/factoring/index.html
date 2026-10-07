@@ -257,21 +257,21 @@
 
 
 <div class="design-board-wrapper" style="
-  --theme-primary: #3C1053;
-  --theme-secondary: #002A61;
-  --theme-gray-dark: #111827;
-  --theme-gray-medium: #666666;
-  --theme-gray-light: #F4F4F4;
+  --theme-primary: #6A2E92;
+  --theme-secondary: #232272;
+  --theme-gray-dark: #333333;
+  --theme-gray-medium: #4D4D4D;
+  --theme-gray-light: #F0F0F0;
   --theme-gray-white: #FFFFFF;
   --theme-on-primary: #FFFFFF;
-  --theme-font-primary: 'System Sans-Serif', sans-serif;
-  --theme-radius: 8px;
+  --theme-font-primary: 'Titillium Web', sans-serif;
+  --theme-radius: 4px;
   --theme-button-radius: 4px;
-  --theme-input-radius: 6px;
+  --theme-input-radius: 4px;
 ">
 
   <div class="board-header" style="text-align: center; margin-bottom: 3rem;">
-    <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;">Design System</h2>
+    <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;">Factoring Design System</h2>
     <p style="font-size: 1.1rem; color: var(--theme-gray-medium); max-width: 600px; margin: 0 auto; line-height: 1.6;">
       The Security Bank Factoring Module uses a robust corporate visual language, focused on technical precision and operational efficiency.
     </p>
@@ -289,12 +289,12 @@
       <div class="color-swatch-card" aria-label="Primary Color">
         <div class="swatch-color" style="background-color: var(--theme-primary);"></div>
         <div class="swatch-info">
-          <div class="color-name">Dark Purple</div>
+          <div class="color-name">Brand Purple</div>
           <div class="color-codes">
-            <span>HEX #3C1053</span>
-            <span>RGB 60, 16, 83</span>
+            <span>HEX #6A2E92</span>
+            <span>RGB 106, 46, 146</span>
           </div>
-          <div class="color-usage">Header, primary buttons</div>
+          <div class="color-usage">Brand/Primary: buttons, highlighted titles and accents</div>
         </div>
       </div>
 
@@ -302,66 +302,144 @@
       <div class="color-swatch-card" aria-label="Secondary Color">
         <div class="swatch-color" style="background-color: var(--theme-secondary);"></div>
         <div class="swatch-info">
-          <div class="color-name">Navy Blue</div>
+          <div class="color-name">Brand Blue</div>
           <div class="color-codes">
-            <span>HEX #002A61</span>
-            <span>RGB 0, 42, 97</span>
+            <span>HEX #232272</span>
+            <span>RGB 35, 34, 114</span>
           </div>
-          <div class="color-usage">Title texts, footer</div>
+          <div class="color-usage">Brand/Secondary</div>
         </div>
       </div>
       
       <!-- Grayscale (Loop over grayscale obj) -->
       
-      <div class="color-swatch-card" aria-label="Dark Text">
+      <div class="color-swatch-card" aria-label="Dark Gray">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #111827; "></div>
+        <div class="swatch-color" style="background-color: #333333; "></div>
         <div class="swatch-info">
-          <div class="color-name">Dark Text</div>
+          <div class="color-name">Dark Gray</div>
           <div class="color-codes">
-            <span>HEX #111827</span>
-            <span>RGB 17, 24, 39</span>
+            <span>HEX #333333</span>
+            <span>RGB 51, 51, 51</span>
           </div>
-          <div class="color-usage">Headings and primary text</div>
+          <div class="color-usage">Main text and dark backgrounds</div>
         </div>
       </div>
       
-      <div class="color-swatch-card" aria-label="Medium Text">
+      <div class="color-swatch-card" aria-label="Medium Dark Gray">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #666666; "></div>
+        <div class="swatch-color" style="background-color: #4D4D4D; "></div>
         <div class="swatch-info">
-          <div class="color-name">Medium Text</div>
+          <div class="color-name">Medium Dark Gray</div>
           <div class="color-codes">
-            <span>HEX #666666</span>
-            <span>RGB 102, 102, 102</span>
+            <span>HEX #4D4D4D</span>
+            <span>RGB 77, 77, 77</span>
           </div>
-          <div class="color-usage">General reading text</div>
+          <div class="color-usage">Secondary text</div>
         </div>
       </div>
       
-      <div class="color-swatch-card" aria-label="Light Background">
+      <div class="color-swatch-card" aria-label="Light Gray">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #F4F4F4; border-bottom: 1px solid rgba(0,0,0,0.05);"></div>
+        <div class="swatch-color" style="background-color: #F0F0F0; border-bottom: 1px solid rgba(0,0,0,0.05);"></div>
         <div class="swatch-info">
-          <div class="color-name">Light Background</div>
+          <div class="color-name">Light Gray</div>
           <div class="color-codes">
-            <span>HEX #F4F4F4</span>
-            <span>RGB 244, 244, 244</span>
+            <span>HEX #F0F0F0</span>
+            <span>RGB 240, 240, 240</span>
           </div>
-          <div class="color-usage">App backgrounds</div>
+          <div class="color-usage">Section and table backgrounds</div>
         </div>
       </div>
       
-      <div class="color-swatch-card" aria-label="White Surface">
+      <div class="color-swatch-card" aria-label="White">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
         <div class="swatch-color" style="background-color: #FFFFFF; border-bottom: 1px solid rgba(0,0,0,0.05);"></div>
         <div class="swatch-info">
-          <div class="color-name">White Surface</div>
+          <div class="color-name">White</div>
           <div class="color-codes">
             <span>HEX #FFFFFF</span>
             <span>RGB 255, 255, 255</span>
           </div>
-          <div class="color-usage">Card surfaces</div>
+          <div class="color-usage">Surfaces</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Medium Gray">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #979797; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Medium Gray</div>
+          <div class="color-codes">
+            <span>HEX #979797</span>
+            <span>RGB 151, 151, 151</span>
+          </div>
+          <div class="color-usage">Disabled text and metadata</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Border Gray">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #E4E4E4; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Border Gray</div>
+          <div class="color-codes">
+            <span>HEX #E4E4E4</span>
+            <span>RGB 228, 228, 228</span>
+          </div>
+          <div class="color-usage">Borders and dividers</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Status Green">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #27AE60; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Status Green</div>
+          <div class="color-codes">
+            <span>HEX #27AE60</span>
+            <span>RGB 39, 174, 96</span>
+          </div>
+          <div class="color-usage">Approved operations</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Light Green">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #8BDF69; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Light Green</div>
+          <div class="color-codes">
+            <span>HEX #8BDF69</span>
+            <span>RGB 139, 223, 105</span>
+          </div>
+          <div class="color-usage">Positive indicators</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Status Orange">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #F2994A; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Status Orange</div>
+          <div class="color-codes">
+            <span>HEX #F2994A</span>
+            <span>RGB 242, 153, 74</span>
+          </div>
+          <div class="color-usage">Pending operations</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Status Red">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #FF0000; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Status Red</div>
+          <div class="color-codes">
+            <span>HEX #FF0000</span>
+            <span>RGB 255, 0, 0</span>
+          </div>
+          <div class="color-usage">Errors and rejections</div>
         </div>
       </div>
       
@@ -372,31 +450,33 @@
   <section class="board-section">
     <div class="section-header">
       <h3>Typography</h3>
-      <p>Primary Typeface: <strong>System Sans-Serif</strong> (Sans Serif)</p>
+      <p>Primary Typeface: <strong>Titillium Web</strong> (Banking web app)</p>
     </div>
 
     
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap">
     
     <div class="typography-grid">
       
       <div class="type-specimen">
         <div class="type-label">
-          <strong>H1</strong>
-          <span>32px / 700</span>
-          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Main headings</span>
+          <strong>Title</strong>
+          <span>24px / 600</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Section titles</span>
         </div>
-        <div class="type-sample" style="font-size: 32px; font-weight: 700;">
+        <div class="type-sample" style="font-size: 24px; font-weight: 600; font-family: 'Titillium Web', sans-serif;">
           The quick brown fox jumps over the lazy dog
         </div>
       </div>
       
       <div class="type-specimen">
         <div class="type-label">
-          <strong>H2</strong>
-          <span>24px / 600</span>
-          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Subheadings</span>
+          <strong>Highlighted Text</strong>
+          <span>16px / 600</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Headers and key data</span>
         </div>
-        <div class="type-sample" style="font-size: 24px; font-weight: 600;">
+        <div class="type-sample" style="font-size: 16px; font-weight: 600; font-family: 'Titillium Web', sans-serif;">
           The quick brown fox jumps over the lazy dog
         </div>
       </div>
@@ -405,9 +485,20 @@
         <div class="type-label">
           <strong>Body</strong>
           <span>16px / 400</span>
-          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Reading text</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Most used style in the design</span>
         </div>
-        <div class="type-sample" style="font-size: 16px; font-weight: 400;">
+        <div class="type-sample" style="font-size: 16px; font-weight: 400; font-family: 'Titillium Web', sans-serif;">
+          The quick brown fox jumps over the lazy dog
+        </div>
+      </div>
+      
+      <div class="type-specimen">
+        <div class="type-label">
+          <strong>Emphasis</strong>
+          <span>16px / 700</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Occasional emphasis</span>
+        </div>
+        <div class="type-sample" style="font-size: 16px; font-weight: 700; font-family: 'Titillium Web', sans-serif;">
           The quick brown fox jumps over the lazy dog
         </div>
       </div>

@@ -1,78 +1,128 @@
 {
-  "title": "Sistema de Diseño",
+  "title": "Sistema de Diseño Billetera Móvil",
   "intro": "El sistema de diseño para la Billetera Móvil de Belcorp se construyó bajo los pilares de 'Confianza y Accesibilidad', asegurando que las representantes de ventas pudieran gestionar sus finanzas con total seguridad.",
   "tokens": {
     "colors": {
       "primary": {
-        "name": "Belcorp Purple",
-        "hex": "#722688",
-        "rgb": "114, 38, 136",
-        "usage": "Color de marca, estados activos, botones principales"
+        "name": "Belcorp",
+        "hex": "#722789",
+        "rgb": "114, 39, 137",
+        "usage": "Brand/belcorp y Text/Titles: marca y títulos"
       },
       "secondary": {
-        "name": "Basic Normal",
-        "hex": "#485A6B",
-        "rgb": "72, 90, 107",
-        "usage": "Texto principal, encabezados, iconos oscuros"
+        "name": "Texto párrafo",
+        "hex": "#485B6B",
+        "rgb": "72, 91, 107",
+        "usage": "Text/Paragraph: texto principal"
       },
       "grayscale": {
-        "disable": {
-          "name": "Basic Disable",
-          "hex": "#AEAEB2",
-          "rgb": "174, 174, 178",
-          "usage": "Estados deshabilitados, texto secundario, bordes"
-        },
-        "background": {
-          "name": "Background Light",
-          "hex": "#F3F4F6",
-          "rgb": "243, 244, 246",
-          "usage": "Fondos de la app"
-        },
         "white": {
-          "name": "Basic White",
+          "name": "Blanco",
           "hex": "#FFFFFF",
           "rgb": "255, 255, 255",
-          "usage": "Superficies de tarjetas, inputs"
+          "usage": "Basic/white: superficies"
+        },
+        "background": {
+          "name": "Gris 4",
+          "hex": "#F4F4F5",
+          "rgb": "244, 244, 245",
+          "usage": "Basic/gray4: fondos"
+        },
+        "gray3": {
+          "name": "Gris 3",
+          "hex": "#D1D1D6",
+          "rgb": "209, 209, 214",
+          "usage": "Basic/gray3: bordes"
+        },
+        "disable": {
+          "name": "Gris 2",
+          "hex": "#AEAEB2",
+          "rgb": "174, 174, 178",
+          "usage": "Basic/gray2: estados deshabilitados"
+        },
+        "gray": {
+          "name": "Gris",
+          "hex": "#A3ADB5",
+          "rgb": "163, 173, 181",
+          "usage": "Basic/gray: texto auxiliar"
+        },
+        "danger": {
+          "name": "Peligro",
+          "hex": "#FF2D55",
+          "rgb": "255, 45, 85",
+          "usage": "Basic/danger: errores y montos negativos"
+        },
+        "warning": {
+          "name": "Advertencia",
+          "hex": "#FFCC00",
+          "rgb": "255, 204, 0",
+          "usage": "Basic/warning"
+        },
+        "esika": {
+          "name": "Ésika",
+          "hex": "#D40B13",
+          "rgb": "212, 11, 19",
+          "usage": "Brand/esika: marca del grupo"
+        },
+        "cyzone": {
+          "name": "Cyzone",
+          "hex": "#AF0061",
+          "rgb": "175, 0, 97",
+          "usage": "Brand/cyzone: marca del grupo"
+        },
+        "lbel": {
+          "name": "L'Bel",
+          "hex": "#FADE9D",
+          "rgb": "250, 222, 157",
+          "usage": "Brand/lbel: marca del grupo"
         }
       }
     },
     "typography": {
       "primary": {
-        "family": "SF Pro Rounded",
+        "family": "SF Pro & SF Pro Rounded",
         "weights": [
           300,
-          400,
           500,
-          600,
-          700
+          900
         ],
-        "category": "Rounded Sans Serif"
+        "category": "App móvil iOS"
       },
       "hierarchy": [
         {
-          "name": "Title",
-          "size": "24px",
-          "weight": "700",
-          "usage": "Encabezados principales"
+          "name": "Título",
+          "size": "32px",
+          "weight": "300",
+          "stack": "-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif",
+          "usage": "SF Pro Light: títulos"
         },
         {
-          "name": "Body",
+          "name": "Texto destacado",
           "size": "16px",
-          "weight": "400",
-          "usage": "Texto de lectura"
+          "weight": "500",
+          "stack": "-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif",
+          "usage": "SF Pro Medium"
         },
         {
-          "name": "Caption",
+          "name": "Texto",
           "size": "14px",
           "weight": "300",
-          "usage": "Metadatos y etiquetas"
+          "stack": "-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif",
+          "usage": "SF Pro Light: estilo más usado"
+        },
+        {
+          "name": "Redondeado",
+          "size": "16px",
+          "weight": "900",
+          "stack": "ui-rounded, 'SF Pro Rounded', -apple-system, BlinkMacSystemFont, sans-serif",
+          "usage": "SF Pro Rounded Black"
         }
       ]
     },
     "shape": {
-      "borderRadius": "8px",
-      "buttonRadius": "100px",
-      "inputRadius": "6px"
+      "borderRadius": "10px",
+      "buttonRadius": "5px",
+      "inputRadius": "5px"
     }
   }
 }

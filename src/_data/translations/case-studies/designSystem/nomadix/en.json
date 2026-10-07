@@ -1,137 +1,144 @@
 {
-  "title": "Design System",
+  "title": "Nomadix Adventure Design System",
   "intro": "The Nomadix Adventure design system embodies the spirit of adventure and exploration, creating an interface that inspires visitors to embark on their own journey.",
   "tokens": {
     "colors": {
       "primary": {
         "name": "Brand Orange",
-        "hex": "#f16b23",
-        "rgb": "241, 107, 35",
-        "usage": "Primary accent color for CTAs"
+        "hex": "#F26B24",
+        "rgb": "242, 107, 36",
+        "usage": "Brand/Orange: calls to action and accents"
       },
       "secondary": {
-        "name": "Brand Blue",
-        "hex": "#1f5275",
-        "rgb": "31, 82, 117",
-        "usage": "Secondary brand color"
+        "name": "Complementary Blue",
+        "hex": "#205375",
+        "rgb": "32, 83, 117",
+        "usage": "Complementary/Blue"
       },
       "grayscale": {
         "dark": {
-          "name": "Brand Black",
+          "name": "Black",
           "hex": "#000000",
           "rgb": "0, 0, 0",
-          "usage": "Primary color for text and deep backgrounds"
+          "usage": "Text and dark backgrounds"
         },
         "medium": {
-          "name": "Brand Grey",
+          "name": "Brand Gray",
           "hex": "#686868",
           "rgb": "104, 104, 104",
-          "usage": "Neutral elements and secondary text"
+          "usage": "Secondary text"
         },
         "light": {
           "name": "Light Gray",
-          "hex": "#d1d1d1",
+          "hex": "#D1D1D1",
           "rgb": "209, 209, 209",
-          "usage": "Borders and dividers"
+          "usage": "Borders and dividers (Black-25)"
         },
         "white": {
-          "name": "Brand White",
-          "hex": "#ffffff",
+          "name": "White",
+          "hex": "#FFFFFF",
           "rgb": "255, 255, 255",
-          "usage": "Surfaces and text"
+          "usage": "Surfaces and text over photos"
         },
         "navy": {
-          "name": "Brand Navy",
-          "hex": "#112a3c",
-          "rgb": "17, 42, 60",
-          "usage": "Tertiary brand color"
+          "name": "Complementary Navy",
+          "hex": "#112B3C",
+          "rgb": "17, 43, 60",
+          "usage": "Dark section backgrounds"
         },
         "extra_light": {
           "name": "Extra Light Gray",
-          "hex": "#eff1f1",
-          "rgb": "239, 241, 241",
-          "usage": "Subtle background panels"
+          "hex": "#F0F2F2",
+          "rgb": "240, 242, 242",
+          "usage": "Soft backgrounds (Black-5)"
         },
         "danger": {
           "name": "Danger",
-          "hex": "#ff453a",
+          "hex": "#FF453A",
           "rgb": "255, 69, 58",
-          "usage": "Errors and destructive actions"
+          "usage": "Indication/Danger"
         },
         "info": {
           "name": "Info",
-          "hex": "#0a83ff",
-          "rgb": "10, 131, 255",
-          "usage": "Informational messages"
+          "hex": "#0A84FF",
+          "rgb": "10, 132, 255",
+          "usage": "Indication/Info"
         },
         "warning": {
           "name": "Warning",
-          "hex": "#ff9f0a",
+          "hex": "#FF9F0A",
           "rgb": "255, 159, 10",
-          "usage": "Warnings and alerts"
+          "usage": "Indication/Warning"
         },
         "success": {
           "name": "Success",
-          "hex": "#2fd157",
-          "rgb": "47, 209, 87",
-          "usage": "Successful actions"
+          "hex": "#30D158",
+          "rgb": "48, 209, 88",
+          "usage": "Indication/Success"
         }
       }
     },
     "typography": {
       "primary": {
-        "family": "Open Sans",
+        "family": "SF Pro Display",
         "weights": [
+          100,
           400,
-          500,
           600,
-          700
+          700,
+          900
         ],
-        "category": "Primary Font"
+        "category": "Website"
       },
       "hierarchy": [
         {
           "name": "Display",
-          "size": "42px/46px",
-          "weight": "400",
-          "usage": "Main section titles"
+          "size": "64px",
+          "weight": "900",
+          "stack": "-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif",
+          "usage": "Headlines over photography"
         },
         {
           "name": "H1",
-          "size": "32px/38px",
-          "weight": "400",
-          "usage": "Page headers"
+          "size": "32px",
+          "weight": "600",
+          "stack": "-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif",
+          "usage": "Section titles"
         },
         {
           "name": "H2",
-          "size": "28px/34px",
-          "weight": "400",
-          "usage": "Primary subtitles"
+          "size": "24px",
+          "weight": "700",
+          "stack": "-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif",
+          "usage": "Subtitles"
         },
         {
-          "name": "H3",
-          "size": "22px/28px",
-          "weight": "400",
-          "usage": "Secondary subtitles"
+          "name": "Highlighted Text",
+          "size": "16px",
+          "weight": "700",
+          "stack": "-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif",
+          "usage": "Most used style: buttons, menus and data"
         },
         {
-          "name": "Body Text",
-          "size": "16px/24px",
+          "name": "Body",
+          "size": "16px",
           "weight": "400",
-          "usage": "Primary content text"
+          "stack": "-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif",
+          "usage": "Paragraphs"
         },
         {
-          "name": "Small Text",
-          "size": "14px/20px",
-          "weight": "400",
-          "usage": "Secondary information and captions"
+          "name": "Small",
+          "size": "12px",
+          "weight": "100",
+          "stack": "-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif",
+          "usage": "Notes and metadata (Thin)"
         }
       ]
     },
     "shape": {
-      "borderRadius": "8px",
+      "borderRadius": "20px",
       "buttonRadius": "100px",
-      "inputRadius": "6px"
+      "inputRadius": "4px"
     }
   }
 }

@@ -93,7 +93,7 @@
           <span>{{ font.size }} / {{ font.weight }}</span>
           <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">{{ font.usage }}</span>
         </div>
-        <div class="type-sample" style="font-size: {{ font.size }}; font-weight: {{ font.weight }};{% if font.family %} font-family: '{{ font.family }}', sans-serif;{% endif %}{% if font.uppercase %} text-transform: uppercase;{% endif %}">
+        <div class="type-sample" style="font-size: {{ font.size }}; font-weight: {{ font.weight }};{% if font.stack %} font-family: {{ font.stack }};{% elif font.family %} font-family: '{{ font.family }}', sans-serif;{% endif %}{% if font.uppercase %} text-transform: uppercase;{% endif %}">
           {{ ui.sample }}
         </div>
       </div>

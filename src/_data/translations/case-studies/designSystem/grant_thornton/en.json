@@ -63,7 +63,12 @@
     "typography": {
       "primary": {
         "family": "Inter & SF Pro Text (Google Fonts / Apple Native)",
-        "weights": [400, 500, 600, 700],
+        "weights": [
+          400,
+          500,
+          600,
+          700
+        ],
         "category": "Corporate Compliance and Accessibility"
       },
       "hierarchy": [
@@ -71,32 +76,37 @@
           "name": "Large Title",
           "size": "34px",
           "weight": "700",
-          "usage": "Primary titles for panels and compliance dashboards."
+          "usage": "Primary titles for panels and compliance dashboards.",
+          "family": "Inter"
         },
         {
           "name": "Body Text",
           "size": "17px",
           "weight": "400",
-          "usage": "General reading text and tax explanations using the Apple typographic scale."
+          "usage": "General reading text and tax explanations using the Apple typographic scale.",
+          "family": "Inter"
         },
         {
           "name": "Subhead / Labels",
           "size": "15px",
           "weight": "500",
-          "usage": "Form labels, text fields, and secondary table information."
+          "usage": "Form labels, text fields, and secondary table information.",
+          "family": "Inter"
         },
         {
           "name": "Caption",
           "size": "12px",
           "weight": "400",
-          "usage": "Complementary information and legal footnotes at the bottom of reports."
+          "usage": "Complementary information and legal footnotes at the bottom of reports.",
+          "family": "Inter"
         }
-      ]
+      ],
+      "fontsUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
     },
     "shape": {
-      "borderRadius": "16px (Cards) / 12px (Inputs)",
-      "buttonRadius": "12px (CTAs) / 100px (Pills)",
-      "inputRadius": "12px (Web) / 0px (Mailing/PDF)"
+      "borderRadius": "16px",
+      "buttonRadius": "12px",
+      "inputRadius": "12px"
     }
   }
 }

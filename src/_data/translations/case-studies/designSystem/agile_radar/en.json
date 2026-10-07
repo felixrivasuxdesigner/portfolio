@@ -1,102 +1,110 @@
 {
   "title": "AgileRadar Design System",
-  "intro": "A premium, minimalist corporate UI designed for high information density, featuring cyan neon accents and an agile component framework for bidding proposal scouting.",
+  "intro": "A light, information-dense interface built with Tailwind CSS v4: violet for action, Shape's warm palette as accent and the system font.",
   "tokens": {
     "colors": {
       "primary": {
-        "name": "Navy Dark",
-        "hex": "#0B0F19",
-        "rgb": "11, 15, 25",
-        "usage": "Primary background color and key structural layout elements"
+        "name": "Violet",
+        "hex": "#7F22FE",
+        "rgb": "127, 34, 254",
+        "usage": "Primary action, buttons and active states (violet-600)"
       },
       "secondary": {
-        "name": "Cyan Neon",
-        "hex": "#00F2FE",
-        "rgb": "0, 242, 254",
-        "usage": "Interactive accent color. Coincidence ratings (match_score), active buttons, and hover indicators"
+        "name": "Shape Orange",
+        "hex": "#FC6736",
+        "rgb": "252, 103, 54",
+        "usage": "Brand accent in gradients and highlights"
       },
       "grayscale": {
-        "gold": {
-          "name": "Amber",
-          "hex": "#F59E0B",
-          "rgb": "245, 158, 11",
-          "usage": "Bids under review and medium-scored opportunities"
-        },
         "background": {
-          "name": "Charcoal Background",
-          "hex": "#0B0F19",
-          "rgb": "11, 15, 25",
-          "usage": "General Kanban board background"
+          "name": "Background",
+          "hex": "#F8F9FA",
+          "rgb": "248, 249, 250",
+          "usage": "Main app background"
         },
         "card": {
-          "name": "Slate Surface",
-          "hex": "#1E293B",
-          "rgb": "30, 41, 59",
-          "usage": "Bidding opportunity cards on the board"
+          "name": "Surface",
+          "hex": "#FFFFFF",
+          "rgb": "255, 255, 255",
+          "usage": "Cards and panels"
+        },
+        "peach": {
+          "name": "Shape Peach",
+          "hex": "#FFE4C9",
+          "rgb": "255, 228, 201",
+          "usage": "Accent backgrounds and borders"
         },
         "text": {
-          "name": "Text Off-White",
-          "hex": "#F3F4F6",
-          "rgb": "243, 244, 246",
-          "usage": "Primary proposal text and column titles"
+          "name": "Main Text",
+          "hex": "#101828",
+          "rgb": "16, 24, 40",
+          "usage": "Titles and figures (gray-900)"
         },
         "textMuted": {
-          "name": "Text Soft Gray",
-          "hex": "#9CA3AF",
-          "rgb": "156, 163, 175",
-          "usage": "Budget amounts, closing dates, and client reference labels"
+          "name": "Secondary Text",
+          "hex": "#6A7282",
+          "rgb": "106, 114, 130",
+          "usage": "Metadata and labels (gray-500)"
         },
         "success": {
-          "name": "Success Teal",
-          "hex": "#10B981",
-          "rgb": "16, 185, 129",
-          "usage": "High-fit opportunity scoring (>=90%) and submitted states"
+          "name": "Success",
+          "hex": "#009966",
+          "rgb": "0, 153, 102",
+          "usage": "High matches and positive states (emerald-600)"
         },
         "error": {
-          "name": "Error Rose",
-          "hex": "#F43F5E",
-          "rgb": "244, 63, 94",
-          "usage": "Discarded opportunities and penalty notifications"
+          "name": "Error",
+          "hex": "#FF2056",
+          "rgb": "255, 32, 86",
+          "usage": "Alerts and discarded opportunities (rose-500)"
         }
       }
     },
     "typography": {
       "primary": {
-        "family": "Outfit & Inter (Google Fonts)",
-        "weights": [400, 500, 600, 700],
-        "category": "Professional Web Interface"
+        "family": "System font (Tailwind font-sans)",
+        "weights": [
+          500,
+          700,
+          800
+        ],
+        "category": "Web app"
       },
       "hierarchy": [
         {
-          "name": "Main Header",
-          "size": "28px",
-          "weight": "700",
-          "usage": "Main proposal dashboard title"
+          "name": "KPI",
+          "size": "30px",
+          "weight": "800",
+          "stack": "ui-sans-serif, system-ui, sans-serif",
+          "usage": "Dashboard figures"
         },
         {
-          "name": "Column Title",
-          "size": "16px",
-          "weight": "600",
-          "usage": "Kanban board column headers (Opportunities, In Review...)"
-        },
-        {
-          "name": "Card Title",
+          "name": "Text",
           "size": "14px",
-          "weight": "600",
-          "usage": "Bid opportunity name on cards"
+          "weight": "500",
+          "stack": "ui-sans-serif, system-ui, sans-serif",
+          "usage": "Card and table content"
         },
         {
-          "name": "Match Badge",
+          "name": "Label",
           "size": "12px",
           "weight": "700",
-          "usage": "Percentage of compatibility evaluated by the AI"
+          "stack": "ui-sans-serif, system-ui, sans-serif",
+          "usage": "Most used style: labels, statuses and metadata"
+        },
+        {
+          "name": "Micro",
+          "size": "10px",
+          "weight": "700",
+          "stack": "ui-sans-serif, system-ui, sans-serif",
+          "usage": "Badges and counters"
         }
       ]
     },
     "shape": {
-      "borderRadius": "8px",
-      "buttonRadius": "6px",
-      "inputRadius": "6px"
+      "borderRadius": "12px",
+      "buttonRadius": "8px",
+      "inputRadius": "8px"
     }
   }
 }

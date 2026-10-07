@@ -48,14 +48,14 @@
         },
         "success": {
           "name": "Success",
-          "hex": "#4CAF50",
-          "rgb": "76, 175, 80",
+          "hex": "#40C057",
+          "rgb": "64, 192, 87",
           "usage": "Confirmations, active states and the ONLINE signal indicator"
         },
         "error": {
           "name": "Error",
-          "hex": "#F44336",
-          "rgb": "244, 67, 54",
+          "hex": "#FB4B4B",
+          "rgb": "251, 75, 75",
           "usage": "Stream errors, failed actions and critical states"
         }
       }
@@ -99,9 +99,9 @@
       ]
     },
     "shape": {
-      "borderRadius": "8px",
-      "buttonRadius": "100px",
-      "inputRadius": "8px"
+      "borderRadius": "16px",
+      "buttonRadius": "999px",
+      "inputRadius": "12px"
     }
   }
 }

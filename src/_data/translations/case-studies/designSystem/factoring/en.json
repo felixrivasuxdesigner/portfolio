@@ -1,101 +1,129 @@
 {
-  "title": "Design System",
+  "title": "Factoring Design System",
   "intro": "The Security Bank Factoring Module uses a robust corporate visual language, focused on technical precision and operational efficiency.",
   "tokens": {
     "colors": {
       "primary": {
-        "name": "Dark Purple",
-        "hex": "#3C1053",
-        "rgb": "60, 16, 83",
-        "usage": "Header, primary buttons"
+        "name": "Brand Purple",
+        "hex": "#6A2E92",
+        "rgb": "106, 46, 146",
+        "usage": "Brand/Primary: buttons, highlighted titles and accents"
       },
       "secondary": {
-        "name": "Navy Blue",
-        "hex": "#002A61",
-        "rgb": "0, 42, 97",
-        "usage": "Title texts, footer"
-      },
-      "accent": {
-        "name": "Lime Green",
-        "hex": "#96C93D",
-        "rgb": "150, 201, 61",
-        "usage": "Call to Action, \"Learn more\""
-      },
-      "surfaceLight": {
-        "name": "Light Surface",
-        "hex": "#F4F4F4",
-        "rgb": "244, 244, 244",
-        "usage": "Section backgrounds and cards"
-      },
-      "textBody": {
-        "name": "Body Text",
-        "hex": "#666666",
-        "rgb": "102, 102, 102",
-        "usage": "General reading text"
+        "name": "Brand Blue",
+        "hex": "#232272",
+        "rgb": "35, 34, 114",
+        "usage": "Brand/Secondary"
       },
       "grayscale": {
         "dark": {
-          "name": "Dark Text",
-          "hex": "#111827",
-          "rgb": "17, 24, 39",
-          "usage": "Headings and primary text"
+          "name": "Dark Gray",
+          "hex": "#333333",
+          "rgb": "51, 51, 51",
+          "usage": "Main text and dark backgrounds"
         },
         "medium": {
-          "name": "Medium Text",
-          "hex": "#666666",
-          "rgb": "102, 102, 102",
-          "usage": "General reading text"
+          "name": "Medium Dark Gray",
+          "hex": "#4D4D4D",
+          "rgb": "77, 77, 77",
+          "usage": "Secondary text"
         },
         "light": {
-          "name": "Light Background",
-          "hex": "#F4F4F4",
-          "rgb": "244, 244, 244",
-          "usage": "App backgrounds"
+          "name": "Light Gray",
+          "hex": "#F0F0F0",
+          "rgb": "240, 240, 240",
+          "usage": "Section and table backgrounds"
         },
         "white": {
-          "name": "White Surface",
+          "name": "White",
           "hex": "#FFFFFF",
           "rgb": "255, 255, 255",
-          "usage": "Card surfaces"
+          "usage": "Surfaces"
+        },
+        "gray": {
+          "name": "Medium Gray",
+          "hex": "#979797",
+          "rgb": "151, 151, 151",
+          "usage": "Disabled text and metadata"
+        },
+        "border": {
+          "name": "Border Gray",
+          "hex": "#E4E4E4",
+          "rgb": "228, 228, 228",
+          "usage": "Borders and dividers"
+        },
+        "success": {
+          "name": "Status Green",
+          "hex": "#27AE60",
+          "rgb": "39, 174, 96",
+          "usage": "Approved operations"
+        },
+        "successLight": {
+          "name": "Light Green",
+          "hex": "#8BDF69",
+          "rgb": "139, 223, 105",
+          "usage": "Positive indicators"
+        },
+        "warning": {
+          "name": "Status Orange",
+          "hex": "#F2994A",
+          "rgb": "242, 153, 74",
+          "usage": "Pending operations"
+        },
+        "error": {
+          "name": "Status Red",
+          "hex": "#FF0000",
+          "rgb": "255, 0, 0",
+          "usage": "Errors and rejections"
         }
       }
     },
     "typography": {
       "primary": {
-        "family": "System Sans-Serif",
+        "family": "Titillium Web",
         "weights": [
           400,
-          500,
           600,
           700
         ],
-        "category": "Sans Serif"
+        "category": "Banking web app"
       },
+      "fontsUrl": "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap",
       "hierarchy": [
         {
-          "name": "H1",
-          "size": "32px",
-          "weight": "700",
-          "usage": "Main headings"
-        },
-        {
-          "name": "H2",
+          "name": "Title",
           "size": "24px",
           "weight": "600",
-          "usage": "Subheadings"
+          "family": "Titillium Web",
+          "usage": "Section titles"
+        },
+        {
+          "name": "Highlighted Text",
+          "size": "16px",
+          "weight": "600",
+          "family": "Titillium Web",
+          "usage": "Headers and key data"
         },
         {
           "name": "Body",
           "size": "16px",
           "weight": "400",
-          "usage": "Reading text"
+          "family": "Titillium Web",
+          "usage": "Most used style in the design"
+        },
+        {
+          "name": "Emphasis",
+          "size": "16px",
+          "weight": "700",
+          "family": "Titillium Web",
+          "usage": "Occasional emphasis"
         }
       ]
     },
     "shape": {
-      "borderRadius": "8px",
+      "borderRadius": "4px",
       "buttonRadius": "4px",
-      "inputRadius": "6px"
+      "inputRadius": "4px"
     },
     "spacing": {
       "unit": "8px",

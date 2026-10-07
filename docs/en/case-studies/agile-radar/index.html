@@ -257,23 +257,23 @@
 
 
 <div class="design-board-wrapper" style="
-  --theme-primary: #0B0F19;
-  --theme-secondary: #00F2FE;
+  --theme-primary: #7F22FE;
+  --theme-secondary: #FC6736;
   --theme-gray-dark: #212529;
   --theme-gray-medium: #6c757d;
   --theme-gray-light: #f8f9fa;
   --theme-gray-white: #ffffff;
   --theme-on-primary: #ffffff;
-  --theme-font-primary: 'Outfit & Inter (Google Fonts)', sans-serif;
-  --theme-radius: 8px;
-  --theme-button-radius: 6px;
-  --theme-input-radius: 6px;
+  --theme-font-primary: 'System font (Tailwind font-sans)', sans-serif;
+  --theme-radius: 12px;
+  --theme-button-radius: 8px;
+  --theme-input-radius: 8px;
 ">
 
   <div class="board-header" style="text-align: center; margin-bottom: 3rem;">
     <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;">AgileRadar Design System</h2>
     <p style="font-size: 1.1rem; color: var(--theme-gray-medium); max-width: 600px; margin: 0 auto; line-height: 1.6;">
-      A premium, minimalist corporate UI designed for high information density, featuring cyan neon accents and an agile component framework for bidding proposal scouting.
+      A light, information-dense interface built with Tailwind CSS v4: violet for action, Shape's warm palette as accent and the system font.
     </p>
   </div>
 
@@ -289,12 +289,12 @@
       <div class="color-swatch-card" aria-label="Primary Color">
         <div class="swatch-color" style="background-color: var(--theme-primary);"></div>
         <div class="swatch-info">
-          <div class="color-name">Navy Dark</div>
+          <div class="color-name">Violet</div>
           <div class="color-codes">
-            <span>HEX #0B0F19</span>
-            <span>RGB 11, 15, 25</span>
+            <span>HEX #7F22FE</span>
+            <span>RGB 127, 34, 254</span>
           </div>
-          <div class="color-usage">Primary background color and key structural layout elements</div>
+          <div class="color-usage">Primary action, buttons and active states (violet-600)</div>
         </div>
       </div>
 
@@ -302,105 +302,105 @@
       <div class="color-swatch-card" aria-label="Secondary Color">
         <div class="swatch-color" style="background-color: var(--theme-secondary);"></div>
         <div class="swatch-info">
-          <div class="color-name">Cyan Neon</div>
+          <div class="color-name">Shape Orange</div>
           <div class="color-codes">
-            <span>HEX #00F2FE</span>
-            <span>RGB 0, 242, 254</span>
+            <span>HEX #FC6736</span>
+            <span>RGB 252, 103, 54</span>
           </div>
-          <div class="color-usage">Interactive accent color. Coincidence ratings (match_score), active buttons, and hover indicators</div>
+          <div class="color-usage">Brand accent in gradients and highlights</div>
         </div>
       </div>
       
       <!-- Grayscale (Loop over grayscale obj) -->
       
-      <div class="color-swatch-card" aria-label="Amber">
+      <div class="color-swatch-card" aria-label="Background">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #F59E0B; "></div>
+        <div class="swatch-color" style="background-color: #F8F9FA; "></div>
         <div class="swatch-info">
-          <div class="color-name">Amber</div>
+          <div class="color-name">Background</div>
           <div class="color-codes">
-            <span>HEX #F59E0B</span>
-            <span>RGB 245, 158, 11</span>
+            <span>HEX #F8F9FA</span>
+            <span>RGB 248, 249, 250</span>
           </div>
-          <div class="color-usage">Bids under review and medium-scored opportunities</div>
+          <div class="color-usage">Main app background</div>
         </div>
       </div>
       
-      <div class="color-swatch-card" aria-label="Charcoal Background">
+      <div class="color-swatch-card" aria-label="Surface">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #0B0F19; "></div>
+        <div class="swatch-color" style="background-color: #FFFFFF; "></div>
         <div class="swatch-info">
-          <div class="color-name">Charcoal Background</div>
+          <div class="color-name">Surface</div>
           <div class="color-codes">
-            <span>HEX #0B0F19</span>
-            <span>RGB 11, 15, 25</span>
+            <span>HEX #FFFFFF</span>
+            <span>RGB 255, 255, 255</span>
           </div>
-          <div class="color-usage">General Kanban board background</div>
+          <div class="color-usage">Cards and panels</div>
         </div>
       </div>
       
-      <div class="color-swatch-card" aria-label="Slate Surface">
+      <div class="color-swatch-card" aria-label="Shape Peach">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #1E293B; "></div>
+        <div class="swatch-color" style="background-color: #FFE4C9; "></div>
         <div class="swatch-info">
-          <div class="color-name">Slate Surface</div>
+          <div class="color-name">Shape Peach</div>
           <div class="color-codes">
-            <span>HEX #1E293B</span>
-            <span>RGB 30, 41, 59</span>
+            <span>HEX #FFE4C9</span>
+            <span>RGB 255, 228, 201</span>
           </div>
-          <div class="color-usage">Bidding opportunity cards on the board</div>
+          <div class="color-usage">Accent backgrounds and borders</div>
         </div>
       </div>
       
-      <div class="color-swatch-card" aria-label="Text Off-White">
+      <div class="color-swatch-card" aria-label="Main Text">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #F3F4F6; "></div>
+        <div class="swatch-color" style="background-color: #101828; "></div>
         <div class="swatch-info">
-          <div class="color-name">Text Off-White</div>
+          <div class="color-name">Main Text</div>
           <div class="color-codes">
-            <span>HEX #F3F4F6</span>
-            <span>RGB 243, 244, 246</span>
+            <span>HEX #101828</span>
+            <span>RGB 16, 24, 40</span>
           </div>
-          <div class="color-usage">Primary proposal text and column titles</div>
+          <div class="color-usage">Titles and figures (gray-900)</div>
         </div>
       </div>
       
-      <div class="color-swatch-card" aria-label="Text Soft Gray">
+      <div class="color-swatch-card" aria-label="Secondary Text">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #9CA3AF; "></div>
+        <div class="swatch-color" style="background-color: #6A7282; "></div>
         <div class="swatch-info">
-          <div class="color-name">Text Soft Gray</div>
+          <div class="color-name">Secondary Text</div>
           <div class="color-codes">
-            <span>HEX #9CA3AF</span>
-            <span>RGB 156, 163, 175</span>
+            <span>HEX #6A7282</span>
+            <span>RGB 106, 114, 130</span>
           </div>
-          <div class="color-usage">Budget amounts, closing dates, and client reference labels</div>
+          <div class="color-usage">Metadata and labels (gray-500)</div>
         </div>
       </div>
       
-      <div class="color-swatch-card" aria-label="Success Teal">
+      <div class="color-swatch-card" aria-label="Success">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #10B981; "></div>
+        <div class="swatch-color" style="background-color: #009966; "></div>
         <div class="swatch-info">
-          <div class="color-name">Success Teal</div>
+          <div class="color-name">Success</div>
           <div class="color-codes">
-            <span>HEX #10B981</span>
-            <span>RGB 16, 185, 129</span>
+            <span>HEX #009966</span>
+            <span>RGB 0, 153, 102</span>
           </div>
-          <div class="color-usage">High-fit opportunity scoring (&gt;=90%) and submitted states</div>
+          <div class="color-usage">High matches and positive states (emerald-600)</div>
         </div>
       </div>
       
-      <div class="color-swatch-card" aria-label="Error Rose">
+      <div class="color-swatch-card" aria-label="Error">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #F43F5E; "></div>
+        <div class="swatch-color" style="background-color: #FF2056; "></div>
         <div class="swatch-info">
-          <div class="color-name">Error Rose</div>
+          <div class="color-name">Error</div>
           <div class="color-codes">
-            <span>HEX #F43F5E</span>
-            <span>RGB 244, 63, 94</span>
+            <span>HEX #FF2056</span>
+            <span>RGB 255, 32, 86</span>
           </div>
-          <div class="color-usage">Discarded opportunities and penalty notifications</div>
+          <div class="color-usage">Alerts and discarded opportunities (rose-500)</div>
         </div>
       </div>
       
@@ -411,7 +411,7 @@
   <section class="board-section">
     <div class="section-header">
       <h3>Typography</h3>
-      <p>Primary Typeface: <strong>Outfit &amp; Inter (Google Fonts)</strong> (Professional Web Interface)</p>
+      <p>Primary Typeface: <strong>System font (Tailwind font-sans)</strong> (Web app)</p>
     </div>
 
     
@@ -420,44 +420,44 @@
       
       <div class="type-specimen">
         <div class="type-label">
-          <strong>Main Header</strong>
-          <span>28px / 700</span>
-          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Main proposal dashboard title</span>
+          <strong>KPI</strong>
+          <span>30px / 800</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Dashboard figures</span>
         </div>
-        <div class="type-sample" style="font-size: 28px; font-weight: 700;">
+        <div class="type-sample" style="font-size: 30px; font-weight: 800; font-family: ui-sans-serif, system-ui, sans-serif;">
           The quick brown fox jumps over the lazy dog
         </div>
       </div>
       
       <div class="type-specimen">
         <div class="type-label">
-          <strong>Column Title</strong>
-          <span>16px / 600</span>
-          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Kanban board column headers (Opportunities, In Review...)</span>
+          <strong>Text</strong>
+          <span>14px / 500</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Card and table content</span>
         </div>
-        <div class="type-sample" style="font-size: 16px; font-weight: 600;">
+        <div class="type-sample" style="font-size: 14px; font-weight: 500; font-family: ui-sans-serif, system-ui, sans-serif;">
           The quick brown fox jumps over the lazy dog
         </div>
       </div>
       
       <div class="type-specimen">
         <div class="type-label">
-          <strong>Card Title</strong>
-          <span>14px / 600</span>
-          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Bid opportunity name on cards</span>
-        </div>
-        <div class="type-sample" style="font-size: 14px; font-weight: 600;">
-          The quick brown fox jumps over the lazy dog
-        </div>
-      </div>
-      
-      <div class="type-specimen">
-        <div class="type-label">
-          <strong>Match Badge</strong>
+          <strong>Label</strong>
           <span>12px / 700</span>
-          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Percentage of compatibility evaluated by the AI</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Most used style: labels, statuses and metadata</span>
         </div>
-        <div class="type-sample" style="font-size: 12px; font-weight: 700;">
+        <div class="type-sample" style="font-size: 12px; font-weight: 700; font-family: ui-sans-serif, system-ui, sans-serif;">
+          The quick brown fox jumps over the lazy dog
+        </div>
+      </div>
+      
+      <div class="type-specimen">
+        <div class="type-label">
+          <strong>Micro</strong>
+          <span>10px / 700</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Badges and counters</span>
+        </div>
+        <div class="type-sample" style="font-size: 10px; font-weight: 700; font-family: ui-sans-serif, system-ui, sans-serif;">
           The quick brown fox jumps over the lazy dog
         </div>
       </div>

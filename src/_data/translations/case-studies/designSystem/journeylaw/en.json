@@ -56,41 +56,48 @@
       "hierarchy": [
         {
           "name": "XL Heading",
-          "size": "30px/36px",
+          "size": "30px",
           "weight": "400",
-          "usage": "Main section headings and page titles"
+          "usage": "Main section headings and page titles",
+          "family": "Inter"
         },
         {
           "name": "Large Heading",
-          "size": "24px/32px",
+          "size": "24px",
           "weight": "400",
-          "usage": "Section titles and modal headers"
+          "usage": "Section titles and modal headers",
+          "family": "Inter"
         },
         {
           "name": "Medium Heading",
-          "size": "18px/24px",
+          "size": "18px",
           "weight": "400",
-          "usage": "Card titles and content groups"
+          "usage": "Card titles and content groups",
+          "family": "Inter"
         },
         {
           "name": "Body Text",
-          "size": "16px/24px",
+          "size": "16px",
           "weight": "400",
-          "usage": "Primary content text"
+          "usage": "Primary content text",
+          "family": "Inter"
         },
         {
           "name": "Small Text",
-          "size": "14px/20px",
+          "size": "14px",
           "weight": "400",
-          "usage": "Secondary information, labels, and captions"
+          "usage": "Secondary information, labels, and captions",
+          "family": "Inter"
         },
         {
           "name": "Extra Small",
-          "size": "12px/16px",
+          "size": "12px",
           "weight": "400",
-          "usage": "Fine print and legal disclaimers"
+          "usage": "Fine print and legal disclaimers",
+          "family": "Inter"
         }
-      ]
+      ],
+      "fontsUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
     },
     "shape": {
       "borderRadius": "8px",

@@ -2,12 +2,12 @@
 @use '../abstracts/variables' as v;
 
 .case-study.factoring {
-    // Design System Tokens - Dark Purple / Navy Blue / Lime Green
-    --primary-color: #3C1053;      // Púrpura oscuro - Header, botones primarios
-    --secondary-color: #002A61;    // Azul marino - Textos de títulos, pie de página
-    --accent-color: #96C93D;      // Verde lima - Call to Action
-    --surface-light: #F4F4F4;     // Fondos de sección y tarjetas
-    --text-body: #666666;          // Texto de lectura general
+    // Tokens del archivo de Sketch: Brand/Primary, Brand/Secondary y grises
+    --primary-color: #6A2E92;      // Brand/Primary (8.68:1)
+    --secondary-color: #232272;    // Brand/Secondary (13.61:1)
+    --accent-color: #6A2E92;      // El verde de estado (#27AE60) da 2.87:1, no sirve para texto
+    --surface-light: #F0F0F0;     // Gray/Light
+    --text-body: #333333;          // Gray/Dark: texto principal del diseño
 
     // Semantic mappings
     --heading-color: var(--secondary-color);

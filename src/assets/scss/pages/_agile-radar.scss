@@ -1,9 +1,9 @@
 .case-study.agile_radar {
-    // AgileRadar Theme (Teal/Cyan)
-    --primary-color: #00F2FE; // Cyan
-    --heading-color: #ffffff;
-    --accent-color: #00F2FE;
+    // AgileRadar: violet-600 de Tailwind v4 (5.89:1 sobre blanco); el naranja Shape (#FC6736, 2.94:1) no alcanza para texto
+    --primary-color: #7F22FE;
+    --heading-color: var(--primary-color);
+    --accent-color: #7F22FE;
     --link-color: var(--primary-color);
     --button-bg: var(--primary-color);
-    --button-color: #0B0F19;
+    --button-color: #ffffff;
 }

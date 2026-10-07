@@ -4,11 +4,11 @@
 
 .case-study.wallet {
     // Global overrides for "Living Organism"
-    --primary-color: #722688; // Belcorp Purple
+    --primary-color: #722789; // Belcorp Purple
     --heading-color: var(--primary-color);
     --accent-color: var(--primary-color);
-    --text-color: #485A6B; // Basic Normal
-    --background-color-alt: #F3F4F6; // Background Light
+    --text-color: #485B6B; // Basic Normal
+    --background-color-alt: #F4F4F5; // Background Light
 
     // Legacy variables mapped for specific inner components
     --wallet-primary: var(--primary-color);
@@ -40,7 +40,7 @@
         color: white;
 
         &:hover {
-            background-color: color.scale(#722688, $lightness: -5%);
+            background-color: color.scale(#722789, $lightness: -5%);
             transform: translateY(-2px);
             box-shadow: 0 4px 8px rgba(114, 38, 136, 0.3);
         }
@@ -56,7 +56,7 @@
         color: white;
 
         &:hover {
-            background-color: color.scale(#485A6B, $lightness: 5%);
+            background-color: color.scale(#485B6B, $lightness: 5%);
             transform: translateY(-2px);
             box-shadow: 0 4px 8px rgba(72, 90, 107, 0.3);
         }
@@ -70,7 +70,7 @@
 
         &:hover {
             background-color: rgba(114, 38, 136, 0.05);
-            color: color.scale(#722688, $lightness: 10%);
+            color: color.scale(#722789, $lightness: 10%);
         }
     }
 

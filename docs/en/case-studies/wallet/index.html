@@ -257,21 +257,21 @@
 
 
 <div class="design-board-wrapper" style="
-  --theme-primary: #722688;
-  --theme-secondary: #485A6B;
+  --theme-primary: #722789;
+  --theme-secondary: #485B6B;
   --theme-gray-dark: #212529;
   --theme-gray-medium: #6c757d;
   --theme-gray-light: #f8f9fa;
   --theme-gray-white: #FFFFFF;
   --theme-on-primary: #FFFFFF;
-  --theme-font-primary: 'SF Pro Rounded', sans-serif;
-  --theme-radius: 8px;
-  --theme-button-radius: 100px;
-  --theme-input-radius: 6px;
+  --theme-font-primary: 'SF Pro & SF Pro Rounded', sans-serif;
+  --theme-radius: 10px;
+  --theme-button-radius: 5px;
+  --theme-input-radius: 5px;
 ">
 
   <div class="board-header" style="text-align: center; margin-bottom: 3rem;">
-    <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;">Design System</h2>
+    <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;">Mobile Wallet Design System</h2>
     <p style="font-size: 1.1rem; color: var(--theme-gray-medium); max-width: 600px; margin: 0 auto; line-height: 1.6;">
       The design system for Belcorp's Mobile Wallet was built on the pillars of 'Trust and Accessibility', ensuring that sales representatives could manage their finances with complete security.
     </p>
@@ -289,12 +289,12 @@
       <div class="color-swatch-card" aria-label="Primary Color">
         <div class="swatch-color" style="background-color: var(--theme-primary);"></div>
         <div class="swatch-info">
-          <div class="color-name">Belcorp Purple</div>
+          <div class="color-name">Belcorp</div>
           <div class="color-codes">
-            <span>HEX #722688</span>
-            <span>RGB 114, 38, 136</span>
+            <span>HEX #722789</span>
+            <span>RGB 114, 39, 137</span>
           </div>
-          <div class="color-usage">Brand color, active states, main buttons</div>
+          <div class="color-usage">Brand/belcorp and Text/Titles: brand and titles</div>
         </div>
       </div>
 
@@ -302,53 +302,144 @@
       <div class="color-swatch-card" aria-label="Secondary Color">
         <div class="swatch-color" style="background-color: var(--theme-secondary);"></div>
         <div class="swatch-info">
-          <div class="color-name">Basic Normal</div>
+          <div class="color-name">Paragraph Text</div>
           <div class="color-codes">
-            <span>HEX #485A6B</span>
-            <span>RGB 72, 90, 107</span>
+            <span>HEX #485B6B</span>
+            <span>RGB 72, 91, 107</span>
           </div>
-          <div class="color-usage">Primary text, headings, dark icons</div>
+          <div class="color-usage">Text/Paragraph: main text</div>
         </div>
       </div>
       
       <!-- Grayscale (Loop over grayscale obj) -->
       
-      <div class="color-swatch-card" aria-label="Basic Disable">
-        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #AEAEB2; "></div>
-        <div class="swatch-info">
-          <div class="color-name">Basic Disable</div>
-          <div class="color-codes">
-            <span>HEX #AEAEB2</span>
-            <span>RGB 174, 174, 178</span>
-          </div>
-          <div class="color-usage">Disabled states, secondary text, borders</div>
-        </div>
-      </div>
-      
-      <div class="color-swatch-card" aria-label="Background Light">
-        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #F3F4F6; "></div>
-        <div class="swatch-info">
-          <div class="color-name">Background Light</div>
-          <div class="color-codes">
-            <span>HEX #F3F4F6</span>
-            <span>RGB 243, 244, 246</span>
-          </div>
-          <div class="color-usage">App backgrounds</div>
-        </div>
-      </div>
-      
-      <div class="color-swatch-card" aria-label="Basic White">
+      <div class="color-swatch-card" aria-label="White">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
         <div class="swatch-color" style="background-color: #FFFFFF; border-bottom: 1px solid rgba(0,0,0,0.05);"></div>
         <div class="swatch-info">
-          <div class="color-name">Basic White</div>
+          <div class="color-name">White</div>
           <div class="color-codes">
             <span>HEX #FFFFFF</span>
             <span>RGB 255, 255, 255</span>
           </div>
-          <div class="color-usage">Card surfaces, inputs</div>
+          <div class="color-usage">Basic/white: surfaces</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Gray 4">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #F4F4F5; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Gray 4</div>
+          <div class="color-codes">
+            <span>HEX #F4F4F5</span>
+            <span>RGB 244, 244, 245</span>
+          </div>
+          <div class="color-usage">Basic/gray4: backgrounds</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Gray 3">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #D1D1D6; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Gray 3</div>
+          <div class="color-codes">
+            <span>HEX #D1D1D6</span>
+            <span>RGB 209, 209, 214</span>
+          </div>
+          <div class="color-usage">Basic/gray3: borders</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Gray 2">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #AEAEB2; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Gray 2</div>
+          <div class="color-codes">
+            <span>HEX #AEAEB2</span>
+            <span>RGB 174, 174, 178</span>
+          </div>
+          <div class="color-usage">Basic/gray2: disabled states</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Gray">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #A3ADB5; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Gray</div>
+          <div class="color-codes">
+            <span>HEX #A3ADB5</span>
+            <span>RGB 163, 173, 181</span>
+          </div>
+          <div class="color-usage">Basic/gray: helper text</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Danger">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #FF2D55; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Danger</div>
+          <div class="color-codes">
+            <span>HEX #FF2D55</span>
+            <span>RGB 255, 45, 85</span>
+          </div>
+          <div class="color-usage">Basic/danger: errors and negative amounts</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Warning">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #FFCC00; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Warning</div>
+          <div class="color-codes">
+            <span>HEX #FFCC00</span>
+            <span>RGB 255, 204, 0</span>
+          </div>
+          <div class="color-usage">Basic/warning</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Ésika">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #D40B13; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Ésika</div>
+          <div class="color-codes">
+            <span>HEX #D40B13</span>
+            <span>RGB 212, 11, 19</span>
+          </div>
+          <div class="color-usage">Brand/esika: group brand</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Cyzone">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #AF0061; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Cyzone</div>
+          <div class="color-codes">
+            <span>HEX #AF0061</span>
+            <span>RGB 175, 0, 97</span>
+          </div>
+          <div class="color-usage">Brand/cyzone: group brand</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="L'Bel">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #FADE9D; "></div>
+        <div class="swatch-info">
+          <div class="color-name">L'Bel</div>
+          <div class="color-codes">
+            <span>HEX #FADE9D</span>
+            <span>RGB 250, 222, 157</span>
+          </div>
+          <div class="color-usage">Brand/lbel: group brand</div>
         </div>
       </div>
       
@@ -359,7 +450,7 @@
   <section class="board-section">
     <div class="section-header">
       <h3>Typography</h3>
-      <p>Primary Typeface: <strong>SF Pro Rounded</strong> (Rounded Sans Serif)</p>
+      <p>Primary Typeface: <strong>SF Pro &amp; SF Pro Rounded</strong> (iOS mobile app)</p>
     </div>
 
     
@@ -369,10 +460,21 @@
       <div class="type-specimen">
         <div class="type-label">
           <strong>Title</strong>
-          <span>24px / 700</span>
-          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Main headers</span>
+          <span>32px / 300</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">SF Pro Light: titles</span>
         </div>
-        <div class="type-sample" style="font-size: 24px; font-weight: 700;">
+        <div class="type-sample" style="font-size: 32px; font-weight: 300; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif;">
+          The quick brown fox jumps over the lazy dog
+        </div>
+      </div>
+      
+      <div class="type-specimen">
+        <div class="type-label">
+          <strong>Highlighted Text</strong>
+          <span>16px / 500</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">SF Pro Medium</span>
+        </div>
+        <div class="type-sample" style="font-size: 16px; font-weight: 500; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif;">
           The quick brown fox jumps over the lazy dog
         </div>
       </div>
@@ -380,21 +482,21 @@
       <div class="type-specimen">
         <div class="type-label">
           <strong>Body</strong>
-          <span>16px / 400</span>
-          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Reading text</span>
+          <span>14px / 300</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">SF Pro Light: most used style</span>
         </div>
-        <div class="type-sample" style="font-size: 16px; font-weight: 400;">
+        <div class="type-sample" style="font-size: 14px; font-weight: 300; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif;">
           The quick brown fox jumps over the lazy dog
         </div>
       </div>
       
       <div class="type-specimen">
         <div class="type-label">
-          <strong>Caption</strong>
-          <span>14px / 300</span>
-          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Metadata &amp; labels</span>
+          <strong>Rounded</strong>
+          <span>16px / 900</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">SF Pro Rounded Black</span>
         </div>
-        <div class="type-sample" style="font-size: 14px; font-weight: 300;">
+        <div class="type-sample" style="font-size: 16px; font-weight: 900; font-family: ui-rounded, 'SF Pro Rounded', -apple-system, BlinkMacSystemFont, sans-serif;">
           The quick brown fox jumps over the lazy dog
         </div>
       </div>
