@@ -74,29 +74,34 @@
       "hierarchy": [
         {
           "name": "Reading Text",
-          "size": "28px",
+          "size": "24px",
           "weight": "400",
-          "usage": "Stories in Literata with generous line height for early readers"
+          "family": "Literata",
+          "usage": "Stories with 1.75 line height; the child or teacher adjusts it from 16 to 28 px with the Aa button"
         },
         {
-          "name": "Title",
-          "size": "24px",
-          "weight": "700",
-          "usage": "Story and screen titles"
+          "name": "Story Title",
+          "size": "26px",
+          "weight": "800",
+          "family": "Plus Jakarta Sans",
+          "usage": "Adventure title on the tablet"
         },
         {
           "name": "Button",
           "size": "18px",
-          "weight": "700",
-          "usage": "Tablet actions, with touch targets of at least 56×56 dp"
+          "weight": "800",
+          "family": "Plus Jakarta Sans",
+          "usage": "Primary actions, with touch targets of at least 56×56 dp"
         },
         {
-          "name": "Data",
-          "size": "14px",
-          "weight": "500",
-          "usage": "Metrics, labels and tables in the teacher dashboard"
+          "name": "Label",
+          "size": "12px",
+          "weight": "700",
+          "family": "Plus Jakarta Sans",
+          "usage": "Metrics, statuses and labels"
         }
-      ]
+      ],
+      "fontsUrl": "https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400..700&family=Plus+Jakarta+Sans:wght@400..800&display=swap"
     },
     "shape": {
       "borderRadius": "16px",

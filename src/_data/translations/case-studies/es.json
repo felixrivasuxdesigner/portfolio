@@ -686,7 +686,7 @@
         },
         {
           "label": "Torneos",
-          "value": "Mundial FIFA 2026 · Mundial de Rugby 2027"
+          "value": "Mundial FIFA 2026 (jugado) · Rugby 2027 (en preparación)"
         },
         {
           "label": "Plataformas",
@@ -756,13 +756,13 @@
           "title": "Proceso de Desarrollo y UX",
           "steps": [
             {
-              "title": "Modelado de Dinámica y Reglas",
-              "content": "Definición del sistema de puntaje (exacto, ganador, empate, fase) y el umbral de bloqueo de predicciones (75 minutos antes del partido) para evitar conductas ventajosas.",
+              "title": "Modelado de dinámica y reglas",
+              "content": "Definición del sistema de puntaje (resultado exacto, ganador, empate y fase) y de los bloqueos a nivel de base de datos: cada pronóstico se cierra al comenzar su partido y el podio pre-torneo, con el primer partido del campeonato.",
               "alt": "Reglas y Base de Datos"
             },
             {
-              "title": "Diseño de Interfaz Inmersiva",
-              "content": "Creación de una UI oscura estilo 'estadio deportivo' con acentos verdes neón y morados, utilizando tipografía moderna y cards limpias para optimizar la lectura rápida de marcadores.",
+              "title": "Identidad por torneo",
+              "content": "La edición FIFA 2026 partió con un tema oscuro y pasó a uno claro con la paleta del Mundial. Para rugby, los componentes se re-vistieron mapeando los tokens del tema a la paleta RWC, sin reescribir clases. Anton para marcadores y Noto Sans para la interfaz se mantienen en ambas.",
               "alt": "Diseño de UI"
             },
             {
@@ -778,7 +778,7 @@
           ]
         },
         "results": {
-          "title": "Resultados y Engagement",
+          "title": "Resultados de la edición Mundial FIFA 2026",
           "metrics": [
             {
               "number": "100%",
@@ -793,7 +793,7 @@
               "description": "Participación e interacción diaria con los reportes de IA en WhatsApp"
             }
           ],
-          "conclusion": "Este proyecto demuestra cómo la automatización técnica de datos deportivos y la integración creativa de agentes de IA y bots de WhatsApp pueden transformar una aplicación de nicho en una experiencia de entretenimiento social altamente adictiva y libre de fricciones de gestión."
+          "conclusion": "La edición del Mundial FIFA 2026 demostró que automatizar los datos deportivos y sumar un bot de IA en WhatsApp convierte una quiniela de nicho en una experiencia social sin fricción de gestión. La edición de rugby reutiliza ese motor y empezará a usarse en el Mundial 2027."
         }
       }
     },

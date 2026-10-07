@@ -80,6 +80,10 @@
       <p>Primary Typeface: <strong>{{ designSystem.tokens.typography.primary.family }}</strong> ({{ designSystem.tokens.typography.primary.category }})</p>
     </div>
 
+    {# Si el sistema declara fontsUrl (Google Fonts), se cargan las fuentes reales para que las muestras no caigan en una sans genérica #}
+    {% if designSystem.tokens.typography.fontsUrl %}
+    <link rel="stylesheet" href="{{ designSystem.tokens.typography.fontsUrl }}">
+    {% endif %}
     <div class="typography-grid">
       {% for font in designSystem.tokens.typography.hierarchy %}
       <div class="type-specimen">
@@ -88,7 +92,7 @@
           <span>{{ font.size }} / {{ font.weight }}</span>
           <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">{{ font.usage }}</span>
         </div>
-        <div class="type-sample" style="font-size: {{ font.size }}; font-weight: {{ font.weight }};">
+        <div class="type-sample" style="font-size: {{ font.size }}; font-weight: {{ font.weight }};{% if font.family %} font-family: '{{ font.family }}', sans-serif;{% endif %}{% if font.uppercase %} text-transform: uppercase;{% endif %}">
           The quick brown fox jumps over the lazy dog
         </div>
       </div>

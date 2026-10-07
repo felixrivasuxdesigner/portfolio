@@ -1,107 +1,131 @@
 {
-  "title": "Sistema de Diseño Quiniela Engine (edición Mundial FIFA 2026)",
-  "intro": "Un lenguaje visual deportivo y competitivo, con modo oscuro inmersivo, tipografía moderna y acentos vibrantes para simular el ambiente del estadio de fútbol.",
+  "title": "Sistema de Diseño Quiniela Engine (edición Rugby 2027)",
+  "intro": "Tokens reales de la app (Tailwind CSS v4): base neutra inspirada en Apple HIG y una paleta propia del torneo. Anton para marcadores y títulos de impacto, Noto Sans para la interfaz.",
   "tokens": {
     "colors": {
       "primary": {
-        "name": "Indigo",
-        "hex": "#4F46E5",
-        "rgb": "79, 70, 229",
-        "usage": "Color primario de la marca. Cabeceras, acentos clave de navegación y botones principales"
+        "name": "Naranja RWC",
+        "hex": "#FF4600",
+        "rgb": "255, 70, 0",
+        "usage": "Acción principal, barra de navegación y acentos de marca (3.4:1 sobre blanco: solo en texto grande o sobre fondos de color)"
       },
       "secondary": {
-        "name": "Neon Green",
-        "hex": "#22C55E",
-        "rgb": "34, 197, 94",
-        "usage": "Color de acento competitivo. Indicadores de aciertos, marcadores correctos y llamadas a la acción"
+        "name": "Cian RWC",
+        "hex": "#22BDB4",
+        "rgb": "34, 189, 180",
+        "usage": "Encabezados de pools y fase eliminatoria, tabs activos"
       },
       "grayscale": {
-        "gold": {
-          "name": "Gold",
-          "hex": "#F59E0B",
-          "rgb": "245, 158, 11",
-          "usage": "Destacados del líder en la tabla de posiciones y trofeos"
+        "primaryDark": {
+          "name": "Naranja oscuro",
+          "hex": "#D83000",
+          "rgb": "216, 48, 0",
+          "usage": "Hover y estado activo del color principal"
+        },
+        "amber": {
+          "name": "Ámbar",
+          "hex": "#FF9F01",
+          "rgb": "255, 159, 1",
+          "usage": "Final del degradado del botón principal"
+        },
+        "accent": {
+          "name": "Amarillo RWC",
+          "hex": "#FAE600",
+          "rgb": "250, 230, 0",
+          "usage": "Acento del borde tricolor superior"
+        },
+        "green": {
+          "name": "Verde RWC",
+          "hex": "#0AF071",
+          "rgb": "10, 240, 113",
+          "usage": "Éxito, validación y zona de clasificación"
+        },
+        "dark": {
+          "name": "Negro",
+          "hex": "#000000",
+          "rgb": "0, 0, 0",
+          "usage": "Contraste máximo: marcadores y botones secundarios"
+        },
+        "mid": {
+          "name": "Tinte naranja",
+          "hex": "#FFECE5",
+          "rgb": "255, 236, 229",
+          "usage": "Fondos destacados"
         },
         "background": {
-          "name": "Slate Background",
-          "hex": "#0F172A",
-          "rgb": "15, 23, 42",
-          "usage": "Fondo general del dashboard (Modo Oscuro)"
+          "name": "Fondo",
+          "hex": "#FFFFFF",
+          "rgb": "255, 255, 255",
+          "usage": "Fondo principal de la app"
         },
-        "card": {
-          "name": "Card Slate",
-          "hex": "#1E293B",
-          "rgb": "30, 41, 59",
-          "usage": "Tarjetas de partidos y bloques de predicciones"
+        "surface": {
+          "name": "Superficie",
+          "hex": "#F2F2F7",
+          "rgb": "242, 242, 247",
+          "usage": "Cards y contenedores secundarios"
         },
         "text": {
-          "name": "Text White",
-          "hex": "#F8FAFC",
-          "rgb": "248, 250, 252",
-          "usage": "Texto principal de alto contraste"
+          "name": "Texto principal",
+          "hex": "#1C1C1E",
+          "rgb": "28, 28, 30",
+          "usage": "Texto de alto contraste"
         },
-        "textMuted": {
-          "name": "Text Gray",
-          "hex": "#94A3B8",
-          "rgb": "148, 163, 184",
-          "usage": "Etiquetas secundarias, fechas de partidos y estados de predicciones bloqueadas"
-        },
-        "success": {
-          "name": "Success",
-          "hex": "#10B981",
-          "rgb": "16, 185, 129",
-          "usage": "Puntaje máximo obtenido (+3 puntos por marcador exacto)"
-        },
-        "error": {
-          "name": "Error",
-          "hex": "#EF4444",
-          "rgb": "239, 68, 68",
-          "usage": "Pronóstico fallido o predicciones cerradas"
+        "textSecondary": {
+          "name": "Texto secundario",
+          "hex": "#8E8E93",
+          "rgb": "142, 142, 147",
+          "usage": "Metadatos y texto de apoyo"
         }
       }
     },
     "typography": {
       "primary": {
-        "family": "Inter & Outfit (Google Fonts)",
+        "family": "Anton (display) & Noto Sans (interfaz)",
         "weights": [
           400,
-          500,
           600,
-          700
+          700,
+          800
         ],
-        "category": "Interfaz Web Responsiva"
+        "category": "Web app móvil"
       },
       "hierarchy": [
         {
-          "name": "Display Title",
-          "size": "36px",
-          "weight": "700",
-          "usage": "Encabezados principales del torneo y pantallas destacadas"
-        },
-        {
-          "name": "Card Heading",
-          "size": "20px",
-          "weight": "600",
-          "usage": "Nombres de los países en el bloque de enfrentamientos"
-        },
-        {
-          "name": "Body Text",
-          "size": "16px",
+          "name": "Marcador",
+          "size": "48px",
           "weight": "400",
-          "usage": "Texto general, listados de la tabla de posiciones y roasts del bot"
+          "usage": "Anton: resultado de cada partido",
+          "family": "Anton"
         },
         {
-          "name": "Score Value",
+          "name": "Título de impacto",
           "size": "24px",
+          "weight": "400",
+          "usage": "Anton en mayúsculas: títulos de sección y botón principal",
+          "family": "Anton",
+          "uppercase": true
+        },
+        {
+          "name": "Texto de interfaz",
+          "size": "14px",
           "weight": "700",
-          "usage": "Marcador numérico del partido y puntaje acumulado por usuario"
+          "usage": "Noto Sans: equipos, tablas y navegación",
+          "family": "Noto Sans"
+        },
+        {
+          "name": "Etiqueta",
+          "size": "12px",
+          "weight": "700",
+          "usage": "Noto Sans: fechas, estados y metadatos",
+          "family": "Noto Sans"
         }
-      ]
+      ],
+      "fontsUrl": "https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans:wght@400;600;700;800&display=swap"
     },
     "shape": {
-      "borderRadius": "12px",
-      "buttonRadius": "8px",
-      "inputRadius": "8px"
+      "borderRadius": "16px",
+      "buttonRadius": "28% 14% 21% 7%",
+      "inputRadius": "12px"
     }
   }
 }

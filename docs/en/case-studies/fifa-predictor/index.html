@@ -242,7 +242,7 @@
         
           <div class="fact-item">
             <dt>Tournaments</dt>
-            <dd>FIFA World Cup 2026 · Rugby World Cup 2027</dd>
+            <dd>2026 FIFA World Cup (played) · 2027 Rugby World Cup (in preparation)</dd>
           </div>
         
           <div class="fact-item">
@@ -336,23 +336,23 @@
           
 
 <div class="design-board-wrapper" style="
-  --theme-primary: #4F46E5;
-  --theme-secondary: #22C55E;
-  --theme-gray-dark: #212529;
+  --theme-primary: #FF4600;
+  --theme-secondary: #22BDB4;
+  --theme-gray-dark: #000000;
   --theme-gray-medium: #6c757d;
   --theme-gray-light: #f8f9fa;
   --theme-gray-white: #ffffff;
   --theme-on-primary: #ffffff;
-  --theme-font-primary: 'Inter & Outfit (Google Fonts)', sans-serif;
-  --theme-radius: 12px;
-  --theme-button-radius: 8px;
-  --theme-input-radius: 8px;
+  --theme-font-primary: 'Anton (display) & Noto Sans (interface)', sans-serif;
+  --theme-radius: 16px;
+  --theme-button-radius: 28% 14% 21% 7%;
+  --theme-input-radius: 12px;
 ">
 
   <div class="board-header" style="text-align: center; margin-bottom: 3rem;">
-    <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;">Quiniela Engine Design System (2026 FIFA World Cup edition)</h2>
+    <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;">Quiniela Engine Design System (Rugby 2027 edition)</h2>
     <p style="font-size: 1.1rem; color: var(--theme-gray-medium); max-width: 600px; margin: 0 auto; line-height: 1.6;">
-      A sports-oriented and competitive visual language with an immersive dark mode, modern typography, and vibrant accents to simulate the stadium environment.
+      The app's real tokens (Tailwind CSS v4): a neutral base inspired by Apple HIG plus a tournament palette. Anton for scores and impact titles, Noto Sans for the interface.
     </p>
   </div>
 
@@ -368,12 +368,12 @@
       <div class="color-swatch-card" aria-label="Primary Color">
         <div class="swatch-color" style="background-color: var(--theme-primary);"></div>
         <div class="swatch-info">
-          <div class="color-name">Indigo</div>
+          <div class="color-name">RWC Orange</div>
           <div class="color-codes">
-            <span>HEX #4F46E5</span>
-            <span>RGB 79, 70, 229</span>
+            <span>HEX #FF4600</span>
+            <span>RGB 255, 70, 0</span>
           </div>
-          <div class="color-usage">Primary brand color. Headers, key navigation accents, and main buttons</div>
+          <div class="color-usage">Primary action, navigation bar and brand accents (3.4:1 on white: large text or colored backgrounds only)</div>
         </div>
       </div>
 
@@ -381,105 +381,144 @@
       <div class="color-swatch-card" aria-label="Secondary Color">
         <div class="swatch-color" style="background-color: var(--theme-secondary);"></div>
         <div class="swatch-info">
-          <div class="color-name">Neon Green</div>
+          <div class="color-name">RWC Cyan</div>
           <div class="color-codes">
-            <span>HEX #22C55E</span>
-            <span>RGB 34, 197, 94</span>
+            <span>HEX #22BDB4</span>
+            <span>RGB 34, 189, 180</span>
           </div>
-          <div class="color-usage">Competitive accent color. Accurate score predictions, status check indicators, and active CTAs</div>
+          <div class="color-usage">Pool and knockout headers, active tabs</div>
         </div>
       </div>
       
       <!-- Grayscale (Loop over grayscale obj) -->
       
-      <div class="color-swatch-card" aria-label="Gold">
+      <div class="color-swatch-card" aria-label="Dark Orange">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #F59E0B; "></div>
+        <div class="swatch-color" style="background-color: #D83000; "></div>
         <div class="swatch-info">
-          <div class="color-name">Gold</div>
+          <div class="color-name">Dark Orange</div>
           <div class="color-codes">
-            <span>HEX #F59E0B</span>
-            <span>RGB 245, 158, 11</span>
+            <span>HEX #D83000</span>
+            <span>RGB 216, 48, 0</span>
           </div>
-          <div class="color-usage">Leader highlight in the leaderboard and trophy rewards</div>
+          <div class="color-usage">Hover and active state of the primary color</div>
         </div>
       </div>
       
-      <div class="color-swatch-card" aria-label="Slate Background">
+      <div class="color-swatch-card" aria-label="Amber">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #0F172A; "></div>
+        <div class="swatch-color" style="background-color: #FF9F01; "></div>
         <div class="swatch-info">
-          <div class="color-name">Slate Background</div>
+          <div class="color-name">Amber</div>
           <div class="color-codes">
-            <span>HEX #0F172A</span>
-            <span>RGB 15, 23, 42</span>
+            <span>HEX #FF9F01</span>
+            <span>RGB 255, 159, 1</span>
           </div>
-          <div class="color-usage">General dashboard background (Dark Mode)</div>
+          <div class="color-usage">End of the primary button gradient</div>
         </div>
       </div>
       
-      <div class="color-swatch-card" aria-label="Card Slate">
+      <div class="color-swatch-card" aria-label="RWC Yellow">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #1E293B; "></div>
+        <div class="swatch-color" style="background-color: #FAE600; "></div>
         <div class="swatch-info">
-          <div class="color-name">Card Slate</div>
+          <div class="color-name">RWC Yellow</div>
           <div class="color-codes">
-            <span>HEX #1E293B</span>
-            <span>RGB 30, 41, 59</span>
+            <span>HEX #FAE600</span>
+            <span>RGB 250, 230, 0</span>
           </div>
-          <div class="color-usage">Match card blocks and prediction containers</div>
+          <div class="color-usage">Accent in the tricolor top border</div>
         </div>
       </div>
       
-      <div class="color-swatch-card" aria-label="Text White">
+      <div class="color-swatch-card" aria-label="RWC Green">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #F8FAFC; "></div>
+        <div class="swatch-color" style="background-color: #0AF071; "></div>
         <div class="swatch-info">
-          <div class="color-name">Text White</div>
+          <div class="color-name">RWC Green</div>
           <div class="color-codes">
-            <span>HEX #F8FAFC</span>
-            <span>RGB 248, 250, 252</span>
+            <span>HEX #0AF071</span>
+            <span>RGB 10, 240, 113</span>
           </div>
-          <div class="color-usage">High-contrast primary interface text</div>
+          <div class="color-usage">Success, validation and qualification zone</div>
         </div>
       </div>
       
-      <div class="color-swatch-card" aria-label="Text Gray">
+      <div class="color-swatch-card" aria-label="Black">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #94A3B8; "></div>
+        <div class="swatch-color" style="background-color: #000000; "></div>
         <div class="swatch-info">
-          <div class="color-name">Text Gray</div>
+          <div class="color-name">Black</div>
           <div class="color-codes">
-            <span>HEX #94A3B8</span>
-            <span>RGB 148, 163, 184</span>
+            <span>HEX #000000</span>
+            <span>RGB 0, 0, 0</span>
           </div>
-          <div class="color-usage">Secondary labels, match dates, and locked prediction state descriptions</div>
+          <div class="color-usage">Maximum contrast: scores and secondary buttons</div>
         </div>
       </div>
       
-      <div class="color-swatch-card" aria-label="Success">
+      <div class="color-swatch-card" aria-label="Orange Tint">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #10B981; "></div>
+        <div class="swatch-color" style="background-color: #FFECE5; "></div>
         <div class="swatch-info">
-          <div class="color-name">Success</div>
+          <div class="color-name">Orange Tint</div>
           <div class="color-codes">
-            <span>HEX #10B981</span>
-            <span>RGB 16, 185, 129</span>
+            <span>HEX #FFECE5</span>
+            <span>RGB 255, 236, 229</span>
           </div>
-          <div class="color-usage">Maximum score achieved (+3 points for exact score)</div>
+          <div class="color-usage">Highlighted backgrounds</div>
         </div>
       </div>
       
-      <div class="color-swatch-card" aria-label="Error">
+      <div class="color-swatch-card" aria-label="Background">
         <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
-        <div class="swatch-color" style="background-color: #EF4444; "></div>
+        <div class="swatch-color" style="background-color: #FFFFFF; "></div>
         <div class="swatch-info">
-          <div class="color-name">Error</div>
+          <div class="color-name">Background</div>
           <div class="color-codes">
-            <span>HEX #EF4444</span>
-            <span>RGB 239, 68, 68</span>
+            <span>HEX #FFFFFF</span>
+            <span>RGB 255, 255, 255</span>
           </div>
-          <div class="color-usage">Failed prediction or closed matches</div>
+          <div class="color-usage">Main app background</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Surface">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #F2F2F7; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Surface</div>
+          <div class="color-codes">
+            <span>HEX #F2F2F7</span>
+            <span>RGB 242, 242, 247</span>
+          </div>
+          <div class="color-usage">Cards and secondary containers</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Main Text">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #1C1C1E; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Main Text</div>
+          <div class="color-codes">
+            <span>HEX #1C1C1E</span>
+            <span>RGB 28, 28, 30</span>
+          </div>
+          <div class="color-usage">High-contrast text</div>
+        </div>
+      </div>
+      
+      <div class="color-swatch-card" aria-label="Secondary Text">
+        <!-- In CSS variables this is trickier to dynamically loop natively, but we can target the hex inline specifically for these swatches to show accuracy -->
+        <div class="swatch-color" style="background-color: #8E8E93; "></div>
+        <div class="swatch-info">
+          <div class="color-name">Secondary Text</div>
+          <div class="color-codes">
+            <span>HEX #8E8E93</span>
+            <span>RGB 142, 142, 147</span>
+          </div>
+          <div class="color-usage">Metadata and supporting text</div>
         </div>
       </div>
       
@@ -490,51 +529,55 @@
   <section class="board-section">
     <div class="section-header">
       <h3>Typography</h3>
-      <p>Primary Typeface: <strong>Inter &amp; Outfit (Google Fonts)</strong> (Responsive Web Interface)</p>
+      <p>Primary Typeface: <strong>Anton (display) &amp; Noto Sans (interface)</strong> (Mobile web app)</p>
     </div>
 
+    
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans:wght@400;600;700;800&display=swap">
+    
     <div class="typography-grid">
       
       <div class="type-specimen">
         <div class="type-label">
-          <strong>Display Title</strong>
-          <span>36px / 700</span>
-          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Main tournament headers and featured screens</span>
+          <strong>Score</strong>
+          <span>48px / 400</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Anton: each match result</span>
         </div>
-        <div class="type-sample" style="font-size: 36px; font-weight: 700;">
+        <div class="type-sample" style="font-size: 48px; font-weight: 400; font-family: 'Anton', sans-serif;">
           The quick brown fox jumps over the lazy dog
         </div>
       </div>
       
       <div class="type-specimen">
         <div class="type-label">
-          <strong>Card Heading</strong>
-          <span>20px / 600</span>
-          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Country names in the match card blocks</span>
+          <strong>Impact Title</strong>
+          <span>24px / 400</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Uppercase Anton: section titles and primary button</span>
         </div>
-        <div class="type-sample" style="font-size: 20px; font-weight: 600;">
+        <div class="type-sample" style="font-size: 24px; font-weight: 400; font-family: 'Anton', sans-serif; text-transform: uppercase;">
           The quick brown fox jumps over the lazy dog
         </div>
       </div>
       
       <div class="type-specimen">
         <div class="type-label">
-          <strong>Body Text</strong>
-          <span>16px / 400</span>
-          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">General text, leaderboard rows, and automated bot roasts</span>
+          <strong>Interface Text</strong>
+          <span>14px / 700</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Noto Sans: teams, tables and navigation</span>
         </div>
-        <div class="type-sample" style="font-size: 16px; font-weight: 400;">
+        <div class="type-sample" style="font-size: 14px; font-weight: 700; font-family: 'Noto Sans', sans-serif;">
           The quick brown fox jumps over the lazy dog
         </div>
       </div>
       
       <div class="type-specimen">
         <div class="type-label">
-          <strong>Score Value</strong>
-          <span>24px / 700</span>
-          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Match numeric scores and user accumulated points</span>
+          <strong>Label</strong>
+          <span>12px / 700</span>
+          <span style="font-style: italic; font-size: 0.8em; margin-top: 0.25rem;">Noto Sans: dates, statuses and metadata</span>
         </div>
-        <div class="type-sample" style="font-size: 24px; font-weight: 700;">
+        <div class="type-sample" style="font-size: 12px; font-weight: 700; font-family: 'Noto Sans', sans-serif;">
           The quick brown fox jumps over the lazy dog
         </div>
       </div>
@@ -650,14 +693,14 @@
         <div class="case-study-grid">
           
             <div class="case-study-grid-item design-process-step">
-              <h3>Rules &amp; Database Modeling</h3>
-              <p>Defined the scoring rules (exact score, winner/draw, tournament phases) and the automated prediction lock threshold (75 minutes before kickoff) to maintain fair play.</p>
+              <h3>Rules &amp; database modeling</h3>
+              <p>Defined the scoring system (exact score, winner, draw and stage) and database-level locks: each prediction closes at its match's kickoff, and the pre-tournament podium closes with the tournament's first match.</p>
               
             </div>
           
             <div class="case-study-grid-item design-process-step">
-              <h3>Immersive UI/UX Design</h3>
-              <p>Created a sports-arena dark mode interface using neon green and purple accents, clean typography, and spacious card layouts for quick scoreboard scanning.</p>
+              <h3>Identity per tournament</h3>
+              <p>The 2026 FIFA edition started with a dark theme and moved to a light one with the World Cup palette. For rugby, components were reskinned by mapping the theme tokens to the RWC palette, without rewriting classes. Anton for scores and Noto Sans for the interface carry over to both.</p>
               
             </div>
           
@@ -679,7 +722,7 @@
 
       <!-- Results Section -->
       <div class="case-study-section">
-        <h2>Results &amp; Engagement</h2>
+        <h2>Results from the 2026 FIFA World Cup edition</h2>
         <div class="case-study-results">
           
             <div class="result-item">
@@ -698,7 +741,7 @@
             </div>
           
         </div>
-        <p>This project showcases how integrating real-time API integrations with witty AI conversational agents can transform a simple spreadsheet prediction game into a highly engaging, zero-maintenance social experience.</p>
+        <p>The 2026 FIFA World Cup edition showed that automating sports data and adding an AI bot on WhatsApp turns a niche prediction pool into a social experience with no management friction. The rugby edition reuses that engine and will go live for the 2027 World Cup.</p>
       </div>
 
       <!-- Markdown/Direct Content -->

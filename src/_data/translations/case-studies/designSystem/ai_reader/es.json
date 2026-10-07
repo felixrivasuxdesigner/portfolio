@@ -74,29 +74,34 @@
       "hierarchy": [
         {
           "name": "Texto de lectura",
-          "size": "28px",
+          "size": "24px",
           "weight": "400",
-          "usage": "Cuentos en Literata con interlineado amplio para primeros lectores"
+          "family": "Literata",
+          "usage": "Cuentos con interlineado de 1,75; el niño o el docente lo ajusta entre 16 y 28 px con el botón Aa"
         },
         {
-          "name": "Título",
-          "size": "24px",
-          "weight": "700",
-          "usage": "Títulos de cuentos y pantallas"
+          "name": "Título del cuento",
+          "size": "26px",
+          "weight": "800",
+          "family": "Plus Jakarta Sans",
+          "usage": "Título de la aventura en la tablet"
         },
         {
           "name": "Botón",
           "size": "18px",
-          "weight": "700",
-          "usage": "Acciones en la tablet, con áreas táctiles de mínimo 56×56 dp"
+          "weight": "800",
+          "family": "Plus Jakarta Sans",
+          "usage": "Acciones principales, con áreas táctiles de mínimo 56×56 dp"
         },
         {
-          "name": "Dato",
-          "size": "14px",
-          "weight": "500",
-          "usage": "Métricas, etiquetas y tablas del dashboard docente"
+          "name": "Etiqueta",
+          "size": "12px",
+          "weight": "700",
+          "family": "Plus Jakarta Sans",
+          "usage": "Métricas, estados y etiquetas"
         }
-      ]
+      ],
+      "fontsUrl": "https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400..700&family=Plus+Jakarta+Sans:wght@400..800&display=swap"
     },
     "shape": {
       "borderRadius": "16px",

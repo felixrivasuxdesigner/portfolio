@@ -1,107 +1,131 @@
 {
-  "title": "Quiniela Engine Design System (2026 FIFA World Cup edition)",
-  "intro": "A sports-oriented and competitive visual language with an immersive dark mode, modern typography, and vibrant accents to simulate the stadium environment.",
+  "title": "Quiniela Engine Design System (Rugby 2027 edition)",
+  "intro": "The app's real tokens (Tailwind CSS v4): a neutral base inspired by Apple HIG plus a tournament palette. Anton for scores and impact titles, Noto Sans for the interface.",
   "tokens": {
     "colors": {
       "primary": {
-        "name": "Indigo",
-        "hex": "#4F46E5",
-        "rgb": "79, 70, 229",
-        "usage": "Primary brand color. Headers, key navigation accents, and main buttons"
+        "name": "RWC Orange",
+        "hex": "#FF4600",
+        "rgb": "255, 70, 0",
+        "usage": "Primary action, navigation bar and brand accents (3.4:1 on white: large text or colored backgrounds only)"
       },
       "secondary": {
-        "name": "Neon Green",
-        "hex": "#22C55E",
-        "rgb": "34, 197, 94",
-        "usage": "Competitive accent color. Accurate score predictions, status check indicators, and active CTAs"
+        "name": "RWC Cyan",
+        "hex": "#22BDB4",
+        "rgb": "34, 189, 180",
+        "usage": "Pool and knockout headers, active tabs"
       },
       "grayscale": {
-        "gold": {
-          "name": "Gold",
-          "hex": "#F59E0B",
-          "rgb": "245, 158, 11",
-          "usage": "Leader highlight in the leaderboard and trophy rewards"
+        "primaryDark": {
+          "name": "Dark Orange",
+          "hex": "#D83000",
+          "rgb": "216, 48, 0",
+          "usage": "Hover and active state of the primary color"
+        },
+        "amber": {
+          "name": "Amber",
+          "hex": "#FF9F01",
+          "rgb": "255, 159, 1",
+          "usage": "End of the primary button gradient"
+        },
+        "accent": {
+          "name": "RWC Yellow",
+          "hex": "#FAE600",
+          "rgb": "250, 230, 0",
+          "usage": "Accent in the tricolor top border"
+        },
+        "green": {
+          "name": "RWC Green",
+          "hex": "#0AF071",
+          "rgb": "10, 240, 113",
+          "usage": "Success, validation and qualification zone"
+        },
+        "dark": {
+          "name": "Black",
+          "hex": "#000000",
+          "rgb": "0, 0, 0",
+          "usage": "Maximum contrast: scores and secondary buttons"
+        },
+        "mid": {
+          "name": "Orange Tint",
+          "hex": "#FFECE5",
+          "rgb": "255, 236, 229",
+          "usage": "Highlighted backgrounds"
         },
         "background": {
-          "name": "Slate Background",
-          "hex": "#0F172A",
-          "rgb": "15, 23, 42",
-          "usage": "General dashboard background (Dark Mode)"
+          "name": "Background",
+          "hex": "#FFFFFF",
+          "rgb": "255, 255, 255",
+          "usage": "Main app background"
         },
-        "card": {
-          "name": "Card Slate",
-          "hex": "#1E293B",
-          "rgb": "30, 41, 59",
-          "usage": "Match card blocks and prediction containers"
+        "surface": {
+          "name": "Surface",
+          "hex": "#F2F2F7",
+          "rgb": "242, 242, 247",
+          "usage": "Cards and secondary containers"
         },
         "text": {
-          "name": "Text White",
-          "hex": "#F8FAFC",
-          "rgb": "248, 250, 252",
-          "usage": "High-contrast primary interface text"
+          "name": "Main Text",
+          "hex": "#1C1C1E",
+          "rgb": "28, 28, 30",
+          "usage": "High-contrast text"
         },
-        "textMuted": {
-          "name": "Text Gray",
-          "hex": "#94A3B8",
-          "rgb": "148, 163, 184",
-          "usage": "Secondary labels, match dates, and locked prediction state descriptions"
-        },
-        "success": {
-          "name": "Success",
-          "hex": "#10B981",
-          "rgb": "16, 185, 129",
-          "usage": "Maximum score achieved (+3 points for exact score)"
-        },
-        "error": {
-          "name": "Error",
-          "hex": "#EF4444",
-          "rgb": "239, 68, 68",
-          "usage": "Failed prediction or closed matches"
+        "textSecondary": {
+          "name": "Secondary Text",
+          "hex": "#8E8E93",
+          "rgb": "142, 142, 147",
+          "usage": "Metadata and supporting text"
         }
       }
     },
     "typography": {
       "primary": {
-        "family": "Inter & Outfit (Google Fonts)",
+        "family": "Anton (display) & Noto Sans (interface)",
         "weights": [
           400,
-          500,
           600,
-          700
+          700,
+          800
         ],
-        "category": "Responsive Web Interface"
+        "category": "Mobile web app"
       },
       "hierarchy": [
         {
-          "name": "Display Title",
-          "size": "36px",
-          "weight": "700",
-          "usage": "Main tournament headers and featured screens"
-        },
-        {
-          "name": "Card Heading",
-          "size": "20px",
-          "weight": "600",
-          "usage": "Country names in the match card blocks"
-        },
-        {
-          "name": "Body Text",
-          "size": "16px",
+          "name": "Score",
+          "size": "48px",
           "weight": "400",
-          "usage": "General text, leaderboard rows, and automated bot roasts"
+          "usage": "Anton: each match result",
+          "family": "Anton"
         },
         {
-          "name": "Score Value",
+          "name": "Impact Title",
           "size": "24px",
+          "weight": "400",
+          "usage": "Uppercase Anton: section titles and primary button",
+          "family": "Anton",
+          "uppercase": true
+        },
+        {
+          "name": "Interface Text",
+          "size": "14px",
           "weight": "700",
-          "usage": "Match numeric scores and user accumulated points"
+          "usage": "Noto Sans: teams, tables and navigation",
+          "family": "Noto Sans"
+        },
+        {
+          "name": "Label",
+          "size": "12px",
+          "weight": "700",
+          "usage": "Noto Sans: dates, statuses and metadata",
+          "family": "Noto Sans"
         }
-      ]
+      ],
+      "fontsUrl": "https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans:wght@400;600;700;800&display=swap"
     },
     "shape": {
-      "borderRadius": "12px",
-      "buttonRadius": "8px",
-      "inputRadius": "8px"
+      "borderRadius": "16px",
+      "buttonRadius": "28% 14% 21% 7%",
+      "inputRadius": "12px"
     }
   }
 }

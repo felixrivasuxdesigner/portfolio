@@ -631,7 +631,7 @@
         },
         {
           "label": "Tournaments",
-          "value": "FIFA World Cup 2026 · Rugby World Cup 2027"
+          "value": "2026 FIFA World Cup (played) · 2027 Rugby World Cup (in preparation)"
         },
         {
           "label": "Platforms",
@@ -701,13 +701,13 @@
           "title": "UX & Development Process",
           "steps": [
             {
-              "title": "Rules & Database Modeling",
-              "content": "Defined the scoring rules (exact score, winner/draw, tournament phases) and the automated prediction lock threshold (75 minutes before kickoff) to maintain fair play.",
+              "title": "Rules & database modeling",
+              "content": "Defined the scoring system (exact score, winner, draw and stage) and database-level locks: each prediction closes at its match's kickoff, and the pre-tournament podium closes with the tournament's first match.",
               "alt": "Database Rules"
             },
             {
-              "title": "Immersive UI/UX Design",
-              "content": "Created a sports-arena dark mode interface using neon green and purple accents, clean typography, and spacious card layouts for quick scoreboard scanning.",
+              "title": "Identity per tournament",
+              "content": "The 2026 FIFA edition started with a dark theme and moved to a light one with the World Cup palette. For rugby, components were reskinned by mapping the theme tokens to the RWC palette, without rewriting classes. Anton for scores and Noto Sans for the interface carry over to both.",
               "alt": "UI/UX Design"
             },
             {
@@ -723,7 +723,7 @@
           ]
         },
         "results": {
-          "title": "Results & Engagement",
+          "title": "Results from the 2026 FIFA World Cup edition",
           "metrics": [
             {
               "number": "100%",
@@ -738,7 +738,7 @@
               "description": "Daily user interaction and engagement with the WhatsApp AI agent reports"
             }
           ],
-          "conclusion": "This project showcases how integrating real-time API integrations with witty AI conversational agents can transform a simple spreadsheet prediction game into a highly engaging, zero-maintenance social experience."
+          "conclusion": "The 2026 FIFA World Cup edition showed that automating sports data and adding an AI bot on WhatsApp turns a niche prediction pool into a social experience with no management friction. The rugby edition reuses that engine and will go live for the 2027 World Cup."
         }
       }
     },
