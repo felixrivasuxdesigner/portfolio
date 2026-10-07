@@ -669,29 +669,87 @@
       }
     },
     "fifa_predictor": {
-      "title": "FIFA World Cup 2026 Predictor",
+      "title": "Quiniela Engine",
       "categories": "#Desarrollo Web #Diseño UX/UI #AI Integration",
       "hero": {
-        "alt": "FIFA World Cup 2026 Predictor Dashboard"
+        "alt": "Tres pantallas de la quiniela en su edición del Mundial de Rugby 2027"
       },
+      "facts": [
+        {
+          "label": "Rol",
+          "value": "Diseño y desarrollo de producto"
+        },
+        {
+          "label": "Estudio",
+          "value": "Shape Creative Studio",
+          "url": "https://shapecreativestudio.com"
+        },
+        {
+          "label": "Torneos",
+          "value": "Mundial FIFA 2026 · Mundial de Rugby 2027"
+        },
+        {
+          "label": "Plataformas",
+          "value": "Web app móvil · Bot de WhatsApp"
+        }
+      ],
       "sections": {
         "context": {
           "title": "Resumen del Proyecto",
-          "content": "Una plataforma privada, hiper-competitiva y completamente automatizada diseñada para gestionar la quiniela de la Copa Mundial FIFA 2026 entre un grupo cerrado de amigos. El proyecto combina un frontend web moderno y rápido con la automatización de resultados de partidos reales y un bot de IA diario en WhatsApp que aporta un elemento dinámico e hilarante al juego."
+          "content": "Quiniela Engine es una plataforma privada y automatizada para jugar quinielas deportivas entre amigos. Nació para el Mundial FIFA 2026 y evolucionó a un motor que se adapta a distintos torneos: la edición actual se prepara para el Mundial de Rugby 2027, con sus pools, puntos bonus y fase eliminatoria. Combina un frontend web rápido, resultados reales sincronizados automáticamente y un bot de IA diario en WhatsApp."
         },
         "challenge": {
           "title": "El Desafío",
           "content": "Las quinielas de torneos deportivos suelen gestionarse en planillas de Excel manuales, lo que causa retrasos en las actualizaciones, errores de cálculo y disputas entre participantes. Además, carecen de interactividad móvil inmediata. El reto era automatizar el 100% del ciclo de vida del juego (carga de pronósticos, cálculo de puntajes reales) e integrar una capa social humorística e interactiva que mantuviera el engagement diario de los usuarios sin mantenimiento manual."
+        },
+        "screens": {
+          "title": "Edición Mundial de Rugby 2027",
+          "intro": "La app vestida para el Mundial de Rugby: misma lógica, nueva identidad y reglas propias del deporte.",
+          "items": [
+            {
+              "src": "rugby-partidos.webp",
+              "title": "Partidos",
+              "caption": "Los pronósticos por fase, con buscador y filtros. Cada partido se bloquea al comenzar.",
+              "alt": "Lista de partidos con marcadores pronosticados: Australia 105, Hong Kong China 7",
+              "width": 640,
+              "height": 1387
+            },
+            {
+              "src": "rugby-pools.webp",
+              "title": "Pools",
+              "caption": "La clasificación de cada pool con las reglas del rugby: 4 puntos por victoria y punto bonus.",
+              "alt": "Tabla de clasificación del Pool A con Australia, Chile, Hong Kong China y Nueva Zelanda",
+              "width": 640,
+              "height": 1387
+            },
+            {
+              "src": "rugby-knockouts.webp",
+              "title": "Fase eliminatoria",
+              "caption": "El camino a la Copa Webb Ellis, de octavos a la final, que se completa solo al cerrar los pools.",
+              "alt": "Fase eliminatoria con los cruces de octavos de final",
+              "width": 640,
+              "height": 1387
+            },
+            {
+              "src": "rugby-desempate.webp",
+              "title": "Desempate pre-mundial",
+              "caption": "Antes del torneo cada jugador elige campeón, subcampeón y tercer lugar; esos puntos rompen empates en el ranking.",
+              "alt": "Formulario para elegir campeón, subcampeón y tercer lugar",
+              "width": 640,
+              "height": 1387
+            }
+          ]
         },
         "designSystem": true,
         "solution": {
           "title": "Propuesta de Valor",
           "content": "Desarrollamos un ecosistema automatizado e inmersivo con las siguientes ventajas:",
           "features": [
-            "Frontend React 19 & Tailwind CSS v4: Interfaz ultra-rápida, en modo oscuro, optimizada para carga de pronósticos en dispositivos móviles.",
-            "Sincronización Automatizada: Scripts en Node.js que consultan la API de resultados oficiales de la FIFA y actualizan Supabase al instante.",
-            "DT de Sofá (Bot de IA en WhatsApp): Bot integrado mediante Evolution API y Groq (Llama 3.1) que analiza la tabla de posiciones cada noche para generar reportes cómicos y sarcásticos automáticos.",
-            "Seguridad e Integridad: Reglas estrictas en Supabase para bloquear cambios en pronósticos una vez iniciados los partidos."
+            "Motor multitorneo: la misma base soporta fútbol y rugby, cada uno con su identidad visual y sus reglas (grupos o pools, puntos bonus, fases eliminatorias y desempate pre-torneo).",
+            "Frontend React 19 & Tailwind CSS v4: interfaz rápida, optimizada para cargar pronósticos desde el celular.",
+            "Sincronización automática: scripts en Node.js consultan APIs de resultados y recalculan marcadores y puntajes en Supabase.",
+            "DT de Sofá (bot de IA en WhatsApp): integrado con Evolution API y Groq, analiza la tabla cada noche y responde con burlas al grupo y por mensaje directo.",
+            "Seguridad e integridad: reglas en Supabase (RLS) bloquean cambios en los pronósticos una vez iniciado cada partido."
           ]
         },
         "process": {
@@ -847,6 +905,29 @@
         "challenge": {
           "title": "El desafío",
           "content": "Medir la fluidez lectora hoy exige a un docente con texto impreso y cronómetro, niño por niño. Es lento, depende de quién evalúa y, para el niño, leer frente a un adulto que toma el tiempo genera ansiedad. El reto era automatizar la medición sin perder rigor pedagógico, hacer que la experiencia se sintiera como un juego y no como un examen, y proteger la voz de menores de edad bajo la nueva Ley 21.719 de protección de datos."
+        },
+        "screens": {
+          "title": "El producto en uso",
+          "intro": "Una misma lectura vista por el estudiante en la tablet y por el docente en el dashboard.",
+          "variant": "split",
+          "items": [
+            {
+              "src": "screen-tablet-resultado.webp",
+              "width": 1000,
+              "height": 1440,
+              "title": "Tablet: aventura completada",
+              "caption": "Al terminar, Chu celebra con estrellas, palabras logradas y días de racha. Las palabras difíciles se convierten en un entrenamiento con una pista concreta, nunca en un error.",
+              "alt": "Modal de aventura completada con Chu, tres estrellas, 24 de 26 palabras logradas, ritmo de 68 PCPM y una palabra para practicar"
+            },
+            {
+              "src": "screen-dashboard-evaluacion.webp",
+              "width": 1440,
+              "height": 1050,
+              "title": "Dashboard: detalle de la evaluación",
+              "caption": "El docente ve cada palabra clasificada como correcta, omitida, sustituida o insertada, escucha el audio a distintas velocidades y compara el PCPM con la referencia MINEDUC del curso.",
+              "alt": "Detalle de evaluación con el texto coloreado palabra por palabra, reproductor de audio y métricas de PCPM, precisión y duración"
+            }
+          ]
         },
         "research": {
           "title": "Mi acercamiento",

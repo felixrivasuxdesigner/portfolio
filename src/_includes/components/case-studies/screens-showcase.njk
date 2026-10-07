@@ -13,7 +13,7 @@
             <img src="{{ screenSrc }}" alt="{{ screen.alt }}" loading="lazy" width="1600" height="1000">
           </a>
         {% else %}
-          <img src="{{ screenSrc }}" alt="{{ screen.alt }}" loading="lazy" width="640" height="1423">
+          <img src="{{ screenSrc }}" alt="{{ screen.alt }}" loading="lazy" width="{{ screen.width or 640 }}" height="{{ screen.height or 1423 }}">
         {% endif %}
         <figcaption>
           <h3>{{ screen.title }}</h3>

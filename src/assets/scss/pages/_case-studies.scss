@@ -141,12 +141,31 @@
   // Pantallas reales del producto con su explicación
   &-screens {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    // auto-fit colapsa columnas vacías: funciona con 4 o 5 pantallas
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 2.5rem 1.5rem;
     margin-top: 2rem;
 
     @media (min-width: 992px) {
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    }
+
+    // Una pantalla vertical (tablet) junto a una horizontal (web)
+    &--split {
+      grid-template-columns: 1fr;
+      align-items: start;
+
+      @media (min-width: 768px) {
+        grid-template-columns: 2fr 3fr;
+      }
+
+      @media (min-width: 992px) {
+        grid-template-columns: 2fr 3fr;
+      }
+
+      .screen-item img {
+        border-radius: 16px;
+      }
     }
 
     // Capturas de escritorio (Admin Console): 1 columna en mobile, 2 en desktop

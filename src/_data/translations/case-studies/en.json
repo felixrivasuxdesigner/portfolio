@@ -614,29 +614,87 @@
       }
     },
     "fifa_predictor": {
-      "title": "FIFA World Cup 2026 Predictor",
+      "title": "Quiniela Engine",
       "categories": "#Web Development #UX/UI Design #AI Integration",
       "hero": {
-        "alt": "FIFA World Cup 2026 Predictor Dashboard"
+        "alt": "Three screens of the prediction pool in its 2027 Rugby World Cup edition"
       },
+      "facts": [
+        {
+          "label": "Role",
+          "value": "Product design and development"
+        },
+        {
+          "label": "Studio",
+          "value": "Shape Creative Studio",
+          "url": "https://shapecreativestudio.com"
+        },
+        {
+          "label": "Tournaments",
+          "value": "FIFA World Cup 2026 · Rugby World Cup 2027"
+        },
+        {
+          "label": "Platforms",
+          "value": "Mobile web app · WhatsApp bot"
+        }
+      ],
       "sections": {
         "context": {
           "title": "Project Overview",
-          "content": "A private, hyper-competitive, and fully automated prediction platform designed to manage the FIFA World Cup 2026 sweepstakes among a closed group of friends. The project combines a modern, fast web frontend with real-time official match score synchronization and a daily AI WhatsApp bot that adds a dynamic, hilarious element to the game."
+          "content": "Quiniela Engine is a private, automated platform for sports prediction pools among friends. It was born for the 2026 FIFA World Cup and evolved into an engine that adapts to different tournaments: the current edition is being prepared for the 2027 Rugby World Cup, with its pools, bonus points and knockout stage. It combines a fast web frontend, real results synced automatically and a daily AI bot on WhatsApp."
         },
         "challenge": {
           "title": "The Challenge",
           "content": "Sports sweepstakes are traditionally managed via manual Excel spreadsheets, leading to update delays, calculation errors, and disputes among participants. They also lack immediate mobile interactivity. The challenge was to automate 100% of the game lifecycle (prediction submissions, official score sync, and ranking updates) and integrate a humorous, interactive social layer to maintain daily engagement without manual intervention."
+        },
+        "screens": {
+          "title": "Rugby World Cup 2027 edition",
+          "intro": "The app dressed for the Rugby World Cup: same logic, new identity and the sport's own rules.",
+          "items": [
+            {
+              "src": "rugby-partidos.webp",
+              "title": "Matches",
+              "caption": "Predictions by stage, with search and filters. Each match locks at kickoff.",
+              "alt": "Match list with predicted scores: Australia 105, Hong Kong China 7",
+              "width": 640,
+              "height": 1387
+            },
+            {
+              "src": "rugby-pools.webp",
+              "title": "Pools",
+              "caption": "Each pool's standings under rugby rules: 4 points per win plus bonus points.",
+              "alt": "Pool A standings with Australia, Chile, Hong Kong China and New Zealand",
+              "width": 640,
+              "height": 1387
+            },
+            {
+              "src": "rugby-knockouts.webp",
+              "title": "Knockout stage",
+              "caption": "The road to the Webb Ellis Cup, from the round of 16 to the final, filled in automatically when the pools close.",
+              "alt": "Knockout stage with round of 16 fixtures",
+              "width": 640,
+              "height": 1387
+            },
+            {
+              "src": "rugby-desempate.webp",
+              "title": "Pre-tournament tiebreaker",
+              "caption": "Before the tournament each player picks the champion, runner-up and third place; those points break ties in the ranking.",
+              "alt": "Form to pick champion, runner-up and third place",
+              "width": 640,
+              "height": 1387
+            }
+          ]
         },
         "designSystem": true,
         "solution": {
           "title": "Value Proposition",
           "content": "We developed an automated and immersive ecosystem with the following advantages:",
           "features": [
-            "React 19 & Tailwind CSS v4 Frontend: An ultra-fast, dark-mode web application optimized for smooth prediction submissions on mobile devices.",
-            "Automated Synchronization: Node.js scripts that poll official FIFA matches and update Supabase standings in real-time.",
-            "Sofa Coach (AI WhatsApp Bot): Bot integrated via Evolution API and Groq (Llama 3.1) that analyzes the standings daily to post sarcastic and comical updates in the group chat.",
-            "Security & Integrity: Strict Row-Level Security in Supabase to lock predictions once a match has started."
+            "Multi-tournament engine: the same codebase supports football and rugby, each with its own visual identity and rules (groups or pools, bonus points, knockout stages and a pre-tournament tiebreaker).",
+            "React 19 & Tailwind CSS v4 frontend: a fast interface optimized for entering predictions on a phone.",
+            "Automatic sync: Node.js scripts query results APIs and recalculate scores and points in Supabase.",
+            "Couch Coach (AI bot on WhatsApp): built with Evolution API and Groq, it analyzes the standings every night and roasts players in the group chat and by direct message.",
+            "Security and integrity: Supabase rules (RLS) lock predictions once each match kicks off."
           ]
         },
         "process": {
@@ -792,6 +850,29 @@
         "challenge": {
           "title": "The challenge",
           "content": "Measuring reading fluency today takes a teacher with a printed text and a stopwatch, one child at a time. It is slow, it depends on who assesses, and reading in front of an adult who is timing you makes children anxious. The challenge was to automate the measurement without losing pedagogical rigor, make it feel like a game rather than a test, and protect minors' voices under Chile's new data protection law (Ley 21.719)."
+        },
+        "screens": {
+          "title": "The product in use",
+          "intro": "The same reading seen by the student on the tablet and by the teacher in the dashboard.",
+          "variant": "split",
+          "items": [
+            {
+              "src": "screen-tablet-resultado.webp",
+              "width": 1000,
+              "height": 1440,
+              "title": "Tablet: adventure completed",
+              "caption": "When the reading ends, Chu celebrates with stars, words achieved and a day streak. Hard words become practice with a concrete hint, never an error.",
+              "alt": "Adventure completed modal with Chu, three stars, 24 of 26 words achieved, a pace of 68 WCPM and one word to practice"
+            },
+            {
+              "src": "screen-dashboard-evaluacion.webp",
+              "width": 1440,
+              "height": 1050,
+              "title": "Dashboard: assessment detail",
+              "caption": "The teacher sees every word classified as correct, omitted, substituted or inserted, listens to the audio at different speeds and compares the WCPM against the grade's Ministry of Education benchmark.",
+              "alt": "Assessment detail with the text colored word by word, an audio player and WCPM, accuracy and duration metrics"
+            }
+          ]
         },
         "research": {
           "title": "My approach",

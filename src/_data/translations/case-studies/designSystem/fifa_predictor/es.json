@@ -1,5 +1,5 @@
 {
-  "title": "Sistema de Diseño FIFA Predictor",
+  "title": "Sistema de Diseño Quiniela Engine (edición Mundial FIFA 2026)",
   "intro": "Un lenguaje visual deportivo y competitivo, con modo oscuro inmersivo, tipografía moderna y acentos vibrantes para simular el ambiente del estadio de fútbol.",
   "tokens": {
     "colors": {
@@ -63,7 +63,12 @@
     "typography": {
       "primary": {
         "family": "Inter & Outfit (Google Fonts)",
-        "weights": [400, 500, 600, 700],
+        "weights": [
+          400,
+          500,
+          600,
+          700
+        ],
         "category": "Interfaz Web Responsiva"
       },
       "hierarchy": [

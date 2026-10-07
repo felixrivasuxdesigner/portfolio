@@ -277,9 +277,9 @@
         "description": "This project exemplifies my commitment to design excellence, seamlessly integrating creativity with functionality to deliver compelling digital experiences. The Nomadix Adventure platform balances visual appeal with intuitive navigation to create an engaging, user-focused solution that exceeds expectations."
       },
       "fifa_predictor": {
-        "title": "FIFA World Cup 2026 Predictor",
+        "title": "Quiniela Engine",
         "categories": "#Web Development #UX/UI Design #AI Integration",
-        "description": "An interactive bilingual prediction platform for the FIFA 2026 World Cup, featuring real-time score synchronization and an automated sarcastic AI WhatsApp bot."
+        "description": "A private sports prediction pool, born for the 2026 FIFA World Cup and turned into a multi-tournament engine, starting with the 2027 Rugby World Cup, with an AI bot on WhatsApp."
       },
       "agile_radar": {
         "title": "AgileRadar",

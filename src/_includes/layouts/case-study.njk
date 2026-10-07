@@ -56,7 +56,7 @@ isCaseStudy: true
       {% set screens = translations[locale].case_studies.projects[projectKey].sections.screens %}
       {% if screens %}
         {% set showcase = screens %}
-        {% set showcaseVariant = 'mobile' %}
+        {% set showcaseVariant = screens.variant or 'mobile' %}
         {% include "components/case-studies/screens-showcase.njk" %}
       {% endif %}
 
