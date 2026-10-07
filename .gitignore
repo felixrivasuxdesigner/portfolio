@@ -60,4 +60,5 @@ Thumbs.db
 
 # Ignorar archivos comprimidos generados localmente (si aplica)
 *.zip
-*.tar.gz.playwright-mcp/
+*.tar.gz
+.playwright-mcp/
