@@ -864,8 +864,27 @@
       "title": "AgileRadar",
       "categories": "#Diseño UX/UI #SaaS #AI Agent #Desarrollo Frontend",
       "hero": {
-        "alt": "AgileRadar Dashboard Licitaciones"
+        "alt": "Tablero kanban de AgileRadar con la ficha de evaluación con IA de una licitación"
       },
+      "facts": [
+        {
+          "label": "Rol",
+          "value": "Diseño y desarrollo de producto"
+        },
+        {
+          "label": "Estudio",
+          "value": "Shape Creative Studio",
+          "url": "https://shapecreativestudio.com"
+        },
+        {
+          "label": "Plataforma",
+          "value": "Web app interna"
+        },
+        {
+          "label": "Datos",
+          "value": "Mercado Público · Compra Ágil"
+        }
+      ],
       "sections": {
         "context": {
           "title": "Contexto del Proyecto",
@@ -875,13 +894,63 @@
           "title": "El Desafío",
           "content": "El scouting diario de licitaciones públicas es un proceso sumamente lento que requiere leer extensas bases técnicas y administrativas en PDF o Word (de 50 a 100 páginas). Esta tarea manual consume días de trabajo de diseñadores y gerentes solo para evaluar si la licitación vale la pena (cálculo de fit). El reto era centralizar, calificar automáticamente la idoneidad técnica mediante IA y agilizar el diseño de propuestas técnico-comerciales sólidas."
         },
+        "screens": {
+          "title": "El producto en uso",
+          "intro": "Capturas de la plataforma operando con licitaciones reales de Mercado Público.",
+          "openLabel": "ver captura en tamaño completo",
+          "variant": "desktop",
+          "items": [
+            {
+              "src": "screen-1-dashboard-kanban-desktop.webp",
+              "full": "screen-1-dashboard-kanban-desktop-full.webp",
+              "title": "Tablero de oportunidades",
+              "caption": "El estado de acreditación de Shape, los indicadores del pipeline y un kanban por etapas, de oportunidad a postulado, con el match de cada licitación.",
+              "alt": "Dashboard con la ficha de Shape Creative Studio, indicadores y el tablero kanban de licitaciones"
+            },
+            {
+              "src": "screen-2-detail-drawer-ai-evaluation.webp",
+              "full": "screen-2-detail-drawer-ai-evaluation-full.webp",
+              "title": "Evaluación con IA",
+              "caption": "Cada licitación se abre en una ficha con sus datos de Mercado Público y el análisis del radar: un puntaje de 0 a 100 con su justificación.",
+              "alt": "Ficha de oportunidad con datos de la licitación y un análisis de 98% de match con su justificación"
+            },
+            {
+              "src": "screen-4-proposal-technical-document.webp",
+              "full": "screen-4-proposal-technical-document-full.webp",
+              "title": "Propuesta técnica generada",
+              "caption": "La IA redacta la propuesta técnico-comercial y los datos para el formulario de Compra Ágil; se puede regenerar o descargar en Markdown y Word.",
+              "alt": "Borrador de propuesta técnica con opciones para regenerar, copiar y descargar"
+            },
+            {
+              "src": "screen-5-provider-profile-modal.webp",
+              "full": "screen-5-provider-profile-modal-full.webp",
+              "title": "Acreditación del proveedor",
+              "caption": "El estado de Shape en Mercado Público (habilitado, inhabilitado o vencido) con la fecha de vencimiento de la cuota, para no postular fuera de plazo.",
+              "alt": "Modal de configuración de acreditación con estados del proveedor y fecha de vencimiento"
+            },
+            {
+              "src": "screen-6-filters-and-urgency.webp",
+              "full": "screen-6-filters-and-urgency-full.webp",
+              "title": "Filtros por urgencia",
+              "caption": "Plazos urgentes (2 días o menos), próximos (5 días o menos), región y tipo de licitación para priorizar dónde poner el foco.",
+              "alt": "Tablero filtrado por licitaciones urgentes"
+            },
+            {
+              "src": "screen-7-tablet-responsive-kanban.webp",
+              "full": "screen-7-tablet-responsive-kanban-full.webp",
+              "title": "Responsive en tablet",
+              "caption": "El mismo panel adaptado a tablet, con los indicadores y filtros reorganizados.",
+              "alt": "Dashboard de AgileRadar en una tablet"
+            }
+          ]
+        },
         "designSystem": true,
         "solution": {
           "title": "Propuesta de Valor",
           "content": "Diseñamos un pipeline inteligente de precalificación que combina análisis de lenguaje natural y visualización ágil:",
           "features": [
             "Tablero Kanban en Tiempo Real: Visualización de las licitaciones organizadas por etapas del pipeline de ventas, sincronizadas con WebSockets.",
-            "Fit-Scoring con IA (Gemini 2.5 Flash): Evaluación automatizada de bases de licitación contra el stack de Shape, generando una puntuación (0-100) y justificación en español.",
+            "Fit-scoring con IA: cada licitación se evalúa contra las capacidades de Shape con un puntaje de 0 a 100 y su justificación en español. Groq (modelos GPT-OSS) es el proveedor principal, con Gemini y un modelo local (Ollama) como respaldo.",
             "Lector de Bases Multi-Documento: Carga inteligente mediante drag-and-drop de múltiples especificaciones técnicas oficiales (PDF/Word), consolidando el contenido en un solo paquete estructurado.",
             "Generador de Propuesta Técnico-Comercial: Generación instantánea en Markdown de propuestas personalizadas que abordan los 5 criterios críticos chilenos de licitación."
           ]
@@ -906,7 +975,7 @@
             },
             {
               "title": "UX de Generación Progresiva",
-              "content": "Diseño del flujo interactivo donde el usuario refina los criterios de la propuesta generada por Gemini antes de descargarla en Markdown listo para postular.",
+              "content": "Diseño del flujo interactivo donde el usuario refina los criterios de la propuesta generada por la IA antes de descargarla en Markdown o Word listo para postular.",
               "alt": "Generador de Propuestas"
             }
           ]
@@ -927,7 +996,7 @@
               "description": "Licitaciones de alta coincidencia ignoradas"
             }
           ],
-          "conclusion": "AgileRadar demuestra cómo las interfaces de productividad SaaS enriquecidas con modelos de lenguaje de última generación (Gemini) pueden redefinir por completo los flujos de adquisición corporativa, convirtiendo la fricción administrativa en ventajas competitivas ágiles."
+          "conclusion": "AgileRadar demuestra cómo las interfaces de productividad SaaS enriquecidas con modelos de lenguaje de última generación pueden redefinir por completo los flujos de adquisición corporativa, convirtiendo la fricción administrativa en ventajas competitivas ágiles."
         }
       }
     },

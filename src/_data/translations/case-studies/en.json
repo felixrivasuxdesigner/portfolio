@@ -746,8 +746,27 @@
       "title": "AgileRadar",
       "categories": "#UX/UI Design #SaaS #AI Agent #Frontend Development",
       "hero": {
-        "alt": "AgileRadar Bidding Dashboard"
+        "alt": "AgileRadar kanban board with the AI evaluation panel of a tender"
       },
+      "facts": [
+        {
+          "label": "Role",
+          "value": "Product design and development"
+        },
+        {
+          "label": "Studio",
+          "value": "Shape Creative Studio",
+          "url": "https://shapecreativestudio.com"
+        },
+        {
+          "label": "Platform",
+          "value": "Internal web app"
+        },
+        {
+          "label": "Data",
+          "value": "Mercado Público · Compra Ágil"
+        }
+      ],
       "sections": {
         "context": {
           "title": "Project Overview",
@@ -757,13 +776,63 @@
           "title": "The Challenge",
           "content": "Scouting public bids on government portals is a tedious process requiring managers to read through extensive PDF or Word documentation (typically 50-100 pages per bid). Evaluating technical fit is manual and consumes days, meaning high-value opportunities can easily be missed. The challenge was to centralize, automatically assess fit using AI, and generate technical-commercial proposal drafts."
         },
+        "screens": {
+          "title": "The product in use",
+          "intro": "Screenshots of the platform running with real Mercado Público tenders.",
+          "openLabel": "view full-size screenshot",
+          "variant": "desktop",
+          "items": [
+            {
+              "src": "screen-1-dashboard-kanban-desktop.webp",
+              "full": "screen-1-dashboard-kanban-desktop-full.webp",
+              "title": "Opportunity board",
+              "caption": "Shape's accreditation status, pipeline indicators and a kanban by stage, from opportunity to submitted, with each tender's match.",
+              "alt": "Dashboard with Shape Creative Studio's profile, indicators and the tender kanban board"
+            },
+            {
+              "src": "screen-2-detail-drawer-ai-evaluation.webp",
+              "full": "screen-2-detail-drawer-ai-evaluation-full.webp",
+              "title": "AI evaluation",
+              "caption": "Each tender opens in a detail panel with its Mercado Público data and the radar analysis: a 0 to 100 score with its justification.",
+              "alt": "Opportunity panel with tender data and a 98% match analysis with its justification"
+            },
+            {
+              "src": "screen-4-proposal-technical-document.webp",
+              "full": "screen-4-proposal-technical-document-full.webp",
+              "title": "Generated technical proposal",
+              "caption": "The AI drafts the technical and commercial proposal and the data for the Compra Ágil form; it can be regenerated or downloaded as Markdown or Word.",
+              "alt": "Technical proposal draft with options to regenerate, copy and download"
+            },
+            {
+              "src": "screen-5-provider-profile-modal.webp",
+              "full": "screen-5-provider-profile-modal-full.webp",
+              "title": "Supplier accreditation",
+              "caption": "Shape's status in Mercado Público (enabled, disabled or expired) with the fee expiration date, so bids are never submitted out of term.",
+              "alt": "Accreditation settings modal with supplier statuses and expiration date"
+            },
+            {
+              "src": "screen-6-filters-and-urgency.webp",
+              "full": "screen-6-filters-and-urgency-full.webp",
+              "title": "Urgency filters",
+              "caption": "Urgent deadlines (2 days or less), upcoming (5 days or less), region and tender type to prioritize where to focus.",
+              "alt": "Board filtered by urgent tenders"
+            },
+            {
+              "src": "screen-7-tablet-responsive-kanban.webp",
+              "full": "screen-7-tablet-responsive-kanban-full.webp",
+              "title": "Responsive on tablet",
+              "caption": "The same dashboard adapted to tablet, with indicators and filters rearranged.",
+              "alt": "AgileRadar dashboard on a tablet"
+            }
+          ]
+        },
         "designSystem": true,
         "solution": {
           "title": "Value Proposition",
           "content": "We designed an automated pre-qualification workflow combining natural language processing and real-time visualization:",
           "features": [
             "Real-Time Kanban Board: Opportunities organized across pipeline stages, utilizing WebSockets for instant interface updates.",
-            "AI Fit-Scoring (Gemini 2.5 Flash): Automatic parsing of bid files to calculate compatibility (0-100 match score) with Shape's stack, along with a written justification.",
+            "AI fit-scoring: each tender is evaluated against Shape's capabilities with a 0 to 100 score and a written justification. Groq (GPT-OSS models) is the primary provider, with Gemini and a local model (Ollama) as fallbacks.",
             "Multi-Document consolidator: Drag-and-drop document upload (PDF/Word) that extracts text and compiles it into a structured reference context.",
             "Technical Proposal Draft Engine: Instant generation of tailored proposals addressing critical Chilean bidding criteria in Markdown format."
           ]
@@ -773,7 +842,7 @@
           "steps": [
             {
               "title": "Mapping Shape's Core Stack",
-              "content": "Interfaced with Shape's team to define core criteria (UI/UX, React/TS, Design Systems) and structured them as system constraints for the Gemini scoring model.",
+              "content": "Interfaced with Shape's team to define core criteria (UI/UX, React/TS, Design Systems) and structured them as system constraints for the AI scoring model.",
               "alt": "Competency Mapping"
             },
             {
@@ -788,7 +857,7 @@
             },
             {
               "title": "Interactive Proposal UX",
-              "content": "Designed an interface that allows managers to read, refine, and edit proposal drafts generated by Gemini before downloading the final Markdown file.",
+              "content": "Designed an interface that allows managers to read, refine, and edit proposal AI-generated drafts before downloading them as Markdown or Word.",
               "alt": "Proposal Generator Flow"
             }
           ]
