@@ -970,25 +970,79 @@
           "content": "Medir la fluidez lectora hoy exige a un docente con texto impreso y cronómetro, niño por niño. Es lento, depende de quién evalúa y, para el niño, leer frente a un adulto que toma el tiempo genera ansiedad. El reto era automatizar la medición sin perder rigor pedagógico, hacer que la experiencia se sintiera como un juego y no como un examen, y proteger la voz de menores de edad bajo la nueva Ley 21.719 de protección de datos."
         },
         "screens": {
-          "title": "El producto en uso",
-          "intro": "Una misma lectura vista por el estudiante en la tablet y por el docente en el dashboard.",
-          "variant": "split",
+          "title": "La experiencia en la tablet",
+          "intro": "Una lectura completa, de principio a fin, desde los ojos del estudiante.",
           "items": [
+            {
+              "src": "tablet-01-inicio.webp",
+              "width": 800,
+              "height": 1067,
+              "title": "Hora de leer",
+              "caption": "Chu saluda al niño por su nombre y el cuento aparece en Literata grande, con un solo botón para empezar.",
+              "alt": "Pantalla de inicio con el cuento El nido de Chu y el botón Empezar a leer"
+            },
+            {
+              "src": "tablet-03-preparacion.webp",
+              "width": 800,
+              "height": 1067,
+              "title": "Un momento de calma",
+              "caption": "Antes de grabar, una pausa invita a buscar silencio en la sala: «¡Shhh! Chu te escucha».",
+              "alt": "Modal de preparación con Chu y el botón Todo listo para leer"
+            },
+            {
+              "src": "tablet-04-leyendo.webp",
+              "width": 800,
+              "height": 1067,
+              "title": "Leyendo a su ritmo",
+              "caption": "Mientras el niño lee, Chu escucha. No hay cronómetro visible: solo un botón para avisar que terminó.",
+              "alt": "Pantalla de lectura con el mensaje de Chu escuchando y el botón Terminé de leer"
+            },
+            {
+              "src": "tablet-07-aviso.webp",
+              "width": 800,
+              "height": 1067,
+              "title": "Avisos sin castigo",
+              "caption": "Si la lectura fue muy corta, Chu lo dice con humor y sin sonidos de error, y el niño puede volver a intentarlo.",
+              "alt": "Aviso amable que pide leer todo el cuento, con el botón para empezar de nuevo"
+            },
             {
               "src": "screen-tablet-resultado.webp",
               "width": 1000,
               "height": 1440,
-              "title": "Tablet: aventura completada",
-              "caption": "Al terminar, Chu celebra con estrellas, palabras logradas y días de racha. Las palabras difíciles se convierten en un entrenamiento con una pista concreta, nunca en un error.",
-              "alt": "Modal de aventura completada con Chu, tres estrellas, 24 de 26 palabras logradas, ritmo de 68 PCPM y una palabra para practicar"
+              "title": "Aventura completada",
+              "caption": "Al terminar, estrellas, palabras logradas y días de racha. Las palabras difíciles se convierten en un entrenamiento con una pista concreta.",
+              "alt": "Modal de aventura completada con Chu, tres estrellas, 24 de 26 palabras logradas y una palabra para practicar"
+            }
+          ]
+        },
+        "adminScreens": {
+          "title": "Plataforma docente",
+          "intro": "El panel web donde el docente sigue el progreso del curso y revisa cada lectura. Datos ficticios de demostración.",
+          "openLabel": "ver captura en tamaño completo",
+          "items": [
+            {
+              "src": "web-02-dashboard.webp",
+              "title": "Dashboard",
+              "caption": "Evaluaciones realizadas, estudiantes activos, PCPM promedio y precisión del curso, con la evolución de la fluidez en el tiempo.",
+              "alt": "Dashboard docente con indicadores, gráfico de evolución de fluidez y últimas evaluaciones"
             },
             {
-              "src": "screen-dashboard-evaluacion.webp",
-              "width": 1440,
-              "height": 1050,
-              "title": "Dashboard: detalle de la evaluación",
-              "caption": "El docente ve cada palabra clasificada como correcta, omitida, sustituida o insertada, escucha el audio a distintas velocidades y compara el PCPM con la referencia MINEDUC del curso.",
-              "alt": "Detalle de evaluación con el texto coloreado palabra por palabra, reproductor de audio y métricas de PCPM, precisión y duración"
+              "src": "web-03-estudiantes.webp",
+              "title": "Estudiantes",
+              "caption": "Cada estudiante con su nivel, su PCPM promedio y el estado de sus autorizaciones: datos, audio en la nube o audio solo en la tablet.",
+              "alt": "Tarjetas de estudiantes con nivel Lexile, PCPM promedio y estado del consentimiento"
+            },
+            {
+              "src": "web-04-consentimiento.webp",
+              "title": "Consentimiento del apoderado",
+              "caption": "El docente registra por separado la autorización de tratamiento de datos y la de guardar audio en la nube, con referencia al documento firmado.",
+              "alt": "Modal de consentimiento con las casillas de tratamiento de datos y audio en la nube"
+            },
+            {
+              "src": "web-06-detalle-evaluacion.webp",
+              "title": "Detalle de la evaluación",
+              "caption": "Cada palabra clasificada como correcta, omitida, sustituida o insertada, el audio a distintas velocidades y la referencia pedagógica del curso.",
+              "alt": "Detalle de evaluación con el texto coloreado palabra por palabra, reproductor de audio y métricas de fluidez"
             }
           ]
         },

@@ -852,25 +852,79 @@
           "content": "Measuring reading fluency today takes a teacher with a printed text and a stopwatch, one child at a time. It is slow, it depends on who assesses, and reading in front of an adult who is timing you makes children anxious. The challenge was to automate the measurement without losing pedagogical rigor, make it feel like a game rather than a test, and protect minors' voices under Chile's new data protection law (Ley 21.719)."
         },
         "screens": {
-          "title": "The product in use",
-          "intro": "The same reading seen by the student on the tablet and by the teacher in the dashboard.",
-          "variant": "split",
+          "title": "The tablet experience",
+          "intro": "A full reading, start to finish, through the student's eyes.",
           "items": [
+            {
+              "src": "tablet-01-inicio.webp",
+              "width": 800,
+              "height": 1067,
+              "title": "Time to read",
+              "caption": "Chu greets the child by name and the story appears in large Literata, with a single button to start.",
+              "alt": "Start screen with the story El nido de Chu and the Start reading button"
+            },
+            {
+              "src": "tablet-03-preparacion.webp",
+              "width": 800,
+              "height": 1067,
+              "title": "A moment of calm",
+              "caption": "Before recording, a pause invites the class to find some quiet: \"Shhh! Chu is listening\".",
+              "alt": "Preparation modal with Chu and the All set to read button"
+            },
+            {
+              "src": "tablet-04-leyendo.webp",
+              "width": 800,
+              "height": 1067,
+              "title": "Reading at their own pace",
+              "caption": "While the child reads, Chu listens. There is no visible timer, just a button to say they are done.",
+              "alt": "Reading screen with Chu listening and the I'm done reading button"
+            },
+            {
+              "src": "tablet-07-aviso.webp",
+              "width": 800,
+              "height": 1067,
+              "title": "Notices without punishment",
+              "caption": "If the reading was too short, Chu says so with humor and no error sounds, and the child can try again.",
+              "alt": "Friendly notice asking to read the whole story, with a button to start again"
+            },
             {
               "src": "screen-tablet-resultado.webp",
               "width": 1000,
               "height": 1440,
-              "title": "Tablet: adventure completed",
-              "caption": "When the reading ends, Chu celebrates with stars, words achieved and a day streak. Hard words become practice with a concrete hint, never an error.",
-              "alt": "Adventure completed modal with Chu, three stars, 24 of 26 words achieved, a pace of 68 WCPM and one word to practice"
+              "title": "Adventure completed",
+              "caption": "When it ends: stars, words achieved and a day streak. Hard words become practice with a concrete hint.",
+              "alt": "Adventure completed modal with Chu, three stars, 24 of 26 words achieved and one word to practice"
+            }
+          ]
+        },
+        "adminScreens": {
+          "title": "Teacher platform",
+          "intro": "The web panel where teachers follow their class's progress and review every reading. Fictional demo data.",
+          "openLabel": "view full-size screenshot",
+          "items": [
+            {
+              "src": "web-02-dashboard.webp",
+              "title": "Dashboard",
+              "caption": "Assessments completed, active students, average WCPM and class accuracy, with fluency progress over time.",
+              "alt": "Teacher dashboard with indicators, a fluency trend chart and latest assessments"
             },
             {
-              "src": "screen-dashboard-evaluacion.webp",
-              "width": 1440,
-              "height": 1050,
-              "title": "Dashboard: assessment detail",
-              "caption": "The teacher sees every word classified as correct, omitted, substituted or inserted, listens to the audio at different speeds and compares the WCPM against the grade's Ministry of Education benchmark.",
-              "alt": "Assessment detail with the text colored word by word, an audio player and WCPM, accuracy and duration metrics"
+              "src": "web-03-estudiantes.webp",
+              "title": "Students",
+              "caption": "Each student with their level, average WCPM and the status of their permissions: data, cloud audio or audio kept on the tablet.",
+              "alt": "Student cards with Lexile level, average WCPM and consent status"
+            },
+            {
+              "src": "web-04-consentimiento.webp",
+              "title": "Parental consent",
+              "caption": "The teacher records data processing consent and cloud audio consent separately, referencing the signed document.",
+              "alt": "Consent modal with checkboxes for data processing and cloud audio"
+            },
+            {
+              "src": "web-06-detalle-evaluacion.webp",
+              "title": "Assessment detail",
+              "caption": "Every word classified as correct, omitted, substituted or inserted, the audio at different speeds and the grade's pedagogical benchmark.",
+              "alt": "Assessment detail with the text colored word by word, an audio player and fluency metrics"
             }
           ]
         },
