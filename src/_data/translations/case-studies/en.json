@@ -863,19 +863,19 @@
           ]
         },
         "results": {
-          "title": "Results & Business Impact",
+          "title": "Estimated results",
           "metrics": [
             {
-              "number": "85%",
-              "description": "Reduction in bid scouting and pre-qualification time"
+              "number": "≈85%",
+              "description": "Estimated reduction in scouting and qualification time"
             },
             {
-              "number": "15 min",
-              "description": "Average time to generate a structured technical-commercial draft proposal"
+              "number": "≈15 min",
+              "description": "Estimated time to a first technical and commercial draft"
             },
             {
-              "number": "0",
-              "description": "High-fit public bids missed or overlooked"
+              "number": "3",
+              "description": "Cascading AI layers (Groq, Gemini and local Ollama) so the pipeline never stops"
             }
           ],
           "conclusion": "AgileRadar demonstrates how modern web applications built with LLMs can streamline complex B2G procurement pipelines, converting days of manual document parsing into minutes of intuitive, AI-assisted operations."

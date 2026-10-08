@@ -981,19 +981,19 @@
           ]
         },
         "results": {
-          "title": "Resultados e Impacto",
+          "title": "Resultados estimados",
           "metrics": [
             {
-              "number": "85%",
-              "description": "Reducción en tiempo de scouting y calificación"
+              "number": "≈85%",
+              "description": "Reducción estimada del tiempo de scouting y calificación"
             },
             {
-              "number": "15 min",
-              "description": "Tiempo promedio en generar el primer borrador técnico comercial completo"
+              "number": "≈15 min",
+              "description": "Tiempo estimado para tener el primer borrador técnico-comercial"
             },
             {
-              "number": "0",
-              "description": "Licitaciones de alta coincidencia ignoradas"
+              "number": "3",
+              "description": "Capas de IA en cascada (Groq, Gemini y Ollama local) para que el pipeline no se detenga"
             }
           ],
           "conclusion": "AgileRadar demuestra cómo las interfaces de productividad SaaS enriquecidas con modelos de lenguaje de última generación pueden redefinir por completo los flujos de adquisición corporativa, convirtiendo la fricción administrativa en ventajas competitivas ágiles."
