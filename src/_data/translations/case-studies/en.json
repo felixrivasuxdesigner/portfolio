@@ -8,7 +8,7 @@
       "title": "JourneyLaw",
       "categories": "#UX Design #UI Design #Legal Tech #Frontend Development #SaaS Platform",
       "hero": {
-        "alt": "JourneyLaw - Legal Tech Platform"
+        "alt": "JourneyLaw lawyer dashboard and the case calendar"
       },
       "sections": {
         "context": {
@@ -87,7 +87,7 @@
       "title": "Mobile Wallet",
       "categories": "#UX Design #UI Design #Prototype #Design",
       "hero": {
-        "alt": "Mobile Wallet - Belcorp"
+        "alt": "Three screens of the Belcorp mobile wallet: home, financials and clients"
       },
       "sections": {
         "context": {
@@ -162,7 +162,7 @@
       "title": "Factoring Security Platform",
       "categories": "#UX Design #UI Design #Security #Financial",
       "hero": {
-        "alt": "Factoring Security Platform - Dashboard"
+        "alt": "Factoring Security electronic board and the operation approval detail"
       },
       "sections": {
         "context": {
@@ -303,7 +303,7 @@
       "title": "Nomadix Adventure",
       "categories": "#Web Design #Design #Wireframe",
       "hero": {
-        "alt": "Nomadix Adventure - Travel Platform"
+        "alt": "Nomadix Adventure website on desktop and mobile with the Ocean to Ocean countdown"
       },
       "sections": {
         "context": {
@@ -378,7 +378,7 @@
       "title": "IntelliResearch",
       "categories": "#UX Research #AI #SaaS",
       "hero": {
-        "alt": "IntelliResearch Dashboard"
+        "alt": "IntelliResearch projects dashboard and an interview discovery screen"
       },
       "sections": {
         "context": {
@@ -441,7 +441,7 @@
       "title": "Radio Barrio Centenario",
       "categories": "#Mobile App #Admin Console #Community",
       "hero": {
-        "alt": "Radio Barrio Centenario app: schedule, live player and mood picker"
+        "alt": "Radio Barrio Centenario admin dashboard with the live player and community votes on mobile"
       },
       "facts": [
         {
@@ -746,7 +746,7 @@
       "title": "AgileRadar",
       "categories": "#UX/UI Design #SaaS #AI Agent #Frontend Development",
       "hero": {
-        "alt": "AgileRadar kanban board with the AI evaluation panel of a tender"
+        "alt": "AgileRadar tender dashboard on desktop and its responsive version on a tablet"
       },
       "facts": [
         {
@@ -1074,7 +1074,7 @@
       "title": "Grant Thornton BusinessTools",
       "categories": "#UX/UI Design #Design System #React #TypeScript #Storybook",
       "hero": {
-        "alt": "Grant Thornton BusinessTools Design System"
+        "alt": "Grant Thornton BusinessTools: executive dashboard, monthly VAT (F29) view and the Companion browser extension"
       },
       "sections": {
         "context": {
@@ -1084,6 +1084,119 @@
         "challenge": {
           "title": "The Challenge",
           "content": "The platform processes heavy financial data density: complex tax grids (annual F22, monthly F29, additional F50), real-time scraping bot monitors, and company group assignments. The primary UX hurdle was to present dense tax details cleanly and accessibly following Apple's HIG (Human Interface Guidelines). Furthermore, the portal required a strict role-based access control system (RBAC) and alternative flat styling configurations for exporting reports to PDF (via WeasyPrint) and emails (Mailing) without modern CSS support."
+        },
+        "screens": {
+          "title": "Manager view",
+          "intro": "The executive layer: compliance across every company in the portfolio, the team's alerts and who has access to what. Fictional demo data.",
+          "openLabel": "view full-size screenshot",
+          "items": [
+            {
+              "src": "manager-01-login.webp",
+              "full": "manager-01-login-full.webp",
+              "title": "Single sign-on",
+              "caption": "Access through GT Auth with Microsoft or Google: no new passwords for the team to manage.",
+              "alt": "Login screen with Continue with Microsoft and Continue with Google buttons"
+            },
+            {
+              "src": "manager-02-dashboard-ejecutivo.webp",
+              "full": "manager-02-dashboard-ejecutivo-full.webp",
+              "title": "Executive dashboard",
+              "caption": "VAT and income tax compliance, open observations and active clients at a glance, with a month-by-month filing heatmap per company.",
+              "alt": "Executive dashboard with KPI cards, a filing status heatmap and recent alerts"
+            },
+            {
+              "src": "manager-03-centro-notificaciones.webp",
+              "full": "manager-03-centro-notificaciones-full.webp",
+              "title": "Notification center",
+              "caption": "SII citations, rectifications and accepted filings arrive in one panel, ordered by urgency.",
+              "alt": "Notifications dropdown open over the executive dashboard"
+            },
+            {
+              "src": "manager-04-cumplimiento-iva-f29.webp",
+              "full": "manager-04-cumplimiento-iva-f29-full.webp",
+              "title": "Monthly VAT compliance",
+              "caption": "The F29 tax year in one table: what was filed, what has observations and what is still pending, with fines and interest highlighted.",
+              "alt": "Monthly VAT F29 table with status, filing date, amount and observations"
+            },
+            {
+              "src": "manager-05-renta-anual-f22.webp",
+              "full": "manager-05-renta-anual-f22-full.webp",
+              "title": "Annual income tax (F22)",
+              "caption": "The accepted filing, taxable base, determined tax and balance due, plus quick actions and the change history.",
+              "alt": "Annual income tax F22 summary with key figures, F22 lines and quick actions"
+            },
+            {
+              "src": "manager-06-credenciales-y-accesos.webp",
+              "full": "manager-06-credenciales-y-accesos-full.webp",
+              "title": "Credentials and access",
+              "caption": "SII and TGR credentials per company, encrypted, with an audit trail and permissions assigned per analyst.",
+              "alt": "Credentials screen with company cards, recent activity and analyst assignments"
+            }
+          ],
+          "variant": "desktop"
+        },
+        "adminScreens": {
+          "title": "Analyst view",
+          "intro": "The operational layer: the day-to-day of the analyst who files, reviews and responds to the SII for their assigned clients.",
+          "openLabel": "view full-size screenshot",
+          "items": [
+            {
+              "src": "analyst-01-dashboard-operativo.webp",
+              "full": "analyst-01-dashboard-operativo-full.webp",
+              "title": "Operational dashboard",
+              "caption": "Priority clients with their filing progress, recent forms and a ZIP download of every F29 in the tax year.",
+              "alt": "Analyst dashboard with priority client cards, recent forms table and quick downloads"
+            },
+            {
+              "src": "analyst-02-notificaciones-sii.webp",
+              "full": "analyst-02-notificaciones-sii-full.webp",
+              "title": "SII notifications",
+              "caption": "Every legal notice from the tax authority, filterable by risk, type and channel, with the detail always beside the list.",
+              "alt": "SII notifications table with risk filters and a detail panel for a citation"
+            },
+            {
+              "src": "analyst-03-notificacion-detalle.webp",
+              "full": "analyst-03-notificacion-detalle-full.webp",
+              "title": "Notification detail",
+              "caption": "Risk level, tax, key period and an excerpt from the official document, so the analyst can assign a task or mark it reviewed.",
+              "alt": "Detail panel of an SII resolution with its excerpt and Assign task and Mark as reviewed actions"
+            },
+            {
+              "src": "analyst-04-iva-mensual-f29.webp",
+              "full": "analyst-04-iva-mensual-f29-full.webp",
+              "title": "Monthly VAT (F29)",
+              "caption": "Progress for the year, observations and debt summarized above; below, each period with its status and actions.",
+              "alt": "Monthly VAT F29 screen with summary cards and the table of periods"
+            },
+            {
+              "src": "analyst-05-f29-periodo-mensual.webp",
+              "full": "analyst-05-f29-periodo-mensual-full.webp",
+              "title": "Period detail",
+              "caption": "Debits, credits and determined tax broken down by document, alongside the payment information and SII observations.",
+              "alt": "F29 period detail with tax summary, debits, credits and payment information"
+            },
+            {
+              "src": "analyst-06-renta-f22-en-curso.webp",
+              "full": "analyst-06-renta-f22-en-curso-full.webp",
+              "title": "Tax year in progress",
+              "caption": "When there is nothing to file yet, the screen explains why and shows how far away the deadline is.",
+              "alt": "Empty state for tax year 2026 with a timeline to the F22 deadline and previous years"
+            },
+            {
+              "src": "analyst-07-renta-f22-sin-declaraciones.webp",
+              "full": "analyst-07-renta-f22-sin-declaraciones-full.webp",
+              "title": "Previous years",
+              "caption": "An alternative to the empty state that separates preparation from filing and lists the history with direct access to each form.",
+              "alt": "Alternative empty state with preparation and filing phases and a list of previous years"
+            },
+            {
+              "src": "analyst-08-extension-navegador.webp",
+              "full": "analyst-08-extension-navegador-full.webp",
+              "title": "Companion extension",
+              "caption": "A browser extension that detects the client and logs into SII or TGR with encrypted credentials, with no passwords stored locally.",
+              "alt": "Grant Thornton Companion extension with the detected client and Auto-login to SII and TGR buttons"
+            }
+          ]
         },
         "designSystem": true,
         "solution": {

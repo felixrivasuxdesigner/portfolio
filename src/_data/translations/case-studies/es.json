@@ -8,7 +8,7 @@
       "title": "JourneyLaw",
       "categories": "#Diseño UX #Diseño UI #Legal Tech #Desarrollo Frontend #Plataforma SaaS",
       "hero": {
-        "alt": "JourneyLaw - Plataforma Legal"
+        "alt": "Dashboard del abogado en JourneyLaw y el calendario de casos"
       },
       "sections": {
         "context": {
@@ -208,7 +208,7 @@
       "title": "Billetera Móvil",
       "categories": "#Diseño UX #Diseño UI #Prototipo #Diseño",
       "hero": {
-        "alt": "Billetera Móvil - Belcorp"
+        "alt": "Tres pantallas de la billetera móvil de Belcorp: inicio, finanzas y clientes"
       },
       "sections": {
         "context": {
@@ -283,7 +283,7 @@
       "title": "Módulo Factoring",
       "categories": "#Diseño UX #Diseño UI #Prototipo #Diseño",
       "hero": {
-        "alt": "Módulo Factoring - Security Bank"
+        "alt": "Pizarra electrónica de Factoring Security y el detalle de aprobación de una operación"
       },
       "sections": {
         "context": {
@@ -421,7 +421,7 @@
       "title": "Nomadix Adventure",
       "categories": "#Diseño Web #Diseño #Wireframe",
       "hero": {
-        "alt": "Nomadix Adventure - Plataforma de Viajes"
+        "alt": "Sitio de Nomadix Adventure en escritorio y celular con la cuenta regresiva de Ocean to Ocean"
       },
       "sections": {
         "context": {
@@ -496,7 +496,7 @@
       "title": "IntelliResearch",
       "categories": "#UX Research #AI #SaaS",
       "hero": {
-        "alt": "IntelliResearch Dashboard"
+        "alt": "Dashboard de proyectos de IntelliResearch y una pantalla de descubrimiento con entrevistas"
       },
       "sections": {
         "context": {
@@ -559,7 +559,7 @@
       "title": "Radio Barrio Centenario",
       "categories": "#App Móvil #Admin Console #Comunidad",
       "hero": {
-        "alt": "App de Radio Barrio Centenario: programación, reproductor en vivo y selector de estado de ánimo"
+        "alt": "Dashboard de administración de Radio Barrio Centenario con el reproductor en vivo y las votaciones vecinales en el celular"
       },
       "facts": [
         {
@@ -864,7 +864,7 @@
       "title": "AgileRadar",
       "categories": "#Diseño UX/UI #SaaS #AI Agent #Desarrollo Frontend",
       "hero": {
-        "alt": "Tablero kanban de AgileRadar con la ficha de evaluación con IA de una licitación"
+        "alt": "Dashboard de licitaciones de AgileRadar en escritorio y su versión adaptada a tablet"
       },
       "facts": [
         {
@@ -1192,7 +1192,7 @@
       "title": "Grant Thornton BusinessTools",
       "categories": "#Diseño UX/UI #Sistema de Diseño #React #TypeScript #Storybook",
       "hero": {
-        "alt": "Grant Thornton BusinessTools Sistema de Diseño"
+        "alt": "Grant Thornton BusinessTools: dashboard ejecutivo, vista de IVA mensual (F29) y la extensión Companion para el navegador"
       },
       "sections": {
         "context": {
@@ -1202,6 +1202,119 @@
         "challenge": {
           "title": "El Desafío",
           "content": "La plataforma gestiona gran densidad de información financiera: grillas complejas de impuestos (F22, F29, F50), monitores de bots en tiempo real y asignación de grupos de sociedades. El reto principal era lograr que información tributaria compleja se sintiera clara y accesible siguiendo los principios de la Apple HIG (Human Interface Guidelines). Además, el sistema requería un esquema rígido de permisos (RBAC) y la capacidad de exportar reportes a PDF (vía WeasyPrint) y correos electrónicos (Mailing) con layouts planos especiales sin soporte moderno de CSS."
+        },
+        "screens": {
+          "title": "Vista manager",
+          "intro": "La capa ejecutiva: el cumplimiento de todas las sociedades de la cartera, las alertas del equipo y quién tiene acceso a qué. Datos ficticios de demostración.",
+          "openLabel": "ver captura en tamaño completo",
+          "items": [
+            {
+              "src": "manager-01-login.webp",
+              "full": "manager-01-login-full.webp",
+              "title": "Ingreso único",
+              "caption": "Acceso con GT Auth mediante Microsoft o Google: el equipo no administra contraseñas nuevas.",
+              "alt": "Pantalla de ingreso con los botones Continuar con Microsoft y Continuar con Google"
+            },
+            {
+              "src": "manager-02-dashboard-ejecutivo.webp",
+              "full": "manager-02-dashboard-ejecutivo-full.webp",
+              "title": "Dashboard ejecutivo",
+              "caption": "Cumplimiento de IVA y Renta, observaciones abiertas y clientes activos de un vistazo, con un mapa mes a mes del estado de las declaraciones por sociedad.",
+              "alt": "Dashboard ejecutivo con indicadores, mapa de estado de declaraciones y alertas recientes"
+            },
+            {
+              "src": "manager-03-centro-notificaciones.webp",
+              "full": "manager-03-centro-notificaciones-full.webp",
+              "title": "Centro de notificaciones",
+              "caption": "Citaciones del SII, rectificaciones y declaraciones aceptadas llegan a un solo panel, ordenadas por urgencia.",
+              "alt": "Menú de notificaciones abierto sobre el dashboard ejecutivo"
+            },
+            {
+              "src": "manager-04-cumplimiento-iva-f29.webp",
+              "full": "manager-04-cumplimiento-iva-f29-full.webp",
+              "title": "Cumplimiento de IVA mensual",
+              "caption": "El año tributario del F29 en una tabla: lo declarado, lo observado y lo pendiente, con multas e intereses destacados.",
+              "alt": "Tabla de IVA mensual F29 con estado, fecha de declaración, monto y observaciones"
+            },
+            {
+              "src": "manager-05-renta-anual-f22.webp",
+              "full": "manager-05-renta-anual-f22-full.webp",
+              "title": "Renta anual (F22)",
+              "caption": "La declaración aceptada, base imponible, impuesto determinado y saldo a pagar, junto a acciones rápidas y el historial de cambios.",
+              "alt": "Resumen de Renta anual F22 con cifras clave, líneas del F22 y acciones rápidas"
+            },
+            {
+              "src": "manager-06-credenciales-y-accesos.webp",
+              "full": "manager-06-credenciales-y-accesos-full.webp",
+              "title": "Credenciales y accesos",
+              "caption": "Claves del SII y la TGR por sociedad, cifradas, con registro de auditoría y permisos asignados por analista.",
+              "alt": "Pantalla de credenciales con tarjetas por sociedad, actividad reciente y asignaciones por analista"
+            }
+          ],
+          "variant": "desktop"
+        },
+        "adminScreens": {
+          "title": "Vista analista",
+          "intro": "La capa operativa: el día a día de quien declara, revisa y responde al SII por sus clientes asignados.",
+          "openLabel": "ver captura en tamaño completo",
+          "items": [
+            {
+              "src": "analyst-01-dashboard-operativo.webp",
+              "full": "analyst-01-dashboard-operativo-full.webp",
+              "title": "Dashboard operativo",
+              "caption": "Clientes prioritarios con su avance, formularios recientes y la descarga en ZIP de todos los F29 del año tributario.",
+              "alt": "Dashboard de analista con tarjetas de clientes prioritarios, tabla de formularios y descargas rápidas"
+            },
+            {
+              "src": "analyst-02-notificaciones-sii.webp",
+              "full": "analyst-02-notificaciones-sii-full.webp",
+              "title": "Notificaciones SII",
+              "caption": "Todos los avisos legales del SII, filtrables por riesgo, tipo y canal, con el detalle siempre junto a la lista.",
+              "alt": "Tabla de notificaciones SII con filtros de riesgo y panel de detalle de una citación"
+            },
+            {
+              "src": "analyst-03-notificacion-detalle.webp",
+              "full": "analyst-03-notificacion-detalle-full.webp",
+              "title": "Detalle de notificación",
+              "caption": "Nivel de riesgo, impuesto, período clave y un extracto del documento oficial, para asignar una tarea o marcarla como revisada.",
+              "alt": "Panel de detalle de una resolución del SII con su extracto y las acciones Asignar tarea y Marcar como revisada"
+            },
+            {
+              "src": "analyst-04-iva-mensual-f29.webp",
+              "full": "analyst-04-iva-mensual-f29-full.webp",
+              "title": "IVA mensual (F29)",
+              "caption": "Arriba, el avance del año, las observaciones y la deuda; abajo, cada período con su estado y acciones.",
+              "alt": "Pantalla de IVA mensual F29 con tarjetas de resumen y la tabla de períodos"
+            },
+            {
+              "src": "analyst-05-f29-periodo-mensual.webp",
+              "full": "analyst-05-f29-periodo-mensual-full.webp",
+              "title": "Detalle del período",
+              "caption": "Débitos, créditos e impuesto determinado desglosados por documento, junto a la información del pago y las observaciones del SII.",
+              "alt": "Detalle de un período F29 con resumen de impuestos, débitos, créditos e información del pago"
+            },
+            {
+              "src": "analyst-06-renta-f22-en-curso.webp",
+              "full": "analyst-06-renta-f22-en-curso-full.webp",
+              "title": "Año tributario en curso",
+              "caption": "Cuando aún no hay nada que declarar, la pantalla explica por qué y muestra cuánto falta para el plazo.",
+              "alt": "Estado vacío del año tributario 2026 con una línea de tiempo hasta el plazo del F22 y años anteriores"
+            },
+            {
+              "src": "analyst-07-renta-f22-sin-declaraciones.webp",
+              "full": "analyst-07-renta-f22-sin-declaraciones-full.webp",
+              "title": "Años anteriores",
+              "caption": "Una alternativa al estado vacío que separa preparación y declaración, y lista el historial con acceso directo a cada formulario.",
+              "alt": "Estado vacío alternativo con fases de preparación y declaración y la lista de años anteriores"
+            },
+            {
+              "src": "analyst-08-extension-navegador.webp",
+              "full": "analyst-08-extension-navegador-full.webp",
+              "title": "Extensión Companion",
+              "caption": "Una extensión de navegador que detecta al cliente e ingresa al SII o la TGR con credenciales cifradas, sin guardar contraseñas en el equipo.",
+              "alt": "Extensión Grant Thornton Companion con el cliente detectado y los botones de ingreso automático al SII y la TGR"
+            }
+          ]
         },
         "designSystem": true,
         "solution": {
