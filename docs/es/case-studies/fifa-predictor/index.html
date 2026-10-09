@@ -280,10 +280,16 @@
   <div class="case-study-screens case-study-screens--mobile">
     
       
+      
       <figure class="screen-item">
-        
-          <img src="/portfolio/assets/img/gallery-img/fifa_predictor/rugby-partidos.webp" alt="Lista de partidos con marcadores pronosticados: Australia 105, Hong Kong China 7" loading="lazy" width="640" height="1387">
-        
+        <a href="/portfolio/assets/img/gallery-img/fifa_predictor/rugby-partidos.webp" class="screen-item__trigger" data-lightbox="gallery" data-src="/portfolio/assets/img/gallery-img/fifa_predictor/rugby-partidos.webp" data-title="Partidos" data-caption="Los pronósticos por fase, con buscador y filtros. Cada partido se bloquea al comenzar." aria-label="Partidos: Ver en pantalla completa">
+          
+            <img src="/portfolio/assets/img/gallery-img/fifa_predictor/rugby-partidos.webp" alt="Lista de partidos con marcadores pronosticados: Australia 105, Hong Kong China 7" loading="lazy" width="640" height="1387">
+          
+          <span class="screen-item__overlay" aria-hidden="true">
+            <span class="screen-item__badge"><i class="fas fa-search-plus"></i> Ver en pantalla completa</span>
+          </span>
+        </a>
         <figcaption>
           <h3>Partidos</h3>
           <p>Los pronósticos por fase, con buscador y filtros. Cada partido se bloquea al comenzar.</p>
@@ -291,10 +297,16 @@
       </figure>
     
       
+      
       <figure class="screen-item">
-        
-          <img src="/portfolio/assets/img/gallery-img/fifa_predictor/rugby-pools.webp" alt="Tabla de clasificación del Pool A con Australia, Chile, Hong Kong China y Nueva Zelanda" loading="lazy" width="640" height="1387">
-        
+        <a href="/portfolio/assets/img/gallery-img/fifa_predictor/rugby-pools.webp" class="screen-item__trigger" data-lightbox="gallery" data-src="/portfolio/assets/img/gallery-img/fifa_predictor/rugby-pools.webp" data-title="Pools" data-caption="La clasificación de cada pool con las reglas del rugby: 4 puntos por victoria y punto bonus." aria-label="Pools: Ver en pantalla completa">
+          
+            <img src="/portfolio/assets/img/gallery-img/fifa_predictor/rugby-pools.webp" alt="Tabla de clasificación del Pool A con Australia, Chile, Hong Kong China y Nueva Zelanda" loading="lazy" width="640" height="1387">
+          
+          <span class="screen-item__overlay" aria-hidden="true">
+            <span class="screen-item__badge"><i class="fas fa-search-plus"></i> Ver en pantalla completa</span>
+          </span>
+        </a>
         <figcaption>
           <h3>Pools</h3>
           <p>La clasificación de cada pool con las reglas del rugby: 4 puntos por victoria y punto bonus.</p>
@@ -302,10 +314,16 @@
       </figure>
     
       
+      
       <figure class="screen-item">
-        
-          <img src="/portfolio/assets/img/gallery-img/fifa_predictor/rugby-knockouts.webp" alt="Fase eliminatoria con los cruces de octavos de final" loading="lazy" width="640" height="1387">
-        
+        <a href="/portfolio/assets/img/gallery-img/fifa_predictor/rugby-knockouts.webp" class="screen-item__trigger" data-lightbox="gallery" data-src="/portfolio/assets/img/gallery-img/fifa_predictor/rugby-knockouts.webp" data-title="Fase eliminatoria" data-caption="El camino a la Copa Webb Ellis, de octavos a la final, que se completa solo al cerrar los pools." aria-label="Fase eliminatoria: Ver en pantalla completa">
+          
+            <img src="/portfolio/assets/img/gallery-img/fifa_predictor/rugby-knockouts.webp" alt="Fase eliminatoria con los cruces de octavos de final" loading="lazy" width="640" height="1387">
+          
+          <span class="screen-item__overlay" aria-hidden="true">
+            <span class="screen-item__badge"><i class="fas fa-search-plus"></i> Ver en pantalla completa</span>
+          </span>
+        </a>
         <figcaption>
           <h3>Fase eliminatoria</h3>
           <p>El camino a la Copa Webb Ellis, de octavos a la final, que se completa solo al cerrar los pools.</p>
@@ -313,10 +331,16 @@
       </figure>
     
       
+      
       <figure class="screen-item">
-        
-          <img src="/portfolio/assets/img/gallery-img/fifa_predictor/rugby-desempate.webp" alt="Formulario para elegir campeón, subcampeón y tercer lugar" loading="lazy" width="640" height="1387">
-        
+        <a href="/portfolio/assets/img/gallery-img/fifa_predictor/rugby-desempate.webp" class="screen-item__trigger" data-lightbox="gallery" data-src="/portfolio/assets/img/gallery-img/fifa_predictor/rugby-desempate.webp" data-title="Desempate pre-mundial" data-caption="Antes del torneo cada jugador elige campeón, subcampeón y tercer lugar; esos puntos rompen empates en el ranking." aria-label="Desempate pre-mundial: Ver en pantalla completa">
+          
+            <img src="/portfolio/assets/img/gallery-img/fifa_predictor/rugby-desempate.webp" alt="Formulario para elegir campeón, subcampeón y tercer lugar" loading="lazy" width="640" height="1387">
+          
+          <span class="screen-item__overlay" aria-hidden="true">
+            <span class="screen-item__badge"><i class="fas fa-search-plus"></i> Ver en pantalla completa</span>
+          </span>
+        </a>
         <figcaption>
           <h3>Desempate pre-mundial</h3>
           <p>Antes del torneo cada jugador elige campeón, subcampeón y tercer lugar; esos puntos rompen empates en el ranking.</p>
@@ -757,6 +781,47 @@
   </div>
 </div>
 <!-- Case Study Content End -->
+
+<!-- Reusable Case Study Lightbox -->
+<!-- Reusable Case Study Lightbox Component -->
+
+<div id="case-study-lightbox" class="lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Galería del prototipo">
+  <div class="lightbox-backdrop" data-lightbox-close=""></div>
+  
+  <div class="lightbox-container">
+    <button type="button" class="lightbox-close" aria-label="Cerrar" data-lightbox-close="">
+      <span aria-hidden="true">×</span>
+    </button>
+    
+    <button type="button" class="lightbox-nav prev" aria-label="Anterior" data-lightbox-prev="">
+      <span aria-hidden="true">❮</span>
+    </button>
+    
+    <div class="lightbox-stage">
+      <div class="lightbox-image-wrapper">
+        <img loading="lazy" class="lightbox-content" id="lightbox-img" src="" alt="Pantalla del prototipo en tamaño completo">
+        <div class="lightbox-loader" aria-hidden="true">
+          <div class="lightbox-spinner"></div>
+        </div>
+      </div>
+      
+      <div class="lightbox-footer">
+        <div class="lightbox-meta">
+          <h3 class="lightbox-title" id="lightbox-title"></h3>
+          <p class="lightbox-caption" id="lightbox-caption"></p>
+        </div>
+        <div class="lightbox-counter" aria-live="polite">
+          <span class="lightbox-counter-current">1</span> / <span class="lightbox-counter-total">1</span>
+        </div>
+      </div>
+    </div>
+    
+    <button type="button" class="lightbox-nav next" aria-label="Siguiente" data-lightbox-next="">
+      <span aria-hidden="true">❯</span>
+    </button>
+  </div>
+</div>
+
 
     <!-- Footer Area Start -->
 <div id="footer">
