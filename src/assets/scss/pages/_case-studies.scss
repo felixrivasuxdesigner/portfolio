@@ -176,41 +176,85 @@
       @media (min-width: 768px) {
         grid-template-columns: repeat(2, 1fr);
       }
-
-      .screen-item {
-        a {
-          display: block;
-          border-radius: 12px;
-
-          &:hover img {
-            transform: translateY(-4px);
-            box-shadow: 0 18px 40px -16px rgba(0, 0, 0, 0.3);
-          }
-
-          &:focus-visible {
-            outline: 3px solid var(--primary-color);
-            outline-offset: 4px;
-          }
-        }
-
-        img {
-          border-radius: 12px;
-          transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-      }
     }
 
     .screen-item {
       margin: 0;
 
-      img {
-        width: 100%;
-        height: auto;
+      &__trigger {
         display: block;
-        border-radius: 20px;
-        border: 1px solid rgba(0, 0, 0, 0.08);
-        box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.25);
+        position: relative;
+        border-radius: 16px;
+        overflow: hidden;
+        cursor: pointer;
+        text-decoration: none;
         margin-bottom: 1.25rem;
+        background: var(--background-color-alt, rgba(0, 0, 0, 0.04));
+
+        img {
+          width: 100%;
+          height: auto;
+          display: block;
+          border-radius: 16px;
+          border: 1px solid rgba(0, 0, 0, 0.08);
+          box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.25);
+          margin-bottom: 0;
+          transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
+        }
+
+        .screen-item__overlay {
+          position: absolute;
+          inset: 0;
+          background: rgba(0, 0, 0, 0.35);
+          backdrop-filter: blur(2px);
+          -webkit-backdrop-filter: blur(2px);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          opacity: 0;
+          transition: opacity 0.3s ease;
+          border-radius: 16px;
+          pointer-events: none;
+        }
+
+        .screen-item__badge {
+          background: rgba(255, 255, 255, 0.92);
+          color: #111827;
+          font-size: 0.875rem;
+          font-weight: 600;
+          padding: 8px 18px;
+          border-radius: 9999px;
+          box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          transform: translateY(8px) scale(0.95);
+          transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+          i {
+            font-size: 0.8rem;
+          }
+        }
+
+        &:hover {
+          img {
+            transform: translateY(-4px) scale(1.015);
+            box-shadow: 0 18px 40px -12px rgba(0, 0, 0, 0.3);
+          }
+
+          .screen-item__overlay {
+            opacity: 1;
+          }
+
+          .screen-item__badge {
+            transform: translateY(0) scale(1);
+          }
+        }
+
+        &:focus-visible {
+          outline: 3px solid var(--primary-color, #722688);
+          outline-offset: 4px;
+        }
       }
 
       h3 {
@@ -662,84 +706,311 @@
   }
 }
 
-// Lightbox Premium Glassmorphism (fuera del scope normal para que cubra todo el viewport)
+// Lightbox Premium Glassmorphism (Apple HIG style)
 .lightbox-modal {
   position: fixed;
   inset: 0;
-  z-index: 9999;
-  background-color: rgba(10, 10, 15, 0.85);
-  backdrop-filter: blur(12px); // Glassmorphism effect
-  -webkit-backdrop-filter: blur(12px);
+  z-index: 99999;
   display: flex;
   align-items: center;
   justify-content: center;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.4s ease, visibility 0.4s ease;
+  transition: opacity 0.35s cubic-bezier(0.165, 0.84, 0.44, 1), visibility 0.35s ease;
+  user-select: none;
+
+  .lightbox-backdrop {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(10, 10, 16, 0.84);
+    backdrop-filter: blur(24px) saturate(160%);
+    -webkit-backdrop-filter: blur(24px) saturate(160%);
+    transition: opacity 0.35s ease;
+  }
 
   &.active {
     opacity: 1;
     visibility: visible;
 
-    .lightbox-content {
+    .lightbox-stage {
       transform: scale(1);
       opacity: 1;
     }
   }
 
-  .lightbox-close {
-    position: absolute;
-    top: 25px;
-    right: 35px;
-    color: white;
-    font-size: 40px;
-    font-weight: 300;
-    cursor: pointer;
-    transition: transform 0.3s ease, color 0.3s ease;
-    z-index: 10000;
+  .lightbox-container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    box-sizing: border-box;
 
-    &:hover {
-      transform: scale(1.1) rotate(90deg);
-      color: var(--primary-color, #722688);
+    @media (max-width: 768px) {
+      padding: 16px;
     }
   }
 
+  // Floating Glassmorphic Close Button (Apple style circle)
+  .lightbox-close {
+    position: absolute;
+    top: 24px;
+    right: 28px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.25);
+      transform: scale(1.08) rotate(90deg);
+      border-color: rgba(255, 255, 255, 0.4);
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+
+    &:focus-visible {
+      outline: 2px solid #ffffff;
+      outline-offset: 3px;
+    }
+
+    @media (max-width: 768px) {
+      top: 16px;
+      right: 16px;
+      width: 42px;
+      height: 42px;
+      font-size: 24px;
+    }
+  }
+
+  // Floating Glassmorphic Navigation Buttons (Prev / Next)
   .lightbox-nav {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    color: white;
-    font-size: 40px;
-    font-weight: 300;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color: #ffffff;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    padding: 20px;
-    transition: transform 0.3s ease, color 0.3s ease;
-    z-index: 10000;
-    user-select: none;
+    z-index: 10;
+    transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
 
     &:hover {
-      transform: translateY(-50%) scale(1.2);
-      color: var(--primary-color, #722688);
+      background: rgba(255, 255, 255, 0.28);
+      transform: translateY(-50%) scale(1.1);
+      border-color: rgba(255, 255, 255, 0.4);
+    }
+
+    &:active {
+      transform: translateY(-50%) scale(0.95);
+    }
+
+    &:focus-visible {
+      outline: 2px solid #ffffff;
+      outline-offset: 3px;
     }
 
     &.prev {
-      left: 5%;
+      left: 28px;
     }
 
     &.next {
-      right: 5%;
+      right: 28px;
+    }
+
+    @media (max-width: 768px) {
+      width: 44px;
+      height: 44px;
+      font-size: 18px;
+
+      &.prev {
+        left: 12px;
+      }
+      &.next {
+        right: 12px;
+      }
+    }
+  }
+
+  // Lightbox Stage & Content
+  .lightbox-stage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: min(92vw, 1280px);
+    max-height: 94vh;
+    transform: scale(0.96);
+    opacity: 0;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), opacity 0.35s ease;
+    pointer-events: auto;
+  }
+
+  .lightbox-image-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 76vh;
+
+    @media (max-height: 700px) {
+      max-height: 66vh;
     }
   }
 
   .lightbox-content {
-    max-width: 90vw;
-    max-height: 90vh;
-    border-radius: 24px;
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
-    transform: scale(0.95);
-    opacity: 0;
-    transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1), opacity 0.5s ease;
+    max-width: 100%;
+    max-height: 76vh;
+    width: auto;
+    height: auto;
     object-fit: contain;
+    border-radius: 16px;
+    box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: opacity 0.25s ease;
+    display: block;
+
+    @media (max-height: 700px) {
+      max-height: 66vh;
+    }
+  }
+
+  // Loader / Spinner
+  .lightbox-loader {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+
+    &.visible {
+      opacity: 1;
+    }
+
+    .lightbox-spinner {
+      width: 36px;
+      height: 36px;
+      border: 3px solid rgba(255, 255, 255, 0.2);
+      border-top-color: #ffffff;
+      border-radius: 50%;
+      animation: lightboxSpin 0.8s linear infinite;
+    }
+  }
+
+  // Glassmorphic Footer (Caption & Counter)
+  .lightbox-footer {
+    margin-top: 14px;
+    width: 100%;
+    max-width: 820px;
+    background: rgba(22, 22, 30, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: 16px;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+
+    @media (max-width: 640px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+      padding: 12px 16px;
+    }
+  }
+
+  .lightbox-meta {
+    flex: 1;
+    min-width: 0;
+
+    .lightbox-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #ffffff;
+      margin: 0 0 4px 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      @media (max-width: 640px) {
+        font-size: 0.95rem;
+        white-space: normal;
+      }
+    }
+
+    .lightbox-caption {
+      font-size: 0.875rem;
+      color: rgba(255, 255, 255, 0.75);
+      margin: 0;
+      line-height: 1.4;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+
+      @media (max-width: 640px) {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .lightbox-counter {
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 9999px;
+    padding: 4px 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: rgba(255, 255, 255, 0.9);
+    white-space: nowrap;
+    align-self: center;
+
+    @media (max-width: 640px) {
+      align-self: flex-end;
+    }
+  }
+}
+
+@keyframes lightboxSpin {
+  to {
+    transform: rotate(360deg);
   }
 }
 // Tema oscuro en casos de estudio: varios proyectos fijan texto y títulos oscuros

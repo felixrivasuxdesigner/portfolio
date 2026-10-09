@@ -5,16 +5,25 @@
   <div class="case-study-screens case-study-screens--{{ showcaseVariant }}">
     {% for screen in showcase.items %}
       {% set screenSrc = site.baseUrl + 'assets/img/gallery-img/' + projectKey + '/' + screen.src %}
+      {% set fullSrc = site.baseUrl + 'assets/img/gallery-img/' + projectKey + '/' + screen.full if screen.full else screenSrc %}
       <figure class="screen-item">
-        {% if showcaseVariant == 'desktop' %}
-          {# La miniatura es un recorte 16:10; el enlace abre la captura completa si existe #}
-          {% set fullSrc = site.baseUrl + 'assets/img/gallery-img/' + projectKey + '/' + screen.full if screen.full else screenSrc %}
-          <a href="{{ fullSrc }}" target="_blank" rel="noopener" aria-label="{{ screen.title }}: {{ showcase.openLabel }}">
+        <a href="{{ fullSrc }}" 
+           class="screen-item__trigger" 
+           data-lightbox="gallery" 
+           data-src="{{ fullSrc }}" 
+           data-title="{{ screen.title }}" 
+           data-caption="{{ screen.caption }}" 
+           aria-label="{{ screen.title }}: {{ showcase.openLabel | default(translations[locale].case_study_ui.gallery.view) }}">
+          {% if showcaseVariant == 'desktop' %}
+            {# La miniatura es un recorte 16:10; en lightbox se muestra la captura completa #}
             <img src="{{ screenSrc }}" alt="{{ screen.alt }}" loading="lazy" width="1600" height="1000">
-          </a>
-        {% else %}
-          <img src="{{ screenSrc }}" alt="{{ screen.alt }}" loading="lazy" width="{{ screen.width or 640 }}" height="{{ screen.height or 1423 }}">
-        {% endif %}
+          {% else %}
+            <img src="{{ screenSrc }}" alt="{{ screen.alt }}" loading="lazy" width="{{ screen.width or 640 }}" height="{{ screen.height or 1423 }}">
+          {% endif %}
+          <span class="screen-item__overlay" aria-hidden="true">
+            <span class="screen-item__badge"><i class="fas fa-search-plus"></i> {{ translations[locale].case_study_ui.gallery.view | default('Ampliar') }}</span>
+          </span>
+        </a>
         <figcaption>
           <h3>{{ screen.title }}</h3>
           <p>{{ screen.caption }}</p>
