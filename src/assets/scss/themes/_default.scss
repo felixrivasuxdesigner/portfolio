@@ -228,3 +228,10 @@ h6 {
     }
   }
 }
+
+// Tema oscuro: el body tenía fondo blanco fijo y los casos de estudio (que no
+// pintan fondo propio) mostraban texto claro sobre blanco
+[data-theme='dark'] body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}

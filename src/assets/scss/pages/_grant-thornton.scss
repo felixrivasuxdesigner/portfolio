@@ -6,4 +6,9 @@
     --link-color: var(--accent-color);
     --button-bg: var(--primary-color);
     --button-color: #ffffff;
+
+    // Métricas: el cian de acento (#3BA7DC) da 2.71:1 sobre blanco; las cifras usan el púrpura primario (9.21:1)
+    .case-study-results .result-item h3 {
+        color: #533B7B;
+    }
 }

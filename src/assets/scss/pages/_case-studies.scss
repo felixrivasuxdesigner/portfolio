@@ -742,3 +742,30 @@
     object-fit: contain;
   }
 }
+// Tema oscuro en casos de estudio: varios proyectos fijan texto y títulos oscuros
+// (marrón, navy, púrpura) que no se leen sobre #121212. Se vuelve a los colores del
+// tema; html[...] gana en especificidad a .case-study.{proyecto}.
+html[data-theme='dark'] .case-study {
+  --text-color: #e0e0e0;
+  --heading-color: #ffffff;
+  --light-text-color: #aaaaaa;
+  --text-body: #e0e0e0;
+  --card-bg-color: #1e1e1e;
+  --background-color-alt: #1a1a1a;
+  --surface-light: #1a1a1a;
+
+  .case-study-facts {
+    border-color: rgba(255, 255, 255, 0.12);
+  }
+
+  .case-study-screens .screen-item img {
+    border-color: rgba(255, 255, 255, 0.12);
+  }
+
+  // Cifras y cargos usaban el color de marca, que sobre #1e1e1e no llega a 3:1
+  .case-study-results .result-item h3,
+  .stat-item .stat-number,
+  .persona-card .persona-position {
+    color: var(--heading-color);
+  }
+}

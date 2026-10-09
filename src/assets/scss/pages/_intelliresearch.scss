@@ -6,4 +6,9 @@
     --link-color: var(--primary-color);
     --button-bg: var(--primary-color);
     --button-color: #ffffff;
+
+    // Métricas: el durazno de acento (#FFB088) da 1.78:1 sobre blanco; las cifras usan el rosa primario (3.37:1, texto grande)
+    .case-study-results .result-item h3 {
+        color: #E65C83;
+    }
 }
