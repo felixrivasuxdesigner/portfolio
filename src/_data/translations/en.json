@@ -647,7 +647,7 @@
     "send_button": "SUBMIT REQUEST"
   },
   "footer": {
-    "copyright": "Copyright &copy; 2025 <a href=\"/\">Félix Rivas</a>. All Rights Reserved."
+    "copyright": "Copyright &copy; {year} <a href=\"{home}\">Félix Rivas</a>. All Rights Reserved."
   },
   "thankyou": {
     "title": "Thank you for reaching out!",

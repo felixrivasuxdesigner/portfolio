@@ -558,7 +558,7 @@
     "send_button": "ENVIAR SOLICITUD"
   },
   "footer": {
-    "copyright": "Copyright &copy; 2025 <a href=\"/\">Félix Rivas</a>. Todos los Derechos Reservados."
+    "copyright": "Copyright &copy; {year} <a href=\"{home}\">Félix Rivas</a>. Todos los Derechos Reservados."
   },
   "thankyou": {
     "title": "¡Gracias por contactarme!",

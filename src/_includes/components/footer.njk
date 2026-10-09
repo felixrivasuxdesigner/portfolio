@@ -4,7 +4,8 @@
     <!-- Footer Copyright Start -->
     <div class="footer--copyright">
       <p>
-        {{ translations.footer.copyright | default('Copyright &copy; 2025 <a href="/">Félix Rivas</a>. Todos los Derechos Reservados.') | safe }}
+        {# {year} y {home} se reemplazan al compilar: el año de build y la portada del idioma actual #}
+        {{ translations[locale].footer.copyright | replace('{year}', site.year) | replace('{home}', site.baseUrl + locale + '/') | safe }}
       </p>
     </div>
     <!-- Footer Copyright End -->

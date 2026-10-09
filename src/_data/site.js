@@ -17,5 +17,8 @@ export default {
   title: "Félix Rivas UX/UI Designer",
   description: "Diseñador UX/UI con más de 12 años de experiencia en interfaces digitales y experiencia de usuario para aplicaciones móviles y web",
   author: "Félix Rivas",
-  linkedin: "https://www.linkedin.com/in/rivasfelix/"
+  linkedin: "https://www.linkedin.com/in/rivasfelix/",
+
+  // Año de compilación, para el copyright del pie de página
+  year: new Date().getFullYear()
 };
