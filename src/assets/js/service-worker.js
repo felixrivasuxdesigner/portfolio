@@ -4,7 +4,7 @@
  */
 
 // Nombre y versión de la caché
-const CACHE_NAME = 'felix-portfolio-v1';
+const CACHE_NAME = 'felix-portfolio-v2';
 
 // Recursos que queremos cachear para funcionamiento offline
 const CACHE_ASSETS = [
@@ -19,8 +19,8 @@ const CACHE_ASSETS = [
   '/portfolio/assets/img/gallery-img/wallet/cover-wallet.webp',
   '/portfolio/assets/img/gallery-img/factoring/cover-factoring.webp',
   '/portfolio/assets/img/gallery-img/nomadix/cover-nomadix.webp',
-  '/portfolio/assets/resumen/Felix-Rivas-UXUI-Designer-EN.pdf',
-  '/portfolio/assets/resumen/Felix-Rivas-UXUI-Designer-ES.pdf',
+  '/portfolio/assets/resumen/Felix-Rivas-AI-Product-Engineer-EN.pdf',
+  '/portfolio/assets/resumen/Felix-Rivas-AI-Product-Engineer-ES.pdf',
   // Agrega aquí los iconos de FontAwesome y otros recursos importantes
   'https://use.fontawesome.com/releases/v6.4.0/css/all.css',
 ];
