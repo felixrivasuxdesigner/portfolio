@@ -1,6 +1,7 @@
 <!-- Case Study Banner Component -->
-{% set bannerImagePath = site.baseUrl + 'assets/img/banner-img/' + projectKey + '-banner.webp' %}
+{# Fondo genérico por defecto; una página puede declarar `banner: archivo.webp` en su front matter para usar uno propio #}
 {% set fallbackImagePath = site.baseUrl + 'assets/img/banner-img/case-study-bg.webp' %}
+{% set bannerImagePath = site.baseUrl + 'assets/img/banner-img/' + banner if banner else fallbackImagePath %}
 
 <div id="case-study-banner" class="bg--overlay" 
      data-parallax-bg-img="{{ bannerImagePath }}" 
