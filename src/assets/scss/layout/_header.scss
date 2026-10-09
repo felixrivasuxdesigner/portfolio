@@ -3,6 +3,9 @@
 @use '../abstracts/mixins' as m;
 @use 'sass:color';
 
+// Hasta este ancho el menú se colapsa en hamburguesa: entre 768 y 991 px no caben logo, 6 enlaces, CTA e idioma/tema
+$nav-collapse: v.$breakpoint-large;
+
 /* 
  * Estilos para el header
  */
@@ -183,32 +186,8 @@
     }
   }
 
-  @media (max-width: #{v.$breakpoint-medium - 1px}) {
+  @media (max-width: #{$nav-collapse - 1px}) {
     display: none;
-
-    &.in {
-      @include m.flex-column;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      background-color: v.$white;
-      box-shadow: 0 5px 10px rgba(v.$black, 0.1);
-      padding: f.rem(10px, v.$base-font-size) 0;
-
-      > li {
-        margin-left: 0;
-
-        > a {
-          color: v.$primary-color;
-          padding: f.rem(12px, v.$base-font-size) f.rem(20px, v.$base-font-size);
-
-          &::after {
-            display: none;
-          }
-        }
-      }
-    }
   }
 }
 
@@ -232,21 +211,23 @@
     }
   }
 
+  // El primer hijo es el texto .sr-only: las barras son los hijos 2, 3 y 4
   &[aria-expanded='true'] {
-    .icon-bar:nth-child(1) {
-      transform: rotate(45deg) translate(5px, 5px);
-    }
-
     .icon-bar:nth-child(2) {
-      opacity: 0;
+      transform: translateY(6px) rotate(45deg);
     }
 
     .icon-bar:nth-child(3) {
-      transform: rotate(-45deg) translate(4px, -4px);
+      opacity: 0;
+    }
+
+    .icon-bar:nth-child(4) {
+      transform: translateY(-6px) rotate(-45deg);
     }
   }
 
-  @media (max-width: #{v.$breakpoint-medium - 1px}) {
+
+  @media (max-width: #{$nav-collapse - 1px}) {
     display: block;
   }
 }
@@ -275,21 +256,21 @@
 
   &.hidden-sm,
   &.hidden-xs {
-    @media (max-width: #{v.$breakpoint-small - 1px}) {
+    @media (max-width: #{$nav-collapse - 1px}) {
       display: none;
     }
   }
 
   &.hidden-md,
   &.hidden-lg {
-    @media (min-width: #{v.$breakpoint-medium}) {
+    @media (min-width: #{$nav-collapse}) {
       display: none;
     }
   }
 }
 
-// Media queries para dispositivos móviles
-@media (max-width: #{v.$breakpoint-medium - 1px}) {
+// Menú colapsado (mobile y tablet)
+@media (max-width: #{$nav-collapse - 1px}) {
   #header {
     .navbar {
       flex-wrap: wrap;
@@ -306,10 +287,15 @@
 
       &.collapse {
         display: none;
+      }
 
-        &.in {
-          display: block;
-        }
+      // navigation.js quita .collapse y agrega .in al abrir
+      &.in {
+        display: block;
+        margin-top: 12px;
+        background-color: v.$white;
+        border-radius: 12px 12px 0 0;
+        box-shadow: 0 12px 24px rgba(v.$black, 0.12);
       }
 
       .navbar-nav {
@@ -322,11 +308,56 @@
           width: 100%;
 
           > a {
-            padding: 10px 15px;
+            padding: 10px 20px;
             display: block;
-            border-bottom: 1px solid rgba(v.$white, 0.1);
+            color: v.$primary-color;
+            border-bottom: 1px solid rgba(v.$black, 0.06);
+
+            &::after {
+              display: none;
+            }
           }
         }
+      }
+
+      // El contenedor recibe .in al abrir el menú; la lista va dentro
+      &.in .navbar-nav {
+        display: flex;
+      }
+    }
+  }
+}
+
+// Fila de escritorio compacta: logo, 6 enlaces, CTA e idioma/tema
+@media (min-width: #{$nav-collapse}) {
+  #header {
+    .logo--content h1,
+    .logo--content p,
+    .navbar-nav > li > a,
+    .header--custom-btn .btn--default {
+      white-space: nowrap;
+    }
+
+    .navbar-nav > li {
+      margin-left: f.rem(24px, v.$base-font-size);
+    }
+  }
+}
+
+@media (min-width: #{$nav-collapse}) and (max-width: #{v.$breakpoint-xlarge - 1px}) {
+  #header {
+    .navbar-nav > li {
+      margin-left: f.rem(20px, v.$base-font-size);
+    }
+
+    // "Contrátame" solo con ícono; el texto sigue disponible para lectores de pantalla
+    .header--custom-btn.hidden-sm .btn--default {
+      font-size: 0;
+      padding: 8px 12px;
+
+      i {
+        font-size: 16px;
+        margin-right: 0;
       }
     }
   }

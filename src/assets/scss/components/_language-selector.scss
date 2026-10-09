@@ -7,12 +7,35 @@
 @use '../abstracts/mixins' as m;
 
 .language-selector {
-  position: fixed;
-  top: 20px;
-  right: 20px;
+  // Vive dentro del flex del header (antes era fixed y tapaba logo, enlaces y "Contrátame")
+  position: relative;
+  flex-shrink: 0;
+  margin-left: 12px;
   z-index: v.$z-index-header + 1;
   display: flex;
   align-items: center;
+
+  // Con el menú colapsado no cabe en la fila superior: se muestra al final del menú abierto
+  @media (max-width: #{v.$breakpoint-large - 1px}) {
+    display: none;
+    order: 3;
+    width: 100%;
+    margin: 0;
+    padding: 12px 20px 16px;
+    background-color: v.$white;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 12px 24px rgba(v.$black, 0.12);
+
+    .header--nav.in ~ & {
+      display: flex;
+    }
+
+
+    .language-selector__dropdown {
+      right: auto;
+      left: 0;
+    }
+  }
   @include m.transition;
 
   // Estado cuando el header tiene fondo blanco (scroll)
@@ -151,6 +174,23 @@
     i {
       font-size: 18px;
       color: v.$white;
+    }
+  }
+}
+
+// Dentro del menú abierto (fondo blanco) se usan los colores de control del header con scroll.
+// Va al final para ganar a los estilos base del mismo nivel de especificidad.
+@media (max-width: #{v.$breakpoint-large - 1px}) {
+  .language-selector {
+    .language-selector__toggle,
+    .theme-toggle.in-language-selector {
+      background-color: var(--control-btn-bg);
+      color: var(--control-btn-color);
+      border-color: var(--control-btn-border);
+
+      i {
+        color: var(--control-btn-color);
+      }
     }
   }
 }
